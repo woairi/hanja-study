@@ -35,21 +35,25 @@ export default function StudyClient() {
     // resume if possible
     const last = loadLastSession();
     const wantResume = sp.get('resume') === '1';
+    const reviewOnly = sp.get('review') === '1';
 
     let pickedItems: KanjiItem[] = [];
     let startIdx = 0;
 
-    if (wantResume && last && last.mode === 'study' && last.gradeLabel === grade && last.n === n) {
+    if (!reviewOnly && wantResume && last && last.mode === 'study' && last.gradeLabel === grade && last.n === n) {
       const map = new Map(ALL_KANJI.map((k) => [k.id, k] as const));
       pickedItems = last.itemIds.map((id) => map.get(id)).filter((x): x is KanjiItem => !!x);
       startIdx = Math.min(last.idx, Math.max(0, pickedItems.length - 1));
     } else {
-      const pick = pickStudyItems(grade, n, st, now);
+      const pick = pickStudyItems(grade, n, st, now, { reviewOnly });
       st = pick.state;
       pickedItems = pick.items;
       startIdx = 0;
-      st = bumpStreakOnStudy(st);
-      saveState(st);
+      // only bump streak on normal learning mode
+      if (!reviewOnly) {
+        st = bumpStreakOnStudy(st);
+        saveState(st);
+      }
     }
 
     setItems(pickedItems);
@@ -78,6 +82,7 @@ export default function StudyClient() {
 
   const current = items[idx];
   const isDone = idx >= items.length;
+  const reviewOnly = sp.get('review') === '1';
 
   const quizHref = useMemo(() => {
     const raw = window.sessionStorage.getItem(SESSION_KEY);
@@ -95,6 +100,31 @@ export default function StudyClient() {
   }
 
   if (isDone) {
+    // review mode: no quiz
+    if (reviewOnly) {
+      return (
+        <main className="mx-auto flex min-h-[70vh] max-w-md flex-col items-center justify-center p-4 text-center">
+          <div className="card w-full p-6">
+            <div className="text-4xl">✅</div>
+            <h1 className="mt-2 text-2xl font-extrabold">복습 완료!</h1>
+            <p className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
+              오늘 복습할 게 다 끝났어.
+            </p>
+            <div className="mt-5">
+              <Link className="btn btn-primary focus-ring inline-flex w-full items-center justify-center" href="/progress">
+                진도 보기
+              </Link>
+            </div>
+            <div className="mt-3">
+              <Link className="btn btn-ghost focus-ring inline-flex w-full items-center justify-center" href="/">
+                홈으로
+              </Link>
+            </div>
+          </div>
+        </main>
+      );
+    }
+
     return (
       <main className="mx-auto flex min-h-[70vh] max-w-md flex-col items-center justify-center p-4 text-center">
         <div className="card w-full p-6">
@@ -140,11 +170,21 @@ export default function StudyClient() {
   return (
     <main className="mx-auto max-w-md p-4">
       <div className="mb-3 flex items-center justify-between">
-        <Link className="text-sm text-blue-600 underline" href="/">
-          ← 급수 선택
+        <Link className="text-sm text-blue-600 underline" href={reviewOnly ? "/progress" : "/"}>
+          ← {reviewOnly ? '진도' : '급수 선택'}
         </Link>
-        <div className="text-sm text-gray-600">
-          {grade} · {idx + 1}/{items.length}
+        <div className="flex items-center gap-2">
+          {reviewOnly && (
+            <span
+              className="inline-flex items-center rounded-full px-2 py-1 text-xs font-extrabold"
+              style={{ background: 'rgba(14,165,233,0.12)' }}
+            >
+              🔁 복습
+            </span>
+          )}
+          <div className="text-sm text-gray-600">
+            {grade} · {idx + 1}/{items.length}
+          </div>
         </div>
       </div>
 

@@ -58,7 +58,7 @@ export default function ProgressPage() {
       if (!best || due > best.due) best = { label, due };
     }
     const label = best?.label ?? '8급';
-    return `/study?grade=${encodeURIComponent(label)}&n=${dailyCount}`;
+    return `/study?grade=${encodeURIComponent(label)}&n=${dailyCount}&review=1`;
   }, [now]);
 
   return (
@@ -92,7 +92,7 @@ export default function ProgressPage() {
             복습 시작
           </Link>
         </div>
-        <div className="mt-2 text-xs text-gray-500">복습은 학습을 시작하면 자동으로 우선 출제돼.</div>
+        <div className="mt-2 text-xs text-gray-500">복습 모드는 복습 대기(due)만 출제돼.</div>
       </section>
 
       <section className="mt-6">

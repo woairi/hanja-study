@@ -4,7 +4,13 @@ import { initialProgress } from './srs';
 
 export type StudyPick = { items: KanjiItem[]; state: AppState };
 
-export function pickStudyItems(gradeLabel: GradeLabel, n: number, state: AppState, now: number): StudyPick {
+export function pickStudyItems(
+  gradeLabel: GradeLabel,
+  n: number,
+  state: AppState,
+  now: number,
+  opts?: { reviewOnly?: boolean }
+): StudyPick {
   const all = kanjiByGradeLabel(gradeLabel);
 
   const due: KanjiItem[] = [];
@@ -31,12 +37,15 @@ export function pickStudyItems(gradeLabel: GradeLabel, n: number, state: AppStat
     }
   }
 
+  // Review mode: only due items
   takeFrom(due);
-  takeFrom(fresh);
+  if (!opts?.reviewOnly) {
+    takeFrom(fresh);
 
-  if (picked.length < n) {
-    const pool = notMastered.filter((k) => !picked.some((p) => p.id === k.id));
-    takeFrom(pool);
+    if (picked.length < n) {
+      const pool = notMastered.filter((k) => !picked.some((p) => p.id === k.id));
+      takeFrom(pool);
+    }
   }
 
   // Ensure all picked have progress initialized
