@@ -27,6 +27,7 @@ export default function QuizClient() {
   const [chosen, setChosen] = useState<string | null>(null);
   const [locked, setLocked] = useState(false);
   const [feedback, setFeedback] = useState<{ correct: boolean; answer: string } | null>(null);
+  const [sparkleKey, setSparkleKey] = useState(0);
   const [answers, setAnswers] = useState<{ qid: string; correct: boolean; kanjiId: string }[]>([]);
 
   useEffect(() => {
@@ -102,7 +103,7 @@ export default function QuizClient() {
         </div>
       </div>
 
-      <div className="card p-4">
+      <div className={`card p-4 ${feedback?.correct ? 'pop' : ''}`}>
         <div className="text-sm text-gray-500">
           {q.kind === 'trap' ? '함정문제' : q.kind === 'meaning' ? '뜻' : '음'}
         </div>
@@ -132,8 +133,19 @@ export default function QuizClient() {
         </div>
 
         {feedback && (
-          <div className={`mt-3 rounded-md px-3 py-2 text-sm ${feedback.correct ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}`}>
-            {feedback.correct ? '정답!' : `오답. 정답: ${feedback.answer}`}
+          <div
+            className={`mt-3 rounded-2xl px-3 py-2 text-sm font-bold ${
+              feedback.correct ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'
+            }`}
+          >
+            <div className="flex items-center justify-between">
+              <div>{feedback.correct ? '정답!' : `오답. 정답: ${feedback.answer}`}</div>
+              {feedback.correct && (
+                <div key={sparkleKey} className="sparkle text-lg" aria-hidden>
+                  ✨
+                </div>
+              )}
+            </div>
           </div>
         )}
       </div>
@@ -164,6 +176,7 @@ export default function QuizClient() {
               const isCorrect = chosen === q.answer;
               setLocked(true);
               setFeedback({ correct: isCorrect, answer: q.answer });
+              if (isCorrect) setSparkleKey((k) => k + 1);
               setAnswers((a) => [...a, { qid: q.id, correct: isCorrect, kanjiId: q.kanjiId }]);
               commitResult(isCorrect, q.kanjiId);
 
