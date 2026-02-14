@@ -7,6 +7,8 @@
 ## [Unreleased]
 
 ### Added
+- Week2: confusables 자동 보강(급수 내 동음/부수/획수 기반 휴리스틱)
+- Week2: PWA manifest 기반 추가(installability 시작)
 - 함정문제용 `confusables` 스타터 세트 추가(초기 자형 혼동 그룹)
 - 퀴즈 정답/오답 즉시 피드백(0.7초 하이라이트 + 정답 표시)
 - 퀴즈 정답 시 미니 반짝(✨) 이펙트
