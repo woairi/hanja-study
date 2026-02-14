@@ -1,0 +1,17 @@
+import kanjiData from '@/data/kanji.json';
+import type { GradeLabel, KanjiItem } from './types';
+
+export const ALL_KANJI: KanjiItem[] = kanjiData as unknown as KanjiItem[];
+
+export const GRADE_LABELS: GradeLabel[] = ['8급', '7급', '7급Ⅱ', '6급', '6급Ⅱ', '5급'];
+
+export function kanjiByGradeLabel(label: GradeLabel): KanjiItem[] {
+  return ALL_KANJI.filter((k) => k.gradeLabel === label);
+}
+
+export function todayKey(d = new Date()): string {
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth() + 1).padStart(2, '0');
+  const dd = String(d.getDate()).padStart(2, '0');
+  return `${yyyy}-${mm}-${dd}`;
+}
