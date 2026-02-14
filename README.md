@@ -39,6 +39,11 @@ Vercel에서 GitHub 연동 후:
 - **Root Directory: `web`**
 - Build Command: `npm run build`
 
+## PWA (기반)
+
+- `/manifest.webmanifest` 제공
+- 홈 화면에 추가(설치) 가능하도록 metadata/아이콘 세팅
+
 ## 주요 화면
 
 - `/` : 급수 선택 + 오늘 목표(5/10/15자) + 스트릭
