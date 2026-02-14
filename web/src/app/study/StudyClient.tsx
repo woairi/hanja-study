@@ -7,10 +7,11 @@ import { ALL_KANJI } from '@/lib/kanji';
 import type { GradeLabel, KanjiItem } from '@/lib/types';
 import { bumpStreakOnStudy, loadState, saveState } from '@/lib/storage';
 import { pickStudyItems } from '@/lib/selection';
+import { loadLastSession, saveLastSession } from '@/lib/session';
 
 type StudySession = {
   gradeLabel: GradeLabel;
-  n: number;
+  n: 5 | 10 | 15;
   itemIds: string[];
   startedAt: number;
 };
@@ -31,24 +32,49 @@ export default function StudyClient() {
     const now = Date.now();
     let st = loadState();
 
-    // create new session
-    const pick = pickStudyItems(grade, n, st, now);
-    st = pick.state;
-    st = bumpStreakOnStudy(st);
-    saveState(st);
+    // resume if possible
+    const last = loadLastSession();
+    const wantResume = sp.get('resume') === '1';
 
-    setItems(pick.items);
-    setIdx(0);
+    let pickedItems: KanjiItem[] = [];
+    let startIdx = 0;
+
+    if (wantResume && last && last.mode === 'study' && last.gradeLabel === grade && last.n === n) {
+      const map = new Map(ALL_KANJI.map((k) => [k.id, k] as const));
+      pickedItems = last.itemIds.map((id) => map.get(id)).filter((x): x is KanjiItem => !!x);
+      startIdx = Math.min(last.idx, Math.max(0, pickedItems.length - 1));
+    } else {
+      const pick = pickStudyItems(grade, n, st, now);
+      st = pick.state;
+      pickedItems = pick.items;
+      startIdx = 0;
+      st = bumpStreakOnStudy(st);
+      saveState(st);
+    }
+
+    setItems(pickedItems);
+    setIdx(startIdx);
     setRevealed(false);
 
     const session: StudySession = {
       gradeLabel: grade,
       n,
-      itemIds: pick.items.map((x) => x.id),
+      itemIds: pickedItems.map((x) => x.id),
       startedAt: now,
     };
     window.sessionStorage.setItem(SESSION_KEY, JSON.stringify(session));
-  }, [grade, n]);
+
+    saveLastSession({
+      version: 1,
+      mode: 'study',
+      gradeLabel: grade,
+      n,
+      itemIds: pickedItems.map((x) => x.id),
+      idx: startIdx,
+      startedAt: now,
+      updatedAt: now,
+    });
+  }, [grade, n, sp]);
 
   const current = items[idx];
   const isDone = idx >= items.length;
@@ -78,7 +104,26 @@ export default function StudyClient() {
             이제 퀴즈로 가자.
           </p>
           <div className="mt-5">
-            <Link className="btn btn-primary focus-ring inline-flex w-full items-center justify-center" href={quizHref}>
+            <Link
+              className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
+              href={quizHref}
+              onClick={() => {
+                // switch to quiz resume mode
+                const raw = window.sessionStorage.getItem(SESSION_KEY);
+                if (!raw) return;
+                const s = JSON.parse(raw) as StudySession;
+                saveLastSession({
+                  version: 1,
+                  mode: 'quiz',
+                  gradeLabel: s.gradeLabel,
+                  n: s.n,
+                  itemIds: s.itemIds,
+                  qIdx: 0,
+                  startedAt: Date.now(),
+                  updatedAt: Date.now(),
+                });
+              }}
+            >
               퀴즈 시작
             </Link>
           </div>
@@ -139,7 +184,24 @@ export default function StudyClient() {
           className="btn btn-primary focus-ring flex-1"
           onClick={() => {
             setRevealed(false);
-            setIdx((i) => i + 1);
+            setIdx((i) => {
+              const next = i + 1;
+              // persist resume progress
+              const now = Date.now();
+              const prev = loadLastSession();
+              const startedAt = prev && prev.mode === 'study' ? prev.startedAt : now;
+              saveLastSession({
+                version: 1,
+                mode: 'study',
+                gradeLabel: grade,
+                n,
+                itemIds: items.map((x) => x.id),
+                idx: next,
+                startedAt,
+                updatedAt: now,
+              });
+              return next;
+            });
           }}
         >
           다음

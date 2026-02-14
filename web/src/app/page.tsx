@@ -7,6 +7,7 @@ import Modal from '@/components/Modal';
 import StickerBadge, { type Badge } from '@/components/StickerBadge';
 import { GRADE_LABELS, kanjiByGradeLabel } from '@/lib/kanji';
 import { loadState, saveState } from '@/lib/storage';
+import { loadLastSession, type LastSession } from '@/lib/session';
 import type { GradeLabel } from '@/lib/types';
 
 export default function HomePage() {
@@ -16,11 +17,13 @@ export default function HomePage() {
     lastStudyDate: null,
   });
   const [badgeModal, setBadgeModal] = useState<Badge | null>(null);
+  const [lastSession, setLastSession] = useState<LastSession | null>(null);
 
   useEffect(() => {
     const st = loadState();
     setDailyCount(st.settings.dailyCount);
     setStreak(st.streak);
+    setLastSession(loadLastSession());
   }, []);
 
   useEffect(() => {
@@ -66,6 +69,27 @@ export default function HomePage() {
           어문회 8급~5급 · 키즈 모드
         </p>
       </header>
+
+      {lastSession && (
+        <section className="card mb-3 p-4">
+          <div className="flex items-center justify-between">
+            <div>
+              <div className="text-sm" style={{ color: 'var(--muted)' }}>
+                이어하기
+              </div>
+              <div className="text-base font-extrabold">
+                {lastSession.gradeLabel} · {lastSession.mode === 'study' ? '학습' : '퀴즈'}
+              </div>
+            </div>
+            <Link className="btn btn-primary focus-ring inline-flex items-center justify-center" href="/resume">
+              이어하기
+            </Link>
+          </div>
+          <div className="mt-2 text-xs" style={{ color: 'var(--muted)' }}>
+            (MVP) 이 기기에서만 이어할 수 있어.
+          </div>
+        </section>
+      )}
 
       <section className="card mb-4 p-4">
         <div className="flex items-center justify-between">

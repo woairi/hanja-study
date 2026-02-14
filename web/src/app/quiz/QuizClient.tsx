@@ -8,10 +8,11 @@ import type { GradeLabel, KanjiItem } from '@/lib/types';
 import { loadState, saveState } from '@/lib/storage';
 import { applyAnswer } from '@/lib/srs';
 import { makeQuiz, type QuizQuestion } from '@/lib/quiz';
+import { loadLastSession, saveLastSession, clearLastSession } from '@/lib/session';
 
 type StudySession = {
   gradeLabel: GradeLabel;
-  n: number;
+  n: 5 | 10 | 15;
   itemIds: string[];
   startedAt: number;
 };
@@ -42,12 +43,28 @@ export default function QuizClient() {
 
     const pool = kanjiByGradeLabel(session.gradeLabel);
     setQuestions(makeQuiz(items, pool));
-    setQIdx(0);
+
+    const last = loadLastSession();
+    const wantResume = sp.get('resume') === '1';
+    const startQ = wantResume && last && last.mode === 'quiz' && last.gradeLabel === session.gradeLabel && last.n === session.n ? last.qIdx : 0;
+
+    setQIdx(startQ);
     setChosen(null);
     setLocked(false);
     setFeedback(null);
     setAnswers([]);
-  }, [grade]);
+
+    saveLastSession({
+      version: 1,
+      mode: 'quiz',
+      gradeLabel: session.gradeLabel,
+      n: session.n,
+      itemIds: session.itemIds,
+      qIdx: startQ,
+      startedAt: last && last.mode === 'quiz' ? last.startedAt : Date.now(),
+      updatedAt: Date.now(),
+    });
+  }, [grade, sp]);
 
   const q = questions[qIdx];
   const done = questions.length > 0 && qIdx >= questions.length;
@@ -72,6 +89,8 @@ export default function QuizClient() {
   }
 
   if (done) {
+    // finished → clear resume marker
+    clearLastSession();
     return (
       <main className="mx-auto flex min-h-[70vh] max-w-md flex-col items-center justify-center p-4 text-center">
         <div className="card w-full p-6">
@@ -217,7 +236,28 @@ export default function QuizClient() {
                 setFeedback(null);
                 setLocked(false);
                 setChosen(null);
-                setQIdx((i) => i + 1);
+                setQIdx((i) => {
+                  const next = i + 1;
+                  const raw = window.sessionStorage.getItem(SESSION_KEY);
+                  if (raw) {
+                    const session = JSON.parse(raw) as StudySession;
+                    const now = Date.now();
+                    saveLastSession({
+                      version: 1,
+                      mode: 'quiz',
+                      gradeLabel: session.gradeLabel,
+                      n: session.n,
+                      itemIds: session.itemIds,
+                      qIdx: next,
+                      startedAt: (() => {
+                        const prev = loadLastSession();
+                        return prev && prev.mode === 'quiz' ? prev.startedAt : now;
+                      })(),
+                      updatedAt: now,
+                    });
+                  }
+                  return next;
+                });
               }, 1200);
             }}
           >
