@@ -43,6 +43,7 @@ Vercel에서 GitHub 연동 후:
 
 - `/manifest.webmanifest` 제공
 - 홈 화면에 추가(설치) 가능하도록 metadata/아이콘 세팅
+- 오프라인 상태를 감지해 상단 배너로 안내(학습은 계속 가능)
 
 ## 주요 화면
 
