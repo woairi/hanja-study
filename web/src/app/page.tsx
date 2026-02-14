@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import Dino from '@/components/Dino';
+import Modal from '@/components/Modal';
 import StickerBadge, { type Badge } from '@/components/StickerBadge';
 import { GRADE_LABELS, kanjiByGradeLabel } from '@/lib/kanji';
 import { loadState, saveState } from '@/lib/storage';
@@ -14,6 +15,7 @@ export default function HomePage() {
     count: 0,
     lastStudyDate: null,
   });
+  const [badgeModal, setBadgeModal] = useState<Badge | null>(null);
 
   useEffect(() => {
     const st = loadState();
@@ -44,9 +46,14 @@ export default function HomePage() {
       { id: 'first', label: '첫 공부', emoji: '🦖', achieved: seenCount > 0 },
       { id: 'streak3', label: '연속 3일', emoji: '⭐', achieved: streakCount >= 3 },
       { id: 'streak7', label: '연속 7일', emoji: '🌈', achieved: streakCount >= 7 },
-      { id: 'quiz50', label: '50문제', emoji: '🏅', achieved: false },
     ];
   }, []);
+
+  const badgeDesc: Record<string, string> = {
+    first: '첫 한자를 공부했어! 시작이 반이야.',
+    streak3: '3일 연속 성공! 꾸준함이 실력이야.',
+    streak7: '7일 연속 성공! 공룡처럼 강해지고 있어.',
+  };
 
   return (
     <main className="mx-auto max-w-md p-4">
@@ -83,8 +90,8 @@ export default function HomePage() {
         </div>
 
         <div className="mt-3 flex flex-wrap gap-2">
-          {badges.slice(0, 3).map((b) => (
-            <StickerBadge key={b.id} badge={b} />
+          {badges.map((b) => (
+            <StickerBadge key={b.id} badge={b} onClick={(bb) => setBadgeModal(bb)} />
           ))}
         </div>
       </section>
@@ -103,6 +110,24 @@ export default function HomePage() {
           안내
         </Link>
       </div>
+
+      <Modal
+        open={!!badgeModal}
+        title={badgeModal ? `${badgeModal.emoji} ${badgeModal.label}` : '뱃지'}
+        onClose={() => setBadgeModal(null)}
+      >
+        <div className="space-y-2">
+          <div>{badgeModal ? badgeDesc[badgeModal.id] : ''}</div>
+          {badgeModal && (
+            <div className="text-sm">
+              상태:{' '}
+              <span className={badgeModal.achieved ? 'font-extrabold text-green-700' : 'font-extrabold text-gray-600'}>
+                {badgeModal.achieved ? '달성!' : '아직 미달성'}
+              </span>
+            </div>
+          )}
+        </div>
+      </Modal>
     </main>
   );
 }
@@ -110,20 +135,46 @@ export default function HomePage() {
 function GradeCard(props: { label: GradeLabel; total: number; mastered: number; dailyCount: number }) {
   const { label, total, mastered, dailyCount } = props;
   const pct = total ? Math.round((mastered / total) * 100) : 0;
+  const dino = gradeDino(label);
 
   return (
-    <Link
-      href={`/study?grade=${encodeURIComponent(label)}&n=${dailyCount}`}
-      className="card p-3 active:scale-[0.99]"
-    >
+    <Link href={`/study?grade=${encodeURIComponent(label)}&n=${dailyCount}`} className="card p-3 active:scale-[0.99]">
       <div className="flex items-center justify-between">
-        <div className="text-lg font-bold">{label}</div>
-        <div className="text-xs text-gray-500">{pct}%</div>
+        <div className="text-lg font-extrabold">{label}</div>
+        <div className="flex items-center gap-2">
+          <span aria-hidden className="text-lg">
+            {dino}
+          </span>
+          <div className="text-xs" style={{ color: 'var(--muted)' }}>
+            {pct}%
+          </div>
+        </div>
       </div>
-      <div className="mt-2 text-sm text-gray-600">마스터 {mastered}/{total}</div>
+      <div className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
+        마스터 {mastered}/{total}
+      </div>
       <div className="mt-2 h-2 w-full rounded bg-gray-200">
-        <div className="h-2 rounded bg-blue-600" style={{ width: `${pct}%` }} />
+        <div className="h-2 rounded" style={{ width: `${pct}%`, background: 'linear-gradient(180deg, var(--primary), var(--primary-600))' }} />
       </div>
     </Link>
   );
+}
+
+function gradeDino(label: GradeLabel): string {
+  switch (label) {
+    case '8급':
+      return '🥚';
+    case '7급':
+      return '🦕';
+    case '7급Ⅱ':
+      return '🦖';
+    case '6급':
+      return '🦖✨';
+    case '6급Ⅱ':
+      return '🐲';
+    case '5급':
+      return '👑🦖';
+    default:
+      return '🦖';
+  }
 }
