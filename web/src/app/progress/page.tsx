@@ -60,7 +60,7 @@ export default function ProgressPage() {
         ))}
       </section>
 
-      <section className="mt-4 rounded-lg border p-3">
+      <section className="card mt-4 p-3">
         <div className="text-sm text-gray-700">
           복습 대기: <span className="font-semibold">{totalDue}</span>개
         </div>
@@ -95,7 +95,7 @@ function GradeRow(props: { label: GradeLabel; total: number; seen: number; maste
   const { label, total, seen, mastered, due } = props;
   const pct = total ? Math.round((mastered / total) * 100) : 0;
   return (
-    <div className="rounded-lg border p-3">
+    <div className="card p-3">
       <div className="flex items-center justify-between">
         <div className="text-lg font-bold">{label}</div>
         <div className="text-xs text-gray-500">마스터 {pct}%</div>

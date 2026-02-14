@@ -93,7 +93,7 @@ export default function StudyClient() {
         </div>
       </div>
 
-      <div className="rounded-xl border p-6 text-center">
+      <div className="card p-6 text-center">
         <div className="text-6xl font-black tracking-wide">{current.hanja}</div>
         <div className="mt-4">
           {revealed ? (
@@ -105,7 +105,7 @@ export default function StudyClient() {
             </>
           ) : (
             <button
-              className="rounded bg-gray-900 px-4 py-2 text-white"
+              className="btn btn-primary focus-ring"
               onClick={() => setRevealed(true)}
             >
               뜻/음 보기
@@ -116,7 +116,7 @@ export default function StudyClient() {
 
       <div className="mt-4 flex gap-2">
         <button
-          className="flex-1 rounded border px-4 py-2"
+          className="btn btn-ghost focus-ring flex-1"
           onClick={() => {
             setRevealed(false);
             setIdx((i) => Math.max(0, i - 1));
@@ -126,7 +126,7 @@ export default function StudyClient() {
           이전
         </button>
         <button
-          className="flex-1 rounded bg-blue-600 px-4 py-2 text-white"
+          className="btn btn-primary focus-ring flex-1"
           onClick={() => {
             setRevealed(false);
             setIdx((i) => i + 1);

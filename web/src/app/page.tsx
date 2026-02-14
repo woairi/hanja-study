@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
+import Dino from '@/components/Dino';
 import { GRADE_LABELS, kanjiByGradeLabel } from '@/lib/kanji';
 import { loadState, saveState } from '@/lib/storage';
 import type { GradeLabel } from '@/lib/types';
@@ -37,18 +38,24 @@ export default function HomePage() {
   return (
     <main className="mx-auto max-w-md p-4">
       <header className="mb-4">
-        <h1 className="text-2xl font-bold">한자 공부</h1>
-        <p className="text-sm text-gray-600">어문회 8급~5급 (모바일 우선)</p>
+        <div className="flex items-end justify-between">
+          <h1 className="text-2xl font-extrabold tracking-tight">한자 공부</h1>
+          <Dino className="text-2xl" />
+        </div>
+        <p className="text-sm" style={{ color: 'var(--muted)' }}>
+          어문회 8급~5급 · 키즈 모드
+        </p>
       </header>
 
-      <section className="mb-4 rounded-lg border p-3">
+      <section className="card mb-4 p-4">
         <div className="flex items-center justify-between">
           <div>
             <div className="text-sm text-gray-600">오늘 목표</div>
             <div className="text-lg font-semibold">{dailyCount}자</div>
           </div>
           <select
-            className="rounded-md border px-3 py-2"
+            className="focus-ring rounded-2xl border-2 px-3 py-2 font-semibold"
+            style={{ borderColor: 'rgba(2,132,199,0.18)', background: 'rgba(255,255,255,0.8)' }}
             value={dailyCount}
             onChange={(e) => setDailyCount(Number(e.target.value) as 5 | 10 | 15)}
           >
@@ -88,7 +95,7 @@ function GradeCard(props: { label: GradeLabel; total: number; mastered: number; 
   return (
     <Link
       href={`/study?grade=${encodeURIComponent(label)}&n=${dailyCount}`}
-      className="rounded-lg border p-3 shadow-sm active:scale-[0.99]"
+      className="card p-3 active:scale-[0.99]"
     >
       <div className="flex items-center justify-between">
         <div className="text-lg font-bold">{label}</div>

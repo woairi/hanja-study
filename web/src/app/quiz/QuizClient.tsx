@@ -99,7 +99,7 @@ export default function QuizClient() {
         </div>
       </div>
 
-      <div className="rounded-xl border p-4">
+      <div className="card p-4">
         <div className="text-sm text-gray-500">
           {q.kind === 'trap' ? '함정문제' : q.kind === 'meaning' ? '뜻' : '음'}
         </div>
@@ -136,7 +136,7 @@ export default function QuizClient() {
 
       <div className="mt-4 flex gap-2">
         <button
-          className="flex-1 rounded border px-4 py-2"
+          className="btn btn-ghost focus-ring flex-1"
           onClick={() => {
             if (locked) return;
             setChosen(null);
@@ -147,7 +147,7 @@ export default function QuizClient() {
           이전
         </button>
         <button
-          className="flex-1 rounded bg-blue-600 px-4 py-2 text-white disabled:opacity-50"
+          className="btn btn-primary focus-ring flex-1 disabled:opacity-50"
           disabled={!chosen || locked}
           onClick={() => {
             if (!q || !chosen) return;
