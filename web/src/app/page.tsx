@@ -142,7 +142,7 @@ function GradeCard(props: { label: GradeLabel; total: number; mastered: number; 
       <div className="flex items-center justify-between">
         <div className="text-lg font-extrabold">{label}</div>
         <div className="flex items-center gap-2">
-          <span aria-hidden className="text-lg">
+          <span aria-hidden className="text-base" style={{ opacity: 0.9 }}>
             {dino}
           </span>
           <div className="text-xs" style={{ color: 'var(--muted)' }}>
@@ -161,6 +161,7 @@ function GradeCard(props: { label: GradeLabel; total: number; mastered: number; 
 }
 
 function gradeDino(label: GradeLabel): string {
+  // Keep exactly ONE icon per grade for visual simplicity.
   switch (label) {
     case '8급':
       return '🥚';
@@ -169,11 +170,11 @@ function gradeDino(label: GradeLabel): string {
     case '7급Ⅱ':
       return '🦖';
     case '6급':
-      return '🦖✨';
+      return '🦖';
     case '6급Ⅱ':
       return '🐲';
     case '5급':
-      return '👑🦖';
+      return '👑';
     default:
       return '🦖';
   }
