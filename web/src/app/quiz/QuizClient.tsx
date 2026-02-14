@@ -28,6 +28,7 @@ export default function QuizClient() {
   const [locked, setLocked] = useState(false);
   const [feedback, setFeedback] = useState<{ correct: boolean; answer: string } | null>(null);
   const [sparkleKey, setSparkleKey] = useState(0);
+  const [confettiKey, setConfettiKey] = useState(0);
   const [answers, setAnswers] = useState<{ qid: string; correct: boolean; kanjiId: string }[]>([]);
 
   useEffect(() => {
@@ -103,6 +104,18 @@ export default function QuizClient() {
         </div>
       </div>
 
+      <div className="mb-3">
+        <div className="h-2 w-full rounded-full bg-white/60">
+          <div
+            className="h-2 rounded-full"
+            style={{
+              width: `${Math.round(((qIdx + 1) / questions.length) * 100)}%`,
+              background: 'linear-gradient(180deg, var(--primary), var(--primary-600))',
+            }}
+          />
+        </div>
+      </div>
+
       <div className={`card p-4 ${feedback?.correct ? 'pop' : ''}`}>
         <div className="text-sm">
           <span
@@ -150,11 +163,18 @@ export default function QuizClient() {
           >
             <div className="flex items-center justify-between">
               <div>{feedback.correct ? '정답!' : `오답. 정답: ${feedback.answer}`}</div>
-              {feedback.correct && (
-                <div key={sparkleKey} className="sparkle text-lg" aria-hidden>
-                  ✨
-                </div>
-              )}
+              <div className="flex items-center gap-2">
+                {feedback.correct && (
+                  <>
+                    <div key={confettiKey} className="confetti text-lg" aria-hidden>
+                      🎉
+                    </div>
+                    <div key={sparkleKey} className="sparkle text-lg" aria-hidden>
+                      ✨
+                    </div>
+                  </>
+                )}
+              </div>
             </div>
           </div>
         )}
@@ -186,7 +206,10 @@ export default function QuizClient() {
               const isCorrect = chosen === q.answer;
               setLocked(true);
               setFeedback({ correct: isCorrect, answer: q.answer });
-              if (isCorrect) setSparkleKey((k) => k + 1);
+              if (isCorrect) {
+                setConfettiKey((k) => k + 1);
+                setSparkleKey((k) => k + 1);
+              }
               setAnswers((a) => [...a, { qid: q.id, correct: isCorrect, kanjiId: q.kanjiId }]);
               commitResult(isCorrect, q.kanjiId);
 
