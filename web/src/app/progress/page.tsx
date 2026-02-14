@@ -2,12 +2,14 @@
 
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
+import Toast from '@/components/Toast';
 import { ALL_KANJI, GRADE_LABELS, kanjiByGradeLabel } from '@/lib/kanji';
 import { loadState } from '@/lib/storage';
 import type { GradeLabel } from '@/lib/types';
 
 export default function ProgressPage() {
   const [now, setNow] = useState(Date.now());
+  const [toast, setToast] = useState<string | null>(null);
 
   useEffect(() => {
     const t = setInterval(() => setNow(Date.now()), 10_000);
@@ -63,6 +65,7 @@ export default function ProgressPage() {
 
   return (
     <main className="mx-auto max-w-md p-4">
+      {toast && <Toast text={toast} onDone={() => setToast(null)} />}
       <div className="mb-3 flex items-center justify-between">
         <Link className="text-sm text-blue-600 underline" href="/">
           ← 홈
@@ -83,7 +86,13 @@ export default function ProgressPage() {
             복습 대기: <span className="font-semibold">{totalDue}</span>개
           </div>
           <Link
-            href={reviewLink}
+            href={totalDue > 0 ? reviewLink : '#'}
+            onClick={(e) => {
+              if (totalDue <= 0) {
+                e.preventDefault();
+                setToast('복습 대기가 없어! 🎉');
+              }
+            }}
             className={`btn btn-primary focus-ring inline-flex items-center justify-center px-4 py-2 ${
               totalDue > 0 ? '' : 'opacity-70'
             }`}
