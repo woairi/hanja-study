@@ -25,6 +25,8 @@ export default function QuizClient() {
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
   const [qIdx, setQIdx] = useState(0);
   const [chosen, setChosen] = useState<string | null>(null);
+  const [locked, setLocked] = useState(false);
+  const [feedback, setFeedback] = useState<{ correct: boolean; answer: string } | null>(null);
   const [answers, setAnswers] = useState<{ qid: string; correct: boolean; kanjiId: string }[]>([]);
 
   useEffect(() => {
@@ -38,6 +40,11 @@ export default function QuizClient() {
 
     const pool = kanjiByGradeLabel(session.gradeLabel);
     setQuestions(makeQuiz(items, pool));
+    setQIdx(0);
+    setChosen(null);
+    setLocked(false);
+    setFeedback(null);
+    setAnswers([]);
   }, [grade]);
 
   const q = questions[qIdx];
@@ -101,10 +108,17 @@ export default function QuizClient() {
         <div className="mt-4 grid grid-cols-1 gap-2">
           {q.options.map((o) => {
             const selected = chosen === o.value;
+            const isCorrectOption = feedback && o.value === q.answer;
+            const isWrongPicked = feedback && selected && o.value !== q.answer;
             return (
               <button
                 key={o.value}
-                className={`rounded border px-3 py-3 text-left ${selected ? 'border-blue-600 bg-blue-50' : ''}`}
+                disabled={locked}
+                className={`rounded border px-3 py-3 text-left transition-colors disabled:opacity-100 ${
+                  selected ? 'border-blue-600 bg-blue-50' : ''
+                } ${isCorrectOption ? 'border-green-600 bg-green-50' : ''} ${
+                  isWrongPicked ? 'border-red-600 bg-red-50' : ''
+                }`}
                 onClick={() => setChosen(o.value)}
               >
                 {o.text}
@@ -112,32 +126,46 @@ export default function QuizClient() {
             );
           })}
         </div>
+
+        {feedback && (
+          <div className={`mt-3 rounded-md px-3 py-2 text-sm ${feedback.correct ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}`}>
+            {feedback.correct ? '정답!' : `오답. 정답: ${feedback.answer}`}
+          </div>
+        )}
       </div>
 
       <div className="mt-4 flex gap-2">
         <button
           className="flex-1 rounded border px-4 py-2"
           onClick={() => {
+            if (locked) return;
             setChosen(null);
             setQIdx((i) => Math.max(0, i - 1));
           }}
-          disabled={qIdx === 0}
+          disabled={qIdx === 0 || locked}
         >
           이전
         </button>
         <button
           className="flex-1 rounded bg-blue-600 px-4 py-2 text-white disabled:opacity-50"
-          disabled={!chosen}
+          disabled={!chosen || locked}
           onClick={() => {
-            if (!q) return;
+            if (!q || !chosen) return;
             const isCorrect = chosen === q.answer;
+            setLocked(true);
+            setFeedback({ correct: isCorrect, answer: q.answer });
             setAnswers((a) => [...a, { qid: q.id, correct: isCorrect, kanjiId: q.kanjiId }]);
             commitResult(isCorrect, q.kanjiId);
-            setChosen(null);
-            setQIdx((i) => i + 1);
+
+            window.setTimeout(() => {
+              setFeedback(null);
+              setLocked(false);
+              setChosen(null);
+              setQIdx((i) => i + 1);
+            }, 700);
           }}
         >
-          다음
+          확인
         </button>
       </div>
 

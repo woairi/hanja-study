@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
-import { GRADE_LABELS, kanjiByGradeLabel } from '@/lib/kanji';
+import { ALL_KANJI, GRADE_LABELS, kanjiByGradeLabel } from '@/lib/kanji';
 import { loadState } from '@/lib/storage';
 import type { GradeLabel } from '@/lib/types';
 
@@ -36,6 +36,14 @@ export default function ProgressPage() {
       .slice(0, 10);
   }, [now]);
 
+  const totalDue = useMemo(() => {
+    const st = loadState();
+    return ALL_KANJI.filter((k) => {
+      const p = st.progress[k.id];
+      return p && !p.mastered && p.nextReviewAt <= now;
+    }).length;
+  }, [now]);
+
   return (
     <main className="mx-auto max-w-md p-4">
       <div className="mb-3 flex items-center justify-between">
@@ -52,16 +60,32 @@ export default function ProgressPage() {
         ))}
       </section>
 
+      <section className="mt-4 rounded-lg border p-3">
+        <div className="text-sm text-gray-700">
+          복습 대기: <span className="font-semibold">{totalDue}</span>개
+        </div>
+        <div className="mt-2 text-xs text-gray-500">복습은 각 급수에서 학습을 시작하면 자동으로 우선 출제돼.</div>
+      </section>
+
       <section className="mt-6">
         <h2 className="text-base font-semibold">취약 TOP 10</h2>
         <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm text-gray-700">
           {weak.map((w) => (
             <li key={w.id}>
-              <span className="font-mono">{w.id}</span> · 오답 {w.wrong} / 정답 {w.correct}
+              {(() => {
+                const k = ALL_KANJI.find((x) => x.id === w.id);
+                if (!k) return <span className="font-mono">{w.id}</span>;
+                return (
+                  <span>
+                    <span className="font-semibold">{k.hanja}</span> {k.meaning} {k.reading}{' '}
+                    <span className="text-gray-500">({k.gradeLabel})</span>
+                  </span>
+                );
+              })()}
+              {' '}· 오답 {w.wrong} / 정답 {w.correct}
             </li>
           ))}
         </ol>
-        <p className="mt-2 text-xs text-gray-500">(MVP) ID만 표시. 다음 버전에서 한자/뜻/음으로 보여줄게.</p>
       </section>
     </main>
   );

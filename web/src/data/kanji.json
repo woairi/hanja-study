@@ -85,7 +85,9 @@
     "meaning": "계집",
     "radical": "女",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "好"
+    ]
   },
   {
     "id": "8-009",
@@ -107,7 +109,10 @@
     "meaning": "큰",
     "radical": "大",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "太",
+      "犬"
+    ]
   },
   {
     "id": "8-011",
@@ -151,7 +156,9 @@
     "meaning": "어미",
     "radical": "毋",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "每"
+    ]
   },
   {
     "id": "8-015",
@@ -162,7 +169,11 @@
     "meaning": "나무",
     "radical": "木",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "本",
+      "末",
+      "未"
+    ]
   },
   {
     "id": "8-016",
@@ -195,7 +206,9 @@
     "meaning": "흰",
     "radical": "白",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "百"
+    ]
   },
   {
     "id": "8-019",
@@ -239,7 +252,9 @@
     "meaning": "메",
     "radical": "山",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "出"
+    ]
   },
   {
     "id": "8-023",
@@ -250,7 +265,10 @@
     "meaning": "석",
     "radical": "一",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "二",
+      "一"
+    ]
   },
   {
     "id": "8-024",
@@ -261,7 +279,9 @@
     "meaning": "날",
     "radical": "生",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "牛"
+    ]
   },
   {
     "id": "8-025",
@@ -294,7 +314,9 @@
     "meaning": "작을",
     "radical": "小",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "少"
+    ]
   },
   {
     "id": "8-028",
@@ -305,7 +327,10 @@
     "meaning": "물",
     "radical": "水",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "氷",
+      "永"
+    ]
   },
   {
     "id": "8-029",
@@ -349,7 +374,9 @@
     "meaning": "임금",
     "radical": "玉",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "玉"
+    ]
   },
   {
     "id": "8-033",
@@ -371,7 +398,9 @@
     "meaning": "달",
     "radical": "月",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "用"
+    ]
   },
   {
     "id": "8-035",
@@ -382,7 +411,10 @@
     "meaning": "두",
     "radical": "二",
     "totalStrokes": 2,
-    "confusables": []
+    "confusables": [
+      "三",
+      "一"
+    ]
   },
   {
     "id": "8-036",
@@ -393,7 +425,10 @@
     "meaning": "사람",
     "radical": "人",
     "totalStrokes": 2,
-    "confusables": []
+    "confusables": [
+      "入",
+      "八"
+    ]
   },
   {
     "id": "8-037",
@@ -404,7 +439,10 @@
     "meaning": "한",
     "radical": "一",
     "totalStrokes": 1,
-    "confusables": []
+    "confusables": [
+      "二",
+      "三"
+    ]
   },
   {
     "id": "8-038",
@@ -415,7 +453,10 @@
     "meaning": "날",
     "radical": "日",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "口",
+      "目"
+    ]
   },
   {
     "id": "8-039",
@@ -448,7 +489,9 @@
     "meaning": "가운데",
     "radical": "丨",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "申"
+    ]
   },
   {
     "id": "8-042",
@@ -492,7 +535,9 @@
     "meaning": "흙",
     "radical": "土",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "士"
+    ]
   },
   {
     "id": "8-046",
@@ -503,7 +548,10 @@
     "meaning": "여덟",
     "radical": "八",
     "totalStrokes": 2,
-    "confusables": []
+    "confusables": [
+      "人",
+      "入"
+    ]
   },
   {
     "id": "8-047",
@@ -536,7 +584,9 @@
     "meaning": "형",
     "radical": "儿",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "克"
+    ]
   },
   {
     "id": "8-050",
@@ -547,7 +597,9 @@
     "meaning": "불",
     "radical": "火",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "灬"
+    ]
   },
   {
     "id": "7-001",
@@ -569,7 +621,10 @@
     "meaning": "입",
     "radical": "口",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "日",
+      "目"
+    ]
   },
   {
     "id": "7-003",
@@ -723,7 +778,9 @@
     "meaning": "일백",
     "radical": "白",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "白"
+    ]
   },
   {
     "id": "7-017",
@@ -767,7 +824,9 @@
     "meaning": "저녁",
     "radical": "夕",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "多"
+    ]
   },
   {
     "id": "7-021",
@@ -778,7 +837,9 @@
     "meaning": "적을",
     "radical": "小",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "小"
+    ]
   },
   {
     "id": "7-022",
@@ -888,7 +949,10 @@
     "meaning": "들",
     "radical": "入",
     "totalStrokes": 2,
-    "confusables": []
+    "confusables": [
+      "人",
+      "八"
+    ]
   },
   {
     "id": "7-032",
@@ -976,7 +1040,9 @@
     "meaning": "일천",
     "radical": "十",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "干"
+    ]
   },
   {
     "id": "7-040",
@@ -998,7 +1064,9 @@
     "meaning": "내",
     "radical": "巛",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "州"
+    ]
   },
   {
     "id": "7-042",
@@ -1053,7 +1121,9 @@
     "meaning": "날[生]",
     "radical": "凵",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "山"
+    ]
   },
   {
     "id": "7-047",
@@ -1262,7 +1332,9 @@
     "meaning": "힘",
     "radical": "力",
     "totalStrokes": 2,
-    "confusables": []
+    "confusables": [
+      "刀"
+    ]
   },
   {
     "id": "7급Ⅱ-016",
@@ -1284,7 +1356,9 @@
     "meaning": "매양",
     "radical": "毋",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "母"
+    ]
   },
   {
     "id": "7급Ⅱ-018",
@@ -1350,7 +1424,10 @@
     "meaning": "윗",
     "radical": "一",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "下",
+      "止"
+    ]
   },
   {
     "id": "7급Ⅱ-024",
@@ -1383,7 +1460,9 @@
     "meaning": "손",
     "radical": "手",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "才"
+    ]
   },
   {
     "id": "7급Ⅱ-027",
@@ -1438,7 +1517,9 @@
     "meaning": "낮",
     "radical": "十",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "牛"
+    ]
   },
   {
     "id": "7급Ⅱ-032",
@@ -1449,7 +1530,9 @@
     "meaning": "오를",
     "radical": "口",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "左"
+    ]
   },
   {
     "id": "7급Ⅱ-033",
@@ -1526,7 +1609,9 @@
     "meaning": "바를",
     "radical": "止",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "止"
+    ]
   },
   {
     "id": "7급Ⅱ-040",
@@ -1548,7 +1633,9 @@
     "meaning": "왼",
     "radical": "工",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "右"
+    ]
   },
   {
     "id": "7급Ⅱ-042",
@@ -1581,7 +1668,10 @@
     "meaning": "아래",
     "radical": "一",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "上",
+      "止"
+    ]
   },
   {
     "id": "7급Ⅱ-045",
@@ -1790,7 +1880,9 @@
     "meaning": "많을",
     "radical": "夕",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "夕"
+    ]
   },
   {
     "id": "6-014",
@@ -1889,7 +1981,10 @@
     "meaning": "눈",
     "radical": "目",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "口",
+      "日"
+    ]
   },
   {
     "id": "6-023",
@@ -1977,7 +2072,11 @@
     "meaning": "근본",
     "radical": "木",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "木",
+      "末",
+      "未"
+    ]
   },
   {
     "id": "6-031",
@@ -2186,7 +2285,10 @@
     "meaning": "길",
     "radical": "水",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "水",
+      "氷"
+    ]
   },
   {
     "id": "6-050",
@@ -2230,7 +2332,10 @@
     "meaning": "말미암을",
     "radical": "田",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "田",
+      "甲"
+    ]
   },
   {
     "id": "6-054",
@@ -2373,7 +2478,10 @@
     "meaning": "클",
     "radical": "大",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "大",
+      "犬"
+    ]
   },
   {
     "id": "6-067",
@@ -2615,7 +2723,9 @@
     "meaning": "이제",
     "radical": "人",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "令"
+    ]
   },
   {
     "id": "6급Ⅱ-014",
@@ -3044,7 +3154,9 @@
     "meaning": "쓸",
     "radical": "用",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "月"
+    ]
   },
   {
     "id": "6급Ⅱ-053",
@@ -3121,7 +3233,9 @@
     "meaning": "재주",
     "radical": "手",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "手"
+    ]
   },
   {
     "id": "6급Ⅱ-060",
@@ -3649,7 +3763,9 @@
     "meaning": "하여금",
     "radical": "人",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "今"
+    ]
   },
   {
     "id": "5-033",
@@ -3682,7 +3798,11 @@
     "meaning": "끝",
     "radical": "木",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "木",
+      "本",
+      "未"
+    ]
   },
   {
     "id": "5-036",
@@ -3781,7 +3901,10 @@
     "meaning": "얼음",
     "radical": "水",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "水",
+      "永"
+    ]
   },
   {
     "id": "5-045",
@@ -4001,7 +4124,9 @@
     "meaning": "소",
     "radical": "牛",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "生"
+    ]
   },
   {
     "id": "5-065",
@@ -4188,7 +4313,9 @@
     "meaning": "그칠",
     "radical": "止",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "正"
+    ]
   },
   {
     "id": "5-082",
