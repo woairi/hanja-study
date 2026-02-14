@@ -12,6 +12,7 @@ import type { GradeLabel } from '@/lib/types';
 
 export default function HomePage() {
   const [dailyCount, setDailyCount] = useState<5 | 10 | 15>(5);
+  const [lastGrade, setLastGrade] = useState<GradeLabel>('8급');
   const [streak, setStreak] = useState<{ count: number; lastStudyDate: string | null }>({
     count: 0,
     lastStudyDate: null,
@@ -22,6 +23,7 @@ export default function HomePage() {
   useEffect(() => {
     const st = loadState();
     setDailyCount(st.settings.dailyCount);
+    setLastGrade((st.settings.lastGradeLabel as GradeLabel) || '8급');
     setStreak(st.streak);
     setLastSession(loadLastSession());
   }, []);
@@ -29,8 +31,9 @@ export default function HomePage() {
   useEffect(() => {
     const st = loadState();
     st.settings.dailyCount = dailyCount;
+    st.settings.lastGradeLabel = lastGrade;
     saveState(st);
-  }, [dailyCount]);
+  }, [dailyCount, lastGrade]);
 
   const gradeSummaries = useMemo(() => {
     const st = loadState();
@@ -94,6 +97,26 @@ export default function HomePage() {
         </section>
       )}
 
+      <section className="card mb-3 p-4">
+        <div className="flex items-center justify-between">
+          <div>
+            <div className="text-sm" style={{ color: 'var(--muted)' }}>
+              오늘의 학습
+            </div>
+            <div className="text-base font-extrabold">{lastGrade} · {dailyCount}자</div>
+          </div>
+          <Link
+            className="btn btn-primary focus-ring inline-flex items-center justify-center"
+            href={`/study?grade=${encodeURIComponent(lastGrade)}&n=${dailyCount}`}
+          >
+            시작!
+          </Link>
+        </div>
+        <div className="mt-2 text-xs" style={{ color: 'var(--muted)' }}>
+          마지막으로 선택한 급수로 바로 시작해.
+        </div>
+      </section>
+
       <section className="card mb-4 p-4">
         <div className="flex items-center justify-between">
           <div>
@@ -125,7 +148,14 @@ export default function HomePage() {
 
       <section className="grid grid-cols-2 gap-3">
         {gradeSummaries.map(({ label, total, mastered }) => (
-          <GradeCard key={label} label={label as GradeLabel} total={total} mastered={mastered} dailyCount={dailyCount} />
+          <GradeCard
+            key={label}
+            label={label as GradeLabel}
+            total={total}
+            mastered={mastered}
+            dailyCount={dailyCount}
+            onPickGrade={(g) => setLastGrade(g)}
+          />
         ))}
       </section>
 
@@ -159,13 +189,23 @@ export default function HomePage() {
   );
 }
 
-function GradeCard(props: { label: GradeLabel; total: number; mastered: number; dailyCount: number }) {
-  const { label, total, mastered, dailyCount } = props;
+function GradeCard(props: {
+  label: GradeLabel;
+  total: number;
+  mastered: number;
+  dailyCount: number;
+  onPickGrade: (g: GradeLabel) => void;
+}) {
+  const { label, total, mastered, dailyCount, onPickGrade } = props;
   const pct = total ? Math.round((mastered / total) * 100) : 0;
   const dino = gradeDino(label);
 
   return (
-    <Link href={`/study?grade=${encodeURIComponent(label)}&n=${dailyCount}`} className="card p-3 active:scale-[0.99]">
+    <Link
+      href={`/study?grade=${encodeURIComponent(label)}&n=${dailyCount}`}
+      onClick={() => onPickGrade(label)}
+      className="card p-3 active:scale-[0.99]"
+    >
       <div className="flex items-center justify-between">
         <div className="text-lg font-extrabold">{label}</div>
         <div className="flex items-center gap-2">

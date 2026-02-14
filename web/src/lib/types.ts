@@ -24,6 +24,7 @@ export type AppState = {
   version: 1;
   settings: {
     dailyCount: 5 | 10 | 15;
+    lastGradeLabel?: GradeLabel;
   };
   streak: {
     count: number;
