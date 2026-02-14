@@ -104,10 +104,15 @@ export default function QuizClient() {
       </div>
 
       <div className={`card p-4 ${feedback?.correct ? 'pop' : ''}`}>
-        <div className="text-sm text-gray-500">
-          {q.kind === 'trap' ? '함정문제' : q.kind === 'meaning' ? '뜻' : '음'}
+        <div className="text-sm">
+          <span
+            className="inline-flex items-center gap-1 rounded-full px-3 py-1 font-extrabold"
+            style={{ background: 'rgba(14,165,233,0.12)', color: 'var(--text)' }}
+          >
+            {q.kind === 'trap' ? '🪤 함정' : q.kind === 'meaning' ? '💡 뜻' : '🔊 음'}
+          </span>
         </div>
-        <div className="mt-2 text-lg font-semibold">{q.prompt}</div>
+        <div className="mt-3 text-xl font-extrabold">{q.prompt}</div>
 
         <div className="mt-4 grid grid-cols-1 gap-2">
           {q.options.map((o) => {
@@ -118,15 +123,20 @@ export default function QuizClient() {
               <button
                 key={o.value}
                 disabled={locked}
-                className={`focus-ring rounded-2xl border-2 px-4 py-4 text-left text-lg font-semibold transition-colors disabled:opacity-100 ${
-                  selected ? 'border-blue-600 bg-blue-50' : ''
+                className={`focus-ring rounded-2xl border-2 px-4 py-4 text-left text-lg font-extrabold transition-colors disabled:opacity-100 ${
+                  selected ? 'border-blue-600 bg-blue-50 pop' : ''
                 } ${isCorrectOption ? 'border-green-600 bg-green-50' : ''} ${
                   isWrongPicked ? 'border-red-600 bg-red-50' : ''
                 }`}
                 style={{ borderColor: 'rgba(2,132,199,0.18)' }}
                 onClick={() => setChosen(o.value)}
               >
-                {o.text}
+                <div className="flex items-center justify-between gap-3">
+                  <span>{o.text}</span>
+                  {selected && !feedback && <span aria-hidden className="text-xl">✅</span>}
+                  {isCorrectOption && feedback && <span aria-hidden className="text-xl">✅</span>}
+                  {isWrongPicked && feedback && <span aria-hidden className="text-xl">❌</span>}
+                </div>
               </button>
             );
           })}
