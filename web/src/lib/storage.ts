@@ -10,6 +10,7 @@ export function defaultState(): AppState {
     version: 1,
     settings: { dailyCount: 5 },
     streak: { count: 0, lastStudyDate: null },
+    stats: { quizAnswered: 0 },
     progress: {},
   };
 }
@@ -26,6 +27,7 @@ export function loadState(): AppState {
       ...parsed,
       settings: { ...defaultState().settings, ...(parsed.settings || {}) },
       streak: { ...defaultState().streak, ...(parsed.streak || {}) },
+      stats: { ...defaultState().stats, ...(parsed.stats || {}) },
       progress: parsed.progress || {},
     };
   } catch {

@@ -77,6 +77,7 @@ export default function QuizClient() {
     const prev = st.progress[kanjiId];
     if (!prev) return;
     st.progress[kanjiId] = applyAnswer(prev, isCorrect, now);
+    st.stats.quizAnswered = (st.stats.quizAnswered || 0) + 1;
     saveState(st);
   }
 

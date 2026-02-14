@@ -45,10 +45,12 @@ export default function HomePage() {
     const st = loadState();
     const streakCount = st.streak.count;
     const seenCount = Object.keys(st.progress || {}).length;
+    const quizAnswered = st.stats?.quizAnswered || 0;
     return [
       { id: 'first', label: '첫 공부', emoji: '🦖', achieved: seenCount > 0 },
       { id: 'streak3', label: '연속 3일', emoji: '⭐', achieved: streakCount >= 3 },
       { id: 'streak7', label: '연속 7일', emoji: '🌈', achieved: streakCount >= 7 },
+      { id: 'quiz50', label: '퀴즈 50문제', emoji: '🏅', achieved: quizAnswered >= 50 },
     ];
   }, []);
 
@@ -56,6 +58,7 @@ export default function HomePage() {
     first: '첫 한자를 공부했어! 시작이 반이야.',
     streak3: '3일 연속 성공! 꾸준함이 실력이야.',
     streak7: '7일 연속 성공! 공룡처럼 강해지고 있어.',
+    quiz50: '퀴즈 50문제 돌파! 실력이 쑥쑥.',
   };
 
   return (

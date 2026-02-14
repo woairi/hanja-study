@@ -29,5 +29,8 @@ export type AppState = {
     count: number;
     lastStudyDate: string | null; // YYYY-MM-DD
   };
+  stats: {
+    quizAnswered: number;
+  };
   progress: Record<string, KanjiProgress>; // key: KanjiItem.id
 };
