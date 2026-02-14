@@ -70,13 +70,23 @@ export default function StudyClient() {
 
   if (isDone) {
     return (
-      <main className="mx-auto max-w-md p-4">
-        <h1 className="text-xl font-bold">학습 완료</h1>
-        <p className="mt-2 text-sm text-gray-600">이제 퀴즈로 가자.</p>
-        <div className="mt-4">
-          <Link className="inline-block rounded bg-blue-600 px-4 py-2 text-white" href={quizHref}>
-            퀴즈 시작
-          </Link>
+      <main className="mx-auto flex min-h-[70vh] max-w-md flex-col items-center justify-center p-4 text-center">
+        <div className="card w-full p-6">
+          <div className="text-4xl">🎉</div>
+          <h1 className="mt-2 text-2xl font-extrabold">학습 완료!</h1>
+          <p className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
+            이제 퀴즈로 가자.
+          </p>
+          <div className="mt-5">
+            <Link className="btn btn-primary focus-ring inline-flex w-full items-center justify-center" href={quizHref}>
+              퀴즈 시작
+            </Link>
+          </div>
+          <div className="mt-3">
+            <Link className="btn btn-ghost focus-ring inline-flex w-full items-center justify-center" href="/">
+              홈으로
+            </Link>
+          </div>
         </div>
       </main>
     );
