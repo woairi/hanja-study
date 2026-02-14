@@ -27,6 +27,7 @@ npm run dev
 ```bash
 cd web
 npm run lint
+npm run check:data
 npm run build
 npm run start
 ```

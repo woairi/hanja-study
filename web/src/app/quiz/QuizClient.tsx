@@ -233,6 +233,7 @@ export default function QuizClient() {
               setAnswers((a) => [...a, { qid: q.id, correct: isCorrect, kanjiId: q.kanjiId }]);
               commitResult(isCorrect, q.kanjiId);
 
+              const delayMs = isCorrect ? 1000 : 1700;
               window.setTimeout(() => {
                 setFeedback(null);
                 setLocked(false);
@@ -259,7 +260,7 @@ export default function QuizClient() {
                   }
                   return next;
                 });
-              }, 1200);
+              }, delayMs);
             }}
           >
             확인
