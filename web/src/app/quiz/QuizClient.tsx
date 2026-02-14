@@ -218,7 +218,7 @@ export default function QuizClient() {
                 setLocked(false);
                 setChosen(null);
                 setQIdx((i) => i + 1);
-              }, 700);
+              }, 1200);
             }}
           >
             확인
