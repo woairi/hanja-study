@@ -44,6 +44,23 @@ export default function ProgressPage() {
     }).length;
   }, [now]);
 
+  const reviewLink = useMemo(() => {
+    const st = loadState();
+    const dailyCount = st.settings.dailyCount;
+    // pick the grade with the most due items; if none due, pick the first grade.
+    let best: { label: GradeLabel; due: number } | null = null;
+    for (const label of GRADE_LABELS) {
+      const items = kanjiByGradeLabel(label);
+      const due = items.filter((k) => {
+        const p = st.progress[k.id];
+        return p && !p.mastered && p.nextReviewAt <= now;
+      }).length;
+      if (!best || due > best.due) best = { label, due };
+    }
+    const label = best?.label ?? '8급';
+    return `/study?grade=${encodeURIComponent(label)}&n=${dailyCount}`;
+  }, [now]);
+
   return (
     <main className="mx-auto max-w-md p-4">
       <div className="mb-3 flex items-center justify-between">
@@ -61,10 +78,21 @@ export default function ProgressPage() {
       </section>
 
       <section className="card mt-4 p-3">
-        <div className="text-sm text-gray-700">
-          복습 대기: <span className="font-semibold">{totalDue}</span>개
+        <div className="flex items-center justify-between gap-3">
+          <div className="text-sm text-gray-700">
+            복습 대기: <span className="font-semibold">{totalDue}</span>개
+          </div>
+          <Link
+            href={reviewLink}
+            className={`btn btn-primary focus-ring inline-flex items-center justify-center px-4 py-2 ${
+              totalDue > 0 ? '' : 'opacity-70'
+            }`}
+            aria-disabled={totalDue <= 0}
+          >
+            복습 시작
+          </Link>
         </div>
-        <div className="mt-2 text-xs text-gray-500">복습은 각 급수에서 학습을 시작하면 자동으로 우선 출제돼.</div>
+        <div className="mt-2 text-xs text-gray-500">복습은 학습을 시작하면 자동으로 우선 출제돼.</div>
       </section>
 
       <section className="mt-6">
