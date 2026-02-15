@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useEffect, useMemo, useState } from 'react';
 import Toast from '@/components/Toast';
 import { Button } from '@/components/ui/Button';
@@ -9,14 +10,28 @@ import { ALL_KANJI, GRADE_LABELS, kanjiByGradeLabel } from '@/lib/kanji';
 import { loadState } from '@/lib/storage';
 import type { GradeLabel } from '@/lib/types';
 
+const LEGACY_HINT_DISMISSED_KEY = 'hanja-study:progress:legacyHintDismissed:v1';
+
 export default function ProgressPage() {
+  const router = useRouter();
+
   const [now, setNow] = useState(Date.now());
   const [toast, setToast] = useState<string | null>(null);
   const [period, setPeriod] = useState<'week' | 'month'>('week');
+  const [legacyHintDismissed, setLegacyHintDismissed] = useState(false);
+  const [forceLegacy, setForceLegacy] = useState(false);
 
   useEffect(() => {
     const t = setInterval(() => setNow(Date.now()), 10_000);
     return () => clearInterval(t);
+  }, []);
+
+  useEffect(() => {
+    const raw = window.localStorage.getItem(LEGACY_HINT_DISMISSED_KEY);
+    setLegacyHintDismissed(raw === '1');
+
+    const qs = new URLSearchParams(window.location.search);
+    setForceLegacy(qs.get('legacy') === '1');
   }, []);
 
   const summary = useMemo(() => {
@@ -68,6 +83,13 @@ export default function ProgressPage() {
       isLegacyNoDaily: quizAnsweredAllTime > 0 && !hasDaily,
     };
   }, [now, period]);
+
+  useEffect(() => {
+    if (!summary.isLegacyNoDaily) return;
+    if (!legacyHintDismissed) return;
+    if (forceLegacy) return;
+    router.replace('/');
+  }, [summary.isLegacyNoDaily, legacyHintDismissed, forceLegacy, router]);
 
   const rows = useMemo(() => {
     const st = loadState();
@@ -268,7 +290,7 @@ export default function ProgressPage() {
         <div className="flex items-center justify-between gap-3">
           <div className="flex items-center gap-2">
             <h2 className="text-base font-semibold">요약</h2>
-            {summary.isLegacyNoDaily && (
+            {summary.isLegacyNoDaily && (!legacyHintDismissed || forceLegacy) && (
               <span
                 className="rounded-full px-2 py-0.5 text-[11px] font-extrabold"
                 style={{ background: 'rgba(250, 204, 21, 0.25)', color: 'rgba(161, 98, 7, 0.95)' }}
@@ -348,7 +370,7 @@ export default function ProgressPage() {
           </Card>
         </div>
 
-        {summary.isLegacyNoDaily && (
+        {summary.isLegacyNoDaily && (!legacyHintDismissed || forceLegacy) && (
           <Card className="mt-3 p-4">
             <div className="text-sm font-extrabold">주간/월간 기록이 아직 없어</div>
             <div className="mt-1 text-sm" style={{ color: 'var(--muted)' }}>
@@ -363,13 +385,29 @@ export default function ProgressPage() {
               </Link>
               <Link
                 className="btn btn-ghost focus-ring inline-flex w-full items-center justify-center"
+                href="/progress/export"
+              >
+                먼저 백업(내보내기)
+              </Link>
+              <Link
+                className="btn btn-ghost focus-ring inline-flex w-full items-center justify-center"
                 href="/quiz/session"
               >
                 퀴즈로 기록 만들기
               </Link>
+              <Button
+                variant="ghost"
+                onClick={() => {
+                  window.localStorage.setItem(LEGACY_HINT_DISMISSED_KEY, '1');
+                  setLegacyHintDismissed(true);
+                  router.replace('/');
+                }}
+              >
+                다시 보지 않기
+              </Button>
             </div>
             <div className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>
-              한 번만 풀면 다음부터 요약 카드가 채워져!
+              한 번만 풀면 다음부터 요약 카드가 채워져! (다시 보려면 <span className="font-extrabold">/progress?legacy=1</span>)
             </div>
           </Card>
         )}
