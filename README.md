@@ -47,19 +47,25 @@ Vercel에서 GitHub 연동 후:
 
 ## 주요 화면
 
-- `/` : 급수 선택 + 오늘 목표(5/10/15자) + 스트릭
+- `/` : 오늘 할 일(Primary CTA) + 접기(목표/뱃지/급수)
 - `/study?grade=7급Ⅱ&n=10` : 학습 카드
 - `/quiz` : 퀴즈(20% 함정문제)
 - `/progress` : 진도/복습대기/취약 TOP
+- `/about?debug=1` : (디버그) 로컬 사용 로그(telemetry) 보기/초기화
 
 ## 데이터
 
 현재 데이터는 `data/kanji_8_to_5.json` (웹용 복사본: `web/src/data/kanji.json`)에 포함.
 
+### 디버그(로컬)
+- `telemetry`는 **서버로 전송되지 않고**, 이 기기 localStorage에만 카운트로 저장됩니다.
+- 확인/초기화: `/about?debug=1`
+
 필드(요약):
-- `gradeLabel`: `8급|7급|7급Ⅱ|6급|6급Ⅱ|5급`
+- `gradeLabel`: `8급|7급|7급Ⅱ|6급|6급Ⅱ|5급|4급|4급Ⅱ`
 - `hanja`, `reading`, `meaning`, `radical`, `totalStrokes`
-- `confusables`: 함정문제 품질을 위한 후보(현재는 대부분 비어있음)
+- `confusables`: 함정문제 품질을 위한 후보(현재는 자동/수동 보강 중)
+- `exampleWord`, `exampleMeaning`: 예시 단어(학습/오답 피드백에 표시)
 
 ## Roadmap (다음 작업)
 
