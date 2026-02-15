@@ -334,6 +334,26 @@ export default function QuizClient() {
               {(() => {
                 const k = ALL_KANJI.find((x) => x.id === q.kanjiId);
                 if (!k) return null;
+                const conf = (k.confusables || []).slice(0, 4).join(' ');
+
+                if (feedback.correct) {
+                  return (
+                    <div className="text-xs">
+                      <div>
+                        <span className="font-extrabold">{k.hanja}</span> = {k.meaning} {k.reading}
+                      </div>
+                      {k.exampleWord ? (
+                        <div className="mt-1">
+                          예: <span className="font-extrabold">{k.exampleWord}</span>
+                        </div>
+                      ) : null}
+                      {q.kind === 'trap' && conf ? (
+                        <div className="mt-1">헷갈리기: <span className="font-extrabold">{conf}</span></div>
+                      ) : null}
+                    </div>
+                  );
+                }
+
                 return (
                   <div>
                     <div>
@@ -345,9 +365,9 @@ export default function QuizClient() {
                         {k.exampleMeaning ? ` · ${k.exampleMeaning}` : ''}
                       </div>
                     ) : null}
-                    {q.kind === 'trap' && (k.confusables || []).length > 0 ? (
+                    {q.kind === 'trap' && conf ? (
                       <div className="mt-1">
-                        헷갈리기: <span className="font-extrabold">{(k.confusables || []).slice(0, 4).join(' ')}</span>
+                        헷갈리기: <span className="font-extrabold">{conf}</span>
                       </div>
                     ) : null}
                   </div>
