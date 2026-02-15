@@ -35,12 +35,20 @@ export default function SettingsPage() {
 
   const [showOnboardingConfirm, setShowOnboardingConfirm] = useState<null | { resetNickname: boolean }>(null);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
+  const [resetAck, setResetAck] = useState(false);
+  const [resetText, setResetText] = useState('');
 
   useEffect(() => {
     if (!savedToast) return;
     const t = window.setTimeout(() => setSavedToast(false), 1400);
     return () => window.clearTimeout(t);
   }, [savedToast]);
+
+  useEffect(() => {
+    if (showResetConfirm) return;
+    setResetAck(false);
+    setResetText('');
+  }, [showResetConfirm]);
 
   function save() {
     setError(null);
@@ -85,6 +93,8 @@ export default function SettingsPage() {
     clearAllLocalState();
     router.push('/');
   }
+
+  const canResetAll = resetAck && resetText.trim().toUpperCase() === 'RESET';
 
   return (
     <main className="mx-auto max-w-md p-4">
@@ -226,22 +236,54 @@ export default function SettingsPage() {
       {/* Reset confirm */}
       {showResetConfirm && (
         <Modal open={true} title="정말 초기화할까?" onClose={() => setShowResetConfirm(false)}>
-          <div>
-            아래 데이터가 전부 삭제돼: 학습 진행(정답/오답/복습 일정), 스트릭, 퀴즈 통계, 최근 세션/이어하기, 화면 UI 저장값.
-            <br />
-            (한자 데이터 파일은 그대로야)
+          <div className="space-y-3 text-sm">
+            <p>
+              아래 데이터가 전부 삭제돼: 학습 진행(정답/오답/복습 일정), 스트릭, 퀴즈 통계, 최근 세션/이어하기, 화면 UI 저장값.
+            </p>
+            <p style={{ color: 'var(--muted)' }}>
+              한자 데이터 파일/PWA 설치 상태는 그대로 남아. 이 작업은 되돌릴 수 없어.
+            </p>
+
+            <label className="flex items-start gap-2 rounded-2xl border-2 p-3" style={{ borderColor: 'rgba(2,132,199,0.16)' }}>
+              <input
+                type="checkbox"
+                className="mt-1 h-4 w-4"
+                checked={resetAck}
+                onChange={(e) => setResetAck(e.target.checked)}
+                aria-label="초기화 복구 불가 동의"
+              />
+              <span className="text-xs">삭제 후 복구할 수 없다는 걸 이해했어.</span>
+            </label>
+
+            <div>
+              <div className="text-xs font-extrabold" style={{ color: 'var(--muted)' }}>
+                확인을 위해 <span className="font-black">RESET</span> 을 입력해줘
+              </div>
+              <input
+                className="focus-ring mt-2 w-full rounded-2xl border-2 px-3 py-3 text-sm font-extrabold"
+                style={{ borderColor: 'rgba(2,132,199,0.18)', background: 'rgba(255,255,255,0.85)' }}
+                value={resetText}
+                onChange={(e) => setResetText(e.target.value)}
+                placeholder="RESET"
+                autoCapitalize="characters"
+                spellCheck={false}
+                aria-label="초기화 확인 입력"
+              />
+            </div>
           </div>
+
           <div className="mt-4 flex w-full items-center justify-end gap-2">
             <Button variant="ghost" onClick={() => setShowResetConfirm(false)}>
               취소
             </Button>
             <Button
+              disabled={!canResetAll}
               onClick={() => {
                 setShowResetConfirm(false);
                 resetAll();
               }}
             >
-              초기화
+              초기화 실행
             </Button>
           </div>
         </Modal>
