@@ -76,6 +76,11 @@ export default function ResultClient() {
   }, [grade, score, total]);
 
   const hasWrong = wrongItems.length > 0;
+  const reviewCount = Math.min(10, dueCountInGrade);
+  const primaryHref = hasWrong
+    ? `/quiz/${encodeURIComponent(quizId)}?grade=${encodeURIComponent(grade)}&retry=1`
+    : `/study?grade=${encodeURIComponent(grade)}&n=${10}&review=1`;
+  const primaryLabel = hasWrong ? '오답 다시풀기' : `복습 ${reviewCount}개 더 하기`;
 
   if (!payload) {
     return (
@@ -182,33 +187,15 @@ export default function ResultClient() {
         </div>
 
         <div className="mt-5 flex flex-col gap-2">
-          {hasWrong ? (
-            <Link
-              className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
-              href={`/quiz/${encodeURIComponent(quizId)}?grade=${encodeURIComponent(grade)}&retry=1`}
-              onClick={() => {
-                logEvent('quiz_retry_click', { grade, wrong: wrongItems.length });
-                window.sessionStorage.setItem(QUIZ_RETRY_KEY, JSON.stringify(wrongItems.map((w) => w.id)));
-              }}
-            >
-              오답 다시풀기
-            </Link>
-          ) : (
-            <Link
-              className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
-              href={`/study?grade=${encodeURIComponent(grade)}&n=${10}&review=1`}
-              onClick={() => logEvent('post_done_more_review_click', { grade, due: dueCountInGrade })}
-            >
-              복습 {Math.min(10, dueCountInGrade)}개 더 하기
-            </Link>
-          )}
-
           <Link
             className="btn btn-ghost focus-ring inline-flex w-full items-center justify-center"
             href={`/study?grade=${encodeURIComponent(grade)}&n=${10}`}
             onClick={() => logEvent('quiz_next_mission_click', { grade })}
           >
             다음 미션 가기
+          </Link>
+          <Link className="btn btn-ghost focus-ring inline-flex w-full items-center justify-center" href="/">
+            홈으로
           </Link>
         </div>
       </Card>
@@ -299,6 +286,25 @@ export default function ResultClient() {
 
       <div className="mt-2 text-center text-xs" style={{ color: 'var(--muted)' }}>
         정답/오답은 자동으로 복습 일정에 반영돼.
+      </div>
+
+      <div className="fixed inset-x-0 bottom-0 z-20 border-t" style={{ background: 'rgba(240,249,255,0.94)', borderColor: 'rgba(2,132,199,0.12)' }}>
+        <div className="mx-auto w-full max-w-md p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
+          <Link
+            className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
+            href={primaryHref}
+            onClick={() => {
+              if (hasWrong) {
+                logEvent('quiz_retry_click', { grade, wrong: wrongItems.length });
+                window.sessionStorage.setItem(QUIZ_RETRY_KEY, JSON.stringify(wrongItems.map((w) => w.id)));
+                return;
+              }
+              logEvent('post_done_more_review_click', { grade, due: dueCountInGrade });
+            }}
+          >
+            {primaryLabel}
+          </Link>
+        </div>
       </div>
     </main>
   );
