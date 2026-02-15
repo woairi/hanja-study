@@ -1,0 +1,64 @@
+/*
+  Design tokens
+  - Keep tokens CSS-variable based so they work with Tailwind + plain CSS.
+  - Prefer semantic tokens (bg/surface/text/...) over raw palette names.
+*/
+
+:root {
+  /* color */
+  --color-bg: #f0f9ff; /* sky-50 */
+  --color-surface: #ffffff;
+  --color-text: #0f172a; /* slate-900 */
+  --color-muted: #475569; /* slate-600 */
+
+  /* legacy aliases (keep existing inline styles working while we migrate) */
+  --bg: var(--color-bg);
+  --surface: var(--color-surface);
+  --text: var(--color-text);
+  --muted: var(--color-muted);
+
+  --color-primary: #0ea5e9; /* sky-500 */
+  --color-primary-strong: #0284c7; /* sky-600 */
+  --primary: var(--color-primary);
+  --primary-600: var(--color-primary-strong);
+
+  --color-success: #22c55e;
+  --color-danger: #ef4444;
+
+  --color-ring: rgba(14, 165, 233, 0.35);
+  --ring: var(--color-ring);
+
+  /* radius */
+  --radius-card: 18px;
+  --radius-btn: 16px;
+
+  /* spacing (4pt grid) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+
+  /* typography */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #07121a;
+    --color-surface: #0b1b26;
+    --color-text: #e5e7eb;
+    --color-muted: #94a3b8;
+
+    --color-primary: #38bdf8; /* sky-400 */
+    --color-primary-strong: #0ea5e9;
+
+    --color-ring: rgba(56, 189, 248, 0.35);
+  }
+}

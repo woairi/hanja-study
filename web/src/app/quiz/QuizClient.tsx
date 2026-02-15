@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
+import { Card } from '@/components/ui/Card';
 import { ALL_KANJI, kanjiByGradeLabel } from '@/lib/kanji';
 import type { GradeLabel, KanjiItem } from '@/lib/types';
 import { loadState, saveState } from '@/lib/storage';
@@ -186,7 +187,7 @@ export default function QuizClient() {
 
     return (
       <main className="mx-auto flex min-h-[70vh] max-w-md flex-col items-center justify-center p-4 text-center">
-        <div className="card w-full p-6">
+        <Card className="w-full p-6">
           <div className="text-4xl">🏁</div>
           <h1 className="mt-2 text-2xl font-extrabold">퀴즈 끝!</h1>
           <p className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
@@ -242,7 +243,7 @@ export default function QuizClient() {
               홈으로
             </Link>
           </div>
-        </div>
+        </Card>
       </main>
     );
   }
@@ -270,7 +271,7 @@ export default function QuizClient() {
         </div>
       </div>
 
-      <div className={`card p-4 ${feedback?.correct ? 'pop' : ''}`}>
+      <Card className={`p-4 ${feedback?.correct ? 'pop' : ''}`}>
         <div className="text-sm">
           <span
             className="inline-flex items-center gap-1 rounded-full px-3 py-1 font-extrabold"
@@ -316,7 +317,7 @@ export default function QuizClient() {
             }`}
           >
             <div className="flex items-center justify-between">
-              <div>{feedback.correct ? '정답!' : `오답. 정답: ${feedback.answer}`}</div>
+              <div>{feedback.correct ? '정답!' : `오답. 정답: ` + String(feedback.answer)}</div>
               <div className="flex items-center gap-2">
                 {feedback.correct && (
                   <>
@@ -376,7 +377,7 @@ export default function QuizClient() {
             </div>
           </div>
         )}
-      </div>
+      </Card>
 
       <div className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>
         정답/오답은 자동으로 복습 일정에 반영돼.
@@ -384,7 +385,7 @@ export default function QuizClient() {
 
       {/* bottom bar */}
       <div className="fixed inset-x-0 bottom-0 mx-auto max-w-md p-4">
-        <div className="card flex gap-2 p-3">
+        <Card className="flex gap-2 p-3">
           <button
             className="btn btn-ghost focus-ring flex-1"
             onClick={() => {
@@ -448,7 +449,7 @@ export default function QuizClient() {
           >
             확인
           </button>
-        </div>
+        </Card>
       </div>
     </main>
   );

@@ -67,6 +67,8 @@
 
 ### Changed
 - 진행률 카드/버튼 스타일을 둥글고 두툼한 키즈 UI로 통일
+- FE: 디자인 토큰(color/spacing/radius/type) 기반으로 globals 정리 + Card/Button 공통 컴포넌트 도입(점진적 치환)
+- FE: prefers-reduced-motion(reduce)에서 학습/퀴즈 이펙트 애니메이션 비활성화
 
 ## [0.1.0] - 2026-02-14
 

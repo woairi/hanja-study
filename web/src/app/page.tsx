@@ -5,6 +5,8 @@ import { useEffect, useMemo, useState } from 'react';
 import Dino from '@/components/Dino';
 import Modal from '@/components/Modal';
 import StickerBadge, { type Badge } from '@/components/StickerBadge';
+import { Button } from '@/components/ui/Button';
+import { Card } from '@/components/ui/Card';
 import { GRADE_LABELS, kanjiByGradeLabel } from '@/lib/kanji';
 import { loadState, saveState } from '@/lib/storage';
 import { loadLastSession, type LastSession } from '@/lib/session';
@@ -183,48 +185,42 @@ export default function HomePage() {
             🔥 연속 {streak.count}일 · 🎯 목표 {dailyCount}자 · 🔁 복습 {reviewInfo.totalDue}개
           </div>
           <div className="flex items-center gap-2">
-            <button
-              type="button"
-              className="btn btn-ghost focus-ring px-3 py-2 text-xs"
-              onClick={() => setShowGoals((v) => !v)}
-            >
+            <Button variant="ghost" size="sm" onClick={() => setShowGoals((v) => !v)}>
               목표/뱃지 {showGoals ? '▴' : '▾'}
-            </button>
-            <button
-              type="button"
-              className="btn btn-ghost focus-ring px-3 py-2 text-xs"
-              onClick={() => setShowGrades((v) => !v)}
-            >
+            </Button>
+            <Button variant="ghost" size="sm" onClick={() => setShowGrades((v) => !v)}>
               급수 {showGrades ? '▴' : '▾'}
-            </button>
+            </Button>
           </div>
         </div>
       </header>
 
       {/* Primary CTA (Hero) */}
-      <section className="card mb-3 p-4">
-        <div className="flex items-center justify-between gap-4">
-          <div>
-            <div className="text-sm font-extrabold" style={{ color: 'var(--muted)' }}>
-              {primary.title}
+      <section className="mb-3">
+        <Card className="p-4">
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <div className="text-sm font-extrabold" style={{ color: 'var(--muted)' }}>
+                {primary.title}
+              </div>
+              <div className="mt-1 text-base font-extrabold">{primary.subtitle}</div>
+              <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
+                {primary.kind === 'resume'
+                  ? '(바로 이어서 계속)'
+                  : primary.kind === 'review'
+                    ? '복습부터 하면 기억이 더 잘 남아.'
+                    : '오늘 분량만 딱 끝내자.'}
+              </div>
             </div>
-            <div className="mt-1 text-base font-extrabold">{primary.subtitle}</div>
-            <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
-              {primary.kind === 'resume'
-                ? '(바로 이어서 계속)'
-                : primary.kind === 'review'
-                  ? '복습부터 하면 기억이 더 잘 남아.'
-                  : '오늘 분량만 딱 끝내자.'}
-            </div>
+            <Link
+              className="btn btn-primary focus-ring inline-flex items-center justify-center"
+              href={primary.href}
+              onClick={() => logEvent('home_primary_click', { kind: primary.kind, href: primary.href })}
+            >
+              {primary.cta}
+            </Link>
           </div>
-          <Link
-            className="btn btn-primary focus-ring inline-flex items-center justify-center"
-            href={primary.href}
-            onClick={() => logEvent('home_primary_click', { kind: primary.kind, href: primary.href })}
-          >
-            {primary.cta}
-          </Link>
-        </div>
+        </Card>
       </section>
 
       {/* Today actions (Secondary) */}
@@ -233,7 +229,7 @@ export default function HomePage() {
           const cls = `card p-3 ${a.disabled ? 'opacity-70' : 'active:scale-[0.99]'}`;
           if (a.disabled) {
             return (
-              <div key={a.title} className={cls} aria-disabled>
+              <Card key={a.title} className={cls.replace('card ', '')} aria-disabled>
                 <div className="text-lg" aria-hidden>
                   {a.icon}
                 </div>
@@ -241,7 +237,7 @@ export default function HomePage() {
                 <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
                   {a.subtitle}
                 </div>
-              </div>
+              </Card>
             );
           }
 
@@ -266,8 +262,9 @@ export default function HomePage() {
 
       {/* Collapsible: goals/badges */}
       {showGoals && (
-        <section className="card mb-3 p-4">
-          <div className="flex items-center justify-between">
+        <section className="mb-3">
+          <Card className="p-4">
+            <div className="flex items-center justify-between">
             <div>
               <div className="text-sm" style={{ color: 'var(--muted)' }}>
                 오늘 목표
@@ -284,27 +281,29 @@ export default function HomePage() {
               <option value={10}>10자</option>
               <option value={15}>15자</option>
             </select>
-          </div>
+            </div>
 
-          <div className="mt-3 text-sm">
-            <span className="font-bold">연속 학습:</span> {streak.count}일
-          </div>
+            <div className="mt-3 text-sm">
+              <span className="font-bold">연속 학습:</span> {streak.count}일
+            </div>
 
-          <div className="mt-3 flex flex-wrap gap-2">
-            {badges.map((b) => (
-              <StickerBadge key={b.id} badge={b} onClick={(bb) => setBadgeModal(bb)} />
-            ))}
-          </div>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {badges.map((b) => (
+                <StickerBadge key={b.id} badge={b} onClick={(bb) => setBadgeModal(bb)} />
+              ))}
+            </div>
+          </Card>
         </section>
       )}
 
       {/* Collapsible: grades */}
       {showGrades && (
-        <section className="card mb-3 p-4">
-          <div className="text-sm font-extrabold" style={{ color: 'var(--muted)' }}>
-            급수 선택
-          </div>
-          <div className="mt-3 grid grid-cols-2 gap-3">
+        <section className="mb-3">
+          <Card className="p-4">
+            <div className="text-sm font-extrabold" style={{ color: 'var(--muted)' }}>
+              급수 선택
+            </div>
+            <div className="mt-3 grid grid-cols-2 gap-3">
             {gradeSummaries.map(({ label, total, mastered }) => (
               <GradeCard
                 key={label}
@@ -315,7 +314,8 @@ export default function HomePage() {
                 onPickGrade={(g) => setLastGrade(g)}
               />
             ))}
-          </div>
+            </div>
+          </Card>
         </section>
       )}
 
