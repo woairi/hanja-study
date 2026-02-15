@@ -21,6 +21,7 @@
 - Week2(FE polish): /quiz/result 직접 진입/새로고침 시 “결과 없음” 가드 UI + 홈/퀴즈 CTA
 - Week4(FE): 퀴즈 결과 최근값 localStorage fallback + TTL(24h) 적용(새로고침/직접 진입 시 결과 복원, 만료 자동 정리)
 - Week4(FE): 설정 > 학습 기록 전체 초기화에 2단 안전장치 추가(복구불가 동의 체크 + `RESET` 입력)
+- Week4(FE): 설정 화면에 저장 상태 요약(학습 기록 수/최근 학습일/퀴즈 결과 캐시) 추가 + 홈 설정 진입 링크 접근성 라벨 개선
 - Week4(QE): 실기기 QA 게이트(v1) 및 D+1~D+10 실행표 문서화(`docs/qe.md`)
 - Week2(FE polish): /progress에서 레거시 사용자(stats.daily 없음) 안내 배지/가이드 카드 추가
 - Week3: 오답 시 한자=뜻+음(짧은 설명) 표시

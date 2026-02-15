@@ -194,8 +194,13 @@ export default function HomePage() {
         </div>
 
         <div className="mt-2 flex items-center gap-2 overflow-x-auto pb-1">
-          <Link href="/settings" className="shrink-0 text-xs font-extrabold underline" style={{ color: 'var(--muted)' }}>
-            설정
+          <Link
+            href="/settings"
+            className="shrink-0 text-xs font-extrabold underline"
+            style={{ color: 'var(--muted)' }}
+            aria-label="설정 열기"
+          >
+            ⚙️ 설정
           </Link>
           <Button className="shrink-0" variant="ghost" size="sm" onClick={() => setShowGoals((v) => !v)}>
             목표/뱃지 {showGoals ? '▴' : '▾'}

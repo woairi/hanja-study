@@ -7,6 +7,7 @@ import Dino from '@/components/Dino';
 import Modal from '@/components/Modal';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
+import { QUIZ_RESULT_TTL_MS, loadQuizResult } from '@/lib/quizResult';
 import { clearAllLocalState, loadState, saveState } from '@/lib/storage';
 import type { GradeLabel } from '@/lib/types';
 
@@ -18,11 +19,17 @@ export default function SettingsPage() {
 
   const initial = useMemo(() => {
     const st = loadState();
+    const recentResult = loadQuizResult();
+
     return {
       nickname: st.settings.nickname || '',
       dailyCount: (st.settings.dailyCount || 5) as 5 | 10 | 15,
       lastGradeLabel: (st.settings.lastGradeLabel as GradeLabel) || '8급',
       onboardingCompleted: !!st.settings.onboardingCompleted,
+      progressCount: Object.keys(st.progress || {}).length,
+      lastStudyDate: st.streak.lastStudyDate,
+      recentResultAt: recentResult?.finishedAt ?? null,
+      hasRecentResult: !!recentResult,
     };
   }, []);
 
@@ -37,6 +44,14 @@ export default function SettingsPage() {
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   const [resetAck, setResetAck] = useState(false);
   const [resetText, setResetText] = useState('');
+
+  const recentResultLabel = useMemo(() => {
+    if (!initial.hasRecentResult || !initial.recentResultAt) return '없음';
+    const leftMs = initial.recentResultAt + QUIZ_RESULT_TTL_MS - Date.now();
+    if (leftMs <= 0) return '만료 예정';
+    const leftHours = Math.max(1, Math.floor(leftMs / (60 * 60 * 1000)));
+    return `있음 (약 ${leftHours}시간 남음)`;
+  }, [initial.hasRecentResult, initial.recentResultAt]);
 
   useEffect(() => {
     if (!savedToast) return;
@@ -112,6 +127,15 @@ export default function SettingsPage() {
           </Link>
         </div>
       </header>
+
+      <Card className="mb-3 p-4">
+        <div className="text-sm font-extrabold">저장 상태 요약</div>
+        <div className="mt-2 grid grid-cols-1 gap-2 text-xs" style={{ color: 'var(--muted)' }}>
+          <div className="rounded-xl bg-white/70 px-3 py-2">학습 기록 수: <span className="font-extrabold" style={{ color: 'var(--fg)' }}>{initial.progressCount}개</span></div>
+          <div className="rounded-xl bg-white/70 px-3 py-2">최근 학습일: <span className="font-extrabold" style={{ color: 'var(--fg)' }}>{initial.lastStudyDate || '없음'}</span></div>
+          <div className="rounded-xl bg-white/70 px-3 py-2">최근 퀴즈 결과 캐시: <span className="font-extrabold" style={{ color: 'var(--fg)' }}>{recentResultLabel}</span></div>
+        </div>
+      </Card>
 
       {error && (
         <Card className="mb-3 p-3" style={{ borderColor: 'rgba(220,38,38,0.25)' }}>
