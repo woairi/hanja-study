@@ -34,8 +34,8 @@ describe('storage migration (localStorage v1)', () => {
       nextReviewAt: 100, // min due date is preserved
     });
 
-    // migration should persist once so subsequent screens see normalized ids
-    const raw2 = window.localStorage.getItem('hanja-study:v1');
+    // migration should persist once (to the new stable key) so subsequent screens see normalized ids
+    const raw2 = window.localStorage.getItem('hanja-study:state');
     expect(raw2).toBeTruthy();
     const parsed2 = JSON.parse(raw2 as string) as AppState;
     expect(Object.keys(parsed2.progress)).toEqual(['5급-028']);

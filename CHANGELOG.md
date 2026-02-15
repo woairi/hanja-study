@@ -7,6 +7,8 @@
 ## [Unreleased]
 
 ### Added
+- BE: 로컬 상태(localStorage) 마이그레이션 프레임워크(v1→v2) + 안정 키(`hanja-study:state`) 도입(legacy key 읽기 지원)
+- BE: telemetry 저장 정책(TTL 30일 + meta cap) 도입으로 과도한 localStorage 사용 방지
 - Week1(P0): override 스키마 표준화(confusables/examples: 레코드 배열 + 메타 필드 id/target/reason/source/updated_at) + check:data에서 충돌/중복 검증
 - Week1(P0): 데이터 manifest(`dataset_version/schema_version/build_id/checksum/created_at`) 생성 + web check:data에서 checksum/형식 검증
 - Week1(QE/P0): 배포 블로커 3종(localStorage migration / SRS interval+오답 리셋 / trap 옵션 중복 방지) 유닛 테스트 + QE 문서 실행 커맨드 정리

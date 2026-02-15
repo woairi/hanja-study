@@ -5,8 +5,17 @@ export const ALL_KANJI: KanjiItem[] = kanjiData as unknown as KanjiItem[];
 
 export const GRADE_LABELS: GradeLabel[] = ['8급', '7급', '7급Ⅱ', '6급', '6급Ⅱ', '5급', '4급', '4급Ⅱ'];
 
+// Precompute grade -> items map once (many screens call this frequently).
+const BY_GRADE: Record<GradeLabel, KanjiItem[]> = GRADE_LABELS.reduce(
+  (acc, label) => {
+    acc[label] = ALL_KANJI.filter((k) => k.gradeLabel === label);
+    return acc;
+  },
+  {} as Record<GradeLabel, KanjiItem[]>
+);
+
 export function kanjiByGradeLabel(label: GradeLabel): KanjiItem[] {
-  return ALL_KANJI.filter((k) => k.gradeLabel === label);
+  return BY_GRADE[label] || [];
 }
 
 export function todayKey(d = new Date()): string {

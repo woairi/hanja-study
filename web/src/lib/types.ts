@@ -23,7 +23,7 @@ export type KanjiProgress = {
 };
 
 export type AppState = {
-  version: 1;
+  version: 1 | 2;
   settings: {
     dailyCount: 5 | 10 | 15;
     lastGradeLabel?: GradeLabel;

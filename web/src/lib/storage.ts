@@ -3,7 +3,30 @@
 import type { AppState, KanjiProgress } from './types';
 import { todayKey } from './kanji';
 
-const STORAGE_KEY = 'hanja-study:v1';
+/**
+ * Local state storage (localStorage).
+ *
+ * ## Versioning & migrations
+ * - We keep a *stable* primary key (`STORAGE_KEY`) and store `state.version` in the payload.
+ * - Older releases wrote to versioned keys (ex: `hanja-study:v1`). We still read them as legacy.
+ * - On load, we:
+ *   1) load newest key if present
+ *   2) else fall back to legacy keys
+ *   3) run step-by-step migrations until CURRENT_VERSION
+ *   4) persist to the newest key *only if* migration succeeded
+ *
+ * Failure policy (safety):
+ * - If parsing/migration fails, we do **not** overwrite storage.
+ * - We fall back to defaults so the app can still boot.
+ */
+
+const CURRENT_VERSION = 2 as const;
+
+// New stable key (do not include version in key name).
+const STORAGE_KEY = 'hanja-study:state';
+
+// Legacy keys that may exist from older releases.
+const LEGACY_KEYS = ['hanja-study:v1'];
 
 function removePrefixedKeys(storage: Storage, prefix: string) {
   // Copy keys first because storage is live.
@@ -42,7 +65,7 @@ export function clearAllLocalState(): void {
 
 export function defaultState(): AppState {
   return {
-    version: 1,
+    version: CURRENT_VERSION,
     settings: { dailyCount: 5, lastGradeLabel: '8급', nickname: '', onboardingCompleted: false },
     streak: { count: 0, lastStudyDate: null },
     stats: { quizAnswered: 0, daily: {} },
@@ -81,16 +104,18 @@ function mergeProgress(a: KanjiProgress, b: KanjiProgress): KanjiProgress {
   };
 }
 
-function migrateStateOnce(st: AppState): { state: AppState; changed: boolean } {
-  const progress = st.progress || {};
-  const keys = Object.keys(progress);
+function migrateProgressIds(progress: Record<string, KanjiProgress> | undefined | null): {
+  progress: Record<string, KanjiProgress>;
+  changed: boolean;
+} {
+  const src = progress || {};
+  const keys = Object.keys(src);
   let changed = false;
 
   const next: Record<string, KanjiProgress> = {};
-
   for (const id of keys) {
     const nid = normalizeProgressKey(id);
-    const p = progress[id];
+    const p = src[id];
     if (!p) continue;
 
     if (nid !== id) changed = true;
@@ -102,31 +127,94 @@ function migrateStateOnce(st: AppState): { state: AppState; changed: boolean } {
     }
   }
 
-  return changed ? { state: { ...st, progress: next }, changed } : { state: st, changed };
+  return { progress: next, changed };
+}
+
+/**
+ * v1 -> v2
+ *
+ * - Normalize legacy progress keys (ex: "5-028" -> "5급-028") and merge collisions.
+ * - Keep shape identical otherwise.
+ */
+function migrateV1ToV2(st: AppState): { state: AppState; changed: boolean } {
+  const { progress, changed } = migrateProgressIds(st.progress);
+  if (!changed) return { state: { ...st, version: 2 }, changed: st.version !== 2 };
+  return { state: { ...st, version: 2, progress }, changed: true };
+}
+
+function migrateToCurrent(st: AppState): { state: AppState; changed: boolean } {
+  // Defensive: if a future version is encountered, do not attempt to down-migrate.
+  if (!st || typeof st !== 'object') return { state: defaultState(), changed: false };
+  if (typeof (st as { version?: unknown }).version !== 'number') return { state: defaultState(), changed: false };
+  if (st.version > CURRENT_VERSION) return { state: st, changed: false };
+
+  let cur: AppState = st;
+  let changed = false;
+
+  while (cur.version < CURRENT_VERSION) {
+    if (cur.version === 1) {
+      const mig = migrateV1ToV2(cur);
+      cur = mig.state;
+      changed = changed || mig.changed;
+      continue;
+    }
+
+    // Should never happen, but ensures we don't loop forever.
+    break;
+  }
+
+  return { state: cur, changed };
+}
+
+function mergeWithDefaults(parsed: AppState): AppState {
+  const d = defaultState();
+  return {
+    ...d,
+    ...parsed,
+    // nested merges to be tolerant of partial/corrupted payloads
+    settings: { ...d.settings, ...(parsed.settings || {}) },
+    streak: { ...d.streak, ...(parsed.streak || {}) },
+    stats: { ...d.stats, ...(parsed.stats || {}), daily: { ...d.stats.daily, ...(parsed.stats?.daily || {}) } },
+    progress: parsed.progress || {},
+  };
+}
+
+function loadRawFromLocalStorage(): string | null {
+  if (typeof window === 'undefined') return null;
+
+  // New key first.
+  const direct = window.localStorage.getItem(STORAGE_KEY);
+  if (direct) return direct;
+
+  // Legacy keys (best-effort).
+  for (const k of LEGACY_KEYS) {
+    const v = window.localStorage.getItem(k);
+    if (v) return v;
+  }
+
+  return null;
 }
 
 export function loadState(): AppState {
   if (typeof window === 'undefined') return defaultState();
+
+  const raw = loadRawFromLocalStorage();
+  if (!raw) return defaultState();
+
   try {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
-    if (!raw) return defaultState();
     const parsed = JSON.parse(raw) as AppState;
-    if (!parsed || parsed.version !== 1) return defaultState();
+    if (!parsed || typeof parsed !== 'object') return defaultState();
 
-    const merged: AppState = {
-      ...defaultState(),
-      ...parsed,
-      settings: { ...defaultState().settings, ...(parsed.settings || {}) },
-      streak: { ...defaultState().streak, ...(parsed.streak || {}) },
-      stats: { ...defaultState().stats, ...(parsed.stats || {}), daily: { ...defaultState().stats.daily, ...(parsed.stats?.daily || {}) } },
-      progress: parsed.progress || {},
-    };
+    // Merge defaults *before* migration so migrators can assume required subtrees exist.
+    const merged = mergeWithDefaults(parsed);
+    const mig = migrateToCurrent(merged);
 
-    const mig = migrateStateOnce(merged);
     if (mig.changed) {
-      // persist once so all screens see the same ids
+      // Persist once so all screens see the migrated state.
+      // Safety: only write after migration succeeded.
       saveState(mig.state);
     }
+
     return mig.state;
   } catch {
     return defaultState();
@@ -135,7 +223,11 @@ export function loadState(): AppState {
 
 export function saveState(state: AppState): void {
   if (typeof window === 'undefined') return;
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  try {
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  } catch {
+    // ignore (quota/private mode)
+  }
 }
 
 export function getProgress(state: AppState, id: string): KanjiProgress | undefined {
