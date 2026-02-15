@@ -28,6 +28,7 @@
 - Week4(FE): 공통 상태 카드(`StateCard`) 도입 + /quiz/result(결과없음), /progress(레거시/빈 상태), /quiz(세션없음 가드)에 적용
 - Week4(QE): 실기기 QA 게이트(v1) 및 D+1~D+10 실행표 문서화(`docs/qe.md`)
 - Week4(QE): storage fallback 안전성 테스트 추가(깨진 localStorage JSON → default 복구)
+- Week4(QE): quiz result TTL 만료 정리 테스트 강화(local-only stale cache 포함)
 - Week4(QE): iOS Safari 실기기 점검용 known issues/workaround 문서 추가(`docs/qa-ios-safari.md`)
 - Week4(BE): `data/build.mjs`가 v2 override 배열 스키마(target 기반)를 직접 읽도록 보강(legacy object-map도 계속 지원)
 - Week2(FE polish): /progress에서 레거시 사용자(stats.daily 없음) 안내 배지/가이드 카드 추가

@@ -61,4 +61,14 @@ describe('quiz result cache/ttl', () => {
     expect(window.sessionStorage.getItem(QUIZ_RESULT_KEY)).toBeNull();
     expect(window.localStorage.getItem(QUIZ_RESULT_CACHE_KEY)).toBeNull();
   });
+
+  test('clears stale local-only cache as well', () => {
+    const payload = samplePayload(now - QUIZ_RESULT_TTL_MS - 10);
+    window.localStorage.setItem(QUIZ_RESULT_CACHE_KEY, JSON.stringify(payload));
+
+    const loaded = loadQuizResult();
+    expect(loaded).toBeNull();
+    expect(window.sessionStorage.getItem(QUIZ_RESULT_KEY)).toBeNull();
+    expect(window.localStorage.getItem(QUIZ_RESULT_CACHE_KEY)).toBeNull();
+  });
 });
