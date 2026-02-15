@@ -53,6 +53,7 @@ export default function ProgressPage() {
 
     const quizAnsweredAllTime = st.stats?.quizAnswered || 0;
     const dailyKeys = Object.keys(st.stats.daily || {});
+    const hasDaily = dailyKeys.length > 0;
 
     return {
       days,
@@ -62,7 +63,9 @@ export default function ProgressPage() {
       wrong,
       acc,
       quizAnsweredAllTime,
+      hasDaily,
       isEmpty: quizAnsweredAllTime === 0 && dailyKeys.length === 0,
+      isLegacyNoDaily: quizAnsweredAllTime > 0 && !hasDaily,
     };
   }, [now, period]);
 
@@ -263,7 +266,17 @@ export default function ProgressPage() {
 
       <section className="mt-1">
         <div className="flex items-center justify-between gap-3">
-          <h2 className="text-base font-semibold">요약</h2>
+          <div className="flex items-center gap-2">
+            <h2 className="text-base font-semibold">요약</h2>
+            {summary.isLegacyNoDaily && (
+              <span
+                className="rounded-full px-2 py-0.5 text-[11px] font-extrabold"
+                style={{ background: 'rgba(250, 204, 21, 0.25)', color: 'rgba(161, 98, 7, 0.95)' }}
+              >
+                업데이트
+              </span>
+            )}
+          </div>
           <div className="flex items-center gap-2">
             <Button
               variant={period === 'week' ? 'primary' : 'ghost'}
@@ -334,6 +347,32 @@ export default function ProgressPage() {
             </div>
           </Card>
         </div>
+
+        {summary.isLegacyNoDaily && (
+          <Card className="mt-3 p-4">
+            <div className="text-sm font-extrabold">주간/월간 기록이 아직 없어</div>
+            <div className="mt-1 text-sm" style={{ color: 'var(--muted)' }}>
+              예전 버전에서 쌓인 “누적” 데이터만 있고, 오늘부터는 날짜별 기록도 같이 저장돼.
+            </div>
+            <div className="mt-3 flex flex-col gap-2">
+              <Link
+                className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
+                href="/"
+              >
+                오늘 학습하러 가기
+              </Link>
+              <Link
+                className="btn btn-ghost focus-ring inline-flex w-full items-center justify-center"
+                href="/quiz/session"
+              >
+                퀴즈로 기록 만들기
+              </Link>
+            </div>
+            <div className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>
+              한 번만 풀면 다음부터 요약 카드가 채워져!
+            </div>
+          </Card>
+        )}
 
         {summary.isEmpty && (
           <Card className="mt-3 p-4">

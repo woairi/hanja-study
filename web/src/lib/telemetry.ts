@@ -12,7 +12,9 @@ export type TelemetryEvent =
   | 'post_done_weak_review_click'
   | 'post_done_more_review_click'
   | 'quiz_wrong_tap'
-  | 'quiz_next_mission_click';
+  | 'quiz_next_mission_click'
+  | 'quiz_result_missing_start_quiz_click'
+  | 'quiz_result_missing_home_click';
 
 type TelemetryState = {
   v: 1;
@@ -42,6 +44,8 @@ const EVENTS: TelemetryEvent[] = [
   'post_done_more_review_click',
   'quiz_wrong_tap',
   'quiz_next_mission_click',
+  'quiz_result_missing_start_quiz_click',
+  'quiz_result_missing_home_click',
 ];
 
 function empty(): TelemetryState {
