@@ -5132,6 +5132,8 @@
     "radical": "人",
     "totalStrokes": 13,
     "confusables": [
+      "經",
+      "境",
       "驚",
       "更",
       "鏡"
@@ -5198,6 +5200,7 @@
     "confusables": [
       "系",
       "戒",
+      "係",
       "階",
       "鷄",
       "繼"
@@ -5589,6 +5592,7 @@
     "totalStrokes": 9,
     "confusables": [
       "奇",
+      "起",
       "機",
       "寄"
     ]
@@ -5927,6 +5931,8 @@
     "radical": "女",
     "totalStrokes": 7,
     "confusables": [
+      "防",
+      "房",
       "妙",
       "妹",
       "委",
@@ -6100,6 +6106,8 @@
     "radical": "石",
     "totalStrokes": 13,
     "confusables": [
+      "備",
+      "悲",
       "批",
       "祕"
     ]
@@ -6129,6 +6137,8 @@
     "radical": "禾",
     "totalStrokes": 7,
     "confusables": [
+      "寺",
+      "舍",
       "辭",
       "絲",
       "射"
@@ -6159,6 +6169,8 @@
     "radical": "寸",
     "totalStrokes": 10,
     "confusables": [
+      "寺",
+      "師",
       "辭",
       "私",
       "絲"
@@ -6187,6 +6199,7 @@
     "radical": "人",
     "totalStrokes": 13,
     "confusables": [
+      "想",
       "象"
     ]
   },
@@ -6200,7 +6213,9 @@
     "radical": "豕",
     "totalStrokes": 12,
     "confusables": [
-      "傷"
+      "傷",
+      "常",
+      "想"
     ]
   },
   {
@@ -6286,6 +6301,9 @@
     "radical": "禾",
     "totalStrokes": 7,
     "confusables": [
+      "受",
+      "守",
+      "收",
       "私"
     ]
   },
@@ -6422,6 +6440,7 @@
     "radical": "火",
     "totalStrokes": 16,
     "confusables": [
+      "煙",
       "緣",
       "鉛",
       "延"
@@ -6437,6 +6456,8 @@
     "radical": "金",
     "totalStrokes": 13,
     "confusables": [
+      "煙",
+      "演",
       "燃",
       "緣",
       "延"
@@ -6453,6 +6474,7 @@
     "totalStrokes": 15,
     "confusables": [
       "燃",
+      "演",
       "鉛",
       "延"
     ]
@@ -6592,6 +6614,7 @@
     "totalStrokes": 12,
     "confusables": [
       "源",
+      "圓",
       "怨"
     ]
   },
@@ -6605,6 +6628,7 @@
     "radical": "水",
     "totalStrokes": 13,
     "confusables": [
+      "圓",
       "援",
       "怨"
     ]
@@ -6801,6 +6825,7 @@
     "totalStrokes": 14,
     "confusables": [
       "儀",
+      "義",
       "依"
     ]
   },
@@ -6922,6 +6947,7 @@
     "totalStrokes": 13,
     "confusables": [
       "腸",
+      "障",
       "獎",
       "張",
       "壯",
@@ -6939,6 +6965,7 @@
     "totalStrokes": 13,
     "confusables": [
       "裝",
+      "障",
       "獎",
       "張",
       "壯",
@@ -6956,6 +6983,7 @@
     "totalStrokes": 11,
     "confusables": [
       "帳",
+      "將",
       "獎",
       "裝",
       "腸",
@@ -6990,6 +7018,7 @@
     "totalStrokes": 11,
     "confusables": [
       "張",
+      "將",
       "獎",
       "裝",
       "腸",
@@ -7019,6 +7048,7 @@
     "confusables": [
       "適",
       "績",
+      "敵",
       "籍",
       "賊"
     ]
@@ -7049,6 +7079,7 @@
     "radical": "辵",
     "totalStrokes": 15,
     "confusables": [
+      "敵",
       "積",
       "籍",
       "績",
@@ -7210,6 +7241,7 @@
     "totalStrokes": 16,
     "confusables": [
       "靜",
+      "政",
       "丁"
     ]
   },
@@ -7222,7 +7254,10 @@
     "meaning": "임금",
     "radical": "巾",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "制",
+      "除"
+    ]
   },
   {
     "id": "4급-176",
@@ -7235,6 +7270,8 @@
     "totalStrokes": 11,
     "confusables": [
       "組",
+      "鳥",
+      "造",
       "潮"
     ]
   },
@@ -7263,6 +7300,8 @@
     "totalStrokes": 11,
     "confusables": [
       "條",
+      "鳥",
+      "造",
       "潮"
     ]
   },
@@ -7436,6 +7475,7 @@
     "totalStrokes": 9,
     "confusables": [
       "陣",
+      "眞",
       "盡"
     ]
   },
@@ -7463,6 +7503,7 @@
     "radical": "阜",
     "totalStrokes": 10,
     "confusables": [
+      "眞",
       "珍",
       "盡"
     ]
@@ -7803,6 +7844,8 @@
     "radical": "水",
     "totalStrokes": 9,
     "confusables": [
+      "波",
+      "破",
       "泉",
       "況"
     ]
@@ -8234,6 +8277,7 @@
     "radical": "行",
     "totalStrokes": 12,
     "confusables": [
+      "暇",
       "假"
     ]
   },
@@ -8354,6 +8398,7 @@
     "radical": "土",
     "totalStrokes": 14,
     "confusables": [
+      "傾",
       "經",
       "慶",
       "警"
@@ -8369,6 +8414,7 @@
     "radical": "糸",
     "totalStrokes": 13,
     "confusables": [
+      "傾",
       "境",
       "警",
       "慶"
@@ -8430,6 +8476,8 @@
     "radical": "攴",
     "totalStrokes": 9,
     "confusables": [
+      "孤",
+      "庫",
       "政"
     ]
   },
@@ -8560,6 +8608,8 @@
     "radical": "走",
     "totalStrokes": 10,
     "confusables": [
+      "寄",
+      "紀",
       "器"
     ]
   },
@@ -9085,6 +9135,7 @@
     "radical": "阜",
     "totalStrokes": 7,
     "confusables": [
+      "妨",
       "房",
       "訪"
     ]
@@ -9099,6 +9150,7 @@
     "radical": "戶",
     "totalStrokes": 8,
     "confusables": [
+      "妨",
       "防",
       "訪"
     ]
@@ -9293,6 +9345,8 @@
     "radical": "广",
     "totalStrokes": 8,
     "confusables": [
+      "否",
+      "負",
       "富",
       "副",
       "婦"
@@ -9367,6 +9421,7 @@
     "radical": "飛",
     "totalStrokes": 9,
     "confusables": [
+      "祕",
       "非",
       "備",
       "悲"
@@ -9383,6 +9438,7 @@
     "totalStrokes": 12,
     "confusables": [
       "悲",
+      "碑",
       "飛",
       "非"
     ]
@@ -9397,6 +9453,7 @@
     "radical": "非",
     "totalStrokes": 8,
     "confusables": [
+      "批",
       "飛",
       "備",
       "悲"
@@ -9413,6 +9470,7 @@
     "totalStrokes": 12,
     "confusables": [
       "備",
+      "碑",
       "飛",
       "非"
     ]
@@ -9440,6 +9498,8 @@
     "radical": "寸",
     "totalStrokes": 6,
     "confusables": [
+      "射",
+      "私",
       "師",
       "謝",
       "舍"
@@ -9541,6 +9601,8 @@
     "radical": "心",
     "totalStrokes": 13,
     "confusables": [
+      "傷",
+      "象",
       "常",
       "床",
       "狀"
@@ -9845,6 +9907,7 @@
     "totalStrokes": 6,
     "confusables": [
       "收",
+      "秀",
       "修",
       "受",
       "授"
@@ -9877,6 +9940,7 @@
     "totalStrokes": 6,
     "confusables": [
       "守",
+      "秀",
       "修",
       "受",
       "授"
@@ -10151,6 +10215,8 @@
     "radical": "火",
     "totalStrokes": 13,
     "confusables": [
+      "燃",
+      "鉛",
       "演",
       "硏"
     ]
@@ -10179,6 +10245,8 @@
     "radical": "水",
     "totalStrokes": 14,
     "confusables": [
+      "鉛",
+      "緣",
       "煙",
       "硏"
     ]
@@ -10285,6 +10353,8 @@
     "radical": "囗",
     "totalStrokes": 13,
     "confusables": [
+      "源",
+      "援",
       "員"
     ]
   },
@@ -10480,6 +10550,8 @@
     "radical": "寸",
     "totalStrokes": 11,
     "confusables": [
+      "張",
+      "帳",
       "障"
     ]
   },
@@ -10493,6 +10565,9 @@
     "radical": "阜",
     "totalStrokes": 14,
     "confusables": [
+      "獎",
+      "裝",
+      "腸",
       "將"
     ]
   },
@@ -10519,7 +10594,10 @@
     "meaning": "대적할",
     "radical": "攴",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "適",
+      "積"
+    ]
   },
   {
     "id": "4급Ⅱ-169",
@@ -10689,11 +10767,11 @@
     "totalStrokes": 10,
     "confusables": [
       "際",
+      "帝",
       "祭",
       "濟",
       "提",
-      "制",
-      "製"
+      "制"
     ]
   },
   {
@@ -10742,6 +10820,8 @@
     "radical": "鳥",
     "totalStrokes": 11,
     "confusables": [
+      "條",
+      "組",
       "造",
       "助",
       "早"
@@ -10787,6 +10867,8 @@
     "radical": "辵",
     "totalStrokes": 11,
     "confusables": [
+      "條",
+      "組",
       "鳥",
       "助",
       "早"
@@ -10827,7 +10909,10 @@
     "meaning": "달릴",
     "radical": "走",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "朱",
+      "周"
+    ]
   },
   {
     "id": "4급Ⅱ-189",
@@ -10977,6 +11062,8 @@
     "radical": "目",
     "totalStrokes": 10,
     "confusables": [
+      "陣",
+      "珍",
       "進"
     ]
   },

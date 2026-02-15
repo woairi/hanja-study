@@ -63,7 +63,7 @@ Vercel에서 GitHub 연동 후:
 
 ## Roadmap (다음 작업)
 
-- `confusables` 자동/수동 보강 → 함정문제 품질 개선
+- `confusables` 자동/수동 보강 → 함정문제 품질 개선 (4급/4급Ⅱ 동음 기반 override seed 추가)
 - `/progress`의 취약 TOP에 한자/뜻/음 표시
 - 학습 세션 재개(중간에 나갔다 들어와도 이어서)
 - PWA(홈 화면 추가) / 오프라인 캐시
