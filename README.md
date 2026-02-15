@@ -57,6 +57,10 @@ Vercel에서 GitHub 연동 후:
 
 현재 데이터는 `data/kanji_8_to_5.json` (웹용 복사본: `web/src/data/kanji.json`)에 포함.
 
+### 데이터 생성(재생성)
+- 베이스(원본에 가까운) 데이터: `data/kanji_8_to_4.json`
+- 생성 스크립트: `node data/build.mjs`  (base + overrides + 휴리스틱 → web/data 갱신)
+
 ### 디버그(로컬)
 - `telemetry`는 **서버로 전송되지 않고**, 이 기기 localStorage에만 카운트로 저장됩니다.
 - 확인/초기화: `/about?debug=1`
