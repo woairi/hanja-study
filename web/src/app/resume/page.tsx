@@ -16,7 +16,7 @@ export default function ResumePage() {
     if (s.mode === 'study') {
       router.replace(`/study?grade=${encodeURIComponent(s.gradeLabel)}&n=${s.n}&resume=1`);
     } else {
-      router.replace(`/quiz?grade=${encodeURIComponent(s.gradeLabel)}&n=${s.n}&resume=1`);
+      router.replace(`/quiz/session?grade=${encodeURIComponent(s.gradeLabel)}&n=${s.n}&resume=1`);
     }
   }, [router]);
 

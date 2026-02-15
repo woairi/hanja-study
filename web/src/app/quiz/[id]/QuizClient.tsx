@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useParams, useSearchParams } from 'next/navigation';
 import { Card } from '@/components/ui/Card';
 import { ALL_KANJI, kanjiByGradeLabel } from '@/lib/kanji';
 import type { GradeLabel, KanjiItem } from '@/lib/types';
@@ -22,11 +22,17 @@ type StudySession = {
   startedAt: number;
 };
 
-const SESSION_KEY = 'hanja-study:session';
+const LEGACY_SESSION_KEY = 'hanja-study:session';
 const RETRY_KEY = 'hanja-study:retry';
+
+function sessionKey(quizId: string) {
+  return `hanja-study:session:${quizId}`;
+}
 
 export default function QuizClient() {
   const sp = useSearchParams();
+  const params = useParams<{ id: string }>();
+  const quizId = params?.id || 'session';
   const grade = (sp.get('grade') || '8급') as GradeLabel;
 
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
@@ -60,7 +66,7 @@ export default function QuizClient() {
       return;
     }
 
-    const raw = window.sessionStorage.getItem(SESSION_KEY);
+    const raw = window.sessionStorage.getItem(sessionKey(quizId)) || window.sessionStorage.getItem(LEGACY_SESSION_KEY);
     if (!raw) return;
     const session = JSON.parse(raw) as StudySession;
 
@@ -92,7 +98,7 @@ export default function QuizClient() {
       startedAt: last && last.mode === 'quiz' ? last.startedAt : Date.now(),
       updatedAt: Date.now(),
     });
-  }, [grade, sp]);
+  }, [grade, sp, quizId]);
 
   // If any scheduled retry is due at current index, insert it *before* rendering this index.
   useEffect(() => {
@@ -144,8 +150,20 @@ export default function QuizClient() {
 
   if (!questions.length) {
     return (
-      <main className="mx-auto max-w-md p-4">
-        <div className="text-sm text-gray-600">퀴즈 준비중…</div>
+      <main className="mx-auto min-h-[100svh] max-w-md p-4 pb-[calc(7.5rem+env(safe-area-inset-bottom))]">
+        <Card className="p-4">
+          <div className="animate-pulse">
+            <div className="h-6 w-24 rounded-full bg-gray-200" />
+            <div className="mt-3 h-7 w-3/4 rounded bg-gray-200" />
+            <div className="mt-4 space-y-2">
+              <div className="h-14 rounded-2xl bg-gray-200" />
+              <div className="h-14 rounded-2xl bg-gray-200" />
+              <div className="h-14 rounded-2xl bg-gray-200" />
+              <div className="h-14 rounded-2xl bg-gray-200" />
+            </div>
+            <div className="mt-3 h-16 rounded-2xl bg-gray-100" />
+          </div>
+        </Card>
       </main>
     );
   }
@@ -216,7 +234,7 @@ export default function QuizClient() {
             {hasWrong && (
               <Link
                 className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
-                href={`/quiz?grade=${encodeURIComponent(grade)}&retry=1`}
+                href={`/quiz/${encodeURIComponent(quizId)}?grade=${encodeURIComponent(grade)}&retry=1`}
                 onClick={() => {
                   logEvent('quiz_retry_click', { grade, wrong: wrongKanjiIds.length });
                   window.sessionStorage.setItem(RETRY_KEY, JSON.stringify(wrongKanjiIds));
@@ -249,7 +267,7 @@ export default function QuizClient() {
   }
 
   return (
-    <main className="mx-auto min-h-[100svh] max-w-md p-4 pb-28">
+    <main className="mx-auto min-h-[100svh] max-w-md p-4 pb-[calc(7.5rem+env(safe-area-inset-bottom))]">
       <div className="mb-3 flex items-center justify-between">
         <Link className="text-sm text-blue-700 underline" href="/">
           ← 홈
@@ -280,7 +298,7 @@ export default function QuizClient() {
             {q.kind === 'trap' ? '🪤 함정' : q.kind === 'meaning' ? '💡 뜻' : '🔊 음'}
           </span>
         </div>
-        <div className="mt-3 text-xl font-extrabold">{q.prompt}</div>
+        <div className="mt-3 min-h-[3.25rem] text-xl font-extrabold leading-snug break-words">{q.prompt}</div>
 
         <div className="mt-4 grid grid-cols-1 gap-2">
           {q.options.map((o) => {
@@ -299,8 +317,8 @@ export default function QuizClient() {
                 style={{ borderColor: 'rgba(2,132,199,0.18)' }}
                 onClick={() => setChosen(o.value)}
               >
-                <div className="flex items-center justify-between gap-3">
-                  <span>{o.text}</span>
+                <div className="flex min-w-0 items-center justify-between gap-3">
+                  <span className="min-w-0 flex-1 whitespace-normal break-words">{o.text}</span>
                   {selected && !feedback && <span aria-hidden className="text-xl">✅</span>}
                   {isCorrectOption && feedback && <span aria-hidden className="text-xl">✅</span>}
                   {isWrongPicked && feedback && <span aria-hidden className="text-xl">❌</span>}
@@ -310,73 +328,82 @@ export default function QuizClient() {
           })}
         </div>
 
-        {feedback && (
-          <div
-            className={`mt-3 rounded-2xl px-3 py-2 text-sm font-bold ${
-              feedback.correct ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'
-            }`}
-          >
-            <div className="flex items-center justify-between">
-              <div>{feedback.correct ? '정답!' : `오답. 정답: ` + String(feedback.answer)}</div>
-              <div className="flex items-center gap-2">
-                {feedback.correct && (
-                  <>
-                    <div key={confettiKey} className="confetti text-lg" aria-hidden>
-                      🎉
-                    </div>
-                    <div key={sparkleKey} className="sparkle text-lg" aria-hidden>
-                      ✨
-                    </div>
-                  </>
-                )}
+        <div className="mt-3 min-h-[6.5rem]">
+          {feedback ? (
+            <div
+              className={`rounded-2xl px-3 py-2 text-sm font-bold ${
+                feedback.correct ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'
+              }`}
+              aria-live="polite"
+            >
+              <div className="flex items-center justify-between gap-2">
+                <div className="min-w-0 flex-1 break-words">
+                  {feedback.correct ? '정답!' : `오답. 정답: ` + String(feedback.answer)}
+                </div>
+                <div className="flex shrink-0 items-center gap-2">
+                  {feedback.correct && (
+                    <>
+                      <div key={confettiKey} className="confetti text-lg" aria-hidden>
+                        🎉
+                      </div>
+                      <div key={sparkleKey} className="sparkle text-lg" aria-hidden>
+                        ✨
+                      </div>
+                    </>
+                  )}
+                </div>
               </div>
-            </div>
-            <div className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
-              {(() => {
-                const k = ALL_KANJI.find((x) => x.id === q.kanjiId);
-                if (!k) return null;
-                const conf = (k.confusables || []).slice(0, 4).join(' ');
+              <div className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
+                {(() => {
+                  const k = ALL_KANJI.find((x) => x.id === q.kanjiId);
+                  if (!k) return null;
+                  const conf = (k.confusables || []).slice(0, 4).join(' ');
 
-                if (feedback.correct) {
+                  if (feedback.correct) {
+                    return (
+                      <div className="text-xs">
+                        <div>
+                          <span className="font-extrabold">{k.hanja}</span> = {k.meaning} {k.reading}
+                        </div>
+                        {k.exampleWord ? (
+                          <div className="mt-1">
+                            예: <span className="font-extrabold">{k.exampleWord}</span>
+                          </div>
+                        ) : null}
+                        {q.kind === 'trap' && conf ? (
+                          <div className="mt-1">
+                            헷갈리기: <span className="font-extrabold">{conf}</span>
+                          </div>
+                        ) : null}
+                      </div>
+                    );
+                  }
+
                   return (
-                    <div className="text-xs">
+                    <div>
                       <div>
                         <span className="font-extrabold">{k.hanja}</span> = {k.meaning} {k.reading}
                       </div>
                       {k.exampleWord ? (
                         <div className="mt-1">
                           예: <span className="font-extrabold">{k.exampleWord}</span>
+                          {k.exampleMeaning ? ` · ${k.exampleMeaning}` : ''}
                         </div>
                       ) : null}
                       {q.kind === 'trap' && conf ? (
-                        <div className="mt-1">헷갈리기: <span className="font-extrabold">{conf}</span></div>
+                        <div className="mt-1">
+                          헷갈리기: <span className="font-extrabold">{conf}</span>
+                        </div>
                       ) : null}
                     </div>
                   );
-                }
-
-                return (
-                  <div>
-                    <div>
-                      <span className="font-extrabold">{k.hanja}</span> = {k.meaning} {k.reading}
-                    </div>
-                    {k.exampleWord ? (
-                      <div className="mt-1">
-                        예: <span className="font-extrabold">{k.exampleWord}</span>
-                        {k.exampleMeaning ? ` · ${k.exampleMeaning}` : ''}
-                      </div>
-                    ) : null}
-                    {q.kind === 'trap' && conf ? (
-                      <div className="mt-1">
-                        헷갈리기: <span className="font-extrabold">{conf}</span>
-                      </div>
-                    ) : null}
-                  </div>
-                );
-              })()}
+                })()}
+              </div>
             </div>
-          </div>
-        )}
+          ) : (
+            <div aria-hidden />
+          )}
+        </div>
       </Card>
 
       <div className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>
@@ -384,7 +411,7 @@ export default function QuizClient() {
       </div>
 
       {/* bottom bar */}
-      <div className="fixed inset-x-0 bottom-0 mx-auto max-w-md p-4">
+      <div className="fixed inset-x-0 bottom-0 mx-auto max-w-md p-4 pb-[calc(1rem+env(safe-area-inset-bottom))]">
         <Card className="flex gap-2 p-3">
           <button
             className="btn btn-ghost focus-ring flex-1"
@@ -424,7 +451,7 @@ export default function QuizClient() {
 
                 setQIdx((i) => {
                   const next = i + 1;
-                  const raw = window.sessionStorage.getItem(SESSION_KEY);
+                  const raw = window.sessionStorage.getItem(sessionKey(quizId)) || window.sessionStorage.getItem(LEGACY_SESSION_KEY);
                   if (raw) {
                     const session = JSON.parse(raw) as StudySession;
                     const now = Date.now();

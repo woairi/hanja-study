@@ -20,6 +20,7 @@ type StudySession = {
 };
 
 const SESSION_KEY = 'hanja-study:session';
+const QUIZ_ID = 'session';
 const FOCUS_KEY = 'hanja-study:focus';
 
 export default function StudyClient() {
@@ -77,7 +78,9 @@ export default function StudyClient() {
       itemIds: pickedItems.map((x) => x.id),
       startedAt: now,
     };
+    // Back-compat: also write the legacy key.
     window.sessionStorage.setItem(SESSION_KEY, JSON.stringify(session));
+    window.sessionStorage.setItem(`hanja-study:session:${QUIZ_ID}`, JSON.stringify(session));
 
     saveLastSession({
       version: 1,
@@ -100,7 +103,7 @@ export default function StudyClient() {
     const raw = window.sessionStorage.getItem(SESSION_KEY);
     if (!raw) return '/';
     const session = JSON.parse(raw) as StudySession;
-    return `/quiz?grade=${encodeURIComponent(session.gradeLabel)}&n=${session.n}`;
+    return `/quiz/${QUIZ_ID}?grade=${encodeURIComponent(session.gradeLabel)}&n=${session.n}`;
   }, []);
 
   if (!items.length) {
