@@ -39,6 +39,7 @@
 - Week3: 진도 화면에서 약점 TOP 50 export(복사/붙여넣기) 지원(큐레이션용)
 - Week3: 로컬 저장된 progress id(예: 5-028) 자동 마이그레이션(5급-028) + export 안정화
 - Week3: 취약 TOP은 오답 기반으로만 산정 + due 목록은 분리(큐레이션 정확도)
+- Week3: 약점/due export에 ID-only 복사 버튼 추가(텔레그램 길이 제한 대응)
 - Week3: 함정문제(trap)는 confusables 충분한 항목 위주로 출제(품질)
 - Week3: 예시 단어 일부를 더 자연스러운 단어로 수동 보강(큐레이션)
 - Week3: 한자 데이터 재생성 파이프라인 추가(data/build.mjs) + 전 급수 예시 자동 채움

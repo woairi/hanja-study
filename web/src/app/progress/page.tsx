@@ -48,6 +48,38 @@ export default function ProgressPage() {
       .slice(0, 10);
   }, [now]);
 
+  const weakIdsText = useMemo(() => {
+    const st = loadState();
+    const top = Object.entries(st.progress)
+      .map(([id, p]) => {
+        const answered = (p.wrong || 0) + (p.correct || 0) > 0;
+        const score = (p.wrong + 1) / (p.correct + 1);
+        return { id, answered, score, wrong: p.wrong, correct: p.correct, nextReviewAt: p.nextReviewAt };
+      })
+      .filter((w) => w.answered)
+      .sort((a, b) => {
+        if (b.score !== a.score) return b.score - a.score;
+        if (b.wrong !== a.wrong) return b.wrong - a.wrong;
+        return (a.nextReviewAt || 0) - (b.nextReviewAt || 0);
+      })
+      .slice(0, 50)
+      .map((w) => w.id);
+
+    return top.join('\n');
+  }, [now]);
+
+  const dueIdsText = useMemo(() => {
+    const st = loadState();
+    const top = Object.entries(st.progress)
+      .map(([id, p]) => ({ id, due: !p.mastered && p.nextReviewAt <= now, nextReviewAt: p.nextReviewAt }))
+      .filter((w) => w.due)
+      .sort((a, b) => (a.nextReviewAt || 0) - (b.nextReviewAt || 0))
+      .slice(0, 50)
+      .map((w) => w.id);
+
+    return top.join('\n');
+  }, [now]);
+
   const weakExportJson = useMemo(() => {
     const st = loadState();
     const map = new Map(ALL_KANJI.map((k) => [k.id, k] as const));
@@ -216,54 +248,58 @@ export default function ProgressPage() {
             <button
               className="btn btn-ghost focus-ring px-3 py-2 text-xs"
               onClick={async () => {
-                const txt = weakExportJson;
+                const txt = weakIdsText;
                 try {
-                  if (navigator.clipboard?.writeText) {
-                    await navigator.clipboard.writeText(txt);
-                  } else {
-                    const ta = document.createElement('textarea');
-                    ta.value = txt;
-                    ta.setAttribute('readonly', '');
-                    ta.style.position = 'fixed';
-                    ta.style.left = '-9999px';
-                    document.body.appendChild(ta);
-                    ta.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(ta);
-                  }
-                  setToast('약점(오답 기반) 목록을 복사했어! 채팅에 붙여넣어줘.');
+                  await navigator.clipboard.writeText(txt);
+                  setToast('약점ID(오답 기반) 50개를 복사했어!');
                 } catch {
                   setToast('복사 실패 😭 아래 목록을 길게 눌러서 복사해줘.');
                 }
               }}
             >
-              약점복사
+              약점ID
+            </button>
+            <button
+              className="btn btn-ghost focus-ring px-3 py-2 text-xs"
+              onClick={async () => {
+                const txt = dueIdsText;
+                try {
+                  await navigator.clipboard.writeText(txt);
+                  setToast('due ID 50개를 복사했어!');
+                } catch {
+                  setToast('복사 실패 😭 아래 목록을 길게 눌러서 복사해줘.');
+                }
+              }}
+            >
+              dueID
+            </button>
+            <button
+              className="btn btn-ghost focus-ring px-3 py-2 text-xs"
+              onClick={async () => {
+                const txt = weakExportJson;
+                try {
+                  await navigator.clipboard.writeText(txt);
+                  setToast('약점(JSON)을 복사했어!');
+                } catch {
+                  setToast('복사 실패 😭 아래 목록을 길게 눌러서 복사해줘.');
+                }
+              }}
+            >
+              약점JSON
             </button>
             <button
               className="btn btn-ghost focus-ring px-3 py-2 text-xs"
               onClick={async () => {
                 const txt = dueExportJson;
                 try {
-                  if (navigator.clipboard?.writeText) {
-                    await navigator.clipboard.writeText(txt);
-                  } else {
-                    const ta = document.createElement('textarea');
-                    ta.value = txt;
-                    ta.setAttribute('readonly', '');
-                    ta.style.position = 'fixed';
-                    ta.style.left = '-9999px';
-                    document.body.appendChild(ta);
-                    ta.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(ta);
-                  }
-                  setToast('복습(due) 목록을 복사했어!');
+                  await navigator.clipboard.writeText(txt);
+                  setToast('due(JSON)을 복사했어!');
                 } catch {
                   setToast('복사 실패 😭 아래 목록을 길게 눌러서 복사해줘.');
                 }
               }}
             >
-              due복사
+              dueJSON
             </button>
           </div>
         </div>
