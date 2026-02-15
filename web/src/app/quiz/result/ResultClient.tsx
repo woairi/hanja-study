@@ -105,18 +105,21 @@ export default function ResultClient() {
               label: '퀴즈 다시 시작',
               href: `/quiz/session?grade=${encodeURIComponent(grade)}`,
               variant: 'primary',
+              testId: 'quiz-result-missing-start',
               onClick: () => logEvent('quiz_result_missing_start_quiz_click', { grade }),
             },
             {
               label: '홈으로 가기',
               href: '/',
               variant: 'ghost',
+              testId: 'quiz-result-missing-home',
               onClick: () => logEvent('quiz_result_missing_home_click', { grade }),
             },
             {
               label: '진도 보기',
               href: '/progress',
               variant: 'ghost',
+              testId: 'quiz-result-missing-progress',
             },
           ]}
         />
@@ -182,6 +185,7 @@ export default function ResultClient() {
           <Link
             className="btn btn-ghost focus-ring inline-flex w-full items-center justify-center"
             href={`/study?grade=${encodeURIComponent(grade)}&n=${10}`}
+            data-testid="quiz-result-next-mission"
             onClick={() => logEvent('quiz_next_mission_click', { grade })}
           >
             다음 미션 가기
@@ -285,6 +289,7 @@ export default function ResultClient() {
           <Link
             className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
             href={primaryHref}
+            data-testid="quiz-result-primary-cta"
             onClick={() => {
               if (hasWrong) {
                 logEvent('quiz_retry_click', { grade, wrong: wrongItems.length });

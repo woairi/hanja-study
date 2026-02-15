@@ -275,8 +275,8 @@ export default function QuizClient() {
           description="먼저 학습을 시작한 다음 퀴즈로 넘어가면 이어서 풀 수 있어."
           hint="세션이 만료됐거나 직접 진입한 경우일 수 있어."
           actions={[
-            { label: '오늘 학습 시작', href: quickStudyHref, variant: 'primary' },
-            { label: '홈으로', href: '/', variant: 'ghost' },
+            { label: '오늘 학습 시작', href: quickStudyHref, variant: 'primary', testId: 'quiz-missing-start-study' },
+            { label: '홈으로', href: '/', variant: 'ghost', testId: 'quiz-missing-home' },
           ]}
         />
       </main>
@@ -336,7 +336,7 @@ export default function QuizClient() {
         <div className="mt-3 min-h-[3.25rem] text-xl font-extrabold leading-snug break-words">{q.prompt}</div>
 
         <div className="mt-4 grid grid-cols-1 gap-2">
-          {q.options.map((o) => {
+          {q.options.map((o, oi) => {
             const selected = chosen === o.value;
             const eliminated = !feedback && hintEliminated.includes(o.value);
             const isCorrectOption = feedback && o.value === q.answer;
@@ -345,6 +345,7 @@ export default function QuizClient() {
               <button
                 key={o.value}
                 disabled={locked || (!feedback && eliminated)}
+                data-testid={`quiz-option-${oi + 1}`}
                 className={`focus-ring rounded-2xl border-2 px-4 py-4 text-left text-lg font-extrabold transition-colors disabled:opacity-100 ${
                   selected ? 'border-blue-600 bg-blue-50 pop' : ''
                 } ${isCorrectOption ? 'border-green-600 bg-green-50' : ''} ${
@@ -454,6 +455,7 @@ export default function QuizClient() {
 
           <button
             className="btn btn-ghost focus-ring flex-1"
+            data-testid="quiz-hint"
             disabled={!canUseHint}
             onClick={() => {
               if (!q || !canUseHint) return;
@@ -477,6 +479,7 @@ export default function QuizClient() {
 
           <button
             className="btn btn-primary focus-ring flex-1 disabled:opacity-50"
+            data-testid="quiz-confirm"
             disabled={!chosen || locked}
             onClick={() => {
               if (!q || !chosen) return;

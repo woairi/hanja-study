@@ -9,6 +9,7 @@ export type StateCardAction = {
   href?: string;
   onClick?: () => void;
   variant?: 'primary' | 'ghost';
+  testId?: string;
 };
 
 type StateCardProps = {
@@ -42,6 +43,7 @@ export function StateCard({ icon, title, description, hint, actions = [], classN
                   className={`btn ${variant === 'primary' ? 'btn-primary' : 'btn-ghost'} focus-ring inline-flex w-full items-center justify-center`}
                   href={a.href}
                   onClick={a.onClick}
+                  data-testid={a.testId}
                 >
                   {a.label}
                 </Link>
@@ -49,7 +51,7 @@ export function StateCard({ icon, title, description, hint, actions = [], classN
             }
 
             return (
-              <Button key={`${a.label}-${idx}`} variant={variant} className="w-full" onClick={a.onClick}>
+              <Button key={`${a.label}-${idx}`} variant={variant} className="w-full" onClick={a.onClick} data-testid={a.testId}>
                 {a.label}
               </Button>
             );

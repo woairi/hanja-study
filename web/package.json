@@ -10,6 +10,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "check:data": "node scripts/check_data.mjs",
+    "check:top5": "node scripts/check_top5_selectors.mjs",
     "predeploy": "node scripts/predeploy.mjs",
     "sample:confusables": "node scripts/sample_confusables.mjs"
   },

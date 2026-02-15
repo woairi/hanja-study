@@ -258,6 +258,7 @@ export default function StudyClient() {
             <Link
               className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
               href={quizHref}
+              data-testid="study-quiz-start"
               onClick={() => {
                 // switch to quiz resume mode
                 const raw = window.sessionStorage.getItem(SESSION_KEY);
@@ -326,6 +327,7 @@ export default function StudyClient() {
           ) : (
             <button
               className="btn btn-primary focus-ring"
+              data-testid="study-reveal"
               onClick={() => setRevealed(true)}
             >
               뜻/음 보기
@@ -347,6 +349,7 @@ export default function StudyClient() {
         </button>
         <button
           className="btn btn-primary focus-ring flex-1"
+          data-testid="study-next"
           onClick={() => {
             setRevealed(false);
             setIdx((i) => {

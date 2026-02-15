@@ -63,6 +63,9 @@
 - `cd web && npx jest src/lib/__tests__/srs.test.ts`
 - `cd web && npx jest src/lib/__tests__/quiz.trap.test.ts`
 
+Top5 셀렉터 스모크(자동화 준비):
+- `cd web && npm run check:top5`
+
 참고:
 - `next start`가 실행 중이면 `npm run build`가 `.next/lock` 때문에 실패할 수 있음 → 실행 중인 서버 종료 후 재시도
 
@@ -89,6 +92,8 @@
 8. `/progress` 진도/복습 대기/레거시 안내 동작
 9. `/settings` 진입 및 목표/급수 변경 반영
 10. 백/포워드/새로고침 반복 시 크래시/화이트스크린 없음
+
+Top5 자동화 준비 문서: `docs/qe-top5-e2e.md`
 
 ### 릴리즈 블로커(P0)
 - 학습 핵심 플로우 불가(학습 시작/문항 처리/진도 저장)

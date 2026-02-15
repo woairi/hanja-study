@@ -252,6 +252,7 @@ export default function HomePage() {
             <Link
               href={todayMission.href}
               className="focus-ring inline-flex items-center justify-center gap-2 btn btn-primary px-4 py-3 text-sm"
+              data-testid="home-mission-cta"
               onClick={() => logEvent('home_primary_click', { kind: todayMission.kind, href: todayMission.href })}
             >
               {todayMission.cta} <span aria-hidden>▶</span>
@@ -283,6 +284,7 @@ export default function HomePage() {
               <Link
                 href={continueCard.href}
                 className="focus-ring inline-flex items-center justify-center gap-2 btn btn-ghost px-4 py-3 text-sm"
+                data-testid="home-resume-cta"
                 onClick={() => logEvent('home_secondary_click', { kind: 'continue', href: continueCard.href })}
               >
                 {continueCard.cta}

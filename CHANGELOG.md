@@ -31,6 +31,7 @@
 - Week4(QE): storage fallback 안전성 테스트 추가(깨진 localStorage JSON → default 복구)
 - Week4(QE): quiz result TTL 만료 정리 테스트 강화(local-only stale cache 포함)
 - Week4(QE): iOS Safari 실기기 점검용 known issues/workaround 문서 추가(`docs/qa-ios-safari.md`)
+- Week4(QE): Top5 E2E 준비 문서 추가(`docs/qe-top5-e2e.md`) + 셀렉터 점검 스크립트(`npm run check:top5`)
 - Week4(BE): `data/build.mjs`가 v2 override 배열 스키마(target 기반)를 직접 읽도록 보강(legacy object-map도 계속 지원)
 - Week2(FE polish): /progress에서 레거시 사용자(stats.daily 없음) 안내 배지/가이드 카드 추가
 - Week3: 오답 시 한자=뜻+음(짧은 설명) 표시
@@ -91,6 +92,7 @@
 - Week4(FE): /settings 설정 페이지 추가(닉네임/일일 목표/시작 급수 변경) + 온보딩 다시하기/학습기록 전체 초기화
 
 ### Changed
+- Week4(FE): 핵심 화면(Home/Study/Quiz/Result/Progress)에 안정 셀렉터(`data-testid`)를 추가해 Top5 E2E 자동화 기반 확보
 - Week4(FE): `/progress`에서 상태 로드 중복을 줄이도록 계산 경로 정리(동일 렌더 내 loadState 재호출 최소화)
 - Week4(FE): 학습 완료 후 퀴즈 시작 링크의 `n` 파라미터를 현재 세션 값으로 고정(이전 세션 값으로 뒤바뀌는 케이스 수정)
 - Week4(FE): 홈 상단 헤더 레이아웃 정리(상태 텍스트를 칩 형태로 분리, 설정/토글 컨트롤 별도 줄 배치, 좁은 화면에서 텍스트 깨짐 완화)

@@ -412,6 +412,7 @@ export default function ProgressPage() {
           </div>
           <Link
             href={totalDue > 0 ? reviewLink : '#'}
+            data-testid="progress-review-start"
             onClick={(e) => {
               if (totalDue <= 0) {
                 e.preventDefault();
