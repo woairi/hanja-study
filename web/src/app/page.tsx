@@ -8,10 +8,10 @@ import StickerBadge, { type Badge } from '@/components/StickerBadge';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { GRADE_LABELS, kanjiByGradeLabel } from '@/lib/kanji';
-import { loadState, saveState } from '@/lib/storage';
 import { loadLastSession, type LastSession } from '@/lib/session';
-import type { GradeLabel } from '@/lib/types';
+import { loadState, saveState } from '@/lib/storage';
 import { logEvent } from '@/lib/telemetry';
+import type { GradeLabel } from '@/lib/types';
 
 export default function HomePage() {
   const [dailyCount, setDailyCount] = useState<5 | 10 | 15>(5);
@@ -62,6 +62,9 @@ export default function HomePage() {
     }
   }, [showGrades, showGoals]);
 
+  const seenCount = useMemo(() => Object.keys(loadState().progress || {}).length, []);
+  const isNew = seenCount <= 0;
+
   const gradeSummaries = useMemo(() => {
     const st = loadState();
     return GRADE_LABELS.map((label) => {
@@ -87,17 +90,74 @@ export default function HomePage() {
       if (!best || due > best.due) best = { label, due };
     }
 
-    const dailyCount = st.settings.dailyCount;
     const target = best?.label ?? '8급';
     const href = `/study?grade=${encodeURIComponent(target)}&n=${Math.min(10, dailyCount)}&review=1`;
 
     return { totalDue, target, href };
-  }, []);
+  }, [dailyCount]);
+
+  const todayMission = useMemo(() => {
+    // One big button to enter learning (mission).
+    if (reviewInfo.totalDue > 0) {
+      return {
+        kind: 'review' as const,
+        title: '오늘 미션',
+        subtitle: `복습 ${reviewInfo.totalDue}개 · ${reviewInfo.target}`,
+        hint: '복습부터 하면 기억이 더 잘 남아!',
+        href: reviewInfo.href,
+        cta: '미션 시작',
+      };
+    }
+    return {
+      kind: 'learn' as const,
+      title: '오늘 미션',
+      subtitle: `${lastGrade} · 새 한자 ${dailyCount}자`,
+      hint: '오늘 분량만 딱 끝내자!',
+      href: `/study?grade=${encodeURIComponent(lastGrade)}&n=${dailyCount}`,
+      cta: isNew ? '첫 미션 시작' : '미션 시작',
+    };
+  }, [reviewInfo.totalDue, reviewInfo.target, reviewInfo.href, lastGrade, dailyCount, isNew]);
+
+  const continueCard = useMemo(() => {
+    if (lastSession) {
+      return {
+        kind: 'resume' as const,
+        title: '이어하기',
+        subtitle: `${lastSession.gradeLabel} · ${lastSession.mode === 'study' ? '학습' : '퀴즈'}`,
+        hint: '중간에 멈춰도 괜찮아. 여기서 다시 시작!',
+        href: '/resume',
+        cta: '이어하기',
+        disabled: false,
+      };
+    }
+
+    // New vs existing: make the state obvious.
+    if (isNew) {
+      return {
+        kind: 'none' as const,
+        title: '이어하기',
+        subtitle: '아직 이어할 기록이 없어',
+        hint: '첫 미션을 하면 다음부터는 이어하기가 생겨!',
+        href: '#',
+        cta: '아직 없음',
+        disabled: true,
+      };
+    }
+
+    return {
+      kind: 'none' as const,
+      title: '이어하기',
+      subtitle: '최근 기록을 못 찾았어',
+      hint: '괜찮아! 오늘 미션으로 다시 시작하면 돼.',
+      href: '#',
+      cta: '기록 없음',
+      disabled: true,
+    };
+  }, [lastSession, isNew]);
 
   const badges: Badge[] = useMemo(() => {
     const st = loadState();
     const streakCount = st.streak.count;
-    const seenCount = Object.keys(st.progress || {}).length;
     const quizAnswered = st.stats?.quizAnswered || 0;
     return [
       { id: 'first', label: '첫 공부', emoji: '🦖', achieved: seenCount > 0 },
@@ -105,7 +165,7 @@ export default function HomePage() {
       { id: 'streak7', label: '연속 7일', emoji: '🌈', achieved: streakCount >= 7 },
       { id: 'quiz50', label: '퀴즈 50문제', emoji: '🏅', achieved: quizAnswered >= 50 },
     ];
-  }, []);
+  }, [seenCount]);
 
   const badgeDesc: Record<string, string> = {
     first: '첫 한자를 공부했어! 시작이 반이야.',
@@ -113,64 +173,6 @@ export default function HomePage() {
     streak7: '7일 연속 성공! 공룡처럼 강해지고 있어.',
     quiz50: '퀴즈 50문제 돌파! 실력이 쑥쑥.',
   };
-
-  const primary = useMemo(() => {
-    // Primary CTA: resume if exists, else review if due, else learn.
-    if (lastSession) {
-      return {
-        kind: 'resume' as const,
-        title: '이어하기',
-        subtitle: `${lastSession.gradeLabel} · ${lastSession.mode === 'study' ? '학습' : '퀴즈'}`,
-        href: '/resume',
-        cta: '계속',
-      };
-    }
-    if (reviewInfo.totalDue > 0) {
-      return {
-        kind: 'review' as const,
-        title: '오늘 할 일 (복습)',
-        subtitle: `복습 ${reviewInfo.totalDue}개 · ${reviewInfo.target}`,
-        href: reviewInfo.href,
-        cta: '복습',
-      };
-    }
-    return {
-      kind: 'learn' as const,
-      title: '오늘 할 일 (새 한자)',
-      subtitle: `${lastGrade} · ${dailyCount}자`,
-      href: `/study?grade=${encodeURIComponent(lastGrade)}&n=${dailyCount}`,
-      cta: '시작',
-    };
-  }, [lastSession, reviewInfo.totalDue, reviewInfo.target, reviewInfo.href, lastGrade, dailyCount]);
-
-  // Secondary CTAs: keep at most 2
-  const secondary = useMemo(() => {
-    const learn = {
-      title: '새 한자 배우기',
-      subtitle: `${lastGrade} · ${dailyCount}자`,
-      href: `/study?grade=${encodeURIComponent(lastGrade)}&n=${dailyCount}`,
-      icon: '📚',
-      disabled: false,
-      kind: 'learn' as const,
-    };
-    const review = {
-      title: '복습하기',
-      subtitle:
-        reviewInfo.totalDue > 0 ? `${Math.min(10, dailyCount)}개까지 · ${reviewInfo.target}` : '복습 없음! 🎉',
-      href: reviewInfo.totalDue > 0 ? reviewInfo.href : '#',
-      icon: '🔁',
-      disabled: reviewInfo.totalDue <= 0,
-      kind: 'review' as const,
-    };
-
-    // if primary is review, show learn as main secondary; otherwise show review.
-    if (primary.kind === 'review') return [learn];
-    if (primary.kind === 'learn') return [review];
-
-    // resume: show both, but when no review due, keep UI clean: show learn only.
-    if (reviewInfo.totalDue <= 0) return [learn];
-    return [learn, review];
-  }, [primary.kind, lastGrade, dailyCount, reviewInfo.totalDue, reviewInfo.target, reviewInfo.href]);
 
   return (
     <main className="mx-auto max-w-md p-4">
@@ -195,69 +197,60 @@ export default function HomePage() {
         </div>
       </header>
 
-      {/* Primary CTA (Hero) */}
-      <section className="mb-3">
+      {/* P1: Today mission + Continue (always shown together) */}
+      <section className="mb-3 space-y-3">
         <Card className="p-4">
-          <div className="flex items-center justify-between gap-4">
-            <div>
+          <div className="flex items-start justify-between gap-4">
+            <div className="min-w-0">
               <div className="text-sm font-extrabold" style={{ color: 'var(--muted)' }}>
-                {primary.title}
+                {todayMission.title}
               </div>
-              <div className="mt-1 text-base font-extrabold">{primary.subtitle}</div>
+              <div className="mt-1 text-base font-extrabold">{todayMission.subtitle}</div>
               <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
-                {primary.kind === 'resume'
-                  ? '(바로 이어서 계속)'
-                  : primary.kind === 'review'
-                    ? '복습부터 하면 기억이 더 잘 남아.'
-                    : '오늘 분량만 딱 끝내자.'}
+                {todayMission.hint}
               </div>
             </div>
             <Link
-              className="btn btn-primary focus-ring inline-flex items-center justify-center"
-              href={primary.href}
-              onClick={() => logEvent('home_primary_click', { kind: primary.kind, href: primary.href })}
+              href={todayMission.href}
+              className="focus-ring inline-flex items-center justify-center gap-2 btn btn-primary px-4 py-3 text-sm"
+              onClick={() => logEvent('home_primary_click', { kind: todayMission.kind, href: todayMission.href })}
             >
-              {primary.cta}
+              {todayMission.cta} <span aria-hidden>▶</span>
             </Link>
           </div>
+
+          {/* gentle guidance for kids */}
+          <div className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>
+            {isNew ? '팁: 버튼을 한 번만 누르면 바로 공부가 시작돼!' : '팁: 오늘 미션만 끝내도 실력이 쑥쑥!'}
+          </div>
         </Card>
-      </section>
 
-      {/* Today actions (Secondary) */}
-      <section className="mb-3 grid grid-cols-2 gap-3">
-        {secondary.map((a) => {
-          const cls = `card p-3 ${a.disabled ? 'opacity-70' : 'active:scale-[0.99]'}`;
-          if (a.disabled) {
-            return (
-              <Card key={a.title} className={cls.replace('card ', '')} aria-disabled>
-                <div className="text-lg" aria-hidden>
-                  {a.icon}
-                </div>
-                <div className="mt-1 text-sm font-extrabold">{a.title}</div>
-                <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
-                  {a.subtitle}
-                </div>
-              </Card>
-            );
-          }
-
-          return (
-            <Link
-              key={a.title}
-              href={a.href}
-              className={cls}
-              onClick={() => logEvent('home_secondary_click', { kind: a.kind, href: a.href })}
-            >
-              <div className="text-lg" aria-hidden>
-                {a.icon}
+        <Card className={`p-4 ${continueCard.disabled ? 'opacity-75' : ''}`} aria-disabled={continueCard.disabled || undefined}>
+          <div className="flex items-start justify-between gap-4">
+            <div className="min-w-0">
+              <div className="text-sm font-extrabold" style={{ color: 'var(--muted)' }}>
+                {continueCard.title}
               </div>
-              <div className="mt-1 text-sm font-extrabold">{a.title}</div>
+              <div className="mt-1 text-base font-extrabold">{continueCard.subtitle}</div>
               <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
-                {a.subtitle}
+                {continueCard.hint}
               </div>
-            </Link>
-          );
-        })}
+            </div>
+            {continueCard.disabled ? (
+              <div className="btn btn-ghost px-4 py-3 text-sm" aria-hidden>
+                {continueCard.cta}
+              </div>
+            ) : (
+              <Link
+                href={continueCard.href}
+                className="focus-ring inline-flex items-center justify-center gap-2 btn btn-ghost px-4 py-3 text-sm"
+                onClick={() => logEvent('home_secondary_click', { kind: 'continue', href: continueCard.href })}
+              >
+                {continueCard.cta}
+              </Link>
+            )}
+          </div>
+        </Card>
       </section>
 
       {/* Collapsible: goals/badges */}
@@ -265,22 +258,22 @@ export default function HomePage() {
         <section className="mb-3">
           <Card className="p-4">
             <div className="flex items-center justify-between">
-            <div>
-              <div className="text-sm" style={{ color: 'var(--muted)' }}>
-                오늘 목표
+              <div>
+                <div className="text-sm" style={{ color: 'var(--muted)' }}>
+                  오늘 목표
+                </div>
+                <div className="text-lg font-extrabold">{dailyCount}자</div>
               </div>
-              <div className="text-lg font-extrabold">{dailyCount}자</div>
-            </div>
-            <select
-              className="focus-ring rounded-2xl border-2 px-3 py-2 font-extrabold"
-              style={{ borderColor: 'rgba(2,132,199,0.18)', background: 'rgba(255,255,255,0.8)' }}
-              value={dailyCount}
-              onChange={(e) => setDailyCount(Number(e.target.value) as 5 | 10 | 15)}
-            >
-              <option value={5}>5자</option>
-              <option value={10}>10자</option>
-              <option value={15}>15자</option>
-            </select>
+              <select
+                className="focus-ring rounded-2xl border-2 px-3 py-2 font-extrabold"
+                style={{ borderColor: 'rgba(2,132,199,0.18)', background: 'rgba(255,255,255,0.8)' }}
+                value={dailyCount}
+                onChange={(e) => setDailyCount(Number(e.target.value) as 5 | 10 | 15)}
+              >
+                <option value={5}>5자</option>
+                <option value={10}>10자</option>
+                <option value={15}>15자</option>
+              </select>
             </div>
 
             <div className="mt-3 text-sm">
@@ -304,16 +297,16 @@ export default function HomePage() {
               급수 선택
             </div>
             <div className="mt-3 grid grid-cols-2 gap-3">
-            {gradeSummaries.map(({ label, total, mastered }) => (
-              <GradeCard
-                key={label}
-                label={label as GradeLabel}
-                total={total}
-                mastered={mastered}
-                dailyCount={dailyCount}
-                onPickGrade={(g) => setLastGrade(g)}
-              />
-            ))}
+              {gradeSummaries.map(({ label, total, mastered }) => (
+                <GradeCard
+                  key={label}
+                  label={label as GradeLabel}
+                  total={total}
+                  mastered={mastered}
+                  dailyCount={dailyCount}
+                  onPickGrade={(g) => setLastGrade(g)}
+                />
+              ))}
             </div>
           </Card>
         </section>
