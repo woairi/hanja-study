@@ -8,6 +8,7 @@ import type { GradeLabel, KanjiItem } from '@/lib/types';
 import { loadState, saveState } from '@/lib/storage';
 import { applyAnswer } from '@/lib/srs';
 import { makeQuiz, type QuizQuestion } from '@/lib/quiz';
+import { makeRetryQuestion } from '@/lib/retry';
 import { loadLastSession, saveLastSession, clearLastSession } from '@/lib/session';
 
 type StudySession = {
@@ -32,6 +33,7 @@ export default function QuizClient() {
   const [sparkleKey, setSparkleKey] = useState(0);
   const [confettiKey, setConfettiKey] = useState(0);
   const [answers, setAnswers] = useState<{ qid: string; correct: boolean; kanjiId: string }[]>([]);
+  const [pendingRetry, setPendingRetry] = useState<Array<{ kanjiId: string; dueAt: number; kind: QuizQuestion['kind'] }>>([]);
 
   useEffect(() => {
     const retry = sp.get('retry') === '1';
@@ -49,6 +51,7 @@ export default function QuizClient() {
       setLocked(false);
       setFeedback(null);
       setAnswers([]);
+      setPendingRetry([]);
       // no resume state for retry
       return;
     }
@@ -73,6 +76,7 @@ export default function QuizClient() {
     setLocked(false);
     setFeedback(null);
     setAnswers([]);
+    setPendingRetry([]);
 
     saveLastSession({
       version: 1,
@@ -85,6 +89,31 @@ export default function QuizClient() {
       updatedAt: Date.now(),
     });
   }, [grade, sp]);
+
+  // If any scheduled retry is due at current index, insert it *before* rendering this index.
+  useEffect(() => {
+    const due = pendingRetry.filter((r) => r.dueAt === qIdx);
+    if (!due.length) return;
+
+    setQuestions((prevQs) => {
+      const pool = kanjiByGradeLabel(grade);
+      const map = new Map(ALL_KANJI.map((k) => [k.id, k] as const));
+      const inserts = due
+        .map((r) => map.get(r.kanjiId))
+        .filter((x): x is KanjiItem => !!x)
+        .map((k) => {
+          const qq = makeRetryQuestion(k, pool);
+          return { ...qq, id: `retry-${k.id}-${Date.now()}`, kanjiId: k.id };
+        });
+
+      if (!inserts.length) return prevQs;
+      const next = [...prevQs];
+      next.splice(qIdx, 0, ...inserts);
+      return next;
+    });
+
+    setPendingRetry((p) => p.filter((r) => r.dueAt !== qIdx));
+  }, [qIdx, pendingRetry, grade]);
 
   const q = questions[qIdx];
   const done = questions.length > 0 && qIdx >= questions.length;
@@ -289,7 +318,11 @@ export default function QuizClient() {
               if (isCorrect) {
                 setConfettiKey((k) => k + 1);
                 setSparkleKey((k) => k + 1);
+              } else {
+                // schedule one re-try after 3 more questions
+                setPendingRetry((p) => [...p, { kanjiId: q.kanjiId, dueAt: qIdx + 4, kind: q.kind }]);
               }
+
               setAnswers((a) => [...a, { qid: q.id, correct: isCorrect, kanjiId: q.kanjiId }]);
               commitResult(isCorrect, q.kanjiId);
 
@@ -298,6 +331,7 @@ export default function QuizClient() {
                 setFeedback(null);
                 setLocked(false);
                 setChosen(null);
+
                 setQIdx((i) => {
                   const next = i + 1;
                   const raw = window.sessionStorage.getItem(SESSION_KEY);

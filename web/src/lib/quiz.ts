@@ -51,7 +51,7 @@ function pickDistractors(k: KanjiItem, pool: KanjiItem[], field: 'meaning' | 're
   return [...set];
 }
 
-function makeMeaningQ(k: KanjiItem, pool: KanjiItem[]): QuizQuestion {
+export function makeMeaningQ(k: KanjiItem, pool: KanjiItem[]): QuizQuestion {
   const distractors = pickDistractors(k, pool, 'meaning', 3);
   const opts = shuffle([k.meaning, ...distractors]).map((t) => ({ text: t, value: t }));
   return {
@@ -64,7 +64,7 @@ function makeMeaningQ(k: KanjiItem, pool: KanjiItem[]): QuizQuestion {
   };
 }
 
-function makeReadingQ(k: KanjiItem, pool: KanjiItem[]): QuizQuestion {
+export function makeReadingQ(k: KanjiItem, pool: KanjiItem[]): QuizQuestion {
   const distractors = pickDistractors(k, pool, 'reading', 3);
   const opts = shuffle([k.reading, ...distractors]).map((t) => ({ text: t, value: t }));
   return {
@@ -77,7 +77,7 @@ function makeReadingQ(k: KanjiItem, pool: KanjiItem[]): QuizQuestion {
   };
 }
 
-function makeTrapQ(k: KanjiItem, pool: KanjiItem[]): QuizQuestion {
+export function makeTrapQ(k: KanjiItem, pool: KanjiItem[]): QuizQuestion {
   const conf = (k.confusables || []).filter(Boolean);
   const confItems = conf
     .map((hanja) => pool.find((x) => x.hanja === hanja))
