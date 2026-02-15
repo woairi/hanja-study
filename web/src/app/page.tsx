@@ -72,7 +72,7 @@ export default function HomePage() {
           <Dino className="text-2xl" />
         </div>
         <p className="text-sm" style={{ color: 'var(--muted)' }}>
-          어문회 8급~5급 · 키즈 모드
+          어문회 8급~4급 · 키즈 모드
         </p>
       </header>
 
@@ -242,6 +242,10 @@ function gradeDino(label: GradeLabel): string {
       return '🐲';
     case '5급':
       return '👑';
+    case '4급':
+      return '🦖';
+    case '4급Ⅱ':
+      return '🧠';
     default:
       return '🦖';
   }

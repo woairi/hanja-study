@@ -40,6 +40,8 @@ const expected = {
   '6급': 75,
   '6급Ⅱ': 75,
   '5급': 100,
+  '4급': 250,
+  '4급Ⅱ': 250,
 };
 
 for (const [label, n] of Object.entries(expected)) {

@@ -3,7 +3,7 @@ import type { GradeLabel, KanjiItem } from './types';
 
 export const ALL_KANJI: KanjiItem[] = kanjiData as unknown as KanjiItem[];
 
-export const GRADE_LABELS: GradeLabel[] = ['8급', '7급', '7급Ⅱ', '6급', '6급Ⅱ', '5급'];
+export const GRADE_LABELS: GradeLabel[] = ['8급', '7급', '7급Ⅱ', '6급', '6급Ⅱ', '5급', '4급', '4급Ⅱ'];
 
 export function kanjiByGradeLabel(label: GradeLabel): KanjiItem[] {
   return ALL_KANJI.filter((k) => k.gradeLabel === label);

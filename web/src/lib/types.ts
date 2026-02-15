@@ -1,4 +1,4 @@
-export type GradeLabel = '8급' | '7급' | '7급Ⅱ' | '6급' | '6급Ⅱ' | '5급';
+export type GradeLabel = '8급' | '7급' | '7급Ⅱ' | '6급' | '6급Ⅱ' | '5급' | '4급' | '4급Ⅱ';
 
 export type KanjiItem = {
   id: string;
