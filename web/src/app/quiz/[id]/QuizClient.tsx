@@ -181,6 +181,14 @@ export default function QuizClient() {
 
   const q = questions[qIdx];
   const done = questions.length > 0 && qIdx >= questions.length;
+  const hintCandidates = useMemo(() => {
+    if (!q) return [] as string[];
+    return q.options
+      .map((o) => o.value)
+      .filter((v) => v !== q.answer)
+      .filter((v) => v !== chosen);
+  }, [q, chosen]);
+  const canUseHint = !locked && !feedback && !hintUsed && hintCandidates.length > 0;
   useEffect(() => {
     // Per-question UI state should reset on navigation.
     setHintUsed(false);
@@ -426,7 +434,7 @@ export default function QuizClient() {
       </Card>
 
       <div className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>
-        정답/오답은 자동으로 복습 일정에 반영돼.
+        정답/오답은 자동으로 복습 일정에 반영돼. 힌트는 문제당 1회 사용 가능해.
       </div>
 
       {/* bottom bar */}
@@ -446,19 +454,14 @@ export default function QuizClient() {
 
           <button
             className="btn btn-ghost focus-ring flex-1"
-            disabled={locked || !!feedback || hintUsed}
+            disabled={!canUseHint}
             onClick={() => {
-              if (!q || locked || feedback || hintUsed) return;
-
-              const wrong = q.options
-                .map((o) => o.value)
-                .filter((v) => v !== q.answer)
-                .filter((v) => v !== chosen);
+              if (!q || !canUseHint) return;
 
               // Keep at least 2 choices available.
               const need = Math.max(1, q.options.length - 2);
               const picked: string[] = [];
-              for (const v of wrong.sort(() => Math.random() - 0.5)) {
+              for (const v of [...hintCandidates].sort(() => Math.random() - 0.5)) {
                 if (picked.length >= need) break;
                 picked.push(v);
               }
@@ -469,7 +472,7 @@ export default function QuizClient() {
               logEvent('quiz_hint_use', { grade, kind: q.kind });
             }}
           >
-            힌트
+            {hintUsed ? '힌트 사용완료' : hintCandidates.length === 0 ? '힌트 없음' : '힌트'}
           </button>
 
           <button

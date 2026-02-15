@@ -26,6 +26,7 @@
 - Week4(FE): /progress 레거시 안내 전환 UX 강화(백업 CTA, `다시 보지 않기`, 다음 진입 시 홈 자동 전환, `?legacy=1` 재확인 지원)
 - Week4(FE): /quiz/result 하단 고정 Primary CTA 도입(360x800에서 다음 행동 버튼 상시 노출)
 - Week4(FE): 공통 상태 카드(`StateCard`) 도입 + /quiz/result(결과없음), /progress(레거시/빈 상태), /quiz(세션없음 가드)에 적용
+- Week4(FE): 퀴즈 힌트 버튼 상태를 명확화(사용완료/힌트없음 라벨, 비활성 조건 정리) + 안내 문구 추가
 - Week4(QE): 실기기 QA 게이트(v1) 및 D+1~D+10 실행표 문서화(`docs/qe.md`)
 - Week4(QE): storage fallback 안전성 테스트 추가(깨진 localStorage JSON → default 복구)
 - Week4(QE): quiz result TTL 만료 정리 테스트 강화(local-only stale cache 포함)
