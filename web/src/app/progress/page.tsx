@@ -371,12 +371,13 @@ export default function ProgressPage() {
             description="예전 버전에서 쌓인 누적 데이터만 있고, 오늘부터는 날짜별 기록도 같이 저장돼."
             hint="한 번만 풀면 다음부터 요약 카드가 채워져! (다시 보려면 /progress?legacy=1)"
             actions={[
-              { label: '오늘 학습하러 가기', href: '/', variant: 'primary' },
-              { label: '먼저 백업(내보내기)', href: '/progress/export', variant: 'ghost' },
-              { label: '퀴즈로 기록 만들기', href: '/quiz/session', variant: 'ghost' },
+              { label: '오늘 학습하러 가기', href: '/', variant: 'primary', testId: 'progress-legacy-start' },
+              { label: '먼저 백업(내보내기)', href: '/progress/export', variant: 'ghost', testId: 'progress-legacy-export' },
+              { label: '퀴즈로 기록 만들기', href: '/quiz/session', variant: 'ghost', testId: 'progress-legacy-quiz' },
               {
                 label: '다시 보지 않기',
                 variant: 'ghost',
+                testId: 'progress-legacy-dismiss',
                 onClick: () => {
                   window.localStorage.setItem(LEGACY_HINT_DISMISSED_KEY, '1');
                   setLegacyHintDismissed(true);
@@ -393,7 +394,7 @@ export default function ProgressPage() {
             icon="🌱"
             title="진도가 비어 있어"
             description="홈에서 오늘의 학습을 시작하고, 퀴즈를 몇 문제 풀면 여기에 주간/월간 요약이 잡혀."
-            actions={[{ label: '홈에서 시작하기', href: '/', variant: 'primary' }]}
+            actions={[{ label: '홈에서 시작하기', href: '/', variant: 'primary', testId: 'progress-empty-start' }]}
             hint="학습 → 퀴즈 → 진도 순서로 보면 가장 빨리 채워져!"
           />
         )}

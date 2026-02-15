@@ -11,6 +11,10 @@ const checks = [
   { file: 'src/app/quiz/result/ResultClient.tsx', token: 'data-testid="quiz-result-primary-cta"' },
   { file: 'src/app/quiz/result/ResultClient.tsx', token: 'data-testid="quiz-result-next-mission"' },
   { file: 'src/app/progress/page.tsx', token: 'data-testid="progress-review-start"' },
+  { file: 'src/app/settings/page.tsx', token: 'data-testid="settings-save"' },
+  { file: 'src/app/settings/page.tsx', token: 'data-testid="settings-reset-open"' },
+  { file: 'src/app/quiz/[id]/QuizClient.tsx', token: 'quiz-missing-start-study' },
+  { file: 'src/app/quiz/result/ResultClient.tsx', token: 'quiz-result-missing-start' },
 ];
 
 let failed = 0;

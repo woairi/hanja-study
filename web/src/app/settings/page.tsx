@@ -184,7 +184,13 @@ export default function SettingsPage() {
           </div>
           <div className="mt-2 grid grid-cols-3 gap-2">
             {DAILY_CHOICES.map((n) => (
-              <Button key={n} variant={dailyCount === n ? 'primary' : 'ghost'} className="w-full" onClick={() => setDailyCount(n)}>
+              <Button
+                key={n}
+                variant={dailyCount === n ? 'primary' : 'ghost'}
+                className="w-full"
+                data-testid={`settings-daily-${n}`}
+                onClick={() => setDailyCount(n)}
+              >
                 {n}자
               </Button>
             ))}
@@ -208,7 +214,7 @@ export default function SettingsPage() {
           <div className="text-xs" style={{ color: 'var(--muted)' }}>
             {savedToast ? '저장했어!' : ' '}
           </div>
-          <Button onClick={save}>저장</Button>
+          <Button onClick={save} data-testid="settings-save">저장</Button>
         </div>
       </Card>
 
@@ -237,6 +243,7 @@ export default function SettingsPage() {
             variant="ghost"
             onClick={() => setShowResetConfirm(true)}
             leftIcon={<span aria-hidden>🗑️</span>}
+            data-testid="settings-reset-open"
           >
             학습 기록 전체 초기화
           </Button>
@@ -286,6 +293,7 @@ export default function SettingsPage() {
                 checked={resetAck}
                 onChange={(e) => setResetAck(e.target.checked)}
                 aria-label="초기화 복구 불가 동의"
+                data-testid="settings-reset-ack"
               />
               <span className="text-xs">삭제 후 복구할 수 없다는 걸 이해했어.</span>
             </label>
@@ -303,6 +311,7 @@ export default function SettingsPage() {
                 autoCapitalize="characters"
                 spellCheck={false}
                 aria-label="초기화 확인 입력"
+                data-testid="settings-reset-input"
               />
             </div>
           </div>
@@ -313,6 +322,7 @@ export default function SettingsPage() {
             </Button>
             <Button
               disabled={!canResetAll}
+              data-testid="settings-reset-confirm"
               onClick={() => {
                 setShowResetConfirm(false);
                 resetAll();
