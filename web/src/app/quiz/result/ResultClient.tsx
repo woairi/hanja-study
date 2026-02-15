@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Card } from '@/components/ui/Card';
+import { StateCard } from '@/components/ui/StateCard';
 import { ALL_KANJI, kanjiByGradeLabel, todayKey } from '@/lib/kanji';
 import { pickOne } from '@/lib/copy';
 import { calcQuizXp, loadQuizResult, QUIZ_RETRY_KEY, type QuizResultPayload } from '@/lib/quizResult';
@@ -94,40 +95,31 @@ export default function ResultClient() {
           </div>
         </div>
 
-        <Card className="p-5 text-center">
-          <div className="text-4xl">🧭</div>
-          <h1 className="mt-2 text-xl font-extrabold">결과를 찾을 수 없어</h1>
-          <p className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
-            퀴즈 결과는 최대 24시간 저장돼. 이후에는 자동으로 지워질 수 있어.
-          </p>
-
-          <div className="mt-5 flex flex-col gap-2">
-            <Link
-              className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
-              href={`/quiz/session?grade=${encodeURIComponent(grade)}`}
-              onClick={() => logEvent('quiz_result_missing_start_quiz_click', { grade })}
-            >
-              퀴즈 다시 시작
-            </Link>
-            <Link
-              className="btn btn-ghost focus-ring inline-flex w-full items-center justify-center"
-              href="/"
-              onClick={() => logEvent('quiz_result_missing_home_click', { grade })}
-            >
-              홈으로 가기
-            </Link>
-          </div>
-
-          <div className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>
-            팁: 퀴즈가 끝나면 바로 “홈”이나 “진도”로 이동해도 돼.
-          </div>
-        </Card>
-
-        <div className="mt-4">
-          <Link className="btn btn-ghost focus-ring inline-flex w-full items-center justify-center" href="/progress">
-            진도 보기
-          </Link>
-        </div>
+        <StateCard
+          icon="🧭"
+          title="결과를 찾을 수 없어"
+          description="퀴즈 결과는 최대 24시간 저장돼. 이후에는 자동으로 지워질 수 있어."
+          hint="팁: 퀴즈가 끝나면 바로 ‘홈’이나 ‘진도’로 이동해도 돼."
+          actions={[
+            {
+              label: '퀴즈 다시 시작',
+              href: `/quiz/session?grade=${encodeURIComponent(grade)}`,
+              variant: 'primary',
+              onClick: () => logEvent('quiz_result_missing_start_quiz_click', { grade }),
+            },
+            {
+              label: '홈으로 가기',
+              href: '/',
+              variant: 'ghost',
+              onClick: () => logEvent('quiz_result_missing_home_click', { grade }),
+            },
+            {
+              label: '진도 보기',
+              href: '/progress',
+              variant: 'ghost',
+            },
+          ]}
+        />
       </main>
     );
   }

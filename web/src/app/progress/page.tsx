@@ -6,6 +6,7 @@ import { useEffect, useMemo, useState } from 'react';
 import Toast from '@/components/Toast';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
+import { StateCard } from '@/components/ui/StateCard';
 import { ALL_KANJI, GRADE_LABELS, kanjiByGradeLabel } from '@/lib/kanji';
 import { loadState } from '@/lib/storage';
 import type { GradeLabel } from '@/lib/types';
@@ -371,64 +372,38 @@ export default function ProgressPage() {
         </div>
 
         {summary.isLegacyNoDaily && (!legacyHintDismissed || forceLegacy) && (
-          <Card className="mt-3 p-4">
-            <div className="text-sm font-extrabold">주간/월간 기록이 아직 없어</div>
-            <div className="mt-1 text-sm" style={{ color: 'var(--muted)' }}>
-              예전 버전에서 쌓인 “누적” 데이터만 있고, 오늘부터는 날짜별 기록도 같이 저장돼.
-            </div>
-            <div className="mt-3 flex flex-col gap-2">
-              <Link
-                className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
-                href="/"
-              >
-                오늘 학습하러 가기
-              </Link>
-              <Link
-                className="btn btn-ghost focus-ring inline-flex w-full items-center justify-center"
-                href="/progress/export"
-              >
-                먼저 백업(내보내기)
-              </Link>
-              <Link
-                className="btn btn-ghost focus-ring inline-flex w-full items-center justify-center"
-                href="/quiz/session"
-              >
-                퀴즈로 기록 만들기
-              </Link>
-              <Button
-                variant="ghost"
-                onClick={() => {
+          <StateCard
+            className="mt-3"
+            icon="🧩"
+            title="주간/월간 기록이 아직 없어"
+            description="예전 버전에서 쌓인 누적 데이터만 있고, 오늘부터는 날짜별 기록도 같이 저장돼."
+            hint="한 번만 풀면 다음부터 요약 카드가 채워져! (다시 보려면 /progress?legacy=1)"
+            actions={[
+              { label: '오늘 학습하러 가기', href: '/', variant: 'primary' },
+              { label: '먼저 백업(내보내기)', href: '/progress/export', variant: 'ghost' },
+              { label: '퀴즈로 기록 만들기', href: '/quiz/session', variant: 'ghost' },
+              {
+                label: '다시 보지 않기',
+                variant: 'ghost',
+                onClick: () => {
                   window.localStorage.setItem(LEGACY_HINT_DISMISSED_KEY, '1');
                   setLegacyHintDismissed(true);
                   router.replace('/');
-                }}
-              >
-                다시 보지 않기
-              </Button>
-            </div>
-            <div className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>
-              한 번만 풀면 다음부터 요약 카드가 채워져! (다시 보려면 <span className="font-extrabold">/progress?legacy=1</span>)
-            </div>
-          </Card>
+                },
+              },
+            ]}
+          />
         )}
 
         {summary.isEmpty && (
-          <Card className="mt-3 p-4">
-            <div className="text-sm font-extrabold">진도가 비어 있어</div>
-            <div className="mt-1 text-sm" style={{ color: 'var(--muted)' }}>
-              아래 순서로 시작하면 여기서 성장 그래프가 잡혀!
-            </div>
-            <ol className="mt-3 list-decimal space-y-1 pl-5 text-sm" style={{ color: 'var(--muted)' }}>
-              <li>
-                <Link className="text-blue-700 underline" href="/">
-                  홈
-                </Link>
-                에서 오늘의 학습을 시작
-              </li>
-              <li>학습을 끝내고 퀴즈로 몇 문제 풀기</li>
-              <li>다시 /progress로 돌아오면 주간/월간 요약이 보여</li>
-            </ol>
-          </Card>
+          <StateCard
+            className="mt-3"
+            icon="🌱"
+            title="진도가 비어 있어"
+            description="홈에서 오늘의 학습을 시작하고, 퀴즈를 몇 문제 풀면 여기에 주간/월간 요약이 잡혀."
+            actions={[{ label: '홈에서 시작하기', href: '/', variant: 'primary' }]}
+            hint="학습 → 퀴즈 → 진도 순서로 보면 가장 빨리 채워져!"
+          />
         )}
       </section>
 

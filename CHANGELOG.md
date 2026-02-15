@@ -24,6 +24,7 @@
 - Week4(FE): 설정 화면에 저장 상태 요약(학습 기록 수/최근 학습일/퀴즈 결과 캐시) 추가 + 홈 설정 진입 링크 접근성 라벨 개선
 - Week4(FE): /progress 레거시 안내 전환 UX 강화(백업 CTA, `다시 보지 않기`, 다음 진입 시 홈 자동 전환, `?legacy=1` 재확인 지원)
 - Week4(FE): /quiz/result 하단 고정 Primary CTA 도입(360x800에서 다음 행동 버튼 상시 노출)
+- Week4(FE): 공통 상태 카드(`StateCard`) 도입 + /quiz/result(결과없음), /progress(레거시/빈 상태)에 적용
 - Week4(QE): 실기기 QA 게이트(v1) 및 D+1~D+10 실행표 문서화(`docs/qe.md`)
 - Week2(FE polish): /progress에서 레거시 사용자(stats.daily 없음) 안내 배지/가이드 카드 추가
 - Week3: 오답 시 한자=뜻+음(짧은 설명) 표시
