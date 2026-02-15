@@ -74,9 +74,43 @@ const DATASET_VERSION = process.env.DATASET_VERSION || '0.1.0';
 const SCHEMA_VERSION = 1;
 
 const base = loadJson(basePath);
-const examples = loadJson('data/examples_overrides.json').overrides || {};
-const confOverrides = loadJson('data/confusables_overrides.json').overrides || {};
-const confBlock = loadJson('data/confusables_blocklist.json').overrides || {};
+
+function normalizeExamplesOverrides(raw) {
+  if (Array.isArray(raw)) {
+    const map = {};
+    for (const r of raw) {
+      if (!r || typeof r !== 'object') continue;
+      if (typeof r.target !== 'string') continue;
+      map[r.target] = {
+        exampleWord: typeof r.exampleWord === 'string' ? r.exampleWord : '',
+        exampleMeaning: typeof r.exampleMeaning === 'string' ? r.exampleMeaning : '',
+      };
+    }
+    return map;
+  }
+  return raw && typeof raw === 'object' ? raw : {};
+}
+
+function normalizeConfOverrides(raw) {
+  if (Array.isArray(raw)) {
+    const map = {};
+    for (const r of raw) {
+      if (!r || typeof r !== 'object') continue;
+      if (typeof r.target !== 'string') continue;
+      map[r.target] = Array.isArray(r.confusables) ? r.confusables : [];
+    }
+    return map;
+  }
+  return raw && typeof raw === 'object' ? raw : {};
+}
+
+function normalizeBlockOverrides(raw) {
+  return raw && typeof raw === 'object' ? raw : {};
+}
+
+const examples = normalizeExamplesOverrides(loadJson('data/examples_overrides.json').overrides || {});
+const confOverrides = normalizeConfOverrides(loadJson('data/confusables_overrides.json').overrides || {});
+const confBlock = normalizeBlockOverrides(loadJson('data/confusables_blocklist.json').overrides || {});
 
 // Build lookups
 const byHanja = new Map(base.map((k) => [k.hanja, k]));
