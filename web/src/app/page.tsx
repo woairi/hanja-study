@@ -44,6 +44,29 @@ export default function HomePage() {
     });
   }, []);
 
+  const reviewInfo = useMemo(() => {
+    const st = loadState();
+    const now = Date.now();
+    let totalDue = 0;
+    let best: { label: GradeLabel; due: number } | null = null;
+
+    for (const label of GRADE_LABELS) {
+      const items = kanjiByGradeLabel(label);
+      const due = items.filter((k) => {
+        const p = st.progress[k.id];
+        return p && !p.mastered && p.nextReviewAt <= now;
+      }).length;
+      totalDue += due;
+      if (!best || due > best.due) best = { label, due };
+    }
+
+    const dailyCount = st.settings.dailyCount;
+    const target = best?.label ?? '8급';
+    const href = `/study?grade=${encodeURIComponent(target)}&n=${dailyCount}&review=1`;
+
+    return { totalDue, target, href };
+  }, []);
+
   const badges: Badge[] = useMemo(() => {
     const st = loadState();
     const streakCount = st.streak.count;
@@ -114,6 +137,34 @@ export default function HomePage() {
         </div>
         <div className="mt-2 text-xs" style={{ color: 'var(--muted)' }}>
           마지막으로 선택한 급수로 바로 시작해.
+        </div>
+      </section>
+
+      <section className="card mb-4 p-4">
+        <div className="flex items-center justify-between">
+          <div>
+            <div className="text-sm" style={{ color: 'var(--muted)' }}>
+              오늘의 복습
+            </div>
+            <div className="text-base font-extrabold">
+              복습 대기 {reviewInfo.totalDue}개{reviewInfo.totalDue > 0 ? ` · ${reviewInfo.target}` : ''}
+            </div>
+          </div>
+          <Link
+            className={`btn btn-primary focus-ring inline-flex items-center justify-center ${reviewInfo.totalDue > 0 ? '' : 'opacity-70'}`}
+            href={reviewInfo.totalDue > 0 ? reviewInfo.href : '#'}
+            onClick={(e) => {
+              if (reviewInfo.totalDue <= 0) {
+                e.preventDefault();
+              }
+            }}
+            aria-disabled={reviewInfo.totalDue <= 0}
+          >
+            복습!
+          </Link>
+        </div>
+        <div className="mt-2 text-xs" style={{ color: 'var(--muted)' }}>
+          복습 대기(due)만 빠르게 풀어.
         </div>
       </section>
 
