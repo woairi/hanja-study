@@ -5,6 +5,7 @@ import { execSync } from 'node:child_process';
 const steps = [
   { name: 'lint', cmd: 'npm run lint' },
   { name: 'unit tests', cmd: 'npm test' },
+  { name: 'top5 selectors', cmd: 'npm run check:top5' },
   { name: 'data checks', cmd: 'npm run check:data' },
   { name: 'build', cmd: 'npm run build' },
 ];
