@@ -1,4 +1,6 @@
 import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
 
 function loadJson(p) {
   return JSON.parse(fs.readFileSync(p, 'utf8'));
@@ -6,6 +8,20 @@ function loadJson(p) {
 
 function saveJson(p, v) {
   fs.writeFileSync(p, JSON.stringify(v, null, 2));
+}
+
+function sha256FileHex(p) {
+  const buf = fs.readFileSync(p);
+  return crypto.createHash('sha256').update(buf).digest('hex');
+}
+
+function isoFromSourceDateEpoch() {
+  const v = process.env.SOURCE_DATE_EPOCH;
+  if (!v) return null;
+  const n = Number(v);
+  if (!Number.isFinite(n) || n <= 0) return null;
+  // SOURCE_DATE_EPOCH is seconds since epoch
+  return new Date(n * 1000).toISOString();
 }
 
 function normalizeMeaning(s) {
@@ -52,6 +68,10 @@ function scoreConfusable(k, ck) {
 const basePath = process.argv[2] || 'data/kanji_8_to_4.json';
 const outDataPath = process.argv[3] || 'data/kanji_8_to_5.json';
 const outWebPath = process.argv[4] || 'web/src/data/kanji.json';
+
+// Manifest config
+const DATASET_VERSION = process.env.DATASET_VERSION || '0.1.0';
+const SCHEMA_VERSION = 1;
 
 const base = loadJson(basePath);
 const examples = loadJson('data/examples_overrides.json').overrides || {};
@@ -141,6 +161,27 @@ const enriched = base.map((k) => {
 
 saveJson(outDataPath, enriched);
 saveJson(outWebPath, enriched);
+
+function writeManifest(dataFilePath, manifestPath) {
+  const checksum = sha256FileHex(dataFilePath);
+  const created_at = isoFromSourceDateEpoch() || new Date().toISOString();
+  const manifest = {
+    dataset_version: DATASET_VERSION,
+    schema_version: SCHEMA_VERSION,
+    build_id: checksum.slice(0, 16),
+    checksum: {
+      algo: 'sha256',
+      hex: checksum,
+      file: path.basename(dataFilePath),
+    },
+    created_at,
+  };
+  saveJson(manifestPath, manifest);
+}
+
+// Keep manifests next to each consumer.
+writeManifest(outDataPath, path.join(path.dirname(outDataPath), 'manifest.json'));
+writeManifest(outWebPath, path.join(path.dirname(outWebPath), 'manifest.json'));
 
 // report
 const countBy = (label) => {

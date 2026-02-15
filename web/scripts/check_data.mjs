@@ -1,8 +1,17 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 
 const file = path.resolve('src/data/kanji.json');
-const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+const manifestFile = path.resolve('src/data/manifest.json');
+
+const dataBuf = fs.readFileSync(file);
+const data = JSON.parse(dataBuf.toString('utf8'));
+
+let manifest = null;
+if (fs.existsSync(manifestFile)) {
+  manifest = JSON.parse(fs.readFileSync(manifestFile, 'utf8'));
+}
 
 const must = ['id', 'gradeLabel', 'hanja', 'reading', 'meaning'];
 const allHanja = new Set(data.map((k) => k.hanja));
@@ -11,6 +20,32 @@ let ok = true;
 function fail(msg) {
   ok = false;
   console.error('✗', msg);
+}
+
+function sha256Hex(buf) {
+  return crypto.createHash('sha256').update(buf).digest('hex');
+}
+
+// manifest checks (basic integrity)
+if (!manifest) {
+  fail('missing manifest.json (expected at src/data/manifest.json)');
+} else {
+  if (typeof manifest.dataset_version !== 'string' || !manifest.dataset_version.trim()) fail('manifest.dataset_version missing/invalid');
+  if (typeof manifest.schema_version !== 'number' || !Number.isFinite(manifest.schema_version)) fail('manifest.schema_version missing/invalid');
+  if (typeof manifest.build_id !== 'string' || manifest.build_id.length < 8) fail('manifest.build_id missing/invalid');
+  if (!manifest.checksum || typeof manifest.checksum !== 'object') fail('manifest.checksum missing/invalid');
+  if (manifest.checksum) {
+    if (manifest.checksum.algo !== 'sha256') fail(`manifest.checksum.algo expected sha256, got ${String(manifest.checksum.algo)}`);
+    if (typeof manifest.checksum.hex !== 'string' || !/^[0-9a-f]{64}$/.test(manifest.checksum.hex)) fail('manifest.checksum.hex missing/invalid');
+    if (manifest.checksum.file !== 'kanji.json') fail(`manifest.checksum.file expected kanji.json, got ${String(manifest.checksum.file)}`);
+
+    const actual = sha256Hex(dataBuf);
+    if (manifest.checksum.hex && manifest.checksum.hex !== actual) fail('manifest checksum mismatch (kanji.json)');
+    if (manifest.build_id && manifest.checksum.hex && !manifest.checksum.hex.startsWith(manifest.build_id)) {
+      fail('manifest.build_id must match checksum prefix');
+    }
+  }
+  if (typeof manifest.created_at !== 'string' || Number.isNaN(Date.parse(manifest.created_at))) fail('manifest.created_at missing/invalid ISO date');
 }
 
 // counts by gradeLabel

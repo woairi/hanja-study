@@ -7,6 +7,7 @@
 ## [Unreleased]
 
 ### Added
+- Week1(P0): 데이터 manifest(`dataset_version/schema_version/build_id/checksum/created_at`) 생성 + web check:data에서 checksum/형식 검증
 - Week2: confusables 자동 보강(급수 내 동음/부수/획수 기반 휴리스틱) + 과도한 매칭 필터링(임계값/최대개수)
 - Week2: PWA manifest/아이콘 기반 추가(installability 시작)
 - Week2: 오프라인 상태 안내 배너(기반)
