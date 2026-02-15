@@ -76,6 +76,7 @@
 - P0: iOS Safari (주력 iPhone 1대 + 소화면 1대)
 - P1: Android Chrome (대표 1대)
 - P2: iPad Safari (가능하면)
+- 참고: iOS 특화 체크 포인트는 `docs/qa-ios-safari.md`
 
 ### RC 코어 시나리오 (10)
 1. 첫 방문 → 홈 진입 → 목표 변경 저장

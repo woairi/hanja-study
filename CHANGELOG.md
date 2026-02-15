@@ -28,6 +28,7 @@
 - Week4(FE): 공통 상태 카드(`StateCard`) 도입 + /quiz/result(결과없음), /progress(레거시/빈 상태), /quiz(세션없음 가드)에 적용
 - Week4(QE): 실기기 QA 게이트(v1) 및 D+1~D+10 실행표 문서화(`docs/qe.md`)
 - Week4(QE): storage fallback 안전성 테스트 추가(깨진 localStorage JSON → default 복구)
+- Week4(QE): iOS Safari 실기기 점검용 known issues/workaround 문서 추가(`docs/qa-ios-safari.md`)
 - Week2(FE polish): /progress에서 레거시 사용자(stats.daily 없음) 안내 배지/가이드 카드 추가
 - Week3: 오답 시 한자=뜻+음(짧은 설명) 표시
 - Week3: 오답 문제 자동 재출제(3문제 뒤 1회)
