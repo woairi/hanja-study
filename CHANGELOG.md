@@ -20,6 +20,7 @@
 - Week2(FE P5): /quiz/result 결과 요약 화면 개선(점수/정답률/획득XP 요약, 오답 탭→정답/해설 즉시 확인, CTA 2개: 오답 다시풀기/다음 미션, 퀴즈 완료 시 결과 화면으로 이동)
 - Week2(FE polish): /quiz/result 직접 진입/새로고침 시 “결과 없음” 가드 UI + 홈/퀴즈 CTA
 - Week4(FE): 퀴즈 결과 최근값 localStorage fallback + TTL(24h) 적용(새로고침/직접 진입 시 결과 복원, 만료 자동 정리)
+- Week4(QE): 실기기 QA 게이트(v1) 및 D+1~D+10 실행표 문서화(`docs/qe.md`)
 - Week2(FE polish): /progress에서 레거시 사용자(stats.daily 없음) 안내 배지/가이드 카드 추가
 - Week3: 오답 시 한자=뜻+음(짧은 설명) 표시
 - Week3: 오답 문제 자동 재출제(3문제 뒤 1회)
