@@ -243,6 +243,19 @@ export default function QuizClient() {
                 )}
               </div>
             </div>
+            {!feedback.correct && (
+              <div className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
+                {(() => {
+                  const k = ALL_KANJI.find((x) => x.id === q.kanjiId);
+                  if (!k) return null;
+                  return (
+                    <span>
+                      <span className="font-extrabold">{k.hanja}</span> = {k.meaning} {k.reading}
+                    </span>
+                  );
+                })()}
+              </div>
+            )}
           </div>
         )}
       </div>
