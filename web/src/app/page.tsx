@@ -125,7 +125,7 @@ export default function HomePage() {
     if (reviewInfo.totalDue > 0) {
       return {
         kind: 'review' as const,
-        title: '복습 먼저 하기',
+        title: '오늘 할 일 (복습)',
         subtitle: `복습 ${reviewInfo.totalDue}개 · ${reviewInfo.target}`,
         href: reviewInfo.href,
         cta: '복습',
@@ -133,7 +133,7 @@ export default function HomePage() {
     }
     return {
       kind: 'learn' as const,
-      title: '오늘의 새 한자',
+      title: '오늘 할 일 (새 한자)',
       subtitle: `${lastGrade} · ${dailyCount}자`,
       href: `/study?grade=${encodeURIComponent(lastGrade)}&n=${dailyCount}`,
       cta: '시작',
@@ -143,24 +143,29 @@ export default function HomePage() {
   // Secondary CTAs: keep at most 2
   const secondary = useMemo(() => {
     const learn = {
-      title: '새 한자',
+      title: '새 한자 배우기',
       subtitle: `${lastGrade} · ${dailyCount}자`,
       href: `/study?grade=${encodeURIComponent(lastGrade)}&n=${dailyCount}`,
       icon: '📚',
       disabled: false,
+      kind: 'learn' as const,
     };
     const review = {
-      title: '복습',
-      subtitle: reviewInfo.totalDue > 0 ? `${Math.min(10, dailyCount)}개까지 · ${reviewInfo.target}` : '대기 없음',
+      title: '복습하기',
+      subtitle:
+        reviewInfo.totalDue > 0 ? `${Math.min(10, dailyCount)}개까지 · ${reviewInfo.target}` : '복습 없음! 🎉',
       href: reviewInfo.totalDue > 0 ? reviewInfo.href : '#',
       icon: '🔁',
       disabled: reviewInfo.totalDue <= 0,
+      kind: 'review' as const,
     };
 
     // if primary is review, show learn as main secondary; otherwise show review.
     if (primary.kind === 'review') return [learn];
     if (primary.kind === 'learn') return [review];
-    // resume: show both
+
+    // resume: show both, but when no review due, keep UI clean: show learn only.
+    if (reviewInfo.totalDue <= 0) return [learn];
     return [learn, review];
   }, [primary.kind, lastGrade, dailyCount, reviewInfo.totalDue, reviewInfo.target, reviewInfo.href]);
 
@@ -174,7 +179,7 @@ export default function HomePage() {
         </div>
         <div className="mt-1 flex items-center justify-between gap-3">
           <div className="text-xs" style={{ color: 'var(--muted)' }}>
-            🔥 {streak.count}일 · 🎯 {dailyCount}자 · 🔁 {reviewInfo.totalDue}개
+            🔥 연속 {streak.count}일 · 🎯 목표 {dailyCount}자 · 🔁 복습 {reviewInfo.totalDue}개
           </div>
           <div className="flex items-center gap-2">
             <button
@@ -219,25 +224,34 @@ export default function HomePage() {
 
       {/* Today actions (Secondary) */}
       <section className="mb-3 grid grid-cols-2 gap-3">
-        {secondary.map((a) => (
-          <Link
-            key={a.title}
-            href={a.disabled ? '#' : a.href}
-            onClick={(e) => {
-              if (a.disabled) e.preventDefault();
-            }}
-            aria-disabled={a.disabled}
-            className={`card p-3 ${a.disabled ? 'opacity-60' : 'active:scale-[0.99]'}`}
-          >
-            <div className="text-lg" aria-hidden>
-              {a.icon}
-            </div>
-            <div className="mt-1 text-sm font-extrabold">{a.title}</div>
-            <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
-              {a.subtitle}
-            </div>
-          </Link>
-        ))}
+        {secondary.map((a) => {
+          const cls = `card p-3 ${a.disabled ? 'opacity-70' : 'active:scale-[0.99]'}`;
+          if (a.disabled) {
+            return (
+              <div key={a.title} className={cls} aria-disabled>
+                <div className="text-lg" aria-hidden>
+                  {a.icon}
+                </div>
+                <div className="mt-1 text-sm font-extrabold">{a.title}</div>
+                <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
+                  {a.subtitle}
+                </div>
+              </div>
+            );
+          }
+
+          return (
+            <Link key={a.title} href={a.href} className={cls}>
+              <div className="text-lg" aria-hidden>
+                {a.icon}
+              </div>
+              <div className="mt-1 text-sm font-extrabold">{a.title}</div>
+              <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
+                {a.subtitle}
+              </div>
+            </Link>
+          );
+        })}
       </section>
 
       {/* Collapsible: goals/badges */}
