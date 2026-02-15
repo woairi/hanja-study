@@ -388,64 +388,15 @@ export default function ProgressPage() {
       <section className="mt-6">
         <div className="flex items-center justify-between gap-3">
           <h2 className="text-base font-semibold">취약 TOP 10 (오답 기반)</h2>
-          <div className="flex items-center gap-2">
-            <button
-              className="btn btn-ghost focus-ring px-3 py-2 text-xs"
-              onClick={async () => {
-                const txt = weakIdsText;
-                try {
-                  await navigator.clipboard.writeText(txt);
-                  setToast('약점ID(오답 기반) 50개를 복사했어!');
-                } catch {
-                  setToast('복사 실패 😭 아래 목록을 길게 눌러서 복사해줘.');
-                }
-              }}
-            >
-              약점ID
-            </button>
-            <button
-              className="btn btn-ghost focus-ring px-3 py-2 text-xs"
-              onClick={async () => {
-                const txt = dueIdsText;
-                try {
-                  await navigator.clipboard.writeText(txt);
-                  setToast('due ID 50개를 복사했어!');
-                } catch {
-                  setToast('복사 실패 😭 아래 목록을 길게 눌러서 복사해줘.');
-                }
-              }}
-            >
-              dueID
-            </button>
-            <button
-              className="btn btn-ghost focus-ring px-3 py-2 text-xs"
-              onClick={async () => {
-                const txt = weakExportJson;
-                try {
-                  await navigator.clipboard.writeText(txt);
-                  setToast('약점(JSON)을 복사했어!');
-                } catch {
-                  setToast('복사 실패 😭 아래 목록을 길게 눌러서 복사해줘.');
-                }
-              }}
-            >
-              약점JSON
-            </button>
-            <button
-              className="btn btn-ghost focus-ring px-3 py-2 text-xs"
-              onClick={async () => {
-                const txt = dueExportJson;
-                try {
-                  await navigator.clipboard.writeText(txt);
-                  setToast('due(JSON)을 복사했어!');
-                } catch {
-                  setToast('복사 실패 😭 아래 목록을 길게 눌러서 복사해줘.');
-                }
-              }}
-            >
-              dueJSON
-            </button>
-          </div>
+          <Link
+            className="btn btn-primary focus-ring inline-flex items-center justify-center px-3 py-2 text-xs"
+            href="/progress/export"
+          >
+            내보내기
+          </Link>
+        </div>
+        <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
+          약점ID/dueID/JSON 내보내기는 “내보내기”에서 4단계로 할 수 있어.
         </div>
 
         {weak.length === 0 ? (
@@ -498,13 +449,14 @@ export default function ProgressPage() {
         )}
 
         <details className="mt-3">
-          <summary className="text-xs text-gray-500">(대체) 복사가 안 되면 여기 펼쳐서 복사</summary>
-          <pre className="mt-2 max-h-56 overflow-auto rounded-2xl bg-white/60 p-3 text-[11px] leading-relaxed">
-            {weakExportJson}
-          </pre>
-          <pre className="mt-2 max-h-56 overflow-auto rounded-2xl bg-white/60 p-3 text-[11px] leading-relaxed">
-            {dueExportJson}
-          </pre>
+          <summary className="text-xs text-gray-500">(고급/레거시) 예전 방식 내보내기 텍스트</summary>
+          <div className="mt-2 text-xs" style={{ color: 'var(--muted)' }}>
+            아래는 길게 눌러서 복사할 수 있어. (텔레그램 길이 대응용 ID 포함)
+          </div>
+          <pre className="mt-2 max-h-40 overflow-auto rounded-2xl bg-white/60 p-3 text-[11px] leading-relaxed">{weakIdsText}</pre>
+          <pre className="mt-2 max-h-40 overflow-auto rounded-2xl bg-white/60 p-3 text-[11px] leading-relaxed">{dueIdsText}</pre>
+          <pre className="mt-2 max-h-56 overflow-auto rounded-2xl bg-white/60 p-3 text-[11px] leading-relaxed">{weakExportJson}</pre>
+          <pre className="mt-2 max-h-56 overflow-auto rounded-2xl bg-white/60 p-3 text-[11px] leading-relaxed">{dueExportJson}</pre>
         </details>
       </section>
     </main>
