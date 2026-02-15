@@ -42,7 +42,7 @@
 - Week3: 약점/due export에 ID-only 복사 버튼 추가(텔레그램 길이 제한 대응)
 - Week3: 약점(오답/우선 리스트) 기반 예시 단어 수동 큐레이션(1차)
 - Week3: 퀴즈 피드백 강화(정답이어도 예시/헷갈리기 힌트 표시)
-- Week3: confusables 생성 로직 개선(같은 부수 후보 포함 + 더 엄격한 필터)
+- Week3: confusables 생성 로직 개선(같은 부수 후보 포함 + 더 엄격한 필터 + 수동 blocklist)
 - Week3: 함정문제(trap)는 confusables 충분한 항목 위주로 출제(품질)
 - Week3: 예시 단어 일부를 더 자연스러운 단어로 수동 보강(큐레이션)
 - Week3: 한자 데이터 재생성 파이프라인 추가(data/build.mjs) + 전 급수 예시 자동 채움

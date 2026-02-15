@@ -2877,9 +2877,7 @@
     "meaning": "말미암을",
     "radical": "田",
     "totalStrokes": 5,
-    "confusables": [
-      "油"
-    ],
+    "confusables": [],
     "exampleWord": "말미암을",
     "exampleMeaning": "말미암을"
   },
@@ -3070,7 +3068,6 @@
     "radical": "辵",
     "totalStrokes": 11,
     "confusables": [
-      "速",
       "近",
       "遠"
     ],
@@ -6300,7 +6297,6 @@
     "radical": "广",
     "totalStrokes": 10,
     "confusables": [
-      "座",
       "底",
       "孤"
     ],
@@ -7217,7 +7213,6 @@
     "radical": "貝",
     "totalStrokes": 9,
     "confusables": [
-      "否",
       "資",
       "賊"
     ],
@@ -10467,9 +10462,7 @@
     "meaning": "인도할",
     "radical": "寸",
     "totalStrokes": 16,
-    "confusables": [
-      "尊"
-    ],
+    "confusables": [],
     "exampleWord": "인도할",
     "exampleMeaning": "인도할"
   },
@@ -13217,8 +13210,7 @@
     "totalStrokes": 17,
     "confusables": [
       "經",
-      "續",
-      "銃"
+      "續"
     ],
     "exampleWord": "다",
     "exampleMeaning": "다"
@@ -13549,8 +13541,7 @@
     "radical": "巾",
     "totalStrokes": 5,
     "confusables": [
-      "希",
-      "包"
+      "希"
     ],
     "exampleWord": "베",
     "exampleMeaning": "베"

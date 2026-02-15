@@ -56,6 +56,7 @@ const outWebPath = process.argv[4] || 'web/src/data/kanji.json';
 const base = loadJson(basePath);
 const examples = loadJson('data/examples_overrides.json').overrides || {};
 const confOverrides = loadJson('data/confusables_overrides.json').overrides || {};
+const confBlock = loadJson('data/confusables_blocklist.json').overrides || {};
 
 // Build lookups
 const byHanja = new Map(base.map((k) => [k.hanja, k]));
@@ -99,7 +100,10 @@ const enriched = base.map((k) => {
     }
   }
 
+  const blocked = new Set(Array.isArray(confBlock[k.hanja]) ? confBlock[k.hanja] : []);
+
   const scored = [...cand]
+    .filter((c) => !blocked.has(c))
     .map((c) => {
       const ck = byHanja.get(c);
       return ck ? { c, s: scoreConfusable(k, ck) } : null;

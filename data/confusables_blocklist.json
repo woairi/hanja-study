@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "note": "Manual exclusions for confusables pairs that feel visually implausible. Keep small; prefer fixing generation heuristics first.",
+  "overrides": {
+    "布": ["包"],
+    "導": ["尊"],
+    "總": ["銃"],
+    "庫": ["座"],
+    "覺": ["刻"],
+    "通": ["速"],
+    "由": ["油"],
+    "負": ["否"]
+  }
+}

@@ -29,6 +29,7 @@
 ### 생성/정리(재생성 파이프라인)
 - 스크립트: `data/build.mjs`
 - 동작: overrides + 휴리스틱(동음 + 같은 부수) → 시각 유사도(부수/획수) 점수로 필터 → 최대 4개 캡
+- 수동 제외(미세 조정): `data/confusables_blocklist.json`
 
 ### Prune(노이즈 절삭)
 - 스크립트: `data/prune_confusables.mjs` (보조/실험용)
