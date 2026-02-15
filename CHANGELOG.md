@@ -36,6 +36,7 @@
 - Week3: 4급/4급Ⅱ confusables 노이즈 절삭(시각 유사도 기반 필터 + 최대 4개 제한)
 - Week3: 4급/4급Ⅱ 예시 단어 대량 확장(기본 meaning 기반 자동 채움)
 - Week3: telemetry 디버그 요약(간단 퍼널) 추가(전환율/후속 CTA까지)
+- Week3: 진도 화면에서 약점 TOP 50 export(복사/붙여넣기) 지원(큐레이션용)
 - Week3: 함정문제(trap)는 confusables 충분한 항목 위주로 출제(품질)
 - Week3: 예시 단어 일부를 더 자연스러운 단어로 수동 보강(큐레이션)
 - Week3: 한자 데이터 재생성 파이프라인 추가(data/build.mjs) + 전 급수 예시 자동 채움
