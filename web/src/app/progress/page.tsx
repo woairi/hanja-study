@@ -174,6 +174,18 @@ function GradeRow(props: { label: GradeLabel; total: number; seen: number; maste
               </li>
             ))}
           </ol>
+          <div className="mt-2">
+            <Link
+              href={`/study?grade=${encodeURIComponent(label)}&n=5&focus=weak`}
+              className="btn btn-primary focus-ring inline-flex items-center justify-center px-4 py-2"
+              onClick={() => {
+                // store weak ids for focus mode
+                window.sessionStorage.setItem('hanja-study:focus', JSON.stringify(weakInGrade.map((x) => x.k.id)));
+              }}
+            >
+              약점만 복습
+            </Link>
+          </div>
         </div>
       )}
     </div>

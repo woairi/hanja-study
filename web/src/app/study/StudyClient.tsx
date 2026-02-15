@@ -17,6 +17,7 @@ type StudySession = {
 };
 
 const SESSION_KEY = 'hanja-study:session';
+const FOCUS_KEY = 'hanja-study:focus';
 
 export default function StudyClient() {
   const sp = useSearchParams();
@@ -36,11 +37,18 @@ export default function StudyClient() {
     const last = loadLastSession();
     const wantResume = sp.get('resume') === '1';
     const reviewOnly = sp.get('review') === '1';
+    const focus = sp.get('focus');
 
     let pickedItems: KanjiItem[] = [];
     let startIdx = 0;
 
-    if (!reviewOnly && wantResume && last && last.mode === 'study' && last.gradeLabel === grade && last.n === n) {
+    if (focus === 'weak') {
+      const raw = window.sessionStorage.getItem(FOCUS_KEY);
+      const focusIds = raw ? (JSON.parse(raw) as string[]) : [];
+      const map = new Map(ALL_KANJI.map((k) => [k.id, k] as const));
+      pickedItems = focusIds.map((id) => map.get(id)).filter((x): x is KanjiItem => !!x).slice(0, n);
+      startIdx = 0;
+    } else if (!reviewOnly && wantResume && last && last.mode === 'study' && last.gradeLabel === grade && last.n === n) {
       const map = new Map(ALL_KANJI.map((k) => [k.id, k] as const));
       pickedItems = last.itemIds.map((id) => map.get(id)).filter((x): x is KanjiItem => !!x);
       startIdx = Math.min(last.idx, Math.max(0, pickedItems.length - 1));
@@ -83,6 +91,7 @@ export default function StudyClient() {
   const current = items[idx];
   const isDone = idx >= items.length;
   const reviewOnly = sp.get('review') === '1';
+  const focusWeak = sp.get('focus') === 'weak';
 
   const quizHref = useMemo(() => {
     const raw = window.sessionStorage.getItem(SESSION_KEY);
@@ -100,15 +109,15 @@ export default function StudyClient() {
   }
 
   if (isDone) {
-    // review mode: no quiz
-    if (reviewOnly) {
+    // focus/review mode: no quiz
+    if (reviewOnly || focusWeak) {
       return (
         <main className="mx-auto flex min-h-[70vh] max-w-md flex-col items-center justify-center p-4 text-center">
           <div className="card w-full p-6">
             <div className="text-4xl">✅</div>
-            <h1 className="mt-2 text-2xl font-extrabold">복습 완료!</h1>
+            <h1 className="mt-2 text-2xl font-extrabold">{focusWeak ? '약점 복습 완료!' : '복습 완료!'}</h1>
             <p className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
-              오늘 복습할 게 다 끝났어.
+              {focusWeak ? '약점만 빠르게 복습했어.' : '오늘 복습할 게 다 끝났어.'}
             </p>
             <div className="mt-5">
               <Link className="btn btn-primary focus-ring inline-flex w-full items-center justify-center" href="/progress">
@@ -170,16 +179,16 @@ export default function StudyClient() {
   return (
     <main className="mx-auto max-w-md p-4">
       <div className="mb-3 flex items-center justify-between">
-        <Link className="text-sm text-blue-600 underline" href={reviewOnly ? "/progress" : "/"}>
-          ← {reviewOnly ? '진도' : '급수 선택'}
+        <Link className="text-sm text-blue-600 underline" href={reviewOnly || focusWeak ? "/progress" : "/"}>
+          ← {reviewOnly || focusWeak ? '진도' : '급수 선택'}
         </Link>
         <div className="flex items-center gap-2">
-          {reviewOnly && (
+          {(reviewOnly || focusWeak) && (
             <span
               className="inline-flex items-center rounded-full px-2 py-1 text-xs font-extrabold"
               style={{ background: 'rgba(14,165,233,0.12)' }}
             >
-              🔁 복습
+              {focusWeak ? '🎯 약점' : '🔁 복습'}
             </span>
           )}
           <div className="text-sm text-gray-600">
