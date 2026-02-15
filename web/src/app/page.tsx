@@ -9,6 +9,7 @@ import { GRADE_LABELS, kanjiByGradeLabel } from '@/lib/kanji';
 import { loadState, saveState } from '@/lib/storage';
 import { loadLastSession, type LastSession } from '@/lib/session';
 import type { GradeLabel } from '@/lib/types';
+import { logEvent } from '@/lib/telemetry';
 
 export default function HomePage() {
   const [dailyCount, setDailyCount] = useState<5 | 10 | 15>(5);
@@ -216,7 +217,11 @@ export default function HomePage() {
                   : '오늘 분량만 딱 끝내자.'}
             </div>
           </div>
-          <Link className="btn btn-primary focus-ring inline-flex items-center justify-center" href={primary.href}>
+          <Link
+            className="btn btn-primary focus-ring inline-flex items-center justify-center"
+            href={primary.href}
+            onClick={() => logEvent('home_primary_click', { kind: primary.kind, href: primary.href })}
+          >
             {primary.cta}
           </Link>
         </div>
@@ -241,7 +246,12 @@ export default function HomePage() {
           }
 
           return (
-            <Link key={a.title} href={a.href} className={cls}>
+            <Link
+              key={a.title}
+              href={a.href}
+              className={cls}
+              onClick={() => logEvent('home_secondary_click', { kind: a.kind, href: a.href })}
+            >
               <div className="text-lg" aria-hidden>
                 {a.icon}
               </div>

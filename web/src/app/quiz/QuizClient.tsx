@@ -10,6 +10,7 @@ import { applyAnswer } from '@/lib/srs';
 import { makeQuiz, type QuizQuestion } from '@/lib/quiz';
 import { makeRetryQuestion } from '@/lib/retry';
 import { loadLastSession, saveLastSession, clearLastSession } from '@/lib/session';
+import { logEvent } from '@/lib/telemetry';
 
 type StudySession = {
   gradeLabel: GradeLabel;
@@ -149,6 +150,7 @@ export default function QuizClient() {
   if (done) {
     // finished → clear resume marker
     clearLastSession();
+    logEvent('quiz_done', { grade, score, total: questions.length });
 
     const hasWrong = wrongKanjiIds.length > 0;
     const st = loadState();
@@ -205,6 +207,7 @@ export default function QuizClient() {
                 className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
                 href={`/quiz?grade=${encodeURIComponent(grade)}&retry=1`}
                 onClick={() => {
+                  logEvent('quiz_retry_click', { grade, wrong: wrongKanjiIds.length });
                   window.sessionStorage.setItem(RETRY_KEY, JSON.stringify(wrongKanjiIds));
                 }}
               >
@@ -216,6 +219,7 @@ export default function QuizClient() {
               <Link
                 className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
                 href={`/study?grade=${encodeURIComponent(grade)}&n=${10}&review=1`}
+                onClick={() => logEvent('post_done_more_review_click', { grade, due: dueCountInGrade })}
               >
                 복습 {Math.min(10, dueCountInGrade)}개 더 하기
               </Link>

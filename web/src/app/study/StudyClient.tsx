@@ -8,6 +8,7 @@ import type { GradeLabel, KanjiItem } from '@/lib/types';
 import { bumpStreakOnStudy, loadState, saveState } from '@/lib/storage';
 import { pickStudyItems } from '@/lib/selection';
 import { loadLastSession, saveLastSession } from '@/lib/session';
+import { logEvent } from '@/lib/telemetry';
 
 type StudySession = {
   gradeLabel: GradeLabel;
@@ -143,6 +144,9 @@ export default function StudyClient() {
 
     // focus/review mode: no quiz
     if (reviewOnly || focusWeak) {
+      // log done
+      logEvent(focusWeak ? 'review_done' : 'review_done', { kind: focusWeak ? 'weak' : 'review', grade });
+
       return (
         <main className="mx-auto flex min-h-[70vh] max-w-md flex-col items-center justify-center p-4 text-center">
           <div className="card w-full p-6">
@@ -168,6 +172,7 @@ export default function StudyClient() {
                   className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
                   href={`/study?grade=${encodeURIComponent(grade)}&n=${10}&focus=weak`}
                   onClick={() => {
+                    logEvent('post_done_weak_review_click', { from: focusWeak ? 'weak_done' : 'review_done', grade });
                     window.sessionStorage.setItem(FOCUS_KEY, JSON.stringify(weakIds));
                   }}
                 >
@@ -185,6 +190,9 @@ export default function StudyClient() {
         </main>
       );
     }
+
+    // log learning done
+    logEvent('study_done', { grade, n });
 
     return (
       <main className="mx-auto flex min-h-[70vh] max-w-md flex-col items-center justify-center p-4 text-center">

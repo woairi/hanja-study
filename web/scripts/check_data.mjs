@@ -5,6 +5,7 @@ const file = path.resolve('src/data/kanji.json');
 const data = JSON.parse(fs.readFileSync(file, 'utf8'));
 
 const must = ['id', 'gradeLabel', 'hanja', 'reading', 'meaning'];
+const allHanja = new Set(data.map((k) => k.hanja));
 let ok = true;
 
 function fail(msg) {
@@ -23,10 +24,13 @@ for (const [i, k] of data.entries()) {
   counts.set(k.gradeLabel, (counts.get(k.gradeLabel) || 0) + 1);
 
   if (Array.isArray(k.confusables)) {
+    if (k.confusables.length > 8) fail(`too many confusables (${k.confusables.length}) at ${k.id}`);
+
     const set = new Set();
     for (const c of k.confusables) {
       if (typeof c !== 'string' || !c) fail(`bad confusable at ${k.id}`);
       if (c === k.hanja) fail(`confusables contains itself at ${k.id}`);
+      if (!allHanja.has(c)) fail(`confusable '${c}' not found in dataset at ${k.id}`);
       if (set.has(c)) fail(`duplicate confusable '${c}' at ${k.id}`);
       set.add(c);
     }
@@ -34,9 +38,12 @@ for (const [i, k] of data.entries()) {
 
   if (k.exampleWord !== undefined) {
     if (typeof k.exampleWord !== 'string' || !k.exampleWord.trim()) fail(`bad exampleWord at ${k.id}`);
+    if (k.exampleWord.trim().length > 10) fail(`exampleWord too long at ${k.id}`);
   }
   if (k.exampleMeaning !== undefined) {
     if (typeof k.exampleMeaning !== 'string' || !k.exampleMeaning.trim()) fail(`bad exampleMeaning at ${k.id}`);
+    if (!k.exampleWord || !String(k.exampleWord).trim()) fail(`exampleMeaning without exampleWord at ${k.id}`);
+    if (k.exampleMeaning.trim().length > 40) fail(`exampleMeaning too long at ${k.id}`);
   }
 }
 
