@@ -5,6 +5,41 @@ import { todayKey } from './kanji';
 
 const STORAGE_KEY = 'hanja-study:v1';
 
+function removePrefixedKeys(storage: Storage, prefix: string) {
+  // Copy keys first because storage is live.
+  const keys: string[] = [];
+  for (let i = 0; i < storage.length; i++) {
+    const k = storage.key(i);
+    if (k) keys.push(k);
+  }
+  for (const k of keys) {
+    if (k.startsWith(prefix)) storage.removeItem(k);
+  }
+}
+
+export function clearAllLocalState(): void {
+  if (typeof window === 'undefined') return;
+
+  try {
+    removePrefixedKeys(window.localStorage, 'hanja-study:');
+  } catch {
+    // ignore
+  }
+
+  try {
+    removePrefixedKeys(window.sessionStorage, 'hanja-study:');
+  } catch {
+    // ignore
+  }
+
+  // Recreate the main state key with defaults so the app boots deterministically.
+  try {
+    saveState(defaultState());
+  } catch {
+    // ignore
+  }
+}
+
 export function defaultState(): AppState {
   return {
     version: 1,

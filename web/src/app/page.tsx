@@ -191,6 +191,9 @@ export default function HomePage() {
             🔥 연속 {streak.count}일 · 🎯 목표 {dailyCount}자 · 🔁 복습 {reviewInfo.totalDue}개
           </div>
           <div className="flex items-center gap-2">
+            <Link href="/settings" className="text-xs font-extrabold underline" style={{ color: 'var(--muted)' }}>
+              설정
+            </Link>
             <Button variant="ghost" size="sm" onClick={() => setShowGoals((v) => !v)}>
               목표/뱃지 {showGoals ? '▴' : '▾'}
             </Button>
