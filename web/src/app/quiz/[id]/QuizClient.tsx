@@ -7,7 +7,7 @@ import { Card } from '@/components/ui/Card';
 import { InstantFeedback } from '@/components/quiz/InstantFeedback';
 import { ALL_KANJI, kanjiByGradeLabel } from '@/lib/kanji';
 import type { GradeLabel, KanjiItem } from '@/lib/types';
-import { loadState, saveState } from '@/lib/storage';
+import { bumpDailyQuizStats, loadState, saveState } from '@/lib/storage';
 import { applyAnswer } from '@/lib/srs';
 import { makeQuiz, type QuizQuestion } from '@/lib/quiz';
 import { makeRetryQuestion } from '@/lib/retry';
@@ -182,12 +182,13 @@ export default function QuizClient() {
 
   function commitResult(isCorrect: boolean, kanjiId: string) {
     const now = Date.now();
-    const st = loadState();
+    let st = loadState();
     const prev = st.progress[kanjiId];
     if (!prev) return;
     const k = ALL_KANJI.find((x) => x.id === kanjiId);
     st.progress[kanjiId] = applyAnswer(prev, isCorrect, now, { gradeLabel: k?.gradeLabel });
     st.stats.quizAnswered = (st.stats.quizAnswered || 0) + 1;
+    st = bumpDailyQuizStats(st, { at: now, correct: isCorrect });
     saveState(st);
   }
 

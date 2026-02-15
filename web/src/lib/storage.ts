@@ -10,7 +10,7 @@ export function defaultState(): AppState {
     version: 1,
     settings: { dailyCount: 5, lastGradeLabel: '8급' },
     streak: { count: 0, lastStudyDate: null },
-    stats: { quizAnswered: 0 },
+    stats: { quizAnswered: 0, daily: {} },
     progress: {},
   };
 }
@@ -83,7 +83,7 @@ export function loadState(): AppState {
       ...parsed,
       settings: { ...defaultState().settings, ...(parsed.settings || {}) },
       streak: { ...defaultState().streak, ...(parsed.streak || {}) },
-      stats: { ...defaultState().stats, ...(parsed.stats || {}) },
+      stats: { ...defaultState().stats, ...(parsed.stats || {}), daily: { ...defaultState().stats.daily, ...(parsed.stats?.daily || {}) } },
       progress: parsed.progress || {},
     };
 
@@ -124,4 +124,21 @@ export function bumpStreakOnStudy(state: AppState): AppState {
 
   const nextCount = last === yesterday ? state.streak.count + 1 : 1;
   return { ...state, streak: { count: nextCount, lastStudyDate: today } };
+}
+
+export function bumpDailyQuizStats(state: AppState, opts: { at: number; correct: boolean }): AppState {
+  const key = todayKey(new Date(opts.at));
+  const prev = state.stats.daily?.[key] || { answered: 0, correct: 0, wrong: 0 };
+  const nextForDay = {
+    answered: prev.answered + 1,
+    correct: prev.correct + (opts.correct ? 1 : 0),
+    wrong: prev.wrong + (opts.correct ? 0 : 1),
+  };
+
+  // keep daily stats bounded (last ~180 days)
+  const entries = Object.entries({ ...(state.stats.daily || {}), [key]: nextForDay }).sort((a, b) => a[0].localeCompare(b[0]));
+  const trimmed = entries.length > 180 ? entries.slice(entries.length - 180) : entries;
+  const daily = Object.fromEntries(trimmed);
+
+  return { ...state, stats: { ...state.stats, daily } };
 }

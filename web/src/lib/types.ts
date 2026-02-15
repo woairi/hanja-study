@@ -34,6 +34,14 @@ export type AppState = {
   };
   stats: {
     quizAnswered: number;
+    daily: Record<
+      string,
+      {
+        answered: number;
+        correct: number;
+        wrong: number;
+      }
+    >; // key: YYYY-MM-DD
   };
   progress: Record<string, KanjiProgress>; // key: KanjiItem.id
 };

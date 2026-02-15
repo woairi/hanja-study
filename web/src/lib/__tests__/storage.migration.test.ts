@@ -11,7 +11,7 @@ describe('storage migration (localStorage v1)', () => {
       version: 1,
       settings: { dailyCount: 5, lastGradeLabel: '8급' },
       streak: { count: 0, lastStudyDate: null },
-      stats: { quizAnswered: 0 },
+      stats: { quizAnswered: 0, daily: {} },
       progress: {
         // legacy id format
         '5-028': { correct: 1, wrong: 2, consecutiveCorrect: 1, nextReviewAt: 999, mastered: false },
@@ -46,7 +46,7 @@ describe('storage migration (localStorage v1)', () => {
       version: 1,
       settings: { dailyCount: 5, lastGradeLabel: '4급Ⅱ' },
       streak: { count: 0, lastStudyDate: null },
-      stats: { quizAnswered: 0 },
+      stats: { quizAnswered: 0, daily: {} },
       progress: {
         '4II-001': { correct: 1, wrong: 0, consecutiveCorrect: 1, nextReviewAt: 500, mastered: false },
         '4급II-001': { correct: 2, wrong: 1, consecutiveCorrect: 2, nextReviewAt: 200, mastered: true },

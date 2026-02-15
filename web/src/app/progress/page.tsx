@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import Toast from '@/components/Toast';
+import { Button } from '@/components/ui/Button';
+import { Card } from '@/components/ui/Card';
 import { ALL_KANJI, GRADE_LABELS, kanjiByGradeLabel } from '@/lib/kanji';
 import { loadState } from '@/lib/storage';
 import type { GradeLabel } from '@/lib/types';
@@ -10,11 +12,59 @@ import type { GradeLabel } from '@/lib/types';
 export default function ProgressPage() {
   const [now, setNow] = useState(Date.now());
   const [toast, setToast] = useState<string | null>(null);
+  const [period, setPeriod] = useState<'week' | 'month'>('week');
 
   useEffect(() => {
     const t = setInterval(() => setNow(Date.now()), 10_000);
     return () => clearInterval(t);
   }, []);
+
+  const summary = useMemo(() => {
+    const st = loadState();
+    const days = period === 'week' ? 7 : 30;
+
+    // Build YYYY-MM-DD keys for the last N days (including today).
+    const keys: string[] = [];
+    const d = new Date(now);
+    for (let i = 0; i < days; i++) {
+      const x = new Date(d);
+      x.setDate(d.getDate() - i);
+      const yyyy = x.getFullYear();
+      const mm = String(x.getMonth() + 1).padStart(2, '0');
+      const dd = String(x.getDate()).padStart(2, '0');
+      keys.push(`${yyyy}-${mm}-${dd}`);
+    }
+
+    let answered = 0;
+    let correct = 0;
+    let wrong = 0;
+    let studyDays = 0;
+
+    for (const k of keys) {
+      const day = st.stats.daily?.[k];
+      if (!day) continue;
+      answered += day.answered || 0;
+      correct += day.correct || 0;
+      wrong += day.wrong || 0;
+      if ((day.answered || 0) > 0) studyDays += 1;
+    }
+
+    const acc = answered > 0 ? Math.round((correct / answered) * 100) : null;
+
+    const quizAnsweredAllTime = st.stats?.quizAnswered || 0;
+    const dailyKeys = Object.keys(st.stats.daily || {});
+
+    return {
+      days,
+      studyDays,
+      answered,
+      correct,
+      wrong,
+      acc,
+      quizAnsweredAllTime,
+      isEmpty: quizAnsweredAllTime === 0 && dailyKeys.length === 0,
+    };
+  }, [now, period]);
 
   const rows = useMemo(() => {
     const st = loadState();
@@ -211,7 +261,101 @@ export default function ProgressPage() {
         <div />
       </div>
 
-      <section className="space-y-2">
+      <section className="mt-1">
+        <div className="flex items-center justify-between gap-3">
+          <h2 className="text-base font-semibold">요약</h2>
+          <div className="flex items-center gap-2">
+            <Button
+              variant={period === 'week' ? 'primary' : 'ghost'}
+              size="sm"
+              aria-pressed={period === 'week'}
+              onClick={() => setPeriod('week')}
+            >
+              주간
+            </Button>
+            <Button
+              variant={period === 'month' ? 'primary' : 'ghost'}
+              size="sm"
+              aria-pressed={period === 'month'}
+              onClick={() => setPeriod('month')}
+            >
+              월간
+            </Button>
+          </div>
+        </div>
+
+        <div className="mt-2 grid grid-cols-1 gap-2">
+          <Card className="p-3">
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <div className="text-xs font-extrabold" style={{ color: 'var(--muted)' }}>
+                  📅 학습일수 ({summary.days}일)
+                </div>
+                <div className="mt-1 text-2xl font-extrabold">
+                  {summary.studyDays}
+                  <span className="ml-1 text-sm font-semibold" style={{ color: 'var(--muted)' }}>
+                    일
+                  </span>
+                </div>
+              </div>
+              <div className="text-right text-xs" style={{ color: 'var(--muted)' }}>
+                {summary.studyDays === 0 ? '아직 기록이 없어' : '꾸준함이 쌓이는 중'}
+              </div>
+            </div>
+          </Card>
+
+          <Card className="p-3">
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <div className="text-xs font-extrabold" style={{ color: 'var(--muted)' }}>
+                  🎯 정답률 ({summary.days}일)
+                </div>
+                <div className="mt-1 text-2xl font-extrabold">
+                  {summary.acc === null ? '—' : `${summary.acc}%`}
+                </div>
+              </div>
+              <div className="text-right text-xs" style={{ color: 'var(--muted)' }}>
+                정답 {summary.correct} · 오답 {summary.wrong}
+              </div>
+            </div>
+          </Card>
+
+          <Card className="p-3">
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <div className="text-xs font-extrabold" style={{ color: 'var(--muted)' }}>
+                  🧮 문제수
+                </div>
+                <div className="mt-1 text-2xl font-extrabold">{summary.answered}</div>
+              </div>
+              <div className="text-right text-xs" style={{ color: 'var(--muted)' }}>
+                누적 {summary.quizAnsweredAllTime}문제
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        {summary.isEmpty && (
+          <Card className="mt-3 p-4">
+            <div className="text-sm font-extrabold">진도가 비어 있어</div>
+            <div className="mt-1 text-sm" style={{ color: 'var(--muted)' }}>
+              아래 순서로 시작하면 여기서 성장 그래프가 잡혀!
+            </div>
+            <ol className="mt-3 list-decimal space-y-1 pl-5 text-sm" style={{ color: 'var(--muted)' }}>
+              <li>
+                <Link className="text-blue-700 underline" href="/">
+                  홈
+                </Link>
+                에서 오늘의 학습을 시작
+              </li>
+              <li>학습을 끝내고 퀴즈로 몇 문제 풀기</li>
+              <li>다시 /progress로 돌아오면 주간/월간 요약이 보여</li>
+            </ol>
+          </Card>
+        )}
+      </section>
+
+      <section className="mt-4 space-y-2">
         {rows.map((r) => (
           <GradeRow key={r.label} {...r} />
         ))}
