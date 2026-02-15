@@ -20,6 +20,14 @@
 - [ ] meaning/reading이 비어있는 레코드가 없는지(0개가 목표)
 - [ ] gradeLabel별 개수(8=50,7=50,7Ⅱ=50,6=75,6Ⅱ=75,5=100)
 
+## 배포 블로커 게이트 (P0)
+아래 4개는 **배포 전 필수 통과**로 고정.
+
+- [ ] `cd web && npm run predeploy` (lint/test/data/build)
+- [ ] localStorage migration(legacy id → canonical id) 자동 테스트 통과
+- [ ] SRS interval/오답 리셋(특히 4급/4급Ⅱ 하드모드) 자동 테스트 통과
+- [ ] 함정문제(trap) 옵션 중복(동일 텍스트) 방지 자동 테스트 통과
+
 ## 비기능
 - [ ] Lighthouse 모바일 성능/접근성 기본 점검
 - [ ] Vercel 배포 후 404/라우팅 정상

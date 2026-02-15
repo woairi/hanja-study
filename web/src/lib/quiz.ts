@@ -83,22 +83,25 @@ export function makeReadingQ(k: KanjiItem, pool: KanjiItem[]): QuizQuestion {
 
 export function makeTrapQ(k: KanjiItem, pool: KanjiItem[]): QuizQuestion {
   const conf = (k.confusables || []).filter(Boolean);
-  const confItems = conf
-    .map((hanja) => pool.find((x) => x.hanja === hanja))
-    .filter((x): x is KanjiItem => !!x);
 
-  const distractorHanja: string[] = [];
-  for (const x of confItems) distractorHanja.push(x.hanja);
-
-  for (const x of shuffle(pool)) {
-    if (distractorHanja.length >= 3) break;
-    if (x.id === k.id) continue;
-    if (x.hanja === k.hanja) continue;
-    if (distractorHanja.includes(x.hanja)) continue;
-    distractorHanja.push(x.hanja);
+  // Use a Set to prevent duplicate options.
+  const distractorSet = new Set<string>();
+  for (const hanja of conf) {
+    if (hanja === k.hanja) continue;
+    // Only include confusables that actually exist in this grade pool.
+    if (pool.some((x) => x.hanja === hanja)) distractorSet.add(hanja);
+    if (distractorSet.size >= 3) break;
   }
 
-  const options = shuffle([k.hanja, ...distractorHanja.slice(0, 3)]).map((t) => ({ text: t, value: t }));
+  for (const x of shuffle(pool)) {
+    if (distractorSet.size >= 3) break;
+    if (x.id === k.id) continue;
+    if (x.hanja === k.hanja) continue;
+    distractorSet.add(x.hanja);
+  }
+
+  const distractorHanja = [...distractorSet].slice(0, 3);
+  const options = shuffle([k.hanja, ...distractorHanja]).map((t) => ({ text: t, value: t }));
   return {
     id: '',
     kind: 'trap',
