@@ -109,6 +109,38 @@ export default function StudyClient() {
   }
 
   if (isDone) {
+    const st = loadState();
+    const streakCount = st.streak.count;
+    const quizAnswered = st.stats?.quizAnswered || 0;
+
+    const achieved = {
+      first: Object.keys(st.progress || {}).length > 0,
+      streak3: streakCount >= 3,
+      streak7: streakCount >= 7,
+      quiz50: quizAnswered >= 50,
+    };
+
+    const nextBadgeHint = (() => {
+      if (!achieved.streak3) return `다음 뱃지: ⭐ 연속 3일 (${streakCount}/3)`;
+      if (!achieved.streak7) return `다음 뱃지: 🌈 연속 7일 (${streakCount}/7)`;
+      if (!achieved.quiz50) return `다음 뱃지: 🏅 퀴즈 50문제 (${quizAnswered}/50)`;
+      return '모든 뱃지를 모았어! 🎉';
+    })();
+
+    const weakIds = (() => {
+      const itemsInGrade = ALL_KANJI.filter((k) => k.gradeLabel === grade);
+      const rows = itemsInGrade
+        .map((k) => {
+          const p = st.progress[k.id];
+          const wrong = p?.wrong || 0;
+          const correct = p?.correct || 0;
+          return { id: k.id, score: wrong - correct, wrong };
+        })
+        .filter((r) => r.wrong > 0)
+        .sort((a, b) => (b.score !== a.score ? b.score - a.score : b.wrong - a.wrong));
+      return rows.slice(0, 10).map((r) => r.id);
+    })();
+
     // focus/review mode: no quiz
     if (reviewOnly || focusWeak) {
       return (
@@ -119,12 +151,32 @@ export default function StudyClient() {
             <p className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
               {focusWeak ? '약점만 빠르게 복습했어.' : '오늘 복습할 게 다 끝났어.'}
             </p>
-            <div className="mt-5">
+
+            <div className="mt-4 rounded-2xl bg-white/70 px-4 py-3 text-left text-sm">
+              <div className="font-extrabold">오늘의 성과</div>
+              <div className="mt-1" style={{ color: 'var(--muted)' }}>
+                🔥 연속 {streakCount}일
+              </div>
+              <div className="mt-1" style={{ color: 'var(--muted)' }}>
+                {nextBadgeHint}
+              </div>
+            </div>
+
+            <div className="mt-5 flex flex-col gap-2">
+              {weakIds.length > 0 && (
+                <Link
+                  className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
+                  href={`/study?grade=${encodeURIComponent(grade)}&n=${10}&focus=weak`}
+                  onClick={() => {
+                    window.sessionStorage.setItem(FOCUS_KEY, JSON.stringify(weakIds));
+                  }}
+                >
+                  약점 10개 더 복습
+                </Link>
+              )}
               <Link className="btn btn-primary focus-ring inline-flex w-full items-center justify-center" href="/progress">
                 진도 보기
               </Link>
-            </div>
-            <div className="mt-3">
               <Link className="btn btn-ghost focus-ring inline-flex w-full items-center justify-center" href="/">
                 홈으로
               </Link>
@@ -140,9 +192,20 @@ export default function StudyClient() {
           <div className="text-4xl">🎉</div>
           <h1 className="mt-2 text-2xl font-extrabold">학습 완료!</h1>
           <p className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
-            이제 퀴즈로 가자.
+            퀴즈로 한 번 더 확인하자.
           </p>
-          <div className="mt-5">
+
+          <div className="mt-4 rounded-2xl bg-white/70 px-4 py-3 text-left text-sm">
+            <div className="font-extrabold">오늘의 성과</div>
+            <div className="mt-1" style={{ color: 'var(--muted)' }}>
+              🔥 연속 {streakCount}일
+            </div>
+            <div className="mt-1" style={{ color: 'var(--muted)' }}>
+              {nextBadgeHint}
+            </div>
+          </div>
+
+          <div className="mt-5 flex flex-col gap-2">
             <Link
               className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
               href={quizHref}
@@ -165,8 +228,6 @@ export default function StudyClient() {
             >
               퀴즈 시작
             </Link>
-          </div>
-          <div className="mt-3">
             <Link className="btn btn-ghost focus-ring inline-flex w-full items-center justify-center" href="/">
               홈으로
             </Link>

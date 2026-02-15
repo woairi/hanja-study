@@ -167,8 +167,8 @@
       "exampleMeaning": "답하기"
     },
     "疑": {
-      "exampleWord": "의문",
-      "exampleMeaning": "궁금함"
+      "exampleWord": "의심",
+      "exampleMeaning": "믿지 못함"
     },
     "確": {
       "exampleWord": "확실",
@@ -233,6 +233,226 @@
     "減": {
       "exampleWord": "감소",
       "exampleMeaning": "줄어듦"
+    },
+    "社": {
+      "exampleWord": "사회",
+      "exampleMeaning": "사람들이 함께 사는 세상"
+    },
+    "會": {
+      "exampleWord": "회의",
+      "exampleMeaning": "모여서 의논함"
+    },
+    "文": {
+      "exampleWord": "문화",
+      "exampleMeaning": "생활 양식"
+    },
+    "化": {
+      "exampleWord": "변화",
+      "exampleMeaning": "바뀜"
+    },
+    "經": {
+      "exampleWord": "경험",
+      "exampleMeaning": "겪어 봄"
+    },
+    "濟": {
+      "exampleWord": "경제",
+      "exampleMeaning": "돈과 물건의 흐름"
+    },
+    "政": {
+      "exampleWord": "정치",
+      "exampleMeaning": "나라 일을 다스림"
+    },
+    "治": {
+      "exampleWord": "치료",
+      "exampleMeaning": "병을 고침"
+    },
+    "科": {
+      "exampleWord": "과학",
+      "exampleMeaning": "자연을 연구하는 학문"
+    },
+    "技": {
+      "exampleWord": "기술",
+      "exampleMeaning": "기계/방법"
+    },
+    "術": {
+      "exampleWord": "기술",
+      "exampleMeaning": "재주/방법"
+    },
+    "環": {
+      "exampleWord": "환경",
+      "exampleMeaning": "주변의 모든 것"
+    },
+    "境": {
+      "exampleWord": "환경",
+      "exampleMeaning": "주변 상태"
+    },
+    "競": {
+      "exampleWord": "경쟁",
+      "exampleMeaning": "서로 겨룸"
+    },
+    "爭": {
+      "exampleWord": "경쟁",
+      "exampleMeaning": "다툼/겨룸"
+    },
+    "勝": {
+      "exampleWord": "승리",
+      "exampleMeaning": "이김"
+    },
+    "敗": {
+      "exampleWord": "실패",
+      "exampleMeaning": "지거나 뜻대로 안 됨"
+    },
+    "成": {
+      "exampleWord": "성공",
+      "exampleMeaning": "잘 이룸"
+    },
+    "功": {
+      "exampleWord": "성공",
+      "exampleMeaning": "이룬 결과"
+    },
+    "未": {
+      "exampleWord": "미완성",
+      "exampleMeaning": "아직 끝나지 않음"
+    },
+    "完": {
+      "exampleWord": "완료",
+      "exampleMeaning": "끝마침"
+    },
+    "全": {
+      "exampleWord": "전체",
+      "exampleMeaning": "모두"
+    },
+    "部": {
+      "exampleWord": "부분",
+      "exampleMeaning": "일부"
+    },
+    "位": {
+      "exampleWord": "위치",
+      "exampleMeaning": "있는 자리"
+    },
+    "置": {
+      "exampleWord": "배치",
+      "exampleMeaning": "놓아 둠"
+    },
+    "低": {
+      "exampleWord": "저소득",
+      "exampleMeaning": "낮은 소득"
+    },
+    "高": {
+      "exampleWord": "고속",
+      "exampleMeaning": "빠른 속도"
+    },
+    "最": {
+      "exampleWord": "최고",
+      "exampleMeaning": "가장 높음"
+    },
+    "初": {
+      "exampleWord": "처음",
+      "exampleMeaning": "맨 처음"
+    },
+    "終": {
+      "exampleWord": "종료",
+      "exampleMeaning": "끝냄"
+    },
+    "始": {
+      "exampleWord": "시작",
+      "exampleMeaning": "처음"
+    },
+    "進": {
+      "exampleWord": "전진",
+      "exampleMeaning": "앞으로 나아감"
+    },
+    "退": {
+      "exampleWord": "후퇴",
+      "exampleMeaning": "뒤로 물러남"
+    },
+    "強": {
+      "exampleWord": "강점",
+      "exampleMeaning": "강한 점"
+    },
+    "弱": {
+      "exampleWord": "약점",
+      "exampleMeaning": "약한 점"
+    },
+    "危": {
+      "exampleWord": "위험",
+      "exampleMeaning": "다칠 수 있음"
+    },
+    "安": {
+      "exampleWord": "안전",
+      "exampleMeaning": "편안하고 위험 없음"
+    },
+    "必": {
+      "exampleWord": "필수",
+      "exampleMeaning": "꼭 필요함"
+    },
+    "要": {
+      "exampleWord": "중요",
+      "exampleMeaning": "꼭 필요함"
+    },
+    "情": {
+      "exampleWord": "감정",
+      "exampleMeaning": "마음의 느낌"
+    },
+    "報": {
+      "exampleWord": "보고",
+      "exampleMeaning": "알려줌"
+    },
+    "信": {
+      "exampleWord": "신뢰",
+      "exampleMeaning": "믿음"
+    },
+    "約": {
+      "exampleWord": "약속",
+      "exampleMeaning": "서로 지키기로 함"
+    },
+    "束": {
+      "exampleWord": "구속",
+      "exampleMeaning": "묶음/매임"
+    },
+    "助": {
+      "exampleWord": "도움",
+      "exampleMeaning": "도와줌"
+    },
+    "支": {
+      "exampleWord": "지원",
+      "exampleMeaning": "도와줌"
+    },
+    "援": {
+      "exampleWord": "지원",
+      "exampleMeaning": "도와줌"
+    },
+    "義": {
+      "exampleWord": "의견",
+      "exampleMeaning": "생각/주장"
+    },
+    "見": {
+      "exampleWord": "의견",
+      "exampleMeaning": "생각"
+    },
+    "究": {
+      "exampleWord": "연구",
+      "exampleMeaning": "깊이 파고듦"
+    },
+    "研": {
+      "exampleWord": "연구",
+      "exampleMeaning": "깊이 살핌"
+    },
+    "加": {
+      "exampleWord": "추가",
+      "exampleMeaning": "더함"
+    },
+    "反": {
+      "exampleWord": "반대",
+      "exampleMeaning": "거꾸로"
+    },
+    "正": {
+      "exampleWord": "정답",
+      "exampleMeaning": "바른 답"
+    },
+    "誤": {
+      "exampleWord": "오답",
+      "exampleMeaning": "틀린 답"
     }
   }
 }

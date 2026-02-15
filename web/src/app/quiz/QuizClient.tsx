@@ -151,6 +151,29 @@ export default function QuizClient() {
     clearLastSession();
 
     const hasWrong = wrongKanjiIds.length > 0;
+    const st = loadState();
+    const streakCount = st.streak.count;
+    const quizAnswered = st.stats?.quizAnswered || 0;
+
+    const achieved = {
+      first: Object.keys(st.progress || {}).length > 0,
+      streak3: streakCount >= 3,
+      streak7: streakCount >= 7,
+      quiz50: quizAnswered >= 50,
+    };
+
+    const nextBadgeHint = (() => {
+      if (!achieved.streak3) return `다음 뱃지: ⭐ 연속 3일 (${streakCount}/3)`;
+      if (!achieved.streak7) return `다음 뱃지: 🌈 연속 7일 (${streakCount}/7)`;
+      if (!achieved.quiz50) return `다음 뱃지: 🏅 퀴즈 50문제 (${quizAnswered}/50)`;
+      return '모든 뱃지를 모았어! 🎉';
+    })();
+
+    const now = Date.now();
+    const dueCountInGrade = kanjiByGradeLabel(grade).filter((k) => {
+      const p = st.progress[k.id];
+      return p && !p.mastered && p.nextReviewAt <= now;
+    }).length;
 
     return (
       <main className="mx-auto flex min-h-[70vh] max-w-md flex-col items-center justify-center p-4 text-center">
@@ -166,6 +189,16 @@ export default function QuizClient() {
             </p>
           )}
 
+          <div className="mt-4 rounded-2xl bg-white/70 px-4 py-3 text-left text-sm">
+            <div className="font-extrabold">오늘의 성과</div>
+            <div className="mt-1" style={{ color: 'var(--muted)' }}>
+              🔥 연속 {streakCount}일
+            </div>
+            <div className="mt-1" style={{ color: 'var(--muted)' }}>
+              {nextBadgeHint}
+            </div>
+          </div>
+
           <div className="mt-5 flex flex-col gap-2">
             {hasWrong && (
               <Link
@@ -178,6 +211,16 @@ export default function QuizClient() {
                 틀린 것만 다시
               </Link>
             )}
+
+            {!hasWrong && dueCountInGrade > 0 && (
+              <Link
+                className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
+                href={`/study?grade=${encodeURIComponent(grade)}&n=${10}&review=1`}
+              >
+                복습 {Math.min(10, dueCountInGrade)}개 더 하기
+              </Link>
+            )}
+
             <Link className="btn btn-primary focus-ring inline-flex w-full items-center justify-center" href="/progress">
               진도 보기
             </Link>

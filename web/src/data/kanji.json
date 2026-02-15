@@ -776,7 +776,9 @@
     "totalStrokes": 4,
     "confusables": [
       "問"
-    ]
+    ],
+    "exampleWord": "문화",
+    "exampleMeaning": "생활 양식"
   },
   {
     "id": "7급-015",
@@ -1568,7 +1570,9 @@
     "meaning": "편안",
     "radical": "宀",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "안전",
+    "exampleMeaning": "편안하고 위험 없음"
   },
   {
     "id": "7급Ⅱ-031",
@@ -1673,7 +1677,9 @@
     "confusables": [
       "電",
       "前"
-    ]
+    ],
+    "exampleWord": "전체",
+    "exampleMeaning": "모두"
   },
   {
     "id": "7급Ⅱ-039",
@@ -1684,7 +1690,9 @@
     "meaning": "바를",
     "radical": "止",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "정답",
+    "exampleMeaning": "바른 답"
   },
   {
     "id": "7급Ⅱ-040",
@@ -1838,7 +1846,9 @@
     "meaning": "강할",
     "radical": "弓",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "강점",
+    "exampleMeaning": "강한 점"
   },
   {
     "id": "6급-003",
@@ -2284,7 +2294,9 @@
     "meaning": "이길",
     "radical": "力",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "승리",
+    "exampleMeaning": "이김"
   },
   {
     "id": "6급-040",
@@ -2785,7 +2797,9 @@
     "meaning": "높을",
     "radical": "高",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "고속",
+    "exampleMeaning": "빠른 속도"
   },
   {
     "id": "6급Ⅱ-006",
@@ -2827,7 +2841,9 @@
     "confusables": [
       "公",
       "共"
-    ]
+    ],
+    "exampleWord": "성공",
+    "exampleMeaning": "이룬 결과"
   },
   {
     "id": "6급Ⅱ-009",
@@ -2853,7 +2869,9 @@
     "totalStrokes": 9,
     "confusables": [
       "果"
-    ]
+    ],
+    "exampleWord": "과학",
+    "exampleMeaning": "자연을 연구하는 학문"
   },
   {
     "id": "6급Ⅱ-011",
@@ -3088,7 +3106,9 @@
     "confusables": [
       "半",
       "班"
-    ]
+    ],
+    "exampleWord": "반대",
+    "exampleMeaning": "거꾸로"
   },
   {
     "id": "6급Ⅱ-030",
@@ -3135,7 +3155,9 @@
     "meaning": "떼",
     "radical": "邑",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "부분",
+    "exampleMeaning": "일부"
   },
   {
     "id": "6급Ⅱ-034",
@@ -3157,7 +3179,9 @@
     "meaning": "모일",
     "radical": "示",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "사회",
+    "exampleMeaning": "사람들이 함께 사는 세상"
   },
   {
     "id": "6급Ⅱ-036",
@@ -3203,7 +3227,9 @@
     "totalStrokes": 7,
     "confusables": [
       "省"
-    ]
+    ],
+    "exampleWord": "성공",
+    "exampleMeaning": "잘 이룸"
   },
   {
     "id": "6급Ⅱ-040",
@@ -3240,7 +3266,9 @@
     "meaning": "재주",
     "radical": "行",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "기술",
+    "exampleMeaning": "재주/방법"
   },
   {
     "id": "6급Ⅱ-043",
@@ -3251,7 +3279,9 @@
     "meaning": "비로소",
     "radical": "女",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "시작",
+    "exampleMeaning": "처음"
   },
   {
     "id": "6급Ⅱ-044",
@@ -3296,7 +3326,9 @@
       "神",
       "身",
       "新"
-    ]
+    ],
+    "exampleWord": "신뢰",
+    "exampleMeaning": "믿음"
   },
   {
     "id": "6급Ⅱ-047",
@@ -3324,7 +3356,9 @@
     "totalStrokes": 10,
     "confusables": [
       "藥"
-    ]
+    ],
+    "exampleWord": "약점",
+    "exampleMeaning": "약한 점"
   },
   {
     "id": "6급Ⅱ-049",
@@ -3647,7 +3681,9 @@
     "meaning": "모일",
     "radical": "曰",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "회의",
+    "exampleMeaning": "모여서 의논함"
   },
   {
     "id": "5급-001",
@@ -3660,7 +3696,9 @@
     "totalStrokes": 5,
     "confusables": [
       "可"
-    ]
+    ],
+    "exampleWord": "추가",
+    "exampleMeaning": "더함"
   },
   {
     "id": "5급-002",
@@ -3780,7 +3818,9 @@
     "confusables": [
       "輕",
       "景"
-    ]
+    ],
+    "exampleWord": "경쟁",
+    "exampleMeaning": "서로 겨룸"
   },
   {
     "id": "5급-011",
@@ -3936,7 +3976,9 @@
     "confusables": [
       "汽",
       "期"
-    ]
+    ],
+    "exampleWord": "기술",
+    "exampleMeaning": "기계/방법"
   },
   {
     "id": "5급-023",
@@ -4423,7 +4465,9 @@
     "meaning": "완전할",
     "radical": "宀",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "완료",
+    "exampleMeaning": "끝마침"
   },
   {
     "id": "5급-062",
@@ -4522,7 +4566,9 @@
     "totalStrokes": 7,
     "confusables": [
       "件"
-    ]
+    ],
+    "exampleWord": "위치",
+    "exampleMeaning": "있는 자리"
   },
   {
     "id": "5급-070",
@@ -4581,7 +4627,9 @@
     "meaning": "다툴",
     "radical": "爪",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "경쟁",
+    "exampleMeaning": "다툼/겨룸"
   },
   {
     "id": "5급-075",
@@ -4645,7 +4693,9 @@
     "totalStrokes": 11,
     "confusables": [
       "給"
-    ]
+    ],
+    "exampleWord": "종료",
+    "exampleMeaning": "끝냄"
   },
   {
     "id": "5급-080",
@@ -4702,7 +4752,9 @@
     "meaning": "처음",
     "radical": "刀",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "처음",
+    "exampleMeaning": "맨 처음"
   },
   {
     "id": "5급-085",
@@ -4713,7 +4765,9 @@
     "meaning": "가장",
     "radical": "曰",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "최고",
+    "exampleMeaning": "가장 높음"
   },
   {
     "id": "5급-086",
@@ -4822,7 +4876,9 @@
     "totalStrokes": 11,
     "confusables": [
       "救"
-    ]
+    ],
+    "exampleWord": "실패",
+    "exampleMeaning": "지거나 뜻대로 안 됨"
   },
   {
     "id": "5급-095",
@@ -6696,7 +6752,9 @@
       "源",
       "圓",
       "怨"
-    ]
+    ],
+    "exampleWord": "지원",
+    "exampleMeaning": "도와줌"
   },
   {
     "id": "4급-133",
@@ -6791,7 +6849,9 @@
       "委",
       "威",
       "慰"
-    ]
+    ],
+    "exampleWord": "위험",
+    "exampleMeaning": "다칠 수 있음"
   },
   {
     "id": "4급-139",
@@ -6908,8 +6968,8 @@
       "義",
       "依"
     ],
-    "exampleWord": "의문",
-    "exampleMeaning": "궁금함"
+    "exampleWord": "의심",
+    "exampleMeaning": "믿지 못함"
   },
   {
     "id": "4급-147",
@@ -8258,7 +8318,9 @@
     "totalStrokes": 17,
     "confusables": [
       "歡"
-    ]
+    ],
+    "exampleWord": "환경",
+    "exampleMeaning": "주변의 모든 것"
   },
   {
     "id": "4급-245",
@@ -8488,7 +8550,9 @@
       "經",
       "慶",
       "警"
-    ]
+    ],
+    "exampleWord": "환경",
+    "exampleMeaning": "주변 상태"
   },
   {
     "id": "4급Ⅱ-012",
@@ -8504,7 +8568,9 @@
       "境",
       "警",
       "慶"
-    ]
+    ],
+    "exampleWord": "경험",
+    "exampleMeaning": "겪어 봄"
   },
   {
     "id": "4급Ⅱ-013",
@@ -8622,7 +8688,9 @@
     "confusables": [
       "求",
       "句"
-    ]
+    ],
+    "exampleWord": "연구",
+    "exampleMeaning": "깊이 파고듦"
   },
   {
     "id": "4급Ⅱ-021",
@@ -9178,7 +9246,9 @@
     "totalStrokes": 5,
     "confusables": [
       "味"
-    ]
+    ],
+    "exampleWord": "미완성",
+    "exampleMeaning": "아직 끝나지 않음"
   },
   {
     "id": "4급Ⅱ-064",
@@ -9399,7 +9469,9 @@
       "保",
       "步",
       "寶"
-    ]
+    ],
+    "exampleWord": "보고",
+    "exampleMeaning": "알려줌"
   },
   {
     "id": "4급Ⅱ-080",
@@ -10385,7 +10457,9 @@
       "認",
       "論",
       "詩"
-    ]
+    ],
+    "exampleWord": "오답",
+    "exampleMeaning": "틀린 답"
   },
   {
     "id": "4급Ⅱ-146",
@@ -10567,7 +10641,9 @@
     "totalStrokes": 13,
     "confusables": [
       "議"
-    ]
+    ],
+    "exampleWord": "의견",
+    "exampleMeaning": "생각/주장"
   },
   {
     "id": "4급Ⅱ-160",
@@ -10679,7 +10755,9 @@
     "confusables": [
       "佛",
       "伐"
-    ]
+    ],
+    "exampleWord": "저소득",
+    "exampleMeaning": "낮은 소득"
   },
   {
     "id": "4급Ⅱ-168",
@@ -10750,7 +10828,9 @@
     "confusables": [
       "程",
       "精"
-    ]
+    ],
+    "exampleWord": "정치",
+    "exampleMeaning": "나라 일을 다스림"
   },
   {
     "id": "4급Ⅱ-173",
@@ -10796,7 +10876,9 @@
       "除",
       "際",
       "祭"
-    ]
+    ],
+    "exampleWord": "경제",
+    "exampleMeaning": "돈과 물건의 흐름"
   },
   {
     "id": "4급Ⅱ-176",
@@ -10936,7 +11018,9 @@
       "早",
       "鳥",
       "造"
-    ]
+    ],
+    "exampleWord": "도움",
+    "exampleMeaning": "도와줌"
   },
   {
     "id": "4급Ⅱ-184",
@@ -11109,7 +11193,9 @@
       "志",
       "指",
       "至"
-    ]
+    ],
+    "exampleWord": "지원",
+    "exampleMeaning": "도와줌"
   },
   {
     "id": "4급Ⅱ-196",
@@ -11150,7 +11236,9 @@
     "totalStrokes": 12,
     "confusables": [
       "眞"
-    ]
+    ],
+    "exampleWord": "전진",
+    "exampleMeaning": "앞으로 나아감"
   },
   {
     "id": "4급Ⅱ-199",
@@ -11350,7 +11438,9 @@
     "confusables": [
       "置",
       "齒"
-    ]
+    ],
+    "exampleWord": "치료",
+    "exampleMeaning": "병을 고침"
   },
   {
     "id": "4급Ⅱ-214",
@@ -11364,7 +11454,9 @@
     "confusables": [
       "治",
       "齒"
-    ]
+    ],
+    "exampleWord": "배치",
+    "exampleMeaning": "놓아 둠"
   },
   {
     "id": "4급Ⅱ-215",
@@ -11453,7 +11545,9 @@
       "逆",
       "連",
       "造"
-    ]
+    ],
+    "exampleWord": "후퇴",
+    "exampleMeaning": "뒤로 물러남"
   },
   {
     "id": "4급Ⅱ-221",
