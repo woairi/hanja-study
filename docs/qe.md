@@ -28,6 +28,18 @@
 - [ ] SRS interval/오답 리셋(특히 4급/4급Ⅱ 하드모드) 자동 테스트 통과
 - [ ] 함정문제(trap) 옵션 중복(동일 텍스트) 방지 자동 테스트 통과
 
+### P0 자동화(유닛 테스트) 실행 커맨드
+기본:
+- `cd web && npm test`
+
+개별 파일만:
+- `cd web && npx jest src/lib/__tests__/storage.migration.test.ts`
+- `cd web && npx jest src/lib/__tests__/srs.test.ts`
+- `cd web && npx jest src/lib/__tests__/quiz.trap.test.ts`
+
+참고:
+- `next start`가 실행 중이면 `npm run build`가 `.next/lock` 때문에 실패할 수 있음 → 실행 중인 서버 종료 후 재시도
+
 ## 비기능
 - [ ] Lighthouse 모바일 성능/접근성 기본 점검
 - [ ] Vercel 배포 후 404/라우팅 정상

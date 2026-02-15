@@ -7,7 +7,9 @@
 ## [Unreleased]
 
 ### Added
+- Week1(P0): override 스키마 표준화(confusables/examples: 레코드 배열 + 메타 필드 id/target/reason/source/updated_at) + check:data에서 충돌/중복 검증
 - Week1(P0): 데이터 manifest(`dataset_version/schema_version/build_id/checksum/created_at`) 생성 + web check:data에서 checksum/형식 검증
+- Week1(QE/P0): 배포 블로커 3종(localStorage migration / SRS interval+오답 리셋 / trap 옵션 중복 방지) 유닛 테스트 + QE 문서 실행 커맨드 정리
 - Week2: confusables 자동 보강(급수 내 동음/부수/획수 기반 휴리스틱) + 과도한 매칭 필터링(임계값/최대개수)
 - Week2: PWA manifest/아이콘 기반 추가(installability 시작)
 - Week2: 오프라인 상태 안내 배너(기반)
