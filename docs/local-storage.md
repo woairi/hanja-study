@@ -26,6 +26,14 @@
   - 파싱/마이그레이션 실패 시 storage를 덮어쓰지 않음
   - 앱 부팅을 위해 기본값(`defaultState()`)으로 폴백
 
+## Quiz result cache
+
+- Session key: `hanja-study:quizResult`
+- Local fallback key: `hanja-study:quizResult:last`
+- 정책: 최근 퀴즈 결과를 최대 **24시간(TTL)** 보존
+  - `/quiz/result` 새로고침/직접 진입 시 local fallback으로 복원
+  - TTL 만료 시 session/local 모두 자동 정리
+
 ## Telemetry
 
 - **Key**: `hanja-study:telemetry:v1`

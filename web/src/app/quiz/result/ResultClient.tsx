@@ -93,7 +93,7 @@ export default function ResultClient() {
           <div className="text-4xl">🧭</div>
           <h1 className="mt-2 text-xl font-extrabold">결과를 찾을 수 없어</h1>
           <p className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
-            퀴즈 결과는 잠깐 저장돼. 새로고침하면 사라질 수 있어.
+            퀴즈 결과는 최대 24시간 저장돼. 이후에는 자동으로 지워질 수 있어.
           </p>
 
           <div className="mt-5 flex flex-col gap-2">
