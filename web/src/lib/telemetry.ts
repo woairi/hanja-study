@@ -9,7 +9,9 @@ export type TelemetryEvent =
   | 'quiz_retry_click'
   | 'quiz_hint_use'
   | 'post_done_weak_review_click'
-  | 'post_done_more_review_click';
+  | 'post_done_more_review_click'
+  | 'quiz_wrong_tap'
+  | 'quiz_next_mission_click';
 
 type TelemetryState = {
   v: 1;

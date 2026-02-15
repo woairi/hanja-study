@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
-import { useParams, useSearchParams } from 'next/navigation';
+import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import { Card } from '@/components/ui/Card';
 import { InstantFeedback } from '@/components/quiz/InstantFeedback';
 import { ALL_KANJI, kanjiByGradeLabel } from '@/lib/kanji';
@@ -13,8 +13,7 @@ import { makeQuiz, type QuizQuestion } from '@/lib/quiz';
 import { makeRetryQuestion } from '@/lib/retry';
 import { loadLastSession, saveLastSession, clearLastSession } from '@/lib/session';
 import { logEvent } from '@/lib/telemetry';
-import { pickOne } from '@/lib/copy';
-import { todayKey } from '@/lib/kanji';
+import { calcQuizXp, saveQuizResult } from '@/lib/quizResult';
 
 type StudySession = {
   gradeLabel: GradeLabel;
@@ -35,6 +34,9 @@ export default function QuizClient() {
   const params = useParams<{ id: string }>();
   const quizId = params?.id || 'session';
   const grade = (sp.get('grade') || '8급') as GradeLabel;
+
+  const router = useRouter();
+  const [didFinishRedirect, setDidFinishRedirect] = useState(false);
 
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
   const [qIdx, setQIdx] = useState(0);
@@ -137,7 +139,6 @@ export default function QuizClient() {
 
   const q = questions[qIdx];
   const done = questions.length > 0 && qIdx >= questions.length;
-
   useEffect(() => {
     // Per-question UI state should reset on navigation.
     setHintUsed(false);
@@ -152,6 +153,32 @@ export default function QuizClient() {
     }
     return [...set];
   }, [answers]);
+
+
+
+  useEffect(() => {
+    if (!done || didFinishRedirect) return;
+
+    // finished → clear resume marker + go to summary screen
+    clearLastSession();
+
+    const total = questions.length;
+    const xp = calcQuizXp(score, total);
+    saveQuizResult({
+      version: 1,
+      quizId,
+      grade,
+      total,
+      score,
+      wrongKanjiIds,
+      xp,
+      finishedAt: Date.now(),
+    });
+
+    logEvent('quiz_done', { grade, score, total });
+    setDidFinishRedirect(true);
+    router.replace(`/quiz/result?grade=${encodeURIComponent(grade)}&quizId=${encodeURIComponent(quizId)}`);
+  }, [done, didFinishRedirect, grade, quizId, questions.length, router, score, wrongKanjiIds]);
 
   function commitResult(isCorrect: boolean, kanjiId: string) {
     const now = Date.now();
@@ -185,102 +212,22 @@ export default function QuizClient() {
   }
 
   if (done) {
-    // finished → clear resume marker
-    clearLastSession();
-    logEvent('quiz_done', { grade, score, total: questions.length });
-
-    const hasWrong = wrongKanjiIds.length > 0;
-    const st = loadState();
-    const streakCount = st.streak.count;
-    const quizAnswered = st.stats?.quizAnswered || 0;
-
-    const achieved = {
-      first: Object.keys(st.progress || {}).length > 0,
-      streak3: streakCount >= 3,
-      streak7: streakCount >= 7,
-      quiz50: quizAnswered >= 50,
-    };
-
-    const nextBadgeHint = (() => {
-      if (!achieved.streak3) return `다음 뱃지: ⭐ 연속 3일 (${streakCount}/3)`;
-      if (!achieved.streak7) return `다음 뱃지: 🌈 연속 7일 (${streakCount}/7)`;
-      if (!achieved.quiz50) return `다음 뱃지: 🏅 퀴즈 50문제 (${quizAnswered}/50)`;
-      return '모든 뱃지를 모았어! 🎉';
-    })();
-
-    const now = Date.now();
-    const dueCountInGrade = kanjiByGradeLabel(grade).filter((k) => {
-      const p = st.progress[k.id];
-      return p && !p.mastered && p.nextReviewAt <= now;
-    }).length;
-
-    const finishMsg = pickOne(
-      ['오늘도 한 단계 업!', '이제 기억이 더 단단해졌어.', '좋아! 내일은 더 쉬워질 거야.'],
-      `${todayKey()}|quiz|${grade}|${score}|${questions.length}`
-    );
-
     return (
       <main className="mx-auto flex min-h-[70vh] max-w-md flex-col items-center justify-center p-4 text-center">
         <Card className="w-full p-6">
           <div className="text-4xl">🏁</div>
-          <h1 className="mt-2 text-2xl font-extrabold">퀴즈 끝!</h1>
+          <h1 className="mt-2 text-2xl font-extrabold">결과 정리중…</h1>
           <p className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
-            {finishMsg}
+            잠깐만! 결과 화면으로 이동할게.
           </p>
-          <p className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
-            점수: <span className="font-extrabold">{score}</span> / {questions.length}
-          </p>
-          {hasWrong && (
-            <p className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
-              틀린 문제: <span className="font-extrabold">{wrongKanjiIds.length}</span>개
-            </p>
-          )}
-
-          <div className="mt-4 rounded-2xl bg-white/70 px-4 py-3 text-left text-sm">
-            <div className="font-extrabold">오늘의 성과</div>
-            <div className="mt-1" style={{ color: 'var(--muted)' }}>
-              🔥 연속 {streakCount}일
-            </div>
-            <div className="mt-1" style={{ color: 'var(--muted)' }}>
-              {nextBadgeHint}
-            </div>
-          </div>
-
-          <div className="mt-5 flex flex-col gap-2">
-            {hasWrong && (
-              <Link
-                className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
-                href={`/quiz/${encodeURIComponent(quizId)}?grade=${encodeURIComponent(grade)}&retry=1`}
-                onClick={() => {
-                  logEvent('quiz_retry_click', { grade, wrong: wrongKanjiIds.length });
-                  window.sessionStorage.setItem(RETRY_KEY, JSON.stringify(wrongKanjiIds));
-                }}
-              >
-                틀린 것만 다시
-              </Link>
-            )}
-
-            {!hasWrong && dueCountInGrade > 0 && (
-              <Link
-                className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
-                href={`/study?grade=${encodeURIComponent(grade)}&n=${10}&review=1`}
-                onClick={() => logEvent('post_done_more_review_click', { grade, due: dueCountInGrade })}
-              >
-                복습 {Math.min(10, dueCountInGrade)}개 더 하기
-              </Link>
-            )}
-
-            <Link className="btn btn-primary focus-ring inline-flex w-full items-center justify-center" href="/progress">
-              진도 보기
-            </Link>
-            <Link className="btn btn-ghost focus-ring inline-flex w-full items-center justify-center" href="/">
-              홈으로
-            </Link>
-          </div>
+          <Link className="btn btn-ghost focus-ring mt-4 inline-flex w-full items-center justify-center" href="/">
+            홈으로
+          </Link>
         </Card>
       </main>
     );
   }
+
 
   return (
     <main className="mx-auto min-h-[100svh] max-w-md p-4 pb-[calc(7.5rem+env(safe-area-inset-bottom))]">
