@@ -1303,7 +1303,9 @@
     "totalStrokes": 10,
     "confusables": [
       "氣"
-    ]
+    ],
+    "exampleWord": "기록",
+    "exampleMeaning": "적어 남김"
   },
   {
     "id": "7급Ⅱ-009",
@@ -1349,7 +1351,9 @@
     "meaning": "대답",
     "radical": "竹",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "대답",
+    "exampleMeaning": "답하기"
   },
   {
     "id": "7급Ⅱ-013",
@@ -1985,7 +1989,9 @@
     "meaning": "법도",
     "radical": "广",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "온도",
+    "exampleMeaning": "뜨겁고 차가운 정도"
   },
   {
     "id": "6급-016",
@@ -2265,7 +2271,9 @@
     "meaning": "익힐",
     "radical": "羽",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "연습",
+    "exampleMeaning": "익히기"
   },
   {
     "id": "6급-039",
@@ -2590,7 +2598,9 @@
     "meaning": "친할",
     "radical": "見",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "부모",
+    "exampleMeaning": "가까운 사람"
   },
   {
     "id": "6급-066",
@@ -2941,7 +2951,9 @@
     "totalStrokes": 14,
     "confusables": [
       "代"
-    ]
+    ],
+    "exampleWord": "대응",
+    "exampleMeaning": "맞서 처리"
   },
   {
     "id": "6급Ⅱ-019",
@@ -3600,7 +3612,9 @@
       "球",
       "理",
       "班"
-    ]
+    ],
+    "exampleWord": "현재",
+    "exampleMeaning": "지금"
   },
   {
     "id": "6급Ⅱ-073",
@@ -4286,7 +4300,9 @@
     "confusables": [
       "善",
       "船"
-    ]
+    ],
+    "exampleWord": "선택",
+    "exampleMeaning": "고름"
   },
   {
     "id": "5급-052",
@@ -4730,7 +4746,9 @@
     "meaning": "법칙",
     "radical": "刀",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "규칙",
+    "exampleMeaning": "정한 법"
   },
   {
     "id": "5급-089",
@@ -4901,7 +4919,9 @@
     "totalStrokes": 8,
     "confusables": [
       "覺"
-    ]
+    ],
+    "exampleWord": "시각",
+    "exampleMeaning": "시간/때"
   },
   {
     "id": "4급-003",
@@ -4928,7 +4948,9 @@
     "confusables": [
       "看",
       "干"
-    ]
+    ],
+    "exampleWord": "간단",
+    "exampleMeaning": "복잡하지 않음"
   },
   {
     "id": "4급-005",
@@ -5605,7 +5627,9 @@
       "寄",
       "奇",
       "紀"
-    ]
+    ],
+    "exampleWord": "기계",
+    "exampleMeaning": "기계 장치"
   },
   {
     "id": "4급-054",
@@ -6883,7 +6907,9 @@
       "儀",
       "義",
       "依"
-    ]
+    ],
+    "exampleWord": "의문",
+    "exampleMeaning": "궁금함"
   },
   {
     "id": "4급-147",
@@ -7299,7 +7325,9 @@
       "靜",
       "政",
       "丁"
-    ]
+    ],
+    "exampleWord": "정리",
+    "exampleMeaning": "가지런히 함"
   },
   {
     "id": "4급-175",
@@ -8348,7 +8376,9 @@
     "totalStrokes": 12,
     "confusables": [
       "監"
-    ]
+    ],
+    "exampleWord": "감소",
+    "exampleMeaning": "줄어듦"
   },
   {
     "id": "4급Ⅱ-004",
@@ -8562,7 +8592,9 @@
     "confusables": [
       "究",
       "句"
-    ]
+    ],
+    "exampleWord": "요구",
+    "exampleMeaning": "원함"
   },
   {
     "id": "4급Ⅱ-019",
@@ -8693,7 +8725,9 @@
     "totalStrokes": 19,
     "confusables": [
       "暖"
-    ]
+    ],
+    "exampleWord": "어려움",
+    "exampleMeaning": "힘듦"
   },
   {
     "id": "4급Ⅱ-029",
@@ -8792,7 +8826,9 @@
     "totalStrokes": 13,
     "confusables": [
       "進"
-    ]
+    ],
+    "exampleWord": "도달",
+    "exampleMeaning": "이르다"
   },
   {
     "id": "4급Ⅱ-036",
@@ -8989,7 +9025,9 @@
       "送",
       "逆",
       "進"
-    ]
+    ],
+    "exampleWord": "연결",
+    "exampleMeaning": "이어 붙임"
   },
   {
     "id": "4급Ⅱ-052",
@@ -9889,7 +9927,9 @@
     "totalStrokes": 21,
     "confusables": [
       "俗"
-    ]
+    ],
+    "exampleWord": "계속",
+    "exampleMeaning": "이어짐"
   },
   {
     "id": "4급Ⅱ-115",
@@ -10995,7 +11035,9 @@
       "滿",
       "演",
       "測"
-    ]
+    ],
+    "exampleWord": "기준",
+    "exampleMeaning": "표준"
   },
   {
     "id": "4급Ⅱ-191",
@@ -11020,7 +11062,9 @@
     "confusables": [
       "境",
       "壁"
-    ]
+    ],
+    "exampleWord": "증가",
+    "exampleMeaning": "늘어남"
   },
   {
     "id": "4급Ⅱ-193",
@@ -11704,7 +11748,9 @@
       "好",
       "戶",
       "呼"
-    ]
+    ],
+    "exampleWord": "보호",
+    "exampleMeaning": "지킴"
   },
   {
     "id": "4급Ⅱ-244",
@@ -11743,7 +11789,9 @@
     "meaning": "굳을",
     "radical": "石",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "확실",
+    "exampleMeaning": "틀림없음"
   },
   {
     "id": "4급Ⅱ-247",

@@ -169,8 +169,16 @@ function GradeRow(props: { label: GradeLabel; total: number; seen: number; maste
           <ol className="mt-1 list-decimal space-y-1 pl-4">
             {weakInGrade.map(({ k, p }) => (
               <li key={k.id}>
-                <span className="font-extrabold text-slate-900">{k.hanja}</span> {k.meaning} {k.reading}{' '}
-                <span className="text-slate-500">(오답 {p.wrong}/정답 {p.correct})</span>
+                <div>
+                  <span className="font-extrabold text-slate-900">{k.hanja}</span> {k.meaning} {k.reading}{' '}
+                  <span className="text-slate-500">(오답 {p.wrong}/정답 {p.correct})</span>
+                </div>
+                {k.exampleWord && (
+                  <div className="mt-0.5 text-slate-500">
+                    예: <span className="font-extrabold">{k.exampleWord}</span>
+                    {k.exampleMeaning ? ` · ${k.exampleMeaning}` : ''}
+                  </div>
+                )}
               </li>
             ))}
           </ol>

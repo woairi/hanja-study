@@ -31,6 +31,13 @@ for (const [i, k] of data.entries()) {
       set.add(c);
     }
   }
+
+  if (k.exampleWord !== undefined) {
+    if (typeof k.exampleWord !== 'string' || !k.exampleWord.trim()) fail(`bad exampleWord at ${k.id}`);
+  }
+  if (k.exampleMeaning !== undefined) {
+    if (typeof k.exampleMeaning !== 'string' || !k.exampleMeaning.trim()) fail(`bad exampleMeaning at ${k.id}`);
+  }
 }
 
 const expected = {
