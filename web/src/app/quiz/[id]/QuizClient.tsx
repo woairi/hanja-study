@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import { Card } from '@/components/ui/Card';
+import { StateCard } from '@/components/ui/StateCard';
 import { InstantFeedback } from '@/components/quiz/InstantFeedback';
 import { ALL_KANJI, kanjiByGradeLabel } from '@/lib/kanji';
 import type { GradeLabel, KanjiItem } from '@/lib/types';
@@ -39,6 +40,8 @@ export default function QuizClient() {
   const [didFinishRedirect, setDidFinishRedirect] = useState(false);
 
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
+  const [sessionChecked, setSessionChecked] = useState(false);
+  const [sessionMissing, setSessionMissing] = useState(false);
   const [qIdx, setQIdx] = useState(0);
   const [chosen, setChosen] = useState<string | null>(null);
   const [locked, setLocked] = useState(false);
@@ -52,17 +55,79 @@ export default function QuizClient() {
   const [pendingRetry, setPendingRetry] = useState<Array<{ kanjiId: string; dueAt: number; kind: QuizQuestion['kind'] }>>([]);
 
   useEffect(() => {
+    setSessionChecked(false);
+    setSessionMissing(false);
+
     const retry = sp.get('retry') === '1';
     if (retry) {
-      const rawRetry = window.sessionStorage.getItem(RETRY_KEY);
-      if (!rawRetry) return;
-      const retryIds = JSON.parse(rawRetry) as string[];
-      const items: KanjiItem[] = retryIds
+      try {
+        const rawRetry = window.sessionStorage.getItem(RETRY_KEY);
+        if (!rawRetry) {
+          setSessionMissing(true);
+          setSessionChecked(true);
+          return;
+        }
+
+        const retryIds = JSON.parse(rawRetry) as string[];
+        const items: KanjiItem[] = retryIds
+          .map((id) => ALL_KANJI.find((k) => k.id === id))
+          .filter((x): x is KanjiItem => !!x);
+
+        if (!items.length) {
+          setSessionMissing(true);
+          setSessionChecked(true);
+          return;
+        }
+
+        const pool = kanjiByGradeLabel(grade);
+        setQuestions(makeQuiz(items, pool));
+        setQIdx(0);
+        setChosen(null);
+        setLocked(false);
+        setFeedback(null);
+        setHintUsed(false);
+        setHintEliminated([]);
+        setSessionStreak(0);
+        setAnswers([]);
+        setPendingRetry([]);
+        setSessionChecked(true);
+        // no resume state for retry
+        return;
+      } catch {
+        setSessionMissing(true);
+        setSessionChecked(true);
+        return;
+      }
+    }
+
+    try {
+      const raw = window.sessionStorage.getItem(sessionKey(quizId)) || window.sessionStorage.getItem(LEGACY_SESSION_KEY);
+      if (!raw) {
+        setSessionMissing(true);
+        setSessionChecked(true);
+        return;
+      }
+
+      const session = JSON.parse(raw) as StudySession;
+
+      const items: KanjiItem[] = session.itemIds
         .map((id) => ALL_KANJI.find((k) => k.id === id))
         .filter((x): x is KanjiItem => !!x);
-      const pool = kanjiByGradeLabel(grade);
+
+      if (!items.length) {
+        setSessionMissing(true);
+        setSessionChecked(true);
+        return;
+      }
+
+      const pool = kanjiByGradeLabel(session.gradeLabel);
       setQuestions(makeQuiz(items, pool));
-      setQIdx(0);
+
+      const last = loadLastSession();
+      const wantResume = sp.get('resume') === '1';
+      const startQ = wantResume && last && last.mode === 'quiz' && last.gradeLabel === session.gradeLabel && last.n === session.n ? last.qIdx : 0;
+
+      setQIdx(startQ);
       setChosen(null);
       setLocked(false);
       setFeedback(null);
@@ -71,45 +136,22 @@ export default function QuizClient() {
       setSessionStreak(0);
       setAnswers([]);
       setPendingRetry([]);
-      // no resume state for retry
-      return;
+
+      saveLastSession({
+        version: 1,
+        mode: 'quiz',
+        gradeLabel: session.gradeLabel,
+        n: session.n,
+        itemIds: session.itemIds,
+        qIdx: startQ,
+        startedAt: last && last.mode === 'quiz' ? last.startedAt : Date.now(),
+        updatedAt: Date.now(),
+      });
+      setSessionChecked(true);
+    } catch {
+      setSessionMissing(true);
+      setSessionChecked(true);
     }
-
-    const raw = window.sessionStorage.getItem(sessionKey(quizId)) || window.sessionStorage.getItem(LEGACY_SESSION_KEY);
-    if (!raw) return;
-    const session = JSON.parse(raw) as StudySession;
-
-    const items: KanjiItem[] = session.itemIds
-      .map((id) => ALL_KANJI.find((k) => k.id === id))
-      .filter((x): x is KanjiItem => !!x);
-
-    const pool = kanjiByGradeLabel(session.gradeLabel);
-    setQuestions(makeQuiz(items, pool));
-
-    const last = loadLastSession();
-    const wantResume = sp.get('resume') === '1';
-    const startQ = wantResume && last && last.mode === 'quiz' && last.gradeLabel === session.gradeLabel && last.n === session.n ? last.qIdx : 0;
-
-    setQIdx(startQ);
-    setChosen(null);
-    setLocked(false);
-    setFeedback(null);
-    setHintUsed(false);
-    setHintEliminated([]);
-    setSessionStreak(0);
-    setAnswers([]);
-    setPendingRetry([]);
-
-    saveLastSession({
-      version: 1,
-      mode: 'quiz',
-      gradeLabel: session.gradeLabel,
-      n: session.n,
-      itemIds: session.itemIds,
-      qIdx: startQ,
-      startedAt: last && last.mode === 'quiz' ? last.startedAt : Date.now(),
-      updatedAt: Date.now(),
-    });
   }, [grade, sp, quizId]);
 
   // If any scheduled retry is due at current index, insert it *before* rendering this index.
@@ -146,6 +188,10 @@ export default function QuizClient() {
   }, [qIdx]);
 
   const score = useMemo(() => answers.filter((a) => a.correct).length, [answers]);
+  const quickStudyHref = useMemo(() => {
+    const n = loadState().settings.dailyCount || 5;
+    return `/study?grade=${encodeURIComponent(grade)}&n=${n}`;
+  }, [grade]);
   const wrongKanjiIds = useMemo(() => {
     const set = new Set<string>();
     for (const a of answers) {
@@ -192,7 +238,7 @@ export default function QuizClient() {
     saveState(st);
   }
 
-  if (!questions.length) {
+  if (!sessionChecked && !questions.length) {
     return (
       <main className="mx-auto min-h-[100svh] max-w-md p-4 pb-[calc(7.5rem+env(safe-area-inset-bottom))]">
         <Card className="p-4">
@@ -208,6 +254,23 @@ export default function QuizClient() {
             <div className="mt-3 h-16 rounded-2xl bg-gray-100" />
           </div>
         </Card>
+      </main>
+    );
+  }
+
+  if (sessionChecked && (sessionMissing || !questions.length)) {
+    return (
+      <main className="mx-auto min-h-[100svh] max-w-md p-4 pb-[calc(7.5rem+env(safe-area-inset-bottom))]">
+        <StateCard
+          icon="🧭"
+          title="퀴즈 세션을 찾을 수 없어"
+          description="먼저 학습을 시작한 다음 퀴즈로 넘어가면 이어서 풀 수 있어."
+          hint="세션이 만료됐거나 직접 진입한 경우일 수 있어."
+          actions={[
+            { label: '오늘 학습 시작', href: quickStudyHref, variant: 'primary' },
+            { label: '홈으로', href: '/', variant: 'ghost' },
+          ]}
+        />
       </main>
     );
   }
