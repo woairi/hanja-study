@@ -33,16 +33,19 @@ function scoreConfusable(k, ck) {
   const s2 = typeof k.totalStrokes === 'number' ? k.totalStrokes : null;
   const strokeDiff = s1 !== null && s2 !== null ? Math.abs(s1 - s2) : null;
 
-  // Higher is better. Prefer visual similarity; homophones alone are weak.
+  // Higher is better. Prefer visual similarity.
+  // Homophones alone are too noisy for trap questions.
   let s = 0;
   if (sameRadical) s += 3;
   if (strokeDiff !== null) {
     if (strokeDiff <= 1) s += 3;
     else if (strokeDiff <= 2) s += 2;
     else if (strokeDiff <= 3) s += 1;
-    else if (strokeDiff >= 6) s -= 2;
+    else if (strokeDiff <= 4) s += 0;
+    else s -= 2;
   }
-  if (sameReading) s += 1;
+  // Only count same-reading when it still looks plausibly similar.
+  if (sameReading && (sameRadical || (strokeDiff !== null && strokeDiff <= 3))) s += 1;
   return s;
 }
 
@@ -70,14 +73,30 @@ const enriched = base.map((k) => {
   const cand = new Set();
   const fromOv = confOverrides[k.hanja];
   if (Array.isArray(fromOv)) {
-    for (const c of fromOv) cand.add(c);
+    for (const c of fromOv) {
+      const ck = byHanja.get(c);
+      if (!ck) continue;
+      // Keep trap candidates inside the same grade pool.
+      if (ck.gradeLabel !== k.gradeLabel) continue;
+      cand.add(c);
+    }
   }
 
-  // heuristic: same reading within grade
+  // heuristic 1: same reading within grade
   for (const x of pool) {
     if (x.hanja === k.hanja) continue;
     if (x.reading !== k.reading) continue;
     cand.add(x.hanja);
+  }
+
+  // heuristic 2: same radical within grade (visual similarity cue)
+  if (k.radical) {
+    for (const x of pool) {
+      if (x.hanja === k.hanja) continue;
+      if (!x.radical) continue;
+      if (x.radical !== k.radical) continue;
+      cand.add(x.hanja);
+    }
   }
 
   const scored = [...cand]
@@ -85,7 +104,7 @@ const enriched = base.map((k) => {
       const ck = byHanja.get(c);
       return ck ? { c, s: scoreConfusable(k, ck) } : null;
     })
-    .filter((x) => x && x.s >= 1)
+    .filter((x) => x && x.s >= 2)
     .sort((a, b) => b.s - a.s)
     .map((x) => x.c);
 

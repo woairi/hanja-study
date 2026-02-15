@@ -9,6 +9,7 @@
     "radical": "木",
     "totalStrokes": 10,
     "confusables": [
+      "東",
       "敎"
     ],
     "exampleWord": "학교",
@@ -142,7 +143,10 @@
     "meaning": "동녘",
     "radical": "木",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "校",
+      "木"
+    ],
     "exampleWord": "동쪽",
     "exampleMeaning": "해가 뜨는 쪽"
   },
@@ -155,7 +159,9 @@
     "meaning": "여섯",
     "radical": "八",
     "totalStrokes": 4,
-    "confusables": [],
+    "confusables": [
+      "八"
+    ],
     "exampleWord": "여섯",
     "exampleMeaning": "여섯"
   },
@@ -194,7 +200,9 @@
     "meaning": "나무",
     "radical": "木",
     "totalStrokes": 4,
-    "confusables": [],
+    "confusables": [
+      "東"
+    ],
     "exampleWord": "목재",
     "exampleMeaning": "나무 재료"
   },
@@ -298,7 +306,10 @@
     "meaning": "석",
     "radical": "一",
     "totalStrokes": 3,
-    "confusables": [],
+    "confusables": [
+      "七",
+      "一"
+    ],
     "exampleWord": "삼각형",
     "exampleMeaning": "세모"
   },
@@ -337,7 +348,9 @@
     "meaning": "먼저",
     "radical": "儿",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "兄"
+    ],
     "exampleWord": "선생",
     "exampleMeaning": "먼저 사는 사람 → 가르치는 사람"
   },
@@ -402,7 +415,9 @@
     "meaning": "다섯",
     "radical": "二",
     "totalStrokes": 4,
-    "confusables": [],
+    "confusables": [
+      "二"
+    ],
     "exampleWord": "오월",
     "exampleMeaning": "5월"
   },
@@ -454,7 +469,9 @@
     "meaning": "두",
     "radical": "二",
     "totalStrokes": 2,
-    "confusables": [],
+    "confusables": [
+      "五"
+    ],
     "exampleWord": "두",
     "exampleMeaning": "두"
   },
@@ -481,6 +498,8 @@
     "radical": "一",
     "totalStrokes": 1,
     "confusables": [
+      "七",
+      "三",
       "日"
     ],
     "exampleWord": "한",
@@ -575,7 +594,10 @@
     "meaning": "일곱",
     "radical": "一",
     "totalStrokes": 2,
-    "confusables": [],
+    "confusables": [
+      "三",
+      "一"
+    ],
     "exampleWord": "일곱",
     "exampleMeaning": "일곱"
   },
@@ -601,7 +623,9 @@
     "meaning": "여덟",
     "radical": "八",
     "totalStrokes": 2,
-    "confusables": [],
+    "confusables": [
+      "六"
+    ],
     "exampleWord": "여덟",
     "exampleMeaning": "여덟"
   },
@@ -640,7 +664,9 @@
     "meaning": "형",
     "radical": "儿",
     "totalStrokes": 5,
-    "confusables": [],
+    "confusables": [
+      "先"
+    ],
     "exampleWord": "형",
     "exampleMeaning": "형"
   },
@@ -679,7 +705,9 @@
     "meaning": "입",
     "radical": "口",
     "totalStrokes": 3,
-    "confusables": [],
+    "confusables": [
+      "同"
+    ],
     "exampleWord": "입",
     "exampleMeaning": "입"
   },
@@ -706,7 +734,9 @@
     "radical": "口",
     "totalStrokes": 6,
     "confusables": [
+      "命",
       "冬",
+      "口",
       "洞"
     ],
     "exampleWord": "한가지",
@@ -722,8 +752,7 @@
     "radical": "水",
     "totalStrokes": 9,
     "confusables": [
-      "同",
-      "冬"
+      "同"
     ],
     "exampleWord": "골",
     "exampleMeaning": "골"
@@ -738,8 +767,7 @@
     "radical": "冫",
     "totalStrokes": 5,
     "confusables": [
-      "同",
-      "洞"
+      "同"
     ],
     "exampleWord": "겨울",
     "exampleMeaning": "겨울"
@@ -766,7 +794,11 @@
     "meaning": "올",
     "radical": "人",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "住",
+      "便",
+      "休"
+    ],
     "exampleWord": "올",
     "exampleMeaning": "올"
   },
@@ -792,7 +824,9 @@
     "meaning": "마을",
     "radical": "里",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "重"
+    ],
     "exampleWord": "마을",
     "exampleMeaning": "마을"
   },
@@ -805,7 +839,10 @@
     "meaning": "수풀",
     "radical": "木",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "村",
+      "植"
+    ],
     "exampleWord": "수풀",
     "exampleMeaning": "수풀"
   },
@@ -831,7 +868,10 @@
     "meaning": "목숨",
     "radical": "口",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "同",
+      "問"
+    ],
     "exampleWord": "생명",
     "exampleMeaning": "살아있는 것"
   },
@@ -857,7 +897,9 @@
     "meaning": "물을",
     "radical": "口",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "命"
+    ],
     "exampleWord": "물을",
     "exampleMeaning": "물을"
   },
@@ -883,7 +925,9 @@
     "meaning": "지아비",
     "radical": "大",
     "totalStrokes": 4,
-    "confusables": [],
+    "confusables": [
+      "天"
+    ],
     "exampleWord": "지아비",
     "exampleMeaning": "지아비"
   },
@@ -935,9 +979,7 @@
     "meaning": "적을",
     "radical": "小",
     "totalStrokes": 4,
-    "confusables": [
-      "所"
-    ],
+    "confusables": [],
     "exampleWord": "적을",
     "exampleMeaning": "적을"
   },
@@ -950,9 +992,7 @@
     "meaning": "바",
     "radical": "戶",
     "totalStrokes": 8,
-    "confusables": [
-      "少"
-    ],
+    "confusables": [],
     "exampleWord": "바",
     "exampleMeaning": "바"
   },
@@ -978,7 +1018,9 @@
     "meaning": "심을",
     "radical": "木",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "林"
+    ],
     "exampleWord": "심을",
     "exampleMeaning": "심을"
   },
@@ -1109,6 +1151,9 @@
     "radical": "人",
     "totalStrokes": 7,
     "confusables": [
+      "來",
+      "休",
+      "便",
       "主"
     ],
     "exampleWord": "주거",
@@ -1138,7 +1183,9 @@
     "meaning": "무거울",
     "radical": "里",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "里"
+    ],
     "exampleWord": "무거울",
     "exampleMeaning": "무거울"
   },
@@ -1151,9 +1198,7 @@
     "meaning": "종이",
     "radical": "糸",
     "totalStrokes": 10,
-    "confusables": [
-      "地"
-    ],
+    "confusables": [],
     "exampleWord": "종이",
     "exampleMeaning": "종이"
   },
@@ -1166,9 +1211,7 @@
     "meaning": "따",
     "radical": "土",
     "totalStrokes": 6,
-    "confusables": [
-      "紙"
-    ],
+    "confusables": [],
     "exampleWord": "따",
     "exampleMeaning": "따"
   },
@@ -1198,6 +1241,7 @@
     "radical": "大",
     "totalStrokes": 4,
     "confusables": [
+      "夫",
       "千",
       "川"
     ],
@@ -1229,7 +1273,9 @@
     "meaning": "풀",
     "radical": "艸",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "花"
+    ],
     "exampleWord": "풀",
     "exampleMeaning": "풀"
   },
@@ -1242,7 +1288,9 @@
     "meaning": "마을",
     "radical": "木",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "林"
+    ],
     "exampleWord": "마을",
     "exampleMeaning": "마을"
   },
@@ -1294,7 +1342,11 @@
     "meaning": "편할",
     "radical": "人",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "來",
+      "住",
+      "休"
+    ],
     "exampleWord": "편할",
     "exampleMeaning": "편할"
   },
@@ -1320,7 +1372,9 @@
     "meaning": "꽃",
     "radical": "艸",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "草"
+    ],
     "exampleWord": "꽃",
     "exampleMeaning": "꽃"
   },
@@ -1333,7 +1387,11 @@
     "meaning": "쉴",
     "radical": "人",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "住",
+      "來",
+      "便"
+    ],
     "exampleWord": "쉴",
     "exampleMeaning": "쉴"
   },
@@ -1346,7 +1404,9 @@
     "meaning": "집",
     "radical": "宀",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "安"
+    ],
     "exampleWord": "집",
     "exampleMeaning": "집"
   },
@@ -1372,7 +1432,10 @@
     "meaning": "강",
     "radical": "水",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "活",
+      "海"
+    ],
     "exampleWord": "강",
     "exampleMeaning": "강"
   },
@@ -1399,7 +1462,7 @@
     "radical": "工",
     "totalStrokes": 3,
     "confusables": [
-      "空"
+      "左"
     ],
     "exampleWord": "공장",
     "exampleMeaning": "물건 만드는 곳"
@@ -1413,9 +1476,7 @@
     "meaning": "빌",
     "radical": "穴",
     "totalStrokes": 8,
-    "confusables": [
-      "工"
-    ],
+    "confusables": [],
     "exampleWord": "하늘",
     "exampleMeaning": "머리 위 공간"
   },
@@ -1444,7 +1505,8 @@
     "radical": "言",
     "totalStrokes": 10,
     "confusables": [
-      "氣"
+      "氣",
+      "話"
     ],
     "exampleWord": "기록",
     "exampleMeaning": "적어 남김"
@@ -1471,7 +1533,9 @@
     "meaning": "안",
     "radical": "入",
     "totalStrokes": 4,
-    "confusables": [],
+    "confusables": [
+      "全"
+    ],
     "exampleWord": "안",
     "exampleMeaning": "안"
   },
@@ -1575,7 +1639,9 @@
     "meaning": "이름",
     "radical": "口",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "右"
+    ],
     "exampleWord": "이름",
     "exampleMeaning": "이름"
   },
@@ -1614,7 +1680,11 @@
     "meaning": "아닐",
     "radical": "一",
     "totalStrokes": 4,
-    "confusables": [],
+    "confusables": [
+      "上",
+      "世",
+      "下"
+    ],
     "exampleWord": "아닐",
     "exampleMeaning": "아닐"
   },
@@ -1640,7 +1710,11 @@
     "meaning": "윗",
     "radical": "一",
     "totalStrokes": 3,
-    "confusables": [],
+    "confusables": [
+      "不",
+      "下",
+      "世"
+    ],
     "exampleWord": "상승",
     "exampleMeaning": "위로 올라감"
   },
@@ -1666,7 +1740,11 @@
     "meaning": "인간",
     "radical": "一",
     "totalStrokes": 5,
-    "confusables": [],
+    "confusables": [
+      "不",
+      "上",
+      "下"
+    ],
     "exampleWord": "인간",
     "exampleMeaning": "인간"
   },
@@ -1692,9 +1770,7 @@
     "meaning": "때",
     "radical": "日",
     "totalStrokes": 10,
-    "confusables": [
-      "市"
-    ],
+    "confusables": [],
     "exampleWord": "때",
     "exampleMeaning": "때"
   },
@@ -1707,9 +1783,7 @@
     "meaning": "저자",
     "radical": "巾",
     "totalStrokes": 5,
-    "confusables": [
-      "時"
-    ],
+    "confusables": [],
     "exampleWord": "저자",
     "exampleMeaning": "저자"
   },
@@ -1735,7 +1809,9 @@
     "meaning": "편안",
     "radical": "宀",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "家"
+    ],
     "exampleWord": "안전",
     "exampleMeaning": "위험이 없음"
   },
@@ -1761,7 +1837,9 @@
     "meaning": "오를",
     "radical": "口",
     "totalStrokes": 5,
-    "confusables": [],
+    "confusables": [
+      "名"
+    ],
     "exampleWord": "오를",
     "exampleMeaning": "오를"
   },
@@ -1775,6 +1853,7 @@
     "radical": "子",
     "totalStrokes": 3,
     "confusables": [
+      "孝",
       "自"
     ],
     "exampleWord": "자녀",
@@ -1817,9 +1896,7 @@
     "meaning": "번개",
     "radical": "雨",
     "totalStrokes": 13,
-    "confusables": [
-      "前"
-    ],
+    "confusables": [],
     "exampleWord": "번개",
     "exampleMeaning": "번개"
   },
@@ -1833,8 +1910,7 @@
     "radical": "刀",
     "totalStrokes": 9,
     "confusables": [
-      "全",
-      "電"
+      "全"
     ],
     "exampleWord": "앞",
     "exampleMeaning": "앞"
@@ -1849,6 +1925,7 @@
     "radical": "入",
     "totalStrokes": 6,
     "confusables": [
+      "內",
       "前"
     ],
     "exampleWord": "전체",
@@ -1889,7 +1966,9 @@
     "meaning": "왼",
     "radical": "工",
     "totalStrokes": 5,
-    "confusables": [],
+    "confusables": [
+      "工"
+    ],
     "exampleWord": "왼",
     "exampleMeaning": "왼"
   },
@@ -1928,7 +2007,11 @@
     "meaning": "아래",
     "radical": "一",
     "totalStrokes": 3,
-    "confusables": [],
+    "confusables": [
+      "不",
+      "上",
+      "世"
+    ],
     "exampleWord": "하강",
     "exampleMeaning": "아래로 내려감"
   },
@@ -1941,7 +2024,9 @@
     "meaning": "한수",
     "radical": "水",
     "totalStrokes": 14,
-    "confusables": [],
+    "confusables": [
+      "海"
+    ],
     "exampleWord": "한수",
     "exampleMeaning": "한수"
   },
@@ -1954,7 +2039,11 @@
     "meaning": "바다",
     "radical": "水",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "活",
+      "江",
+      "漢"
+    ],
     "exampleWord": "바다",
     "exampleMeaning": "큰 바다"
   },
@@ -1967,7 +2056,9 @@
     "meaning": "말씀",
     "radical": "言",
     "totalStrokes": 13,
-    "confusables": [],
+    "confusables": [
+      "記"
+    ],
     "exampleWord": "말씀",
     "exampleMeaning": "말씀"
   },
@@ -1980,7 +2071,10 @@
     "meaning": "살",
     "radical": "水",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "海",
+      "江"
+    ],
     "exampleWord": "살",
     "exampleMeaning": "살"
   },
@@ -1993,7 +2087,9 @@
     "meaning": "효도",
     "radical": "子",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "子"
+    ],
     "exampleWord": "효도",
     "exampleMeaning": "효도"
   },
@@ -2019,7 +2115,9 @@
     "meaning": "느낄",
     "radical": "心",
     "totalStrokes": 13,
-    "confusables": [],
+    "confusables": [
+      "愛"
+    ],
     "exampleWord": "느낄",
     "exampleMeaning": "느낄"
   },
@@ -2058,7 +2156,9 @@
     "meaning": "서울",
     "radical": "亠",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "交"
+    ],
     "exampleWord": "서울",
     "exampleMeaning": "서울"
   },
@@ -2072,7 +2172,8 @@
     "radical": "口",
     "totalStrokes": 5,
     "confusables": [
-      "苦"
+      "合",
+      "向"
     ],
     "exampleWord": "예",
     "exampleMeaning": "예"
@@ -2087,7 +2188,7 @@
     "radical": "艸",
     "totalStrokes": 9,
     "confusables": [
-      "古"
+      "英"
     ],
     "exampleWord": "쓸",
     "exampleMeaning": "쓸"
@@ -2101,7 +2202,9 @@
     "meaning": "사귈",
     "radical": "亠",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "京"
+    ],
     "exampleWord": "사귈",
     "exampleMeaning": "사귈"
   },
@@ -2141,7 +2244,9 @@
     "radical": "木",
     "totalStrokes": 10,
     "confusables": [
-      "近"
+      "李",
+      "近",
+      "朴"
     ],
     "exampleWord": "뿌리",
     "exampleMeaning": "뿌리"
@@ -2156,6 +2261,8 @@
     "radical": "辵",
     "totalStrokes": 8,
     "confusables": [
+      "速",
+      "通",
       "根"
     ],
     "exampleWord": "가까울",
@@ -2170,7 +2277,9 @@
     "meaning": "등급",
     "radical": "糸",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "綠"
+    ],
     "exampleWord": "등급",
     "exampleMeaning": "등급"
   },
@@ -2183,7 +2292,9 @@
     "meaning": "많을",
     "radical": "夕",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "夜"
+    ],
     "exampleWord": "많을",
     "exampleMeaning": "많을"
   },
@@ -2235,7 +2346,9 @@
     "meaning": "법식",
     "radical": "人",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "使"
+    ],
     "exampleWord": "법식",
     "exampleMeaning": "법식"
   },
@@ -2274,7 +2387,9 @@
     "meaning": "푸를",
     "radical": "糸",
     "totalStrokes": 14,
-    "confusables": [],
+    "confusables": [
+      "級"
+    ],
     "exampleWord": "푸를",
     "exampleMeaning": "푸를"
   },
@@ -2287,7 +2402,11 @@
     "meaning": "오얏",
     "radical": "木",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "朴",
+      "本",
+      "根"
+    ],
     "exampleWord": "오얏",
     "exampleMeaning": "오얏"
   },
@@ -2343,7 +2462,11 @@
     "meaning": "성(姓)",
     "radical": "木",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "李",
+      "本",
+      "根"
+    ],
     "exampleWord": "성",
     "exampleMeaning": "성"
   },
@@ -2356,7 +2479,9 @@
     "meaning": "차례",
     "radical": "田",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "畫"
+    ],
     "exampleWord": "차례",
     "exampleMeaning": "차례"
   },
@@ -2395,7 +2520,9 @@
     "meaning": "옷",
     "radical": "月",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "朝"
+    ],
     "exampleWord": "옷",
     "exampleMeaning": "옷"
   },
@@ -2408,7 +2535,10 @@
     "meaning": "근본",
     "radical": "木",
     "totalStrokes": 5,
-    "confusables": [],
+    "confusables": [
+      "朴",
+      "李"
+    ],
     "exampleWord": "기본",
     "exampleMeaning": "기초가 되는 것"
   },
@@ -2422,6 +2552,7 @@
     "radical": "人",
     "totalStrokes": 8,
     "confusables": [
+      "例",
       "死"
     ],
     "exampleWord": "하여금",
@@ -2451,9 +2582,7 @@
     "meaning": "자리",
     "radical": "巾",
     "totalStrokes": 10,
-    "confusables": [
-      "石"
-    ],
+    "confusables": [],
     "exampleWord": "자리",
     "exampleMeaning": "자리"
   },
@@ -2466,9 +2595,7 @@
     "meaning": "돌",
     "radical": "石",
     "totalStrokes": 5,
-    "confusables": [
-      "席"
-    ],
+    "confusables": [],
     "exampleWord": "돌",
     "exampleMeaning": "돌"
   },
@@ -2481,7 +2608,11 @@
     "meaning": "빠를",
     "radical": "辵",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "通",
+      "近",
+      "遠"
+    ],
     "exampleWord": "빠를",
     "exampleMeaning": "빠를"
   },
@@ -2559,7 +2690,9 @@
     "meaning": "잃을",
     "radical": "大",
     "totalStrokes": 5,
-    "confusables": [],
+    "confusables": [
+      "太"
+    ],
     "exampleWord": "잃을",
     "exampleMeaning": "잃을"
   },
@@ -2572,7 +2705,9 @@
     "meaning": "사랑",
     "radical": "心",
     "totalStrokes": 13,
-    "confusables": [],
+    "confusables": [
+      "感"
+    ],
     "exampleWord": "사랑",
     "exampleMeaning": "사랑"
   },
@@ -2586,6 +2721,7 @@
     "radical": "夕",
     "totalStrokes": 8,
     "confusables": [
+      "多",
       "野"
     ],
     "exampleWord": "밤",
@@ -2631,6 +2767,9 @@
     "radical": "水",
     "totalStrokes": 9,
     "confusables": [
+      "油",
+      "永",
+      "溫",
       "陽"
     ],
     "exampleWord": "큰바다",
@@ -2645,7 +2784,9 @@
     "meaning": "말씀",
     "radical": "言",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "訓"
+    ],
     "exampleWord": "말씀",
     "exampleMeaning": "말씀"
   },
@@ -2659,7 +2800,7 @@
     "radical": "艸",
     "totalStrokes": 9,
     "confusables": [
-      "永"
+      "苦"
     ],
     "exampleWord": "꽃부리",
     "exampleMeaning": "꽃의 가운데 부분"
@@ -2674,7 +2815,8 @@
     "radical": "水",
     "totalStrokes": 5,
     "confusables": [
-      "英"
+      "油",
+      "洋"
     ],
     "exampleWord": "길",
     "exampleMeaning": "길"
@@ -2688,7 +2830,9 @@
     "meaning": "따뜻할",
     "radical": "水",
     "totalStrokes": 13,
-    "confusables": [],
+    "confusables": [
+      "洋"
+    ],
     "exampleWord": "따뜻할",
     "exampleMeaning": "따뜻할"
   },
@@ -2717,7 +2861,9 @@
     "radical": "辵",
     "totalStrokes": 14,
     "confusables": [
-      "園"
+      "園",
+      "速",
+      "通"
     ],
     "exampleWord": "멀",
     "exampleMeaning": "멀"
@@ -2747,6 +2893,8 @@
     "radical": "水",
     "totalStrokes": 8,
     "confusables": [
+      "洋",
+      "永",
       "由"
     ],
     "exampleWord": "기름",
@@ -2852,7 +3000,9 @@
     "meaning": "아침",
     "radical": "月",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "服"
+    ],
     "exampleWord": "아침",
     "exampleMeaning": "아침"
   },
@@ -2904,7 +3054,9 @@
     "meaning": "클",
     "radical": "大",
     "totalStrokes": 4,
-    "confusables": [],
+    "confusables": [
+      "失"
+    ],
     "exampleWord": "클",
     "exampleMeaning": "클"
   },
@@ -2917,7 +3069,11 @@
     "meaning": "통할",
     "radical": "辵",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "速",
+      "近",
+      "遠"
+    ],
     "exampleWord": "통할",
     "exampleMeaning": "통할"
   },
@@ -2943,7 +3099,10 @@
     "meaning": "합할",
     "radical": "口",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "古",
+      "向"
+    ],
     "exampleWord": "합할",
     "exampleMeaning": "합할"
   },
@@ -2969,7 +3128,10 @@
     "meaning": "향할",
     "radical": "口",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "古",
+      "合"
+    ],
     "exampleWord": "향할",
     "exampleMeaning": "향할"
   },
@@ -2995,7 +3157,9 @@
     "meaning": "그림",
     "radical": "田",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "番"
+    ],
     "exampleWord": "계획",
     "exampleMeaning": "앞으로 할 일 정함"
   },
@@ -3021,7 +3185,9 @@
     "meaning": "가르칠",
     "radical": "言",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "言"
+    ],
     "exampleWord": "가르칠",
     "exampleMeaning": "가르칠"
   },
@@ -3035,6 +3201,7 @@
     "radical": "口",
     "totalStrokes": 6,
     "confusables": [
+      "和",
       "角"
     ],
     "exampleWord": "각각",
@@ -3141,7 +3308,8 @@
     "totalStrokes": 5,
     "confusables": [
       "公",
-      "共"
+      "共",
+      "勇"
     ],
     "exampleWord": "성공",
     "exampleMeaning": "이룬 결과"
@@ -3198,7 +3366,11 @@
     "meaning": "공",
     "radical": "玉",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "理",
+      "班",
+      "現"
+    ],
     "exampleWord": "공",
     "exampleMeaning": "공"
   },
@@ -3211,7 +3383,10 @@
     "meaning": "이제",
     "radical": "人",
     "totalStrokes": 4,
-    "confusables": [],
+    "confusables": [
+      "代",
+      "作"
+    ],
     "exampleWord": "이제",
     "exampleMeaning": "이제"
   },
@@ -3224,7 +3399,9 @@
     "meaning": "급할",
     "radical": "心",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "意"
+    ],
     "exampleWord": "급할",
     "exampleMeaning": "급할"
   },
@@ -3263,7 +3440,11 @@
     "meaning": "대신할",
     "radical": "人",
     "totalStrokes": 5,
-    "confusables": [],
+    "confusables": [
+      "今",
+      "作",
+      "信"
+    ],
     "exampleWord": "대신할",
     "exampleMeaning": "대신할"
   },
@@ -3328,7 +3509,9 @@
     "meaning": "무리",
     "radical": "竹",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "第"
+    ],
     "exampleWord": "무리",
     "exampleMeaning": "무리"
   },
@@ -3341,7 +3524,9 @@
     "meaning": "즐길",
     "radical": "木",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "業"
+    ],
     "exampleWord": "즐길",
     "exampleMeaning": "즐길"
   },
@@ -3355,7 +3540,7 @@
     "radical": "刀",
     "totalStrokes": 7,
     "confusables": [
-      "理"
+      "分"
     ],
     "exampleWord": "이익",
     "exampleMeaning": "남는 것"
@@ -3370,7 +3555,9 @@
     "radical": "玉",
     "totalStrokes": 11,
     "confusables": [
-      "利"
+      "球",
+      "班",
+      "現"
     ],
     "exampleWord": "관리",
     "exampleMeaning": "정리해서 다룸"
@@ -3384,7 +3571,9 @@
     "meaning": "밝을",
     "radical": "日",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "昨"
+    ],
     "exampleWord": "설명",
     "exampleMeaning": "밝게 알려줌"
   },
@@ -3411,8 +3600,7 @@
     "radical": "十",
     "totalStrokes": 5,
     "confusables": [
-      "反",
-      "班"
+      "反"
     ],
     "exampleWord": "반",
     "exampleMeaning": "반"
@@ -3442,7 +3630,9 @@
     "radical": "玉",
     "totalStrokes": 10,
     "confusables": [
-      "半"
+      "球",
+      "理",
+      "現"
     ],
     "exampleWord": "나눌",
     "exampleMeaning": "나눌"
@@ -3495,7 +3685,9 @@
     "meaning": "나눌",
     "radical": "刀",
     "totalStrokes": 4,
-    "confusables": [],
+    "confusables": [
+      "利"
+    ],
     "exampleWord": "나눌",
     "exampleMeaning": "나눌"
   },
@@ -3508,7 +3700,9 @@
     "meaning": "모일",
     "radical": "示",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "神"
+    ],
     "exampleWord": "사회",
     "exampleMeaning": "사람들이 함께 사는 세상"
   },
@@ -3521,7 +3715,9 @@
     "meaning": "글",
     "radical": "曰",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "會"
+    ],
     "exampleWord": "도서",
     "exampleMeaning": "책"
   },
@@ -3590,7 +3786,10 @@
     "meaning": "사라질",
     "radical": "水",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "淸",
+      "注"
+    ],
     "exampleWord": "소방",
     "exampleMeaning": "불을 끔"
   },
@@ -3646,6 +3845,7 @@
     "radical": "示",
     "totalStrokes": 10,
     "confusables": [
+      "社",
       "信",
       "身",
       "新"
@@ -3663,9 +3863,10 @@
     "radical": "人",
     "totalStrokes": 9,
     "confusables": [
+      "作",
       "神",
       "身",
-      "新"
+      "代"
     ],
     "exampleWord": "신뢰",
     "exampleMeaning": "믿음"
@@ -3680,8 +3881,7 @@
     "radical": "斤",
     "totalStrokes": 13,
     "confusables": [
-      "神",
-      "信"
+      "神"
     ],
     "exampleWord": "새",
     "exampleMeaning": "새"
@@ -3721,7 +3921,9 @@
     "meaning": "업",
     "radical": "木",
     "totalStrokes": 13,
-    "confusables": [],
+    "confusables": [
+      "樂"
+    ],
     "exampleWord": "산업",
     "exampleMeaning": "일/사업"
   },
@@ -3735,7 +3937,7 @@
     "radical": "力",
     "totalStrokes": 9,
     "confusables": [
-      "用"
+      "功"
     ],
     "exampleWord": "날랠",
     "exampleMeaning": "날랠"
@@ -3749,9 +3951,7 @@
     "meaning": "쓸",
     "radical": "用",
     "totalStrokes": 5,
-    "confusables": [
-      "勇"
-    ],
+    "confusables": [],
     "exampleWord": "쓸",
     "exampleMeaning": "쓸"
   },
@@ -3777,9 +3977,7 @@
     "meaning": "소리",
     "radical": "音",
     "totalStrokes": 9,
-    "confusables": [
-      "飮"
-    ],
+    "confusables": [],
     "exampleWord": "소리",
     "exampleMeaning": "소리"
   },
@@ -3792,9 +3990,7 @@
     "meaning": "마실",
     "radical": "食",
     "totalStrokes": 13,
-    "confusables": [
-      "音"
-    ],
+    "confusables": [],
     "exampleWord": "마실",
     "exampleMeaning": "마실"
   },
@@ -3807,7 +4003,9 @@
     "meaning": "뜻",
     "radical": "心",
     "totalStrokes": 13,
-    "confusables": [],
+    "confusables": [
+      "急"
+    ],
     "exampleWord": "뜻",
     "exampleMeaning": "뜻"
   },
@@ -3821,6 +4019,9 @@
     "radical": "人",
     "totalStrokes": 7,
     "confusables": [
+      "代",
+      "信",
+      "今",
       "昨"
     ],
     "exampleWord": "작업",
@@ -3836,6 +4037,7 @@
     "radical": "日",
     "totalStrokes": 9,
     "confusables": [
+      "明",
       "作"
     ],
     "exampleWord": "어제",
@@ -3889,7 +4091,9 @@
     "meaning": "차례",
     "radical": "竹",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "等"
+    ],
     "exampleWord": "차례",
     "exampleMeaning": "차례"
   },
@@ -3915,7 +4119,10 @@
     "meaning": "부을",
     "radical": "水",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "消",
+      "淸"
+    ],
     "exampleWord": "부을",
     "exampleMeaning": "부을"
   },
@@ -3954,7 +4161,10 @@
     "meaning": "맑을",
     "radical": "水",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "消",
+      "注"
+    ],
     "exampleWord": "맑을",
     "exampleMeaning": "맑을"
   },
@@ -4019,7 +4229,11 @@
     "meaning": "나타날",
     "radical": "玉",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "球",
+      "理",
+      "班"
+    ],
     "exampleWord": "현재",
     "exampleMeaning": "지금"
   },
@@ -4045,7 +4259,9 @@
     "meaning": "화할",
     "radical": "口",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "各"
+    ],
     "exampleWord": "화할",
     "exampleMeaning": "화할"
   },
@@ -4058,7 +4274,9 @@
     "meaning": "모일",
     "radical": "曰",
     "totalStrokes": 13,
-    "confusables": [],
+    "confusables": [
+      "書"
+    ],
     "exampleWord": "회의",
     "exampleMeaning": "모여서 의논함"
   },
@@ -4087,6 +4305,7 @@
     "radical": "口",
     "totalStrokes": 5,
     "confusables": [
+      "吉",
       "加"
     ],
     "exampleWord": "허가",
@@ -4101,7 +4320,10 @@
     "meaning": "고칠",
     "radical": "攴",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "救",
+      "敗"
+    ],
     "exampleWord": "개선",
     "exampleMeaning": "더 좋게 고침"
   },
@@ -4114,7 +4336,9 @@
     "meaning": "들",
     "radical": "手",
     "totalStrokes": 18,
-    "confusables": [],
+    "confusables": [
+      "操"
+    ],
     "exampleWord": "들",
     "exampleMeaning": "들"
   },
@@ -4141,8 +4365,10 @@
     "radical": "人",
     "totalStrokes": 6,
     "confusables": [
-      "健",
-      "建"
+      "令",
+      "位",
+      "他",
+      "倍"
     ],
     "exampleWord": "물건",
     "exampleMeaning": "물건"
@@ -4173,8 +4399,10 @@
     "radical": "人",
     "totalStrokes": 11,
     "confusables": [
-      "件",
-      "建"
+      "倍",
+      "停",
+      "建",
+      "億"
     ],
     "exampleWord": "건강",
     "exampleMeaning": "몸이 튼튼함"
@@ -4247,6 +4475,7 @@
     "radical": "囗",
     "totalStrokes": 8,
     "confusables": [
+      "因",
       "考"
     ],
     "exampleWord": "굳을",
@@ -4287,7 +4516,10 @@
     "meaning": "구원할",
     "radical": "攴",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "敗",
+      "改"
+    ],
     "exampleWord": "구조",
     "exampleMeaning": "위험에서 구함"
   },
@@ -4300,7 +4532,12 @@
     "meaning": "귀할",
     "radical": "貝",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "買",
+      "費",
+      "貯",
+      "賣"
+    ],
     "exampleWord": "귀할",
     "exampleMeaning": "귀할"
   },
@@ -4326,7 +4563,9 @@
     "meaning": "줄",
     "radical": "糸",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "終"
+    ],
     "exampleWord": "줄",
     "exampleMeaning": "줄"
   },
@@ -4340,8 +4579,10 @@
     "radical": "水",
     "totalStrokes": 7,
     "confusables": [
+      "河",
+      "氷",
       "技",
-      "期"
+      "浴"
     ],
     "exampleWord": "물끓는김",
     "exampleMeaning": "물끓는김"
@@ -4355,10 +4596,7 @@
     "meaning": "기약할",
     "radical": "月",
     "totalStrokes": 12,
-    "confusables": [
-      "汽",
-      "技"
-    ],
+    "confusables": [],
     "exampleWord": "기약할",
     "exampleMeaning": "기약할"
   },
@@ -4372,8 +4610,8 @@
     "radical": "手",
     "totalStrokes": 7,
     "confusables": [
-      "汽",
-      "期"
+      "打",
+      "汽"
     ],
     "exampleWord": "기술",
     "exampleMeaning": "재주/방법"
@@ -4387,7 +4625,9 @@
     "meaning": "길할",
     "radical": "口",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "可"
+    ],
     "exampleWord": "길할",
     "exampleMeaning": "길할"
   },
@@ -4413,7 +4653,9 @@
     "meaning": "말씀",
     "radical": "言",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "許"
+    ],
     "exampleWord": "말씀",
     "exampleMeaning": "말씀"
   },
@@ -4456,7 +4698,9 @@
     "meaning": "떨어질",
     "radical": "艸",
     "totalStrokes": 13,
-    "confusables": [],
+    "confusables": [
+      "葉"
+    ],
     "exampleWord": "떨어질",
     "exampleMeaning": "떨어질"
   },
@@ -4508,7 +4752,11 @@
     "meaning": "하여금",
     "radical": "人",
     "totalStrokes": 5,
-    "confusables": [],
+    "confusables": [
+      "件",
+      "他",
+      "位"
+    ],
     "exampleWord": "하여금",
     "exampleMeaning": "하여금"
   },
@@ -4547,7 +4795,10 @@
     "meaning": "끝",
     "radical": "木",
     "totalStrokes": 5,
-    "confusables": [],
+    "confusables": [
+      "板",
+      "査"
+    ],
     "exampleWord": "끝",
     "exampleMeaning": "끝"
   },
@@ -4574,6 +4825,9 @@
     "radical": "貝",
     "totalStrokes": 12,
     "confusables": [
+      "貴",
+      "費",
+      "貯",
       "賣"
     ],
     "exampleWord": "살",
@@ -4589,7 +4843,10 @@
     "radical": "貝",
     "totalStrokes": 15,
     "confusables": [
-      "買"
+      "賞",
+      "買",
+      "貴",
+      "費"
     ],
     "exampleWord": "팔",
     "exampleMeaning": "팔"
@@ -4603,7 +4860,10 @@
     "meaning": "없을",
     "radical": "火",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "熱",
+      "炭"
+    ],
     "exampleWord": "없을",
     "exampleMeaning": "없을"
   },
@@ -4616,7 +4876,12 @@
     "meaning": "곱",
     "radical": "人",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "健",
+      "停",
+      "位",
+      "件"
+    ],
     "exampleWord": "곱",
     "exampleMeaning": "곱"
   },
@@ -4643,7 +4908,10 @@
     "radical": "貝",
     "totalStrokes": 12,
     "confusables": [
-      "鼻"
+      "貴",
+      "買",
+      "貯",
+      "賣"
     ],
     "exampleWord": "비용",
     "exampleMeaning": "쓰는 돈"
@@ -4672,7 +4940,10 @@
     "meaning": "얼음",
     "radical": "水",
     "totalStrokes": 5,
-    "confusables": [],
+    "confusables": [
+      "汽",
+      "河"
+    ],
     "exampleWord": "얼음",
     "exampleMeaning": "얼음"
   },
@@ -4685,7 +4956,9 @@
     "meaning": "베낄",
     "radical": "宀",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "寒"
+    ],
     "exampleWord": "베낄",
     "exampleMeaning": "베낄"
   },
@@ -4699,6 +4972,7 @@
     "radical": "心",
     "totalStrokes": 9,
     "confusables": [
+      "患",
       "査"
     ],
     "exampleWord": "생각",
@@ -4714,7 +4988,10 @@
     "radical": "木",
     "totalStrokes": 9,
     "confusables": [
-      "思"
+      "案",
+      "板",
+      "思",
+      "末"
     ],
     "exampleWord": "조사",
     "exampleMeaning": "찾아보고 확인"
@@ -4728,7 +5005,12 @@
     "meaning": "상줄",
     "radical": "貝",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "賣",
+      "貴",
+      "買",
+      "費"
+    ],
     "exampleWord": "상장",
     "exampleMeaning": "잘해서 받는 상"
   },
@@ -4755,8 +5037,8 @@
     "radical": "口",
     "totalStrokes": 12,
     "confusables": [
-      "船",
-      "選"
+      "唱",
+      "船"
     ],
     "exampleWord": "개선",
     "exampleMeaning": "좋게 만듦"
@@ -4770,10 +5052,7 @@
     "meaning": "가릴",
     "radical": "辵",
     "totalStrokes": 16,
-    "confusables": [
-      "善",
-      "船"
-    ],
+    "confusables": [],
     "exampleWord": "선택",
     "exampleMeaning": "고름"
   },
@@ -4787,8 +5066,7 @@
     "radical": "舟",
     "totalStrokes": 11,
     "confusables": [
-      "善",
-      "選"
+      "善"
     ],
     "exampleWord": "배",
     "exampleMeaning": "물 위를 가는 탈것"
@@ -4815,7 +5093,10 @@
     "meaning": "책상",
     "radical": "木",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "査",
+      "板"
+    ],
     "exampleWord": "책상",
     "exampleMeaning": "책상"
   },
@@ -4829,6 +5110,8 @@
     "radical": "水",
     "totalStrokes": 14,
     "confusables": [
+      "湖",
+      "浴",
       "魚"
     ],
     "exampleWord": "어업",
@@ -4858,7 +5141,10 @@
     "meaning": "억[數字]",
     "radical": "人",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "健",
+      "停"
+    ],
     "exampleWord": "억",
     "exampleMeaning": "억"
   },
@@ -4871,7 +5157,9 @@
     "meaning": "더울",
     "radical": "火",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "無"
+    ],
     "exampleWord": "더울",
     "exampleMeaning": "더울"
   },
@@ -4884,7 +5172,9 @@
     "meaning": "잎",
     "radical": "艸",
     "totalStrokes": 13,
-    "confusables": [],
+    "confusables": [
+      "落"
+    ],
     "exampleWord": "잎",
     "exampleMeaning": "잎"
   },
@@ -4936,7 +5226,12 @@
     "meaning": "목욕할",
     "radical": "水",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "河",
+      "湖",
+      "汽",
+      "漁"
+    ],
     "exampleWord": "목욕할",
     "exampleMeaning": "목욕할"
   },
@@ -5018,7 +5313,12 @@
     "meaning": "자리",
     "radical": "人",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "件",
+      "令",
+      "他",
+      "倍"
+    ],
     "exampleWord": "위치",
     "exampleMeaning": "있는 자리"
   },
@@ -5044,7 +5344,9 @@
     "meaning": "인할",
     "radical": "囗",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "固"
+    ],
     "exampleWord": "인할",
     "exampleMeaning": "인할"
   },
@@ -5058,6 +5360,7 @@
     "radical": "火",
     "totalStrokes": 7,
     "confusables": [
+      "炭",
       "再"
     ],
     "exampleWord": "재난",
@@ -5100,7 +5403,12 @@
     "meaning": "쌓을",
     "radical": "貝",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "貴",
+      "買",
+      "費",
+      "賣"
+    ],
     "exampleWord": "쌓을",
     "exampleMeaning": "쌓을"
   },
@@ -5126,7 +5434,12 @@
     "meaning": "머무를",
     "radical": "人",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "健",
+      "倍",
+      "億",
+      "位"
+    ],
     "exampleWord": "머무를",
     "exampleMeaning": "머무를"
   },
@@ -5139,7 +5452,9 @@
     "meaning": "잡을",
     "radical": "手",
     "totalStrokes": 16,
-    "confusables": [],
+    "confusables": [
+      "擧"
+    ],
     "exampleWord": "잡을",
     "exampleMeaning": "잡을"
   },
@@ -5152,7 +5467,9 @@
     "meaning": "마칠",
     "radical": "糸",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "給"
+    ],
     "exampleWord": "종료",
     "exampleMeaning": "끝냄"
   },
@@ -5191,7 +5508,9 @@
     "meaning": "부를",
     "radical": "口",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "善"
+    ],
     "exampleWord": "부를",
     "exampleMeaning": "부를"
   },
@@ -5217,7 +5536,9 @@
     "meaning": "처음",
     "radical": "刀",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "則"
+    ],
     "exampleWord": "처음",
     "exampleMeaning": "맨 처음"
   },
@@ -5269,7 +5590,9 @@
     "meaning": "법칙",
     "radical": "刀",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "初"
+    ],
     "exampleWord": "규칙",
     "exampleMeaning": "정한 법"
   },
@@ -5283,6 +5606,9 @@
     "radical": "人",
     "totalStrokes": 5,
     "confusables": [
+      "件",
+      "令",
+      "位",
       "打"
     ],
     "exampleWord": "다를",
@@ -5298,6 +5624,7 @@
     "radical": "手",
     "totalStrokes": 5,
     "confusables": [
+      "技",
       "他"
     ],
     "exampleWord": "칠",
@@ -5325,7 +5652,10 @@
     "meaning": "숯",
     "radical": "火",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "災",
+      "無"
+    ],
     "exampleWord": "숯",
     "exampleMeaning": "숯"
   },
@@ -5338,7 +5668,11 @@
     "meaning": "널",
     "radical": "木",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "査",
+      "案",
+      "末"
+    ],
     "exampleWord": "널",
     "exampleMeaning": "널"
   },
@@ -5351,7 +5685,10 @@
     "meaning": "패할",
     "radical": "攴",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "救",
+      "改"
+    ],
     "exampleWord": "실패",
     "exampleMeaning": "지거나 뜻대로 안 됨"
   },
@@ -5364,7 +5701,12 @@
     "meaning": "물",
     "radical": "水",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "汽",
+      "浴",
+      "氷",
+      "湖"
+    ],
     "exampleWord": "물",
     "exampleMeaning": "물"
   },
@@ -5377,7 +5719,9 @@
     "meaning": "찰",
     "radical": "宀",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "寫"
+    ],
     "exampleWord": "찰",
     "exampleMeaning": "찰"
   },
@@ -5390,7 +5734,9 @@
     "meaning": "허락할",
     "radical": "言",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "談"
+    ],
     "exampleWord": "허락",
     "exampleMeaning": "해도 된다고 함"
   },
@@ -5403,7 +5749,11 @@
     "meaning": "호수",
     "radical": "水",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "漁",
+      "浴",
+      "河"
+    ],
     "exampleWord": "호수",
     "exampleMeaning": "호수"
   },
@@ -5416,7 +5766,9 @@
     "meaning": "근심",
     "radical": "心",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "思"
+    ],
     "exampleWord": "근심",
     "exampleMeaning": "근심"
   },
@@ -5442,7 +5794,11 @@
     "meaning": "틈",
     "radical": "日",
     "totalStrokes": 13,
-    "confusables": [],
+    "confusables": [
+      "普",
+      "智",
+      "映"
+    ],
     "exampleWord": "틈",
     "exampleMeaning": "틈"
   },
@@ -5455,7 +5811,11 @@
     "meaning": "새길",
     "radical": "刀",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "券",
+      "判",
+      "刑"
+    ],
     "exampleWord": "시각",
     "exampleMeaning": "시간/때"
   },
@@ -5468,7 +5828,9 @@
     "meaning": "깨달을",
     "radical": "見",
     "totalStrokes": 20,
-    "confusables": [],
+    "confusables": [
+      "覽"
+    ],
     "exampleWord": "깨달을",
     "exampleMeaning": "깨달을"
   },
@@ -5481,7 +5843,12 @@
     "meaning": "대쪽",
     "radical": "竹",
     "totalStrokes": 18,
-    "confusables": [],
+    "confusables": [
+      "籍",
+      "範",
+      "篇",
+      "管"
+    ],
     "exampleWord": "간단",
     "exampleMeaning": "복잡하지 않음"
   },
@@ -5533,7 +5900,10 @@
     "meaning": "감히",
     "radical": "攴",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "散",
+      "整"
+    ],
     "exampleWord": "감히",
     "exampleMeaning": "감히"
   },
@@ -5559,7 +5929,10 @@
     "meaning": "내릴",
     "radical": "阜",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "陣",
+      "階"
+    ],
     "exampleWord": "내릴",
     "exampleMeaning": "내릴"
   },
@@ -5573,9 +5946,10 @@
     "radical": "手",
     "totalStrokes": 8,
     "confusables": [
-      "居",
-      "據",
-      "巨"
+      "拍",
+      "批",
+      "折",
+      "持"
     ],
     "exampleWord": "막을",
     "exampleMeaning": "막을"
@@ -5590,6 +5964,7 @@
     "radical": "尸",
     "totalStrokes": 8,
     "confusables": [
+      "屈",
       "拒",
       "巨"
     ],
@@ -5606,7 +5981,10 @@
     "radical": "手",
     "totalStrokes": 16,
     "confusables": [
-      "拒"
+      "擊",
+      "擇",
+      "損",
+      "援"
     ],
     "exampleWord": "근거",
     "exampleMeaning": "근거"
@@ -5636,7 +6014,12 @@
     "meaning": "뛰어날",
     "radical": "人",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "傾",
+      "傷",
+      "候",
+      "儉"
+    ],
     "exampleWord": "뛰어날",
     "exampleMeaning": "뛰어날"
   },
@@ -5649,7 +6032,12 @@
     "meaning": "검소할",
     "radical": "人",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "儒",
+      "儀",
+      "傾",
+      "傷"
+    ],
     "exampleWord": "검소할",
     "exampleMeaning": "검소할"
   },
@@ -5663,7 +6051,10 @@
     "radical": "手",
     "totalStrokes": 17,
     "confusables": [
-      "激"
+      "據",
+      "擇",
+      "激",
+      "損"
     ],
     "exampleWord": "칠",
     "exampleMeaning": "칠"
@@ -5678,7 +6069,9 @@
     "radical": "水",
     "totalStrokes": 16,
     "confusables": [
-      "擊"
+      "潮",
+      "擊",
+      "源"
     ],
     "exampleWord": "격할",
     "exampleMeaning": "격할"
@@ -5692,7 +6085,11 @@
     "meaning": "굳을",
     "radical": "土",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "域",
+      "墓",
+      "均"
+    ],
     "exampleWord": "굳을",
     "exampleMeaning": "굳을"
   },
@@ -5705,7 +6102,9 @@
     "meaning": "개",
     "radical": "犬",
     "totalStrokes": 4,
-    "confusables": [],
+    "confusables": [
+      "犯"
+    ],
     "exampleWord": "개",
     "exampleMeaning": "개"
   },
@@ -5718,9 +6117,7 @@
     "meaning": "놀랄",
     "radical": "馬",
     "totalStrokes": 23,
-    "confusables": [
-      "鏡"
-    ],
+    "confusables": [],
     "exampleWord": "놀랄",
     "exampleMeaning": "놀랄"
   },
@@ -5747,8 +6144,10 @@
     "radical": "人",
     "totalStrokes": 13,
     "confusables": [
-      "經",
-      "境"
+      "傑",
+      "傷",
+      "儉",
+      "儀"
     ],
     "exampleWord": "기울",
     "exampleMeaning": "기울"
@@ -5763,7 +6162,9 @@
     "radical": "金",
     "totalStrokes": 19,
     "confusables": [
-      "驚"
+      "鍾",
+      "錢",
+      "鑛"
     ],
     "exampleWord": "거울",
     "exampleMeaning": "거울"
@@ -5778,9 +6179,9 @@
     "radical": "阜",
     "totalStrokes": 12,
     "confusables": [
-      "季",
-      "系",
-      "戒"
+      "陣",
+      "降",
+      "險"
     ],
     "exampleWord": "섬돌",
     "exampleMeaning": "섬돌"
@@ -5810,10 +6211,10 @@
     "radical": "子",
     "totalStrokes": 8,
     "confusables": [
+      "孤",
+      "存",
       "系",
-      "戒",
-      "係",
-      "階"
+      "戒"
     ],
     "exampleWord": "계절",
     "exampleMeaning": "계절"
@@ -5828,10 +6229,10 @@
     "radical": "糸",
     "totalStrokes": 7,
     "confusables": [
+      "紀",
+      "紅",
       "戒",
-      "季",
-      "繼",
-      "階"
+      "季"
     ],
     "exampleWord": "이어맬",
     "exampleMeaning": "이어맬"
@@ -5846,8 +6247,10 @@
     "radical": "糸",
     "totalStrokes": 20,
     "confusables": [
+      "織",
       "鷄",
-      "系"
+      "績",
+      "縮"
     ],
     "exampleWord": "이을",
     "exampleMeaning": "이을"
@@ -5862,9 +6265,9 @@
     "radical": "戈",
     "totalStrokes": 7,
     "confusables": [
+      "或",
       "系",
-      "季",
-      "階"
+      "季"
     ],
     "exampleWord": "경계할",
     "exampleMeaning": "경계할"
@@ -5879,7 +6282,10 @@
     "radical": "子",
     "totalStrokes": 8,
     "confusables": [
-      "庫"
+      "季",
+      "存",
+      "庫",
+      "孔"
     ],
     "exampleWord": "외로울",
     "exampleMeaning": "외로울"
@@ -5894,6 +6300,8 @@
     "radical": "广",
     "totalStrokes": 10,
     "confusables": [
+      "座",
+      "底",
       "孤"
     ],
     "exampleWord": "곳집",
@@ -5908,7 +6316,10 @@
     "meaning": "곡식",
     "radical": "禾",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "積",
+      "稱"
+    ],
     "exampleWord": "곡식",
     "exampleMeaning": "곡식"
   },
@@ -5948,6 +6359,9 @@
     "radical": "子",
     "totalStrokes": 4,
     "confusables": [
+      "存",
+      "季",
+      "孤",
       "攻"
     ],
     "exampleWord": "구멍",
@@ -5977,7 +6391,12 @@
     "meaning": "대롱",
     "radical": "竹",
     "totalStrokes": 14,
-    "confusables": [],
+    "confusables": [
+      "範",
+      "篇",
+      "筋",
+      "簡"
+    ],
     "exampleWord": "관리",
     "exampleMeaning": "잘 돌봄"
   },
@@ -5990,7 +6409,9 @@
     "meaning": "쇳돌",
     "radical": "金",
     "totalStrokes": 23,
-    "confusables": [],
+    "confusables": [
+      "鏡"
+    ],
     "exampleWord": "쇳돌",
     "exampleMeaning": "쇳돌"
   },
@@ -6003,7 +6424,12 @@
     "meaning": "얽을",
     "radical": "木",
     "totalStrokes": 14,
-    "confusables": [],
+    "confusables": [
+      "模",
+      "樣",
+      "標",
+      "機"
+    ],
     "exampleWord": "얽을",
     "exampleMeaning": "얽을"
   },
@@ -6016,7 +6442,10 @@
     "meaning": "임금",
     "radical": "口",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "否",
+      "周"
+    ],
     "exampleWord": "임금",
     "exampleMeaning": "임금"
   },
@@ -6042,7 +6471,9 @@
     "meaning": "굽힐",
     "radical": "尸",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "居"
+    ],
     "exampleWord": "굽힐",
     "exampleMeaning": "굽힐"
   },
@@ -6069,6 +6500,9 @@
     "radical": "刀",
     "totalStrokes": 8,
     "confusables": [
+      "刻",
+      "判",
+      "刑",
       "卷"
     ],
     "exampleWord": "문서",
@@ -6097,6 +6531,8 @@
     "radical": "卩",
     "totalStrokes": 8,
     "confusables": [
+      "卵",
+      "危",
       "券"
     ],
     "exampleWord": "책",
@@ -6124,7 +6560,10 @@
     "meaning": "고를",
     "radical": "土",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "堅",
+      "域"
+    ],
     "exampleWord": "고를",
     "exampleMeaning": "고를"
   },
@@ -6151,7 +6590,8 @@
     "radical": "力",
     "totalStrokes": 13,
     "confusables": [
-      "筋"
+      "筋",
+      "勉"
     ],
     "exampleWord": "부지런할",
     "exampleMeaning": "부지런할"
@@ -6166,7 +6606,10 @@
     "radical": "竹",
     "totalStrokes": 12,
     "confusables": [
-      "勤"
+      "管",
+      "勤",
+      "範",
+      "篇"
     ],
     "exampleWord": "힘줄",
     "exampleMeaning": "힘줄"
@@ -6181,7 +6624,10 @@
     "radical": "木",
     "totalStrokes": 16,
     "confusables": [
-      "寄"
+      "模",
+      "樣",
+      "標",
+      "構"
     ],
     "exampleWord": "기계",
     "exampleMeaning": "기계 장치"
@@ -6196,9 +6642,10 @@
     "radical": "宀",
     "totalStrokes": 11,
     "confusables": [
+      "宣",
+      "寢",
       "紀",
-      "奇",
-      "機"
+      "奇"
     ],
     "exampleWord": "부칠",
     "exampleMeaning": "부칠"
@@ -6229,9 +6676,10 @@
     "radical": "糸",
     "totalStrokes": 9,
     "confusables": [
-      "奇",
-      "起",
-      "寄"
+      "納",
+      "紅",
+      "系",
+      "組"
     ],
     "exampleWord": "벼리",
     "exampleMeaning": "벼리"
@@ -6245,7 +6693,12 @@
     "meaning": "들일",
     "radical": "糸",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "紀",
+      "組",
+      "紅",
+      "絲"
+    ],
     "exampleWord": "들일",
     "exampleMeaning": "들일"
   },
@@ -6272,6 +6725,7 @@
     "radical": "彳",
     "totalStrokes": 10,
     "confusables": [
+      "從",
       "逃",
       "盜"
     ],
@@ -6288,6 +6742,7 @@
     "radical": "皿",
     "totalStrokes": 12,
     "confusables": [
+      "盡",
       "徒",
       "逃"
     ],
@@ -6304,8 +6759,10 @@
     "radical": "辵",
     "totalStrokes": 10,
     "confusables": [
+      "迎",
       "徒",
-      "盜"
+      "遇",
+      "遊"
     ],
     "exampleWord": "도망할",
     "exampleMeaning": "도망할"
@@ -6332,7 +6789,10 @@
     "meaning": "알",
     "radical": "卩",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "卷",
+      "危"
+    ],
     "exampleWord": "알",
     "exampleMeaning": "알"
   },
@@ -6345,7 +6805,9 @@
     "meaning": "볼",
     "radical": "見",
     "totalStrokes": 21,
-    "confusables": [],
+    "confusables": [
+      "覺"
+    ],
     "exampleWord": "볼",
     "exampleMeaning": "볼"
   },
@@ -6358,7 +6820,9 @@
     "meaning": "간략할",
     "radical": "田",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "異"
+    ],
     "exampleWord": "간략할",
     "exampleMeaning": "간략할"
   },
@@ -6384,7 +6848,11 @@
     "meaning": "생각할",
     "radical": "心",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "憤",
+      "慰",
+      "憲"
+    ],
     "exampleWord": "생각할",
     "exampleMeaning": "생각할"
   },
@@ -6397,7 +6865,9 @@
     "meaning": "매울",
     "radical": "火",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "灰"
+    ],
     "exampleWord": "매울",
     "exampleMeaning": "매울"
   },
@@ -6423,7 +6893,12 @@
     "meaning": "버들",
     "radical": "木",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "松",
+      "核",
+      "條",
+      "朱"
+    ],
     "exampleWord": "버들",
     "exampleMeaning": "버들"
   },
@@ -6436,7 +6911,9 @@
     "meaning": "바퀴",
     "radical": "車",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "轉"
+    ],
     "exampleWord": "바퀴",
     "exampleMeaning": "바퀴"
   },
@@ -6449,7 +6926,9 @@
     "meaning": "떠날",
     "radical": "隹",
     "totalStrokes": 19,
-    "confusables": [],
+    "confusables": [
+      "雜"
+    ],
     "exampleWord": "떠날",
     "exampleMeaning": "떠날"
   },
@@ -6462,7 +6941,12 @@
     "meaning": "누이",
     "radical": "女",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "妙",
+      "妨",
+      "委",
+      "威"
+    ],
     "exampleWord": "누이",
     "exampleMeaning": "누이"
   },
@@ -6475,7 +6959,9 @@
     "meaning": "힘쓸",
     "radical": "力",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "勤"
+    ],
     "exampleWord": "힘쓸",
     "exampleMeaning": "힘쓸"
   },
@@ -6501,7 +6987,12 @@
     "meaning": "본뜰",
     "radical": "木",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "構",
+      "機",
+      "樣",
+      "標"
+    ],
     "exampleWord": "모형",
     "exampleMeaning": "본떠 만든 것"
   },
@@ -6514,7 +7005,10 @@
     "meaning": "무덤",
     "radical": "土",
     "totalStrokes": 14,
-    "confusables": [],
+    "confusables": [
+      "堅",
+      "域"
+    ],
     "exampleWord": "무덤",
     "exampleMeaning": "무덤"
   },
@@ -6527,7 +7021,12 @@
     "meaning": "묘할",
     "radical": "女",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "妹",
+      "妨",
+      "委",
+      "姉"
+    ],
     "exampleWord": "묘할",
     "exampleMeaning": "묘할"
   },
@@ -6553,7 +7052,12 @@
     "meaning": "칠",
     "radical": "手",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "拒",
+      "批",
+      "折",
+      "持"
+    ],
     "exampleWord": "칠",
     "exampleMeaning": "칠"
   },
@@ -6580,8 +7084,10 @@
     "radical": "女",
     "totalStrokes": 7,
     "confusables": [
-      "防",
-      "房"
+      "妹",
+      "妙",
+      "委",
+      "姉"
     ],
     "exampleWord": "방해할",
     "exampleMeaning": "방해할"
@@ -6595,7 +7101,9 @@
     "meaning": "범할",
     "radical": "犬",
     "totalStrokes": 5,
-    "confusables": [],
+    "confusables": [
+      "犬"
+    ],
     "exampleWord": "범할",
     "exampleMeaning": "범할"
   },
@@ -6608,7 +7116,12 @@
     "meaning": "법",
     "radical": "竹",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "管",
+      "篇",
+      "簡",
+      "筋"
+    ],
     "exampleWord": "법",
     "exampleMeaning": "법"
   },
@@ -6621,7 +7134,9 @@
     "meaning": "말씀",
     "radical": "辛",
     "totalStrokes": 21,
-    "confusables": [],
+    "confusables": [
+      "辭"
+    ],
     "exampleWord": "말씀",
     "exampleMeaning": "말씀"
   },
@@ -6634,7 +7149,12 @@
     "meaning": "넓을",
     "radical": "日",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "暇",
+      "智",
+      "映",
+      "易"
+    ],
     "exampleWord": "넓을",
     "exampleMeaning": "넓을"
   },
@@ -6647,7 +7167,11 @@
     "meaning": "엎드릴",
     "radical": "人",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "依",
+      "仁",
+      "候"
+    ],
     "exampleWord": "엎드릴",
     "exampleMeaning": "엎드릴"
   },
@@ -6660,7 +7184,9 @@
     "meaning": "겹칠",
     "radical": "衣",
     "totalStrokes": 14,
-    "confusables": [],
+    "confusables": [
+      "裝"
+    ],
     "exampleWord": "겹칠",
     "exampleMeaning": "겹칠"
   },
@@ -6674,6 +7200,8 @@
     "radical": "口",
     "totalStrokes": 7,
     "confusables": [
+      "君",
+      "周",
       "負"
     ],
     "exampleWord": "아닐",
@@ -6689,7 +7217,9 @@
     "radical": "貝",
     "totalStrokes": 9,
     "confusables": [
-      "否"
+      "否",
+      "資",
+      "賊"
     ],
     "exampleWord": "질",
     "exampleMeaning": "질"
@@ -6703,9 +7233,7 @@
     "meaning": "가루",
     "radical": "米",
     "totalStrokes": 10,
-    "confusables": [
-      "憤"
-    ],
+    "confusables": [],
     "exampleWord": "가루",
     "exampleMeaning": "가루"
   },
@@ -6719,7 +7247,9 @@
     "radical": "心",
     "totalStrokes": 15,
     "confusables": [
-      "粉"
+      "慮",
+      "慰",
+      "憲"
     ],
     "exampleWord": "분할",
     "exampleMeaning": "분할"
@@ -6734,7 +7264,10 @@
     "radical": "手",
     "totalStrokes": 7,
     "confusables": [
-      "祕"
+      "拒",
+      "拍",
+      "折",
+      "招"
     ],
     "exampleWord": "비평할",
     "exampleMeaning": "비평할"
@@ -6765,8 +7298,6 @@
     "radical": "石",
     "totalStrokes": 13,
     "confusables": [
-      "備",
-      "悲",
       "祕"
     ],
     "exampleWord": "비석",
@@ -6781,7 +7312,9 @@
     "meaning": "말씀",
     "radical": "辛",
     "totalStrokes": 19,
-    "confusables": [],
+    "confusables": [
+      "辯"
+    ],
     "exampleWord": "말씀",
     "exampleMeaning": "말씀"
   },
@@ -6795,10 +7328,8 @@
     "radical": "禾",
     "totalStrokes": 7,
     "confusables": [
-      "寺",
-      "舍",
-      "射",
-      "絲"
+      "秀",
+      "射"
     ],
     "exampleWord": "사사",
     "exampleMeaning": "사사"
@@ -6813,8 +7344,10 @@
     "radical": "糸",
     "totalStrokes": 12,
     "confusables": [
-      "射",
-      "私"
+      "組",
+      "納",
+      "紀",
+      "緣"
     ],
     "exampleWord": "실",
     "exampleMeaning": "실"
@@ -6829,8 +7362,7 @@
     "radical": "寸",
     "totalStrokes": 10,
     "confusables": [
-      "寺",
-      "師",
+      "專",
       "絲",
       "私"
     ],
@@ -6846,7 +7378,10 @@
     "meaning": "흩을",
     "radical": "攴",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "敢",
+      "整"
+    ],
     "exampleWord": "흩을",
     "exampleMeaning": "흩을"
   },
@@ -6860,8 +7395,10 @@
     "radical": "人",
     "totalStrokes": 13,
     "confusables": [
-      "想",
-      "象"
+      "傑",
+      "傾",
+      "儉",
+      "儀"
     ],
     "exampleWord": "다칠",
     "exampleMeaning": "다칠"
@@ -6877,8 +7414,7 @@
     "totalStrokes": 12,
     "confusables": [
       "傷",
-      "常",
-      "想"
+      "豫"
     ],
     "exampleWord": "코끼리",
     "exampleMeaning": "코끼리"
@@ -6892,7 +7428,9 @@
     "meaning": "베풀",
     "radical": "宀",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "寄"
+    ],
     "exampleWord": "베풀",
     "exampleMeaning": "베풀"
   },
@@ -6931,7 +7469,12 @@
     "meaning": "덜",
     "radical": "手",
     "totalStrokes": 13,
-    "confusables": [],
+    "confusables": [
+      "援",
+      "揮",
+      "採",
+      "推"
+    ],
     "exampleWord": "손해",
     "exampleMeaning": "잃는 것"
   },
@@ -6944,9 +7487,7 @@
     "meaning": "기릴",
     "radical": "頁",
     "totalStrokes": 13,
-    "confusables": [
-      "松"
-    ],
+    "confusables": [],
     "exampleWord": "기릴",
     "exampleMeaning": "기릴"
   },
@@ -6960,7 +7501,10 @@
     "radical": "木",
     "totalStrokes": 8,
     "confusables": [
-      "頌"
+      "柳",
+      "朱",
+      "核",
+      "條"
     ],
     "exampleWord": "소나무",
     "exampleMeaning": "소나무"
@@ -6975,9 +7519,7 @@
     "radical": "禾",
     "totalStrokes": 7,
     "confusables": [
-      "受",
-      "守",
-      "收"
+      "私"
     ],
     "exampleWord": "빼어날",
     "exampleMeaning": "빼어날"
@@ -6991,9 +7533,7 @@
     "meaning": "아재비",
     "radical": "又",
     "totalStrokes": 8,
-    "confusables": [
-      "肅"
-    ],
+    "confusables": [],
     "exampleWord": "아재비",
     "exampleMeaning": "아재비"
   },
@@ -7006,9 +7546,7 @@
     "meaning": "엄숙할",
     "radical": "聿",
     "totalStrokes": 13,
-    "confusables": [
-      "叔"
-    ],
+    "confusables": [],
     "exampleWord": "엄숙할",
     "exampleMeaning": "엄숙할"
   },
@@ -7060,7 +7598,12 @@
     "meaning": "모양",
     "radical": "木",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "構",
+      "機",
+      "模",
+      "標"
+    ],
     "exampleWord": "모양",
     "exampleMeaning": "모양"
   },
@@ -7100,6 +7643,9 @@
     "radical": "土",
     "totalStrokes": 11,
     "confusables": [
+      "堅",
+      "墓",
+      "均",
       "易"
     ],
     "exampleWord": "지경",
@@ -7115,6 +7661,9 @@
     "radical": "日",
     "totalStrokes": 8,
     "confusables": [
+      "映",
+      "普",
+      "智",
       "域"
     ],
     "exampleWord": "무역",
@@ -7130,8 +7679,9 @@
     "radical": "火",
     "totalStrokes": 16,
     "confusables": [
-      "煙",
+      "營",
       "緣",
+      "爆",
       "鉛"
     ],
     "exampleWord": "탈",
@@ -7147,10 +7697,10 @@
     "radical": "金",
     "totalStrokes": 13,
     "confusables": [
-      "煙",
-      "演",
+      "錢",
+      "針",
       "緣",
-      "燃"
+      "鍾"
     ],
     "exampleWord": "납",
     "exampleMeaning": "납"
@@ -7165,9 +7715,10 @@
     "radical": "糸",
     "totalStrokes": 15,
     "confusables": [
+      "績",
+      "縮",
       "燃",
-      "演",
-      "鉛"
+      "絲"
     ],
     "exampleWord": "인연",
     "exampleMeaning": "인연"
@@ -7195,6 +7746,7 @@
     "radical": "辵",
     "totalStrokes": 8,
     "confusables": [
+      "逃",
       "映"
     ],
     "exampleWord": "맞을",
@@ -7210,7 +7762,10 @@
     "radical": "日",
     "totalStrokes": 9,
     "confusables": [
-      "迎"
+      "易",
+      "迎",
+      "普",
+      "智"
     ],
     "exampleWord": "비칠",
     "exampleMeaning": "비칠"
@@ -7224,7 +7779,10 @@
     "meaning": "경영할",
     "radical": "火",
     "totalStrokes": 17,
-    "confusables": [],
+    "confusables": [
+      "燃",
+      "爆"
+    ],
     "exampleWord": "경영할",
     "exampleMeaning": "경영할"
   },
@@ -7237,7 +7795,9 @@
     "meaning": "미리",
     "radical": "豕",
     "totalStrokes": 16,
-    "confusables": [],
+    "confusables": [
+      "象"
+    ],
     "exampleWord": "미리",
     "exampleMeaning": "미리"
   },
@@ -7251,7 +7811,10 @@
     "radical": "人",
     "totalStrokes": 17,
     "confusables": [
-      "遇"
+      "儒",
+      "儉",
+      "儀",
+      "傾"
     ],
     "exampleWord": "넉넉할",
     "exampleMeaning": "넉넉할"
@@ -7266,8 +7829,10 @@
     "radical": "辵",
     "totalStrokes": 13,
     "confusables": [
-      "郵",
-      "優"
+      "遊",
+      "適",
+      "逃",
+      "遺"
     ],
     "exampleWord": "만날",
     "exampleMeaning": "만날"
@@ -7297,8 +7862,8 @@
     "radical": "心",
     "totalStrokes": 9,
     "confusables": [
-      "援",
-      "源"
+      "恨",
+      "援"
     ],
     "exampleWord": "원망할",
     "exampleMeaning": "원망할"
@@ -7313,9 +7878,10 @@
     "radical": "手",
     "totalStrokes": 12,
     "confusables": [
-      "源",
-      "圓",
-      "怨"
+      "損",
+      "採",
+      "推",
+      "探"
     ],
     "exampleWord": "지원",
     "exampleMeaning": "도와줌"
@@ -7330,9 +7896,10 @@
     "radical": "水",
     "totalStrokes": 13,
     "confusables": [
-      "圓",
+      "潮",
+      "混",
       "援",
-      "怨"
+      "激"
     ],
     "exampleWord": "근원",
     "exampleMeaning": "근원"
@@ -7348,8 +7915,7 @@
     "totalStrokes": 12,
     "confusables": [
       "威",
-      "慰",
-      "委"
+      "慰"
     ],
     "exampleWord": "에워쌀",
     "exampleMeaning": "에워쌀"
@@ -7365,8 +7931,9 @@
     "totalStrokes": 8,
     "confusables": [
       "威",
-      "危",
-      "圍"
+      "妹",
+      "妙",
+      "妨"
     ],
     "exampleWord": "맡길",
     "exampleMeaning": "맡길"
@@ -7382,8 +7949,9 @@
     "totalStrokes": 9,
     "confusables": [
       "委",
-      "圍",
-      "危"
+      "妹",
+      "姿",
+      "姉"
     ],
     "exampleWord": "위엄",
     "exampleMeaning": "위엄"
@@ -7398,6 +7966,9 @@
     "radical": "心",
     "totalStrokes": 15,
     "confusables": [
+      "慮",
+      "憤",
+      "憲",
       "圍"
     ],
     "exampleWord": "위로할",
@@ -7413,6 +7984,8 @@
     "radical": "卩",
     "totalStrokes": 6,
     "confusables": [
+      "卵",
+      "卷",
       "委",
       "威"
     ],
@@ -7429,9 +8002,10 @@
     "radical": "辵",
     "totalStrokes": 13,
     "confusables": [
+      "遇",
       "遺",
-      "儒",
-      "乳"
+      "適",
+      "逃"
     ],
     "exampleWord": "놀",
     "exampleMeaning": "놀"
@@ -7445,9 +8019,7 @@
     "meaning": "젖",
     "radical": "乙",
     "totalStrokes": 8,
-    "confusables": [
-      "遊"
-    ],
+    "confusables": [],
     "exampleWord": "젖",
     "exampleMeaning": "젖"
   },
@@ -7461,8 +8033,10 @@
     "radical": "人",
     "totalStrokes": 16,
     "confusables": [
-      "遺",
-      "遊"
+      "儉",
+      "優",
+      "儀",
+      "遺"
     ],
     "exampleWord": "선비",
     "exampleMeaning": "선비"
@@ -7477,6 +8051,8 @@
     "radical": "辵",
     "totalStrokes": 16,
     "confusables": [
+      "適",
+      "避",
       "遊",
       "儒"
     ],
@@ -7492,7 +8068,9 @@
     "meaning": "숨을",
     "radical": "阜",
     "totalStrokes": 17,
-    "confusables": [],
+    "confusables": [
+      "險"
+    ],
     "exampleWord": "숨을",
     "exampleMeaning": "숨을"
   },
@@ -7506,7 +8084,10 @@
     "radical": "人",
     "totalStrokes": 8,
     "confusables": [
-      "儀"
+      "伏",
+      "候",
+      "傑",
+      "仁"
     ],
     "exampleWord": "의지할",
     "exampleMeaning": "의지할"
@@ -7521,8 +8102,10 @@
     "radical": "人",
     "totalStrokes": 15,
     "confusables": [
-      "疑",
-      "依"
+      "儉",
+      "儒",
+      "傾",
+      "傷"
     ],
     "exampleWord": "거동",
     "exampleMeaning": "거동"
@@ -7537,8 +8120,7 @@
     "radical": "疋",
     "totalStrokes": 14,
     "confusables": [
-      "儀",
-      "義"
+      "儀"
     ],
     "exampleWord": "의심",
     "exampleMeaning": "믿지 못함"
@@ -7552,7 +8134,9 @@
     "meaning": "다를",
     "radical": "田",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "略"
+    ],
     "exampleWord": "다를",
     "exampleMeaning": "다를"
   },
@@ -7565,7 +8149,10 @@
     "meaning": "어질",
     "radical": "人",
     "totalStrokes": 4,
-    "confusables": [],
+    "confusables": [
+      "伏",
+      "依"
+    ],
     "exampleWord": "어질",
     "exampleMeaning": "어질"
   },
@@ -7579,8 +8166,8 @@
     "radical": "貝",
     "totalStrokes": 13,
     "confusables": [
-      "姿",
-      "姉"
+      "賊",
+      "負"
     ],
     "exampleWord": "자원",
     "exampleMeaning": "재료/도움이 되는 것"
@@ -7596,7 +8183,9 @@
     "totalStrokes": 9,
     "confusables": [
       "姉",
-      "資"
+      "妹",
+      "委",
+      "威"
     ],
     "exampleWord": "모양",
     "exampleMeaning": "모양"
@@ -7612,7 +8201,9 @@
     "totalStrokes": 8,
     "confusables": [
       "姿",
-      "資"
+      "妹",
+      "妙",
+      "妨"
     ],
     "exampleWord": "손윗누이",
     "exampleMeaning": "손윗누이"
@@ -7639,7 +8230,9 @@
     "meaning": "섞일",
     "radical": "隹",
     "totalStrokes": 18,
-    "confusables": [],
+    "confusables": [
+      "離"
+    ],
     "exampleWord": "섞일",
     "exampleMeaning": "섞일"
   },
@@ -7654,9 +8247,7 @@
     "totalStrokes": 15,
     "confusables": [
       "裝",
-      "腸",
-      "張",
-      "帳"
+      "腸"
     ],
     "exampleWord": "장려할",
     "exampleMeaning": "장려할"
@@ -7671,8 +8262,8 @@
     "radical": "衣",
     "totalStrokes": 13,
     "confusables": [
+      "複",
       "腸",
-      "障",
       "獎",
       "張"
     ],
@@ -7689,8 +8280,8 @@
     "radical": "肉",
     "totalStrokes": 13,
     "confusables": [
+      "脫",
       "裝",
-      "障",
       "獎",
       "張"
     ],
@@ -7708,9 +8299,9 @@
     "totalStrokes": 11,
     "confusables": [
       "帳",
-      "將",
       "裝",
-      "腸"
+      "腸",
+      "彈"
     ],
     "exampleWord": "베풀",
     "exampleMeaning": "베풀"
@@ -7724,10 +8315,7 @@
     "meaning": "장할",
     "radical": "士",
     "totalStrokes": 7,
-    "confusables": [
-      "張",
-      "帳"
-    ],
+    "confusables": [],
     "exampleWord": "장할",
     "exampleMeaning": "장할"
   },
@@ -7741,8 +8329,8 @@
     "radical": "巾",
     "totalStrokes": 11,
     "confusables": [
+      "帝",
       "張",
-      "將",
       "裝",
       "腸"
     ],
@@ -7758,7 +8346,10 @@
     "meaning": "밑",
     "radical": "广",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "庫",
+      "座"
+    ],
     "exampleWord": "밑",
     "exampleMeaning": "밑"
   },
@@ -7772,10 +8363,10 @@
     "radical": "禾",
     "totalStrokes": 16,
     "confusables": [
+      "穀",
+      "稱",
       "適",
-      "績",
-      "敵",
-      "賊"
+      "績"
     ],
     "exampleWord": "쌓을",
     "exampleMeaning": "쌓을"
@@ -7790,9 +8381,8 @@
     "radical": "竹",
     "totalStrokes": 20,
     "confusables": [
-      "績",
-      "積",
-      "適"
+      "簡",
+      "績"
     ],
     "exampleWord": "문서",
     "exampleMeaning": "문서"
@@ -7807,10 +8397,10 @@
     "radical": "辵",
     "totalStrokes": 15,
     "confusables": [
-      "敵",
-      "積",
-      "績",
-      "賊"
+      "遺",
+      "遇",
+      "遊",
+      "避"
     ],
     "exampleWord": "맞을",
     "exampleMeaning": "맞을"
@@ -7825,10 +8415,10 @@
     "radical": "糸",
     "totalStrokes": 17,
     "confusables": [
-      "積",
-      "適",
-      "籍",
-      "賊"
+      "織",
+      "縮",
+      "緣",
+      "積"
     ],
     "exampleWord": "성적",
     "exampleMeaning": "결과 점수"
@@ -7843,9 +8433,10 @@
     "radical": "貝",
     "totalStrokes": 13,
     "confusables": [
+      "資",
       "適",
-      "積",
-      "績"
+      "負",
+      "積"
     ],
     "exampleWord": "도둑",
     "exampleMeaning": "도둑"
@@ -7860,7 +8451,7 @@
     "radical": "寸",
     "totalStrokes": 11,
     "confusables": [
-      "錢"
+      "射"
     ],
     "exampleWord": "오로지",
     "exampleMeaning": "오로지"
@@ -7875,6 +8466,7 @@
     "radical": "車",
     "totalStrokes": 18,
     "confusables": [
+      "輪",
       "錢"
     ],
     "exampleWord": "구를",
@@ -7890,8 +8482,10 @@
     "radical": "金",
     "totalStrokes": 16,
     "confusables": [
-      "轉",
-      "專"
+      "鍾",
+      "鏡",
+      "鉛",
+      "轉"
     ],
     "exampleWord": "돈",
     "exampleMeaning": "돈"
@@ -7905,7 +8499,12 @@
     "meaning": "꺾을",
     "radical": "手",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "拒",
+      "拍",
+      "批",
+      "招"
+    ],
     "exampleWord": "꺾을",
     "exampleMeaning": "꺾을"
   },
@@ -7974,7 +8573,8 @@
     "totalStrokes": 16,
     "confusables": [
       "靜",
-      "政"
+      "敢",
+      "散"
     ],
     "exampleWord": "정리",
     "exampleMeaning": "가지런히 함"
@@ -7989,8 +8589,7 @@
     "radical": "巾",
     "totalStrokes": 9,
     "confusables": [
-      "制",
-      "除"
+      "帳"
     ],
     "exampleWord": "임금",
     "exampleMeaning": "임금"
@@ -8005,10 +8604,10 @@
     "radical": "木",
     "totalStrokes": 11,
     "confusables": [
+      "核",
+      "柳",
       "組",
-      "鳥",
-      "造",
-      "潮"
+      "構"
     ],
     "exampleWord": "가지",
     "exampleMeaning": "가지"
@@ -8023,8 +8622,9 @@
     "radical": "水",
     "totalStrokes": 15,
     "confusables": [
-      "條",
-      "組"
+      "激",
+      "源",
+      "混"
     ],
     "exampleWord": "밀물",
     "exampleMeaning": "밀물"
@@ -8039,10 +8639,10 @@
     "radical": "糸",
     "totalStrokes": 11,
     "confusables": [
-      "條",
-      "鳥",
-      "造",
-      "潮"
+      "納",
+      "絲",
+      "紀",
+      "紅"
     ],
     "exampleWord": "짤",
     "exampleMeaning": "짤"
@@ -8056,7 +8656,11 @@
     "meaning": "있을",
     "radical": "子",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "季",
+      "孤",
+      "孔"
+    ],
     "exampleWord": "있을",
     "exampleMeaning": "있을"
   },
@@ -8069,7 +8673,11 @@
     "meaning": "쇠북",
     "radical": "金",
     "totalStrokes": 17,
-    "confusables": [],
+    "confusables": [
+      "錢",
+      "鏡",
+      "鉛"
+    ],
     "exampleWord": "쇠북",
     "exampleMeaning": "쇠북"
   },
@@ -8082,7 +8690,9 @@
     "meaning": "좇을",
     "radical": "彳",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "徒"
+    ],
     "exampleWord": "좇을",
     "exampleMeaning": "좇을"
   },
@@ -8095,7 +8705,10 @@
     "meaning": "자리",
     "radical": "广",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "庫",
+      "底"
+    ],
     "exampleWord": "자리",
     "exampleMeaning": "자리"
   },
@@ -8109,8 +8722,7 @@
     "radical": "酉",
     "totalStrokes": 10,
     "confusables": [
-      "周",
-      "朱"
+      "周"
     ],
     "exampleWord": "술",
     "exampleMeaning": "술"
@@ -8125,8 +8737,10 @@
     "radical": "木",
     "totalStrokes": 6,
     "confusables": [
+      "松",
+      "柳",
       "周",
-      "酒"
+      "核"
     ],
     "exampleWord": "붉을",
     "exampleMeaning": "붉을"
@@ -8141,6 +8755,8 @@
     "radical": "口",
     "totalStrokes": 8,
     "confusables": [
+      "君",
+      "否",
       "酒",
       "朱"
     ],
@@ -8170,8 +8786,10 @@
     "radical": "手",
     "totalStrokes": 9,
     "confusables": [
-      "智",
-      "誌"
+      "拒",
+      "拍",
+      "招",
+      "批"
     ],
     "exampleWord": "가질",
     "exampleMeaning": "가질"
@@ -8186,8 +8804,10 @@
     "radical": "日",
     "totalStrokes": 12,
     "confusables": [
-      "誌",
-      "持"
+      "暇",
+      "普",
+      "映",
+      "誌"
     ],
     "exampleWord": "슬기",
     "exampleMeaning": "슬기"
@@ -8202,8 +8822,9 @@
     "radical": "言",
     "totalStrokes": 14,
     "confusables": [
+      "評",
       "智",
-      "持"
+      "討"
     ],
     "exampleWord": "기록할",
     "exampleMeaning": "기록할"
@@ -8217,7 +8838,12 @@
     "meaning": "짤",
     "radical": "糸",
     "totalStrokes": 18,
-    "confusables": [],
+    "confusables": [
+      "績",
+      "縮",
+      "繼",
+      "緣"
+    ],
     "exampleWord": "짤",
     "exampleMeaning": "짤"
   },
@@ -8231,9 +8857,7 @@
     "radical": "玉",
     "totalStrokes": 9,
     "confusables": [
-      "陣",
-      "眞",
-      "盡"
+      "陣"
     ],
     "exampleWord": "보배",
     "exampleMeaning": "보배"
@@ -8248,8 +8872,7 @@
     "radical": "皿",
     "totalStrokes": 14,
     "confusables": [
-      "珍",
-      "陣"
+      "盜"
     ],
     "exampleWord": "다할",
     "exampleMeaning": "다할"
@@ -8264,9 +8887,9 @@
     "radical": "阜",
     "totalStrokes": 10,
     "confusables": [
-      "眞",
-      "珍",
-      "盡"
+      "降",
+      "階",
+      "珍"
     ],
     "exampleWord": "진칠",
     "exampleMeaning": "진칠"
@@ -8306,7 +8929,12 @@
     "meaning": "캘",
     "radical": "手",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "援",
+      "推",
+      "探",
+      "揮"
+    ],
     "exampleWord": "캘",
     "exampleMeaning": "캘"
   },
@@ -8332,7 +8960,12 @@
     "meaning": "샘",
     "radical": "水",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "派",
+      "況",
+      "混",
+      "源"
+    ],
     "exampleWord": "샘",
     "exampleMeaning": "샘"
   },
@@ -8375,7 +9008,12 @@
     "meaning": "부를",
     "radical": "手",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "拒",
+      "拍",
+      "批",
+      "折"
+    ],
     "exampleWord": "부를",
     "exampleMeaning": "부를"
   },
@@ -8388,7 +9026,12 @@
     "meaning": "밀",
     "radical": "手",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "援",
+      "採",
+      "探",
+      "揮"
+    ],
     "exampleWord": "밀",
     "exampleMeaning": "밀"
   },
@@ -8401,7 +9044,12 @@
     "meaning": "줄일",
     "radical": "糸",
     "totalStrokes": 17,
-    "confusables": [],
+    "confusables": [
+      "績",
+      "織",
+      "緣",
+      "繼"
+    ],
     "exampleWord": "줄일",
     "exampleMeaning": "줄일"
   },
@@ -8458,7 +9106,7 @@
     "radical": "宀",
     "totalStrokes": 14,
     "confusables": [
-      "針"
+      "寄"
     ],
     "exampleWord": "잘",
     "exampleMeaning": "잘"
@@ -8473,7 +9121,7 @@
     "radical": "金",
     "totalStrokes": 10,
     "confusables": [
-      "寢"
+      "鉛"
     ],
     "exampleWord": "바늘",
     "exampleMeaning": "바늘"
@@ -8487,7 +9135,10 @@
     "meaning": "일컬을",
     "radical": "禾",
     "totalStrokes": 14,
-    "confusables": [],
+    "confusables": [
+      "穀",
+      "積"
+    ],
     "exampleWord": "일컬을",
     "exampleMeaning": "일컬을"
   },
@@ -8516,7 +9167,8 @@
     "radical": "弓",
     "totalStrokes": 15,
     "confusables": [
-      "歎"
+      "歎",
+      "張"
     ],
     "exampleWord": "탄알",
     "exampleMeaning": "탄알"
@@ -8530,7 +9182,10 @@
     "meaning": "벗을",
     "radical": "肉",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "腸",
+      "胞"
+    ],
     "exampleWord": "벗을",
     "exampleMeaning": "벗을"
   },
@@ -8543,7 +9198,12 @@
     "meaning": "찾을",
     "radical": "手",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "援",
+      "採",
+      "推",
+      "揮"
+    ],
     "exampleWord": "탐색",
     "exampleMeaning": "찾아봄"
   },
@@ -8556,7 +9216,12 @@
     "meaning": "가릴",
     "radical": "手",
     "totalStrokes": 16,
-    "confusables": [],
+    "confusables": [
+      "據",
+      "擊",
+      "損",
+      "援"
+    ],
     "exampleWord": "선택",
     "exampleMeaning": "골라 정함"
   },
@@ -8569,7 +9234,10 @@
     "meaning": "칠",
     "radical": "言",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "評",
+      "誌"
+    ],
     "exampleWord": "칠",
     "exampleMeaning": "칠"
   },
@@ -8582,7 +9250,9 @@
     "meaning": "아플",
     "radical": "疒",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "疲"
+    ],
     "exampleWord": "아플",
     "exampleMeaning": "아플"
   },
@@ -8595,7 +9265,12 @@
     "meaning": "던질",
     "radical": "手",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "拒",
+      "拍",
+      "批",
+      "折"
+    ],
     "exampleWord": "던질",
     "exampleMeaning": "던질"
   },
@@ -8622,8 +9297,10 @@
     "radical": "水",
     "totalStrokes": 9,
     "confusables": [
-      "波",
-      "破"
+      "泉",
+      "況",
+      "混",
+      "源"
     ],
     "exampleWord": "갈래",
     "exampleMeaning": "갈래"
@@ -8637,7 +9314,11 @@
     "meaning": "판단할",
     "radical": "刀",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "刻",
+      "券",
+      "刑"
+    ],
     "exampleWord": "판단할",
     "exampleMeaning": "판단할"
   },
@@ -8650,7 +9331,12 @@
     "meaning": "책",
     "radical": "竹",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "管",
+      "範",
+      "簡",
+      "筋"
+    ],
     "exampleWord": "책",
     "exampleMeaning": "책"
   },
@@ -8663,7 +9349,10 @@
     "meaning": "평할",
     "radical": "言",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "誌",
+      "討"
+    ],
     "exampleWord": "평가",
     "exampleMeaning": "좋고 나쁨을 따짐"
   },
@@ -8676,7 +9365,9 @@
     "meaning": "닫을",
     "radical": "門",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "閑"
+    ],
     "exampleWord": "닫을",
     "exampleMeaning": "닫을"
   },
@@ -8689,7 +9380,10 @@
     "meaning": "세포",
     "radical": "肉",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "脫",
+      "腸"
+    ],
     "exampleWord": "세포",
     "exampleMeaning": "세포"
   },
@@ -8702,7 +9396,10 @@
     "meaning": "불터질",
     "radical": "火",
     "totalStrokes": 19,
-    "confusables": [],
+    "confusables": [
+      "營",
+      "燃"
+    ],
     "exampleWord": "불터질",
     "exampleMeaning": "불터질"
   },
@@ -8715,7 +9412,12 @@
     "meaning": "표할",
     "radical": "木",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "構",
+      "機",
+      "模",
+      "樣"
+    ],
     "exampleWord": "표할",
     "exampleMeaning": "표할"
   },
@@ -8728,7 +9430,9 @@
     "meaning": "피곤할",
     "radical": "疒",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "痛"
+    ],
     "exampleWord": "피곤할",
     "exampleMeaning": "피곤할"
   },
@@ -8741,7 +9445,12 @@
     "meaning": "피할",
     "radical": "辵",
     "totalStrokes": 17,
-    "confusables": [],
+    "confusables": [
+      "遺",
+      "適",
+      "遇",
+      "遊"
+    ],
     "exampleWord": "피할",
     "exampleMeaning": "피할"
   },
@@ -8755,6 +9464,7 @@
     "radical": "門",
     "totalStrokes": 12,
     "confusables": [
+      "閉",
       "恨"
     ],
     "exampleWord": "한가할",
@@ -8770,6 +9480,7 @@
     "radical": "心",
     "totalStrokes": 9,
     "confusables": [
+      "怨",
       "閑"
     ],
     "exampleWord": "한",
@@ -8784,7 +9495,12 @@
     "meaning": "겨룰",
     "radical": "手",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "拒",
+      "拍",
+      "批",
+      "折"
+    ],
     "exampleWord": "겨룰",
     "exampleMeaning": "겨룰"
   },
@@ -8797,7 +9513,12 @@
     "meaning": "씨",
     "radical": "木",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "柳",
+      "條",
+      "松",
+      "構"
+    ],
     "exampleWord": "씨",
     "exampleMeaning": "씨"
   },
@@ -8810,7 +9531,11 @@
     "meaning": "법",
     "radical": "心",
     "totalStrokes": 16,
-    "confusables": [],
+    "confusables": [
+      "慮",
+      "憤",
+      "慰"
+    ],
     "exampleWord": "법",
     "exampleMeaning": "법"
   },
@@ -8823,7 +9548,10 @@
     "meaning": "험할",
     "radical": "阜",
     "totalStrokes": 16,
-    "confusables": [],
+    "confusables": [
+      "隱",
+      "階"
+    ],
     "exampleWord": "험할",
     "exampleMeaning": "험할"
   },
@@ -8862,7 +9590,11 @@
     "meaning": "형벌",
     "radical": "刀",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "判",
+      "刻",
+      "券"
+    ],
     "exampleWord": "형벌",
     "exampleMeaning": "형벌"
   },
@@ -8875,7 +9607,9 @@
     "meaning": "혹",
     "radical": "戈",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "戒"
+    ],
     "exampleWord": "혹",
     "exampleMeaning": "혹"
   },
@@ -8889,7 +9623,10 @@
     "radical": "女",
     "totalStrokes": 11,
     "confusables": [
-      "混"
+      "威",
+      "姿",
+      "混",
+      "妹"
     ],
     "exampleWord": "혼인할",
     "exampleMeaning": "혼인할"
@@ -8904,6 +9641,9 @@
     "radical": "水",
     "totalStrokes": 11,
     "confusables": [
+      "源",
+      "泉",
+      "派",
       "婚"
     ],
     "exampleWord": "섞을",
@@ -8918,7 +9658,12 @@
     "meaning": "붉을",
     "radical": "糸",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "紀",
+      "納",
+      "系",
+      "組"
+    ],
     "exampleWord": "붉을",
     "exampleMeaning": "붉을"
   },
@@ -8944,9 +9689,7 @@
     "meaning": "기쁠",
     "radical": "欠",
     "totalStrokes": 22,
-    "confusables": [
-      "環"
-    ],
+    "confusables": [],
     "exampleWord": "기쁠",
     "exampleMeaning": "기쁠"
   },
@@ -8959,9 +9702,7 @@
     "meaning": "고리",
     "radical": "玉",
     "totalStrokes": 17,
-    "confusables": [
-      "歡"
-    ],
+    "confusables": [],
     "exampleWord": "환경",
     "exampleMeaning": "주변의 모든 것"
   },
@@ -8974,7 +9715,11 @@
     "meaning": "상황",
     "radical": "水",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "泉",
+      "派",
+      "混"
+    ],
     "exampleWord": "상황",
     "exampleMeaning": "상황"
   },
@@ -8987,7 +9732,9 @@
     "meaning": "재",
     "radical": "火",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "烈"
+    ],
     "exampleWord": "재",
     "exampleMeaning": "재"
   },
@@ -9016,7 +9763,10 @@
     "radical": "人",
     "totalStrokes": 10,
     "confusables": [
-      "厚"
+      "傑",
+      "依",
+      "厚",
+      "傾"
     ],
     "exampleWord": "기후",
     "exampleMeaning": "기후"
@@ -9030,7 +9780,12 @@
     "meaning": "휘두를",
     "radical": "手",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "損",
+      "援",
+      "採",
+      "推"
+    ],
     "exampleWord": "휘두를",
     "exampleMeaning": "휘두를"
   },
@@ -9043,7 +9798,9 @@
     "meaning": "기쁠",
     "radical": "口",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "周"
+    ],
     "exampleWord": "기쁠",
     "exampleMeaning": "기쁠"
   },
@@ -9057,7 +9814,10 @@
     "radical": "人",
     "totalStrokes": 11,
     "confusables": [
-      "街"
+      "個",
+      "備",
+      "修",
+      "係"
     ],
     "exampleWord": "거짓",
     "exampleMeaning": "거짓"
@@ -9072,8 +9832,8 @@
     "radical": "行",
     "totalStrokes": 12,
     "confusables": [
-      "暇",
-      "假"
+      "假",
+      "衛"
     ],
     "exampleWord": "거리",
     "exampleMeaning": "거리"
@@ -9088,7 +9848,10 @@
     "radical": "水",
     "totalStrokes": 12,
     "confusables": [
-      "監"
+      "深",
+      "液",
+      "準",
+      "測"
     ],
     "exampleWord": "감소",
     "exampleMeaning": "줄어듦"
@@ -9103,7 +9866,9 @@
     "radical": "皿",
     "totalStrokes": 14,
     "confusables": [
-      "減"
+      "盛",
+      "減",
+      "益"
     ],
     "exampleWord": "볼",
     "exampleMeaning": "볼"
@@ -9117,7 +9882,12 @@
     "meaning": "욀",
     "radical": "言",
     "totalStrokes": 17,
-    "confusables": [],
+    "confusables": [
+      "謝",
+      "謠",
+      "論",
+      "請"
+    ],
     "exampleWord": "욀",
     "exampleMeaning": "욀"
   },
@@ -9130,7 +9900,10 @@
     "meaning": "편안",
     "radical": "广",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "府",
+      "床"
+    ],
     "exampleWord": "건강",
     "exampleMeaning": "몸이 편안함"
   },
@@ -9143,7 +9916,12 @@
     "meaning": "낱",
     "radical": "人",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "假",
+      "係",
+      "保",
+      "俗"
+    ],
     "exampleWord": "낱",
     "exampleMeaning": "낱"
   },
@@ -9156,7 +9934,11 @@
     "meaning": "검사할",
     "radical": "木",
     "totalStrokes": 17,
-    "confusables": [],
+    "confusables": [
+      "檀",
+      "榮",
+      "極"
+    ],
     "exampleWord": "검사할",
     "exampleMeaning": "검사할"
   },
@@ -9170,7 +9952,10 @@
     "radical": "水",
     "totalStrokes": 15,
     "confusables": [
-      "缺"
+      "滿",
+      "演",
+      "濟",
+      "準"
     ],
     "exampleWord": "깨끗할",
     "exampleMeaning": "깨끗할"
@@ -9184,9 +9969,7 @@
     "meaning": "이지러질",
     "radical": "缶",
     "totalStrokes": 10,
-    "confusables": [
-      "潔"
-    ],
+    "confusables": [],
     "exampleWord": "이지러질",
     "exampleMeaning": "이지러질"
   },
@@ -9200,9 +9983,10 @@
     "radical": "土",
     "totalStrokes": 14,
     "confusables": [
-      "傾",
-      "經",
-      "慶"
+      "增",
+      "壁",
+      "報",
+      "經"
     ],
     "exampleWord": "환경",
     "exampleMeaning": "주변 상태"
@@ -9217,9 +10001,10 @@
     "radical": "糸",
     "totalStrokes": 13,
     "confusables": [
-      "傾",
-      "境",
-      "慶"
+      "絶",
+      "統",
+      "細",
+      "境"
     ],
     "exampleWord": "경험",
     "exampleMeaning": "겪어 봄"
@@ -9234,7 +10019,10 @@
     "radical": "言",
     "totalStrokes": 20,
     "confusables": [
-      "慶"
+      "議",
+      "護",
+      "講",
+      "謝"
     ],
     "exampleWord": "경찰",
     "exampleMeaning": "질서를 지키는 사람"
@@ -9249,9 +10037,10 @@
     "radical": "心",
     "totalStrokes": 15,
     "confusables": [
-      "境",
-      "經",
-      "警"
+      "態",
+      "想",
+      "應",
+      "境"
     ],
     "exampleWord": "경사",
     "exampleMeaning": "경사"
@@ -9265,7 +10054,12 @@
     "meaning": "맬",
     "radical": "人",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "個",
+      "保",
+      "俗",
+      "修"
+    ],
     "exampleWord": "맬",
     "exampleMeaning": "맬"
   },
@@ -9279,8 +10073,8 @@
     "radical": "攴",
     "totalStrokes": 9,
     "confusables": [
-      "孤",
-      "庫"
+      "政",
+      "收"
     ],
     "exampleWord": "연고",
     "exampleMeaning": "연고"
@@ -9294,7 +10088,12 @@
     "meaning": "벼슬",
     "radical": "宀",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "宗",
+      "宮",
+      "守",
+      "容"
+    ],
     "exampleWord": "벼슬",
     "exampleMeaning": "벼슬"
   },
@@ -9308,6 +10107,8 @@
     "radical": "水",
     "totalStrokes": 7,
     "confusables": [
+      "治",
+      "波",
       "究",
       "句"
     ],
@@ -9324,8 +10125,10 @@
     "radical": "口",
     "totalStrokes": 5,
     "confusables": [
-      "求",
-      "究"
+      "吸",
+      "味",
+      "呼",
+      "求"
     ],
     "exampleWord": "글귀",
     "exampleMeaning": "글귀"
@@ -9355,7 +10158,12 @@
     "meaning": "집",
     "radical": "宀",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "密",
+      "容",
+      "官",
+      "富"
+    ],
     "exampleWord": "집",
     "exampleMeaning": "집"
   },
@@ -9381,7 +10189,11 @@
     "meaning": "다할",
     "radical": "木",
     "totalStrokes": 13,
-    "confusables": [],
+    "confusables": [
+      "榮",
+      "檢",
+      "檀"
+    ],
     "exampleWord": "다할",
     "exampleMeaning": "다할"
   },
@@ -9394,7 +10206,10 @@
     "meaning": "금할",
     "radical": "示",
     "totalStrokes": 13,
-    "confusables": [],
+    "confusables": [
+      "祭",
+      "票"
+    ],
     "exampleWord": "금지",
     "exampleMeaning": "하지 못하게 함"
   },
@@ -9407,7 +10222,9 @@
     "meaning": "그릇",
     "radical": "口",
     "totalStrokes": 16,
-    "confusables": [],
+    "confusables": [
+      "單"
+    ],
     "exampleWord": "그릇",
     "exampleMeaning": "그릇"
   },
@@ -9421,8 +10238,7 @@
     "radical": "走",
     "totalStrokes": 10,
     "confusables": [
-      "寄",
-      "紀"
+      "走"
     ],
     "exampleWord": "일어날",
     "exampleMeaning": "일어날"
@@ -9436,7 +10252,12 @@
     "meaning": "따뜻할",
     "radical": "日",
     "totalStrokes": 13,
-    "confusables": [],
+    "confusables": [
+      "暗",
+      "暴",
+      "星",
+      "是"
+    ],
     "exampleWord": "따뜻할",
     "exampleMeaning": "따뜻할"
   },
@@ -9463,7 +10284,10 @@
     "radical": "心",
     "totalStrokes": 9,
     "confusables": [
-      "努"
+      "息",
+      "恩",
+      "忠",
+      "志"
     ],
     "exampleWord": "성낼",
     "exampleMeaning": "성낼"
@@ -9478,7 +10302,9 @@
     "radical": "力",
     "totalStrokes": 7,
     "confusables": [
-      "怒"
+      "助",
+      "怒",
+      "務"
     ],
     "exampleWord": "힘쓸",
     "exampleMeaning": "힘쓸"
@@ -9493,8 +10319,7 @@
     "radical": "斤",
     "totalStrokes": 18,
     "confusables": [
-      "檀",
-      "端"
+      "檀"
     ],
     "exampleWord": "끊을",
     "exampleMeaning": "끊을"
@@ -9509,8 +10334,10 @@
     "radical": "口",
     "totalStrokes": 12,
     "confusables": [
+      "員",
       "端",
-      "檀"
+      "器",
+      "味"
     ],
     "exampleWord": "홑",
     "exampleMeaning": "홑"
@@ -9525,9 +10352,10 @@
     "radical": "木",
     "totalStrokes": 17,
     "confusables": [
+      "檢",
       "斷",
-      "端",
-      "單"
+      "榮",
+      "極"
     ],
     "exampleWord": "박달나무",
     "exampleMeaning": "박달나무"
@@ -9543,8 +10371,7 @@
     "totalStrokes": 14,
     "confusables": [
       "單",
-      "檀",
-      "斷"
+      "檀"
     ],
     "exampleWord": "끝",
     "exampleMeaning": "끝"
@@ -9558,7 +10385,12 @@
     "meaning": "통달할",
     "radical": "辵",
     "totalStrokes": 13,
-    "confusables": [],
+    "confusables": [
+      "進",
+      "連",
+      "造",
+      "送"
+    ],
     "exampleWord": "도달",
     "exampleMeaning": "이르다"
   },
@@ -9571,7 +10403,9 @@
     "meaning": "멜",
     "radical": "手",
     "totalStrokes": 16,
-    "confusables": [],
+    "confusables": [
+      "提"
+    ],
     "exampleWord": "멜",
     "exampleMeaning": "멜"
   },
@@ -9598,7 +10432,10 @@
     "radical": "巾",
     "totalStrokes": 11,
     "confusables": [
-      "隊"
+      "師",
+      "常",
+      "隊",
+      "希"
     ],
     "exampleWord": "띠",
     "exampleMeaning": "띠"
@@ -9613,7 +10450,10 @@
     "radical": "阜",
     "totalStrokes": 12,
     "confusables": [
-      "帶"
+      "陰",
+      "障",
+      "除",
+      "際"
     ],
     "exampleWord": "무리",
     "exampleMeaning": "무리"
@@ -9627,7 +10467,9 @@
     "meaning": "인도할",
     "radical": "寸",
     "totalStrokes": 16,
-    "confusables": [],
+    "confusables": [
+      "尊"
+    ],
     "exampleWord": "인도할",
     "exampleMeaning": "인도할"
   },
@@ -9640,9 +10482,7 @@
     "meaning": "독",
     "radical": "毋",
     "totalStrokes": 9,
-    "confusables": [
-      "督"
-    ],
+    "confusables": [],
     "exampleWord": "독",
     "exampleMeaning": "독"
   },
@@ -9656,7 +10496,8 @@
     "radical": "目",
     "totalStrokes": 13,
     "confusables": [
-      "毒"
+      "眼",
+      "眞"
     ],
     "exampleWord": "감독할",
     "exampleMeaning": "감독할"
@@ -9670,7 +10511,10 @@
     "meaning": "구리",
     "radical": "金",
     "totalStrokes": 14,
-    "confusables": [],
+    "confusables": [
+      "銃",
+      "錄"
+    ],
     "exampleWord": "구리",
     "exampleMeaning": "구리"
   },
@@ -9713,7 +10557,11 @@
     "meaning": "얻을",
     "radical": "彳",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "復",
+      "律",
+      "往"
+    ],
     "exampleWord": "얻을",
     "exampleMeaning": "얻을"
   },
@@ -9726,7 +10574,9 @@
     "meaning": "등",
     "radical": "火",
     "totalStrokes": 16,
-    "confusables": [],
+    "confusables": [
+      "煙"
+    ],
     "exampleWord": "등",
     "exampleMeaning": "등"
   },
@@ -9778,7 +10628,12 @@
     "meaning": "이을",
     "radical": "辵",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "送",
+      "逆",
+      "造",
+      "進"
+    ],
     "exampleWord": "연결",
     "exampleMeaning": "이어 붙임"
   },
@@ -9791,7 +10646,9 @@
     "meaning": "벌릴",
     "radical": "刀",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "制"
+    ],
     "exampleWord": "벌릴",
     "exampleMeaning": "벌릴"
   },
@@ -9804,7 +10661,10 @@
     "meaning": "기록할",
     "radical": "金",
     "totalStrokes": 16,
-    "confusables": [],
+    "confusables": [
+      "銅",
+      "銃"
+    ],
     "exampleWord": "기록할",
     "exampleMeaning": "기록할"
   },
@@ -9817,7 +10677,12 @@
     "meaning": "논할",
     "radical": "言",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "誠",
+      "誤",
+      "認",
+      "請"
+    ],
     "exampleWord": "토론",
     "exampleMeaning": "서로 의견을 말함"
   },
@@ -9843,7 +10708,11 @@
     "meaning": "법칙",
     "radical": "彳",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "往",
+      "得",
+      "復"
+    ],
     "exampleWord": "법률",
     "exampleMeaning": "법과 규칙"
   },
@@ -9856,7 +10725,12 @@
     "meaning": "찰",
     "radical": "水",
     "totalStrokes": 14,
-    "confusables": [],
+    "confusables": [
+      "潔",
+      "演",
+      "準",
+      "減"
+    ],
     "exampleWord": "찰",
     "exampleMeaning": "찰"
   },
@@ -9869,7 +10743,10 @@
     "meaning": "줄기",
     "radical": "肉",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "背",
+      "肉"
+    ],
     "exampleWord": "줄기",
     "exampleMeaning": "줄기"
   },
@@ -9909,6 +10786,9 @@
     "radical": "力",
     "totalStrokes": 11,
     "confusables": [
+      "勢",
+      "努",
+      "助",
       "武"
     ],
     "exampleWord": "힘쓸",
@@ -9924,6 +10804,7 @@
     "radical": "止",
     "totalStrokes": 8,
     "confusables": [
+      "步",
       "務"
     ],
     "exampleWord": "호반",
@@ -9954,7 +10835,10 @@
     "radical": "口",
     "totalStrokes": 8,
     "confusables": [
-      "未"
+      "呼",
+      "吸",
+      "員",
+      "句"
     ],
     "exampleWord": "맛",
     "exampleMeaning": "맛"
@@ -9968,7 +10852,12 @@
     "meaning": "빽빽할",
     "radical": "宀",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "宮",
+      "富",
+      "容",
+      "官"
+    ],
     "exampleWord": "빽빽할",
     "exampleMeaning": "빽빽할"
   },
@@ -9981,7 +10870,9 @@
     "meaning": "넓을",
     "radical": "十",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "協"
+    ],
     "exampleWord": "넓을",
     "exampleMeaning": "넓을"
   },
@@ -9995,9 +10886,10 @@
     "radical": "阜",
     "totalStrokes": 7,
     "confusables": [
-      "妨",
+      "限",
       "房",
-      "訪"
+      "除",
+      "陰"
     ],
     "exampleWord": "예방",
     "exampleMeaning": "미리 막음"
@@ -10012,8 +10904,8 @@
     "radical": "戶",
     "totalStrokes": 8,
     "confusables": [
-      "妨",
       "防",
+      "戶",
       "訪"
     ],
     "exampleWord": "방",
@@ -10029,8 +10921,10 @@
     "radical": "言",
     "totalStrokes": 11,
     "confusables": [
-      "房",
-      "防"
+      "設",
+      "詩",
+      "試",
+      "誠"
     ],
     "exampleWord": "찾을",
     "exampleMeaning": "찾을"
@@ -10045,8 +10939,10 @@
     "radical": "手",
     "totalStrokes": 9,
     "confusables": [
-      "背",
-      "配"
+      "承",
+      "指",
+      "掃",
+      "授"
     ],
     "exampleWord": "절",
     "exampleMeaning": "절"
@@ -10061,8 +10957,10 @@
     "radical": "肉",
     "totalStrokes": 9,
     "confusables": [
+      "脈",
       "拜",
-      "配"
+      "配",
+      "肉"
     ],
     "exampleWord": "등",
     "exampleMeaning": "등"
@@ -10092,7 +10990,9 @@
     "meaning": "벌할",
     "radical": "网",
     "totalStrokes": 14,
-    "confusables": [],
+    "confusables": [
+      "置"
+    ],
     "exampleWord": "벌",
     "exampleMeaning": "잘못해서 받음"
   },
@@ -10105,7 +11005,12 @@
     "meaning": "칠[討]",
     "radical": "人",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "佛",
+      "低",
+      "係",
+      "保"
+    ],
     "exampleWord": "칠",
     "exampleMeaning": "칠"
   },
@@ -10118,7 +11023,12 @@
     "meaning": "벽",
     "radical": "土",
     "totalStrokes": 16,
-    "confusables": [],
+    "confusables": [
+      "壓",
+      "增",
+      "境",
+      "報"
+    ],
     "exampleWord": "벽",
     "exampleMeaning": "벽"
   },
@@ -10145,8 +11055,10 @@
     "radical": "人",
     "totalStrokes": 9,
     "confusables": [
-      "步",
-      "報"
+      "個",
+      "係",
+      "俗",
+      "修"
     ],
     "exampleWord": "보호",
     "exampleMeaning": "지킴"
@@ -10161,8 +11073,8 @@
     "radical": "止",
     "totalStrokes": 7,
     "confusables": [
-      "保",
-      "報"
+      "武",
+      "保"
     ],
     "exampleWord": "걸음",
     "exampleMeaning": "걸음"
@@ -10177,8 +11089,10 @@
     "radical": "土",
     "totalStrokes": 12,
     "confusables": [
-      "保",
-      "步"
+      "境",
+      "城",
+      "增",
+      "壁"
     ],
     "exampleWord": "보고",
     "exampleMeaning": "알려줌"
@@ -10205,7 +11119,11 @@
     "meaning": "회복할",
     "radical": "彳",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "得",
+      "律",
+      "往"
+    ],
     "exampleWord": "회복할",
     "exampleMeaning": "회복할"
   },
@@ -10219,8 +11137,8 @@
     "radical": "广",
     "totalStrokes": 8,
     "confusables": [
-      "否",
-      "負",
+      "床",
+      "康",
       "副",
       "婦"
     ],
@@ -10237,9 +11155,10 @@
     "radical": "宀",
     "totalStrokes": 12,
     "confusables": [
-      "副",
-      "婦",
-      "府"
+      "密",
+      "宮",
+      "容",
+      "察"
     ],
     "exampleWord": "부자",
     "exampleMeaning": "부자"
@@ -10254,9 +11173,10 @@
     "radical": "刀",
     "totalStrokes": 11,
     "confusables": [
+      "創",
       "婦",
       "富",
-      "府"
+      "制"
     ],
     "exampleWord": "버금",
     "exampleMeaning": "버금"
@@ -10287,7 +11207,12 @@
     "meaning": "부처",
     "radical": "人",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "伐",
+      "低",
+      "係",
+      "保"
+    ],
     "exampleWord": "부처",
     "exampleMeaning": "부처"
   },
@@ -10301,7 +11226,6 @@
     "radical": "飛",
     "totalStrokes": 9,
     "confusables": [
-      "祕",
       "非",
       "備",
       "悲"
@@ -10319,10 +11243,10 @@
     "radical": "人",
     "totalStrokes": 12,
     "confusables": [
-      "悲",
-      "碑",
-      "飛",
-      "非"
+      "假",
+      "個",
+      "修",
+      "悲"
     ],
     "exampleWord": "준비",
     "exampleMeaning": "미리 갖춤"
@@ -10337,10 +11261,7 @@
     "radical": "非",
     "totalStrokes": 8,
     "confusables": [
-      "批",
-      "飛",
-      "備",
-      "悲"
+      "飛"
     ],
     "exampleWord": "아닐",
     "exampleMeaning": "아닐"
@@ -10355,10 +11276,10 @@
     "radical": "心",
     "totalStrokes": 12,
     "confusables": [
-      "備",
-      "碑",
-      "飛",
-      "非"
+      "想",
+      "惠",
+      "息",
+      "恩"
     ],
     "exampleWord": "슬플",
     "exampleMeaning": "슬플"
@@ -10372,7 +11293,10 @@
     "meaning": "가난할",
     "radical": "貝",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "貨",
+      "賢"
+    ],
     "exampleWord": "가난할",
     "exampleMeaning": "가난할"
   },
@@ -10386,10 +11310,7 @@
     "radical": "寸",
     "totalStrokes": 6,
     "confusables": [
-      "射",
-      "私",
-      "舍",
-      "師"
+      "舍"
     ],
     "exampleWord": "절",
     "exampleMeaning": "절"
@@ -10404,8 +11325,10 @@
     "radical": "巾",
     "totalStrokes": 10,
     "confusables": [
-      "舍",
-      "寺"
+      "帶",
+      "常",
+      "希",
+      "舍"
     ],
     "exampleWord": "스승",
     "exampleMeaning": "스승"
@@ -10419,7 +11342,12 @@
     "meaning": "사례할",
     "radical": "言",
     "totalStrokes": 17,
-    "confusables": [],
+    "confusables": [
+      "講",
+      "謠",
+      "論",
+      "請"
+    ],
     "exampleWord": "사례할",
     "exampleMeaning": "사례할"
   },
@@ -10462,9 +11390,10 @@
     "radical": "巾",
     "totalStrokes": 11,
     "confusables": [
+      "帶",
+      "師",
       "想",
-      "狀",
-      "床"
+      "希"
     ],
     "exampleWord": "떳떳할",
     "exampleMeaning": "떳떳할"
@@ -10479,8 +11408,9 @@
     "radical": "广",
     "totalStrokes": 7,
     "confusables": [
+      "府",
       "狀",
-      "常"
+      "康"
     ],
     "exampleWord": "상",
     "exampleMeaning": "상"
@@ -10495,10 +11425,10 @@
     "radical": "心",
     "totalStrokes": 13,
     "confusables": [
-      "傷",
-      "象",
-      "常",
-      "狀"
+      "悲",
+      "態",
+      "惠",
+      "慶"
     ],
     "exampleWord": "생각",
     "exampleMeaning": "생각"
@@ -10514,8 +11444,7 @@
     "totalStrokes": 8,
     "confusables": [
       "床",
-      "常",
-      "想"
+      "常"
     ],
     "exampleWord": "형상",
     "exampleMeaning": "형상"
@@ -10529,7 +11458,12 @@
     "meaning": "베풀",
     "radical": "言",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "訪",
+      "詩",
+      "試",
+      "誠"
+    ],
     "exampleWord": "설명",
     "exampleMeaning": "알기 쉽게 말함"
   },
@@ -10543,10 +11477,10 @@
     "radical": "言",
     "totalStrokes": 14,
     "confusables": [
-      "聖",
-      "盛",
-      "聲",
-      "城"
+      "論",
+      "詩",
+      "試",
+      "誤"
     ],
     "exampleWord": "정성",
     "exampleMeaning": "정성"
@@ -10561,9 +11495,9 @@
     "radical": "耳",
     "totalStrokes": 17,
     "confusables": [
+      "職",
       "聖",
-      "誠",
-      "盛"
+      "誠"
     ],
     "exampleWord": "소리",
     "exampleMeaning": "소리"
@@ -10578,10 +11512,10 @@
     "radical": "皿",
     "totalStrokes": 12,
     "confusables": [
+      "監",
+      "益",
       "聖",
-      "誠",
-      "城",
-      "星"
+      "誠"
     ],
     "exampleWord": "성할",
     "exampleMeaning": "성할"
@@ -10614,10 +11548,10 @@
     "radical": "土",
     "totalStrokes": 10,
     "confusables": [
+      "報",
       "星",
       "盛",
-      "聖",
-      "誠"
+      "境"
     ],
     "exampleWord": "성곽",
     "exampleMeaning": "성을 둘러싼 큰 담"
@@ -10632,10 +11566,10 @@
     "radical": "日",
     "totalStrokes": 9,
     "confusables": [
+      "是",
       "城",
-      "盛",
-      "誠",
-      "聖"
+      "早",
+      "暖"
     ],
     "exampleWord": "별",
     "exampleMeaning": "별"
@@ -10650,6 +11584,7 @@
     "radical": "力",
     "totalStrokes": 13,
     "confusables": [
+      "務",
       "稅",
       "細"
     ],
@@ -10666,6 +11601,8 @@
     "radical": "禾",
     "totalStrokes": 12,
     "confusables": [
+      "移",
+      "程",
       "勢",
       "細"
     ],
@@ -10682,8 +11619,10 @@
     "radical": "糸",
     "totalStrokes": 11,
     "confusables": [
-      "稅",
-      "勢"
+      "素",
+      "純",
+      "絶",
+      "統"
     ],
     "exampleWord": "가늘",
     "exampleMeaning": "가늘"
@@ -10699,7 +11638,8 @@
     "totalStrokes": 10,
     "confusables": [
       "素",
-      "掃"
+      "掃",
+      "竹"
     ],
     "exampleWord": "웃음",
     "exampleMeaning": "웃음"
@@ -10714,8 +11654,10 @@
     "radical": "手",
     "totalStrokes": 11,
     "confusables": [
-      "笑",
-      "素"
+      "授",
+      "接",
+      "提",
+      "拜"
     ],
     "exampleWord": "쓸",
     "exampleMeaning": "쓸"
@@ -10730,8 +11672,10 @@
     "radical": "糸",
     "totalStrokes": 10,
     "confusables": [
-      "笑",
-      "掃"
+      "細",
+      "純",
+      "絶",
+      "統"
     ],
     "exampleWord": "본디",
     "exampleMeaning": "본디"
@@ -10745,7 +11689,9 @@
     "meaning": "이을",
     "radical": "糸",
     "totalStrokes": 21,
-    "confusables": [],
+    "confusables": [
+      "總"
+    ],
     "exampleWord": "계속",
     "exampleMeaning": "이어짐"
   },
@@ -10758,7 +11704,12 @@
     "meaning": "풍속",
     "radical": "人",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "個",
+      "係",
+      "保",
+      "修"
+    ],
     "exampleWord": "풍속",
     "exampleMeaning": "풍속"
   },
@@ -10771,7 +11722,12 @@
     "meaning": "보낼",
     "radical": "辵",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "連",
+      "逆",
+      "造",
+      "退"
+    ],
     "exampleWord": "보낼",
     "exampleMeaning": "보낼"
   },
@@ -10785,10 +11741,10 @@
     "radical": "人",
     "totalStrokes": 10,
     "confusables": [
-      "授",
-      "受",
-      "守",
-      "收"
+      "假",
+      "個",
+      "係",
+      "保"
     ],
     "exampleWord": "닦을",
     "exampleMeaning": "닦을"
@@ -10803,10 +11759,10 @@
     "radical": "又",
     "totalStrokes": 8,
     "confusables": [
+      "取",
       "修",
       "守",
-      "收",
-      "授"
+      "收"
     ],
     "exampleWord": "받을",
     "exampleMeaning": "받을"
@@ -10821,10 +11777,10 @@
     "radical": "宀",
     "totalStrokes": 6,
     "confusables": [
+      "官",
+      "宗",
       "收",
-      "秀",
-      "受",
-      "修"
+      "受"
     ],
     "exampleWord": "지킬",
     "exampleMeaning": "지킬"
@@ -10839,10 +11795,10 @@
     "radical": "手",
     "totalStrokes": 11,
     "confusables": [
-      "修",
-      "受",
-      "守",
-      "收"
+      "掃",
+      "接",
+      "提",
+      "拜"
     ],
     "exampleWord": "줄",
     "exampleMeaning": "줄"
@@ -10858,9 +11814,9 @@
     "totalStrokes": 6,
     "confusables": [
       "守",
-      "秀",
-      "受",
-      "修"
+      "故",
+      "政",
+      "受"
     ],
     "exampleWord": "거둘",
     "exampleMeaning": "거둘"
@@ -10874,7 +11830,12 @@
     "meaning": "순수할",
     "radical": "糸",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "細",
+      "素",
+      "絶",
+      "統"
+    ],
     "exampleWord": "순수할",
     "exampleMeaning": "순수할"
   },
@@ -10887,7 +11848,12 @@
     "meaning": "이을",
     "radical": "手",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "拜",
+      "指",
+      "掃",
+      "授"
+    ],
     "exampleWord": "승인",
     "exampleMeaning": "허락함"
   },
@@ -10902,9 +11868,9 @@
     "totalStrokes": 13,
     "confusables": [
       "試",
-      "視",
-      "施",
-      "是"
+      "誠",
+      "誤",
+      "認"
     ],
     "exampleWord": "시",
     "exampleMeaning": "시"
@@ -10920,9 +11886,9 @@
     "totalStrokes": 13,
     "confusables": [
       "詩",
-      "視",
-      "施",
-      "是"
+      "誠",
+      "誤",
+      "認"
     ],
     "exampleWord": "시험",
     "exampleMeaning": "실력을 봄"
@@ -10956,9 +11922,7 @@
     "totalStrokes": 9,
     "confusables": [
       "是",
-      "視",
-      "詩",
-      "試"
+      "視"
     ],
     "exampleWord": "베풀",
     "exampleMeaning": "베풀"
@@ -10973,10 +11937,10 @@
     "radical": "日",
     "totalStrokes": 9,
     "confusables": [
+      "星",
       "施",
-      "視",
-      "詩",
-      "試"
+      "早",
+      "暖"
     ],
     "exampleWord": "이",
     "exampleMeaning": "이"
@@ -10990,7 +11954,12 @@
     "meaning": "쉴",
     "radical": "心",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "怒",
+      "恩",
+      "悲",
+      "忠"
+    ],
     "exampleWord": "쉴",
     "exampleMeaning": "쉴"
   },
@@ -11003,7 +11972,9 @@
     "meaning": "납[猿]",
     "radical": "田",
     "totalStrokes": 5,
-    "confusables": [],
+    "confusables": [
+      "田"
+    ],
     "exampleWord": "납",
     "exampleMeaning": "납"
   },
@@ -11016,7 +11987,12 @@
     "meaning": "깊을",
     "radical": "水",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "減",
+      "液",
+      "測",
+      "港"
+    ],
     "exampleWord": "깊을",
     "exampleMeaning": "깊을"
   },
@@ -11029,7 +12005,10 @@
     "meaning": "눈",
     "radical": "目",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "眞",
+      "督"
+    ],
     "exampleWord": "눈",
     "exampleMeaning": "눈"
   },
@@ -11042,7 +12021,12 @@
     "meaning": "어두울",
     "radical": "日",
     "totalStrokes": 13,
-    "confusables": [],
+    "confusables": [
+      "暖",
+      "暴",
+      "星",
+      "是"
+    ],
     "exampleWord": "어두울",
     "exampleMeaning": "어두울"
   },
@@ -11055,7 +12039,11 @@
     "meaning": "누를",
     "radical": "土",
     "totalStrokes": 17,
-    "confusables": [],
+    "confusables": [
+      "壁",
+      "增",
+      "境"
+    ],
     "exampleWord": "누를",
     "exampleMeaning": "누를"
   },
@@ -11068,7 +12056,12 @@
     "meaning": "진",
     "radical": "水",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "減",
+      "深",
+      "測",
+      "港"
+    ],
     "exampleWord": "진",
     "exampleMeaning": "진"
   },
@@ -11107,7 +12100,9 @@
     "meaning": "같을",
     "radical": "女",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "好"
+    ],
     "exampleWord": "같을",
     "exampleMeaning": "같을"
   },
@@ -11120,7 +12115,12 @@
     "meaning": "거스릴",
     "radical": "辵",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "連",
+      "送",
+      "造",
+      "退"
+    ],
     "exampleWord": "거스릴",
     "exampleMeaning": "거스릴"
   },
@@ -11134,9 +12134,8 @@
     "radical": "火",
     "totalStrokes": 13,
     "confusables": [
-      "燃",
-      "鉛",
       "演",
+      "燈",
       "硏"
     ],
     "exampleWord": "연기",
@@ -11152,8 +12151,10 @@
     "radical": "石",
     "totalStrokes": 11,
     "confusables": [
+      "破",
+      "砲",
       "煙",
-      "演"
+      "確"
     ],
     "exampleWord": "갈",
     "exampleMeaning": "갈"
@@ -11168,10 +12169,10 @@
     "radical": "水",
     "totalStrokes": 14,
     "confusables": [
-      "鉛",
-      "緣",
-      "煙",
-      "硏"
+      "潔",
+      "滿",
+      "準",
+      "減"
     ],
     "exampleWord": "연설",
     "exampleMeaning": "많은 사람 앞에서 말함"
@@ -11185,7 +12186,11 @@
     "meaning": "영화",
     "radical": "木",
     "totalStrokes": 14,
-    "confusables": [],
+    "confusables": [
+      "極",
+      "檢",
+      "檀"
+    ],
     "exampleWord": "영화",
     "exampleMeaning": "영화"
   },
@@ -11211,7 +12216,12 @@
     "meaning": "그르칠",
     "radical": "言",
     "totalStrokes": 14,
-    "confusables": [],
+    "confusables": [
+      "論",
+      "誠",
+      "詩",
+      "試"
+    ],
     "exampleWord": "오답",
     "exampleMeaning": "틀린 답"
   },
@@ -11237,7 +12247,11 @@
     "meaning": "갈",
     "radical": "彳",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "律",
+      "得",
+      "復"
+    ],
     "exampleWord": "갈",
     "exampleMeaning": "갈"
   },
@@ -11250,7 +12264,12 @@
     "meaning": "노래",
     "radical": "言",
     "totalStrokes": 17,
-    "confusables": [],
+    "confusables": [
+      "講",
+      "謝",
+      "論",
+      "請"
+    ],
     "exampleWord": "노래",
     "exampleMeaning": "노래"
   },
@@ -11263,7 +12282,12 @@
     "meaning": "얼굴",
     "radical": "宀",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "宮",
+      "密",
+      "官",
+      "富"
+    ],
     "exampleWord": "얼굴",
     "exampleMeaning": "얼굴"
   },
@@ -11277,8 +12301,6 @@
     "radical": "囗",
     "totalStrokes": 13,
     "confusables": [
-      "源",
-      "援",
       "員"
     ],
     "exampleWord": "둥글",
@@ -11294,7 +12316,10 @@
     "radical": "口",
     "totalStrokes": 10,
     "confusables": [
-      "圓"
+      "單",
+      "味",
+      "呼",
+      "吸"
     ],
     "exampleWord": "인원",
     "exampleMeaning": "인원"
@@ -11309,6 +12334,7 @@
     "radical": "行",
     "totalStrokes": 15,
     "confusables": [
+      "街",
       "爲"
     ],
     "exampleWord": "지킬",
@@ -11338,7 +12364,10 @@
     "meaning": "고기",
     "radical": "肉",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "背",
+      "脈"
+    ],
     "exampleWord": "고기",
     "exampleMeaning": "고기"
   },
@@ -11351,7 +12380,12 @@
     "meaning": "은혜",
     "radical": "心",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "怒",
+      "息",
+      "悲",
+      "忠"
+    ],
     "exampleWord": "은혜",
     "exampleMeaning": "은혜"
   },
@@ -11364,7 +12398,12 @@
     "meaning": "그늘",
     "radical": "阜",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "隊",
+      "除",
+      "限",
+      "障"
+    ],
     "exampleWord": "그늘",
     "exampleMeaning": "그늘"
   },
@@ -11377,7 +12416,11 @@
     "meaning": "응할",
     "radical": "心",
     "totalStrokes": 17,
-    "confusables": [],
+    "confusables": [
+      "慶",
+      "態",
+      "想"
+    ],
     "exampleWord": "응할",
     "exampleMeaning": "응할"
   },
@@ -11390,7 +12433,12 @@
     "meaning": "의논할",
     "radical": "言",
     "totalStrokes": 20,
-    "confusables": [],
+    "confusables": [
+      "警",
+      "護",
+      "講",
+      "謝"
+    ],
     "exampleWord": "회의",
     "exampleMeaning": "모여서 의논함"
   },
@@ -11416,7 +12464,10 @@
     "meaning": "옮길",
     "radical": "禾",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "稅",
+      "程"
+    ],
     "exampleWord": "이동",
     "exampleMeaning": "옮겨 감"
   },
@@ -11429,7 +12480,10 @@
     "meaning": "더할",
     "radical": "皿",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "盛",
+      "監"
+    ],
     "exampleWord": "이익",
     "exampleMeaning": "도움이 됨"
   },
@@ -11472,7 +12526,12 @@
     "meaning": "알[知]",
     "radical": "言",
     "totalStrokes": 14,
-    "confusables": [],
+    "confusables": [
+      "論",
+      "誠",
+      "詩",
+      "試"
+    ],
     "exampleWord": "인정",
     "exampleMeaning": "맞다고 함"
   },
@@ -11486,8 +12545,7 @@
     "radical": "寸",
     "totalStrokes": 11,
     "confusables": [
-      "張",
-      "帳",
+      "尊",
       "障"
     ],
     "exampleWord": "장수",
@@ -11503,10 +12561,10 @@
     "radical": "阜",
     "totalStrokes": 14,
     "confusables": [
-      "獎",
-      "裝",
-      "腸",
-      "將"
+      "際",
+      "隊",
+      "陰",
+      "除"
     ],
     "exampleWord": "막을",
     "exampleMeaning": "막을"
@@ -11520,7 +12578,12 @@
     "meaning": "낮을",
     "radical": "人",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "伐",
+      "佛",
+      "係",
+      "保"
+    ],
     "exampleWord": "저소득",
     "exampleMeaning": "낮은 소득"
   },
@@ -11533,10 +12596,7 @@
     "meaning": "대적할",
     "radical": "攴",
     "totalStrokes": 15,
-    "confusables": [
-      "適",
-      "積"
-    ],
+    "confusables": [],
     "exampleWord": "대적할",
     "exampleMeaning": "대적할"
   },
@@ -11549,7 +12609,9 @@
     "meaning": "밭",
     "radical": "田",
     "totalStrokes": 5,
-    "confusables": [],
+    "confusables": [
+      "申"
+    ],
     "exampleWord": "밭",
     "exampleMeaning": "밭"
   },
@@ -11562,7 +12624,12 @@
     "meaning": "끊을",
     "radical": "糸",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "經",
+      "細",
+      "統",
+      "素"
+    ],
     "exampleWord": "끊을",
     "exampleMeaning": "끊을"
   },
@@ -11575,7 +12642,12 @@
     "meaning": "이을",
     "radical": "手",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "掃",
+      "授",
+      "提",
+      "拜"
+    ],
     "exampleWord": "이을",
     "exampleMeaning": "이을"
   },
@@ -11589,8 +12661,9 @@
     "radical": "攴",
     "totalStrokes": 9,
     "confusables": [
-      "程",
-      "精"
+      "故",
+      "收",
+      "程"
     ],
     "exampleWord": "정치",
     "exampleMeaning": "나라 일을 다스림"
@@ -11605,6 +12678,8 @@
     "radical": "禾",
     "totalStrokes": 12,
     "confusables": [
+      "稅",
+      "移",
       "精",
       "政"
     ],
@@ -11621,8 +12696,7 @@
     "radical": "米",
     "totalStrokes": 14,
     "confusables": [
-      "程",
-      "政"
+      "程"
     ],
     "exampleWord": "정할",
     "exampleMeaning": "정할"
@@ -11637,9 +12711,10 @@
     "radical": "水",
     "totalStrokes": 17,
     "confusables": [
-      "製",
-      "際",
-      "提"
+      "潔",
+      "滿",
+      "演",
+      "準"
     ],
     "exampleWord": "경제",
     "exampleMeaning": "돈과 물건의 흐름"
@@ -11654,10 +12729,10 @@
     "radical": "手",
     "totalStrokes": 12,
     "confusables": [
-      "祭",
-      "製",
-      "除",
-      "際"
+      "掃",
+      "授",
+      "接",
+      "祭"
     ],
     "exampleWord": "끌",
     "exampleMeaning": "끌"
@@ -11672,9 +12747,10 @@
     "radical": "刀",
     "totalStrokes": 8,
     "confusables": [
+      "列",
+      "副",
       "除",
-      "祭",
-      "提"
+      "創"
     ],
     "exampleWord": "절제할",
     "exampleMeaning": "절제할"
@@ -11707,10 +12783,10 @@
     "radical": "阜",
     "totalStrokes": 10,
     "confusables": [
-      "際",
-      "帝",
-      "祭",
-      "提"
+      "陰",
+      "限",
+      "隊",
+      "際"
     ],
     "exampleWord": "덜",
     "exampleMeaning": "덜"
@@ -11725,10 +12801,10 @@
     "radical": "阜",
     "totalStrokes": 14,
     "confusables": [
+      "障",
+      "隊",
       "製",
-      "除",
-      "提",
-      "濟"
+      "除"
     ],
     "exampleWord": "국제",
     "exampleMeaning": "나라와 나라 사이"
@@ -11743,10 +12819,10 @@
     "radical": "示",
     "totalStrokes": 11,
     "confusables": [
+      "票",
+      "禁",
       "提",
-      "除",
-      "制",
-      "製"
+      "除"
     ],
     "exampleWord": "제사",
     "exampleMeaning": "제사"
@@ -11761,10 +12837,7 @@
     "radical": "鳥",
     "totalStrokes": 11,
     "confusables": [
-      "條",
-      "組",
-      "造",
-      "助"
+      "造"
     ],
     "exampleWord": "새",
     "exampleMeaning": "새"
@@ -11779,9 +12852,9 @@
     "radical": "力",
     "totalStrokes": 7,
     "confusables": [
+      "努",
       "早",
-      "鳥",
-      "造"
+      "務"
     ],
     "exampleWord": "도움",
     "exampleMeaning": "도와줌"
@@ -11797,8 +12870,8 @@
     "totalStrokes": 6,
     "confusables": [
       "助",
-      "鳥",
-      "造"
+      "星",
+      "是"
     ],
     "exampleWord": "이를",
     "exampleMeaning": "이를"
@@ -11813,10 +12886,10 @@
     "radical": "辵",
     "totalStrokes": 11,
     "confusables": [
-      "條",
-      "組",
-      "鳥",
-      "助"
+      "連",
+      "送",
+      "逆",
+      "進"
     ],
     "exampleWord": "제조",
     "exampleMeaning": "만들어 냄"
@@ -11830,7 +12903,10 @@
     "meaning": "높을",
     "radical": "寸",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "將",
+      "導"
+    ],
     "exampleWord": "높을",
     "exampleMeaning": "높을"
   },
@@ -11843,7 +12919,12 @@
     "meaning": "마루",
     "radical": "宀",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "官",
+      "宮",
+      "守",
+      "容"
+    ],
     "exampleWord": "마루",
     "exampleMeaning": "마루"
   },
@@ -11857,8 +12938,7 @@
     "radical": "走",
     "totalStrokes": 7,
     "confusables": [
-      "朱",
-      "周"
+      "起"
     ],
     "exampleWord": "달릴",
     "exampleMeaning": "달릴"
@@ -11872,7 +12952,9 @@
     "meaning": "대",
     "radical": "竹",
     "totalStrokes": 6,
-    "confusables": [],
+    "confusables": [
+      "笑"
+    ],
     "exampleWord": "대",
     "exampleMeaning": "대"
   },
@@ -11885,7 +12967,12 @@
     "meaning": "준할",
     "radical": "水",
     "totalStrokes": 13,
-    "confusables": [],
+    "confusables": [
+      "減",
+      "滿",
+      "演",
+      "測"
+    ],
     "exampleWord": "준비",
     "exampleMeaning": "미리 갖춤"
   },
@@ -11911,7 +12998,12 @@
     "meaning": "더할",
     "radical": "土",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "境",
+      "壁",
+      "壓",
+      "報"
+    ],
     "exampleWord": "증가",
     "exampleMeaning": "늘어남"
   },
@@ -11925,9 +13017,10 @@
     "radical": "心",
     "totalStrokes": 7,
     "confusables": [
-      "至",
-      "指",
-      "支"
+      "忠",
+      "快",
+      "怒",
+      "至"
     ],
     "exampleWord": "뜻",
     "exampleMeaning": "뜻"
@@ -11942,9 +13035,10 @@
     "radical": "手",
     "totalStrokes": 9,
     "confusables": [
-      "志",
-      "至",
-      "支"
+      "拜",
+      "承",
+      "掃",
+      "授"
     ],
     "exampleWord": "가리킬",
     "exampleMeaning": "가리킬"
@@ -11960,8 +13054,7 @@
     "totalStrokes": 4,
     "confusables": [
       "至",
-      "志",
-      "指"
+      "志"
     ],
     "exampleWord": "지원",
     "exampleMeaning": "도와줌"
@@ -11992,7 +13085,9 @@
     "meaning": "직분",
     "radical": "耳",
     "totalStrokes": 18,
-    "confusables": [],
+    "confusables": [
+      "聲"
+    ],
     "exampleWord": "직분",
     "exampleMeaning": "직분"
   },
@@ -12006,7 +13101,10 @@
     "radical": "辵",
     "totalStrokes": 12,
     "confusables": [
-      "眞"
+      "達",
+      "連",
+      "造",
+      "送"
     ],
     "exampleWord": "전진",
     "exampleMeaning": "앞으로 나아감"
@@ -12021,8 +13119,8 @@
     "radical": "目",
     "totalStrokes": 10,
     "confusables": [
-      "陣",
-      "珍",
+      "眼",
+      "督",
       "進"
     ],
     "exampleWord": "참",
@@ -12050,7 +13148,12 @@
     "meaning": "살필",
     "radical": "宀",
     "totalStrokes": 14,
-    "confusables": [],
+    "confusables": [
+      "富",
+      "密",
+      "宮",
+      "容"
+    ],
     "exampleWord": "경찰",
     "exampleMeaning": "살피고 지킴"
   },
@@ -12063,7 +13166,10 @@
     "meaning": "비롯할",
     "radical": "刀",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "副",
+      "制"
+    ],
     "exampleWord": "비롯할",
     "exampleMeaning": "비롯할"
   },
@@ -12076,7 +13182,9 @@
     "meaning": "곳",
     "radical": "虍",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "虛"
+    ],
     "exampleWord": "곳",
     "exampleMeaning": "곳"
   },
@@ -12089,7 +13197,12 @@
     "meaning": "청할",
     "radical": "言",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "論",
+      "誠",
+      "誤",
+      "認"
+    ],
     "exampleWord": "청할",
     "exampleMeaning": "청할"
   },
@@ -12103,6 +13216,8 @@
     "radical": "糸",
     "totalStrokes": 17,
     "confusables": [
+      "經",
+      "續",
       "銃"
     ],
     "exampleWord": "다",
@@ -12118,6 +13233,8 @@
     "radical": "金",
     "totalStrokes": 14,
     "confusables": [
+      "銅",
+      "錄",
       "總"
     ],
     "exampleWord": "총",
@@ -12162,7 +13279,12 @@
     "meaning": "충성",
     "radical": "心",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "怒",
+      "志",
+      "快",
+      "息"
+    ],
     "exampleWord": "충성",
     "exampleMeaning": "충성"
   },
@@ -12188,7 +13310,9 @@
     "meaning": "가질",
     "radical": "又",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "受"
+    ],
     "exampleWord": "가질",
     "exampleMeaning": "가질"
   },
@@ -12201,7 +13325,12 @@
     "meaning": "헤아릴",
     "radical": "水",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "減",
+      "深",
+      "液",
+      "準"
+    ],
     "exampleWord": "헤아릴",
     "exampleMeaning": "헤아릴"
   },
@@ -12215,7 +13344,10 @@
     "radical": "水",
     "totalStrokes": 8,
     "confusables": [
-      "置"
+      "求",
+      "波",
+      "深",
+      "液"
     ],
     "exampleWord": "치료",
     "exampleMeaning": "병을 고침"
@@ -12230,8 +13362,8 @@
     "radical": "网",
     "totalStrokes": 13,
     "confusables": [
-      "齒",
-      "治"
+      "罰",
+      "齒"
     ],
     "exampleWord": "배치",
     "exampleMeaning": "놓아 둠"
@@ -12260,7 +13392,12 @@
     "meaning": "침노할",
     "radical": "人",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "個",
+      "係",
+      "保",
+      "俗"
+    ],
     "exampleWord": "침노할",
     "exampleMeaning": "침노할"
   },
@@ -12273,7 +13410,12 @@
     "meaning": "쾌할",
     "radical": "心",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "志",
+      "忠",
+      "怒",
+      "息"
+    ],
     "exampleWord": "쾌할",
     "exampleMeaning": "쾌할"
   },
@@ -12286,7 +13428,12 @@
     "meaning": "모습",
     "radical": "心",
     "totalStrokes": 14,
-    "confusables": [],
+    "confusables": [
+      "慶",
+      "想",
+      "悲",
+      "惠"
+    ],
     "exampleWord": "모습",
     "exampleMeaning": "모습"
   },
@@ -12299,7 +13446,12 @@
     "meaning": "거느릴",
     "radical": "糸",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "經",
+      "細",
+      "絶",
+      "素"
+    ],
     "exampleWord": "통합",
     "exampleMeaning": "하나로 합침"
   },
@@ -12312,7 +13464,12 @@
     "meaning": "물러날",
     "radical": "辵",
     "totalStrokes": 10,
-    "confusables": [],
+    "confusables": [
+      "連",
+      "送",
+      "逆",
+      "造"
+    ],
     "exampleWord": "후퇴",
     "exampleMeaning": "뒤로 물러남"
   },
@@ -12326,7 +13483,10 @@
     "radical": "水",
     "totalStrokes": 8,
     "confusables": [
-      "破"
+      "求",
+      "治",
+      "深",
+      "液"
     ],
     "exampleWord": "물결",
     "exampleMeaning": "물결"
@@ -12341,6 +13501,8 @@
     "radical": "石",
     "totalStrokes": 10,
     "confusables": [
+      "硏",
+      "砲",
       "波"
     ],
     "exampleWord": "깨뜨릴",
@@ -12356,8 +13518,8 @@
     "radical": "石",
     "totalStrokes": 10,
     "confusables": [
-      "包",
-      "布"
+      "硏",
+      "破"
     ],
     "exampleWord": "대포",
     "exampleMeaning": "대포"
@@ -12372,8 +13534,7 @@
     "radical": "勹",
     "totalStrokes": 5,
     "confusables": [
-      "布",
-      "砲"
+      "布"
     ],
     "exampleWord": "쌀",
     "exampleMeaning": "쌀"
@@ -12388,8 +13549,8 @@
     "radical": "巾",
     "totalStrokes": 5,
     "confusables": [
-      "包",
-      "砲"
+      "希",
+      "包"
     ],
     "exampleWord": "베",
     "exampleMeaning": "베"
@@ -12403,7 +13564,10 @@
     "meaning": "사나울",
     "radical": "日",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "暖",
+      "暗"
+    ],
     "exampleWord": "사나울",
     "exampleMeaning": "사나울"
   },
@@ -12416,7 +13580,10 @@
     "meaning": "표",
     "radical": "示",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "祭",
+      "禁"
+    ],
     "exampleWord": "표",
     "exampleMeaning": "표"
   },
@@ -12442,7 +13609,12 @@
     "meaning": "한할",
     "radical": "阜",
     "totalStrokes": 9,
-    "confusables": [],
+    "confusables": [
+      "除",
+      "防",
+      "陰",
+      "隊"
+    ],
     "exampleWord": "한할",
     "exampleMeaning": "한할"
   },
@@ -12471,7 +13643,10 @@
     "radical": "水",
     "totalStrokes": 12,
     "confusables": [
-      "航"
+      "減",
+      "深",
+      "液",
+      "準"
     ],
     "exampleWord": "항구",
     "exampleMeaning": "배가 드나드는 곳"
@@ -12498,9 +13673,7 @@
     "meaning": "시골",
     "radical": "邑",
     "totalStrokes": 13,
-    "confusables": [
-      "香"
-    ],
+    "confusables": [],
     "exampleWord": "시골",
     "exampleMeaning": "시골"
   },
@@ -12513,9 +13686,7 @@
     "meaning": "향기",
     "radical": "香",
     "totalStrokes": 9,
-    "confusables": [
-      "鄕"
-    ],
+    "confusables": [],
     "exampleWord": "향기",
     "exampleMeaning": "향기"
   },
@@ -12528,7 +13699,9 @@
     "meaning": "빌",
     "radical": "虍",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "處"
+    ],
     "exampleWord": "빌",
     "exampleMeaning": "빌"
   },
@@ -12554,7 +13727,10 @@
     "meaning": "어질",
     "radical": "貝",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "貧",
+      "貨"
+    ],
     "exampleWord": "어질",
     "exampleMeaning": "어질"
   },
@@ -12580,7 +13756,9 @@
     "meaning": "화할",
     "radical": "十",
     "totalStrokes": 8,
-    "confusables": [],
+    "confusables": [
+      "博"
+    ],
     "exampleWord": "화할",
     "exampleMeaning": "화할"
   },
@@ -12593,7 +13771,12 @@
     "meaning": "은혜",
     "radical": "心",
     "totalStrokes": 12,
-    "confusables": [],
+    "confusables": [
+      "悲",
+      "想",
+      "息",
+      "恩"
+    ],
     "exampleWord": "은혜",
     "exampleMeaning": "은혜"
   },
@@ -12607,6 +13790,7 @@
     "radical": "女",
     "totalStrokes": 6,
     "confusables": [
+      "如",
       "戶",
       "呼"
     ],
@@ -12624,7 +13808,7 @@
     "totalStrokes": 4,
     "confusables": [
       "好",
-      "呼"
+      "房"
     ],
     "exampleWord": "집",
     "exampleMeaning": "집"
@@ -12638,7 +13822,12 @@
     "meaning": "도울",
     "radical": "言",
     "totalStrokes": 21,
-    "confusables": [],
+    "confusables": [
+      "警",
+      "議",
+      "講",
+      "謝"
+    ],
     "exampleWord": "보호",
     "exampleMeaning": "지켜줌"
   },
@@ -12652,8 +13841,10 @@
     "radical": "口",
     "totalStrokes": 8,
     "confusables": [
-      "好",
-      "戶"
+      "味",
+      "吸",
+      "員",
+      "句"
     ],
     "exampleWord": "부를",
     "exampleMeaning": "부를"
@@ -12667,7 +13858,10 @@
     "meaning": "재물",
     "radical": "貝",
     "totalStrokes": 11,
-    "confusables": [],
+    "confusables": [
+      "貧",
+      "賢"
+    ],
     "exampleWord": "재물",
     "exampleMeaning": "재물"
   },
@@ -12680,7 +13874,9 @@
     "meaning": "굳을",
     "radical": "石",
     "totalStrokes": 15,
-    "confusables": [],
+    "confusables": [
+      "硏"
+    ],
     "exampleWord": "확실",
     "exampleMeaning": "틀림없음"
   },
@@ -12706,7 +13902,12 @@
     "meaning": "마실",
     "radical": "口",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "味",
+      "呼",
+      "句",
+      "員"
+    ],
     "exampleWord": "마실",
     "exampleMeaning": "마실"
   },
@@ -12732,7 +13933,12 @@
     "meaning": "바랄",
     "radical": "巾",
     "totalStrokes": 7,
-    "confusables": [],
+    "confusables": [
+      "布",
+      "師",
+      "帶",
+      "常"
+    ],
     "exampleWord": "바랄",
     "exampleMeaning": "바랄"
   }

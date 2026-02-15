@@ -330,28 +330,30 @@ export default function QuizClient() {
                 )}
               </div>
             </div>
-            {!feedback.correct && (
-              <div className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
-                {(() => {
-                  const k = ALL_KANJI.find((x) => x.id === q.kanjiId);
-                  if (!k) return null;
-                  return (
-                    <span>
+            <div className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
+              {(() => {
+                const k = ALL_KANJI.find((x) => x.id === q.kanjiId);
+                if (!k) return null;
+                return (
+                  <div>
+                    <div>
                       <span className="font-extrabold">{k.hanja}</span> = {k.meaning} {k.reading}
-                      {k.exampleWord ? (
-                        <>
-                          <br />
-                          <span>
-                            예: <span className="font-extrabold">{k.exampleWord}</span>
-                            {k.exampleMeaning ? ` · ${k.exampleMeaning}` : ''}
-                          </span>
-                        </>
-                      ) : null}
-                    </span>
-                  );
-                })()}
-              </div>
-            )}
+                    </div>
+                    {k.exampleWord ? (
+                      <div className="mt-1">
+                        예: <span className="font-extrabold">{k.exampleWord}</span>
+                        {k.exampleMeaning ? ` · ${k.exampleMeaning}` : ''}
+                      </div>
+                    ) : null}
+                    {q.kind === 'trap' && (k.confusables || []).length > 0 ? (
+                      <div className="mt-1">
+                        헷갈리기: <span className="font-extrabold">{(k.confusables || []).slice(0, 4).join(' ')}</span>
+                      </div>
+                    ) : null}
+                  </div>
+                );
+              })()}
+            </div>
           </div>
         )}
       </div>
