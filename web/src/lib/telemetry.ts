@@ -7,6 +7,7 @@ export type TelemetryEvent =
   | 'review_done'
   | 'quiz_done'
   | 'quiz_retry_click'
+  | 'quiz_hint_use'
   | 'post_done_weak_review_click'
   | 'post_done_more_review_click';
 

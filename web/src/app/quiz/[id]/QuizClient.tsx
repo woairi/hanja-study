@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { useParams, useSearchParams } from 'next/navigation';
 import { Card } from '@/components/ui/Card';
+import { InstantFeedback } from '@/components/quiz/InstantFeedback';
 import { ALL_KANJI, kanjiByGradeLabel } from '@/lib/kanji';
 import type { GradeLabel, KanjiItem } from '@/lib/types';
 import { loadState, saveState } from '@/lib/storage';
@@ -39,10 +40,13 @@ export default function QuizClient() {
   const [qIdx, setQIdx] = useState(0);
   const [chosen, setChosen] = useState<string | null>(null);
   const [locked, setLocked] = useState(false);
-  const [feedback, setFeedback] = useState<{ correct: boolean; answer: string } | null>(null);
+  const [feedback, setFeedback] = useState<{ correct: boolean; answer: string; hintUsed: boolean; streak: number } | null>(null);
+  const [hintUsed, setHintUsed] = useState(false);
+  const [hintEliminated, setHintEliminated] = useState<string[]>([]);
+  const [sessionStreak, setSessionStreak] = useState(0);
   const [sparkleKey, setSparkleKey] = useState(0);
   const [confettiKey, setConfettiKey] = useState(0);
-  const [answers, setAnswers] = useState<{ qid: string; correct: boolean; kanjiId: string }[]>([]);
+  const [answers, setAnswers] = useState<{ qid: string; correct: boolean; hintUsed: boolean; kanjiId: string }[]>([]);
   const [pendingRetry, setPendingRetry] = useState<Array<{ kanjiId: string; dueAt: number; kind: QuizQuestion['kind'] }>>([]);
 
   useEffect(() => {
@@ -60,6 +64,9 @@ export default function QuizClient() {
       setChosen(null);
       setLocked(false);
       setFeedback(null);
+      setHintUsed(false);
+      setHintEliminated([]);
+      setSessionStreak(0);
       setAnswers([]);
       setPendingRetry([]);
       // no resume state for retry
@@ -85,6 +92,9 @@ export default function QuizClient() {
     setChosen(null);
     setLocked(false);
     setFeedback(null);
+    setHintUsed(false);
+    setHintEliminated([]);
+    setSessionStreak(0);
     setAnswers([]);
     setPendingRetry([]);
 
@@ -127,6 +137,12 @@ export default function QuizClient() {
 
   const q = questions[qIdx];
   const done = questions.length > 0 && qIdx >= questions.length;
+
+  useEffect(() => {
+    // Per-question UI state should reset on navigation.
+    setHintUsed(false);
+    setHintEliminated([]);
+  }, [qIdx]);
 
   const score = useMemo(() => answers.filter((a) => a.correct).length, [answers]);
   const wrongKanjiIds = useMemo(() => {
@@ -303,19 +319,23 @@ export default function QuizClient() {
         <div className="mt-4 grid grid-cols-1 gap-2">
           {q.options.map((o) => {
             const selected = chosen === o.value;
+            const eliminated = !feedback && hintEliminated.includes(o.value);
             const isCorrectOption = feedback && o.value === q.answer;
             const isWrongPicked = feedback && selected && o.value !== q.answer;
             return (
               <button
                 key={o.value}
-                disabled={locked}
+                disabled={locked || (!feedback && eliminated)}
                 className={`focus-ring rounded-2xl border-2 px-4 py-4 text-left text-lg font-extrabold transition-colors disabled:opacity-100 ${
                   selected ? 'border-blue-600 bg-blue-50 pop' : ''
                 } ${isCorrectOption ? 'border-green-600 bg-green-50' : ''} ${
                   isWrongPicked ? 'border-red-600 bg-red-50' : ''
-                }`}
+                } ${eliminated ? 'opacity-40' : ''}`}
                 style={{ borderColor: 'rgba(2,132,199,0.18)' }}
-                onClick={() => setChosen(o.value)}
+                onClick={() => {
+                  if (eliminated) return;
+                  setChosen(o.value);
+                }}
               >
                 <div className="flex min-w-0 items-center justify-between gap-3">
                   <span className="min-w-0 flex-1 whitespace-normal break-words">{o.text}</span>
@@ -330,64 +350,33 @@ export default function QuizClient() {
 
         <div className="mt-3 min-h-[6.5rem]">
           {feedback ? (
-            <div
-              className={`rounded-2xl px-3 py-2 text-sm font-bold ${
-                feedback.correct ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'
-              }`}
-              aria-live="polite"
+            <InstantFeedback
+              tone={feedback.correct ? 'correct' : 'wrong'}
+              title={feedback.correct ? '정답!' : `아깝다! 정답은 ${String(feedback.answer)}`}
+              meta={(() => {
+                const parts = [feedback.hintUsed ? '힌트' : null, feedback.streak >= 2 ? `연속 ${feedback.streak}` : null].filter(
+                  Boolean
+                ) as string[];
+                return parts.length ? parts.join(' · ') : undefined;
+              })()}
+              celebrate={feedback.correct}
+              confettiKey={confettiKey}
+              sparkleKey={sparkleKey}
             >
-              <div className="flex items-center justify-between gap-2">
-                <div className="min-w-0 flex-1 break-words">
-                  {feedback.correct ? '정답!' : `오답. 정답: ` + String(feedback.answer)}
-                </div>
-                <div className="flex shrink-0 items-center gap-2">
-                  {feedback.correct && (
-                    <>
-                      <div key={confettiKey} className="confetti text-lg" aria-hidden>
-                        🎉
-                      </div>
-                      <div key={sparkleKey} className="sparkle text-lg" aria-hidden>
-                        ✨
-                      </div>
-                    </>
-                  )}
-                </div>
-              </div>
-              <div className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
-                {(() => {
-                  const k = ALL_KANJI.find((x) => x.id === q.kanjiId);
-                  if (!k) return null;
-                  const conf = (k.confusables || []).slice(0, 4).join(' ');
+              {(() => {
+                const k = ALL_KANJI.find((x) => x.id === q.kanjiId);
+                if (!k) return null;
+                const conf = (k.confusables || []).slice(0, 4).join(' ');
 
-                  if (feedback.correct) {
-                    return (
-                      <div className="text-xs">
-                        <div>
-                          <span className="font-extrabold">{k.hanja}</span> = {k.meaning} {k.reading}
-                        </div>
-                        {k.exampleWord ? (
-                          <div className="mt-1">
-                            예: <span className="font-extrabold">{k.exampleWord}</span>
-                          </div>
-                        ) : null}
-                        {q.kind === 'trap' && conf ? (
-                          <div className="mt-1">
-                            헷갈리기: <span className="font-extrabold">{conf}</span>
-                          </div>
-                        ) : null}
-                      </div>
-                    );
-                  }
-
+                if (feedback.correct) {
                   return (
-                    <div>
+                    <div className="text-xs">
                       <div>
                         <span className="font-extrabold">{k.hanja}</span> = {k.meaning} {k.reading}
                       </div>
                       {k.exampleWord ? (
                         <div className="mt-1">
                           예: <span className="font-extrabold">{k.exampleWord}</span>
-                          {k.exampleMeaning ? ` · ${k.exampleMeaning}` : ''}
                         </div>
                       ) : null}
                       {q.kind === 'trap' && conf ? (
@@ -397,9 +386,28 @@ export default function QuizClient() {
                       ) : null}
                     </div>
                   );
-                })()}
-              </div>
-            </div>
+                }
+
+                return (
+                  <div>
+                    <div>
+                      <span className="font-extrabold">{k.hanja}</span> = {k.meaning} {k.reading}
+                    </div>
+                    {k.exampleWord ? (
+                      <div className="mt-1">
+                        예: <span className="font-extrabold">{k.exampleWord}</span>
+                        {k.exampleMeaning ? ` · ${k.exampleMeaning}` : ''}
+                      </div>
+                    ) : null}
+                    {q.kind === 'trap' && conf ? (
+                      <div className="mt-1">
+                        헷갈리기: <span className="font-extrabold">{conf}</span>
+                      </div>
+                    ) : null}
+                  </div>
+                );
+              })()}
+            </InstantFeedback>
           ) : (
             <div aria-hidden />
           )}
@@ -424,14 +432,47 @@ export default function QuizClient() {
           >
             이전
           </button>
+
+          <button
+            className="btn btn-ghost focus-ring flex-1"
+            disabled={locked || !!feedback || hintUsed}
+            onClick={() => {
+              if (!q || locked || feedback || hintUsed) return;
+
+              const wrong = q.options
+                .map((o) => o.value)
+                .filter((v) => v !== q.answer)
+                .filter((v) => v !== chosen);
+
+              // Keep at least 2 choices available.
+              const need = Math.max(1, q.options.length - 2);
+              const picked: string[] = [];
+              for (const v of wrong.sort(() => Math.random() - 0.5)) {
+                if (picked.length >= need) break;
+                picked.push(v);
+              }
+
+              if (!picked.length) return;
+              setHintUsed(true);
+              setHintEliminated(picked);
+              logEvent('quiz_hint_use', { grade, kind: q.kind });
+            }}
+          >
+            힌트
+          </button>
+
           <button
             className="btn btn-primary focus-ring flex-1 disabled:opacity-50"
             disabled={!chosen || locked}
             onClick={() => {
               if (!q || !chosen) return;
               const isCorrect = chosen === q.answer;
+              const nextStreak = isCorrect ? sessionStreak + 1 : 0;
+
               setLocked(true);
-              setFeedback({ correct: isCorrect, answer: q.answer });
+              setSessionStreak(nextStreak);
+              setFeedback({ correct: isCorrect, answer: q.answer, hintUsed, streak: nextStreak });
+
               if (isCorrect) {
                 setConfettiKey((k) => k + 1);
                 setSparkleKey((k) => k + 1);
@@ -440,10 +481,10 @@ export default function QuizClient() {
                 setPendingRetry((p) => [...p, { kanjiId: q.kanjiId, dueAt: qIdx + 4, kind: q.kind }]);
               }
 
-              setAnswers((a) => [...a, { qid: q.id, correct: isCorrect, kanjiId: q.kanjiId }]);
+              setAnswers((a) => [...a, { qid: q.id, correct: isCorrect, hintUsed, kanjiId: q.kanjiId }]);
               commitResult(isCorrect, q.kanjiId);
 
-              const delayMs = isCorrect ? 1000 : 1700;
+              const delayMs = isCorrect ? 650 : 800;
               window.setTimeout(() => {
                 setFeedback(null);
                 setLocked(false);
