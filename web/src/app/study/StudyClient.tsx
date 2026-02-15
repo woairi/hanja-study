@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { ALL_KANJI } from '@/lib/kanji';
 import type { GradeLabel, KanjiItem } from '@/lib/types';
@@ -99,12 +99,7 @@ export default function StudyClient() {
   const reviewOnly = sp.get('review') === '1';
   const focusWeak = sp.get('focus') === 'weak';
 
-  const quizHref = useMemo(() => {
-    const raw = window.sessionStorage.getItem(SESSION_KEY);
-    if (!raw) return '/';
-    const session = JSON.parse(raw) as StudySession;
-    return `/quiz/${QUIZ_ID}?grade=${encodeURIComponent(session.gradeLabel)}&n=${session.n}`;
-  }, []);
+  const quizHref = `/quiz/${QUIZ_ID}?grade=${encodeURIComponent(grade)}&n=${n}`;
 
   if (!items.length) {
     return (
