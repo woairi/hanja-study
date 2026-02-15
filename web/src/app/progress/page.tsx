@@ -34,7 +34,17 @@ export default function ProgressPage() {
     const st = loadState();
     return Object.entries(st.progress)
       .map(([id, p]) => ({ id, score: (p.wrong + 1) / (p.correct + 1), wrong: p.wrong, correct: p.correct }))
+      .filter((w) => w.wrong + w.correct > 0)
       .sort((a, b) => b.score - a.score)
+      .slice(0, 10);
+  }, [now]);
+
+  const dueTop = useMemo(() => {
+    const st = loadState();
+    return Object.entries(st.progress)
+      .map(([id, p]) => ({ id, wrong: p.wrong, correct: p.correct, due: !p.mastered && p.nextReviewAt <= now, nextReviewAt: p.nextReviewAt }))
+      .filter((w) => w.due)
+      .sort((a, b) => (a.nextReviewAt || 0) - (b.nextReviewAt || 0))
       .slice(0, 10);
   }, [now]);
 
@@ -45,22 +55,23 @@ export default function ProgressPage() {
     const top = Object.entries(st.progress)
       .map(([id, p]) => {
         const due = !!p && !p.mastered && p.nextReviewAt <= now;
+        const answered = (p.wrong || 0) + (p.correct || 0) > 0;
+        const score = (p.wrong + 1) / (p.correct + 1);
         return {
           id,
           wrong: p.wrong,
           correct: p.correct,
           due,
+          answered,
+          score,
           nextReviewAt: p.nextReviewAt,
         };
       })
+      .filter((w) => w.answered)
       .sort((a, b) => {
-        // 1) due first
-        if (a.due !== b.due) return a.due ? -1 : 1;
-        // 2) wrong desc
+        // weak first
+        if (b.score !== a.score) return b.score - a.score;
         if (b.wrong !== a.wrong) return b.wrong - a.wrong;
-        // 3) correct asc
-        if (a.correct !== b.correct) return a.correct - b.correct;
-        // 4) earlier review first
         return (a.nextReviewAt || 0) - (b.nextReviewAt || 0);
       })
       .slice(0, 50)
@@ -84,7 +95,47 @@ export default function ProgressPage() {
       {
         version: 1,
         generatedAt: new Date(now).toISOString(),
-        note: 'weak/due top 50 export (local-only)',
+        note: 'weak (answered) top 50 export (local-only)',
+        items: top,
+      },
+      null,
+      2
+    );
+  }, [now]);
+
+  const dueExportJson = useMemo(() => {
+    const st = loadState();
+    const map = new Map(ALL_KANJI.map((k) => [k.id, k] as const));
+
+    const top = Object.entries(st.progress)
+      .map(([id, p]) => {
+        const due = !!p && !p.mastered && p.nextReviewAt <= now;
+        return { id, due, wrong: p.wrong, correct: p.correct, nextReviewAt: p.nextReviewAt };
+      })
+      .filter((w) => w.due)
+      .sort((a, b) => (a.nextReviewAt || 0) - (b.nextReviewAt || 0))
+      .slice(0, 50)
+      .map((w) => {
+        const k = map.get(w.id);
+        return {
+          id: w.id,
+          hanja: k?.hanja,
+          gradeLabel: k?.gradeLabel,
+          reading: k?.reading,
+          meaning: k?.meaning,
+          wrong: w.wrong,
+          correct: w.correct,
+          due: w.due,
+          exampleWord: k?.exampleWord,
+          exampleMeaning: k?.exampleMeaning,
+        };
+      });
+
+    return JSON.stringify(
+      {
+        version: 1,
+        generatedAt: new Date(now).toISOString(),
+        note: 'due top 50 export (local-only)',
         items: top,
       },
       null,
@@ -160,57 +211,119 @@ export default function ProgressPage() {
 
       <section className="mt-6">
         <div className="flex items-center justify-between gap-3">
-          <h2 className="text-base font-semibold">취약 TOP 10</h2>
-          <button
-            className="btn btn-ghost focus-ring px-3 py-2 text-xs"
-            onClick={async () => {
-              const txt = weakExportJson;
-              try {
-                if (navigator.clipboard?.writeText) {
-                  await navigator.clipboard.writeText(txt);
-                } else {
-                  const ta = document.createElement('textarea');
-                  ta.value = txt;
-                  ta.setAttribute('readonly', '');
-                  ta.style.position = 'fixed';
-                  ta.style.left = '-9999px';
-                  document.body.appendChild(ta);
-                  ta.select();
-                  document.execCommand('copy');
-                  document.body.removeChild(ta);
+          <h2 className="text-base font-semibold">취약 TOP 10 (오답 기반)</h2>
+          <div className="flex items-center gap-2">
+            <button
+              className="btn btn-ghost focus-ring px-3 py-2 text-xs"
+              onClick={async () => {
+                const txt = weakExportJson;
+                try {
+                  if (navigator.clipboard?.writeText) {
+                    await navigator.clipboard.writeText(txt);
+                  } else {
+                    const ta = document.createElement('textarea');
+                    ta.value = txt;
+                    ta.setAttribute('readonly', '');
+                    ta.style.position = 'fixed';
+                    ta.style.left = '-9999px';
+                    document.body.appendChild(ta);
+                    ta.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(ta);
+                  }
+                  setToast('약점(오답 기반) 목록을 복사했어! 채팅에 붙여넣어줘.');
+                } catch {
+                  setToast('복사 실패 😭 아래 목록을 길게 눌러서 복사해줘.');
                 }
-                setToast('약점 목록을 복사했어! 채팅에 붙여넣어줘.');
-              } catch {
-                setToast('복사 실패 😭 아래 목록을 길게 눌러서 복사해줘.');
-              }
-            }}
-          >
-            약점목록 복사
-          </button>
+              }}
+            >
+              약점복사
+            </button>
+            <button
+              className="btn btn-ghost focus-ring px-3 py-2 text-xs"
+              onClick={async () => {
+                const txt = dueExportJson;
+                try {
+                  if (navigator.clipboard?.writeText) {
+                    await navigator.clipboard.writeText(txt);
+                  } else {
+                    const ta = document.createElement('textarea');
+                    ta.value = txt;
+                    ta.setAttribute('readonly', '');
+                    ta.style.position = 'fixed';
+                    ta.style.left = '-9999px';
+                    document.body.appendChild(ta);
+                    ta.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(ta);
+                  }
+                  setToast('복습(due) 목록을 복사했어!');
+                } catch {
+                  setToast('복사 실패 😭 아래 목록을 길게 눌러서 복사해줘.');
+                }
+              }}
+            >
+              due복사
+            </button>
+          </div>
         </div>
 
-        <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm text-gray-700">
-          {weak.map((w) => (
-            <li key={w.id}>
-              {(() => {
+        {weak.length === 0 ? (
+          <div className="mt-2 text-sm text-gray-600">
+            아직 오답 데이터가 없어. 퀴즈를 몇 문제 풀면 여기서 약점이 잡혀!
+          </div>
+        ) : (
+          <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm text-gray-700">
+            {weak.map((w) => (
+              <li key={w.id}>
+                {(() => {
+                  const k = ALL_KANJI.find((x) => x.id === w.id);
+                  if (!k) return <span className="font-mono">{w.id}</span>;
+                  return (
+                    <span>
+                      <span className="font-semibold">{k.hanja}</span> {k.meaning} {k.reading}{' '}
+                      <span className="text-gray-500">({k.gradeLabel})</span>
+                    </span>
+                  );
+                })()}
+                {' '}· 오답 {w.wrong} / 정답 {w.correct}
+              </li>
+            ))}
+          </ol>
+        )}
+
+        {dueTop.length > 0 && (
+          <div className="mt-4">
+            <div className="text-xs font-extrabold" style={{ color: 'var(--muted)' }}>
+              복습 대기 TOP 10
+            </div>
+            <ol className="mt-1 list-decimal space-y-1 pl-5 text-xs text-gray-600">
+              {dueTop.map((w) => {
                 const k = ALL_KANJI.find((x) => x.id === w.id);
-                if (!k) return <span className="font-mono">{w.id}</span>;
                 return (
-                  <span>
-                    <span className="font-semibold">{k.hanja}</span> {k.meaning} {k.reading}{' '}
-                    <span className="text-gray-500">({k.gradeLabel})</span>
-                  </span>
+                  <li key={w.id}>
+                    {k ? (
+                      <span>
+                        <span className="font-semibold">{k.hanja}</span> {k.meaning} {k.reading}{' '}
+                        <span className="text-gray-500">({k.gradeLabel})</span>
+                      </span>
+                    ) : (
+                      <span className="font-mono">{w.id}</span>
+                    )}
+                  </li>
                 );
-              })()}
-              {' '}· 오답 {w.wrong} / 정답 {w.correct}
-            </li>
-          ))}
-        </ol>
+              })}
+            </ol>
+          </div>
+        )}
 
         <details className="mt-3">
           <summary className="text-xs text-gray-500">(대체) 복사가 안 되면 여기 펼쳐서 복사</summary>
-          <pre className="mt-2 max-h-64 overflow-auto rounded-2xl bg-white/60 p-3 text-[11px] leading-relaxed">
+          <pre className="mt-2 max-h-56 overflow-auto rounded-2xl bg-white/60 p-3 text-[11px] leading-relaxed">
             {weakExportJson}
+          </pre>
+          <pre className="mt-2 max-h-56 overflow-auto rounded-2xl bg-white/60 p-3 text-[11px] leading-relaxed">
+            {dueExportJson}
           </pre>
         </details>
       </section>
