@@ -10,29 +10,42 @@ export function initialProgress(now: number): KanjiProgress {
   };
 }
 
-export function applyAnswer(prev: KanjiProgress, isCorrect: boolean, now: number): KanjiProgress {
+export function applyAnswer(
+  prev: KanjiProgress,
+  isCorrect: boolean,
+  now: number,
+  opts?: { gradeLabel?: string }
+): KanjiProgress {
   let correct = prev.correct;
   let wrong = prev.wrong;
   let consecutiveCorrect = prev.consecutiveCorrect;
   let nextReviewAt = prev.nextReviewAt;
   let mastered = !!prev.mastered;
 
+  const isHard = opts?.gradeLabel === '4급' || opts?.gradeLabel === '4급Ⅱ';
+
+  const day = 24 * 60 * 60 * 1000;
+  const d1 = 1 * day;
+  const d2 = isHard ? 2 * day : 3 * day;
+  const d3 = isHard ? 5 * day : 7 * day;
+  const dMaster = isHard ? 21 * day : 30 * day;
+
   if (isCorrect) {
     correct += 1;
     consecutiveCorrect += 1;
     if (consecutiveCorrect >= 4) {
       mastered = true;
-      nextReviewAt = now + 30 * 24 * 60 * 60 * 1000; // 30 days
+      nextReviewAt = now + dMaster;
     } else if (consecutiveCorrect >= 2) {
-      nextReviewAt = now + 7 * 24 * 60 * 60 * 1000;
+      nextReviewAt = now + d3;
     } else {
-      nextReviewAt = now + 3 * 24 * 60 * 60 * 1000;
+      nextReviewAt = now + d2;
     }
   } else {
     wrong += 1;
     consecutiveCorrect = 0;
     mastered = false;
-    nextReviewAt = now + 1 * 24 * 60 * 60 * 1000;
+    nextReviewAt = now + d1;
   }
 
   return { correct, wrong, consecutiveCorrect, nextReviewAt, mastered };

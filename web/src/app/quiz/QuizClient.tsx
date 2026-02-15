@@ -132,7 +132,8 @@ export default function QuizClient() {
     const st = loadState();
     const prev = st.progress[kanjiId];
     if (!prev) return;
-    st.progress[kanjiId] = applyAnswer(prev, isCorrect, now);
+    const k = ALL_KANJI.find((x) => x.id === kanjiId);
+    st.progress[kanjiId] = applyAnswer(prev, isCorrect, now, { gradeLabel: k?.gradeLabel });
     st.stats.quizAnswered = (st.stats.quizAnswered || 0) + 1;
     saveState(st);
   }
