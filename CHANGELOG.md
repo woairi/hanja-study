@@ -34,6 +34,7 @@
 - Week4(QE): Top5 E2E 준비 문서 추가(`docs/qe-top5-e2e.md`) + 셀렉터 점검 스크립트(`npm run check:top5`)
 - Week4(QE): 설정/가드 플로우까지 포함하도록 Top5 selector check 범위 확장
 - Week4(QE): RC 운영 템플릿 추가(`docs/rc-gate-template.md`) + predeploy에 Top5 selector check 포함
+- Week4(QE): RC 실행 로그 샘플 추가(`docs/rc-runs/2026-02-15-p1.md`)
 - Week4(QE): 데이터 품질 체크리스트 최신 스키마(4급/4급Ⅱ 포함) 기준으로 갱신
 - Week4(BE): `data/build.mjs`가 v2 override 배열 스키마(target 기반)를 직접 읽도록 보강(legacy object-map도 계속 지원)
 - Week2(FE polish): /progress에서 레거시 사용자(stats.daily 없음) 안내 배지/가이드 카드 추가

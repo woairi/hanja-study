@@ -95,6 +95,7 @@ Top5 셀렉터 스모크(자동화 준비):
 
 Top5 자동화 준비 문서: `docs/qe-top5-e2e.md`
 RC 점검 기록 템플릿: `docs/rc-gate-template.md`
+RC 실행 로그 예시: `docs/rc-runs/2026-02-15-p1.md`
 
 ### 릴리즈 블로커(P0)
 - 학습 핵심 플로우 불가(학습 시작/문항 처리/진도 저장)
