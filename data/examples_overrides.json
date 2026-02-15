@@ -1,2510 +1,5642 @@
 {
-  "version": 1,
+  "version": 2,
+  "kind": "examples_overrides",
   "note": "Starter example words (manual seed).",
-  "overrides": {
-    "校": {
+  "updated_at": "2026-02-15T06:36:32.260Z",
+  "overrides": [
+    {
+      "id": "ex:校",
+      "target": "校",
       "exampleWord": "학교",
-      "exampleMeaning": "배우는 곳"
+      "exampleMeaning": "배우는 곳",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "學": {
+    {
+      "id": "ex:學",
+      "target": "學",
       "exampleWord": "학생",
-      "exampleMeaning": "배우는 사람"
+      "exampleMeaning": "배우는 사람",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "國": {
+    {
+      "id": "ex:國",
+      "target": "國",
       "exampleWord": "한국",
-      "exampleMeaning": "나라 이름"
+      "exampleMeaning": "나라 이름",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "民": {
+    {
+      "id": "ex:民",
+      "target": "民",
       "exampleWord": "국민",
-      "exampleMeaning": "나라의 사람들"
+      "exampleMeaning": "나라의 사람들",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "日": {
+    {
+      "id": "ex:日",
+      "target": "日",
       "exampleWord": "일요일",
-      "exampleMeaning": "해의 날"
+      "exampleMeaning": "해의 날",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "月": {
+    {
+      "id": "ex:月",
+      "target": "月",
       "exampleWord": "월요일",
-      "exampleMeaning": "달"
+      "exampleMeaning": "달",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "水": {
+    {
+      "id": "ex:水",
+      "target": "水",
       "exampleWord": "수영",
-      "exampleMeaning": "물에서 운동"
+      "exampleMeaning": "물에서 운동",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "火": {
+    {
+      "id": "ex:火",
+      "target": "火",
       "exampleWord": "화재",
-      "exampleMeaning": "불이 남"
+      "exampleMeaning": "불이 남",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "山": {
+    {
+      "id": "ex:山",
+      "target": "山",
       "exampleWord": "등산",
-      "exampleMeaning": "산에 오르기"
+      "exampleMeaning": "산에 오르기",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "川": {
+    {
+      "id": "ex:川",
+      "target": "川",
       "exampleWord": "하천",
-      "exampleMeaning": "강/내"
+      "exampleMeaning": "강/내",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "木": {
+    {
+      "id": "ex:木",
+      "target": "木",
       "exampleWord": "목재",
-      "exampleMeaning": "나무 재료"
+      "exampleMeaning": "나무 재료",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "土": {
+    {
+      "id": "ex:土",
+      "target": "土",
       "exampleWord": "토양",
-      "exampleMeaning": "흙"
+      "exampleMeaning": "흙",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "人": {
+    {
+      "id": "ex:人",
+      "target": "人",
       "exampleWord": "인간",
-      "exampleMeaning": "사람"
+      "exampleMeaning": "사람",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "女": {
+    {
+      "id": "ex:女",
+      "target": "女",
       "exampleWord": "여자",
-      "exampleMeaning": "여성"
+      "exampleMeaning": "여성",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "男": {
+    {
+      "id": "ex:男",
+      "target": "男",
       "exampleWord": "남자",
-      "exampleMeaning": "남성"
+      "exampleMeaning": "남성",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "大": {
+    {
+      "id": "ex:大",
+      "target": "大",
       "exampleWord": "대형",
-      "exampleMeaning": "큰 형태"
+      "exampleMeaning": "큰 형태",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "小": {
+    {
+      "id": "ex:小",
+      "target": "小",
       "exampleWord": "소형",
-      "exampleMeaning": "작은 형태"
+      "exampleMeaning": "작은 형태",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "上": {
+    {
+      "id": "ex:上",
+      "target": "上",
       "exampleWord": "상승",
-      "exampleMeaning": "위로 올라감"
+      "exampleMeaning": "위로 올라감",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "下": {
+    {
+      "id": "ex:下",
+      "target": "下",
       "exampleWord": "하강",
-      "exampleMeaning": "아래로 내려감"
+      "exampleMeaning": "아래로 내려감",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "中": {
+    {
+      "id": "ex:中",
+      "target": "中",
       "exampleWord": "중간",
-      "exampleMeaning": "가운데"
+      "exampleMeaning": "가운데",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "白": {
+    {
+      "id": "ex:白",
+      "target": "白",
       "exampleWord": "백색",
-      "exampleMeaning": "흰색"
+      "exampleMeaning": "흰색",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "黑": {
+    {
+      "id": "ex:黑",
+      "target": "黑",
       "exampleWord": "흑색",
-      "exampleMeaning": "검은색"
+      "exampleMeaning": "검은색",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "先": {
+    {
+      "id": "ex:先",
+      "target": "先",
       "exampleWord": "선생",
-      "exampleMeaning": "먼저 사는 사람 → 가르치는 사람"
+      "exampleMeaning": "먼저 사는 사람 → 가르치는 사람",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "生": {
+    {
+      "id": "ex:生",
+      "target": "生",
       "exampleWord": "생일",
-      "exampleMeaning": "태어난 날"
+      "exampleMeaning": "태어난 날",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "子": {
+    {
+      "id": "ex:子",
+      "target": "子",
       "exampleWord": "자녀",
-      "exampleMeaning": "아이"
+      "exampleMeaning": "아이",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "父": {
+    {
+      "id": "ex:父",
+      "target": "父",
       "exampleWord": "아버지",
-      "exampleMeaning": "아빠"
+      "exampleMeaning": "아빠",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "母": {
+    {
+      "id": "ex:母",
+      "target": "母",
       "exampleWord": "어머니",
-      "exampleMeaning": "엄마"
+      "exampleMeaning": "엄마",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "心": {
+    {
+      "id": "ex:心",
+      "target": "心",
       "exampleWord": "마음",
-      "exampleMeaning": "생각/감정"
+      "exampleMeaning": "생각/감정",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "刻": {
+    {
+      "id": "ex:刻",
+      "target": "刻",
       "exampleWord": "시각",
-      "exampleMeaning": "시간/때"
+      "exampleMeaning": "시간/때",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "度": {
+    {
+      "id": "ex:度",
+      "target": "度",
       "exampleWord": "온도",
-      "exampleMeaning": "뜨겁고 차가운 정도"
+      "exampleMeaning": "뜨겁고 차가운 정도",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "習": {
+    {
+      "id": "ex:習",
+      "target": "習",
       "exampleWord": "학습",
-      "exampleMeaning": "익히기"
+      "exampleMeaning": "익히기",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "現": {
+    {
+      "id": "ex:現",
+      "target": "現",
       "exampleWord": "현재",
-      "exampleMeaning": "지금"
+      "exampleMeaning": "지금",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "機": {
+    {
+      "id": "ex:機",
+      "target": "機",
       "exampleWord": "기계",
-      "exampleMeaning": "기계 장치"
+      "exampleMeaning": "기계 장치",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "準": {
+    {
+      "id": "ex:準",
+      "target": "準",
       "exampleWord": "준비",
-      "exampleMeaning": "미리 갖춤"
+      "exampleMeaning": "미리 갖춤",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "達": {
+    {
+      "id": "ex:達",
+      "target": "達",
       "exampleWord": "도달",
-      "exampleMeaning": "이르다"
+      "exampleMeaning": "이르다",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "求": {
+    {
+      "id": "ex:求",
+      "target": "求",
       "exampleWord": "요구",
-      "exampleMeaning": "원함"
+      "exampleMeaning": "원함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "答": {
+    {
+      "id": "ex:答",
+      "target": "答",
       "exampleWord": "대답",
-      "exampleMeaning": "답하기"
+      "exampleMeaning": "답하기",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "疑": {
+    {
+      "id": "ex:疑",
+      "target": "疑",
       "exampleWord": "의심",
-      "exampleMeaning": "믿지 못함"
+      "exampleMeaning": "믿지 못함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "確": {
+    {
+      "id": "ex:確",
+      "target": "確",
       "exampleWord": "확실",
-      "exampleMeaning": "틀림없음"
+      "exampleMeaning": "틀림없음",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "整": {
+    {
+      "id": "ex:整",
+      "target": "整",
       "exampleWord": "정리",
-      "exampleMeaning": "가지런히 함"
+      "exampleMeaning": "가지런히 함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "護": {
+    {
+      "id": "ex:護",
+      "target": "護",
       "exampleWord": "보호",
-      "exampleMeaning": "지켜줌"
+      "exampleMeaning": "지켜줌",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "則": {
+    {
+      "id": "ex:則",
+      "target": "則",
       "exampleWord": "규칙",
-      "exampleMeaning": "정한 법"
+      "exampleMeaning": "정한 법",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "簡": {
+    {
+      "id": "ex:簡",
+      "target": "簡",
       "exampleWord": "간단",
-      "exampleMeaning": "복잡하지 않음"
+      "exampleMeaning": "복잡하지 않음",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "難": {
+    {
+      "id": "ex:難",
+      "target": "難",
       "exampleWord": "곤란",
-      "exampleMeaning": "어려운 일"
+      "exampleMeaning": "어려운 일",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "親": {
+    {
+      "id": "ex:親",
+      "target": "親",
       "exampleWord": "부모",
-      "exampleMeaning": "가까운 사람"
+      "exampleMeaning": "가까운 사람",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "對": {
+    {
+      "id": "ex:對",
+      "target": "對",
       "exampleWord": "대응",
-      "exampleMeaning": "맞서 처리"
+      "exampleMeaning": "맞서 처리",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "續": {
+    {
+      "id": "ex:續",
+      "target": "續",
       "exampleWord": "계속",
-      "exampleMeaning": "이어짐"
+      "exampleMeaning": "이어짐",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "記": {
+    {
+      "id": "ex:記",
+      "target": "記",
       "exampleWord": "기록",
-      "exampleMeaning": "적어 남김"
+      "exampleMeaning": "적어 남김",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "連": {
+    {
+      "id": "ex:連",
+      "target": "連",
       "exampleWord": "연결",
-      "exampleMeaning": "이어 붙임"
+      "exampleMeaning": "이어 붙임",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "選": {
+    {
+      "id": "ex:選",
+      "target": "選",
       "exampleWord": "선택",
-      "exampleMeaning": "고름"
+      "exampleMeaning": "고름",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "增": {
+    {
+      "id": "ex:增",
+      "target": "增",
       "exampleWord": "증가",
-      "exampleMeaning": "늘어남"
+      "exampleMeaning": "늘어남",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "減": {
+    {
+      "id": "ex:減",
+      "target": "減",
       "exampleWord": "감소",
-      "exampleMeaning": "줄어듦"
+      "exampleMeaning": "줄어듦",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "社": {
+    {
+      "id": "ex:社",
+      "target": "社",
       "exampleWord": "사회",
-      "exampleMeaning": "사람들이 함께 사는 세상"
+      "exampleMeaning": "사람들이 함께 사는 세상",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "會": {
+    {
+      "id": "ex:會",
+      "target": "會",
       "exampleWord": "회의",
-      "exampleMeaning": "모여서 의논함"
+      "exampleMeaning": "모여서 의논함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "文": {
+    {
+      "id": "ex:文",
+      "target": "文",
       "exampleWord": "문화",
-      "exampleMeaning": "생활 양식"
+      "exampleMeaning": "생활 양식",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "經": {
+    {
+      "id": "ex:經",
+      "target": "經",
       "exampleWord": "경험",
-      "exampleMeaning": "겪어 봄"
+      "exampleMeaning": "겪어 봄",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "濟": {
+    {
+      "id": "ex:濟",
+      "target": "濟",
       "exampleWord": "경제",
-      "exampleMeaning": "돈과 물건의 흐름"
+      "exampleMeaning": "돈과 물건의 흐름",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "政": {
+    {
+      "id": "ex:政",
+      "target": "政",
       "exampleWord": "정치",
-      "exampleMeaning": "나라 일을 다스림"
+      "exampleMeaning": "나라 일을 다스림",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "治": {
+    {
+      "id": "ex:治",
+      "target": "治",
       "exampleWord": "치료",
-      "exampleMeaning": "병을 고침"
+      "exampleMeaning": "병을 고침",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "科": {
+    {
+      "id": "ex:科",
+      "target": "科",
       "exampleWord": "과학",
-      "exampleMeaning": "자연을 연구하는 학문"
+      "exampleMeaning": "자연을 연구하는 학문",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "技": {
+    {
+      "id": "ex:技",
+      "target": "技",
       "exampleWord": "기술",
-      "exampleMeaning": "재주/방법"
+      "exampleMeaning": "재주/방법",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "術": {
+    {
+      "id": "ex:術",
+      "target": "術",
       "exampleWord": "기술",
-      "exampleMeaning": "재주/방법"
+      "exampleMeaning": "재주/방법",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "環": {
+    {
+      "id": "ex:環",
+      "target": "環",
       "exampleWord": "환경",
-      "exampleMeaning": "주변의 모든 것"
+      "exampleMeaning": "주변의 모든 것",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "境": {
+    {
+      "id": "ex:境",
+      "target": "境",
       "exampleWord": "환경",
-      "exampleMeaning": "주변 상태"
+      "exampleMeaning": "주변 상태",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "競": {
+    {
+      "id": "ex:競",
+      "target": "競",
       "exampleWord": "경쟁",
-      "exampleMeaning": "서로 겨룸"
+      "exampleMeaning": "서로 겨룸",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "爭": {
+    {
+      "id": "ex:爭",
+      "target": "爭",
       "exampleWord": "경쟁",
-      "exampleMeaning": "다툼/겨룸"
+      "exampleMeaning": "다툼/겨룸",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "勝": {
+    {
+      "id": "ex:勝",
+      "target": "勝",
       "exampleWord": "승리",
-      "exampleMeaning": "이김"
+      "exampleMeaning": "이김",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "敗": {
+    {
+      "id": "ex:敗",
+      "target": "敗",
       "exampleWord": "실패",
-      "exampleMeaning": "지거나 뜻대로 안 됨"
+      "exampleMeaning": "지거나 뜻대로 안 됨",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "成": {
+    {
+      "id": "ex:成",
+      "target": "成",
       "exampleWord": "성공",
-      "exampleMeaning": "잘 이룸"
+      "exampleMeaning": "잘 이룸",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "功": {
+    {
+      "id": "ex:功",
+      "target": "功",
       "exampleWord": "성공",
-      "exampleMeaning": "이룬 결과"
+      "exampleMeaning": "이룬 결과",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "未": {
+    {
+      "id": "ex:未",
+      "target": "未",
       "exampleWord": "미완성",
-      "exampleMeaning": "아직 끝나지 않음"
+      "exampleMeaning": "아직 끝나지 않음",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "完": {
+    {
+      "id": "ex:完",
+      "target": "完",
       "exampleWord": "완료",
-      "exampleMeaning": "끝마침"
+      "exampleMeaning": "끝마침",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "全": {
+    {
+      "id": "ex:全",
+      "target": "全",
       "exampleWord": "전체",
-      "exampleMeaning": "모두"
+      "exampleMeaning": "모두",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "部": {
+    {
+      "id": "ex:部",
+      "target": "部",
       "exampleWord": "부분",
-      "exampleMeaning": "일부"
+      "exampleMeaning": "일부",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "位": {
+    {
+      "id": "ex:位",
+      "target": "位",
       "exampleWord": "위치",
-      "exampleMeaning": "있는 자리"
+      "exampleMeaning": "있는 자리",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "置": {
+    {
+      "id": "ex:置",
+      "target": "置",
       "exampleWord": "배치",
-      "exampleMeaning": "놓아 둠"
+      "exampleMeaning": "놓아 둠",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "低": {
+    {
+      "id": "ex:低",
+      "target": "低",
       "exampleWord": "저소득",
-      "exampleMeaning": "낮은 소득"
+      "exampleMeaning": "낮은 소득",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "高": {
+    {
+      "id": "ex:高",
+      "target": "高",
       "exampleWord": "고속",
-      "exampleMeaning": "빠른 속도"
+      "exampleMeaning": "빠른 속도",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "最": {
+    {
+      "id": "ex:最",
+      "target": "最",
       "exampleWord": "최고",
-      "exampleMeaning": "가장 높음"
+      "exampleMeaning": "가장 높음",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "初": {
+    {
+      "id": "ex:初",
+      "target": "初",
       "exampleWord": "처음",
-      "exampleMeaning": "맨 처음"
+      "exampleMeaning": "맨 처음",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "終": {
+    {
+      "id": "ex:終",
+      "target": "終",
       "exampleWord": "종료",
-      "exampleMeaning": "끝냄"
+      "exampleMeaning": "끝냄",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "始": {
+    {
+      "id": "ex:始",
+      "target": "始",
       "exampleWord": "시작",
-      "exampleMeaning": "처음"
+      "exampleMeaning": "처음",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "進": {
+    {
+      "id": "ex:進",
+      "target": "進",
       "exampleWord": "전진",
-      "exampleMeaning": "앞으로 나아감"
+      "exampleMeaning": "앞으로 나아감",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "退": {
+    {
+      "id": "ex:退",
+      "target": "退",
       "exampleWord": "후퇴",
-      "exampleMeaning": "뒤로 물러남"
+      "exampleMeaning": "뒤로 물러남",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "強": {
+    {
+      "id": "ex:強",
+      "target": "強",
       "exampleWord": "강점",
-      "exampleMeaning": "강한 점"
+      "exampleMeaning": "강한 점",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "弱": {
+    {
+      "id": "ex:弱",
+      "target": "弱",
       "exampleWord": "약점",
-      "exampleMeaning": "약한 점"
+      "exampleMeaning": "약한 점",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "危": {
+    {
+      "id": "ex:危",
+      "target": "危",
       "exampleWord": "위험",
-      "exampleMeaning": "다칠 수 있음"
+      "exampleMeaning": "다칠 수 있음",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "安": {
+    {
+      "id": "ex:安",
+      "target": "安",
       "exampleWord": "안전",
-      "exampleMeaning": "위험이 없음"
+      "exampleMeaning": "위험이 없음",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "報": {
+    {
+      "id": "ex:報",
+      "target": "報",
       "exampleWord": "보고",
-      "exampleMeaning": "알려줌"
+      "exampleMeaning": "알려줌",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "信": {
+    {
+      "id": "ex:信",
+      "target": "信",
       "exampleWord": "신뢰",
-      "exampleMeaning": "믿음"
+      "exampleMeaning": "믿음",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "助": {
+    {
+      "id": "ex:助",
+      "target": "助",
       "exampleWord": "도움",
-      "exampleMeaning": "도와줌"
+      "exampleMeaning": "도와줌",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "支": {
+    {
+      "id": "ex:支",
+      "target": "支",
       "exampleWord": "지원",
-      "exampleMeaning": "도와줌"
+      "exampleMeaning": "도와줌",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "援": {
+    {
+      "id": "ex:援",
+      "target": "援",
       "exampleWord": "지원",
-      "exampleMeaning": "도와줌"
+      "exampleMeaning": "도와줌",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "義": {
+    {
+      "id": "ex:義",
+      "target": "義",
       "exampleWord": "의견",
-      "exampleMeaning": "생각/주장"
+      "exampleMeaning": "생각/주장",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "究": {
+    {
+      "id": "ex:究",
+      "target": "究",
       "exampleWord": "연구",
-      "exampleMeaning": "깊이 파고듦"
+      "exampleMeaning": "깊이 파고듦",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "加": {
+    {
+      "id": "ex:加",
+      "target": "加",
       "exampleWord": "추가",
-      "exampleMeaning": "더함"
+      "exampleMeaning": "더함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "反": {
+    {
+      "id": "ex:反",
+      "target": "反",
       "exampleWord": "반대",
-      "exampleMeaning": "거꾸로"
+      "exampleMeaning": "거꾸로",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "正": {
+    {
+      "id": "ex:正",
+      "target": "正",
       "exampleWord": "정답",
-      "exampleMeaning": "바른 답"
+      "exampleMeaning": "바른 답",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "誤": {
+    {
+      "id": "ex:誤",
+      "target": "誤",
       "exampleWord": "오답",
-      "exampleMeaning": "틀린 답"
+      "exampleMeaning": "틀린 답",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "城": {
+    {
+      "id": "ex:城",
+      "target": "城",
       "exampleWord": "성곽",
-      "exampleMeaning": "성을 둘러싼 큰 담"
+      "exampleMeaning": "성을 둘러싼 큰 담",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "省": {
+    {
+      "id": "ex:省",
+      "target": "省",
       "exampleWord": "반성",
-      "exampleMeaning": "자기 잘못을 돌아봄"
+      "exampleMeaning": "자기 잘못을 돌아봄",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "易": {
+    {
+      "id": "ex:易",
+      "target": "易",
       "exampleWord": "무역",
-      "exampleMeaning": "바꾸고 거래함"
+      "exampleMeaning": "바꾸고 거래함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "際": {
+    {
+      "id": "ex:際",
+      "target": "際",
       "exampleWord": "국제",
-      "exampleMeaning": "나라와 나라 사이"
+      "exampleMeaning": "나라와 나라 사이",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "統": {
+    {
+      "id": "ex:統",
+      "target": "統",
       "exampleWord": "통합",
-      "exampleMeaning": "하나로 합침"
+      "exampleMeaning": "하나로 합침",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "領": {
+    {
+      "id": "ex:領",
+      "target": "領",
       "exampleWord": "영역",
-      "exampleMeaning": "범위/구역"
+      "exampleMeaning": "범위/구역",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "議": {
+    {
+      "id": "ex:議",
+      "target": "議",
       "exampleWord": "회의",
-      "exampleMeaning": "모여서 의논함"
+      "exampleMeaning": "모여서 의논함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "評": {
+    {
+      "id": "ex:評",
+      "target": "評",
       "exampleWord": "평가",
-      "exampleMeaning": "좋고 나쁨을 따짐"
+      "exampleMeaning": "좋고 나쁨을 따짐",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "費": {
+    {
+      "id": "ex:費",
+      "target": "費",
       "exampleWord": "비용",
-      "exampleMeaning": "쓰는 돈"
+      "exampleMeaning": "쓰는 돈",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "資": {
+    {
+      "id": "ex:資",
+      "target": "資",
       "exampleWord": "자원",
-      "exampleMeaning": "재료/도움이 되는 것"
+      "exampleMeaning": "재료/도움이 되는 것",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "料": {
+    {
+      "id": "ex:料",
+      "target": "料",
       "exampleWord": "재료",
-      "exampleMeaning": "만드는 데 쓰는 것"
+      "exampleMeaning": "만드는 데 쓰는 것",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "利": {
+    {
+      "id": "ex:利",
+      "target": "利",
       "exampleWord": "이익",
-      "exampleMeaning": "남는 것"
+      "exampleMeaning": "남는 것",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "損": {
+    {
+      "id": "ex:損",
+      "target": "損",
       "exampleWord": "손해",
-      "exampleMeaning": "잃는 것"
+      "exampleMeaning": "잃는 것",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "入": {
+    {
+      "id": "ex:入",
+      "target": "入",
       "exampleWord": "수입",
-      "exampleMeaning": "안으로 들여옴"
+      "exampleMeaning": "안으로 들여옴",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "發": {
+    {
+      "id": "ex:發",
+      "target": "發",
       "exampleWord": "발견",
-      "exampleMeaning": "찾아냄"
+      "exampleMeaning": "찾아냄",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "設": {
+    {
+      "id": "ex:設",
+      "target": "設",
       "exampleWord": "설명",
-      "exampleMeaning": "알기 쉽게 말함"
+      "exampleMeaning": "알기 쉽게 말함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "明": {
+    {
+      "id": "ex:明",
+      "target": "明",
       "exampleWord": "설명",
-      "exampleMeaning": "밝게 알려줌"
+      "exampleMeaning": "밝게 알려줌",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "表": {
+    {
+      "id": "ex:表",
+      "target": "表",
       "exampleWord": "발표",
-      "exampleMeaning": "사람들 앞에서 말함"
+      "exampleMeaning": "사람들 앞에서 말함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "演": {
+    {
+      "id": "ex:演",
+      "target": "演",
       "exampleWord": "연설",
-      "exampleMeaning": "많은 사람 앞에서 말함"
+      "exampleMeaning": "많은 사람 앞에서 말함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "備": {
+    {
+      "id": "ex:備",
+      "target": "備",
       "exampleWord": "준비",
-      "exampleMeaning": "미리 갖춤"
+      "exampleMeaning": "미리 갖춤",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "試": {
+    {
+      "id": "ex:試",
+      "target": "試",
       "exampleWord": "시험",
-      "exampleMeaning": "실력을 봄"
+      "exampleMeaning": "실력을 봄",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "驗": {
+    {
+      "id": "ex:驗",
+      "target": "驗",
       "exampleWord": "실험",
-      "exampleMeaning": "직접 해 봄"
+      "exampleMeaning": "직접 해 봄",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "規": {
+    {
+      "id": "ex:規",
+      "target": "規",
       "exampleWord": "규칙",
-      "exampleMeaning": "지켜야 할 정함"
+      "exampleMeaning": "지켜야 할 정함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "模": {
+    {
+      "id": "ex:模",
+      "target": "模",
       "exampleWord": "모형",
-      "exampleMeaning": "본떠 만든 것"
+      "exampleMeaning": "본떠 만든 것",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "管": {
+    {
+      "id": "ex:管",
+      "target": "管",
       "exampleWord": "관리",
-      "exampleMeaning": "잘 돌봄"
+      "exampleMeaning": "잘 돌봄",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "理": {
+    {
+      "id": "ex:理",
+      "target": "理",
       "exampleWord": "관리",
-      "exampleMeaning": "정리해서 다룸"
+      "exampleMeaning": "정리해서 다룸",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "保": {
+    {
+      "id": "ex:保",
+      "target": "保",
       "exampleWord": "보호",
-      "exampleMeaning": "지킴"
+      "exampleMeaning": "지킴",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "救": {
+    {
+      "id": "ex:救",
+      "target": "救",
       "exampleWord": "구조",
-      "exampleMeaning": "위험에서 구함"
+      "exampleMeaning": "위험에서 구함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "命": {
+    {
+      "id": "ex:命",
+      "target": "命",
       "exampleWord": "생명",
-      "exampleMeaning": "살아있는 것"
+      "exampleMeaning": "살아있는 것",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "病": {
+    {
+      "id": "ex:病",
+      "target": "病",
       "exampleWord": "질병",
-      "exampleMeaning": "아픈 상태"
+      "exampleMeaning": "아픈 상태",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "健": {
+    {
+      "id": "ex:健",
+      "target": "健",
       "exampleWord": "건강",
-      "exampleMeaning": "몸이 튼튼함"
+      "exampleMeaning": "몸이 튼튼함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "幸": {
+    {
+      "id": "ex:幸",
+      "target": "幸",
       "exampleWord": "행복",
-      "exampleMeaning": "좋은 일"
+      "exampleMeaning": "좋은 일",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "路": {
+    {
+      "id": "ex:路",
+      "target": "路",
       "exampleWord": "도로",
-      "exampleMeaning": "길"
+      "exampleMeaning": "길",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "船": {
+    {
+      "id": "ex:船",
+      "target": "船",
       "exampleWord": "배",
-      "exampleMeaning": "물 위를 가는 탈것"
+      "exampleMeaning": "물 위를 가는 탈것",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "空": {
+    {
+      "id": "ex:空",
+      "target": "空",
       "exampleWord": "하늘",
-      "exampleMeaning": "머리 위 공간"
+      "exampleMeaning": "머리 위 공간",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "港": {
+    {
+      "id": "ex:港",
+      "target": "港",
       "exampleWord": "항구",
-      "exampleMeaning": "배가 드나드는 곳"
+      "exampleMeaning": "배가 드나드는 곳",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "航": {
+    {
+      "id": "ex:航",
+      "target": "航",
       "exampleWord": "항공",
-      "exampleMeaning": "비행과 관련"
+      "exampleMeaning": "비행과 관련",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "警": {
+    {
+      "id": "ex:警",
+      "target": "警",
       "exampleWord": "경찰",
-      "exampleMeaning": "질서를 지키는 사람"
+      "exampleMeaning": "질서를 지키는 사람",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "察": {
+    {
+      "id": "ex:察",
+      "target": "察",
       "exampleWord": "경찰",
-      "exampleMeaning": "살피고 지킴"
+      "exampleMeaning": "살피고 지킴",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "消": {
+    {
+      "id": "ex:消",
+      "target": "消",
       "exampleWord": "소방",
-      "exampleMeaning": "불을 끔"
+      "exampleMeaning": "불을 끔",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "防": {
+    {
+      "id": "ex:防",
+      "target": "防",
       "exampleWord": "예방",
-      "exampleMeaning": "미리 막음"
+      "exampleMeaning": "미리 막음",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "災": {
+    {
+      "id": "ex:災",
+      "target": "災",
       "exampleWord": "재난",
-      "exampleMeaning": "큰 사고"
+      "exampleMeaning": "큰 사고",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "論": {
+    {
+      "id": "ex:論",
+      "target": "論",
       "exampleWord": "토론",
-      "exampleMeaning": "서로 의견을 말함"
+      "exampleMeaning": "서로 의견을 말함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "定": {
+    {
+      "id": "ex:定",
+      "target": "定",
       "exampleWord": "결정",
-      "exampleMeaning": "정해서 정함"
+      "exampleMeaning": "정해서 정함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "計": {
+    {
+      "id": "ex:計",
+      "target": "計",
       "exampleWord": "계획",
-      "exampleMeaning": "미리 정한 생각"
+      "exampleMeaning": "미리 정한 생각",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "畫": {
+    {
+      "id": "ex:畫",
+      "target": "畫",
       "exampleWord": "계획",
-      "exampleMeaning": "앞으로 할 일 정함"
+      "exampleMeaning": "앞으로 할 일 정함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "改": {
+    {
+      "id": "ex:改",
+      "target": "改",
       "exampleWord": "개선",
-      "exampleMeaning": "더 좋게 고침"
+      "exampleMeaning": "더 좋게 고침",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "善": {
+    {
+      "id": "ex:善",
+      "target": "善",
       "exampleWord": "개선",
-      "exampleMeaning": "좋게 만듦"
+      "exampleMeaning": "좋게 만듦",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "更": {
+    {
+      "id": "ex:更",
+      "target": "更",
       "exampleWord": "변경",
-      "exampleMeaning": "바꿔서 고침"
+      "exampleMeaning": "바꿔서 고침",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "移": {
+    {
+      "id": "ex:移",
+      "target": "移",
       "exampleWord": "이동",
-      "exampleMeaning": "옮겨 감"
+      "exampleMeaning": "옮겨 감",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "動": {
+    {
+      "id": "ex:動",
+      "target": "動",
       "exampleWord": "이동",
-      "exampleMeaning": "움직임"
+      "exampleMeaning": "움직임",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "擇": {
+    {
+      "id": "ex:擇",
+      "target": "擇",
       "exampleWord": "선택",
-      "exampleMeaning": "골라 정함"
+      "exampleMeaning": "골라 정함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "査": {
+    {
+      "id": "ex:査",
+      "target": "査",
       "exampleWord": "조사",
-      "exampleMeaning": "찾아보고 확인"
+      "exampleMeaning": "찾아보고 확인",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "探": {
+    {
+      "id": "ex:探",
+      "target": "探",
       "exampleWord": "탐색",
-      "exampleMeaning": "찾아봄"
+      "exampleMeaning": "찾아봄",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "承": {
+    {
+      "id": "ex:承",
+      "target": "承",
       "exampleWord": "승인",
-      "exampleMeaning": "허락함"
+      "exampleMeaning": "허락함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "認": {
+    {
+      "id": "ex:認",
+      "target": "認",
       "exampleWord": "인정",
-      "exampleMeaning": "맞다고 함"
+      "exampleMeaning": "맞다고 함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "許": {
+    {
+      "id": "ex:許",
+      "target": "許",
       "exampleWord": "허락",
-      "exampleMeaning": "해도 된다고 함"
+      "exampleMeaning": "해도 된다고 함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "可": {
+    {
+      "id": "ex:可",
+      "target": "可",
       "exampleWord": "허가",
-      "exampleMeaning": "해도 됨"
+      "exampleMeaning": "해도 됨",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "禁": {
+    {
+      "id": "ex:禁",
+      "target": "禁",
       "exampleWord": "금지",
-      "exampleMeaning": "하지 못하게 함"
+      "exampleMeaning": "하지 못하게 함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "止": {
+    {
+      "id": "ex:止",
+      "target": "止",
       "exampleWord": "중지",
-      "exampleMeaning": "멈춤"
+      "exampleMeaning": "멈춤",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "律": {
+    {
+      "id": "ex:律",
+      "target": "律",
       "exampleWord": "법률",
-      "exampleMeaning": "법과 규칙"
+      "exampleMeaning": "법과 규칙",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "益": {
+    {
+      "id": "ex:益",
+      "target": "益",
       "exampleWord": "이익",
-      "exampleMeaning": "도움이 됨"
+      "exampleMeaning": "도움이 됨",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "製": {
+    {
+      "id": "ex:製",
+      "target": "製",
       "exampleWord": "제작",
-      "exampleMeaning": "만들어 냄"
+      "exampleMeaning": "만들어 냄",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "作": {
+    {
+      "id": "ex:作",
+      "target": "作",
       "exampleWord": "작업",
-      "exampleMeaning": "만드는 일"
+      "exampleMeaning": "만드는 일",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "造": {
+    {
+      "id": "ex:造",
+      "target": "造",
       "exampleWord": "제조",
-      "exampleMeaning": "만들어 냄"
+      "exampleMeaning": "만들어 냄",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "工": {
+    {
+      "id": "ex:工",
+      "target": "工",
       "exampleWord": "공장",
-      "exampleMeaning": "물건 만드는 곳"
+      "exampleMeaning": "물건 만드는 곳",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "業": {
+    {
+      "id": "ex:業",
+      "target": "業",
       "exampleWord": "산업",
-      "exampleMeaning": "일/사업"
+      "exampleMeaning": "일/사업",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "農": {
+    {
+      "id": "ex:農",
+      "target": "農",
       "exampleWord": "농업",
-      "exampleMeaning": "농사짓는 일"
+      "exampleMeaning": "농사짓는 일",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "漁": {
+    {
+      "id": "ex:漁",
+      "target": "漁",
       "exampleWord": "어업",
-      "exampleMeaning": "물고기 잡는 일"
+      "exampleMeaning": "물고기 잡는 일",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "醫": {
+    {
+      "id": "ex:醫",
+      "target": "醫",
       "exampleWord": "의사",
-      "exampleMeaning": "병 고치는 사람"
+      "exampleMeaning": "병 고치는 사람",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "康": {
+    {
+      "id": "ex:康",
+      "target": "康",
       "exampleWord": "건강",
-      "exampleMeaning": "몸이 편안함"
+      "exampleMeaning": "몸이 편안함",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "藥": {
+    {
+      "id": "ex:藥",
+      "target": "藥",
       "exampleWord": "약국",
-      "exampleMeaning": "약 파는 곳"
+      "exampleMeaning": "약 파는 곳",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "院": {
+    {
+      "id": "ex:院",
+      "target": "院",
       "exampleWord": "병원",
-      "exampleMeaning": "치료하는 곳"
+      "exampleMeaning": "치료하는 곳",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "氣": {
+    {
+      "id": "ex:氣",
+      "target": "氣",
       "exampleWord": "공기",
-      "exampleMeaning": "숨 쉬는 기운"
+      "exampleMeaning": "숨 쉬는 기운",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "海": {
+    {
+      "id": "ex:海",
+      "target": "海",
       "exampleWord": "바다",
-      "exampleMeaning": "큰 바다"
+      "exampleMeaning": "큰 바다",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "橋": {
+    {
+      "id": "ex:橋",
+      "target": "橋",
       "exampleWord": "다리",
-      "exampleMeaning": "강 위를 잇는 길"
+      "exampleMeaning": "강 위를 잇는 길",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "築": {
+    {
+      "id": "ex:築",
+      "target": "築",
       "exampleWord": "건축",
-      "exampleMeaning": "건물을 지음"
+      "exampleMeaning": "건물을 지음",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "建": {
+    {
+      "id": "ex:建",
+      "target": "建",
       "exampleWord": "건설",
-      "exampleMeaning": "건물을 세움"
+      "exampleMeaning": "건물을 세움",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "住": {
+    {
+      "id": "ex:住",
+      "target": "住",
       "exampleWord": "주거",
-      "exampleMeaning": "사는 곳"
+      "exampleMeaning": "사는 곳",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "書": {
+    {
+      "id": "ex:書",
+      "target": "書",
       "exampleWord": "도서",
-      "exampleMeaning": "책"
+      "exampleMeaning": "책",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "讀": {
+    {
+      "id": "ex:讀",
+      "target": "讀",
       "exampleWord": "독서",
-      "exampleMeaning": "책을 읽음"
+      "exampleMeaning": "책을 읽음",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "績": {
+    {
+      "id": "ex:績",
+      "target": "績",
       "exampleWord": "성적",
-      "exampleMeaning": "결과 점수"
+      "exampleMeaning": "결과 점수",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "賞": {
+    {
+      "id": "ex:賞",
+      "target": "賞",
       "exampleWord": "상장",
-      "exampleMeaning": "잘해서 받는 상"
+      "exampleMeaning": "잘해서 받는 상",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "罰": {
+    {
+      "id": "ex:罰",
+      "target": "罰",
       "exampleWord": "벌",
-      "exampleMeaning": "잘못해서 받음"
+      "exampleMeaning": "잘못해서 받음",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "暇": {
+    {
+      "id": "ex:暇",
+      "target": "暇",
       "exampleWord": "틈",
-      "exampleMeaning": "틈"
+      "exampleMeaning": "틈",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "覺": {
+    {
+      "id": "ex:覺",
+      "target": "覺",
       "exampleWord": "깨달을",
-      "exampleMeaning": "깨달을"
+      "exampleMeaning": "깨달을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "看": {
+    {
+      "id": "ex:看",
+      "target": "看",
       "exampleWord": "볼",
-      "exampleMeaning": "볼"
+      "exampleMeaning": "볼",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "干": {
+    {
+      "id": "ex:干",
+      "target": "干",
       "exampleWord": "방패",
-      "exampleMeaning": "방패"
+      "exampleMeaning": "방패",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "甘": {
+    {
+      "id": "ex:甘",
+      "target": "甘",
       "exampleWord": "달",
-      "exampleMeaning": "달"
+      "exampleMeaning": "달",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "敢": {
+    {
+      "id": "ex:敢",
+      "target": "敢",
       "exampleWord": "감히",
-      "exampleMeaning": "감히"
+      "exampleMeaning": "감히",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "甲": {
+    {
+      "id": "ex:甲",
+      "target": "甲",
       "exampleWord": "갑옷",
-      "exampleMeaning": "갑옷"
+      "exampleMeaning": "갑옷",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "降": {
+    {
+      "id": "ex:降",
+      "target": "降",
       "exampleWord": "내릴",
-      "exampleMeaning": "내릴"
+      "exampleMeaning": "내릴",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "拒": {
+    {
+      "id": "ex:拒",
+      "target": "拒",
       "exampleWord": "막을",
-      "exampleMeaning": "막을"
+      "exampleMeaning": "막을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "居": {
+    {
+      "id": "ex:居",
+      "target": "居",
       "exampleWord": "살",
-      "exampleMeaning": "살"
+      "exampleMeaning": "살",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "據": {
+    {
+      "id": "ex:據",
+      "target": "據",
       "exampleWord": "근거",
-      "exampleMeaning": "근거"
+      "exampleMeaning": "근거",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "巨": {
+    {
+      "id": "ex:巨",
+      "target": "巨",
       "exampleWord": "클",
-      "exampleMeaning": "클"
+      "exampleMeaning": "클",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "傑": {
+    {
+      "id": "ex:傑",
+      "target": "傑",
       "exampleWord": "뛰어날",
-      "exampleMeaning": "뛰어날"
+      "exampleMeaning": "뛰어날",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "儉": {
+    {
+      "id": "ex:儉",
+      "target": "儉",
       "exampleWord": "검소할",
-      "exampleMeaning": "검소할"
+      "exampleMeaning": "검소할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "擊": {
+    {
+      "id": "ex:擊",
+      "target": "擊",
       "exampleWord": "칠",
-      "exampleMeaning": "칠"
+      "exampleMeaning": "칠",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "激": {
+    {
+      "id": "ex:激",
+      "target": "激",
       "exampleWord": "격할",
-      "exampleMeaning": "격할"
+      "exampleMeaning": "격할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "堅": {
+    {
+      "id": "ex:堅",
+      "target": "堅",
       "exampleWord": "굳을",
-      "exampleMeaning": "굳을"
+      "exampleMeaning": "굳을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "犬": {
+    {
+      "id": "ex:犬",
+      "target": "犬",
       "exampleWord": "개",
-      "exampleMeaning": "개"
+      "exampleMeaning": "개",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "驚": {
+    {
+      "id": "ex:驚",
+      "target": "驚",
       "exampleWord": "놀랄",
-      "exampleMeaning": "놀랄"
+      "exampleMeaning": "놀랄",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "傾": {
+    {
+      "id": "ex:傾",
+      "target": "傾",
       "exampleWord": "기울",
-      "exampleMeaning": "기울"
+      "exampleMeaning": "기울",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "鏡": {
+    {
+      "id": "ex:鏡",
+      "target": "鏡",
       "exampleWord": "거울",
-      "exampleMeaning": "거울"
+      "exampleMeaning": "거울",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "階": {
+    {
+      "id": "ex:階",
+      "target": "階",
       "exampleWord": "섬돌",
-      "exampleMeaning": "섬돌"
+      "exampleMeaning": "섬돌",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "鷄": {
+    {
+      "id": "ex:鷄",
+      "target": "鷄",
       "exampleWord": "닭",
-      "exampleMeaning": "닭"
+      "exampleMeaning": "닭",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "季": {
+    {
+      "id": "ex:季",
+      "target": "季",
       "exampleWord": "계절",
-      "exampleMeaning": "계절"
+      "exampleMeaning": "계절",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "系": {
+    {
+      "id": "ex:系",
+      "target": "系",
       "exampleWord": "이어맬",
-      "exampleMeaning": "이어맬"
+      "exampleMeaning": "이어맬",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "繼": {
+    {
+      "id": "ex:繼",
+      "target": "繼",
       "exampleWord": "이을",
-      "exampleMeaning": "이을"
+      "exampleMeaning": "이을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "戒": {
+    {
+      "id": "ex:戒",
+      "target": "戒",
       "exampleWord": "경계할",
-      "exampleMeaning": "경계할"
+      "exampleMeaning": "경계할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "孤": {
+    {
+      "id": "ex:孤",
+      "target": "孤",
       "exampleWord": "외로울",
-      "exampleMeaning": "외로울"
+      "exampleMeaning": "외로울",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "庫": {
+    {
+      "id": "ex:庫",
+      "target": "庫",
       "exampleWord": "곳집",
-      "exampleMeaning": "곳집"
+      "exampleMeaning": "곳집",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "穀": {
+    {
+      "id": "ex:穀",
+      "target": "穀",
       "exampleWord": "곡식",
-      "exampleMeaning": "곡식"
+      "exampleMeaning": "곡식",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "困": {
+    {
+      "id": "ex:困",
+      "target": "困",
       "exampleWord": "곤할",
-      "exampleMeaning": "곤할"
+      "exampleMeaning": "곤할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "骨": {
+    {
+      "id": "ex:骨",
+      "target": "骨",
       "exampleWord": "뼈",
-      "exampleMeaning": "뼈"
+      "exampleMeaning": "뼈",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "孔": {
+    {
+      "id": "ex:孔",
+      "target": "孔",
       "exampleWord": "구멍",
-      "exampleMeaning": "구멍"
+      "exampleMeaning": "구멍",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "攻": {
+    {
+      "id": "ex:攻",
+      "target": "攻",
       "exampleWord": "칠",
-      "exampleMeaning": "칠"
+      "exampleMeaning": "칠",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "鑛": {
+    {
+      "id": "ex:鑛",
+      "target": "鑛",
       "exampleWord": "쇳돌",
-      "exampleMeaning": "쇳돌"
+      "exampleMeaning": "쇳돌",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "構": {
+    {
+      "id": "ex:構",
+      "target": "構",
       "exampleWord": "얽을",
-      "exampleMeaning": "얽을"
+      "exampleMeaning": "얽을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "君": {
+    {
+      "id": "ex:君",
+      "target": "君",
       "exampleWord": "임금",
-      "exampleMeaning": "임금"
+      "exampleMeaning": "임금",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "群": {
+    {
+      "id": "ex:群",
+      "target": "群",
       "exampleWord": "무리",
-      "exampleMeaning": "무리"
+      "exampleMeaning": "무리",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "屈": {
+    {
+      "id": "ex:屈",
+      "target": "屈",
       "exampleWord": "굽힐",
-      "exampleMeaning": "굽힐"
+      "exampleMeaning": "굽힐",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "窮": {
+    {
+      "id": "ex:窮",
+      "target": "窮",
       "exampleWord": "다할",
-      "exampleMeaning": "다할"
+      "exampleMeaning": "다할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "券": {
+    {
+      "id": "ex:券",
+      "target": "券",
       "exampleWord": "문서",
-      "exampleMeaning": "문서"
+      "exampleMeaning": "문서",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "勸": {
+    {
+      "id": "ex:勸",
+      "target": "勸",
       "exampleWord": "권할",
-      "exampleMeaning": "권할"
+      "exampleMeaning": "권할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "卷": {
+    {
+      "id": "ex:卷",
+      "target": "卷",
       "exampleWord": "책",
-      "exampleMeaning": "책"
+      "exampleMeaning": "책",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "歸": {
+    {
+      "id": "ex:歸",
+      "target": "歸",
       "exampleWord": "돌아갈",
-      "exampleMeaning": "돌아갈"
+      "exampleMeaning": "돌아갈",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "均": {
+    {
+      "id": "ex:均",
+      "target": "均",
       "exampleWord": "고를",
-      "exampleMeaning": "고를"
+      "exampleMeaning": "고를",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "劇": {
+    {
+      "id": "ex:劇",
+      "target": "劇",
       "exampleWord": "심할",
-      "exampleMeaning": "심할"
+      "exampleMeaning": "심할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "勤": {
+    {
+      "id": "ex:勤",
+      "target": "勤",
       "exampleWord": "부지런할",
-      "exampleMeaning": "부지런할"
+      "exampleMeaning": "부지런할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "筋": {
+    {
+      "id": "ex:筋",
+      "target": "筋",
       "exampleWord": "힘줄",
-      "exampleMeaning": "힘줄"
+      "exampleMeaning": "힘줄",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "寄": {
+    {
+      "id": "ex:寄",
+      "target": "寄",
       "exampleWord": "부칠",
-      "exampleMeaning": "부칠"
+      "exampleMeaning": "부칠",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "奇": {
+    {
+      "id": "ex:奇",
+      "target": "奇",
       "exampleWord": "기특할",
-      "exampleMeaning": "기특할"
+      "exampleMeaning": "기특할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "紀": {
+    {
+      "id": "ex:紀",
+      "target": "紀",
       "exampleWord": "벼리",
-      "exampleMeaning": "벼리"
+      "exampleMeaning": "벼리",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "納": {
+    {
+      "id": "ex:納",
+      "target": "納",
       "exampleWord": "들일",
-      "exampleMeaning": "들일"
+      "exampleMeaning": "들일",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "段": {
+    {
+      "id": "ex:段",
+      "target": "段",
       "exampleWord": "층계",
-      "exampleMeaning": "층계"
+      "exampleMeaning": "층계",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "徒": {
+    {
+      "id": "ex:徒",
+      "target": "徒",
       "exampleWord": "무리",
-      "exampleMeaning": "무리"
+      "exampleMeaning": "무리",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "盜": {
+    {
+      "id": "ex:盜",
+      "target": "盜",
       "exampleWord": "도둑",
-      "exampleMeaning": "도둑"
+      "exampleMeaning": "도둑",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "逃": {
+    {
+      "id": "ex:逃",
+      "target": "逃",
       "exampleWord": "도망할",
-      "exampleMeaning": "도망할"
+      "exampleMeaning": "도망할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "亂": {
+    {
+      "id": "ex:亂",
+      "target": "亂",
       "exampleWord": "어지러울",
-      "exampleMeaning": "어지러울"
+      "exampleMeaning": "어지러울",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "卵": {
+    {
+      "id": "ex:卵",
+      "target": "卵",
       "exampleWord": "알",
-      "exampleMeaning": "알"
+      "exampleMeaning": "알",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "覽": {
+    {
+      "id": "ex:覽",
+      "target": "覽",
       "exampleWord": "볼",
-      "exampleMeaning": "볼"
+      "exampleMeaning": "볼",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "略": {
+    {
+      "id": "ex:略",
+      "target": "略",
       "exampleWord": "간략할",
-      "exampleMeaning": "간략할"
+      "exampleMeaning": "간략할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "糧": {
+    {
+      "id": "ex:糧",
+      "target": "糧",
       "exampleWord": "양식",
-      "exampleMeaning": "양식"
+      "exampleMeaning": "양식",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "慮": {
+    {
+      "id": "ex:慮",
+      "target": "慮",
       "exampleWord": "생각할",
-      "exampleMeaning": "생각할"
+      "exampleMeaning": "생각할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "烈": {
+    {
+      "id": "ex:烈",
+      "target": "烈",
       "exampleWord": "매울",
-      "exampleMeaning": "매울"
+      "exampleMeaning": "매울",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "龍": {
+    {
+      "id": "ex:龍",
+      "target": "龍",
       "exampleWord": "용",
-      "exampleMeaning": "용"
+      "exampleMeaning": "용",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "柳": {
+    {
+      "id": "ex:柳",
+      "target": "柳",
       "exampleWord": "버들",
-      "exampleMeaning": "버들"
+      "exampleMeaning": "버들",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "輪": {
+    {
+      "id": "ex:輪",
+      "target": "輪",
       "exampleWord": "바퀴",
-      "exampleMeaning": "바퀴"
+      "exampleMeaning": "바퀴",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "離": {
+    {
+      "id": "ex:離",
+      "target": "離",
       "exampleWord": "떠날",
-      "exampleMeaning": "떠날"
+      "exampleMeaning": "떠날",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "妹": {
+    {
+      "id": "ex:妹",
+      "target": "妹",
       "exampleWord": "누이",
-      "exampleMeaning": "누이"
+      "exampleMeaning": "누이",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "勉": {
+    {
+      "id": "ex:勉",
+      "target": "勉",
       "exampleWord": "힘쓸",
-      "exampleMeaning": "힘쓸"
+      "exampleMeaning": "힘쓸",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "鳴": {
+    {
+      "id": "ex:鳴",
+      "target": "鳴",
       "exampleWord": "울",
-      "exampleMeaning": "울"
+      "exampleMeaning": "울",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "墓": {
+    {
+      "id": "ex:墓",
+      "target": "墓",
       "exampleWord": "무덤",
-      "exampleMeaning": "무덤"
+      "exampleMeaning": "무덤",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "妙": {
+    {
+      "id": "ex:妙",
+      "target": "妙",
       "exampleWord": "묘할",
-      "exampleMeaning": "묘할"
+      "exampleMeaning": "묘할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "舞": {
+    {
+      "id": "ex:舞",
+      "target": "舞",
       "exampleWord": "춤출",
-      "exampleMeaning": "춤출"
+      "exampleMeaning": "춤출",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "拍": {
+    {
+      "id": "ex:拍",
+      "target": "拍",
       "exampleWord": "칠",
-      "exampleMeaning": "칠"
+      "exampleMeaning": "칠",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "髮": {
+    {
+      "id": "ex:髮",
+      "target": "髮",
       "exampleWord": "터럭",
-      "exampleMeaning": "터럭"
+      "exampleMeaning": "터럭",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "妨": {
+    {
+      "id": "ex:妨",
+      "target": "妨",
       "exampleWord": "방해할",
-      "exampleMeaning": "방해할"
+      "exampleMeaning": "방해할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "犯": {
+    {
+      "id": "ex:犯",
+      "target": "犯",
       "exampleWord": "범할",
-      "exampleMeaning": "범할"
+      "exampleMeaning": "범할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "範": {
+    {
+      "id": "ex:範",
+      "target": "範",
       "exampleWord": "법",
-      "exampleMeaning": "법"
+      "exampleMeaning": "법",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "辯": {
+    {
+      "id": "ex:辯",
+      "target": "辯",
       "exampleWord": "말씀",
-      "exampleMeaning": "말씀"
+      "exampleMeaning": "말씀",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "普": {
+    {
+      "id": "ex:普",
+      "target": "普",
       "exampleWord": "넓을",
-      "exampleMeaning": "넓을"
+      "exampleMeaning": "넓을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "伏": {
+    {
+      "id": "ex:伏",
+      "target": "伏",
       "exampleWord": "엎드릴",
-      "exampleMeaning": "엎드릴"
+      "exampleMeaning": "엎드릴",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "複": {
+    {
+      "id": "ex:複",
+      "target": "複",
       "exampleWord": "겹칠",
-      "exampleMeaning": "겹칠"
+      "exampleMeaning": "겹칠",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "否": {
+    {
+      "id": "ex:否",
+      "target": "否",
       "exampleWord": "아닐",
-      "exampleMeaning": "아닐"
+      "exampleMeaning": "아닐",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "負": {
+    {
+      "id": "ex:負",
+      "target": "負",
       "exampleWord": "질",
-      "exampleMeaning": "질"
+      "exampleMeaning": "질",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "粉": {
+    {
+      "id": "ex:粉",
+      "target": "粉",
       "exampleWord": "가루",
-      "exampleMeaning": "가루"
+      "exampleMeaning": "가루",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "憤": {
+    {
+      "id": "ex:憤",
+      "target": "憤",
       "exampleWord": "분할",
-      "exampleMeaning": "분할"
+      "exampleMeaning": "분할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "批": {
+    {
+      "id": "ex:批",
+      "target": "批",
       "exampleWord": "비평할",
-      "exampleMeaning": "비평할"
+      "exampleMeaning": "비평할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "祕": {
+    {
+      "id": "ex:祕",
+      "target": "祕",
       "exampleWord": "숨길",
-      "exampleMeaning": "숨길"
+      "exampleMeaning": "숨길",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "碑": {
+    {
+      "id": "ex:碑",
+      "target": "碑",
       "exampleWord": "비석",
-      "exampleMeaning": "비석"
+      "exampleMeaning": "비석",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "辭": {
+    {
+      "id": "ex:辭",
+      "target": "辭",
       "exampleWord": "말씀",
-      "exampleMeaning": "말씀"
+      "exampleMeaning": "말씀",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "私": {
+    {
+      "id": "ex:私",
+      "target": "私",
       "exampleWord": "사사",
-      "exampleMeaning": "사사"
+      "exampleMeaning": "사사",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "絲": {
+    {
+      "id": "ex:絲",
+      "target": "絲",
       "exampleWord": "실",
-      "exampleMeaning": "실"
+      "exampleMeaning": "실",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "射": {
+    {
+      "id": "ex:射",
+      "target": "射",
       "exampleWord": "쏠",
-      "exampleMeaning": "쏠"
+      "exampleMeaning": "쏠",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "散": {
+    {
+      "id": "ex:散",
+      "target": "散",
       "exampleWord": "흩을",
-      "exampleMeaning": "흩을"
+      "exampleMeaning": "흩을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "傷": {
+    {
+      "id": "ex:傷",
+      "target": "傷",
       "exampleWord": "다칠",
-      "exampleMeaning": "다칠"
+      "exampleMeaning": "다칠",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "象": {
+    {
+      "id": "ex:象",
+      "target": "象",
       "exampleWord": "코끼리",
-      "exampleMeaning": "코끼리"
+      "exampleMeaning": "코끼리",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "宣": {
+    {
+      "id": "ex:宣",
+      "target": "宣",
       "exampleWord": "베풀",
-      "exampleMeaning": "베풀"
+      "exampleMeaning": "베풀",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "舌": {
+    {
+      "id": "ex:舌",
+      "target": "舌",
       "exampleWord": "혀",
-      "exampleMeaning": "혀"
+      "exampleMeaning": "혀",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "屬": {
+    {
+      "id": "ex:屬",
+      "target": "屬",
       "exampleWord": "붙일",
-      "exampleMeaning": "붙일"
+      "exampleMeaning": "붙일",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "頌": {
+    {
+      "id": "ex:頌",
+      "target": "頌",
       "exampleWord": "기릴",
-      "exampleMeaning": "기릴"
+      "exampleMeaning": "기릴",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "松": {
+    {
+      "id": "ex:松",
+      "target": "松",
       "exampleWord": "소나무",
-      "exampleMeaning": "소나무"
+      "exampleMeaning": "소나무",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "秀": {
+    {
+      "id": "ex:秀",
+      "target": "秀",
       "exampleWord": "빼어날",
-      "exampleMeaning": "빼어날"
+      "exampleMeaning": "빼어날",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "叔": {
+    {
+      "id": "ex:叔",
+      "target": "叔",
       "exampleWord": "아재비",
-      "exampleMeaning": "아재비"
+      "exampleMeaning": "아재비",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "肅": {
+    {
+      "id": "ex:肅",
+      "target": "肅",
       "exampleWord": "엄숙할",
-      "exampleMeaning": "엄숙할"
+      "exampleMeaning": "엄숙할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "崇": {
+    {
+      "id": "ex:崇",
+      "target": "崇",
       "exampleWord": "높을",
-      "exampleMeaning": "높을"
+      "exampleMeaning": "높을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "氏": {
+    {
+      "id": "ex:氏",
+      "target": "氏",
       "exampleWord": "각시",
-      "exampleMeaning": "각시"
+      "exampleMeaning": "각시",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "額": {
+    {
+      "id": "ex:額",
+      "target": "額",
       "exampleWord": "이마",
-      "exampleMeaning": "이마"
+      "exampleMeaning": "이마",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "樣": {
+    {
+      "id": "ex:樣",
+      "target": "樣",
       "exampleWord": "모양",
-      "exampleMeaning": "모양"
+      "exampleMeaning": "모양",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "嚴": {
+    {
+      "id": "ex:嚴",
+      "target": "嚴",
       "exampleWord": "엄할",
-      "exampleMeaning": "엄할"
+      "exampleMeaning": "엄할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "與": {
+    {
+      "id": "ex:與",
+      "target": "與",
       "exampleWord": "더불",
-      "exampleMeaning": "더불"
+      "exampleMeaning": "더불",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "域": {
+    {
+      "id": "ex:域",
+      "target": "域",
       "exampleWord": "지경",
-      "exampleMeaning": "지경"
+      "exampleMeaning": "지경",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "燃": {
+    {
+      "id": "ex:燃",
+      "target": "燃",
       "exampleWord": "탈",
-      "exampleMeaning": "탈"
+      "exampleMeaning": "탈",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "鉛": {
+    {
+      "id": "ex:鉛",
+      "target": "鉛",
       "exampleWord": "납",
-      "exampleMeaning": "납"
+      "exampleMeaning": "납",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "緣": {
+    {
+      "id": "ex:緣",
+      "target": "緣",
       "exampleWord": "인연",
-      "exampleMeaning": "인연"
+      "exampleMeaning": "인연",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "延": {
+    {
+      "id": "ex:延",
+      "target": "延",
       "exampleWord": "늘일",
-      "exampleMeaning": "늘일"
+      "exampleMeaning": "늘일",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "迎": {
+    {
+      "id": "ex:迎",
+      "target": "迎",
       "exampleWord": "맞을",
-      "exampleMeaning": "맞을"
+      "exampleMeaning": "맞을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "映": {
+    {
+      "id": "ex:映",
+      "target": "映",
       "exampleWord": "비칠",
-      "exampleMeaning": "비칠"
+      "exampleMeaning": "비칠",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "營": {
+    {
+      "id": "ex:營",
+      "target": "營",
       "exampleWord": "경영할",
-      "exampleMeaning": "경영할"
+      "exampleMeaning": "경영할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "豫": {
+    {
+      "id": "ex:豫",
+      "target": "豫",
       "exampleWord": "미리",
-      "exampleMeaning": "미리"
+      "exampleMeaning": "미리",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "優": {
+    {
+      "id": "ex:優",
+      "target": "優",
       "exampleWord": "넉넉할",
-      "exampleMeaning": "넉넉할"
+      "exampleMeaning": "넉넉할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "遇": {
+    {
+      "id": "ex:遇",
+      "target": "遇",
       "exampleWord": "만날",
-      "exampleMeaning": "만날"
+      "exampleMeaning": "만날",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "郵": {
+    {
+      "id": "ex:郵",
+      "target": "郵",
       "exampleWord": "우편",
-      "exampleMeaning": "우편"
+      "exampleMeaning": "우편",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "怨": {
+    {
+      "id": "ex:怨",
+      "target": "怨",
       "exampleWord": "원망할",
-      "exampleMeaning": "원망할"
+      "exampleMeaning": "원망할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "源": {
+    {
+      "id": "ex:源",
+      "target": "源",
       "exampleWord": "근원",
-      "exampleMeaning": "근원"
+      "exampleMeaning": "근원",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "圍": {
+    {
+      "id": "ex:圍",
+      "target": "圍",
       "exampleWord": "에워쌀",
-      "exampleMeaning": "에워쌀"
+      "exampleMeaning": "에워쌀",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "委": {
+    {
+      "id": "ex:委",
+      "target": "委",
       "exampleWord": "맡길",
-      "exampleMeaning": "맡길"
+      "exampleMeaning": "맡길",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "威": {
+    {
+      "id": "ex:威",
+      "target": "威",
       "exampleWord": "위엄",
-      "exampleMeaning": "위엄"
+      "exampleMeaning": "위엄",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "慰": {
+    {
+      "id": "ex:慰",
+      "target": "慰",
       "exampleWord": "위로할",
-      "exampleMeaning": "위로할"
+      "exampleMeaning": "위로할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "遊": {
+    {
+      "id": "ex:遊",
+      "target": "遊",
       "exampleWord": "놀",
-      "exampleMeaning": "놀"
+      "exampleMeaning": "놀",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "乳": {
+    {
+      "id": "ex:乳",
+      "target": "乳",
       "exampleWord": "젖",
-      "exampleMeaning": "젖"
+      "exampleMeaning": "젖",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "儒": {
+    {
+      "id": "ex:儒",
+      "target": "儒",
       "exampleWord": "선비",
-      "exampleMeaning": "선비"
+      "exampleMeaning": "선비",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "遺": {
+    {
+      "id": "ex:遺",
+      "target": "遺",
       "exampleWord": "남길",
-      "exampleMeaning": "남길"
+      "exampleMeaning": "남길",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "隱": {
+    {
+      "id": "ex:隱",
+      "target": "隱",
       "exampleWord": "숨을",
-      "exampleMeaning": "숨을"
+      "exampleMeaning": "숨을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "依": {
+    {
+      "id": "ex:依",
+      "target": "依",
       "exampleWord": "의지할",
-      "exampleMeaning": "의지할"
+      "exampleMeaning": "의지할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "儀": {
+    {
+      "id": "ex:儀",
+      "target": "儀",
       "exampleWord": "거동",
-      "exampleMeaning": "거동"
+      "exampleMeaning": "거동",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "異": {
+    {
+      "id": "ex:異",
+      "target": "異",
       "exampleWord": "다를",
-      "exampleMeaning": "다를"
+      "exampleMeaning": "다를",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "仁": {
+    {
+      "id": "ex:仁",
+      "target": "仁",
       "exampleWord": "어질",
-      "exampleMeaning": "어질"
+      "exampleMeaning": "어질",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "姿": {
+    {
+      "id": "ex:姿",
+      "target": "姿",
       "exampleWord": "모양",
-      "exampleMeaning": "모양"
+      "exampleMeaning": "모양",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "姉": {
+    {
+      "id": "ex:姉",
+      "target": "姉",
       "exampleWord": "손윗누이",
-      "exampleMeaning": "손윗누이"
+      "exampleMeaning": "손윗누이",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "殘": {
+    {
+      "id": "ex:殘",
+      "target": "殘",
       "exampleWord": "남을",
-      "exampleMeaning": "남을"
+      "exampleMeaning": "남을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "雜": {
+    {
+      "id": "ex:雜",
+      "target": "雜",
       "exampleWord": "섞일",
-      "exampleMeaning": "섞일"
+      "exampleMeaning": "섞일",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "獎": {
+    {
+      "id": "ex:獎",
+      "target": "獎",
       "exampleWord": "장려할",
-      "exampleMeaning": "장려할"
+      "exampleMeaning": "장려할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "裝": {
+    {
+      "id": "ex:裝",
+      "target": "裝",
       "exampleWord": "꾸밀",
-      "exampleMeaning": "꾸밀"
+      "exampleMeaning": "꾸밀",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "腸": {
+    {
+      "id": "ex:腸",
+      "target": "腸",
       "exampleWord": "창자",
-      "exampleMeaning": "창자"
+      "exampleMeaning": "창자",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "張": {
+    {
+      "id": "ex:張",
+      "target": "張",
       "exampleWord": "베풀",
-      "exampleMeaning": "베풀"
+      "exampleMeaning": "베풀",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "壯": {
+    {
+      "id": "ex:壯",
+      "target": "壯",
       "exampleWord": "장할",
-      "exampleMeaning": "장할"
+      "exampleMeaning": "장할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "帳": {
+    {
+      "id": "ex:帳",
+      "target": "帳",
       "exampleWord": "장막",
-      "exampleMeaning": "장막"
+      "exampleMeaning": "장막",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "底": {
+    {
+      "id": "ex:底",
+      "target": "底",
       "exampleWord": "밑",
-      "exampleMeaning": "밑"
+      "exampleMeaning": "밑",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "積": {
+    {
+      "id": "ex:積",
+      "target": "積",
       "exampleWord": "쌓을",
-      "exampleMeaning": "쌓을"
+      "exampleMeaning": "쌓을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "籍": {
+    {
+      "id": "ex:籍",
+      "target": "籍",
       "exampleWord": "문서",
-      "exampleMeaning": "문서"
+      "exampleMeaning": "문서",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "適": {
+    {
+      "id": "ex:適",
+      "target": "適",
       "exampleWord": "맞을",
-      "exampleMeaning": "맞을"
+      "exampleMeaning": "맞을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "賊": {
+    {
+      "id": "ex:賊",
+      "target": "賊",
       "exampleWord": "도둑",
-      "exampleMeaning": "도둑"
+      "exampleMeaning": "도둑",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "專": {
+    {
+      "id": "ex:專",
+      "target": "專",
       "exampleWord": "오로지",
-      "exampleMeaning": "오로지"
+      "exampleMeaning": "오로지",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "轉": {
+    {
+      "id": "ex:轉",
+      "target": "轉",
       "exampleWord": "구를",
-      "exampleMeaning": "구를"
+      "exampleMeaning": "구를",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "錢": {
+    {
+      "id": "ex:錢",
+      "target": "錢",
       "exampleWord": "돈",
-      "exampleMeaning": "돈"
+      "exampleMeaning": "돈",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "折": {
+    {
+      "id": "ex:折",
+      "target": "折",
       "exampleWord": "꺾을",
-      "exampleMeaning": "꺾을"
+      "exampleMeaning": "꺾을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "點": {
+    {
+      "id": "ex:點",
+      "target": "點",
       "exampleWord": "점",
-      "exampleMeaning": "점"
+      "exampleMeaning": "점",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "占": {
+    {
+      "id": "ex:占",
+      "target": "占",
       "exampleWord": "점령할점",
-      "exampleMeaning": "점령할 점"
+      "exampleMeaning": "점령할 점",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "靜": {
+    {
+      "id": "ex:靜",
+      "target": "靜",
       "exampleWord": "고요할",
-      "exampleMeaning": "고요할"
+      "exampleMeaning": "고요할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "丁": {
+    {
+      "id": "ex:丁",
+      "target": "丁",
       "exampleWord": "고무래",
-      "exampleMeaning": "고무래"
+      "exampleMeaning": "고무래",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "帝": {
+    {
+      "id": "ex:帝",
+      "target": "帝",
       "exampleWord": "임금",
-      "exampleMeaning": "임금"
+      "exampleMeaning": "임금",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "條": {
+    {
+      "id": "ex:條",
+      "target": "條",
       "exampleWord": "가지",
-      "exampleMeaning": "가지"
+      "exampleMeaning": "가지",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "潮": {
+    {
+      "id": "ex:潮",
+      "target": "潮",
       "exampleWord": "밀물",
-      "exampleMeaning": "밀물"
+      "exampleMeaning": "밀물",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "組": {
+    {
+      "id": "ex:組",
+      "target": "組",
       "exampleWord": "짤",
-      "exampleMeaning": "짤"
+      "exampleMeaning": "짤",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "存": {
+    {
+      "id": "ex:存",
+      "target": "存",
       "exampleWord": "있을",
-      "exampleMeaning": "있을"
+      "exampleMeaning": "있을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "鍾": {
+    {
+      "id": "ex:鍾",
+      "target": "鍾",
       "exampleWord": "쇠북",
-      "exampleMeaning": "쇠북"
+      "exampleMeaning": "쇠북",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "從": {
+    {
+      "id": "ex:從",
+      "target": "從",
       "exampleWord": "좇을",
-      "exampleMeaning": "좇을"
+      "exampleMeaning": "좇을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "座": {
+    {
+      "id": "ex:座",
+      "target": "座",
       "exampleWord": "자리",
-      "exampleMeaning": "자리"
+      "exampleMeaning": "자리",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "酒": {
+    {
+      "id": "ex:酒",
+      "target": "酒",
       "exampleWord": "술",
-      "exampleMeaning": "술"
+      "exampleMeaning": "술",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "朱": {
+    {
+      "id": "ex:朱",
+      "target": "朱",
       "exampleWord": "붉을",
-      "exampleMeaning": "붉을"
+      "exampleMeaning": "붉을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "周": {
+    {
+      "id": "ex:周",
+      "target": "周",
       "exampleWord": "두루",
-      "exampleMeaning": "두루"
+      "exampleMeaning": "두루",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "證": {
+    {
+      "id": "ex:證",
+      "target": "證",
       "exampleWord": "증거",
-      "exampleMeaning": "증거"
+      "exampleMeaning": "증거",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "持": {
+    {
+      "id": "ex:持",
+      "target": "持",
       "exampleWord": "가질",
-      "exampleMeaning": "가질"
+      "exampleMeaning": "가질",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "智": {
+    {
+      "id": "ex:智",
+      "target": "智",
       "exampleWord": "슬기",
-      "exampleMeaning": "슬기"
+      "exampleMeaning": "슬기",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "誌": {
+    {
+      "id": "ex:誌",
+      "target": "誌",
       "exampleWord": "기록할",
-      "exampleMeaning": "기록할"
+      "exampleMeaning": "기록할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "織": {
+    {
+      "id": "ex:織",
+      "target": "織",
       "exampleWord": "짤",
-      "exampleMeaning": "짤"
+      "exampleMeaning": "짤",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "珍": {
+    {
+      "id": "ex:珍",
+      "target": "珍",
       "exampleWord": "보배",
-      "exampleMeaning": "보배"
+      "exampleMeaning": "보배",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "盡": {
+    {
+      "id": "ex:盡",
+      "target": "盡",
       "exampleWord": "다할",
-      "exampleMeaning": "다할"
+      "exampleMeaning": "다할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "陣": {
+    {
+      "id": "ex:陣",
+      "target": "陣",
       "exampleWord": "진칠",
-      "exampleMeaning": "진칠"
+      "exampleMeaning": "진칠",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "差": {
+    {
+      "id": "ex:差",
+      "target": "差",
       "exampleWord": "다를",
-      "exampleMeaning": "다를"
+      "exampleMeaning": "다를",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "讚": {
+    {
+      "id": "ex:讚",
+      "target": "讚",
       "exampleWord": "기릴",
-      "exampleMeaning": "기릴"
+      "exampleMeaning": "기릴",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "採": {
+    {
+      "id": "ex:採",
+      "target": "採",
       "exampleWord": "캘",
-      "exampleMeaning": "캘"
+      "exampleMeaning": "캘",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "冊": {
+    {
+      "id": "ex:冊",
+      "target": "冊",
       "exampleWord": "책",
-      "exampleMeaning": "책"
+      "exampleMeaning": "책",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "泉": {
+    {
+      "id": "ex:泉",
+      "target": "泉",
       "exampleWord": "샘",
-      "exampleMeaning": "샘"
+      "exampleMeaning": "샘",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "聽": {
+    {
+      "id": "ex:聽",
+      "target": "聽",
       "exampleWord": "들을",
-      "exampleMeaning": "들을"
+      "exampleMeaning": "들을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "廳": {
+    {
+      "id": "ex:廳",
+      "target": "廳",
       "exampleWord": "관청",
-      "exampleMeaning": "관청"
+      "exampleMeaning": "관청",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "招": {
+    {
+      "id": "ex:招",
+      "target": "招",
       "exampleWord": "부를",
-      "exampleMeaning": "부를"
+      "exampleMeaning": "부를",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "推": {
+    {
+      "id": "ex:推",
+      "target": "推",
       "exampleWord": "밀",
-      "exampleMeaning": "밀"
+      "exampleMeaning": "밀",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "縮": {
+    {
+      "id": "ex:縮",
+      "target": "縮",
       "exampleWord": "줄일",
-      "exampleMeaning": "줄일"
+      "exampleMeaning": "줄일",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "就": {
+    {
+      "id": "ex:就",
+      "target": "就",
       "exampleWord": "나아갈",
-      "exampleMeaning": "나아갈"
+      "exampleMeaning": "나아갈",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "趣": {
+    {
+      "id": "ex:趣",
+      "target": "趣",
       "exampleWord": "뜻",
-      "exampleMeaning": "뜻"
+      "exampleMeaning": "뜻",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "層": {
+    {
+      "id": "ex:層",
+      "target": "層",
       "exampleWord": "층",
-      "exampleMeaning": "층"
+      "exampleMeaning": "층",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "寢": {
+    {
+      "id": "ex:寢",
+      "target": "寢",
       "exampleWord": "잘",
-      "exampleMeaning": "잘"
+      "exampleMeaning": "잘",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "針": {
+    {
+      "id": "ex:針",
+      "target": "針",
       "exampleWord": "바늘",
-      "exampleMeaning": "바늘"
+      "exampleMeaning": "바늘",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "稱": {
+    {
+      "id": "ex:稱",
+      "target": "稱",
       "exampleWord": "일컬을",
-      "exampleMeaning": "일컬을"
+      "exampleMeaning": "일컬을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "歎": {
+    {
+      "id": "ex:歎",
+      "target": "歎",
       "exampleWord": "탄식할",
-      "exampleMeaning": "탄식할"
+      "exampleMeaning": "탄식할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "彈": {
+    {
+      "id": "ex:彈",
+      "target": "彈",
       "exampleWord": "탄알",
-      "exampleMeaning": "탄알"
+      "exampleMeaning": "탄알",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "脫": {
+    {
+      "id": "ex:脫",
+      "target": "脫",
       "exampleWord": "벗을",
-      "exampleMeaning": "벗을"
+      "exampleMeaning": "벗을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "討": {
+    {
+      "id": "ex:討",
+      "target": "討",
       "exampleWord": "칠",
-      "exampleMeaning": "칠"
+      "exampleMeaning": "칠",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "痛": {
+    {
+      "id": "ex:痛",
+      "target": "痛",
       "exampleWord": "아플",
-      "exampleMeaning": "아플"
+      "exampleMeaning": "아플",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "投": {
+    {
+      "id": "ex:投",
+      "target": "投",
       "exampleWord": "던질",
-      "exampleMeaning": "던질"
+      "exampleMeaning": "던질",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "鬪": {
+    {
+      "id": "ex:鬪",
+      "target": "鬪",
       "exampleWord": "싸움",
-      "exampleMeaning": "싸움"
+      "exampleMeaning": "싸움",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "派": {
+    {
+      "id": "ex:派",
+      "target": "派",
       "exampleWord": "갈래",
-      "exampleMeaning": "갈래"
+      "exampleMeaning": "갈래",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "判": {
+    {
+      "id": "ex:判",
+      "target": "判",
       "exampleWord": "판단할",
-      "exampleMeaning": "판단할"
+      "exampleMeaning": "판단할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "篇": {
+    {
+      "id": "ex:篇",
+      "target": "篇",
       "exampleWord": "책",
-      "exampleMeaning": "책"
+      "exampleMeaning": "책",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "閉": {
+    {
+      "id": "ex:閉",
+      "target": "閉",
       "exampleWord": "닫을",
-      "exampleMeaning": "닫을"
+      "exampleMeaning": "닫을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "胞": {
+    {
+      "id": "ex:胞",
+      "target": "胞",
       "exampleWord": "세포",
-      "exampleMeaning": "세포"
+      "exampleMeaning": "세포",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "爆": {
+    {
+      "id": "ex:爆",
+      "target": "爆",
       "exampleWord": "불터질",
-      "exampleMeaning": "불터질"
+      "exampleMeaning": "불터질",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "標": {
+    {
+      "id": "ex:標",
+      "target": "標",
       "exampleWord": "표할",
-      "exampleMeaning": "표할"
+      "exampleMeaning": "표할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "疲": {
+    {
+      "id": "ex:疲",
+      "target": "疲",
       "exampleWord": "피곤할",
-      "exampleMeaning": "피곤할"
+      "exampleMeaning": "피곤할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "避": {
+    {
+      "id": "ex:避",
+      "target": "避",
       "exampleWord": "피할",
-      "exampleMeaning": "피할"
+      "exampleMeaning": "피할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "閑": {
+    {
+      "id": "ex:閑",
+      "target": "閑",
       "exampleWord": "한가할",
-      "exampleMeaning": "한가할"
+      "exampleMeaning": "한가할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "恨": {
+    {
+      "id": "ex:恨",
+      "target": "恨",
       "exampleWord": "한",
-      "exampleMeaning": "한"
+      "exampleMeaning": "한",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "抗": {
+    {
+      "id": "ex:抗",
+      "target": "抗",
       "exampleWord": "겨룰",
-      "exampleMeaning": "겨룰"
+      "exampleMeaning": "겨룰",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "核": {
+    {
+      "id": "ex:核",
+      "target": "核",
       "exampleWord": "씨",
-      "exampleMeaning": "씨"
+      "exampleMeaning": "씨",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "憲": {
+    {
+      "id": "ex:憲",
+      "target": "憲",
       "exampleWord": "법",
-      "exampleMeaning": "법"
+      "exampleMeaning": "법",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "險": {
+    {
+      "id": "ex:險",
+      "target": "險",
       "exampleWord": "험할",
-      "exampleMeaning": "험할"
+      "exampleMeaning": "험할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "革": {
+    {
+      "id": "ex:革",
+      "target": "革",
       "exampleWord": "가죽",
-      "exampleMeaning": "가죽"
+      "exampleMeaning": "가죽",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "顯": {
+    {
+      "id": "ex:顯",
+      "target": "顯",
       "exampleWord": "나타날",
-      "exampleMeaning": "나타날"
+      "exampleMeaning": "나타날",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "刑": {
+    {
+      "id": "ex:刑",
+      "target": "刑",
       "exampleWord": "형벌",
-      "exampleMeaning": "형벌"
+      "exampleMeaning": "형벌",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "或": {
+    {
+      "id": "ex:或",
+      "target": "或",
       "exampleWord": "혹",
-      "exampleMeaning": "혹"
+      "exampleMeaning": "혹",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "婚": {
+    {
+      "id": "ex:婚",
+      "target": "婚",
       "exampleWord": "혼인할",
-      "exampleMeaning": "혼인할"
+      "exampleMeaning": "혼인할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "混": {
+    {
+      "id": "ex:混",
+      "target": "混",
       "exampleWord": "섞을",
-      "exampleMeaning": "섞을"
+      "exampleMeaning": "섞을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "紅": {
+    {
+      "id": "ex:紅",
+      "target": "紅",
       "exampleWord": "붉을",
-      "exampleMeaning": "붉을"
+      "exampleMeaning": "붉을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "華": {
+    {
+      "id": "ex:華",
+      "target": "華",
       "exampleWord": "빛날",
-      "exampleMeaning": "빛날"
+      "exampleMeaning": "빛날",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "歡": {
+    {
+      "id": "ex:歡",
+      "target": "歡",
       "exampleWord": "기쁠",
-      "exampleMeaning": "기쁠"
+      "exampleMeaning": "기쁠",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "況": {
+    {
+      "id": "ex:況",
+      "target": "況",
       "exampleWord": "상황",
-      "exampleMeaning": "상황"
+      "exampleMeaning": "상황",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "灰": {
+    {
+      "id": "ex:灰",
+      "target": "灰",
       "exampleWord": "재",
-      "exampleMeaning": "재"
+      "exampleMeaning": "재",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "厚": {
+    {
+      "id": "ex:厚",
+      "target": "厚",
       "exampleWord": "두터울",
-      "exampleMeaning": "두터울"
+      "exampleMeaning": "두터울",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "候": {
+    {
+      "id": "ex:候",
+      "target": "候",
       "exampleWord": "기후",
-      "exampleMeaning": "기후"
+      "exampleMeaning": "기후",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "揮": {
+    {
+      "id": "ex:揮",
+      "target": "揮",
       "exampleWord": "휘두를",
-      "exampleMeaning": "휘두를"
+      "exampleMeaning": "휘두를",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "喜": {
+    {
+      "id": "ex:喜",
+      "target": "喜",
       "exampleWord": "기쁠",
-      "exampleMeaning": "기쁠"
+      "exampleMeaning": "기쁠",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "假": {
+    {
+      "id": "ex:假",
+      "target": "假",
       "exampleWord": "거짓",
-      "exampleMeaning": "거짓"
+      "exampleMeaning": "거짓",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "街": {
+    {
+      "id": "ex:街",
+      "target": "街",
       "exampleWord": "거리",
-      "exampleMeaning": "거리"
+      "exampleMeaning": "거리",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "監": {
+    {
+      "id": "ex:監",
+      "target": "監",
       "exampleWord": "볼",
-      "exampleMeaning": "볼"
+      "exampleMeaning": "볼",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "講": {
+    {
+      "id": "ex:講",
+      "target": "講",
       "exampleWord": "욀",
-      "exampleMeaning": "욀"
+      "exampleMeaning": "욀",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "個": {
+    {
+      "id": "ex:個",
+      "target": "個",
       "exampleWord": "낱",
-      "exampleMeaning": "낱"
+      "exampleMeaning": "낱",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "檢": {
+    {
+      "id": "ex:檢",
+      "target": "檢",
       "exampleWord": "검사할",
-      "exampleMeaning": "검사할"
+      "exampleMeaning": "검사할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "潔": {
+    {
+      "id": "ex:潔",
+      "target": "潔",
       "exampleWord": "깨끗할",
-      "exampleMeaning": "깨끗할"
+      "exampleMeaning": "깨끗할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "缺": {
+    {
+      "id": "ex:缺",
+      "target": "缺",
       "exampleWord": "이지러질",
-      "exampleMeaning": "이지러질"
+      "exampleMeaning": "이지러질",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "慶": {
+    {
+      "id": "ex:慶",
+      "target": "慶",
       "exampleWord": "경사",
-      "exampleMeaning": "경사"
+      "exampleMeaning": "경사",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "係": {
+    {
+      "id": "ex:係",
+      "target": "係",
       "exampleWord": "맬",
-      "exampleMeaning": "맬"
+      "exampleMeaning": "맬",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "故": {
+    {
+      "id": "ex:故",
+      "target": "故",
       "exampleWord": "연고",
-      "exampleMeaning": "연고"
+      "exampleMeaning": "연고",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "官": {
+    {
+      "id": "ex:官",
+      "target": "官",
       "exampleWord": "벼슬",
-      "exampleMeaning": "벼슬"
+      "exampleMeaning": "벼슬",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "句": {
+    {
+      "id": "ex:句",
+      "target": "句",
       "exampleWord": "글귀",
-      "exampleMeaning": "글귀"
+      "exampleMeaning": "글귀",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "宮": {
+    {
+      "id": "ex:宮",
+      "target": "宮",
       "exampleWord": "집",
-      "exampleMeaning": "집"
+      "exampleMeaning": "집",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "權": {
+    {
+      "id": "ex:權",
+      "target": "權",
       "exampleWord": "권세",
-      "exampleMeaning": "권세"
+      "exampleMeaning": "권세",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "極": {
+    {
+      "id": "ex:極",
+      "target": "極",
       "exampleWord": "다할",
-      "exampleMeaning": "다할"
+      "exampleMeaning": "다할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "器": {
+    {
+      "id": "ex:器",
+      "target": "器",
       "exampleWord": "그릇",
-      "exampleMeaning": "그릇"
+      "exampleMeaning": "그릇",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "起": {
+    {
+      "id": "ex:起",
+      "target": "起",
       "exampleWord": "일어날",
-      "exampleMeaning": "일어날"
+      "exampleMeaning": "일어날",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "暖": {
+    {
+      "id": "ex:暖",
+      "target": "暖",
       "exampleWord": "따뜻할",
-      "exampleMeaning": "따뜻할"
+      "exampleMeaning": "따뜻할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "怒": {
+    {
+      "id": "ex:怒",
+      "target": "怒",
       "exampleWord": "성낼",
-      "exampleMeaning": "성낼"
+      "exampleMeaning": "성낼",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "努": {
+    {
+      "id": "ex:努",
+      "target": "努",
       "exampleWord": "힘쓸",
-      "exampleMeaning": "힘쓸"
+      "exampleMeaning": "힘쓸",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "斷": {
+    {
+      "id": "ex:斷",
+      "target": "斷",
       "exampleWord": "끊을",
-      "exampleMeaning": "끊을"
+      "exampleMeaning": "끊을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "單": {
+    {
+      "id": "ex:單",
+      "target": "單",
       "exampleWord": "홑",
-      "exampleMeaning": "홑"
+      "exampleMeaning": "홑",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "檀": {
+    {
+      "id": "ex:檀",
+      "target": "檀",
       "exampleWord": "박달나무",
-      "exampleMeaning": "박달나무"
+      "exampleMeaning": "박달나무",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "端": {
+    {
+      "id": "ex:端",
+      "target": "端",
       "exampleWord": "끝",
-      "exampleMeaning": "끝"
+      "exampleMeaning": "끝",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "擔": {
+    {
+      "id": "ex:擔",
+      "target": "擔",
       "exampleWord": "멜",
-      "exampleMeaning": "멜"
+      "exampleMeaning": "멜",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "黨": {
+    {
+      "id": "ex:黨",
+      "target": "黨",
       "exampleWord": "무리",
-      "exampleMeaning": "무리"
+      "exampleMeaning": "무리",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "帶": {
+    {
+      "id": "ex:帶",
+      "target": "帶",
       "exampleWord": "띠",
-      "exampleMeaning": "띠"
+      "exampleMeaning": "띠",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "隊": {
+    {
+      "id": "ex:隊",
+      "target": "隊",
       "exampleWord": "무리",
-      "exampleMeaning": "무리"
+      "exampleMeaning": "무리",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "導": {
+    {
+      "id": "ex:導",
+      "target": "導",
       "exampleWord": "인도할",
-      "exampleMeaning": "인도할"
+      "exampleMeaning": "인도할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "毒": {
+    {
+      "id": "ex:毒",
+      "target": "毒",
       "exampleWord": "독",
-      "exampleMeaning": "독"
+      "exampleMeaning": "독",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "督": {
+    {
+      "id": "ex:督",
+      "target": "督",
       "exampleWord": "감독할",
-      "exampleMeaning": "감독할"
+      "exampleMeaning": "감독할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "銅": {
+    {
+      "id": "ex:銅",
+      "target": "銅",
       "exampleWord": "구리",
-      "exampleMeaning": "구리"
+      "exampleMeaning": "구리",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "斗": {
+    {
+      "id": "ex:斗",
+      "target": "斗",
       "exampleWord": "말",
-      "exampleMeaning": "말"
+      "exampleMeaning": "말",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "豆": {
+    {
+      "id": "ex:豆",
+      "target": "豆",
       "exampleWord": "콩",
-      "exampleMeaning": "콩"
+      "exampleMeaning": "콩",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "得": {
+    {
+      "id": "ex:得",
+      "target": "得",
       "exampleWord": "얻을",
-      "exampleMeaning": "얻을"
+      "exampleMeaning": "얻을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "燈": {
+    {
+      "id": "ex:燈",
+      "target": "燈",
       "exampleWord": "등",
-      "exampleMeaning": "등"
+      "exampleMeaning": "등",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "羅": {
+    {
+      "id": "ex:羅",
+      "target": "羅",
       "exampleWord": "벌릴",
-      "exampleMeaning": "벌릴"
+      "exampleMeaning": "벌릴",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "兩": {
+    {
+      "id": "ex:兩",
+      "target": "兩",
       "exampleWord": "두",
-      "exampleMeaning": "두"
+      "exampleMeaning": "두",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "麗": {
+    {
+      "id": "ex:麗",
+      "target": "麗",
       "exampleWord": "고울",
-      "exampleMeaning": "고울"
+      "exampleMeaning": "고울",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "列": {
+    {
+      "id": "ex:列",
+      "target": "列",
       "exampleWord": "벌릴",
-      "exampleMeaning": "벌릴"
+      "exampleMeaning": "벌릴",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "錄": {
+    {
+      "id": "ex:錄",
+      "target": "錄",
       "exampleWord": "기록할",
-      "exampleMeaning": "기록할"
+      "exampleMeaning": "기록할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "留": {
+    {
+      "id": "ex:留",
+      "target": "留",
       "exampleWord": "머무를",
-      "exampleMeaning": "머무를"
+      "exampleMeaning": "머무를",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "滿": {
+    {
+      "id": "ex:滿",
+      "target": "滿",
       "exampleWord": "찰",
-      "exampleMeaning": "찰"
+      "exampleMeaning": "찰",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "脈": {
+    {
+      "id": "ex:脈",
+      "target": "脈",
       "exampleWord": "줄기",
-      "exampleMeaning": "줄기"
+      "exampleMeaning": "줄기",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "毛": {
+    {
+      "id": "ex:毛",
+      "target": "毛",
       "exampleWord": "터럭",
-      "exampleMeaning": "터럭"
+      "exampleMeaning": "터럭",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "牧": {
+    {
+      "id": "ex:牧",
+      "target": "牧",
       "exampleWord": "칠",
-      "exampleMeaning": "칠"
+      "exampleMeaning": "칠",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "務": {
+    {
+      "id": "ex:務",
+      "target": "務",
       "exampleWord": "힘쓸",
-      "exampleMeaning": "힘쓸"
+      "exampleMeaning": "힘쓸",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "武": {
+    {
+      "id": "ex:武",
+      "target": "武",
       "exampleWord": "호반",
-      "exampleMeaning": "호반"
+      "exampleMeaning": "호반",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "味": {
+    {
+      "id": "ex:味",
+      "target": "味",
       "exampleWord": "맛",
-      "exampleMeaning": "맛"
+      "exampleMeaning": "맛",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "密": {
+    {
+      "id": "ex:密",
+      "target": "密",
       "exampleWord": "빽빽할",
-      "exampleMeaning": "빽빽할"
+      "exampleMeaning": "빽빽할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "博": {
+    {
+      "id": "ex:博",
+      "target": "博",
       "exampleWord": "넓을",
-      "exampleMeaning": "넓을"
+      "exampleMeaning": "넓을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "房": {
+    {
+      "id": "ex:房",
+      "target": "房",
       "exampleWord": "방",
-      "exampleMeaning": "방"
+      "exampleMeaning": "방",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "訪": {
+    {
+      "id": "ex:訪",
+      "target": "訪",
       "exampleWord": "찾을",
-      "exampleMeaning": "찾을"
+      "exampleMeaning": "찾을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "拜": {
+    {
+      "id": "ex:拜",
+      "target": "拜",
       "exampleWord": "절",
-      "exampleMeaning": "절"
+      "exampleMeaning": "절",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "背": {
+    {
+      "id": "ex:背",
+      "target": "背",
       "exampleWord": "등",
-      "exampleMeaning": "등"
+      "exampleMeaning": "등",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "配": {
+    {
+      "id": "ex:配",
+      "target": "配",
       "exampleWord": "나눌",
-      "exampleMeaning": "나눌"
+      "exampleMeaning": "나눌",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "伐": {
+    {
+      "id": "ex:伐",
+      "target": "伐",
       "exampleWord": "칠",
-      "exampleMeaning": "칠"
+      "exampleMeaning": "칠",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "壁": {
+    {
+      "id": "ex:壁",
+      "target": "壁",
       "exampleWord": "벽",
-      "exampleMeaning": "벽"
+      "exampleMeaning": "벽",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "邊": {
+    {
+      "id": "ex:邊",
+      "target": "邊",
       "exampleWord": "가",
-      "exampleMeaning": "가"
+      "exampleMeaning": "가",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "步": {
+    {
+      "id": "ex:步",
+      "target": "步",
       "exampleWord": "걸음",
-      "exampleMeaning": "걸음"
+      "exampleMeaning": "걸음",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "寶": {
+    {
+      "id": "ex:寶",
+      "target": "寶",
       "exampleWord": "보배",
-      "exampleMeaning": "보배"
+      "exampleMeaning": "보배",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "復": {
+    {
+      "id": "ex:復",
+      "target": "復",
       "exampleWord": "회복할",
-      "exampleMeaning": "회복할"
+      "exampleMeaning": "회복할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "府": {
+    {
+      "id": "ex:府",
+      "target": "府",
       "exampleWord": "마을",
-      "exampleMeaning": "마을"
+      "exampleMeaning": "마을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "富": {
+    {
+      "id": "ex:富",
+      "target": "富",
       "exampleWord": "부자",
-      "exampleMeaning": "부자"
+      "exampleMeaning": "부자",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "副": {
+    {
+      "id": "ex:副",
+      "target": "副",
       "exampleWord": "버금",
-      "exampleMeaning": "버금"
+      "exampleMeaning": "버금",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "婦": {
+    {
+      "id": "ex:婦",
+      "target": "婦",
       "exampleWord": "며느리",
-      "exampleMeaning": "며느리"
+      "exampleMeaning": "며느리",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "佛": {
+    {
+      "id": "ex:佛",
+      "target": "佛",
       "exampleWord": "부처",
-      "exampleMeaning": "부처"
+      "exampleMeaning": "부처",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "飛": {
+    {
+      "id": "ex:飛",
+      "target": "飛",
       "exampleWord": "날",
-      "exampleMeaning": "날"
+      "exampleMeaning": "날",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "非": {
+    {
+      "id": "ex:非",
+      "target": "非",
       "exampleWord": "아닐",
-      "exampleMeaning": "아닐"
+      "exampleMeaning": "아닐",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "悲": {
+    {
+      "id": "ex:悲",
+      "target": "悲",
       "exampleWord": "슬플",
-      "exampleMeaning": "슬플"
+      "exampleMeaning": "슬플",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "貧": {
+    {
+      "id": "ex:貧",
+      "target": "貧",
       "exampleWord": "가난할",
-      "exampleMeaning": "가난할"
+      "exampleMeaning": "가난할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "寺": {
+    {
+      "id": "ex:寺",
+      "target": "寺",
       "exampleWord": "절",
-      "exampleMeaning": "절"
+      "exampleMeaning": "절",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "師": {
+    {
+      "id": "ex:師",
+      "target": "師",
       "exampleWord": "스승",
-      "exampleMeaning": "스승"
+      "exampleMeaning": "스승",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "謝": {
+    {
+      "id": "ex:謝",
+      "target": "謝",
       "exampleWord": "사례할",
-      "exampleMeaning": "사례할"
+      "exampleMeaning": "사례할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "舍": {
+    {
+      "id": "ex:舍",
+      "target": "舍",
       "exampleWord": "집",
-      "exampleMeaning": "집"
+      "exampleMeaning": "집",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "殺": {
+    {
+      "id": "ex:殺",
+      "target": "殺",
       "exampleWord": "죽일",
-      "exampleMeaning": "죽일"
+      "exampleMeaning": "죽일",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "常": {
+    {
+      "id": "ex:常",
+      "target": "常",
       "exampleWord": "떳떳할",
-      "exampleMeaning": "떳떳할"
+      "exampleMeaning": "떳떳할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "床": {
+    {
+      "id": "ex:床",
+      "target": "床",
       "exampleWord": "상",
-      "exampleMeaning": "상"
+      "exampleMeaning": "상",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "想": {
+    {
+      "id": "ex:想",
+      "target": "想",
       "exampleWord": "생각",
-      "exampleMeaning": "생각"
+      "exampleMeaning": "생각",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "狀": {
+    {
+      "id": "ex:狀",
+      "target": "狀",
       "exampleWord": "형상",
-      "exampleMeaning": "형상"
+      "exampleMeaning": "형상",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "誠": {
+    {
+      "id": "ex:誠",
+      "target": "誠",
       "exampleWord": "정성",
-      "exampleMeaning": "정성"
+      "exampleMeaning": "정성",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "聲": {
+    {
+      "id": "ex:聲",
+      "target": "聲",
       "exampleWord": "소리",
-      "exampleMeaning": "소리"
+      "exampleMeaning": "소리",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "盛": {
+    {
+      "id": "ex:盛",
+      "target": "盛",
       "exampleWord": "성할",
-      "exampleMeaning": "성할"
+      "exampleMeaning": "성할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "聖": {
+    {
+      "id": "ex:聖",
+      "target": "聖",
       "exampleWord": "성인",
-      "exampleMeaning": "성인"
+      "exampleMeaning": "성인",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "星": {
+    {
+      "id": "ex:星",
+      "target": "星",
       "exampleWord": "별",
-      "exampleMeaning": "별"
+      "exampleMeaning": "별",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "勢": {
+    {
+      "id": "ex:勢",
+      "target": "勢",
       "exampleWord": "형세",
-      "exampleMeaning": "형세"
+      "exampleMeaning": "형세",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "稅": {
+    {
+      "id": "ex:稅",
+      "target": "稅",
       "exampleWord": "세금",
-      "exampleMeaning": "세금"
+      "exampleMeaning": "세금",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "細": {
+    {
+      "id": "ex:細",
+      "target": "細",
       "exampleWord": "가늘",
-      "exampleMeaning": "가늘"
+      "exampleMeaning": "가늘",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "笑": {
+    {
+      "id": "ex:笑",
+      "target": "笑",
       "exampleWord": "웃음",
-      "exampleMeaning": "웃음"
+      "exampleMeaning": "웃음",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "掃": {
+    {
+      "id": "ex:掃",
+      "target": "掃",
       "exampleWord": "쓸",
-      "exampleMeaning": "쓸"
+      "exampleMeaning": "쓸",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "素": {
+    {
+      "id": "ex:素",
+      "target": "素",
       "exampleWord": "본디",
-      "exampleMeaning": "본디"
+      "exampleMeaning": "본디",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "俗": {
+    {
+      "id": "ex:俗",
+      "target": "俗",
       "exampleWord": "풍속",
-      "exampleMeaning": "풍속"
+      "exampleMeaning": "풍속",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "送": {
+    {
+      "id": "ex:送",
+      "target": "送",
       "exampleWord": "보낼",
-      "exampleMeaning": "보낼"
+      "exampleMeaning": "보낼",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "修": {
+    {
+      "id": "ex:修",
+      "target": "修",
       "exampleWord": "닦을",
-      "exampleMeaning": "닦을"
+      "exampleMeaning": "닦을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "受": {
+    {
+      "id": "ex:受",
+      "target": "受",
       "exampleWord": "받을",
-      "exampleMeaning": "받을"
+      "exampleMeaning": "받을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "守": {
+    {
+      "id": "ex:守",
+      "target": "守",
       "exampleWord": "지킬",
-      "exampleMeaning": "지킬"
+      "exampleMeaning": "지킬",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "授": {
+    {
+      "id": "ex:授",
+      "target": "授",
       "exampleWord": "줄",
-      "exampleMeaning": "줄"
+      "exampleMeaning": "줄",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "收": {
+    {
+      "id": "ex:收",
+      "target": "收",
       "exampleWord": "거둘",
-      "exampleMeaning": "거둘"
+      "exampleMeaning": "거둘",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "純": {
+    {
+      "id": "ex:純",
+      "target": "純",
       "exampleWord": "순수할",
-      "exampleMeaning": "순수할"
+      "exampleMeaning": "순수할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "詩": {
+    {
+      "id": "ex:詩",
+      "target": "詩",
       "exampleWord": "시",
-      "exampleMeaning": "시"
+      "exampleMeaning": "시",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "視": {
+    {
+      "id": "ex:視",
+      "target": "視",
       "exampleWord": "볼",
-      "exampleMeaning": "볼"
+      "exampleMeaning": "볼",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "施": {
+    {
+      "id": "ex:施",
+      "target": "施",
       "exampleWord": "베풀",
-      "exampleMeaning": "베풀"
+      "exampleMeaning": "베풀",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "是": {
+    {
+      "id": "ex:是",
+      "target": "是",
       "exampleWord": "이",
-      "exampleMeaning": "이"
+      "exampleMeaning": "이",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "息": {
+    {
+      "id": "ex:息",
+      "target": "息",
       "exampleWord": "쉴",
-      "exampleMeaning": "쉴"
+      "exampleMeaning": "쉴",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "申": {
+    {
+      "id": "ex:申",
+      "target": "申",
       "exampleWord": "납",
-      "exampleMeaning": "납"
+      "exampleMeaning": "납",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "深": {
+    {
+      "id": "ex:深",
+      "target": "深",
       "exampleWord": "깊을",
-      "exampleMeaning": "깊을"
+      "exampleMeaning": "깊을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "眼": {
+    {
+      "id": "ex:眼",
+      "target": "眼",
       "exampleWord": "눈",
-      "exampleMeaning": "눈"
+      "exampleMeaning": "눈",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "暗": {
+    {
+      "id": "ex:暗",
+      "target": "暗",
       "exampleWord": "어두울",
-      "exampleMeaning": "어두울"
+      "exampleMeaning": "어두울",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "壓": {
+    {
+      "id": "ex:壓",
+      "target": "壓",
       "exampleWord": "누를",
-      "exampleMeaning": "누를"
+      "exampleMeaning": "누를",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "液": {
+    {
+      "id": "ex:液",
+      "target": "液",
       "exampleWord": "진",
-      "exampleMeaning": "진"
+      "exampleMeaning": "진",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "羊": {
+    {
+      "id": "ex:羊",
+      "target": "羊",
       "exampleWord": "양",
-      "exampleMeaning": "양"
+      "exampleMeaning": "양",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "餘": {
+    {
+      "id": "ex:餘",
+      "target": "餘",
       "exampleWord": "남을",
-      "exampleMeaning": "남을"
+      "exampleMeaning": "남을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "如": {
+    {
+      "id": "ex:如",
+      "target": "如",
       "exampleWord": "같을",
-      "exampleMeaning": "같을"
+      "exampleMeaning": "같을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "逆": {
+    {
+      "id": "ex:逆",
+      "target": "逆",
       "exampleWord": "거스릴",
-      "exampleMeaning": "거스릴"
+      "exampleMeaning": "거스릴",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "煙": {
+    {
+      "id": "ex:煙",
+      "target": "煙",
       "exampleWord": "연기",
-      "exampleMeaning": "연기"
+      "exampleMeaning": "연기",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "硏": {
+    {
+      "id": "ex:硏",
+      "target": "硏",
       "exampleWord": "갈",
-      "exampleMeaning": "갈"
+      "exampleMeaning": "갈",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "榮": {
+    {
+      "id": "ex:榮",
+      "target": "榮",
       "exampleWord": "영화",
-      "exampleMeaning": "영화"
+      "exampleMeaning": "영화",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "藝": {
+    {
+      "id": "ex:藝",
+      "target": "藝",
       "exampleWord": "재주",
-      "exampleMeaning": "재주"
+      "exampleMeaning": "재주",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "玉": {
+    {
+      "id": "ex:玉",
+      "target": "玉",
       "exampleWord": "구슬",
-      "exampleMeaning": "구슬"
+      "exampleMeaning": "구슬",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "往": {
+    {
+      "id": "ex:往",
+      "target": "往",
       "exampleWord": "갈",
-      "exampleMeaning": "갈"
+      "exampleMeaning": "갈",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "謠": {
+    {
+      "id": "ex:謠",
+      "target": "謠",
       "exampleWord": "노래",
-      "exampleMeaning": "노래"
+      "exampleMeaning": "노래",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "容": {
+    {
+      "id": "ex:容",
+      "target": "容",
       "exampleWord": "얼굴",
-      "exampleMeaning": "얼굴"
+      "exampleMeaning": "얼굴",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "圓": {
+    {
+      "id": "ex:圓",
+      "target": "圓",
       "exampleWord": "둥글",
-      "exampleMeaning": "둥글"
+      "exampleMeaning": "둥글",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "員": {
+    {
+      "id": "ex:員",
+      "target": "員",
       "exampleWord": "인원",
-      "exampleMeaning": "인원"
+      "exampleMeaning": "인원",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "衛": {
+    {
+      "id": "ex:衛",
+      "target": "衛",
       "exampleWord": "지킬",
-      "exampleMeaning": "지킬"
+      "exampleMeaning": "지킬",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "爲": {
+    {
+      "id": "ex:爲",
+      "target": "爲",
       "exampleWord": "하",
-      "exampleMeaning": "하"
+      "exampleMeaning": "하",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "肉": {
+    {
+      "id": "ex:肉",
+      "target": "肉",
       "exampleWord": "고기",
-      "exampleMeaning": "고기"
+      "exampleMeaning": "고기",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "恩": {
+    {
+      "id": "ex:恩",
+      "target": "恩",
       "exampleWord": "은혜",
-      "exampleMeaning": "은혜"
+      "exampleMeaning": "은혜",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "陰": {
+    {
+      "id": "ex:陰",
+      "target": "陰",
       "exampleWord": "그늘",
-      "exampleMeaning": "그늘"
+      "exampleMeaning": "그늘",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "應": {
+    {
+      "id": "ex:應",
+      "target": "應",
       "exampleWord": "응할",
-      "exampleMeaning": "응할"
+      "exampleMeaning": "응할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "印": {
+    {
+      "id": "ex:印",
+      "target": "印",
       "exampleWord": "도장",
-      "exampleMeaning": "도장"
+      "exampleMeaning": "도장",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "引": {
+    {
+      "id": "ex:引",
+      "target": "引",
       "exampleWord": "끌",
-      "exampleMeaning": "끌"
+      "exampleMeaning": "끌",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "將": {
+    {
+      "id": "ex:將",
+      "target": "將",
       "exampleWord": "장수",
-      "exampleMeaning": "장수"
+      "exampleMeaning": "장수",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "障": {
+    {
+      "id": "ex:障",
+      "target": "障",
       "exampleWord": "막을",
-      "exampleMeaning": "막을"
+      "exampleMeaning": "막을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "敵": {
+    {
+      "id": "ex:敵",
+      "target": "敵",
       "exampleWord": "대적할",
-      "exampleMeaning": "대적할"
+      "exampleMeaning": "대적할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "田": {
+    {
+      "id": "ex:田",
+      "target": "田",
       "exampleWord": "밭",
-      "exampleMeaning": "밭"
+      "exampleMeaning": "밭",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "絶": {
+    {
+      "id": "ex:絶",
+      "target": "絶",
       "exampleWord": "끊을",
-      "exampleMeaning": "끊을"
+      "exampleMeaning": "끊을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "接": {
+    {
+      "id": "ex:接",
+      "target": "接",
       "exampleWord": "이을",
-      "exampleMeaning": "이을"
+      "exampleMeaning": "이을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "程": {
+    {
+      "id": "ex:程",
+      "target": "程",
       "exampleWord": "한도",
-      "exampleMeaning": "한도"
+      "exampleMeaning": "한도",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "精": {
+    {
+      "id": "ex:精",
+      "target": "精",
       "exampleWord": "정할",
-      "exampleMeaning": "정할"
+      "exampleMeaning": "정할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "提": {
+    {
+      "id": "ex:提",
+      "target": "提",
       "exampleWord": "끌",
-      "exampleMeaning": "끌"
+      "exampleMeaning": "끌",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "制": {
+    {
+      "id": "ex:制",
+      "target": "制",
       "exampleWord": "절제할",
-      "exampleMeaning": "절제할"
+      "exampleMeaning": "절제할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "除": {
+    {
+      "id": "ex:除",
+      "target": "除",
       "exampleWord": "덜",
-      "exampleMeaning": "덜"
+      "exampleMeaning": "덜",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "祭": {
+    {
+      "id": "ex:祭",
+      "target": "祭",
       "exampleWord": "제사",
-      "exampleMeaning": "제사"
+      "exampleMeaning": "제사",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "鳥": {
+    {
+      "id": "ex:鳥",
+      "target": "鳥",
       "exampleWord": "새",
-      "exampleMeaning": "새"
+      "exampleMeaning": "새",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "早": {
+    {
+      "id": "ex:早",
+      "target": "早",
       "exampleWord": "이를",
-      "exampleMeaning": "이를"
+      "exampleMeaning": "이를",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "尊": {
+    {
+      "id": "ex:尊",
+      "target": "尊",
       "exampleWord": "높을",
-      "exampleMeaning": "높을"
+      "exampleMeaning": "높을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "宗": {
+    {
+      "id": "ex:宗",
+      "target": "宗",
       "exampleWord": "마루",
-      "exampleMeaning": "마루"
+      "exampleMeaning": "마루",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "走": {
+    {
+      "id": "ex:走",
+      "target": "走",
       "exampleWord": "달릴",
-      "exampleMeaning": "달릴"
+      "exampleMeaning": "달릴",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "竹": {
+    {
+      "id": "ex:竹",
+      "target": "竹",
       "exampleWord": "대",
-      "exampleMeaning": "대"
+      "exampleMeaning": "대",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "衆": {
+    {
+      "id": "ex:衆",
+      "target": "衆",
       "exampleWord": "무리",
-      "exampleMeaning": "무리"
+      "exampleMeaning": "무리",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "志": {
+    {
+      "id": "ex:志",
+      "target": "志",
       "exampleWord": "뜻",
-      "exampleMeaning": "뜻"
+      "exampleMeaning": "뜻",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "指": {
+    {
+      "id": "ex:指",
+      "target": "指",
       "exampleWord": "가리킬",
-      "exampleMeaning": "가리킬"
+      "exampleMeaning": "가리킬",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "至": {
+    {
+      "id": "ex:至",
+      "target": "至",
       "exampleWord": "이를",
-      "exampleMeaning": "이를"
+      "exampleMeaning": "이를",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "職": {
+    {
+      "id": "ex:職",
+      "target": "職",
       "exampleWord": "직분",
-      "exampleMeaning": "직분"
+      "exampleMeaning": "직분",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "眞": {
+    {
+      "id": "ex:眞",
+      "target": "眞",
       "exampleWord": "참",
-      "exampleMeaning": "참"
+      "exampleMeaning": "참",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "次": {
+    {
+      "id": "ex:次",
+      "target": "次",
       "exampleWord": "버금",
-      "exampleMeaning": "버금"
+      "exampleMeaning": "버금",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "創": {
+    {
+      "id": "ex:創",
+      "target": "創",
       "exampleWord": "비롯할",
-      "exampleMeaning": "비롯할"
+      "exampleMeaning": "비롯할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "處": {
+    {
+      "id": "ex:處",
+      "target": "處",
       "exampleWord": "곳",
-      "exampleMeaning": "곳"
+      "exampleMeaning": "곳",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "請": {
+    {
+      "id": "ex:請",
+      "target": "請",
       "exampleWord": "청할",
-      "exampleMeaning": "청할"
+      "exampleMeaning": "청할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "總": {
+    {
+      "id": "ex:總",
+      "target": "總",
       "exampleWord": "다",
-      "exampleMeaning": "다"
+      "exampleMeaning": "다",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "銃": {
+    {
+      "id": "ex:銃",
+      "target": "銃",
       "exampleWord": "총",
-      "exampleMeaning": "총"
+      "exampleMeaning": "총",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "蓄": {
+    {
+      "id": "ex:蓄",
+      "target": "蓄",
       "exampleWord": "모을",
-      "exampleMeaning": "모을"
+      "exampleMeaning": "모을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "忠": {
+    {
+      "id": "ex:忠",
+      "target": "忠",
       "exampleWord": "충성",
-      "exampleMeaning": "충성"
+      "exampleMeaning": "충성",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "蟲": {
+    {
+      "id": "ex:蟲",
+      "target": "蟲",
       "exampleWord": "벌레",
-      "exampleMeaning": "벌레"
+      "exampleMeaning": "벌레",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "取": {
+    {
+      "id": "ex:取",
+      "target": "取",
       "exampleWord": "가질",
-      "exampleMeaning": "가질"
+      "exampleMeaning": "가질",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "測": {
+    {
+      "id": "ex:測",
+      "target": "測",
       "exampleWord": "헤아릴",
-      "exampleMeaning": "헤아릴"
+      "exampleMeaning": "헤아릴",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "齒": {
+    {
+      "id": "ex:齒",
+      "target": "齒",
       "exampleWord": "이",
-      "exampleMeaning": "이"
+      "exampleMeaning": "이",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "侵": {
+    {
+      "id": "ex:侵",
+      "target": "侵",
       "exampleWord": "침노할",
-      "exampleMeaning": "침노할"
+      "exampleMeaning": "침노할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "快": {
+    {
+      "id": "ex:快",
+      "target": "快",
       "exampleWord": "쾌할",
-      "exampleMeaning": "쾌할"
+      "exampleMeaning": "쾌할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "態": {
+    {
+      "id": "ex:態",
+      "target": "態",
       "exampleWord": "모습",
-      "exampleMeaning": "모습"
+      "exampleMeaning": "모습",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "波": {
+    {
+      "id": "ex:波",
+      "target": "波",
       "exampleWord": "물결",
-      "exampleMeaning": "물결"
+      "exampleMeaning": "물결",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "破": {
+    {
+      "id": "ex:破",
+      "target": "破",
       "exampleWord": "깨뜨릴",
-      "exampleMeaning": "깨뜨릴"
+      "exampleMeaning": "깨뜨릴",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "砲": {
+    {
+      "id": "ex:砲",
+      "target": "砲",
       "exampleWord": "대포",
-      "exampleMeaning": "대포"
+      "exampleMeaning": "대포",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "包": {
+    {
+      "id": "ex:包",
+      "target": "包",
       "exampleWord": "쌀",
-      "exampleMeaning": "쌀"
+      "exampleMeaning": "쌀",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "布": {
+    {
+      "id": "ex:布",
+      "target": "布",
       "exampleWord": "베",
-      "exampleMeaning": "베"
+      "exampleMeaning": "베",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "暴": {
+    {
+      "id": "ex:暴",
+      "target": "暴",
       "exampleWord": "사나울",
-      "exampleMeaning": "사나울"
+      "exampleMeaning": "사나울",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "票": {
+    {
+      "id": "ex:票",
+      "target": "票",
       "exampleWord": "표",
-      "exampleMeaning": "표"
+      "exampleMeaning": "표",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "豊": {
+    {
+      "id": "ex:豊",
+      "target": "豊",
       "exampleWord": "풍년",
-      "exampleMeaning": "풍년"
+      "exampleMeaning": "풍년",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "限": {
+    {
+      "id": "ex:限",
+      "target": "限",
       "exampleWord": "한할",
-      "exampleMeaning": "한할"
+      "exampleMeaning": "한할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "解": {
+    {
+      "id": "ex:解",
+      "target": "解",
       "exampleWord": "풀",
-      "exampleMeaning": "풀"
+      "exampleMeaning": "풀",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "鄕": {
+    {
+      "id": "ex:鄕",
+      "target": "鄕",
       "exampleWord": "시골",
-      "exampleMeaning": "시골"
+      "exampleMeaning": "시골",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "香": {
+    {
+      "id": "ex:香",
+      "target": "香",
       "exampleWord": "향기",
-      "exampleMeaning": "향기"
+      "exampleMeaning": "향기",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "虛": {
+    {
+      "id": "ex:虛",
+      "target": "虛",
       "exampleWord": "빌",
-      "exampleMeaning": "빌"
+      "exampleMeaning": "빌",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "賢": {
+    {
+      "id": "ex:賢",
+      "target": "賢",
       "exampleWord": "어질",
-      "exampleMeaning": "어질"
+      "exampleMeaning": "어질",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "血": {
+    {
+      "id": "ex:血",
+      "target": "血",
       "exampleWord": "피",
-      "exampleMeaning": "피"
+      "exampleMeaning": "피",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "協": {
+    {
+      "id": "ex:協",
+      "target": "協",
       "exampleWord": "화할",
-      "exampleMeaning": "화할"
+      "exampleMeaning": "화할",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "惠": {
+    {
+      "id": "ex:惠",
+      "target": "惠",
       "exampleWord": "은혜",
-      "exampleMeaning": "은혜"
+      "exampleMeaning": "은혜",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "好": {
+    {
+      "id": "ex:好",
+      "target": "好",
       "exampleWord": "좋을",
-      "exampleMeaning": "좋을"
+      "exampleMeaning": "좋을",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "戶": {
+    {
+      "id": "ex:戶",
+      "target": "戶",
       "exampleWord": "집",
-      "exampleMeaning": "집"
+      "exampleMeaning": "집",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "呼": {
+    {
+      "id": "ex:呼",
+      "target": "呼",
       "exampleWord": "부를",
-      "exampleMeaning": "부를"
+      "exampleMeaning": "부를",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "貨": {
+    {
+      "id": "ex:貨",
+      "target": "貨",
       "exampleWord": "재물",
-      "exampleMeaning": "재물"
+      "exampleMeaning": "재물",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "回": {
+    {
+      "id": "ex:回",
+      "target": "回",
       "exampleWord": "돌아올",
-      "exampleMeaning": "돌아올"
+      "exampleMeaning": "돌아올",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "吸": {
+    {
+      "id": "ex:吸",
+      "target": "吸",
       "exampleWord": "마실",
-      "exampleMeaning": "마실"
+      "exampleMeaning": "마실",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "興": {
+    {
+      "id": "ex:興",
+      "target": "興",
       "exampleWord": "일",
-      "exampleMeaning": "일"
+      "exampleMeaning": "일",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "希": {
+    {
+      "id": "ex:希",
+      "target": "希",
       "exampleWord": "바랄",
-      "exampleMeaning": "바랄"
+      "exampleMeaning": "바랄",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "外": {
+    {
+      "id": "ex:外",
+      "target": "外",
       "exampleWord": "외국",
-      "exampleMeaning": "바깥 나라"
+      "exampleMeaning": "바깥 나라",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "東": {
+    {
+      "id": "ex:東",
+      "target": "東",
       "exampleWord": "동쪽",
-      "exampleMeaning": "해가 뜨는 쪽"
+      "exampleMeaning": "해가 뜨는 쪽",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "北": {
+    {
+      "id": "ex:北",
+      "target": "北",
       "exampleWord": "북쪽",
-      "exampleMeaning": "위쪽 방향"
+      "exampleMeaning": "위쪽 방향",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "目": {
+    {
+      "id": "ex:目",
+      "target": "目",
       "exampleWord": "눈동자",
-      "exampleMeaning": "눈의 검은 부분"
+      "exampleMeaning": "눈의 검은 부분",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "英": {
+    {
+      "id": "ex:英",
+      "target": "英",
       "exampleWord": "꽃부리",
-      "exampleMeaning": "꽃의 가운데 부분"
+      "exampleMeaning": "꽃의 가운데 부분",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "十": {
+    {
+      "id": "ex:十",
+      "target": "十",
       "exampleWord": "십분",
-      "exampleMeaning": "10분(열 분)"
+      "exampleMeaning": "10분(열 분)",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "本": {
+    {
+      "id": "ex:本",
+      "target": "本",
       "exampleWord": "기본",
-      "exampleMeaning": "기초가 되는 것"
+      "exampleMeaning": "기초가 되는 것",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "五": {
+    {
+      "id": "ex:五",
+      "target": "五",
       "exampleWord": "오월",
-      "exampleMeaning": "5월"
+      "exampleMeaning": "5월",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "四": {
+    {
+      "id": "ex:四",
+      "target": "四",
       "exampleWord": "사계절",
-      "exampleMeaning": "봄·여름·가을·겨울"
+      "exampleMeaning": "봄·여름·가을·겨울",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "族": {
+    {
+      "id": "ex:族",
+      "target": "族",
       "exampleWord": "가족",
-      "exampleMeaning": "한 집안 사람들"
+      "exampleMeaning": "한 집안 사람들",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "式": {
+    {
+      "id": "ex:式",
+      "target": "式",
       "exampleWord": "방식",
-      "exampleMeaning": "하는 방법"
+      "exampleMeaning": "하는 방법",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "韓": {
+    {
+      "id": "ex:韓",
+      "target": "韓",
       "exampleWord": "대한민국",
-      "exampleMeaning": "우리 나라"
+      "exampleMeaning": "우리 나라",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "三": {
+    {
+      "id": "ex:三",
+      "target": "三",
       "exampleWord": "삼각형",
-      "exampleMeaning": "세모"
+      "exampleMeaning": "세모",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     },
-    "待": {
+    {
+      "id": "ex:待",
+      "target": "待",
       "exampleWord": "대기",
-      "exampleMeaning": "기다림"
+      "exampleMeaning": "기다림",
+      "reason": "manual seed/curation",
+      "source": "data/examples_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
     }
-  }
+  ]
 }

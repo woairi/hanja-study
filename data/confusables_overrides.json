@@ -1,334 +1,882 @@
 {
-  "version": 1,
+  "version": 2,
+  "kind": "confusables_overrides",
   "note": "High-confidence confusable overrides for 4급/4급Ⅱ (auto-generated homophone seed).",
   "generatedAt": "2026-02-15T02:02:44.190Z",
-  "overrides": {
-    "拒": [
-      "居",
-      "據"
-    ],
-    "傾": [
-      "經",
-      "境"
-    ],
-    "季": [
-      "系",
-      "戒",
-      "係"
-    ],
-    "系": [
-      "繼",
-      "戒",
-      "季"
-    ],
-    "繼": [
-      "系",
-      "鷄"
-    ],
-    "戒": [
-      "系",
-      "季"
-    ],
-    "紀": [
-      "奇",
-      "起"
-    ],
-    "妨": [
-      "防",
-      "房"
-    ],
-    "碑": [
-      "備",
-      "悲"
-    ],
-    "私": [
-      "寺",
-      "舍"
-    ],
-    "射": [
-      "寺",
-      "師"
-    ],
-    "傷": [
-      "想",
-      "象"
-    ],
-    "象": [
-      "傷",
-      "常",
-      "想"
-    ],
-    "秀": [
-      "受",
-      "守",
-      "收"
-    ],
-    "燃": [
-      "煙",
-      "緣"
-    ],
-    "鉛": [
-      "煙",
-      "演"
-    ],
-    "緣": [
-      "燃",
-      "演"
-    ],
-    "援": [
-      "源",
-      "圓"
-    ],
-    "源": [
-      "圓",
-      "援"
-    ],
-    "遺": [
-      "遊",
-      "儒"
-    ],
-    "儀": [
-      "依",
-      "疑"
-    ],
-    "疑": [
-      "儀",
-      "義"
-    ],
-    "裝": [
-      "腸",
-      "障"
-    ],
-    "腸": [
-      "裝",
-      "障"
-    ],
-    "張": [
-      "帳",
-      "將"
-    ],
-    "帳": [
-      "張",
-      "將"
-    ],
-    "積": [
-      "適",
-      "績",
-      "敵"
-    ],
-    "適": [
-      "敵",
-      "積"
-    ],
-    "整": [
-      "靜",
-      "政"
-    ],
-    "帝": [
-      "制",
-      "除"
-    ],
-    "條": [
-      "組",
-      "鳥",
-      "造"
-    ],
-    "組": [
-      "條",
-      "鳥",
-      "造"
-    ],
-    "珍": [
-      "陣",
-      "眞"
-    ],
-    "陣": [
-      "眞",
-      "珍"
-    ],
-    "派": [
-      "波",
-      "破"
-    ],
-    "街": [
-      "暇",
-      "假"
-    ],
-    "境": [
-      "傾",
-      "經",
-      "慶"
-    ],
-    "經": [
-      "傾",
-      "境"
-    ],
-    "故": [
-      "孤",
-      "庫"
-    ],
-    "起": [
-      "寄",
-      "紀"
-    ],
-    "防": [
-      "妨",
-      "房"
-    ],
-    "房": [
-      "妨",
-      "防"
-    ],
-    "拜": [
-      "背",
-      "配"
-    ],
-    "背": [
-      "拜",
-      "配"
-    ],
-    "配": [
-      "拜",
-      "背"
-    ],
-    "府": [
-      "否",
-      "負"
-    ],
-    "富": [
-      "副",
-      "婦"
-    ],
-    "副": [
-      "婦",
-      "富"
-    ],
-    "婦": [
-      "副",
-      "富"
-    ],
-    "飛": [
-      "祕",
-      "非"
-    ],
-    "備": [
-      "悲",
-      "碑"
-    ],
-    "非": [
-      "批",
-      "飛"
-    ],
-    "悲": [
-      "備",
-      "碑"
-    ],
-    "寺": [
-      "射",
-      "私"
-    ],
-    "想": [
-      "傷",
-      "象"
-    ],
-    "聖": [
-      "聲",
-      "誠",
-      "盛"
-    ],
-    "稅": [
-      "勢",
-      "細"
-    ],
-    "笑": [
-      "素",
-      "掃"
-    ],
-    "掃": [
-      "笑",
-      "素"
-    ],
-    "素": [
-      "笑",
-      "掃"
-    ],
-    "守": [
-      "收",
-      "秀"
-    ],
-    "收": [
-      "守",
-      "秀"
-    ],
-    "詩": [
-      "試",
-      "視"
-    ],
-    "試": [
-      "詩",
-      "視"
-    ],
-    "視": [
-      "詩",
-      "試"
-    ],
-    "煙": [
-      "燃",
-      "鉛",
-      "演"
-    ],
-    "演": [
-      "鉛",
-      "緣",
-      "煙"
-    ],
-    "圓": [
-      "源",
-      "援"
-    ],
-    "將": [
-      "張",
-      "帳"
-    ],
-    "障": [
-      "獎",
-      "裝",
-      "腸"
-    ],
-    "敵": [
-      "適",
-      "積"
-    ],
-    "除": [
-      "際",
-      "帝",
-      "祭"
-    ],
-    "際": [
-      "製",
-      "除"
-    ],
-    "祭": [
-      "提",
-      "除"
-    ],
-    "鳥": [
-      "條",
-      "組",
-      "造"
-    ],
-    "造": [
-      "條",
-      "組",
-      "鳥"
-    ],
-    "走": [
-      "朱",
-      "周"
-    ],
-    "眞": [
-      "陣",
-      "珍"
-    ]
-  }
+  "updated_at": "2026-02-15T06:36:32.260Z",
+  "overrides": [
+    {
+      "id": "conf:拒",
+      "target": "拒",
+      "confusables": [
+        "居",
+        "據"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:傾",
+      "target": "傾",
+      "confusables": [
+        "經",
+        "境"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:季",
+      "target": "季",
+      "confusables": [
+        "系",
+        "戒",
+        "係"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:系",
+      "target": "系",
+      "confusables": [
+        "繼",
+        "戒",
+        "季"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:繼",
+      "target": "繼",
+      "confusables": [
+        "系",
+        "鷄"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:戒",
+      "target": "戒",
+      "confusables": [
+        "系",
+        "季"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:紀",
+      "target": "紀",
+      "confusables": [
+        "奇",
+        "起"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:妨",
+      "target": "妨",
+      "confusables": [
+        "防",
+        "房"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:碑",
+      "target": "碑",
+      "confusables": [
+        "備",
+        "悲"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:私",
+      "target": "私",
+      "confusables": [
+        "寺",
+        "舍"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:射",
+      "target": "射",
+      "confusables": [
+        "寺",
+        "師"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:傷",
+      "target": "傷",
+      "confusables": [
+        "想",
+        "象"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:象",
+      "target": "象",
+      "confusables": [
+        "傷",
+        "常",
+        "想"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:秀",
+      "target": "秀",
+      "confusables": [
+        "受",
+        "守",
+        "收"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:燃",
+      "target": "燃",
+      "confusables": [
+        "煙",
+        "緣"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:鉛",
+      "target": "鉛",
+      "confusables": [
+        "煙",
+        "演"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:緣",
+      "target": "緣",
+      "confusables": [
+        "燃",
+        "演"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:援",
+      "target": "援",
+      "confusables": [
+        "源",
+        "圓"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:源",
+      "target": "源",
+      "confusables": [
+        "圓",
+        "援"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:遺",
+      "target": "遺",
+      "confusables": [
+        "遊",
+        "儒"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:儀",
+      "target": "儀",
+      "confusables": [
+        "依",
+        "疑"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:疑",
+      "target": "疑",
+      "confusables": [
+        "儀",
+        "義"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:裝",
+      "target": "裝",
+      "confusables": [
+        "腸",
+        "障"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:腸",
+      "target": "腸",
+      "confusables": [
+        "裝",
+        "障"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:張",
+      "target": "張",
+      "confusables": [
+        "帳",
+        "將"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:帳",
+      "target": "帳",
+      "confusables": [
+        "張",
+        "將"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:積",
+      "target": "積",
+      "confusables": [
+        "適",
+        "績",
+        "敵"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:適",
+      "target": "適",
+      "confusables": [
+        "敵",
+        "積"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:整",
+      "target": "整",
+      "confusables": [
+        "靜",
+        "政"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:帝",
+      "target": "帝",
+      "confusables": [
+        "制",
+        "除"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:條",
+      "target": "條",
+      "confusables": [
+        "組",
+        "鳥",
+        "造"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:組",
+      "target": "組",
+      "confusables": [
+        "條",
+        "鳥",
+        "造"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:珍",
+      "target": "珍",
+      "confusables": [
+        "陣",
+        "眞"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:陣",
+      "target": "陣",
+      "confusables": [
+        "眞",
+        "珍"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:派",
+      "target": "派",
+      "confusables": [
+        "波",
+        "破"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:街",
+      "target": "街",
+      "confusables": [
+        "暇",
+        "假"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:境",
+      "target": "境",
+      "confusables": [
+        "傾",
+        "經",
+        "慶"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:經",
+      "target": "經",
+      "confusables": [
+        "傾",
+        "境"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:故",
+      "target": "故",
+      "confusables": [
+        "孤",
+        "庫"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:起",
+      "target": "起",
+      "confusables": [
+        "寄",
+        "紀"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:防",
+      "target": "防",
+      "confusables": [
+        "妨",
+        "房"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:房",
+      "target": "房",
+      "confusables": [
+        "妨",
+        "防"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:拜",
+      "target": "拜",
+      "confusables": [
+        "背",
+        "配"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:背",
+      "target": "背",
+      "confusables": [
+        "拜",
+        "配"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:配",
+      "target": "配",
+      "confusables": [
+        "拜",
+        "背"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:府",
+      "target": "府",
+      "confusables": [
+        "否",
+        "負"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:富",
+      "target": "富",
+      "confusables": [
+        "副",
+        "婦"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:副",
+      "target": "副",
+      "confusables": [
+        "婦",
+        "富"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:婦",
+      "target": "婦",
+      "confusables": [
+        "副",
+        "富"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:飛",
+      "target": "飛",
+      "confusables": [
+        "祕",
+        "非"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:備",
+      "target": "備",
+      "confusables": [
+        "悲",
+        "碑"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:非",
+      "target": "非",
+      "confusables": [
+        "批",
+        "飛"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:悲",
+      "target": "悲",
+      "confusables": [
+        "備",
+        "碑"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:寺",
+      "target": "寺",
+      "confusables": [
+        "射",
+        "私"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:想",
+      "target": "想",
+      "confusables": [
+        "傷",
+        "象"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:聖",
+      "target": "聖",
+      "confusables": [
+        "聲",
+        "誠",
+        "盛"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:稅",
+      "target": "稅",
+      "confusables": [
+        "勢",
+        "細"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:笑",
+      "target": "笑",
+      "confusables": [
+        "素",
+        "掃"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:掃",
+      "target": "掃",
+      "confusables": [
+        "笑",
+        "素"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:素",
+      "target": "素",
+      "confusables": [
+        "笑",
+        "掃"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:守",
+      "target": "守",
+      "confusables": [
+        "收",
+        "秀"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:收",
+      "target": "收",
+      "confusables": [
+        "守",
+        "秀"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:詩",
+      "target": "詩",
+      "confusables": [
+        "試",
+        "視"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:試",
+      "target": "試",
+      "confusables": [
+        "詩",
+        "視"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:視",
+      "target": "視",
+      "confusables": [
+        "詩",
+        "試"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:煙",
+      "target": "煙",
+      "confusables": [
+        "燃",
+        "鉛",
+        "演"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:演",
+      "target": "演",
+      "confusables": [
+        "鉛",
+        "緣",
+        "煙"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:圓",
+      "target": "圓",
+      "confusables": [
+        "源",
+        "援"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:將",
+      "target": "將",
+      "confusables": [
+        "張",
+        "帳"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:障",
+      "target": "障",
+      "confusables": [
+        "獎",
+        "裝",
+        "腸"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:敵",
+      "target": "敵",
+      "confusables": [
+        "適",
+        "積"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:除",
+      "target": "除",
+      "confusables": [
+        "際",
+        "帝",
+        "祭"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:際",
+      "target": "際",
+      "confusables": [
+        "製",
+        "除"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:祭",
+      "target": "祭",
+      "confusables": [
+        "提",
+        "除"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:鳥",
+      "target": "鳥",
+      "confusables": [
+        "條",
+        "組",
+        "造"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:造",
+      "target": "造",
+      "confusables": [
+        "條",
+        "組",
+        "鳥"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:走",
+      "target": "走",
+      "confusables": [
+        "朱",
+        "周"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "conf:眞",
+      "target": "眞",
+      "confusables": [
+        "陣",
+        "珍"
+      ],
+      "reason": "homophone seed + manual review",
+      "source": "data/confusables_overrides.json",
+      "updated_at": "2026-02-15T06:36:32.260Z"
+    }
+  ]
 }

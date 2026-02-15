@@ -22,8 +22,79 @@ function fail(msg) {
   console.error('✗', msg);
 }
 
+function warn(msg) {
+  console.warn('⚠', msg);
+}
+
 function sha256Hex(buf) {
   return crypto.createHash('sha256').update(buf).digest('hex');
+}
+
+function isIsoDateString(s) {
+  return typeof s === 'string' && !Number.isNaN(Date.parse(s));
+}
+
+function validateOverridesFile({ kind, filePath, validateRecord }) {
+  if (!fs.existsSync(filePath)) {
+    fail(`missing ${kind} overrides file (${filePath})`);
+    return;
+  }
+
+  let rawText = null;
+  let json = null;
+  try {
+    rawText = fs.readFileSync(filePath, 'utf8');
+    json = JSON.parse(rawText);
+  } catch {
+    fail(`${kind} overrides invalid JSON (${filePath})`);
+    return;
+  }
+
+  const ov = json?.overrides;
+  if (!Array.isArray(ov)) {
+    fail(`${kind} overrides must be an array at .overrides (standardized override schema)`);
+    return;
+  }
+
+  const seenId = new Set();
+  const seenTarget = new Set();
+
+  for (let i = 0; i < ov.length; i++) {
+    const r = ov[i];
+    if (!r || typeof r !== 'object') {
+      fail(`${kind} overrides[${i}] must be an object`);
+      continue;
+    }
+
+    // required meta
+    for (const key of ['id', 'target', 'reason', 'source', 'updated_at']) {
+      if (typeof r[key] !== 'string' || !r[key].trim()) fail(`${kind} overrides[${i}] missing/invalid '${key}'`);
+    }
+
+    if (typeof r.target === 'string' && r.target && !allHanja.has(r.target)) {
+      fail(`${kind} override target '${r.target}' not found in dataset`);
+    }
+
+    if (typeof r.updated_at === 'string' && r.updated_at && !isIsoDateString(r.updated_at)) {
+      fail(`${kind} overrides[${i}].updated_at must be ISO date string`);
+    }
+
+    // dedupe rules
+    if (typeof r.id === 'string' && r.id) {
+      if (seenId.has(r.id)) fail(`${kind} duplicate override id '${r.id}'`);
+      seenId.add(r.id);
+    }
+    if (typeof r.target === 'string' && r.target) {
+      if (seenTarget.has(r.target)) fail(`${kind} duplicate override target '${r.target}' (conflict; must be unique)`);
+      seenTarget.add(r.target);
+    }
+
+    validateRecord(r, i);
+  }
+
+  // soft checks
+  if (typeof json?.version !== 'number') warn(`${kind} overrides missing/invalid top-level 'version' (number)`);
+  if (json?.kind !== kind) warn(`${kind} overrides top-level kind expected '${kind}', got '${String(json?.kind)}'`);
 }
 
 // manifest checks (basic integrity)
@@ -47,6 +118,37 @@ if (!manifest) {
   }
   if (typeof manifest.created_at !== 'string' || Number.isNaN(Date.parse(manifest.created_at))) fail('manifest.created_at missing/invalid ISO date');
 }
+
+// override files (standardized schema)
+validateOverridesFile({
+  kind: 'examples_overrides',
+  filePath: path.resolve('../data/examples_overrides.json'),
+  validateRecord: (r, i) => {
+    if (typeof r.exampleWord !== 'string' || !r.exampleWord.trim()) fail(`examples_overrides[${i}].exampleWord missing/invalid`);
+    if (typeof r.exampleMeaning !== 'string' || !r.exampleMeaning.trim()) fail(`examples_overrides[${i}].exampleMeaning missing/invalid`);
+    if (typeof r.exampleWord === 'string' && r.exampleWord.trim().length > 10) fail(`examples_overrides[${i}].exampleWord too long`);
+    if (typeof r.exampleMeaning === 'string' && r.exampleMeaning.trim().length > 40) fail(`examples_overrides[${i}].exampleMeaning too long`);
+  },
+});
+
+validateOverridesFile({
+  kind: 'confusables_overrides',
+  filePath: path.resolve('../data/confusables_overrides.json'),
+  validateRecord: (r, i) => {
+    if (!Array.isArray(r.confusables)) fail(`confusables_overrides[${i}].confusables missing/invalid (array)`);
+    if (Array.isArray(r.confusables)) {
+      if (r.confusables.length > 8) fail(`confusables_overrides[${i}].confusables too many (${r.confusables.length})`);
+      const set = new Set();
+      for (const c of r.confusables) {
+        if (typeof c !== 'string' || !c) fail(`confusables_overrides[${i}].confusables bad item`);
+        if (c === r.target) fail(`confusables_overrides[${i}] contains itself ('${c}')`);
+        if (!allHanja.has(c)) fail(`confusables_overrides[${i}] confusable '${c}' not found in dataset`);
+        if (set.has(c)) fail(`confusables_overrides[${i}] duplicate confusable '${c}'`);
+        set.add(c);
+      }
+    }
+  },
+});
 
 // counts by gradeLabel
 const counts = new Map();

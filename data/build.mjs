@@ -65,7 +65,7 @@ function scoreConfusable(k, ck) {
   return s;
 }
 
-const basePath = process.argv[2] || 'data/kanji_8_to_4.json';
+const basePath = process.argv[2] || 'data/kanji_8_to_5.json';
 const outDataPath = process.argv[3] || 'data/kanji_8_to_5.json';
 const outWebPath = process.argv[4] || 'web/src/data/kanji.json';
 

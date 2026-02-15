@@ -68,6 +68,7 @@
 - 홈 화면: 급수별 공룡 친구(아이콘) 추가(단일 아이콘/크기 정돈)
 
 ### Changed
+- Week1(P1): 홈 학습 루프 개편(첫 화면: 오늘 미션 + 이어하기 동시 노출, 메인 CTA 1탭 학습 진입, 신규/기존 상태 분기 명확화)
 - 진행률 카드/버튼 스타일을 둥글고 두툼한 키즈 UI로 통일
 - FE: 디자인 토큰(color/spacing/radius/type) 기반으로 globals 정리 + Card/Button 공통 컴포넌트 도입(점진적 치환)
 - FE: prefers-reduced-motion(reduce)에서 학습/퀴즈 이펙트 애니메이션 비활성화
