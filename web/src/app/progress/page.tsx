@@ -9,7 +9,7 @@ import { Card } from '@/components/ui/Card';
 import { StateCard } from '@/components/ui/StateCard';
 import { ALL_KANJI, GRADE_LABELS, kanjiByGradeLabel } from '@/lib/kanji';
 import { loadState } from '@/lib/storage';
-import type { GradeLabel } from '@/lib/types';
+import type { AppState, GradeLabel } from '@/lib/types';
 
 const LEGACY_HINT_DISMISSED_KEY = 'hanja-study:progress:legacyHintDismissed:v1';
 
@@ -35,8 +35,9 @@ export default function ProgressPage() {
     setForceLegacy(qs.get('legacy') === '1');
   }, []);
 
+  const st = useMemo(() => loadState(), [now]);
+
   const summary = useMemo(() => {
-    const st = loadState();
     const days = period === 'week' ? 7 : 30;
 
     // Build YYYY-MM-DD keys for the last N days (including today).
@@ -83,7 +84,7 @@ export default function ProgressPage() {
       isEmpty: quizAnsweredAllTime === 0 && dailyKeys.length === 0,
       isLegacyNoDaily: quizAnsweredAllTime > 0 && !hasDaily,
     };
-  }, [now, period]);
+  }, [now, period, st]);
 
   useEffect(() => {
     if (!summary.isLegacyNoDaily) return;
@@ -93,7 +94,6 @@ export default function ProgressPage() {
   }, [summary.isLegacyNoDaily, legacyHintDismissed, forceLegacy, router]);
 
   const rows = useMemo(() => {
-    const st = loadState();
     return GRADE_LABELS.map((label) => {
       const items = kanjiByGradeLabel(label);
       const mastered = items.filter((k) => st.progress[k.id]?.mastered).length;
@@ -104,28 +104,25 @@ export default function ProgressPage() {
       const seen = items.filter((k) => !!st.progress[k.id]).length;
       return { label, total: items.length, seen, mastered, due };
     });
-  }, [now]);
+  }, [now, st]);
 
   const weak = useMemo(() => {
-    const st = loadState();
     return Object.entries(st.progress)
       .map(([id, p]) => ({ id, score: (p.wrong + 1) / (p.correct + 1), wrong: p.wrong, correct: p.correct }))
       .filter((w) => w.wrong + w.correct > 0)
       .sort((a, b) => b.score - a.score)
       .slice(0, 10);
-  }, [now]);
+  }, [now, st]);
 
   const dueTop = useMemo(() => {
-    const st = loadState();
     return Object.entries(st.progress)
       .map(([id, p]) => ({ id, wrong: p.wrong, correct: p.correct, due: !p.mastered && p.nextReviewAt <= now, nextReviewAt: p.nextReviewAt }))
       .filter((w) => w.due)
       .sort((a, b) => (a.nextReviewAt || 0) - (b.nextReviewAt || 0))
       .slice(0, 10);
-  }, [now]);
+  }, [now, st]);
 
   const weakIdsText = useMemo(() => {
-    const st = loadState();
     const top = Object.entries(st.progress)
       .map(([id, p]) => {
         const answered = (p.wrong || 0) + (p.correct || 0) > 0;
@@ -142,10 +139,9 @@ export default function ProgressPage() {
       .map((w) => w.id);
 
     return top.join('\n');
-  }, [now]);
+  }, [now, st]);
 
   const dueIdsText = useMemo(() => {
-    const st = loadState();
     const top = Object.entries(st.progress)
       .map(([id, p]) => ({ id, due: !p.mastered && p.nextReviewAt <= now, nextReviewAt: p.nextReviewAt }))
       .filter((w) => w.due)
@@ -154,10 +150,9 @@ export default function ProgressPage() {
       .map((w) => w.id);
 
     return top.join('\n');
-  }, [now]);
+  }, [now, st]);
 
   const weakExportJson = useMemo(() => {
-    const st = loadState();
     const map = new Map(ALL_KANJI.map((k) => [k.id, k] as const));
 
     const top = Object.entries(st.progress)
@@ -209,10 +204,9 @@ export default function ProgressPage() {
       null,
       2
     );
-  }, [now]);
+  }, [now, st]);
 
   const dueExportJson = useMemo(() => {
-    const st = loadState();
     const map = new Map(ALL_KANJI.map((k) => [k.id, k] as const));
 
     const top = Object.entries(st.progress)
@@ -249,18 +243,16 @@ export default function ProgressPage() {
       null,
       2
     );
-  }, [now]);
+  }, [now, st]);
 
   const totalDue = useMemo(() => {
-    const st = loadState();
     return ALL_KANJI.filter((k) => {
       const p = st.progress[k.id];
       return p && !p.mastered && p.nextReviewAt <= now;
     }).length;
-  }, [now]);
+  }, [now, st]);
 
   const reviewLink = useMemo(() => {
-    const st = loadState();
     const dailyCount = Math.min(10, st.settings.dailyCount);
     // pick the grade with the most due items; if none due, pick the first grade.
     let best: { label: GradeLabel; due: number } | null = null;
@@ -274,7 +266,7 @@ export default function ProgressPage() {
     }
     const label = best?.label ?? '8급';
     return `/study?grade=${encodeURIComponent(label)}&n=${dailyCount}&review=1`;
-  }, [now]);
+  }, [now, st]);
 
   return (
     <main className="mx-auto max-w-md p-4">
@@ -409,7 +401,7 @@ export default function ProgressPage() {
 
       <section className="mt-4 space-y-2">
         {rows.map((r) => (
-          <GradeRow key={r.label} {...r} />
+          <GradeRow key={r.label} {...r} state={st} dailyCount={st.settings.dailyCount} />
         ))}
       </section>
 
@@ -515,17 +507,24 @@ export default function ProgressPage() {
   );
 }
 
-function GradeRow(props: { label: GradeLabel; total: number; seen: number; mastered: number; due: number }) {
-  const { label, total, seen, mastered, due } = props;
+function GradeRow(props: {
+  label: GradeLabel;
+  total: number;
+  seen: number;
+  mastered: number;
+  due: number;
+  state: AppState;
+  dailyCount: 5 | 10 | 15;
+}) {
+  const { label, total, seen, mastered, due, state, dailyCount } = props;
   const pct = total ? Math.round((mastered / total) * 100) : 0;
 
   const weakInGrade = useMemo(() => {
-    const st = loadState();
     const items = kanjiByGradeLabel(label);
     const scored = items
-      .filter((k) => !!st.progress[k.id])
+      .filter((k) => !!state.progress[k.id])
       .map((k) => {
-        const p = st.progress[k.id];
+        const p = state.progress[k.id];
         const score = (p.wrong + 1) / (p.correct + 1);
         return { k, p, score };
       })
@@ -533,7 +532,7 @@ function GradeRow(props: { label: GradeLabel; total: number; seen: number; maste
       .slice(0, 3);
 
     return scored;
-  }, [label]);
+  }, [label, state]);
 
   return (
     <div className="card p-3">
@@ -571,7 +570,7 @@ function GradeRow(props: { label: GradeLabel; total: number; seen: number; maste
           </ol>
           <div className="mt-2">
             <Link
-              href={`/study?grade=${encodeURIComponent(label)}&n=${Math.min(10, loadState().settings.dailyCount)}&focus=weak`}
+              href={`/study?grade=${encodeURIComponent(label)}&n=${Math.min(10, dailyCount)}&focus=weak`}
               className="btn btn-primary focus-ring inline-flex items-center justify-center px-4 py-2"
               onClick={() => {
                 // store weak ids for focus mode
