@@ -62,7 +62,7 @@ export default function HomePage() {
 
     const dailyCount = st.settings.dailyCount;
     const target = best?.label ?? '8급';
-    const href = `/study?grade=${encodeURIComponent(target)}&n=${dailyCount}&review=1`;
+    const href = `/study?grade=${encodeURIComponent(target)}&n=${Math.min(10, dailyCount)}&review=1`;
 
     return { totalDue, target, href };
   }, []);

@@ -48,7 +48,7 @@ export default function ProgressPage() {
 
   const reviewLink = useMemo(() => {
     const st = loadState();
-    const dailyCount = st.settings.dailyCount;
+    const dailyCount = Math.min(10, st.settings.dailyCount);
     // pick the grade with the most due items; if none due, pick the first grade.
     let best: { label: GradeLabel; due: number } | null = null;
     for (const label of GRADE_LABELS) {
@@ -184,7 +184,7 @@ function GradeRow(props: { label: GradeLabel; total: number; seen: number; maste
           </ol>
           <div className="mt-2">
             <Link
-              href={`/study?grade=${encodeURIComponent(label)}&n=${loadState().settings.dailyCount}&focus=weak`}
+              href={`/study?grade=${encodeURIComponent(label)}&n=${Math.min(10, loadState().settings.dailyCount)}&focus=weak`}
               className="btn btn-primary focus-ring inline-flex items-center justify-center px-4 py-2"
               onClick={() => {
                 // store weak ids for focus mode
