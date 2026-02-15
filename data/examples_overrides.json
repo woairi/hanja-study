@@ -733,6 +733,1722 @@
     "罰": {
       "exampleWord": "벌",
       "exampleMeaning": "잘못해서 받음"
+    },
+    "暇": {
+      "exampleWord": "틈",
+      "exampleMeaning": "틈"
+    },
+    "覺": {
+      "exampleWord": "깨달을",
+      "exampleMeaning": "깨달을"
+    },
+    "看": {
+      "exampleWord": "볼",
+      "exampleMeaning": "볼"
+    },
+    "干": {
+      "exampleWord": "방패",
+      "exampleMeaning": "방패"
+    },
+    "甘": {
+      "exampleWord": "달",
+      "exampleMeaning": "달"
+    },
+    "敢": {
+      "exampleWord": "감히",
+      "exampleMeaning": "감히"
+    },
+    "甲": {
+      "exampleWord": "갑옷",
+      "exampleMeaning": "갑옷"
+    },
+    "降": {
+      "exampleWord": "내릴",
+      "exampleMeaning": "내릴"
+    },
+    "拒": {
+      "exampleWord": "막을",
+      "exampleMeaning": "막을"
+    },
+    "居": {
+      "exampleWord": "살",
+      "exampleMeaning": "살"
+    },
+    "據": {
+      "exampleWord": "근거",
+      "exampleMeaning": "근거"
+    },
+    "巨": {
+      "exampleWord": "클",
+      "exampleMeaning": "클"
+    },
+    "傑": {
+      "exampleWord": "뛰어날",
+      "exampleMeaning": "뛰어날"
+    },
+    "儉": {
+      "exampleWord": "검소할",
+      "exampleMeaning": "검소할"
+    },
+    "擊": {
+      "exampleWord": "칠",
+      "exampleMeaning": "칠"
+    },
+    "激": {
+      "exampleWord": "격할",
+      "exampleMeaning": "격할"
+    },
+    "堅": {
+      "exampleWord": "굳을",
+      "exampleMeaning": "굳을"
+    },
+    "犬": {
+      "exampleWord": "개",
+      "exampleMeaning": "개"
+    },
+    "驚": {
+      "exampleWord": "놀랄",
+      "exampleMeaning": "놀랄"
+    },
+    "傾": {
+      "exampleWord": "기울",
+      "exampleMeaning": "기울"
+    },
+    "鏡": {
+      "exampleWord": "거울",
+      "exampleMeaning": "거울"
+    },
+    "階": {
+      "exampleWord": "섬돌",
+      "exampleMeaning": "섬돌"
+    },
+    "鷄": {
+      "exampleWord": "닭",
+      "exampleMeaning": "닭"
+    },
+    "季": {
+      "exampleWord": "계절",
+      "exampleMeaning": "계절"
+    },
+    "系": {
+      "exampleWord": "이어맬",
+      "exampleMeaning": "이어맬"
+    },
+    "繼": {
+      "exampleWord": "이을",
+      "exampleMeaning": "이을"
+    },
+    "戒": {
+      "exampleWord": "경계할",
+      "exampleMeaning": "경계할"
+    },
+    "孤": {
+      "exampleWord": "외로울",
+      "exampleMeaning": "외로울"
+    },
+    "庫": {
+      "exampleWord": "곳집",
+      "exampleMeaning": "곳집"
+    },
+    "穀": {
+      "exampleWord": "곡식",
+      "exampleMeaning": "곡식"
+    },
+    "困": {
+      "exampleWord": "곤할",
+      "exampleMeaning": "곤할"
+    },
+    "骨": {
+      "exampleWord": "뼈",
+      "exampleMeaning": "뼈"
+    },
+    "孔": {
+      "exampleWord": "구멍",
+      "exampleMeaning": "구멍"
+    },
+    "攻": {
+      "exampleWord": "칠",
+      "exampleMeaning": "칠"
+    },
+    "鑛": {
+      "exampleWord": "쇳돌",
+      "exampleMeaning": "쇳돌"
+    },
+    "構": {
+      "exampleWord": "얽을",
+      "exampleMeaning": "얽을"
+    },
+    "君": {
+      "exampleWord": "임금",
+      "exampleMeaning": "임금"
+    },
+    "群": {
+      "exampleWord": "무리",
+      "exampleMeaning": "무리"
+    },
+    "屈": {
+      "exampleWord": "굽힐",
+      "exampleMeaning": "굽힐"
+    },
+    "窮": {
+      "exampleWord": "다할",
+      "exampleMeaning": "다할"
+    },
+    "券": {
+      "exampleWord": "문서",
+      "exampleMeaning": "문서"
+    },
+    "勸": {
+      "exampleWord": "권할",
+      "exampleMeaning": "권할"
+    },
+    "卷": {
+      "exampleWord": "책",
+      "exampleMeaning": "책"
+    },
+    "歸": {
+      "exampleWord": "돌아갈",
+      "exampleMeaning": "돌아갈"
+    },
+    "均": {
+      "exampleWord": "고를",
+      "exampleMeaning": "고를"
+    },
+    "劇": {
+      "exampleWord": "심할",
+      "exampleMeaning": "심할"
+    },
+    "勤": {
+      "exampleWord": "부지런할",
+      "exampleMeaning": "부지런할"
+    },
+    "筋": {
+      "exampleWord": "힘줄",
+      "exampleMeaning": "힘줄"
+    },
+    "寄": {
+      "exampleWord": "부칠",
+      "exampleMeaning": "부칠"
+    },
+    "奇": {
+      "exampleWord": "기특할",
+      "exampleMeaning": "기특할"
+    },
+    "紀": {
+      "exampleWord": "벼리",
+      "exampleMeaning": "벼리"
+    },
+    "納": {
+      "exampleWord": "들일",
+      "exampleMeaning": "들일"
+    },
+    "段": {
+      "exampleWord": "층계",
+      "exampleMeaning": "층계"
+    },
+    "徒": {
+      "exampleWord": "무리",
+      "exampleMeaning": "무리"
+    },
+    "盜": {
+      "exampleWord": "도둑",
+      "exampleMeaning": "도둑"
+    },
+    "逃": {
+      "exampleWord": "도망할",
+      "exampleMeaning": "도망할"
+    },
+    "亂": {
+      "exampleWord": "어지러울",
+      "exampleMeaning": "어지러울"
+    },
+    "卵": {
+      "exampleWord": "알",
+      "exampleMeaning": "알"
+    },
+    "覽": {
+      "exampleWord": "볼",
+      "exampleMeaning": "볼"
+    },
+    "略": {
+      "exampleWord": "간략할",
+      "exampleMeaning": "간략할"
+    },
+    "糧": {
+      "exampleWord": "양식",
+      "exampleMeaning": "양식"
+    },
+    "慮": {
+      "exampleWord": "생각할",
+      "exampleMeaning": "생각할"
+    },
+    "烈": {
+      "exampleWord": "매울",
+      "exampleMeaning": "매울"
+    },
+    "龍": {
+      "exampleWord": "용",
+      "exampleMeaning": "용"
+    },
+    "柳": {
+      "exampleWord": "버들",
+      "exampleMeaning": "버들"
+    },
+    "輪": {
+      "exampleWord": "바퀴",
+      "exampleMeaning": "바퀴"
+    },
+    "離": {
+      "exampleWord": "떠날",
+      "exampleMeaning": "떠날"
+    },
+    "妹": {
+      "exampleWord": "누이",
+      "exampleMeaning": "누이"
+    },
+    "勉": {
+      "exampleWord": "힘쓸",
+      "exampleMeaning": "힘쓸"
+    },
+    "鳴": {
+      "exampleWord": "울",
+      "exampleMeaning": "울"
+    },
+    "墓": {
+      "exampleWord": "무덤",
+      "exampleMeaning": "무덤"
+    },
+    "妙": {
+      "exampleWord": "묘할",
+      "exampleMeaning": "묘할"
+    },
+    "舞": {
+      "exampleWord": "춤출",
+      "exampleMeaning": "춤출"
+    },
+    "拍": {
+      "exampleWord": "칠",
+      "exampleMeaning": "칠"
+    },
+    "髮": {
+      "exampleWord": "터럭",
+      "exampleMeaning": "터럭"
+    },
+    "妨": {
+      "exampleWord": "방해할",
+      "exampleMeaning": "방해할"
+    },
+    "犯": {
+      "exampleWord": "범할",
+      "exampleMeaning": "범할"
+    },
+    "範": {
+      "exampleWord": "법",
+      "exampleMeaning": "법"
+    },
+    "辯": {
+      "exampleWord": "말씀",
+      "exampleMeaning": "말씀"
+    },
+    "普": {
+      "exampleWord": "넓을",
+      "exampleMeaning": "넓을"
+    },
+    "伏": {
+      "exampleWord": "엎드릴",
+      "exampleMeaning": "엎드릴"
+    },
+    "複": {
+      "exampleWord": "겹칠",
+      "exampleMeaning": "겹칠"
+    },
+    "否": {
+      "exampleWord": "아닐",
+      "exampleMeaning": "아닐"
+    },
+    "負": {
+      "exampleWord": "질",
+      "exampleMeaning": "질"
+    },
+    "粉": {
+      "exampleWord": "가루",
+      "exampleMeaning": "가루"
+    },
+    "憤": {
+      "exampleWord": "분할",
+      "exampleMeaning": "분할"
+    },
+    "批": {
+      "exampleWord": "비평할",
+      "exampleMeaning": "비평할"
+    },
+    "祕": {
+      "exampleWord": "숨길",
+      "exampleMeaning": "숨길"
+    },
+    "碑": {
+      "exampleWord": "비석",
+      "exampleMeaning": "비석"
+    },
+    "辭": {
+      "exampleWord": "말씀",
+      "exampleMeaning": "말씀"
+    },
+    "私": {
+      "exampleWord": "사사",
+      "exampleMeaning": "사사"
+    },
+    "絲": {
+      "exampleWord": "실",
+      "exampleMeaning": "실"
+    },
+    "射": {
+      "exampleWord": "쏠",
+      "exampleMeaning": "쏠"
+    },
+    "散": {
+      "exampleWord": "흩을",
+      "exampleMeaning": "흩을"
+    },
+    "傷": {
+      "exampleWord": "다칠",
+      "exampleMeaning": "다칠"
+    },
+    "象": {
+      "exampleWord": "코끼리",
+      "exampleMeaning": "코끼리"
+    },
+    "宣": {
+      "exampleWord": "베풀",
+      "exampleMeaning": "베풀"
+    },
+    "舌": {
+      "exampleWord": "혀",
+      "exampleMeaning": "혀"
+    },
+    "屬": {
+      "exampleWord": "붙일",
+      "exampleMeaning": "붙일"
+    },
+    "頌": {
+      "exampleWord": "기릴",
+      "exampleMeaning": "기릴"
+    },
+    "松": {
+      "exampleWord": "소나무",
+      "exampleMeaning": "소나무"
+    },
+    "秀": {
+      "exampleWord": "빼어날",
+      "exampleMeaning": "빼어날"
+    },
+    "叔": {
+      "exampleWord": "아재비",
+      "exampleMeaning": "아재비"
+    },
+    "肅": {
+      "exampleWord": "엄숙할",
+      "exampleMeaning": "엄숙할"
+    },
+    "崇": {
+      "exampleWord": "높을",
+      "exampleMeaning": "높을"
+    },
+    "氏": {
+      "exampleWord": "각시",
+      "exampleMeaning": "각시"
+    },
+    "額": {
+      "exampleWord": "이마",
+      "exampleMeaning": "이마"
+    },
+    "樣": {
+      "exampleWord": "모양",
+      "exampleMeaning": "모양"
+    },
+    "嚴": {
+      "exampleWord": "엄할",
+      "exampleMeaning": "엄할"
+    },
+    "與": {
+      "exampleWord": "더불",
+      "exampleMeaning": "더불"
+    },
+    "域": {
+      "exampleWord": "지경",
+      "exampleMeaning": "지경"
+    },
+    "燃": {
+      "exampleWord": "탈",
+      "exampleMeaning": "탈"
+    },
+    "鉛": {
+      "exampleWord": "납",
+      "exampleMeaning": "납"
+    },
+    "緣": {
+      "exampleWord": "인연",
+      "exampleMeaning": "인연"
+    },
+    "延": {
+      "exampleWord": "늘일",
+      "exampleMeaning": "늘일"
+    },
+    "迎": {
+      "exampleWord": "맞을",
+      "exampleMeaning": "맞을"
+    },
+    "映": {
+      "exampleWord": "비칠",
+      "exampleMeaning": "비칠"
+    },
+    "營": {
+      "exampleWord": "경영할",
+      "exampleMeaning": "경영할"
+    },
+    "豫": {
+      "exampleWord": "미리",
+      "exampleMeaning": "미리"
+    },
+    "優": {
+      "exampleWord": "넉넉할",
+      "exampleMeaning": "넉넉할"
+    },
+    "遇": {
+      "exampleWord": "만날",
+      "exampleMeaning": "만날"
+    },
+    "郵": {
+      "exampleWord": "우편",
+      "exampleMeaning": "우편"
+    },
+    "怨": {
+      "exampleWord": "원망할",
+      "exampleMeaning": "원망할"
+    },
+    "源": {
+      "exampleWord": "근원",
+      "exampleMeaning": "근원"
+    },
+    "圍": {
+      "exampleWord": "에워쌀",
+      "exampleMeaning": "에워쌀"
+    },
+    "委": {
+      "exampleWord": "맡길",
+      "exampleMeaning": "맡길"
+    },
+    "威": {
+      "exampleWord": "위엄",
+      "exampleMeaning": "위엄"
+    },
+    "慰": {
+      "exampleWord": "위로할",
+      "exampleMeaning": "위로할"
+    },
+    "遊": {
+      "exampleWord": "놀",
+      "exampleMeaning": "놀"
+    },
+    "乳": {
+      "exampleWord": "젖",
+      "exampleMeaning": "젖"
+    },
+    "儒": {
+      "exampleWord": "선비",
+      "exampleMeaning": "선비"
+    },
+    "遺": {
+      "exampleWord": "남길",
+      "exampleMeaning": "남길"
+    },
+    "隱": {
+      "exampleWord": "숨을",
+      "exampleMeaning": "숨을"
+    },
+    "依": {
+      "exampleWord": "의지할",
+      "exampleMeaning": "의지할"
+    },
+    "儀": {
+      "exampleWord": "거동",
+      "exampleMeaning": "거동"
+    },
+    "異": {
+      "exampleWord": "다를",
+      "exampleMeaning": "다를"
+    },
+    "仁": {
+      "exampleWord": "어질",
+      "exampleMeaning": "어질"
+    },
+    "姿": {
+      "exampleWord": "모양",
+      "exampleMeaning": "모양"
+    },
+    "姉": {
+      "exampleWord": "손윗누이",
+      "exampleMeaning": "손윗누이"
+    },
+    "殘": {
+      "exampleWord": "남을",
+      "exampleMeaning": "남을"
+    },
+    "雜": {
+      "exampleWord": "섞일",
+      "exampleMeaning": "섞일"
+    },
+    "獎": {
+      "exampleWord": "장려할",
+      "exampleMeaning": "장려할"
+    },
+    "裝": {
+      "exampleWord": "꾸밀",
+      "exampleMeaning": "꾸밀"
+    },
+    "腸": {
+      "exampleWord": "창자",
+      "exampleMeaning": "창자"
+    },
+    "張": {
+      "exampleWord": "베풀",
+      "exampleMeaning": "베풀"
+    },
+    "壯": {
+      "exampleWord": "장할",
+      "exampleMeaning": "장할"
+    },
+    "帳": {
+      "exampleWord": "장막",
+      "exampleMeaning": "장막"
+    },
+    "底": {
+      "exampleWord": "밑",
+      "exampleMeaning": "밑"
+    },
+    "積": {
+      "exampleWord": "쌓을",
+      "exampleMeaning": "쌓을"
+    },
+    "籍": {
+      "exampleWord": "문서",
+      "exampleMeaning": "문서"
+    },
+    "適": {
+      "exampleWord": "맞을",
+      "exampleMeaning": "맞을"
+    },
+    "賊": {
+      "exampleWord": "도둑",
+      "exampleMeaning": "도둑"
+    },
+    "專": {
+      "exampleWord": "오로지",
+      "exampleMeaning": "오로지"
+    },
+    "轉": {
+      "exampleWord": "구를",
+      "exampleMeaning": "구를"
+    },
+    "錢": {
+      "exampleWord": "돈",
+      "exampleMeaning": "돈"
+    },
+    "折": {
+      "exampleWord": "꺾을",
+      "exampleMeaning": "꺾을"
+    },
+    "點": {
+      "exampleWord": "점",
+      "exampleMeaning": "점"
+    },
+    "占": {
+      "exampleWord": "점령할점",
+      "exampleMeaning": "점령할 점"
+    },
+    "靜": {
+      "exampleWord": "고요할",
+      "exampleMeaning": "고요할"
+    },
+    "丁": {
+      "exampleWord": "고무래",
+      "exampleMeaning": "고무래"
+    },
+    "帝": {
+      "exampleWord": "임금",
+      "exampleMeaning": "임금"
+    },
+    "條": {
+      "exampleWord": "가지",
+      "exampleMeaning": "가지"
+    },
+    "潮": {
+      "exampleWord": "밀물",
+      "exampleMeaning": "밀물"
+    },
+    "組": {
+      "exampleWord": "짤",
+      "exampleMeaning": "짤"
+    },
+    "存": {
+      "exampleWord": "있을",
+      "exampleMeaning": "있을"
+    },
+    "鍾": {
+      "exampleWord": "쇠북",
+      "exampleMeaning": "쇠북"
+    },
+    "從": {
+      "exampleWord": "좇을",
+      "exampleMeaning": "좇을"
+    },
+    "座": {
+      "exampleWord": "자리",
+      "exampleMeaning": "자리"
+    },
+    "酒": {
+      "exampleWord": "술",
+      "exampleMeaning": "술"
+    },
+    "朱": {
+      "exampleWord": "붉을",
+      "exampleMeaning": "붉을"
+    },
+    "周": {
+      "exampleWord": "두루",
+      "exampleMeaning": "두루"
+    },
+    "證": {
+      "exampleWord": "증거",
+      "exampleMeaning": "증거"
+    },
+    "持": {
+      "exampleWord": "가질",
+      "exampleMeaning": "가질"
+    },
+    "智": {
+      "exampleWord": "슬기",
+      "exampleMeaning": "슬기"
+    },
+    "誌": {
+      "exampleWord": "기록할",
+      "exampleMeaning": "기록할"
+    },
+    "織": {
+      "exampleWord": "짤",
+      "exampleMeaning": "짤"
+    },
+    "珍": {
+      "exampleWord": "보배",
+      "exampleMeaning": "보배"
+    },
+    "盡": {
+      "exampleWord": "다할",
+      "exampleMeaning": "다할"
+    },
+    "陣": {
+      "exampleWord": "진칠",
+      "exampleMeaning": "진칠"
+    },
+    "差": {
+      "exampleWord": "다를",
+      "exampleMeaning": "다를"
+    },
+    "讚": {
+      "exampleWord": "기릴",
+      "exampleMeaning": "기릴"
+    },
+    "採": {
+      "exampleWord": "캘",
+      "exampleMeaning": "캘"
+    },
+    "冊": {
+      "exampleWord": "책",
+      "exampleMeaning": "책"
+    },
+    "泉": {
+      "exampleWord": "샘",
+      "exampleMeaning": "샘"
+    },
+    "聽": {
+      "exampleWord": "들을",
+      "exampleMeaning": "들을"
+    },
+    "廳": {
+      "exampleWord": "관청",
+      "exampleMeaning": "관청"
+    },
+    "招": {
+      "exampleWord": "부를",
+      "exampleMeaning": "부를"
+    },
+    "推": {
+      "exampleWord": "밀",
+      "exampleMeaning": "밀"
+    },
+    "縮": {
+      "exampleWord": "줄일",
+      "exampleMeaning": "줄일"
+    },
+    "就": {
+      "exampleWord": "나아갈",
+      "exampleMeaning": "나아갈"
+    },
+    "趣": {
+      "exampleWord": "뜻",
+      "exampleMeaning": "뜻"
+    },
+    "層": {
+      "exampleWord": "층",
+      "exampleMeaning": "층"
+    },
+    "寢": {
+      "exampleWord": "잘",
+      "exampleMeaning": "잘"
+    },
+    "針": {
+      "exampleWord": "바늘",
+      "exampleMeaning": "바늘"
+    },
+    "稱": {
+      "exampleWord": "일컬을",
+      "exampleMeaning": "일컬을"
+    },
+    "歎": {
+      "exampleWord": "탄식할",
+      "exampleMeaning": "탄식할"
+    },
+    "彈": {
+      "exampleWord": "탄알",
+      "exampleMeaning": "탄알"
+    },
+    "脫": {
+      "exampleWord": "벗을",
+      "exampleMeaning": "벗을"
+    },
+    "討": {
+      "exampleWord": "칠",
+      "exampleMeaning": "칠"
+    },
+    "痛": {
+      "exampleWord": "아플",
+      "exampleMeaning": "아플"
+    },
+    "投": {
+      "exampleWord": "던질",
+      "exampleMeaning": "던질"
+    },
+    "鬪": {
+      "exampleWord": "싸움",
+      "exampleMeaning": "싸움"
+    },
+    "派": {
+      "exampleWord": "갈래",
+      "exampleMeaning": "갈래"
+    },
+    "判": {
+      "exampleWord": "판단할",
+      "exampleMeaning": "판단할"
+    },
+    "篇": {
+      "exampleWord": "책",
+      "exampleMeaning": "책"
+    },
+    "閉": {
+      "exampleWord": "닫을",
+      "exampleMeaning": "닫을"
+    },
+    "胞": {
+      "exampleWord": "세포",
+      "exampleMeaning": "세포"
+    },
+    "爆": {
+      "exampleWord": "불터질",
+      "exampleMeaning": "불터질"
+    },
+    "標": {
+      "exampleWord": "표할",
+      "exampleMeaning": "표할"
+    },
+    "疲": {
+      "exampleWord": "피곤할",
+      "exampleMeaning": "피곤할"
+    },
+    "避": {
+      "exampleWord": "피할",
+      "exampleMeaning": "피할"
+    },
+    "閑": {
+      "exampleWord": "한가할",
+      "exampleMeaning": "한가할"
+    },
+    "恨": {
+      "exampleWord": "한",
+      "exampleMeaning": "한"
+    },
+    "抗": {
+      "exampleWord": "겨룰",
+      "exampleMeaning": "겨룰"
+    },
+    "核": {
+      "exampleWord": "씨",
+      "exampleMeaning": "씨"
+    },
+    "憲": {
+      "exampleWord": "법",
+      "exampleMeaning": "법"
+    },
+    "險": {
+      "exampleWord": "험할",
+      "exampleMeaning": "험할"
+    },
+    "革": {
+      "exampleWord": "가죽",
+      "exampleMeaning": "가죽"
+    },
+    "顯": {
+      "exampleWord": "나타날",
+      "exampleMeaning": "나타날"
+    },
+    "刑": {
+      "exampleWord": "형벌",
+      "exampleMeaning": "형벌"
+    },
+    "或": {
+      "exampleWord": "혹",
+      "exampleMeaning": "혹"
+    },
+    "婚": {
+      "exampleWord": "혼인할",
+      "exampleMeaning": "혼인할"
+    },
+    "混": {
+      "exampleWord": "섞을",
+      "exampleMeaning": "섞을"
+    },
+    "紅": {
+      "exampleWord": "붉을",
+      "exampleMeaning": "붉을"
+    },
+    "華": {
+      "exampleWord": "빛날",
+      "exampleMeaning": "빛날"
+    },
+    "歡": {
+      "exampleWord": "기쁠",
+      "exampleMeaning": "기쁠"
+    },
+    "況": {
+      "exampleWord": "상황",
+      "exampleMeaning": "상황"
+    },
+    "灰": {
+      "exampleWord": "재",
+      "exampleMeaning": "재"
+    },
+    "厚": {
+      "exampleWord": "두터울",
+      "exampleMeaning": "두터울"
+    },
+    "候": {
+      "exampleWord": "기후",
+      "exampleMeaning": "기후"
+    },
+    "揮": {
+      "exampleWord": "휘두를",
+      "exampleMeaning": "휘두를"
+    },
+    "喜": {
+      "exampleWord": "기쁠",
+      "exampleMeaning": "기쁠"
+    },
+    "假": {
+      "exampleWord": "거짓",
+      "exampleMeaning": "거짓"
+    },
+    "街": {
+      "exampleWord": "거리",
+      "exampleMeaning": "거리"
+    },
+    "監": {
+      "exampleWord": "볼",
+      "exampleMeaning": "볼"
+    },
+    "講": {
+      "exampleWord": "욀",
+      "exampleMeaning": "욀"
+    },
+    "個": {
+      "exampleWord": "낱",
+      "exampleMeaning": "낱"
+    },
+    "檢": {
+      "exampleWord": "검사할",
+      "exampleMeaning": "검사할"
+    },
+    "潔": {
+      "exampleWord": "깨끗할",
+      "exampleMeaning": "깨끗할"
+    },
+    "缺": {
+      "exampleWord": "이지러질",
+      "exampleMeaning": "이지러질"
+    },
+    "慶": {
+      "exampleWord": "경사",
+      "exampleMeaning": "경사"
+    },
+    "係": {
+      "exampleWord": "맬",
+      "exampleMeaning": "맬"
+    },
+    "故": {
+      "exampleWord": "연고",
+      "exampleMeaning": "연고"
+    },
+    "官": {
+      "exampleWord": "벼슬",
+      "exampleMeaning": "벼슬"
+    },
+    "句": {
+      "exampleWord": "글귀",
+      "exampleMeaning": "글귀"
+    },
+    "宮": {
+      "exampleWord": "집",
+      "exampleMeaning": "집"
+    },
+    "權": {
+      "exampleWord": "권세",
+      "exampleMeaning": "권세"
+    },
+    "極": {
+      "exampleWord": "다할",
+      "exampleMeaning": "다할"
+    },
+    "器": {
+      "exampleWord": "그릇",
+      "exampleMeaning": "그릇"
+    },
+    "起": {
+      "exampleWord": "일어날",
+      "exampleMeaning": "일어날"
+    },
+    "暖": {
+      "exampleWord": "따뜻할",
+      "exampleMeaning": "따뜻할"
+    },
+    "怒": {
+      "exampleWord": "성낼",
+      "exampleMeaning": "성낼"
+    },
+    "努": {
+      "exampleWord": "힘쓸",
+      "exampleMeaning": "힘쓸"
+    },
+    "斷": {
+      "exampleWord": "끊을",
+      "exampleMeaning": "끊을"
+    },
+    "單": {
+      "exampleWord": "홑",
+      "exampleMeaning": "홑"
+    },
+    "檀": {
+      "exampleWord": "박달나무",
+      "exampleMeaning": "박달나무"
+    },
+    "端": {
+      "exampleWord": "끝",
+      "exampleMeaning": "끝"
+    },
+    "擔": {
+      "exampleWord": "멜",
+      "exampleMeaning": "멜"
+    },
+    "黨": {
+      "exampleWord": "무리",
+      "exampleMeaning": "무리"
+    },
+    "帶": {
+      "exampleWord": "띠",
+      "exampleMeaning": "띠"
+    },
+    "隊": {
+      "exampleWord": "무리",
+      "exampleMeaning": "무리"
+    },
+    "導": {
+      "exampleWord": "인도할",
+      "exampleMeaning": "인도할"
+    },
+    "毒": {
+      "exampleWord": "독",
+      "exampleMeaning": "독"
+    },
+    "督": {
+      "exampleWord": "감독할",
+      "exampleMeaning": "감독할"
+    },
+    "銅": {
+      "exampleWord": "구리",
+      "exampleMeaning": "구리"
+    },
+    "斗": {
+      "exampleWord": "말",
+      "exampleMeaning": "말"
+    },
+    "豆": {
+      "exampleWord": "콩",
+      "exampleMeaning": "콩"
+    },
+    "得": {
+      "exampleWord": "얻을",
+      "exampleMeaning": "얻을"
+    },
+    "燈": {
+      "exampleWord": "등",
+      "exampleMeaning": "등"
+    },
+    "羅": {
+      "exampleWord": "벌릴",
+      "exampleMeaning": "벌릴"
+    },
+    "兩": {
+      "exampleWord": "두",
+      "exampleMeaning": "두"
+    },
+    "麗": {
+      "exampleWord": "고울",
+      "exampleMeaning": "고울"
+    },
+    "列": {
+      "exampleWord": "벌릴",
+      "exampleMeaning": "벌릴"
+    },
+    "錄": {
+      "exampleWord": "기록할",
+      "exampleMeaning": "기록할"
+    },
+    "留": {
+      "exampleWord": "머무를",
+      "exampleMeaning": "머무를"
+    },
+    "滿": {
+      "exampleWord": "찰",
+      "exampleMeaning": "찰"
+    },
+    "脈": {
+      "exampleWord": "줄기",
+      "exampleMeaning": "줄기"
+    },
+    "毛": {
+      "exampleWord": "터럭",
+      "exampleMeaning": "터럭"
+    },
+    "牧": {
+      "exampleWord": "칠",
+      "exampleMeaning": "칠"
+    },
+    "務": {
+      "exampleWord": "힘쓸",
+      "exampleMeaning": "힘쓸"
+    },
+    "武": {
+      "exampleWord": "호반",
+      "exampleMeaning": "호반"
+    },
+    "味": {
+      "exampleWord": "맛",
+      "exampleMeaning": "맛"
+    },
+    "密": {
+      "exampleWord": "빽빽할",
+      "exampleMeaning": "빽빽할"
+    },
+    "博": {
+      "exampleWord": "넓을",
+      "exampleMeaning": "넓을"
+    },
+    "房": {
+      "exampleWord": "방",
+      "exampleMeaning": "방"
+    },
+    "訪": {
+      "exampleWord": "찾을",
+      "exampleMeaning": "찾을"
+    },
+    "拜": {
+      "exampleWord": "절",
+      "exampleMeaning": "절"
+    },
+    "背": {
+      "exampleWord": "등",
+      "exampleMeaning": "등"
+    },
+    "配": {
+      "exampleWord": "나눌",
+      "exampleMeaning": "나눌"
+    },
+    "伐": {
+      "exampleWord": "칠",
+      "exampleMeaning": "칠"
+    },
+    "壁": {
+      "exampleWord": "벽",
+      "exampleMeaning": "벽"
+    },
+    "邊": {
+      "exampleWord": "가",
+      "exampleMeaning": "가"
+    },
+    "步": {
+      "exampleWord": "걸음",
+      "exampleMeaning": "걸음"
+    },
+    "寶": {
+      "exampleWord": "보배",
+      "exampleMeaning": "보배"
+    },
+    "復": {
+      "exampleWord": "회복할",
+      "exampleMeaning": "회복할"
+    },
+    "府": {
+      "exampleWord": "마을",
+      "exampleMeaning": "마을"
+    },
+    "富": {
+      "exampleWord": "부자",
+      "exampleMeaning": "부자"
+    },
+    "副": {
+      "exampleWord": "버금",
+      "exampleMeaning": "버금"
+    },
+    "婦": {
+      "exampleWord": "며느리",
+      "exampleMeaning": "며느리"
+    },
+    "佛": {
+      "exampleWord": "부처",
+      "exampleMeaning": "부처"
+    },
+    "飛": {
+      "exampleWord": "날",
+      "exampleMeaning": "날"
+    },
+    "非": {
+      "exampleWord": "아닐",
+      "exampleMeaning": "아닐"
+    },
+    "悲": {
+      "exampleWord": "슬플",
+      "exampleMeaning": "슬플"
+    },
+    "貧": {
+      "exampleWord": "가난할",
+      "exampleMeaning": "가난할"
+    },
+    "寺": {
+      "exampleWord": "절",
+      "exampleMeaning": "절"
+    },
+    "師": {
+      "exampleWord": "스승",
+      "exampleMeaning": "스승"
+    },
+    "謝": {
+      "exampleWord": "사례할",
+      "exampleMeaning": "사례할"
+    },
+    "舍": {
+      "exampleWord": "집",
+      "exampleMeaning": "집"
+    },
+    "殺": {
+      "exampleWord": "죽일",
+      "exampleMeaning": "죽일"
+    },
+    "常": {
+      "exampleWord": "떳떳할",
+      "exampleMeaning": "떳떳할"
+    },
+    "床": {
+      "exampleWord": "상",
+      "exampleMeaning": "상"
+    },
+    "想": {
+      "exampleWord": "생각",
+      "exampleMeaning": "생각"
+    },
+    "狀": {
+      "exampleWord": "형상",
+      "exampleMeaning": "형상"
+    },
+    "誠": {
+      "exampleWord": "정성",
+      "exampleMeaning": "정성"
+    },
+    "聲": {
+      "exampleWord": "소리",
+      "exampleMeaning": "소리"
+    },
+    "盛": {
+      "exampleWord": "성할",
+      "exampleMeaning": "성할"
+    },
+    "聖": {
+      "exampleWord": "성인",
+      "exampleMeaning": "성인"
+    },
+    "星": {
+      "exampleWord": "별",
+      "exampleMeaning": "별"
+    },
+    "勢": {
+      "exampleWord": "형세",
+      "exampleMeaning": "형세"
+    },
+    "稅": {
+      "exampleWord": "세금",
+      "exampleMeaning": "세금"
+    },
+    "細": {
+      "exampleWord": "가늘",
+      "exampleMeaning": "가늘"
+    },
+    "笑": {
+      "exampleWord": "웃음",
+      "exampleMeaning": "웃음"
+    },
+    "掃": {
+      "exampleWord": "쓸",
+      "exampleMeaning": "쓸"
+    },
+    "素": {
+      "exampleWord": "본디",
+      "exampleMeaning": "본디"
+    },
+    "俗": {
+      "exampleWord": "풍속",
+      "exampleMeaning": "풍속"
+    },
+    "送": {
+      "exampleWord": "보낼",
+      "exampleMeaning": "보낼"
+    },
+    "修": {
+      "exampleWord": "닦을",
+      "exampleMeaning": "닦을"
+    },
+    "受": {
+      "exampleWord": "받을",
+      "exampleMeaning": "받을"
+    },
+    "守": {
+      "exampleWord": "지킬",
+      "exampleMeaning": "지킬"
+    },
+    "授": {
+      "exampleWord": "줄",
+      "exampleMeaning": "줄"
+    },
+    "收": {
+      "exampleWord": "거둘",
+      "exampleMeaning": "거둘"
+    },
+    "純": {
+      "exampleWord": "순수할",
+      "exampleMeaning": "순수할"
+    },
+    "詩": {
+      "exampleWord": "시",
+      "exampleMeaning": "시"
+    },
+    "視": {
+      "exampleWord": "볼",
+      "exampleMeaning": "볼"
+    },
+    "施": {
+      "exampleWord": "베풀",
+      "exampleMeaning": "베풀"
+    },
+    "是": {
+      "exampleWord": "이",
+      "exampleMeaning": "이"
+    },
+    "息": {
+      "exampleWord": "쉴",
+      "exampleMeaning": "쉴"
+    },
+    "申": {
+      "exampleWord": "납",
+      "exampleMeaning": "납"
+    },
+    "深": {
+      "exampleWord": "깊을",
+      "exampleMeaning": "깊을"
+    },
+    "眼": {
+      "exampleWord": "눈",
+      "exampleMeaning": "눈"
+    },
+    "暗": {
+      "exampleWord": "어두울",
+      "exampleMeaning": "어두울"
+    },
+    "壓": {
+      "exampleWord": "누를",
+      "exampleMeaning": "누를"
+    },
+    "液": {
+      "exampleWord": "진",
+      "exampleMeaning": "진"
+    },
+    "羊": {
+      "exampleWord": "양",
+      "exampleMeaning": "양"
+    },
+    "餘": {
+      "exampleWord": "남을",
+      "exampleMeaning": "남을"
+    },
+    "如": {
+      "exampleWord": "같을",
+      "exampleMeaning": "같을"
+    },
+    "逆": {
+      "exampleWord": "거스릴",
+      "exampleMeaning": "거스릴"
+    },
+    "煙": {
+      "exampleWord": "연기",
+      "exampleMeaning": "연기"
+    },
+    "硏": {
+      "exampleWord": "갈",
+      "exampleMeaning": "갈"
+    },
+    "榮": {
+      "exampleWord": "영화",
+      "exampleMeaning": "영화"
+    },
+    "藝": {
+      "exampleWord": "재주",
+      "exampleMeaning": "재주"
+    },
+    "玉": {
+      "exampleWord": "구슬",
+      "exampleMeaning": "구슬"
+    },
+    "往": {
+      "exampleWord": "갈",
+      "exampleMeaning": "갈"
+    },
+    "謠": {
+      "exampleWord": "노래",
+      "exampleMeaning": "노래"
+    },
+    "容": {
+      "exampleWord": "얼굴",
+      "exampleMeaning": "얼굴"
+    },
+    "圓": {
+      "exampleWord": "둥글",
+      "exampleMeaning": "둥글"
+    },
+    "員": {
+      "exampleWord": "인원",
+      "exampleMeaning": "인원"
+    },
+    "衛": {
+      "exampleWord": "지킬",
+      "exampleMeaning": "지킬"
+    },
+    "爲": {
+      "exampleWord": "하",
+      "exampleMeaning": "하"
+    },
+    "肉": {
+      "exampleWord": "고기",
+      "exampleMeaning": "고기"
+    },
+    "恩": {
+      "exampleWord": "은혜",
+      "exampleMeaning": "은혜"
+    },
+    "陰": {
+      "exampleWord": "그늘",
+      "exampleMeaning": "그늘"
+    },
+    "應": {
+      "exampleWord": "응할",
+      "exampleMeaning": "응할"
+    },
+    "印": {
+      "exampleWord": "도장",
+      "exampleMeaning": "도장"
+    },
+    "引": {
+      "exampleWord": "끌",
+      "exampleMeaning": "끌"
+    },
+    "將": {
+      "exampleWord": "장수",
+      "exampleMeaning": "장수"
+    },
+    "障": {
+      "exampleWord": "막을",
+      "exampleMeaning": "막을"
+    },
+    "敵": {
+      "exampleWord": "대적할",
+      "exampleMeaning": "대적할"
+    },
+    "田": {
+      "exampleWord": "밭",
+      "exampleMeaning": "밭"
+    },
+    "絶": {
+      "exampleWord": "끊을",
+      "exampleMeaning": "끊을"
+    },
+    "接": {
+      "exampleWord": "이을",
+      "exampleMeaning": "이을"
+    },
+    "程": {
+      "exampleWord": "한도",
+      "exampleMeaning": "한도"
+    },
+    "精": {
+      "exampleWord": "정할",
+      "exampleMeaning": "정할"
+    },
+    "提": {
+      "exampleWord": "끌",
+      "exampleMeaning": "끌"
+    },
+    "制": {
+      "exampleWord": "절제할",
+      "exampleMeaning": "절제할"
+    },
+    "除": {
+      "exampleWord": "덜",
+      "exampleMeaning": "덜"
+    },
+    "祭": {
+      "exampleWord": "제사",
+      "exampleMeaning": "제사"
+    },
+    "鳥": {
+      "exampleWord": "새",
+      "exampleMeaning": "새"
+    },
+    "早": {
+      "exampleWord": "이를",
+      "exampleMeaning": "이를"
+    },
+    "尊": {
+      "exampleWord": "높을",
+      "exampleMeaning": "높을"
+    },
+    "宗": {
+      "exampleWord": "마루",
+      "exampleMeaning": "마루"
+    },
+    "走": {
+      "exampleWord": "달릴",
+      "exampleMeaning": "달릴"
+    },
+    "竹": {
+      "exampleWord": "대",
+      "exampleMeaning": "대"
+    },
+    "衆": {
+      "exampleWord": "무리",
+      "exampleMeaning": "무리"
+    },
+    "志": {
+      "exampleWord": "뜻",
+      "exampleMeaning": "뜻"
+    },
+    "指": {
+      "exampleWord": "가리킬",
+      "exampleMeaning": "가리킬"
+    },
+    "至": {
+      "exampleWord": "이를",
+      "exampleMeaning": "이를"
+    },
+    "職": {
+      "exampleWord": "직분",
+      "exampleMeaning": "직분"
+    },
+    "眞": {
+      "exampleWord": "참",
+      "exampleMeaning": "참"
+    },
+    "次": {
+      "exampleWord": "버금",
+      "exampleMeaning": "버금"
+    },
+    "創": {
+      "exampleWord": "비롯할",
+      "exampleMeaning": "비롯할"
+    },
+    "處": {
+      "exampleWord": "곳",
+      "exampleMeaning": "곳"
+    },
+    "請": {
+      "exampleWord": "청할",
+      "exampleMeaning": "청할"
+    },
+    "總": {
+      "exampleWord": "다",
+      "exampleMeaning": "다"
+    },
+    "銃": {
+      "exampleWord": "총",
+      "exampleMeaning": "총"
+    },
+    "蓄": {
+      "exampleWord": "모을",
+      "exampleMeaning": "모을"
+    },
+    "忠": {
+      "exampleWord": "충성",
+      "exampleMeaning": "충성"
+    },
+    "蟲": {
+      "exampleWord": "벌레",
+      "exampleMeaning": "벌레"
+    },
+    "取": {
+      "exampleWord": "가질",
+      "exampleMeaning": "가질"
+    },
+    "測": {
+      "exampleWord": "헤아릴",
+      "exampleMeaning": "헤아릴"
+    },
+    "齒": {
+      "exampleWord": "이",
+      "exampleMeaning": "이"
+    },
+    "侵": {
+      "exampleWord": "침노할",
+      "exampleMeaning": "침노할"
+    },
+    "快": {
+      "exampleWord": "쾌할",
+      "exampleMeaning": "쾌할"
+    },
+    "態": {
+      "exampleWord": "모습",
+      "exampleMeaning": "모습"
+    },
+    "波": {
+      "exampleWord": "물결",
+      "exampleMeaning": "물결"
+    },
+    "破": {
+      "exampleWord": "깨뜨릴",
+      "exampleMeaning": "깨뜨릴"
+    },
+    "砲": {
+      "exampleWord": "대포",
+      "exampleMeaning": "대포"
+    },
+    "包": {
+      "exampleWord": "쌀",
+      "exampleMeaning": "쌀"
+    },
+    "布": {
+      "exampleWord": "베",
+      "exampleMeaning": "베"
+    },
+    "暴": {
+      "exampleWord": "사나울",
+      "exampleMeaning": "사나울"
+    },
+    "票": {
+      "exampleWord": "표",
+      "exampleMeaning": "표"
+    },
+    "豊": {
+      "exampleWord": "풍년",
+      "exampleMeaning": "풍년"
+    },
+    "限": {
+      "exampleWord": "한할",
+      "exampleMeaning": "한할"
+    },
+    "解": {
+      "exampleWord": "풀",
+      "exampleMeaning": "풀"
+    },
+    "鄕": {
+      "exampleWord": "시골",
+      "exampleMeaning": "시골"
+    },
+    "香": {
+      "exampleWord": "향기",
+      "exampleMeaning": "향기"
+    },
+    "虛": {
+      "exampleWord": "빌",
+      "exampleMeaning": "빌"
+    },
+    "賢": {
+      "exampleWord": "어질",
+      "exampleMeaning": "어질"
+    },
+    "血": {
+      "exampleWord": "피",
+      "exampleMeaning": "피"
+    },
+    "協": {
+      "exampleWord": "화할",
+      "exampleMeaning": "화할"
+    },
+    "惠": {
+      "exampleWord": "은혜",
+      "exampleMeaning": "은혜"
+    },
+    "好": {
+      "exampleWord": "좋을",
+      "exampleMeaning": "좋을"
+    },
+    "戶": {
+      "exampleWord": "집",
+      "exampleMeaning": "집"
+    },
+    "呼": {
+      "exampleWord": "부를",
+      "exampleMeaning": "부를"
+    },
+    "貨": {
+      "exampleWord": "재물",
+      "exampleMeaning": "재물"
+    },
+    "回": {
+      "exampleWord": "돌아올",
+      "exampleMeaning": "돌아올"
+    },
+    "吸": {
+      "exampleWord": "마실",
+      "exampleMeaning": "마실"
+    },
+    "興": {
+      "exampleWord": "일",
+      "exampleMeaning": "일"
+    },
+    "希": {
+      "exampleWord": "바랄",
+      "exampleMeaning": "바랄"
     }
   }
 }

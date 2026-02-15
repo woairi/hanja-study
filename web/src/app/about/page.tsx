@@ -81,6 +81,21 @@ export default function AboutPage() {
             </button>
           </div>
 
+          <div className="mt-3 rounded-2xl bg-white/70 px-3 py-2 text-sm">
+            <div className="font-extrabold">요약</div>
+            <div className="mt-1" style={{ color: 'var(--muted)' }}>
+              홈 메인 클릭: <span className="font-extrabold">{tel.counts.home_primary_click || 0}</span> · 학습 완료:{' '}
+              <span className="font-extrabold">{tel.counts.study_done || 0}</span> · 퀴즈 완료:{' '}
+              <span className="font-extrabold">{tel.counts.quiz_done || 0}</span>
+            </div>
+            <div className="mt-1" style={{ color: 'var(--muted)' }}>
+              퀴즈 완료/학습 완료: <span className="font-extrabold">
+                {tel.counts.study_done ? Math.round(((tel.counts.quiz_done || 0) / tel.counts.study_done) * 100) : 0}%
+              </span>
+              {' '}· 틀린 것만 다시 클릭: <span className="font-extrabold">{tel.counts.quiz_retry_click || 0}</span>
+            </div>
+          </div>
+
           <div className="mt-3 space-y-2 text-sm">
             {Object.keys(tel.counts).length === 0 && <div style={{ color: 'var(--muted)' }}>아직 기록이 없어.</div>}
 
