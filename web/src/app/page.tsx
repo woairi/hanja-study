@@ -20,12 +20,28 @@ export default function HomePage() {
   const [badgeModal, setBadgeModal] = useState<Badge | null>(null);
   const [lastSession, setLastSession] = useState<LastSession | null>(null);
 
+  // collapsibles (progressive disclosure)
+  const [showGrades, setShowGrades] = useState(false);
+  const [showGoals, setShowGoals] = useState(false);
+
   useEffect(() => {
     const st = loadState();
     setDailyCount(st.settings.dailyCount);
     setLastGrade((st.settings.lastGradeLabel as GradeLabel) || '8급');
     setStreak(st.streak);
     setLastSession(loadLastSession());
+
+    // restore collapsible prefs
+    try {
+      const raw = window.localStorage.getItem('hanja-study:home:ui');
+      if (raw) {
+        const ui = JSON.parse(raw) as { showGrades?: boolean; showGoals?: boolean };
+        setShowGrades(!!ui.showGrades);
+        setShowGoals(!!ui.showGoals);
+      }
+    } catch {
+      // ignore
+    }
   }, []);
 
   useEffect(() => {
@@ -34,6 +50,14 @@ export default function HomePage() {
     st.settings.lastGradeLabel = lastGrade;
     saveState(st);
   }, [dailyCount, lastGrade]);
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem('hanja-study:home:ui', JSON.stringify({ showGrades, showGoals }));
+    } catch {
+      // ignore
+    }
+  }, [showGrades, showGoals]);
 
   const gradeSummaries = useMemo(() => {
     const st = loadState();
@@ -87,130 +111,191 @@ export default function HomePage() {
     quiz50: '퀴즈 50문제 돌파! 실력이 쑥쑥.',
   };
 
+  const primary = useMemo(() => {
+    // Primary CTA: resume if exists, else review if due, else learn.
+    if (lastSession) {
+      return {
+        kind: 'resume' as const,
+        title: '이어하기',
+        subtitle: `${lastSession.gradeLabel} · ${lastSession.mode === 'study' ? '학습' : '퀴즈'}`,
+        href: '/resume',
+        cta: '계속',
+      };
+    }
+    if (reviewInfo.totalDue > 0) {
+      return {
+        kind: 'review' as const,
+        title: '복습 먼저 하기',
+        subtitle: `복습 ${reviewInfo.totalDue}개 · ${reviewInfo.target}`,
+        href: reviewInfo.href,
+        cta: '복습',
+      };
+    }
+    return {
+      kind: 'learn' as const,
+      title: '오늘의 새 한자',
+      subtitle: `${lastGrade} · ${dailyCount}자`,
+      href: `/study?grade=${encodeURIComponent(lastGrade)}&n=${dailyCount}`,
+      cta: '시작',
+    };
+  }, [lastSession, reviewInfo.totalDue, reviewInfo.target, reviewInfo.href, lastGrade, dailyCount]);
+
+  // Secondary CTAs: keep at most 2
+  const secondary = useMemo(() => {
+    const learn = {
+      title: '새 한자',
+      subtitle: `${lastGrade} · ${dailyCount}자`,
+      href: `/study?grade=${encodeURIComponent(lastGrade)}&n=${dailyCount}`,
+      icon: '📚',
+      disabled: false,
+    };
+    const review = {
+      title: '복습',
+      subtitle: reviewInfo.totalDue > 0 ? `${Math.min(10, dailyCount)}개까지 · ${reviewInfo.target}` : '대기 없음',
+      href: reviewInfo.totalDue > 0 ? reviewInfo.href : '#',
+      icon: '🔁',
+      disabled: reviewInfo.totalDue <= 0,
+    };
+
+    // if primary is review, show learn as main secondary; otherwise show review.
+    if (primary.kind === 'review') return [learn];
+    if (primary.kind === 'learn') return [review];
+    // resume: show both
+    return [learn, review];
+  }, [primary.kind, lastGrade, dailyCount, reviewInfo.totalDue, reviewInfo.target, reviewInfo.href]);
+
   return (
     <main className="mx-auto max-w-md p-4">
-      <header className="mb-4">
+      {/* Header */}
+      <header className="mb-3">
         <div className="flex items-end justify-between">
           <h1 className="text-2xl font-extrabold tracking-tight">한자 공부</h1>
           <Dino className="text-2xl" />
         </div>
-        <p className="text-sm" style={{ color: 'var(--muted)' }}>
-          어문회 8급~4급 · 키즈 모드
-        </p>
+        <div className="mt-1 flex items-center justify-between gap-3">
+          <div className="text-xs" style={{ color: 'var(--muted)' }}>
+            🔥 {streak.count}일 · 🎯 {dailyCount}자 · 🔁 {reviewInfo.totalDue}개
+          </div>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              className="btn btn-ghost focus-ring px-3 py-2 text-xs"
+              onClick={() => setShowGoals((v) => !v)}
+            >
+              목표/뱃지 {showGoals ? '▴' : '▾'}
+            </button>
+            <button
+              type="button"
+              className="btn btn-ghost focus-ring px-3 py-2 text-xs"
+              onClick={() => setShowGrades((v) => !v)}
+            >
+              급수 {showGrades ? '▴' : '▾'}
+            </button>
+          </div>
+        </div>
       </header>
 
-      {lastSession && (
+      {/* Primary CTA (Hero) */}
+      <section className="card mb-3 p-4">
+        <div className="flex items-center justify-between gap-4">
+          <div>
+            <div className="text-sm font-extrabold" style={{ color: 'var(--muted)' }}>
+              {primary.title}
+            </div>
+            <div className="mt-1 text-base font-extrabold">{primary.subtitle}</div>
+            <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
+              {primary.kind === 'resume'
+                ? '(바로 이어서 계속)'
+                : primary.kind === 'review'
+                  ? '복습부터 하면 기억이 더 잘 남아.'
+                  : '오늘 분량만 딱 끝내자.'}
+            </div>
+          </div>
+          <Link className="btn btn-primary focus-ring inline-flex items-center justify-center" href={primary.href}>
+            {primary.cta}
+          </Link>
+        </div>
+      </section>
+
+      {/* Today actions (Secondary) */}
+      <section className="mb-3 grid grid-cols-2 gap-3">
+        {secondary.map((a) => (
+          <Link
+            key={a.title}
+            href={a.disabled ? '#' : a.href}
+            onClick={(e) => {
+              if (a.disabled) e.preventDefault();
+            }}
+            aria-disabled={a.disabled}
+            className={`card p-3 ${a.disabled ? 'opacity-60' : 'active:scale-[0.99]'}`}
+          >
+            <div className="text-lg" aria-hidden>
+              {a.icon}
+            </div>
+            <div className="mt-1 text-sm font-extrabold">{a.title}</div>
+            <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
+              {a.subtitle}
+            </div>
+          </Link>
+        ))}
+      </section>
+
+      {/* Collapsible: goals/badges */}
+      {showGoals && (
         <section className="card mb-3 p-4">
           <div className="flex items-center justify-between">
             <div>
               <div className="text-sm" style={{ color: 'var(--muted)' }}>
-                이어하기
+                오늘 목표
               </div>
-              <div className="text-base font-extrabold">
-                {lastSession.gradeLabel} · {lastSession.mode === 'study' ? '학습' : '퀴즈'}
-              </div>
+              <div className="text-lg font-extrabold">{dailyCount}자</div>
             </div>
-            <Link className="btn btn-primary focus-ring inline-flex items-center justify-center" href="/resume">
-              이어하기
-            </Link>
+            <select
+              className="focus-ring rounded-2xl border-2 px-3 py-2 font-extrabold"
+              style={{ borderColor: 'rgba(2,132,199,0.18)', background: 'rgba(255,255,255,0.8)' }}
+              value={dailyCount}
+              onChange={(e) => setDailyCount(Number(e.target.value) as 5 | 10 | 15)}
+            >
+              <option value={5}>5자</option>
+              <option value={10}>10자</option>
+              <option value={15}>15자</option>
+            </select>
           </div>
-          <div className="mt-2 text-xs" style={{ color: 'var(--muted)' }}>
-            (MVP) 이 기기에서만 이어할 수 있어.
+
+          <div className="mt-3 text-sm">
+            <span className="font-bold">연속 학습:</span> {streak.count}일
+          </div>
+
+          <div className="mt-3 flex flex-wrap gap-2">
+            {badges.map((b) => (
+              <StickerBadge key={b.id} badge={b} onClick={(bb) => setBadgeModal(bb)} />
+            ))}
           </div>
         </section>
       )}
 
-      <section className="card mb-3 p-4">
-        <div className="flex items-center justify-between">
-          <div>
-            <div className="text-sm" style={{ color: 'var(--muted)' }}>
-              오늘의 학습
-            </div>
-            <div className="text-base font-extrabold">{lastGrade} · {dailyCount}자</div>
+      {/* Collapsible: grades */}
+      {showGrades && (
+        <section className="card mb-3 p-4">
+          <div className="text-sm font-extrabold" style={{ color: 'var(--muted)' }}>
+            급수 선택
           </div>
-          <Link
-            className="btn btn-primary focus-ring inline-flex items-center justify-center"
-            href={`/study?grade=${encodeURIComponent(lastGrade)}&n=${dailyCount}`}
-          >
-            시작!
-          </Link>
-        </div>
-        <div className="mt-2 text-xs" style={{ color: 'var(--muted)' }}>
-          마지막으로 선택한 급수로 바로 시작해.
-        </div>
-      </section>
-
-      <section className="card mb-4 p-4">
-        <div className="flex items-center justify-between">
-          <div>
-            <div className="text-sm" style={{ color: 'var(--muted)' }}>
-              오늘의 복습
-            </div>
-            <div className="text-base font-extrabold">
-              복습 대기 {reviewInfo.totalDue}개{reviewInfo.totalDue > 0 ? ` · ${reviewInfo.target}` : ''}
-            </div>
+          <div className="mt-3 grid grid-cols-2 gap-3">
+            {gradeSummaries.map(({ label, total, mastered }) => (
+              <GradeCard
+                key={label}
+                label={label as GradeLabel}
+                total={total}
+                mastered={mastered}
+                dailyCount={dailyCount}
+                onPickGrade={(g) => setLastGrade(g)}
+              />
+            ))}
           </div>
-          <Link
-            className={`btn btn-primary focus-ring inline-flex items-center justify-center ${reviewInfo.totalDue > 0 ? '' : 'opacity-70'}`}
-            href={reviewInfo.totalDue > 0 ? reviewInfo.href : '#'}
-            onClick={(e) => {
-              if (reviewInfo.totalDue <= 0) {
-                e.preventDefault();
-              }
-            }}
-            aria-disabled={reviewInfo.totalDue <= 0}
-          >
-            복습!
-          </Link>
-        </div>
-        <div className="mt-2 text-xs" style={{ color: 'var(--muted)' }}>
-          복습 대기(due)만 빠르게 풀어.
-        </div>
-      </section>
+        </section>
+      )}
 
-      <section className="card mb-4 p-4">
-        <div className="flex items-center justify-between">
-          <div>
-            <div className="text-sm" style={{ color: 'var(--muted)' }}>오늘 목표</div>
-            <div className="text-lg font-extrabold">{dailyCount}자</div>
-          </div>
-          <select
-            className="focus-ring rounded-2xl border-2 px-3 py-2 font-extrabold"
-            style={{ borderColor: 'rgba(2,132,199,0.18)', background: 'rgba(255,255,255,0.8)' }}
-            value={dailyCount}
-            onChange={(e) => setDailyCount(Number(e.target.value) as 5 | 10 | 15)}
-          >
-            <option value={5}>5자</option>
-            <option value={10}>10자</option>
-            <option value={15}>15자</option>
-          </select>
-        </div>
-
-        <div className="mt-3 text-sm">
-          <span className="font-bold">연속 학습:</span> {streak.count}일
-        </div>
-
-        <div className="mt-3 flex flex-wrap gap-2">
-          {badges.map((b) => (
-            <StickerBadge key={b.id} badge={b} onClick={(bb) => setBadgeModal(bb)} />
-          ))}
-        </div>
-      </section>
-
-      <section className="grid grid-cols-2 gap-3">
-        {gradeSummaries.map(({ label, total, mastered }) => (
-          <GradeCard
-            key={label}
-            label={label as GradeLabel}
-            total={total}
-            mastered={mastered}
-            dailyCount={dailyCount}
-            onPickGrade={(g) => setLastGrade(g)}
-          />
-        ))}
-      </section>
-
-      <div className="mt-6 flex justify-between text-sm">
+      <div className="mt-4 flex justify-between text-sm">
         <Link className="text-blue-700 underline" href="/progress">
           진도 보기
         </Link>
@@ -272,7 +357,10 @@ function GradeCard(props: {
         마스터 {mastered}/{total}
       </div>
       <div className="mt-2 h-2 w-full rounded bg-gray-200">
-        <div className="h-2 rounded" style={{ width: `${pct}%`, background: 'linear-gradient(180deg, var(--primary), var(--primary-600))' }} />
+        <div
+          className="h-2 rounded"
+          style={{ width: `${pct}%`, background: 'linear-gradient(180deg, var(--primary), var(--primary-600))' }}
+        />
       </div>
     </Link>
   );
