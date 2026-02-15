@@ -8,7 +8,9 @@
     "meaning": "학교",
     "radical": "木",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "敎"
+    ]
   },
   {
     "id": "8급-002",
@@ -19,7 +21,9 @@
     "meaning": "가르칠",
     "radical": "攴",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "校"
+    ]
   },
   {
     "id": "8급-003",
@@ -250,7 +254,9 @@
     "meaning": "석",
     "radical": "一",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "七"
+    ]
   },
   {
     "id": "8급-024",
@@ -283,7 +289,9 @@
     "meaning": "먼저",
     "radical": "儿",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "兄"
+    ]
   },
   {
     "id": "8급-027",
@@ -404,7 +412,9 @@
     "meaning": "한",
     "radical": "一",
     "totalStrokes": 1,
-    "confusables": []
+    "confusables": [
+      "日"
+    ]
   },
   {
     "id": "8급-038",
@@ -415,7 +425,9 @@
     "meaning": "날",
     "radical": "日",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "一"
+    ]
   },
   {
     "id": "8급-039",
@@ -481,7 +493,10 @@
     "meaning": "일곱",
     "radical": "一",
     "totalStrokes": 2,
-    "confusables": []
+    "confusables": [
+      "三",
+      "一"
+    ]
   },
   {
     "id": "8급-045",
@@ -536,7 +551,9 @@
     "meaning": "형",
     "radical": "儿",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "先"
+    ]
   },
   {
     "id": "8급-050",
@@ -591,7 +608,10 @@
     "meaning": "한가지",
     "radical": "口",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "冬",
+      "洞"
+    ]
   },
   {
     "id": "7급-005",
@@ -602,7 +622,10 @@
     "meaning": "골",
     "radical": "水",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "同",
+      "冬"
+    ]
   },
   {
     "id": "7급-006",
@@ -613,7 +636,10 @@
     "meaning": "겨울",
     "radical": "冫",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "同",
+      "洞"
+    ]
   },
   {
     "id": "7급-007",
@@ -635,7 +661,10 @@
     "meaning": "올",
     "radical": "人",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "住",
+      "便"
+    ]
   },
   {
     "id": "7급-009",
@@ -668,7 +697,9 @@
     "meaning": "수풀",
     "radical": "木",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "村"
+    ]
   },
   {
     "id": "7급-012",
@@ -701,7 +732,9 @@
     "meaning": "글월",
     "radical": "文",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "問"
+    ]
   },
   {
     "id": "7급-015",
@@ -712,7 +745,9 @@
     "meaning": "물을",
     "radical": "口",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "文"
+    ]
   },
   {
     "id": "7급-016",
@@ -734,7 +769,9 @@
     "meaning": "지아비",
     "radical": "大",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "天"
+    ]
   },
   {
     "id": "7급-018",
@@ -778,7 +815,9 @@
     "meaning": "적을",
     "radical": "小",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "所"
+    ]
   },
   {
     "id": "7급-022",
@@ -789,7 +828,9 @@
     "meaning": "바",
     "radical": "戶",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "少"
+    ]
   },
   {
     "id": "7급-023",
@@ -921,7 +962,9 @@
     "meaning": "살",
     "radical": "人",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "主"
+    ]
   },
   {
     "id": "7급-035",
@@ -932,7 +975,9 @@
     "meaning": "임금",
     "radical": "丶",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "住"
+    ]
   },
   {
     "id": "7급-036",
@@ -954,7 +999,9 @@
     "meaning": "종이",
     "radical": "糸",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "地"
+    ]
   },
   {
     "id": "7급-038",
@@ -965,7 +1012,9 @@
     "meaning": "따",
     "radical": "土",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "紙"
+    ]
   },
   {
     "id": "7급-039",
@@ -976,7 +1025,10 @@
     "meaning": "일천",
     "radical": "十",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "川",
+      "天"
+    ]
   },
   {
     "id": "7급-040",
@@ -987,7 +1039,10 @@
     "meaning": "하늘",
     "radical": "大",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "千",
+      "川"
+    ]
   },
   {
     "id": "7급-041",
@@ -998,7 +1053,10 @@
     "meaning": "내",
     "radical": "巛",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "千",
+      "天"
+    ]
   },
   {
     "id": "7급-042",
@@ -1020,7 +1078,9 @@
     "meaning": "마을",
     "radical": "木",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "林"
+    ]
   },
   {
     "id": "7급-044",
@@ -1064,7 +1124,9 @@
     "meaning": "편할",
     "radical": "人",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "來"
+    ]
   },
   {
     "id": "7급-048",
@@ -1097,7 +1159,9 @@
     "meaning": "쉴",
     "radical": "人",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "住"
+    ]
   },
   {
     "id": "7급Ⅱ-001",
@@ -1152,7 +1216,9 @@
     "meaning": "장인",
     "radical": "工",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "空"
+    ]
   },
   {
     "id": "7급Ⅱ-006",
@@ -1163,7 +1229,9 @@
     "meaning": "빌",
     "radical": "穴",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "工"
+    ]
   },
   {
     "id": "7급Ⅱ-007",
@@ -1174,7 +1242,9 @@
     "meaning": "기운",
     "radical": "气",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "記"
+    ]
   },
   {
     "id": "7급Ⅱ-008",
@@ -1185,7 +1255,9 @@
     "meaning": "기록할",
     "radical": "言",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "氣"
+    ]
   },
   {
     "id": "7급Ⅱ-009",
@@ -1295,7 +1367,9 @@
     "meaning": "이름",
     "radical": "口",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "右"
+    ]
   },
   {
     "id": "7급Ⅱ-019",
@@ -1328,7 +1402,11 @@
     "meaning": "아닐",
     "radical": "一",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "上",
+      "世",
+      "下"
+    ]
   },
   {
     "id": "7급Ⅱ-022",
@@ -1350,7 +1428,10 @@
     "meaning": "윗",
     "radical": "一",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "下",
+      "不"
+    ]
   },
   {
     "id": "7급Ⅱ-024",
@@ -1372,7 +1453,9 @@
     "meaning": "인간",
     "radical": "一",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "不"
+    ]
   },
   {
     "id": "7급Ⅱ-026",
@@ -1394,7 +1477,9 @@
     "meaning": "때",
     "radical": "日",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "市"
+    ]
   },
   {
     "id": "7급Ⅱ-028",
@@ -1405,7 +1490,9 @@
     "meaning": "저자",
     "radical": "巾",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "時"
+    ]
   },
   {
     "id": "7급Ⅱ-029",
@@ -1449,7 +1536,9 @@
     "meaning": "오를",
     "radical": "口",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "名"
+    ]
   },
   {
     "id": "7급Ⅱ-033",
@@ -1460,7 +1549,9 @@
     "meaning": "아들",
     "radical": "子",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "自"
+    ]
   },
   {
     "id": "7급Ⅱ-034",
@@ -1471,7 +1562,9 @@
     "meaning": "스스로",
     "radical": "自",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "子"
+    ]
   },
   {
     "id": "7급Ⅱ-035",
@@ -1493,7 +1586,10 @@
     "meaning": "번개",
     "radical": "雨",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "前",
+      "全"
+    ]
   },
   {
     "id": "7급Ⅱ-037",
@@ -1504,7 +1600,10 @@
     "meaning": "앞",
     "radical": "刀",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "電",
+      "全"
+    ]
   },
   {
     "id": "7급Ⅱ-038",
@@ -1515,7 +1614,10 @@
     "meaning": "온전",
     "radical": "入",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "電",
+      "前"
+    ]
   },
   {
     "id": "7급Ⅱ-039",
@@ -1581,7 +1683,10 @@
     "meaning": "아래",
     "radical": "一",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "上",
+      "不"
+    ]
   },
   {
     "id": "7급Ⅱ-045",
@@ -1603,7 +1708,9 @@
     "meaning": "바다",
     "radical": "水",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "活"
+    ]
   },
   {
     "id": "7급Ⅱ-047",
@@ -1625,7 +1732,9 @@
     "meaning": "살",
     "radical": "水",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "海"
+    ]
   },
   {
     "id": "7급Ⅱ-049",
@@ -1658,7 +1767,9 @@
     "meaning": "느낄",
     "radical": "心",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "愛"
+    ]
   },
   {
     "id": "6급-002",
@@ -1702,7 +1813,9 @@
     "meaning": "예",
     "radical": "口",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "苦"
+    ]
   },
   {
     "id": "6급-006",
@@ -1713,7 +1826,9 @@
     "meaning": "쓸[味覺]",
     "radical": "艸",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "古"
+    ]
   },
   {
     "id": "6급-007",
@@ -1757,7 +1872,9 @@
     "meaning": "뿌리",
     "radical": "木",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "近"
+    ]
   },
   {
     "id": "6급-011",
@@ -1768,7 +1885,9 @@
     "meaning": "가까울",
     "radical": "辵",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "根"
+    ]
   },
   {
     "id": "6급-012",
@@ -1834,7 +1953,9 @@
     "meaning": "법식",
     "radical": "人",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "禮"
+    ]
   },
   {
     "id": "6급-018",
@@ -1845,7 +1966,9 @@
     "meaning": "예도",
     "radical": "示",
     "totalStrokes": 18,
-    "confusables": []
+    "confusables": [
+      "例"
+    ]
   },
   {
     "id": "6급-019",
@@ -1878,7 +2001,9 @@
     "meaning": "오얏",
     "radical": "木",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "朴"
+    ]
   },
   {
     "id": "6급-022",
@@ -1900,7 +2025,9 @@
     "meaning": "아름다울",
     "radical": "羊",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "米"
+    ]
   },
   {
     "id": "6급-024",
@@ -1911,7 +2038,9 @@
     "meaning": "쌀",
     "radical": "米",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "美"
+    ]
   },
   {
     "id": "6급-025",
@@ -1922,7 +2051,10 @@
     "meaning": "성(姓)",
     "radical": "木",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "李",
+      "本"
+    ]
   },
   {
     "id": "6급-026",
@@ -1933,7 +2065,9 @@
     "meaning": "차례",
     "radical": "田",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "畫"
+    ]
   },
   {
     "id": "6급-027",
@@ -1977,7 +2111,9 @@
     "meaning": "근본",
     "radical": "木",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "朴"
+    ]
   },
   {
     "id": "6급-031",
@@ -1988,7 +2124,9 @@
     "meaning": "하여금",
     "radical": "人",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "死"
+    ]
   },
   {
     "id": "6급-032",
@@ -1999,7 +2137,9 @@
     "meaning": "죽을",
     "radical": "歹",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "使"
+    ]
   },
   {
     "id": "6급-033",
@@ -2010,7 +2150,9 @@
     "meaning": "자리",
     "radical": "巾",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "石"
+    ]
   },
   {
     "id": "6급-034",
@@ -2021,7 +2163,9 @@
     "meaning": "돌",
     "radical": "石",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "席"
+    ]
   },
   {
     "id": "6급-035",
@@ -2032,7 +2176,9 @@
     "meaning": "빠를",
     "radical": "辵",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "通"
+    ]
   },
   {
     "id": "6급-036",
@@ -2098,7 +2244,9 @@
     "meaning": "잃을",
     "radical": "大",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "太"
+    ]
   },
   {
     "id": "6급-042",
@@ -2109,7 +2257,9 @@
     "meaning": "사랑",
     "radical": "心",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "感"
+    ]
   },
   {
     "id": "6급-043",
@@ -2120,7 +2270,9 @@
     "meaning": "밤",
     "radical": "夕",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "野"
+    ]
   },
   {
     "id": "6급-044",
@@ -2131,7 +2283,9 @@
     "meaning": "들[坪]",
     "radical": "里",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "夜"
+    ]
   },
   {
     "id": "6급-045",
@@ -2142,7 +2296,9 @@
     "meaning": "볕",
     "radical": "阜",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "洋"
+    ]
   },
   {
     "id": "6급-046",
@@ -2153,7 +2309,9 @@
     "meaning": "큰바다",
     "radical": "水",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "陽"
+    ]
   },
   {
     "id": "6급-047",
@@ -2175,7 +2333,9 @@
     "meaning": "꽃부리",
     "radical": "艸",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "永"
+    ]
   },
   {
     "id": "6급-049",
@@ -2186,7 +2346,9 @@
     "meaning": "길",
     "radical": "水",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "英"
+    ]
   },
   {
     "id": "6급-050",
@@ -2208,7 +2370,9 @@
     "meaning": "동산",
     "radical": "囗",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "遠"
+    ]
   },
   {
     "id": "6급-052",
@@ -2219,7 +2383,9 @@
     "meaning": "멀",
     "radical": "辵",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "園"
+    ]
   },
   {
     "id": "6급-053",
@@ -2230,7 +2396,9 @@
     "meaning": "말미암을",
     "radical": "田",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "油"
+    ]
   },
   {
     "id": "6급-054",
@@ -2241,7 +2409,9 @@
     "meaning": "기름",
     "radical": "水",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "由"
+    ]
   },
   {
     "id": "6급-055",
@@ -2263,7 +2433,9 @@
     "meaning": "의원",
     "radical": "酉",
     "totalStrokes": 18,
-    "confusables": []
+    "confusables": [
+      "衣"
+    ]
   },
   {
     "id": "6급-057",
@@ -2274,7 +2446,9 @@
     "meaning": "옷",
     "radical": "衣",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "醫"
+    ]
   },
   {
     "id": "6급-058",
@@ -2373,7 +2547,9 @@
     "meaning": "클",
     "radical": "大",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "失"
+    ]
   },
   {
     "id": "6급-067",
@@ -2384,7 +2560,9 @@
     "meaning": "통할",
     "radical": "辵",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "速"
+    ]
   },
   {
     "id": "6급-068",
@@ -2406,7 +2584,10 @@
     "meaning": "합할",
     "radical": "口",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "向",
+      "古"
+    ]
   },
   {
     "id": "6급-070",
@@ -2428,7 +2609,10 @@
     "meaning": "향할",
     "radical": "口",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "合",
+      "古"
+    ]
   },
   {
     "id": "6급-072",
@@ -2450,7 +2634,9 @@
     "meaning": "그림",
     "radical": "田",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "番"
+    ]
   },
   {
     "id": "6급-074",
@@ -2483,7 +2669,9 @@
     "meaning": "각각",
     "radical": "口",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "角"
+    ]
   },
   {
     "id": "6급Ⅱ-002",
@@ -2494,7 +2682,9 @@
     "meaning": "뿔",
     "radical": "角",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "各"
+    ]
   },
   {
     "id": "6급Ⅱ-003",
@@ -2505,7 +2695,9 @@
     "meaning": "지경",
     "radical": "田",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "計"
+    ]
   },
   {
     "id": "6급Ⅱ-004",
@@ -2516,7 +2708,9 @@
     "meaning": "셀",
     "radical": "言",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "界"
+    ]
   },
   {
     "id": "6급Ⅱ-005",
@@ -2538,7 +2732,10 @@
     "meaning": "공평할",
     "radical": "八",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "共",
+      "功"
+    ]
   },
   {
     "id": "6급Ⅱ-007",
@@ -2549,7 +2746,10 @@
     "meaning": "한가지",
     "radical": "八",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "公",
+      "功"
+    ]
   },
   {
     "id": "6급Ⅱ-008",
@@ -2560,7 +2760,10 @@
     "meaning": "공[勳]",
     "radical": "力",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "公",
+      "共"
+    ]
   },
   {
     "id": "6급Ⅱ-009",
@@ -2571,7 +2774,9 @@
     "meaning": "실과",
     "radical": "木",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "科"
+    ]
   },
   {
     "id": "6급Ⅱ-010",
@@ -2582,7 +2787,9 @@
     "meaning": "과목",
     "radical": "禾",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "果"
+    ]
   },
   {
     "id": "6급Ⅱ-011",
@@ -2604,7 +2811,11 @@
     "meaning": "공",
     "radical": "玉",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "理",
+      "現",
+      "班"
+    ]
   },
   {
     "id": "6급Ⅱ-013",
@@ -2615,7 +2826,9 @@
     "meaning": "이제",
     "radical": "人",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "代"
+    ]
   },
   {
     "id": "6급Ⅱ-014",
@@ -2659,7 +2872,9 @@
     "meaning": "대신할",
     "radical": "人",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "對"
+    ]
   },
   {
     "id": "6급Ⅱ-018",
@@ -2670,7 +2885,9 @@
     "meaning": "대할",
     "radical": "寸",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "代"
+    ]
   },
   {
     "id": "6급Ⅱ-019",
@@ -2714,7 +2931,9 @@
     "meaning": "무리",
     "radical": "竹",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "第"
+    ]
   },
   {
     "id": "6급Ⅱ-023",
@@ -2736,7 +2955,9 @@
     "meaning": "이할",
     "radical": "刀",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "理"
+    ]
   },
   {
     "id": "6급Ⅱ-025",
@@ -2747,7 +2968,9 @@
     "meaning": "다스릴",
     "radical": "玉",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "利"
+    ]
   },
   {
     "id": "6급Ⅱ-026",
@@ -2758,7 +2981,9 @@
     "meaning": "밝을",
     "radical": "日",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "昨"
+    ]
   },
   {
     "id": "6급Ⅱ-027",
@@ -2780,7 +3005,10 @@
     "meaning": "반(半)",
     "radical": "十",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "反",
+      "班"
+    ]
   },
   {
     "id": "6급Ⅱ-029",
@@ -2791,7 +3019,10 @@
     "meaning": "돌이킬",
     "radical": "又",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "半",
+      "班"
+    ]
   },
   {
     "id": "6급Ⅱ-030",
@@ -2802,7 +3033,10 @@
     "meaning": "나눌",
     "radical": "玉",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "半",
+      "反"
+    ]
   },
   {
     "id": "6급Ⅱ-031",
@@ -2901,7 +3135,9 @@
     "meaning": "이룰",
     "radical": "戈",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "省"
+    ]
   },
   {
     "id": "6급Ⅱ-040",
@@ -2912,7 +3148,9 @@
     "meaning": "살필",
     "radical": "目",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "成"
+    ]
   },
   {
     "id": "6급Ⅱ-041",
@@ -2923,7 +3161,9 @@
     "meaning": "사라질",
     "radical": "水",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "淸"
+    ]
   },
   {
     "id": "6급Ⅱ-042",
@@ -2956,7 +3196,11 @@
     "meaning": "몸",
     "radical": "身",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "神",
+      "信",
+      "新"
+    ]
   },
   {
     "id": "6급Ⅱ-045",
@@ -2967,7 +3211,11 @@
     "meaning": "귀신",
     "radical": "示",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "信",
+      "身",
+      "新"
+    ]
   },
   {
     "id": "6급Ⅱ-046",
@@ -2978,7 +3226,11 @@
     "meaning": "믿을",
     "radical": "人",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "神",
+      "身",
+      "新"
+    ]
   },
   {
     "id": "6급Ⅱ-047",
@@ -2989,7 +3241,11 @@
     "meaning": "새",
     "radical": "斤",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "身",
+      "神",
+      "信"
+    ]
   },
   {
     "id": "6급Ⅱ-048",
@@ -3000,7 +3256,9 @@
     "meaning": "약할",
     "radical": "弓",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "藥"
+    ]
   },
   {
     "id": "6급Ⅱ-049",
@@ -3011,7 +3269,9 @@
     "meaning": "약",
     "radical": "艸",
     "totalStrokes": 19,
-    "confusables": []
+    "confusables": [
+      "弱"
+    ]
   },
   {
     "id": "6급Ⅱ-050",
@@ -3033,7 +3293,9 @@
     "meaning": "날랠",
     "radical": "力",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "用"
+    ]
   },
   {
     "id": "6급Ⅱ-052",
@@ -3044,7 +3306,9 @@
     "meaning": "쓸",
     "radical": "用",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "勇"
+    ]
   },
   {
     "id": "6급Ⅱ-053",
@@ -3066,7 +3330,9 @@
     "meaning": "소리",
     "radical": "音",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "飮"
+    ]
   },
   {
     "id": "6급Ⅱ-055",
@@ -3077,7 +3343,9 @@
     "meaning": "마실",
     "radical": "食",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "音"
+    ]
   },
   {
     "id": "6급Ⅱ-056",
@@ -3099,7 +3367,9 @@
     "meaning": "지을",
     "radical": "人",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "昨"
+    ]
   },
   {
     "id": "6급Ⅱ-058",
@@ -3110,7 +3380,9 @@
     "meaning": "어제",
     "radical": "日",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "作"
+    ]
   },
   {
     "id": "6급Ⅱ-059",
@@ -3154,7 +3426,9 @@
     "meaning": "차례",
     "radical": "竹",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "題"
+    ]
   },
   {
     "id": "6급Ⅱ-063",
@@ -3165,7 +3439,9 @@
     "meaning": "제목",
     "radical": "頁",
     "totalStrokes": 18,
-    "confusables": []
+    "confusables": [
+      "第"
+    ]
   },
   {
     "id": "6급Ⅱ-064",
@@ -3209,7 +3485,9 @@
     "meaning": "맑을",
     "radical": "水",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "消"
+    ]
   },
   {
     "id": "6급Ⅱ-068",
@@ -3264,7 +3542,11 @@
     "meaning": "나타날",
     "radical": "玉",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "球",
+      "理",
+      "班"
+    ]
   },
   {
     "id": "6급Ⅱ-073",
@@ -3308,7 +3590,9 @@
     "meaning": "더할",
     "radical": "力",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "可"
+    ]
   },
   {
     "id": "5급-002",
@@ -3319,7 +3603,9 @@
     "meaning": "옳을",
     "radical": "口",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "加"
+    ]
   },
   {
     "id": "5급-003",
@@ -3341,7 +3627,9 @@
     "meaning": "들",
     "radical": "手",
     "totalStrokes": 18,
-    "confusables": []
+    "confusables": [
+      "去"
+    ]
   },
   {
     "id": "5급-005",
@@ -3352,7 +3640,9 @@
     "meaning": "갈",
     "radical": "厶",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "擧"
+    ]
   },
   {
     "id": "5급-006",
@@ -3363,7 +3653,10 @@
     "meaning": "물건",
     "radical": "人",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "健",
+      "建"
+    ]
   },
   {
     "id": "5급-007",
@@ -3374,7 +3667,10 @@
     "meaning": "세울",
     "radical": "廴",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "件",
+      "健"
+    ]
   },
   {
     "id": "5급-008",
@@ -3385,7 +3681,10 @@
     "meaning": "굳셀",
     "radical": "人",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "件",
+      "建"
+    ]
   },
   {
     "id": "5급-009",
@@ -3396,7 +3695,10 @@
     "meaning": "가벼울",
     "radical": "車",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "競",
+      "景"
+    ]
   },
   {
     "id": "5급-010",
@@ -3407,7 +3709,10 @@
     "meaning": "다툴",
     "radical": "立",
     "totalStrokes": 20,
-    "confusables": []
+    "confusables": [
+      "輕",
+      "景"
+    ]
   },
   {
     "id": "5급-011",
@@ -3418,7 +3723,10 @@
     "meaning": "볕",
     "radical": "日",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "輕",
+      "競"
+    ]
   },
   {
     "id": "5급-012",
@@ -3429,7 +3737,9 @@
     "meaning": "생각할",
     "radical": "老",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "固"
+    ]
   },
   {
     "id": "5급-013",
@@ -3440,7 +3750,9 @@
     "meaning": "굳을",
     "radical": "囗",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "考"
+    ]
   },
   {
     "id": "5급-014",
@@ -3473,7 +3785,9 @@
     "meaning": "구원할",
     "radical": "攴",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "敗"
+    ]
   },
   {
     "id": "5급-017",
@@ -3484,7 +3798,11 @@
     "meaning": "귀할",
     "radical": "貝",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "買",
+      "費",
+      "貯"
+    ]
   },
   {
     "id": "5급-018",
@@ -3506,7 +3824,9 @@
     "meaning": "줄",
     "radical": "糸",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "終"
+    ]
   },
   {
     "id": "5급-020",
@@ -3517,7 +3837,10 @@
     "meaning": "물끓는김",
     "radical": "水",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "技",
+      "期"
+    ]
   },
   {
     "id": "5급-021",
@@ -3528,7 +3851,10 @@
     "meaning": "기약할",
     "radical": "月",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "汽",
+      "技"
+    ]
   },
   {
     "id": "5급-022",
@@ -3539,7 +3865,10 @@
     "meaning": "재주",
     "radical": "手",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "汽",
+      "期"
+    ]
   },
   {
     "id": "5급-023",
@@ -3550,7 +3879,9 @@
     "meaning": "길할",
     "radical": "口",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "可"
+    ]
   },
   {
     "id": "5급-024",
@@ -3583,7 +3914,9 @@
     "meaning": "도읍",
     "radical": "邑",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "島"
+    ]
   },
   {
     "id": "5급-027",
@@ -3594,7 +3927,9 @@
     "meaning": "섬",
     "radical": "山",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "都"
+    ]
   },
   {
     "id": "5급-028",
@@ -3605,7 +3940,9 @@
     "meaning": "떨어질",
     "radical": "艸",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "葉"
+    ]
   },
   {
     "id": "5급-029",
@@ -3638,7 +3975,9 @@
     "meaning": "거느릴",
     "radical": "頁",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "令"
+    ]
   },
   {
     "id": "5급-032",
@@ -3649,7 +3988,9 @@
     "meaning": "하여금",
     "radical": "人",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "領"
+    ]
   },
   {
     "id": "5급-033",
@@ -3704,7 +4045,9 @@
     "meaning": "살",
     "radical": "貝",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "賣"
+    ]
   },
   {
     "id": "5급-038",
@@ -3715,7 +4058,9 @@
     "meaning": "팔",
     "radical": "貝",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "買"
+    ]
   },
   {
     "id": "5급-039",
@@ -3737,7 +4082,10 @@
     "meaning": "곱",
     "radical": "人",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "健",
+      "停"
+    ]
   },
   {
     "id": "5급-041",
@@ -3748,7 +4096,10 @@
     "meaning": "견줄",
     "radical": "比",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "費",
+      "鼻"
+    ]
   },
   {
     "id": "5급-042",
@@ -3759,7 +4110,10 @@
     "meaning": "쓸",
     "radical": "貝",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "比",
+      "鼻"
+    ]
   },
   {
     "id": "5급-043",
@@ -3770,7 +4124,10 @@
     "meaning": "코",
     "radical": "鼻",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "比",
+      "費"
+    ]
   },
   {
     "id": "5급-044",
@@ -3792,7 +4149,10 @@
     "meaning": "베낄",
     "radical": "宀",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "思",
+      "査"
+    ]
   },
   {
     "id": "5급-046",
@@ -3803,7 +4163,10 @@
     "meaning": "생각",
     "radical": "心",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "査",
+      "寫"
+    ]
   },
   {
     "id": "5급-047",
@@ -3814,7 +4177,10 @@
     "meaning": "조사할",
     "radical": "木",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "思",
+      "寫"
+    ]
   },
   {
     "id": "5급-048",
@@ -3825,7 +4191,9 @@
     "meaning": "상줄",
     "radical": "貝",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "賣"
+    ]
   },
   {
     "id": "5급-049",
@@ -3847,7 +4215,10 @@
     "meaning": "착할",
     "radical": "口",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "船",
+      "選"
+    ]
   },
   {
     "id": "5급-051",
@@ -3858,7 +4229,10 @@
     "meaning": "가릴",
     "radical": "辵",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "善",
+      "船"
+    ]
   },
   {
     "id": "5급-052",
@@ -3869,7 +4243,10 @@
     "meaning": "배",
     "radical": "舟",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "善",
+      "選"
+    ]
   },
   {
     "id": "5급-053",
@@ -3891,7 +4268,9 @@
     "meaning": "책상",
     "radical": "木",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "査"
+    ]
   },
   {
     "id": "5급-055",
@@ -3902,7 +4281,9 @@
     "meaning": "고기잡을",
     "radical": "水",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "魚"
+    ]
   },
   {
     "id": "5급-056",
@@ -3913,7 +4294,9 @@
     "meaning": "고기",
     "radical": "魚",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "漁"
+    ]
   },
   {
     "id": "5급-057",
@@ -3946,7 +4329,9 @@
     "meaning": "잎",
     "radical": "艸",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "落"
+    ]
   },
   {
     "id": "5급-060",
@@ -4023,7 +4408,10 @@
     "meaning": "언덕",
     "radical": "厂",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "院",
+      "願"
+    ]
   },
   {
     "id": "5급-067",
@@ -4034,7 +4422,10 @@
     "meaning": "집",
     "radical": "阜",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "原",
+      "願"
+    ]
   },
   {
     "id": "5급-068",
@@ -4045,7 +4436,10 @@
     "meaning": "원할",
     "radical": "頁",
     "totalStrokes": 19,
-    "confusables": []
+    "confusables": [
+      "原",
+      "院"
+    ]
   },
   {
     "id": "5급-069",
@@ -4056,7 +4450,9 @@
     "meaning": "자리",
     "radical": "人",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "件"
+    ]
   },
   {
     "id": "5급-070",
@@ -4089,7 +4485,9 @@
     "meaning": "재앙",
     "radical": "火",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "再"
+    ]
   },
   {
     "id": "5급-073",
@@ -4100,7 +4498,9 @@
     "meaning": "두",
     "radical": "冂",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "災"
+    ]
   },
   {
     "id": "5급-074",
@@ -4122,7 +4522,11 @@
     "meaning": "쌓을",
     "radical": "貝",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "貴",
+      "買",
+      "費"
+    ]
   },
   {
     "id": "5급-076",
@@ -4144,7 +4548,10 @@
     "meaning": "머무를",
     "radical": "人",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "健",
+      "倍"
+    ]
   },
   {
     "id": "5급-078",
@@ -4166,7 +4573,9 @@
     "meaning": "마칠",
     "radical": "糸",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "給"
+    ]
   },
   {
     "id": "5급-080",
@@ -4199,7 +4608,9 @@
     "meaning": "부를",
     "radical": "口",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "善"
+    ]
   },
   {
     "id": "5급-083",
@@ -4276,7 +4687,9 @@
     "meaning": "다를",
     "radical": "人",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "打"
+    ]
   },
   {
     "id": "5급-090",
@@ -4287,7 +4700,9 @@
     "meaning": "칠",
     "radical": "手",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "他"
+    ]
   },
   {
     "id": "5급-091",
@@ -4320,7 +4735,9 @@
     "meaning": "널",
     "radical": "木",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "査"
+    ]
   },
   {
     "id": "5급-094",
@@ -4331,7 +4748,9 @@
     "meaning": "패할",
     "radical": "攴",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "救"
+    ]
   },
   {
     "id": "5급-095",
@@ -4342,7 +4761,9 @@
     "meaning": "물",
     "radical": "水",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "汽"
+    ]
   },
   {
     "id": "5급-096",
@@ -4408,7 +4829,10 @@
     "meaning": "틈",
     "radical": "日",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "普",
+      "智"
+    ]
   },
   {
     "id": "4급-002",
@@ -4419,7 +4843,9 @@
     "meaning": "새길",
     "radical": "刀",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "覺"
+    ]
   },
   {
     "id": "4급-003",
@@ -4430,7 +4856,9 @@
     "meaning": "깨달을",
     "radical": "見",
     "totalStrokes": 20,
-    "confusables": []
+    "confusables": [
+      "刻"
+    ]
   },
   {
     "id": "4급-004",
@@ -4441,7 +4869,10 @@
     "meaning": "대쪽",
     "radical": "竹",
     "totalStrokes": 18,
-    "confusables": []
+    "confusables": [
+      "看",
+      "干"
+    ]
   },
   {
     "id": "4급-005",
@@ -4452,7 +4883,10 @@
     "meaning": "볼",
     "radical": "目",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "簡",
+      "干"
+    ]
   },
   {
     "id": "4급-006",
@@ -4463,7 +4897,10 @@
     "meaning": "방패",
     "radical": "干",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [
+      "簡",
+      "看"
+    ]
   },
   {
     "id": "4급-007",
@@ -4474,7 +4911,9 @@
     "meaning": "달",
     "radical": "甘",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "敢"
+    ]
   },
   {
     "id": "4급-008",
@@ -4485,7 +4924,9 @@
     "meaning": "감히",
     "radical": "攴",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "甘"
+    ]
   },
   {
     "id": "4급-009",
@@ -4507,7 +4948,9 @@
     "meaning": "내릴",
     "radical": "阜",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "陣"
+    ]
   },
   {
     "id": "4급-011",
@@ -4518,7 +4961,11 @@
     "meaning": "막을",
     "radical": "手",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "居",
+      "據",
+      "巨"
+    ]
   },
   {
     "id": "4급-012",
@@ -4529,7 +4976,11 @@
     "meaning": "살",
     "radical": "尸",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "拒",
+      "據",
+      "巨"
+    ]
   },
   {
     "id": "4급-013",
@@ -4540,7 +4991,11 @@
     "meaning": "근거",
     "radical": "手",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "拒",
+      "居",
+      "巨"
+    ]
   },
   {
     "id": "4급-014",
@@ -4551,7 +5006,11 @@
     "meaning": "클",
     "radical": "工",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "拒",
+      "居",
+      "據"
+    ]
   },
   {
     "id": "4급-015",
@@ -4562,7 +5021,10 @@
     "meaning": "뛰어날",
     "radical": "人",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "傾",
+      "傷"
+    ]
   },
   {
     "id": "4급-016",
@@ -4573,7 +5035,10 @@
     "meaning": "검소할",
     "radical": "人",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "儀",
+      "儒"
+    ]
   },
   {
     "id": "4급-017",
@@ -4584,7 +5049,9 @@
     "meaning": "칠[打]",
     "radical": "手",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "激"
+    ]
   },
   {
     "id": "4급-018",
@@ -4595,7 +5062,9 @@
     "meaning": "격할",
     "radical": "水",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "擊"
+    ]
   },
   {
     "id": "4급-019",
@@ -4606,7 +5075,9 @@
     "meaning": "굳을",
     "radical": "土",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "犬"
+    ]
   },
   {
     "id": "4급-020",
@@ -4617,7 +5088,9 @@
     "meaning": "개",
     "radical": "犬",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "堅"
+    ]
   },
   {
     "id": "4급-021",
@@ -4628,7 +5101,11 @@
     "meaning": "놀랄",
     "radical": "馬",
     "totalStrokes": 23,
-    "confusables": []
+    "confusables": [
+      "更",
+      "傾",
+      "鏡"
+    ]
   },
   {
     "id": "4급-022",
@@ -4639,7 +5116,11 @@
     "meaning": "고칠",
     "radical": "曰",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "驚",
+      "傾",
+      "鏡"
+    ]
   },
   {
     "id": "4급-023",
@@ -4650,7 +5131,11 @@
     "meaning": "기울",
     "radical": "人",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "驚",
+      "更",
+      "鏡"
+    ]
   },
   {
     "id": "4급-024",
@@ -4661,7 +5146,11 @@
     "meaning": "거울",
     "radical": "金",
     "totalStrokes": 19,
-    "confusables": []
+    "confusables": [
+      "驚",
+      "更",
+      "傾"
+    ]
   },
   {
     "id": "4급-025",
@@ -4672,7 +5161,13 @@
     "meaning": "섬돌",
     "radical": "阜",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "鷄",
+      "季",
+      "系",
+      "繼",
+      "戒"
+    ]
   },
   {
     "id": "4급-026",
@@ -4683,7 +5178,13 @@
     "meaning": "닭",
     "radical": "鳥",
     "totalStrokes": 21,
-    "confusables": []
+    "confusables": [
+      "繼",
+      "階",
+      "季",
+      "系",
+      "戒"
+    ]
   },
   {
     "id": "4급-027",
@@ -4694,7 +5195,13 @@
     "meaning": "계절",
     "radical": "子",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "系",
+      "戒",
+      "階",
+      "鷄",
+      "繼"
+    ]
   },
   {
     "id": "4급-028",
@@ -4705,7 +5212,13 @@
     "meaning": "이어맬",
     "radical": "糸",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "繼",
+      "戒",
+      "季",
+      "階",
+      "鷄"
+    ]
   },
   {
     "id": "4급-029",
@@ -4716,7 +5229,13 @@
     "meaning": "이을",
     "radical": "糸",
     "totalStrokes": 20,
-    "confusables": []
+    "confusables": [
+      "系",
+      "鷄",
+      "階",
+      "季",
+      "戒"
+    ]
   },
   {
     "id": "4급-030",
@@ -4727,7 +5246,13 @@
     "meaning": "경계할",
     "radical": "戈",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "系",
+      "季",
+      "階",
+      "鷄",
+      "繼"
+    ]
   },
   {
     "id": "4급-031",
@@ -4738,7 +5263,9 @@
     "meaning": "외로울",
     "radical": "子",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "庫"
+    ]
   },
   {
     "id": "4급-032",
@@ -4749,7 +5276,9 @@
     "meaning": "곳집",
     "radical": "广",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "孤"
+    ]
   },
   {
     "id": "4급-033",
@@ -4760,7 +5289,10 @@
     "meaning": "곡식",
     "radical": "禾",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "積",
+      "稱"
+    ]
   },
   {
     "id": "4급-034",
@@ -4793,7 +5325,9 @@
     "meaning": "구멍",
     "radical": "子",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "攻"
+    ]
   },
   {
     "id": "4급-037",
@@ -4804,7 +5338,9 @@
     "meaning": "칠[擊]",
     "radical": "攴",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "孔"
+    ]
   },
   {
     "id": "4급-038",
@@ -4815,7 +5351,10 @@
     "meaning": "대롱",
     "radical": "竹",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "範",
+      "篇"
+    ]
   },
   {
     "id": "4급-039",
@@ -4837,7 +5376,11 @@
     "meaning": "얽을",
     "radical": "木",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "模",
+      "樣",
+      "標"
+    ]
   },
   {
     "id": "4급-041",
@@ -4848,7 +5391,9 @@
     "meaning": "임금",
     "radical": "口",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "群"
+    ]
   },
   {
     "id": "4급-042",
@@ -4859,7 +5404,9 @@
     "meaning": "무리",
     "radical": "羊",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "君"
+    ]
   },
   {
     "id": "4급-043",
@@ -4870,7 +5417,9 @@
     "meaning": "굽힐",
     "radical": "尸",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "居"
+    ]
   },
   {
     "id": "4급-044",
@@ -4892,7 +5441,10 @@
     "meaning": "문서",
     "radical": "刀",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "卷",
+      "勸"
+    ]
   },
   {
     "id": "4급-046",
@@ -4903,7 +5455,10 @@
     "meaning": "권할",
     "radical": "力",
     "totalStrokes": 20,
-    "confusables": []
+    "confusables": [
+      "券",
+      "卷"
+    ]
   },
   {
     "id": "4급-047",
@@ -4914,7 +5469,10 @@
     "meaning": "책",
     "radical": "卩",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "券",
+      "勸"
+    ]
   },
   {
     "id": "4급-048",
@@ -4958,7 +5516,9 @@
     "meaning": "부지런할",
     "radical": "力",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "筋"
+    ]
   },
   {
     "id": "4급-052",
@@ -4969,7 +5529,9 @@
     "meaning": "힘줄",
     "radical": "竹",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "勤"
+    ]
   },
   {
     "id": "4급-053",
@@ -4980,7 +5542,11 @@
     "meaning": "틀",
     "radical": "木",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "寄",
+      "奇",
+      "紀"
+    ]
   },
   {
     "id": "4급-054",
@@ -4991,7 +5557,11 @@
     "meaning": "부칠",
     "radical": "宀",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "機",
+      "奇",
+      "紀"
+    ]
   },
   {
     "id": "4급-055",
@@ -5002,7 +5572,11 @@
     "meaning": "기특할",
     "radical": "大",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "紀",
+      "機",
+      "寄"
+    ]
   },
   {
     "id": "4급-056",
@@ -5013,7 +5587,11 @@
     "meaning": "벼리",
     "radical": "糸",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "奇",
+      "機",
+      "寄"
+    ]
   },
   {
     "id": "4급-057",
@@ -5024,7 +5602,11 @@
     "meaning": "들일",
     "radical": "糸",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "紀",
+      "組",
+      "紅"
+    ]
   },
   {
     "id": "4급-058",
@@ -5046,7 +5628,10 @@
     "meaning": "무리",
     "radical": "彳",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "逃",
+      "盜"
+    ]
   },
   {
     "id": "4급-060",
@@ -5057,7 +5642,10 @@
     "meaning": "도둑",
     "radical": "皿",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "徒",
+      "逃"
+    ]
   },
   {
     "id": "4급-061",
@@ -5068,7 +5656,10 @@
     "meaning": "도망할",
     "radical": "辵",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "徒",
+      "盜"
+    ]
   },
   {
     "id": "4급-062",
@@ -5079,7 +5670,9 @@
     "meaning": "어지러울",
     "radical": "乙",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "卵"
+    ]
   },
   {
     "id": "4급-063",
@@ -5090,7 +5683,9 @@
     "meaning": "알",
     "radical": "卩",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "亂"
+    ]
   },
   {
     "id": "4급-064",
@@ -5101,7 +5696,9 @@
     "meaning": "볼",
     "radical": "見",
     "totalStrokes": 21,
-    "confusables": []
+    "confusables": [
+      "覺"
+    ]
   },
   {
     "id": "4급-065",
@@ -5112,7 +5709,9 @@
     "meaning": "간략할",
     "radical": "田",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "異"
+    ]
   },
   {
     "id": "4급-066",
@@ -5134,7 +5733,11 @@
     "meaning": "생각할",
     "radical": "心",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "憤",
+      "慰",
+      "憲"
+    ]
   },
   {
     "id": "4급-068",
@@ -5167,7 +5770,10 @@
     "meaning": "버들",
     "radical": "木",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "松",
+      "核"
+    ]
   },
   {
     "id": "4급-071",
@@ -5189,7 +5795,9 @@
     "meaning": "떠날",
     "radical": "隹",
     "totalStrokes": 19,
-    "confusables": []
+    "confusables": [
+      "雜"
+    ]
   },
   {
     "id": "4급-073",
@@ -5200,7 +5808,12 @@
     "meaning": "누이",
     "radical": "女",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "委",
+      "姉",
+      "妙",
+      "妨"
+    ]
   },
   {
     "id": "4급-074",
@@ -5233,7 +5846,12 @@
     "meaning": "본뜰",
     "radical": "木",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "樣",
+      "標",
+      "構",
+      "機"
+    ]
   },
   {
     "id": "4급-077",
@@ -5244,7 +5862,9 @@
     "meaning": "무덤",
     "radical": "土",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "妙"
+    ]
   },
   {
     "id": "4급-078",
@@ -5255,7 +5875,9 @@
     "meaning": "묘할",
     "radical": "女",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "墓"
+    ]
   },
   {
     "id": "4급-079",
@@ -5277,7 +5899,12 @@
     "meaning": "칠",
     "radical": "手",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "拒",
+      "招",
+      "批",
+      "折"
+    ]
   },
   {
     "id": "4급-081",
@@ -5299,7 +5926,12 @@
     "meaning": "방해할",
     "radical": "女",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "妙",
+      "妹",
+      "委",
+      "姉"
+    ]
   },
   {
     "id": "4급-083",
@@ -5310,7 +5942,9 @@
     "meaning": "범할",
     "radical": "犬",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "範"
+    ]
   },
   {
     "id": "4급-084",
@@ -5321,7 +5955,9 @@
     "meaning": "법",
     "radical": "竹",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "犯"
+    ]
   },
   {
     "id": "4급-085",
@@ -5343,7 +5979,10 @@
     "meaning": "넓을",
     "radical": "日",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "智",
+      "暇"
+    ]
   },
   {
     "id": "4급-087",
@@ -5354,7 +5993,9 @@
     "meaning": "엎드릴",
     "radical": "人",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "複"
+    ]
   },
   {
     "id": "4급-088",
@@ -5365,7 +6006,9 @@
     "meaning": "겹칠",
     "radical": "衣",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "伏"
+    ]
   },
   {
     "id": "4급-089",
@@ -5376,7 +6019,9 @@
     "meaning": "아닐",
     "radical": "口",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "負"
+    ]
   },
   {
     "id": "4급-090",
@@ -5387,7 +6032,9 @@
     "meaning": "질[荷]",
     "radical": "貝",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "否"
+    ]
   },
   {
     "id": "4급-091",
@@ -5398,7 +6045,9 @@
     "meaning": "가루",
     "radical": "米",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "憤"
+    ]
   },
   {
     "id": "4급-092",
@@ -5409,7 +6058,9 @@
     "meaning": "분할",
     "radical": "心",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "粉"
+    ]
   },
   {
     "id": "4급-093",
@@ -5420,7 +6071,10 @@
     "meaning": "비평할",
     "radical": "手",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "祕",
+      "碑"
+    ]
   },
   {
     "id": "4급-094",
@@ -5431,7 +6085,10 @@
     "meaning": "숨길",
     "radical": "示",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "批",
+      "碑"
+    ]
   },
   {
     "id": "4급-095",
@@ -5442,7 +6099,10 @@
     "meaning": "비석",
     "radical": "石",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "批",
+      "祕"
+    ]
   },
   {
     "id": "4급-096",
@@ -5453,7 +6113,11 @@
     "meaning": "말씀",
     "radical": "辛",
     "totalStrokes": 19,
-    "confusables": []
+    "confusables": [
+      "私",
+      "絲",
+      "射"
+    ]
   },
   {
     "id": "4급-097",
@@ -5464,7 +6128,11 @@
     "meaning": "사사(私事)",
     "radical": "禾",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "辭",
+      "絲",
+      "射"
+    ]
   },
   {
     "id": "4급-098",
@@ -5475,7 +6143,11 @@
     "meaning": "실",
     "radical": "糸",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "辭",
+      "私",
+      "射"
+    ]
   },
   {
     "id": "4급-099",
@@ -5486,7 +6158,11 @@
     "meaning": "쏠",
     "radical": "寸",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "辭",
+      "私",
+      "絲"
+    ]
   },
   {
     "id": "4급-100",
@@ -5497,7 +6173,9 @@
     "meaning": "흩을",
     "radical": "攴",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "敢"
+    ]
   },
   {
     "id": "4급-101",
@@ -5508,7 +6186,9 @@
     "meaning": "다칠",
     "radical": "人",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "象"
+    ]
   },
   {
     "id": "4급-102",
@@ -5519,7 +6199,9 @@
     "meaning": "코끼리",
     "radical": "豕",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "傷"
+    ]
   },
   {
     "id": "4급-103",
@@ -5563,7 +6245,10 @@
     "meaning": "덜",
     "radical": "手",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "援",
+      "揮"
+    ]
   },
   {
     "id": "4급-107",
@@ -5574,7 +6259,9 @@
     "meaning": "기릴",
     "radical": "頁",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "松"
+    ]
   },
   {
     "id": "4급-108",
@@ -5585,7 +6272,9 @@
     "meaning": "소나무",
     "radical": "木",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "頌"
+    ]
   },
   {
     "id": "4급-109",
@@ -5596,7 +6285,9 @@
     "meaning": "빼어날",
     "radical": "禾",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "私"
+    ]
   },
   {
     "id": "4급-110",
@@ -5607,7 +6298,9 @@
     "meaning": "아재비",
     "radical": "又",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "肅"
+    ]
   },
   {
     "id": "4급-111",
@@ -5618,7 +6311,9 @@
     "meaning": "엄숙할",
     "radical": "聿",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "叔"
+    ]
   },
   {
     "id": "4급-112",
@@ -5662,7 +6357,12 @@
     "meaning": "모양",
     "radical": "木",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "模",
+      "標",
+      "構",
+      "機"
+    ]
   },
   {
     "id": "4급-116",
@@ -5695,7 +6395,9 @@
     "meaning": "지경",
     "radical": "土",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "易"
+    ]
   },
   {
     "id": "4급-119",
@@ -5706,7 +6408,9 @@
     "meaning": "바꿀",
     "radical": "日",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "域"
+    ]
   },
   {
     "id": "4급-120",
@@ -5717,7 +6421,11 @@
     "meaning": "탈",
     "radical": "火",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "緣",
+      "鉛",
+      "延"
+    ]
   },
   {
     "id": "4급-121",
@@ -5728,7 +6436,11 @@
     "meaning": "납",
     "radical": "金",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "燃",
+      "緣",
+      "延"
+    ]
   },
   {
     "id": "4급-122",
@@ -5739,7 +6451,11 @@
     "meaning": "인연",
     "radical": "糸",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "燃",
+      "鉛",
+      "延"
+    ]
   },
   {
     "id": "4급-123",
@@ -5750,7 +6466,11 @@
     "meaning": "늘일",
     "radical": "廴",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "燃",
+      "鉛",
+      "緣"
+    ]
   },
   {
     "id": "4급-124",
@@ -5761,7 +6481,10 @@
     "meaning": "맞을",
     "radical": "辵",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "映",
+      "營"
+    ]
   },
   {
     "id": "4급-125",
@@ -5772,7 +6495,10 @@
     "meaning": "비칠",
     "radical": "日",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "迎",
+      "營"
+    ]
   },
   {
     "id": "4급-126",
@@ -5783,7 +6509,10 @@
     "meaning": "경영할",
     "radical": "火",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "迎",
+      "映"
+    ]
   },
   {
     "id": "4급-127",
@@ -5805,7 +6534,10 @@
     "meaning": "넉넉할",
     "radical": "人",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "遇",
+      "郵"
+    ]
   },
   {
     "id": "4급-129",
@@ -5816,7 +6548,10 @@
     "meaning": "만날",
     "radical": "辵",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "優",
+      "郵"
+    ]
   },
   {
     "id": "4급-130",
@@ -5827,7 +6562,10 @@
     "meaning": "우편",
     "radical": "邑",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "優",
+      "遇"
+    ]
   },
   {
     "id": "4급-131",
@@ -5838,7 +6576,10 @@
     "meaning": "원망할",
     "radical": "心",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "援",
+      "源"
+    ]
   },
   {
     "id": "4급-132",
@@ -5849,7 +6590,10 @@
     "meaning": "도울",
     "radical": "手",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "源",
+      "怨"
+    ]
   },
   {
     "id": "4급-133",
@@ -5860,7 +6604,10 @@
     "meaning": "근원",
     "radical": "水",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "援",
+      "怨"
+    ]
   },
   {
     "id": "4급-134",
@@ -5871,7 +6618,12 @@
     "meaning": "에워쌀",
     "radical": "囗",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "委",
+      "威",
+      "慰",
+      "危"
+    ]
   },
   {
     "id": "4급-135",
@@ -5882,7 +6634,12 @@
     "meaning": "맡길",
     "radical": "女",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "威",
+      "圍",
+      "慰",
+      "危"
+    ]
   },
   {
     "id": "4급-136",
@@ -5893,7 +6650,12 @@
     "meaning": "위엄",
     "radical": "女",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "委",
+      "圍",
+      "慰",
+      "危"
+    ]
   },
   {
     "id": "4급-137",
@@ -5904,7 +6666,12 @@
     "meaning": "위로할",
     "radical": "心",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "圍",
+      "委",
+      "威",
+      "危"
+    ]
   },
   {
     "id": "4급-138",
@@ -5915,7 +6682,12 @@
     "meaning": "위태할",
     "radical": "卩",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "圍",
+      "委",
+      "威",
+      "慰"
+    ]
   },
   {
     "id": "4급-139",
@@ -5926,7 +6698,11 @@
     "meaning": "놀",
     "radical": "辵",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "遺",
+      "乳",
+      "儒"
+    ]
   },
   {
     "id": "4급-140",
@@ -5937,7 +6713,11 @@
     "meaning": "젖",
     "radical": "乙",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "遊",
+      "儒",
+      "遺"
+    ]
   },
   {
     "id": "4급-141",
@@ -5948,7 +6728,11 @@
     "meaning": "선비",
     "radical": "人",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "遺",
+      "遊",
+      "乳"
+    ]
   },
   {
     "id": "4급-142",
@@ -5959,7 +6743,11 @@
     "meaning": "남길",
     "radical": "辵",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "遊",
+      "儒",
+      "乳"
+    ]
   },
   {
     "id": "4급-143",
@@ -5970,7 +6758,9 @@
     "meaning": "숨을",
     "radical": "阜",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "險"
+    ]
   },
   {
     "id": "4급-144",
@@ -5981,7 +6771,10 @@
     "meaning": "의지할",
     "radical": "人",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "儀",
+      "疑"
+    ]
   },
   {
     "id": "4급-145",
@@ -5992,7 +6785,10 @@
     "meaning": "거동",
     "radical": "人",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "依",
+      "疑"
+    ]
   },
   {
     "id": "4급-146",
@@ -6003,7 +6799,10 @@
     "meaning": "의심할",
     "radical": "疋",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "儀",
+      "依"
+    ]
   },
   {
     "id": "4급-147",
@@ -6014,7 +6813,9 @@
     "meaning": "다를",
     "radical": "田",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "略"
+    ]
   },
   {
     "id": "4급-148",
@@ -6036,7 +6837,10 @@
     "meaning": "재물",
     "radical": "貝",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "姿",
+      "姉"
+    ]
   },
   {
     "id": "4급-150",
@@ -6047,7 +6851,10 @@
     "meaning": "모양",
     "radical": "女",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "姉",
+      "資"
+    ]
   },
   {
     "id": "4급-151",
@@ -6058,7 +6865,10 @@
     "meaning": "손윗누이",
     "radical": "女",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "姿",
+      "資"
+    ]
   },
   {
     "id": "4급-152",
@@ -6080,7 +6890,9 @@
     "meaning": "섞일",
     "radical": "隹",
     "totalStrokes": 18,
-    "confusables": []
+    "confusables": [
+      "離"
+    ]
   },
   {
     "id": "4급-154",
@@ -6091,7 +6903,13 @@
     "meaning": "장려할",
     "radical": "犬",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "裝",
+      "腸",
+      "張",
+      "壯",
+      "帳"
+    ]
   },
   {
     "id": "4급-155",
@@ -6102,7 +6920,13 @@
     "meaning": "꾸밀",
     "radical": "衣",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "腸",
+      "獎",
+      "張",
+      "壯",
+      "帳"
+    ]
   },
   {
     "id": "4급-156",
@@ -6113,7 +6937,13 @@
     "meaning": "창자",
     "radical": "肉",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "裝",
+      "獎",
+      "張",
+      "壯",
+      "帳"
+    ]
   },
   {
     "id": "4급-157",
@@ -6124,7 +6954,13 @@
     "meaning": "베풀",
     "radical": "弓",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "帳",
+      "獎",
+      "裝",
+      "腸",
+      "壯"
+    ]
   },
   {
     "id": "4급-158",
@@ -6135,7 +6971,13 @@
     "meaning": "장할",
     "radical": "士",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "獎",
+      "裝",
+      "腸",
+      "張",
+      "帳"
+    ]
   },
   {
     "id": "4급-159",
@@ -6146,7 +6988,13 @@
     "meaning": "장막",
     "radical": "巾",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "張",
+      "獎",
+      "裝",
+      "腸",
+      "壯"
+    ]
   },
   {
     "id": "4급-160",
@@ -6168,7 +7016,12 @@
     "meaning": "쌓을",
     "radical": "禾",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "適",
+      "績",
+      "籍",
+      "賊"
+    ]
   },
   {
     "id": "4급-162",
@@ -6179,7 +7032,12 @@
     "meaning": "문서",
     "radical": "竹",
     "totalStrokes": 20,
-    "confusables": []
+    "confusables": [
+      "積",
+      "適",
+      "績",
+      "賊"
+    ]
   },
   {
     "id": "4급-163",
@@ -6190,7 +7048,12 @@
     "meaning": "맞을",
     "radical": "辵",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "積",
+      "籍",
+      "績",
+      "賊"
+    ]
   },
   {
     "id": "4급-164",
@@ -6201,7 +7064,12 @@
     "meaning": "길쌈",
     "radical": "糸",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "積",
+      "籍",
+      "適",
+      "賊"
+    ]
   },
   {
     "id": "4급-165",
@@ -6212,7 +7080,12 @@
     "meaning": "도둑",
     "radical": "貝",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "積",
+      "籍",
+      "適",
+      "績"
+    ]
   },
   {
     "id": "4급-166",
@@ -6223,7 +7096,10 @@
     "meaning": "오로지",
     "radical": "寸",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "轉",
+      "錢"
+    ]
   },
   {
     "id": "4급-167",
@@ -6234,7 +7110,10 @@
     "meaning": "구를",
     "radical": "車",
     "totalStrokes": 18,
-    "confusables": []
+    "confusables": [
+      "專",
+      "錢"
+    ]
   },
   {
     "id": "4급-168",
@@ -6245,7 +7124,10 @@
     "meaning": "돈",
     "radical": "金",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "專",
+      "轉"
+    ]
   },
   {
     "id": "4급-169",
@@ -6256,7 +7138,12 @@
     "meaning": "꺾을",
     "radical": "手",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "批",
+      "投",
+      "抗",
+      "拒"
+    ]
   },
   {
     "id": "4급-170",
@@ -6267,7 +7154,9 @@
     "meaning": "점",
     "radical": "黑",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "占"
+    ]
   },
   {
     "id": "4급-171",
@@ -6278,7 +7167,9 @@
     "meaning": "점령할 점",
     "radical": "卜",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "點"
+    ]
   },
   {
     "id": "4급-172",
@@ -6289,7 +7180,10 @@
     "meaning": "고요할",
     "radical": "靑",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "整",
+      "丁"
+    ]
   },
   {
     "id": "4급-173",
@@ -6300,7 +7194,10 @@
     "meaning": "고무래",
     "radical": "一",
     "totalStrokes": 2,
-    "confusables": []
+    "confusables": [
+      "靜",
+      "整"
+    ]
   },
   {
     "id": "4급-174",
@@ -6311,7 +7208,10 @@
     "meaning": "가지런할",
     "radical": "攴",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "靜",
+      "丁"
+    ]
   },
   {
     "id": "4급-175",
@@ -6333,7 +7233,10 @@
     "meaning": "가지",
     "radical": "木",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "組",
+      "潮"
+    ]
   },
   {
     "id": "4급-177",
@@ -6344,7 +7247,10 @@
     "meaning": "밀물",
     "radical": "水",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "條",
+      "組"
+    ]
   },
   {
     "id": "4급-178",
@@ -6355,7 +7261,10 @@
     "meaning": "짤",
     "radical": "糸",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "條",
+      "潮"
+    ]
   },
   {
     "id": "4급-179",
@@ -6377,7 +7286,9 @@
     "meaning": "쇠북",
     "radical": "金",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "從"
+    ]
   },
   {
     "id": "4급-181",
@@ -6388,7 +7299,9 @@
     "meaning": "좇을",
     "radical": "彳",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "鍾"
+    ]
   },
   {
     "id": "4급-182",
@@ -6399,7 +7312,9 @@
     "meaning": "자리",
     "radical": "广",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "庫"
+    ]
   },
   {
     "id": "4급-183",
@@ -6410,7 +7325,10 @@
     "meaning": "술",
     "radical": "酉",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "朱",
+      "周"
+    ]
   },
   {
     "id": "4급-184",
@@ -6421,7 +7339,10 @@
     "meaning": "붉을",
     "radical": "木",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "酒",
+      "周"
+    ]
   },
   {
     "id": "4급-185",
@@ -6432,7 +7353,10 @@
     "meaning": "두루",
     "radical": "口",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "酒",
+      "朱"
+    ]
   },
   {
     "id": "4급-186",
@@ -6454,7 +7378,10 @@
     "meaning": "가질",
     "radical": "手",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "智",
+      "誌"
+    ]
   },
   {
     "id": "4급-188",
@@ -6465,7 +7392,10 @@
     "meaning": "슬기",
     "radical": "日",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "持",
+      "誌"
+    ]
   },
   {
     "id": "4급-189",
@@ -6476,7 +7406,10 @@
     "meaning": "기록할",
     "radical": "言",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "持",
+      "智"
+    ]
   },
   {
     "id": "4급-190",
@@ -6487,7 +7420,10 @@
     "meaning": "짤",
     "radical": "糸",
     "totalStrokes": 18,
-    "confusables": []
+    "confusables": [
+      "績",
+      "縮"
+    ]
   },
   {
     "id": "4급-191",
@@ -6498,7 +7434,10 @@
     "meaning": "보배",
     "radical": "玉",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "陣",
+      "盡"
+    ]
   },
   {
     "id": "4급-192",
@@ -6509,7 +7448,10 @@
     "meaning": "다할",
     "radical": "皿",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "珍",
+      "陣"
+    ]
   },
   {
     "id": "4급-193",
@@ -6520,7 +7462,10 @@
     "meaning": "진칠",
     "radical": "阜",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "珍",
+      "盡"
+    ]
   },
   {
     "id": "4급-194",
@@ -6553,7 +7498,12 @@
     "meaning": "캘",
     "radical": "手",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "推",
+      "探",
+      "援",
+      "揮"
+    ]
   },
   {
     "id": "4급-197",
@@ -6575,7 +7525,10 @@
     "meaning": "샘",
     "radical": "水",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "派",
+      "況"
+    ]
   },
   {
     "id": "4급-199",
@@ -6586,7 +7539,9 @@
     "meaning": "들을",
     "radical": "耳",
     "totalStrokes": 22,
-    "confusables": []
+    "confusables": [
+      "廳"
+    ]
   },
   {
     "id": "4급-200",
@@ -6597,7 +7552,9 @@
     "meaning": "관청",
     "radical": "广",
     "totalStrokes": 25,
-    "confusables": []
+    "confusables": [
+      "聽"
+    ]
   },
   {
     "id": "4급-201",
@@ -6608,7 +7565,12 @@
     "meaning": "부를",
     "radical": "手",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "拒",
+      "拍",
+      "批",
+      "折"
+    ]
   },
   {
     "id": "4급-202",
@@ -6619,7 +7581,12 @@
     "meaning": "밀",
     "radical": "手",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "採",
+      "探",
+      "援",
+      "揮"
+    ]
   },
   {
     "id": "4급-203",
@@ -6630,7 +7597,10 @@
     "meaning": "줄일",
     "radical": "糸",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "績",
+      "織"
+    ]
   },
   {
     "id": "4급-204",
@@ -6641,7 +7611,9 @@
     "meaning": "나아갈",
     "radical": "尢",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "趣"
+    ]
   },
   {
     "id": "4급-205",
@@ -6652,7 +7624,9 @@
     "meaning": "뜻",
     "radical": "走",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "就"
+    ]
   },
   {
     "id": "4급-206",
@@ -6674,7 +7648,9 @@
     "meaning": "잘",
     "radical": "宀",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "針"
+    ]
   },
   {
     "id": "4급-208",
@@ -6685,7 +7661,9 @@
     "meaning": "바늘",
     "radical": "金",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "寢"
+    ]
   },
   {
     "id": "4급-209",
@@ -6696,7 +7674,9 @@
     "meaning": "일컬을",
     "radical": "禾",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "穀"
+    ]
   },
   {
     "id": "4급-210",
@@ -6707,7 +7687,9 @@
     "meaning": "탄식할",
     "radical": "欠",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "彈"
+    ]
   },
   {
     "id": "4급-211",
@@ -6718,7 +7700,9 @@
     "meaning": "탄알",
     "radical": "弓",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "歎"
+    ]
   },
   {
     "id": "4급-212",
@@ -6740,7 +7724,12 @@
     "meaning": "찾을",
     "radical": "手",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "採",
+      "推",
+      "援",
+      "揮"
+    ]
   },
   {
     "id": "4급-214",
@@ -6751,7 +7740,10 @@
     "meaning": "가릴",
     "radical": "手",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "據",
+      "擊"
+    ]
   },
   {
     "id": "4급-215",
@@ -6784,7 +7776,9 @@
     "meaning": "던질",
     "radical": "手",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "鬪"
+    ]
   },
   {
     "id": "4급-218",
@@ -6795,7 +7789,9 @@
     "meaning": "싸움",
     "radical": "鬥",
     "totalStrokes": 20,
-    "confusables": []
+    "confusables": [
+      "投"
+    ]
   },
   {
     "id": "4급-219",
@@ -6806,7 +7802,10 @@
     "meaning": "갈래",
     "radical": "水",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "泉",
+      "況"
+    ]
   },
   {
     "id": "4급-220",
@@ -6817,7 +7816,11 @@
     "meaning": "판단할",
     "radical": "刀",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "刻",
+      "券",
+      "刑"
+    ]
   },
   {
     "id": "4급-221",
@@ -6828,7 +7831,10 @@
     "meaning": "책",
     "radical": "竹",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "範",
+      "管"
+    ]
   },
   {
     "id": "4급-222",
@@ -6850,7 +7856,9 @@
     "meaning": "닫을",
     "radical": "門",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "閑"
+    ]
   },
   {
     "id": "4급-224",
@@ -6883,7 +7891,12 @@
     "meaning": "표할",
     "radical": "木",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "模",
+      "樣",
+      "構",
+      "機"
+    ]
   },
   {
     "id": "4급-227",
@@ -6894,7 +7907,9 @@
     "meaning": "피곤할",
     "radical": "疒",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "避"
+    ]
   },
   {
     "id": "4급-228",
@@ -6905,7 +7920,9 @@
     "meaning": "피할",
     "radical": "辵",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "疲"
+    ]
   },
   {
     "id": "4급-229",
@@ -6916,7 +7933,9 @@
     "meaning": "한가할",
     "radical": "門",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "恨"
+    ]
   },
   {
     "id": "4급-230",
@@ -6927,7 +7946,9 @@
     "meaning": "한[怨]",
     "radical": "心",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "閑"
+    ]
   },
   {
     "id": "4급-231",
@@ -6938,7 +7959,12 @@
     "meaning": "겨룰",
     "radical": "手",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "批",
+      "折",
+      "投",
+      "拒"
+    ]
   },
   {
     "id": "4급-232",
@@ -6949,7 +7975,10 @@
     "meaning": "씨",
     "radical": "木",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "柳",
+      "條"
+    ]
   },
   {
     "id": "4급-233",
@@ -6960,7 +7989,11 @@
     "meaning": "법",
     "radical": "心",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "慮",
+      "憤",
+      "慰"
+    ]
   },
   {
     "id": "4급-234",
@@ -6971,7 +8004,9 @@
     "meaning": "험할",
     "radical": "阜",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "隱"
+    ]
   },
   {
     "id": "4급-235",
@@ -7004,7 +8039,9 @@
     "meaning": "형벌",
     "radical": "刀",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "判"
+    ]
   },
   {
     "id": "4급-238",
@@ -7015,7 +8052,9 @@
     "meaning": "혹",
     "radical": "戈",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "戒"
+    ]
   },
   {
     "id": "4급-239",
@@ -7026,7 +8065,9 @@
     "meaning": "혼인할",
     "radical": "女",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "混"
+    ]
   },
   {
     "id": "4급-240",
@@ -7037,7 +8078,9 @@
     "meaning": "섞을",
     "radical": "水",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "婚"
+    ]
   },
   {
     "id": "4급-241",
@@ -7048,7 +8091,10 @@
     "meaning": "붉을",
     "radical": "糸",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "紀",
+      "納"
+    ]
   },
   {
     "id": "4급-242",
@@ -7070,7 +8116,9 @@
     "meaning": "기쁠",
     "radical": "欠",
     "totalStrokes": 22,
-    "confusables": []
+    "confusables": [
+      "環"
+    ]
   },
   {
     "id": "4급-244",
@@ -7081,7 +8129,9 @@
     "meaning": "고리",
     "radical": "玉",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "歡"
+    ]
   },
   {
     "id": "4급-245",
@@ -7092,7 +8142,10 @@
     "meaning": "상황",
     "radical": "水",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "泉",
+      "派"
+    ]
   },
   {
     "id": "4급-246",
@@ -7114,7 +8167,9 @@
     "meaning": "두터울",
     "radical": "厂",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "候"
+    ]
   },
   {
     "id": "4급-248",
@@ -7125,7 +8180,9 @@
     "meaning": "기후",
     "radical": "人",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "厚"
+    ]
   },
   {
     "id": "4급-249",
@@ -7136,7 +8193,12 @@
     "meaning": "휘두를",
     "radical": "手",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "援",
+      "損",
+      "採",
+      "推"
+    ]
   },
   {
     "id": "4급-250",
@@ -7158,7 +8220,9 @@
     "meaning": "거짓",
     "radical": "人",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "街"
+    ]
   },
   {
     "id": "4급Ⅱ-002",
@@ -7169,7 +8233,9 @@
     "meaning": "거리",
     "radical": "行",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "假"
+    ]
   },
   {
     "id": "4급Ⅱ-003",
@@ -7180,7 +8246,9 @@
     "meaning": "덜",
     "radical": "水",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "監"
+    ]
   },
   {
     "id": "4급Ⅱ-004",
@@ -7191,7 +8259,9 @@
     "meaning": "볼",
     "radical": "皿",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "減"
+    ]
   },
   {
     "id": "4급Ⅱ-005",
@@ -7202,7 +8272,9 @@
     "meaning": "욀",
     "radical": "言",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "康"
+    ]
   },
   {
     "id": "4급Ⅱ-006",
@@ -7213,7 +8285,9 @@
     "meaning": "편안",
     "radical": "广",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "講"
+    ]
   },
   {
     "id": "4급Ⅱ-007",
@@ -7224,7 +8298,12 @@
     "meaning": "낱",
     "radical": "人",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "修",
+      "假",
+      "係",
+      "保"
+    ]
   },
   {
     "id": "4급Ⅱ-008",
@@ -7235,7 +8314,9 @@
     "meaning": "검사할",
     "radical": "木",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "檀"
+    ]
   },
   {
     "id": "4급Ⅱ-009",
@@ -7246,7 +8327,9 @@
     "meaning": "깨끗할",
     "radical": "水",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "缺"
+    ]
   },
   {
     "id": "4급Ⅱ-010",
@@ -7257,7 +8340,9 @@
     "meaning": "이지러질",
     "radical": "缶",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "潔"
+    ]
   },
   {
     "id": "4급Ⅱ-011",
@@ -7268,7 +8353,11 @@
     "meaning": "지경",
     "radical": "土",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "經",
+      "慶",
+      "警"
+    ]
   },
   {
     "id": "4급Ⅱ-012",
@@ -7279,7 +8368,11 @@
     "meaning": "지날",
     "radical": "糸",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "境",
+      "警",
+      "慶"
+    ]
   },
   {
     "id": "4급Ⅱ-013",
@@ -7290,7 +8383,11 @@
     "meaning": "깨우칠",
     "radical": "言",
     "totalStrokes": 20,
-    "confusables": []
+    "confusables": [
+      "境",
+      "經",
+      "慶"
+    ]
   },
   {
     "id": "4급Ⅱ-014",
@@ -7301,7 +8398,11 @@
     "meaning": "경사",
     "radical": "心",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "境",
+      "經",
+      "警"
+    ]
   },
   {
     "id": "4급Ⅱ-015",
@@ -7312,7 +8413,12 @@
     "meaning": "맬",
     "radical": "人",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "保",
+      "俗",
+      "侵",
+      "個"
+    ]
   },
   {
     "id": "4급Ⅱ-016",
@@ -7323,7 +8429,9 @@
     "meaning": "연고",
     "radical": "攴",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "政"
+    ]
   },
   {
     "id": "4급Ⅱ-017",
@@ -7334,7 +8442,9 @@
     "meaning": "벼슬",
     "radical": "宀",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "宗"
+    ]
   },
   {
     "id": "4급Ⅱ-018",
@@ -7345,7 +8455,10 @@
     "meaning": "구할[索]",
     "radical": "水",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "究",
+      "句"
+    ]
   },
   {
     "id": "4급Ⅱ-019",
@@ -7356,7 +8469,10 @@
     "meaning": "글귀",
     "radical": "口",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "求",
+      "究"
+    ]
   },
   {
     "id": "4급Ⅱ-020",
@@ -7367,7 +8483,10 @@
     "meaning": "연구할",
     "radical": "穴",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "求",
+      "句"
+    ]
   },
   {
     "id": "4급Ⅱ-021",
@@ -7378,7 +8497,10 @@
     "meaning": "집",
     "radical": "宀",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "容",
+      "密"
+    ]
   },
   {
     "id": "4급Ⅱ-022",
@@ -7400,7 +8522,9 @@
     "meaning": "다할",
     "radical": "木",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "榮"
+    ]
   },
   {
     "id": "4급Ⅱ-024",
@@ -7422,7 +8546,9 @@
     "meaning": "그릇",
     "radical": "口",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "起"
+    ]
   },
   {
     "id": "4급Ⅱ-026",
@@ -7433,7 +8559,9 @@
     "meaning": "일어날",
     "radical": "走",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "器"
+    ]
   },
   {
     "id": "4급Ⅱ-027",
@@ -7444,7 +8572,9 @@
     "meaning": "따뜻할",
     "radical": "日",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "難"
+    ]
   },
   {
     "id": "4급Ⅱ-028",
@@ -7455,7 +8585,9 @@
     "meaning": "어려울",
     "radical": "隹",
     "totalStrokes": 19,
-    "confusables": []
+    "confusables": [
+      "暖"
+    ]
   },
   {
     "id": "4급Ⅱ-029",
@@ -7466,7 +8598,9 @@
     "meaning": "성낼",
     "radical": "心",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "努"
+    ]
   },
   {
     "id": "4급Ⅱ-030",
@@ -7477,7 +8611,9 @@
     "meaning": "힘쓸",
     "radical": "力",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "怒"
+    ]
   },
   {
     "id": "4급Ⅱ-031",
@@ -7488,7 +8624,11 @@
     "meaning": "끊을",
     "radical": "斤",
     "totalStrokes": 18,
-    "confusables": []
+    "confusables": [
+      "檀",
+      "單",
+      "端"
+    ]
   },
   {
     "id": "4급Ⅱ-032",
@@ -7499,7 +8639,11 @@
     "meaning": "홑",
     "radical": "口",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "斷",
+      "檀",
+      "端"
+    ]
   },
   {
     "id": "4급Ⅱ-033",
@@ -7510,7 +8654,11 @@
     "meaning": "박달나무",
     "radical": "木",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "斷",
+      "單",
+      "端"
+    ]
   },
   {
     "id": "4급Ⅱ-034",
@@ -7521,7 +8669,11 @@
     "meaning": "끝",
     "radical": "立",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "斷",
+      "單",
+      "檀"
+    ]
   },
   {
     "id": "4급Ⅱ-035",
@@ -7532,7 +8684,9 @@
     "meaning": "통달할",
     "radical": "辵",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "進"
+    ]
   },
   {
     "id": "4급Ⅱ-036",
@@ -7565,7 +8719,9 @@
     "meaning": "띠",
     "radical": "巾",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "隊"
+    ]
   },
   {
     "id": "4급Ⅱ-039",
@@ -7576,7 +8732,9 @@
     "meaning": "무리",
     "radical": "阜",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "帶"
+    ]
   },
   {
     "id": "4급Ⅱ-040",
@@ -7598,7 +8756,9 @@
     "meaning": "독",
     "radical": "毋",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "督"
+    ]
   },
   {
     "id": "4급Ⅱ-042",
@@ -7609,7 +8769,9 @@
     "meaning": "감독할",
     "radical": "目",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "毒"
+    ]
   },
   {
     "id": "4급Ⅱ-043",
@@ -7620,7 +8782,9 @@
     "meaning": "구리",
     "radical": "金",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "銃"
+    ]
   },
   {
     "id": "4급Ⅱ-044",
@@ -7631,7 +8795,9 @@
     "meaning": "말",
     "radical": "斗",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "豆"
+    ]
   },
   {
     "id": "4급Ⅱ-045",
@@ -7642,7 +8808,9 @@
     "meaning": "콩",
     "radical": "豆",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "斗"
+    ]
   },
   {
     "id": "4급Ⅱ-046",
@@ -7653,7 +8821,9 @@
     "meaning": "얻을",
     "radical": "彳",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "復"
+    ]
   },
   {
     "id": "4급Ⅱ-047",
@@ -7708,7 +8878,12 @@
     "meaning": "이을",
     "radical": "辵",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "造",
+      "送",
+      "逆",
+      "進"
+    ]
   },
   {
     "id": "4급Ⅱ-052",
@@ -7741,7 +8916,12 @@
     "meaning": "논할",
     "radical": "言",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "請",
+      "誠",
+      "誤",
+      "認"
+    ]
   },
   {
     "id": "4급Ⅱ-055",
@@ -7763,7 +8943,9 @@
     "meaning": "법칙",
     "radical": "彳",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "往"
+    ]
   },
   {
     "id": "4급Ⅱ-057",
@@ -7774,7 +8956,11 @@
     "meaning": "찰",
     "radical": "水",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "演",
+      "潔",
+      "準"
+    ]
   },
   {
     "id": "4급Ⅱ-058",
@@ -7785,7 +8971,9 @@
     "meaning": "줄기",
     "radical": "肉",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "背"
+    ]
   },
   {
     "id": "4급Ⅱ-059",
@@ -7818,7 +9006,9 @@
     "meaning": "힘쓸",
     "radical": "力",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "武"
+    ]
   },
   {
     "id": "4급Ⅱ-062",
@@ -7829,7 +9019,9 @@
     "meaning": "호반",
     "radical": "止",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "務"
+    ]
   },
   {
     "id": "4급Ⅱ-063",
@@ -7840,7 +9032,9 @@
     "meaning": "아닐",
     "radical": "木",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "味"
+    ]
   },
   {
     "id": "4급Ⅱ-064",
@@ -7851,7 +9045,9 @@
     "meaning": "맛",
     "radical": "口",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "未"
+    ]
   },
   {
     "id": "4급Ⅱ-065",
@@ -7862,7 +9058,11 @@
     "meaning": "빽빽할",
     "radical": "宀",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "宮",
+      "富",
+      "容"
+    ]
   },
   {
     "id": "4급Ⅱ-066",
@@ -7884,7 +9084,10 @@
     "meaning": "막을",
     "radical": "阜",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "房",
+      "訪"
+    ]
   },
   {
     "id": "4급Ⅱ-068",
@@ -7895,7 +9098,10 @@
     "meaning": "방",
     "radical": "戶",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "防",
+      "訪"
+    ]
   },
   {
     "id": "4급Ⅱ-069",
@@ -7906,7 +9112,10 @@
     "meaning": "찾을",
     "radical": "言",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "防",
+      "房"
+    ]
   },
   {
     "id": "4급Ⅱ-070",
@@ -7917,7 +9126,10 @@
     "meaning": "절",
     "radical": "手",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "背",
+      "配"
+    ]
   },
   {
     "id": "4급Ⅱ-071",
@@ -7928,7 +9140,10 @@
     "meaning": "등",
     "radical": "肉",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "拜",
+      "配"
+    ]
   },
   {
     "id": "4급Ⅱ-072",
@@ -7939,7 +9154,10 @@
     "meaning": "나눌",
     "radical": "酉",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "拜",
+      "背"
+    ]
   },
   {
     "id": "4급Ⅱ-073",
@@ -7950,7 +9168,9 @@
     "meaning": "벌할",
     "radical": "网",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "伐"
+    ]
   },
   {
     "id": "4급Ⅱ-074",
@@ -7961,7 +9181,9 @@
     "meaning": "칠[討]",
     "radical": "人",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "罰"
+    ]
   },
   {
     "id": "4급Ⅱ-075",
@@ -7972,7 +9194,10 @@
     "meaning": "벽",
     "radical": "土",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "壓",
+      "增"
+    ]
   },
   {
     "id": "4급Ⅱ-076",
@@ -7994,7 +9219,11 @@
     "meaning": "지킬",
     "radical": "人",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "步",
+      "報",
+      "寶"
+    ]
   },
   {
     "id": "4급Ⅱ-078",
@@ -8005,7 +9234,11 @@
     "meaning": "걸음",
     "radical": "止",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "保",
+      "報",
+      "寶"
+    ]
   },
   {
     "id": "4급Ⅱ-079",
@@ -8016,7 +9249,11 @@
     "meaning": "갚을",
     "radical": "土",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "保",
+      "步",
+      "寶"
+    ]
   },
   {
     "id": "4급Ⅱ-080",
@@ -8027,7 +9264,11 @@
     "meaning": "보배",
     "radical": "宀",
     "totalStrokes": 20,
-    "confusables": []
+    "confusables": [
+      "保",
+      "步",
+      "報"
+    ]
   },
   {
     "id": "4급Ⅱ-081",
@@ -8038,7 +9279,9 @@
     "meaning": "회복할",
     "radical": "彳",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "得"
+    ]
   },
   {
     "id": "4급Ⅱ-082",
@@ -8049,7 +9292,11 @@
     "meaning": "마을[官廳]",
     "radical": "广",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "富",
+      "副",
+      "婦"
+    ]
   },
   {
     "id": "4급Ⅱ-083",
@@ -8060,7 +9307,11 @@
     "meaning": "부자",
     "radical": "宀",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "副",
+      "婦",
+      "府"
+    ]
   },
   {
     "id": "4급Ⅱ-084",
@@ -8071,7 +9322,11 @@
     "meaning": "버금",
     "radical": "刀",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "婦",
+      "富",
+      "府"
+    ]
   },
   {
     "id": "4급Ⅱ-085",
@@ -8082,7 +9337,11 @@
     "meaning": "며느리",
     "radical": "女",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "副",
+      "富",
+      "府"
+    ]
   },
   {
     "id": "4급Ⅱ-086",
@@ -8093,7 +9352,10 @@
     "meaning": "부처",
     "radical": "人",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "低",
+      "伐"
+    ]
   },
   {
     "id": "4급Ⅱ-087",
@@ -8104,7 +9366,11 @@
     "meaning": "날",
     "radical": "飛",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "非",
+      "備",
+      "悲"
+    ]
   },
   {
     "id": "4급Ⅱ-088",
@@ -8115,7 +9381,11 @@
     "meaning": "갖출",
     "radical": "人",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "悲",
+      "飛",
+      "非"
+    ]
   },
   {
     "id": "4급Ⅱ-089",
@@ -8126,7 +9396,11 @@
     "meaning": "아닐",
     "radical": "非",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "飛",
+      "備",
+      "悲"
+    ]
   },
   {
     "id": "4급Ⅱ-090",
@@ -8137,7 +9411,11 @@
     "meaning": "슬플",
     "radical": "心",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "備",
+      "飛",
+      "非"
+    ]
   },
   {
     "id": "4급Ⅱ-091",
@@ -8148,7 +9426,9 @@
     "meaning": "가난할",
     "radical": "貝",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "貨"
+    ]
   },
   {
     "id": "4급Ⅱ-092",
@@ -8159,7 +9439,11 @@
     "meaning": "절",
     "radical": "寸",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "師",
+      "謝",
+      "舍"
+    ]
   },
   {
     "id": "4급Ⅱ-093",
@@ -8170,7 +9454,11 @@
     "meaning": "스승",
     "radical": "巾",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "寺",
+      "謝",
+      "舍"
+    ]
   },
   {
     "id": "4급Ⅱ-094",
@@ -8181,7 +9469,11 @@
     "meaning": "사례할",
     "radical": "言",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "寺",
+      "師",
+      "舍"
+    ]
   },
   {
     "id": "4급Ⅱ-095",
@@ -8192,7 +9484,11 @@
     "meaning": "집",
     "radical": "舌",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "寺",
+      "師",
+      "謝"
+    ]
   },
   {
     "id": "4급Ⅱ-096",
@@ -8214,7 +9510,11 @@
     "meaning": "떳떳할",
     "radical": "巾",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "床",
+      "想",
+      "狀"
+    ]
   },
   {
     "id": "4급Ⅱ-098",
@@ -8225,7 +9525,11 @@
     "meaning": "상",
     "radical": "广",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "狀",
+      "常",
+      "想"
+    ]
   },
   {
     "id": "4급Ⅱ-099",
@@ -8236,7 +9540,11 @@
     "meaning": "생각",
     "radical": "心",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "常",
+      "床",
+      "狀"
+    ]
   },
   {
     "id": "4급Ⅱ-100",
@@ -8247,7 +9555,11 @@
     "meaning": "형상",
     "radical": "犬",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "床",
+      "常",
+      "想"
+    ]
   },
   {
     "id": "4급Ⅱ-101",
@@ -8258,7 +9570,9 @@
     "meaning": "베풀",
     "radical": "言",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "訪"
+    ]
   },
   {
     "id": "4급Ⅱ-102",
@@ -8269,7 +9583,13 @@
     "meaning": "정성",
     "radical": "言",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "聖",
+      "聲",
+      "盛",
+      "城",
+      "星"
+    ]
   },
   {
     "id": "4급Ⅱ-103",
@@ -8280,7 +9600,13 @@
     "meaning": "소리",
     "radical": "耳",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "聖",
+      "誠",
+      "盛",
+      "城",
+      "星"
+    ]
   },
   {
     "id": "4급Ⅱ-104",
@@ -8291,7 +9617,13 @@
     "meaning": "성할",
     "radical": "皿",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "聖",
+      "誠",
+      "聲",
+      "城",
+      "星"
+    ]
   },
   {
     "id": "4급Ⅱ-105",
@@ -8302,7 +9634,13 @@
     "meaning": "성인",
     "radical": "耳",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "聲",
+      "誠",
+      "盛",
+      "城",
+      "星"
+    ]
   },
   {
     "id": "4급Ⅱ-106",
@@ -8313,7 +9651,13 @@
     "meaning": "재",
     "radical": "土",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "星",
+      "誠",
+      "聲",
+      "盛",
+      "聖"
+    ]
   },
   {
     "id": "4급Ⅱ-107",
@@ -8324,7 +9668,13 @@
     "meaning": "별",
     "radical": "日",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "城",
+      "誠",
+      "聲",
+      "盛",
+      "聖"
+    ]
   },
   {
     "id": "4급Ⅱ-108",
@@ -8335,7 +9685,10 @@
     "meaning": "형세",
     "radical": "力",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "稅",
+      "細"
+    ]
   },
   {
     "id": "4급Ⅱ-109",
@@ -8346,7 +9699,10 @@
     "meaning": "세금",
     "radical": "禾",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "勢",
+      "細"
+    ]
   },
   {
     "id": "4급Ⅱ-110",
@@ -8357,7 +9713,10 @@
     "meaning": "가늘",
     "radical": "糸",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "稅",
+      "勢"
+    ]
   },
   {
     "id": "4급Ⅱ-111",
@@ -8368,7 +9727,10 @@
     "meaning": "웃음",
     "radical": "竹",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "素",
+      "掃"
+    ]
   },
   {
     "id": "4급Ⅱ-112",
@@ -8379,7 +9741,10 @@
     "meaning": "쓸[掃除]",
     "radical": "手",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "笑",
+      "素"
+    ]
   },
   {
     "id": "4급Ⅱ-113",
@@ -8390,7 +9755,10 @@
     "meaning": "본디",
     "radical": "糸",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "笑",
+      "掃"
+    ]
   },
   {
     "id": "4급Ⅱ-114",
@@ -8401,7 +9769,9 @@
     "meaning": "이을",
     "radical": "糸",
     "totalStrokes": 21,
-    "confusables": []
+    "confusables": [
+      "俗"
+    ]
   },
   {
     "id": "4급Ⅱ-115",
@@ -8412,7 +9782,9 @@
     "meaning": "풍속",
     "radical": "人",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "續"
+    ]
   },
   {
     "id": "4급Ⅱ-116",
@@ -8423,7 +9795,12 @@
     "meaning": "보낼",
     "radical": "辵",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "逆",
+      "退",
+      "連",
+      "造"
+    ]
   },
   {
     "id": "4급Ⅱ-117",
@@ -8434,7 +9811,12 @@
     "meaning": "닦을",
     "radical": "人",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "授",
+      "受",
+      "守",
+      "收"
+    ]
   },
   {
     "id": "4급Ⅱ-118",
@@ -8445,7 +9827,12 @@
     "meaning": "받을",
     "radical": "又",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "修",
+      "守",
+      "授",
+      "收"
+    ]
   },
   {
     "id": "4급Ⅱ-119",
@@ -8456,7 +9843,12 @@
     "meaning": "지킬",
     "radical": "宀",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "收",
+      "修",
+      "受",
+      "授"
+    ]
   },
   {
     "id": "4급Ⅱ-120",
@@ -8467,7 +9859,12 @@
     "meaning": "줄",
     "radical": "手",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "修",
+      "受",
+      "守",
+      "收"
+    ]
   },
   {
     "id": "4급Ⅱ-121",
@@ -8478,7 +9875,12 @@
     "meaning": "거둘",
     "radical": "攴",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "守",
+      "修",
+      "受",
+      "授"
+    ]
   },
   {
     "id": "4급Ⅱ-122",
@@ -8489,7 +9891,10 @@
     "meaning": "순수할",
     "radical": "糸",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "素",
+      "細"
+    ]
   },
   {
     "id": "4급Ⅱ-123",
@@ -8500,7 +9905,10 @@
     "meaning": "이을",
     "radical": "手",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "拜",
+      "指"
+    ]
   },
   {
     "id": "4급Ⅱ-124",
@@ -8511,7 +9919,12 @@
     "meaning": "시",
     "radical": "言",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "試",
+      "視",
+      "施",
+      "是"
+    ]
   },
   {
     "id": "4급Ⅱ-125",
@@ -8522,7 +9935,12 @@
     "meaning": "시험",
     "radical": "言",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "詩",
+      "視",
+      "施",
+      "是"
+    ]
   },
   {
     "id": "4급Ⅱ-126",
@@ -8533,7 +9951,12 @@
     "meaning": "볼",
     "radical": "見",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "詩",
+      "試",
+      "施",
+      "是"
+    ]
   },
   {
     "id": "4급Ⅱ-127",
@@ -8544,7 +9967,12 @@
     "meaning": "베풀",
     "radical": "方",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "是",
+      "詩",
+      "試",
+      "視"
+    ]
   },
   {
     "id": "4급Ⅱ-128",
@@ -8555,7 +9983,12 @@
     "meaning": "이[斯]",
     "radical": "日",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "施",
+      "詩",
+      "試",
+      "視"
+    ]
   },
   {
     "id": "4급Ⅱ-129",
@@ -8566,7 +9999,10 @@
     "meaning": "쉴",
     "radical": "心",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "恩",
+      "怒"
+    ]
   },
   {
     "id": "4급Ⅱ-130",
@@ -8577,7 +10013,9 @@
     "meaning": "납[猿]",
     "radical": "田",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "田"
+    ]
   },
   {
     "id": "4급Ⅱ-131",
@@ -8588,7 +10026,12 @@
     "meaning": "깊을",
     "radical": "水",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "液",
+      "減",
+      "測",
+      "港"
+    ]
   },
   {
     "id": "4급Ⅱ-132",
@@ -8599,7 +10042,9 @@
     "meaning": "눈",
     "radical": "目",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "眞"
+    ]
   },
   {
     "id": "4급Ⅱ-133",
@@ -8610,7 +10055,9 @@
     "meaning": "어두울",
     "radical": "日",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "暖"
+    ]
   },
   {
     "id": "4급Ⅱ-134",
@@ -8621,7 +10068,9 @@
     "meaning": "누를",
     "radical": "土",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "壁"
+    ]
   },
   {
     "id": "4급Ⅱ-135",
@@ -8632,7 +10081,12 @@
     "meaning": "진",
     "radical": "水",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "深",
+      "減",
+      "測",
+      "港"
+    ]
   },
   {
     "id": "4급Ⅱ-136",
@@ -8654,7 +10108,9 @@
     "meaning": "남을",
     "radical": "食",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "如"
+    ]
   },
   {
     "id": "4급Ⅱ-138",
@@ -8665,7 +10121,9 @@
     "meaning": "같을",
     "radical": "女",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "餘"
+    ]
   },
   {
     "id": "4급Ⅱ-139",
@@ -8676,7 +10134,12 @@
     "meaning": "거스릴",
     "radical": "辵",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "送",
+      "退",
+      "連",
+      "造"
+    ]
   },
   {
     "id": "4급Ⅱ-140",
@@ -8687,7 +10150,10 @@
     "meaning": "연기",
     "radical": "火",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "演",
+      "硏"
+    ]
   },
   {
     "id": "4급Ⅱ-141",
@@ -8698,7 +10164,10 @@
     "meaning": "갈",
     "radical": "石",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "煙",
+      "演"
+    ]
   },
   {
     "id": "4급Ⅱ-142",
@@ -8709,7 +10178,10 @@
     "meaning": "펼",
     "radical": "水",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "煙",
+      "硏"
+    ]
   },
   {
     "id": "4급Ⅱ-143",
@@ -8720,7 +10192,9 @@
     "meaning": "영화",
     "radical": "木",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "極"
+    ]
   },
   {
     "id": "4급Ⅱ-144",
@@ -8742,7 +10216,12 @@
     "meaning": "그르칠",
     "radical": "言",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "誠",
+      "認",
+      "論",
+      "詩"
+    ]
   },
   {
     "id": "4급Ⅱ-146",
@@ -8764,7 +10243,9 @@
     "meaning": "갈",
     "radical": "彳",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "律"
+    ]
   },
   {
     "id": "4급Ⅱ-148",
@@ -8775,7 +10256,10 @@
     "meaning": "노래",
     "radical": "言",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "講",
+      "謝"
+    ]
   },
   {
     "id": "4급Ⅱ-149",
@@ -8786,7 +10270,10 @@
     "meaning": "얼굴",
     "radical": "宀",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "宮",
+      "密"
+    ]
   },
   {
     "id": "4급Ⅱ-150",
@@ -8797,7 +10284,9 @@
     "meaning": "둥글",
     "radical": "囗",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "員"
+    ]
   },
   {
     "id": "4급Ⅱ-151",
@@ -8808,7 +10297,9 @@
     "meaning": "인원",
     "radical": "口",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "圓"
+    ]
   },
   {
     "id": "4급Ⅱ-152",
@@ -8819,7 +10310,9 @@
     "meaning": "지킬",
     "radical": "行",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "爲"
+    ]
   },
   {
     "id": "4급Ⅱ-153",
@@ -8830,7 +10323,9 @@
     "meaning": "하",
     "radical": "爪",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "衛"
+    ]
   },
   {
     "id": "4급Ⅱ-154",
@@ -8852,7 +10347,10 @@
     "meaning": "은혜",
     "radical": "心",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "息",
+      "怒"
+    ]
   },
   {
     "id": "4급Ⅱ-156",
@@ -8863,7 +10361,10 @@
     "meaning": "그늘",
     "radical": "阜",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "隊",
+      "除"
+    ]
   },
   {
     "id": "4급Ⅱ-157",
@@ -8885,7 +10386,9 @@
     "meaning": "의논할",
     "radical": "言",
     "totalStrokes": 20,
-    "confusables": []
+    "confusables": [
+      "義"
+    ]
   },
   {
     "id": "4급Ⅱ-159",
@@ -8896,7 +10399,9 @@
     "meaning": "옳을",
     "radical": "羊",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "議"
+    ]
   },
   {
     "id": "4급Ⅱ-160",
@@ -8907,7 +10412,10 @@
     "meaning": "옮길",
     "radical": "禾",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "稅",
+      "程"
+    ]
   },
   {
     "id": "4급Ⅱ-161",
@@ -8929,7 +10437,10 @@
     "meaning": "도장",
     "radical": "卩",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "引",
+      "認"
+    ]
   },
   {
     "id": "4급Ⅱ-163",
@@ -8940,7 +10451,10 @@
     "meaning": "끌",
     "radical": "弓",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "印",
+      "認"
+    ]
   },
   {
     "id": "4급Ⅱ-164",
@@ -8951,7 +10465,10 @@
     "meaning": "알[知]",
     "radical": "言",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "印",
+      "引"
+    ]
   },
   {
     "id": "4급Ⅱ-165",
@@ -8962,7 +10479,9 @@
     "meaning": "장수",
     "radical": "寸",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "障"
+    ]
   },
   {
     "id": "4급Ⅱ-166",
@@ -8973,7 +10492,9 @@
     "meaning": "막을",
     "radical": "阜",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "將"
+    ]
   },
   {
     "id": "4급Ⅱ-167",
@@ -8984,7 +10505,10 @@
     "meaning": "낮을",
     "radical": "人",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "佛",
+      "伐"
+    ]
   },
   {
     "id": "4급Ⅱ-168",
@@ -9006,7 +10530,9 @@
     "meaning": "밭",
     "radical": "田",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "申"
+    ]
   },
   {
     "id": "4급Ⅱ-170",
@@ -9017,7 +10543,11 @@
     "meaning": "끊을",
     "radical": "糸",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "統",
+      "經",
+      "細"
+    ]
   },
   {
     "id": "4급Ⅱ-171",
@@ -9028,7 +10558,11 @@
     "meaning": "이을",
     "radical": "手",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "掃",
+      "授",
+      "提"
+    ]
   },
   {
     "id": "4급Ⅱ-172",
@@ -9039,7 +10573,10 @@
     "meaning": "정사(政事)",
     "radical": "攴",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "程",
+      "精"
+    ]
   },
   {
     "id": "4급Ⅱ-173",
@@ -9050,7 +10587,10 @@
     "meaning": "한도",
     "radical": "禾",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "政",
+      "精"
+    ]
   },
   {
     "id": "4급Ⅱ-174",
@@ -9061,7 +10601,10 @@
     "meaning": "정할",
     "radical": "米",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "政",
+      "程"
+    ]
   },
   {
     "id": "4급Ⅱ-175",
@@ -9072,7 +10615,14 @@
     "meaning": "건널",
     "radical": "水",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "提",
+      "制",
+      "製",
+      "除",
+      "際",
+      "祭"
+    ]
   },
   {
     "id": "4급Ⅱ-176",
@@ -9083,7 +10633,14 @@
     "meaning": "끌",
     "radical": "手",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "祭",
+      "濟",
+      "制",
+      "製",
+      "除",
+      "際"
+    ]
   },
   {
     "id": "4급Ⅱ-177",
@@ -9094,7 +10651,14 @@
     "meaning": "절제할",
     "radical": "刀",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "濟",
+      "提",
+      "製",
+      "除",
+      "際",
+      "祭"
+    ]
   },
   {
     "id": "4급Ⅱ-178",
@@ -9105,7 +10669,14 @@
     "meaning": "지을",
     "radical": "衣",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "際",
+      "濟",
+      "提",
+      "制",
+      "除",
+      "祭"
+    ]
   },
   {
     "id": "4급Ⅱ-179",
@@ -9116,7 +10687,14 @@
     "meaning": "덜",
     "radical": "阜",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "際",
+      "祭",
+      "濟",
+      "提",
+      "制",
+      "製"
+    ]
   },
   {
     "id": "4급Ⅱ-180",
@@ -9127,7 +10705,14 @@
     "meaning": "즈음",
     "radical": "阜",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "製",
+      "除",
+      "濟",
+      "提",
+      "制",
+      "祭"
+    ]
   },
   {
     "id": "4급Ⅱ-181",
@@ -9138,7 +10723,14 @@
     "meaning": "제사",
     "radical": "示",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "提",
+      "除",
+      "濟",
+      "制",
+      "製",
+      "際"
+    ]
   },
   {
     "id": "4급Ⅱ-182",
@@ -9149,7 +10741,11 @@
     "meaning": "새",
     "radical": "鳥",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "造",
+      "助",
+      "早"
+    ]
   },
   {
     "id": "4급Ⅱ-183",
@@ -9160,7 +10756,11 @@
     "meaning": "도울",
     "radical": "力",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "早",
+      "鳥",
+      "造"
+    ]
   },
   {
     "id": "4급Ⅱ-184",
@@ -9171,7 +10771,11 @@
     "meaning": "이를",
     "radical": "日",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "助",
+      "鳥",
+      "造"
+    ]
   },
   {
     "id": "4급Ⅱ-185",
@@ -9182,7 +10786,11 @@
     "meaning": "지을",
     "radical": "辵",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "鳥",
+      "助",
+      "早"
+    ]
   },
   {
     "id": "4급Ⅱ-186",
@@ -9193,7 +10801,9 @@
     "meaning": "높을",
     "radical": "寸",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "將"
+    ]
   },
   {
     "id": "4급Ⅱ-187",
@@ -9204,7 +10814,9 @@
     "meaning": "마루",
     "radical": "宀",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "官"
+    ]
   },
   {
     "id": "4급Ⅱ-188",
@@ -9237,7 +10849,12 @@
     "meaning": "준할",
     "radical": "水",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "減",
+      "滿",
+      "演",
+      "測"
+    ]
   },
   {
     "id": "4급Ⅱ-191",
@@ -9259,7 +10876,10 @@
     "meaning": "더할",
     "radical": "土",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "境",
+      "壁"
+    ]
   },
   {
     "id": "4급Ⅱ-193",
@@ -9270,7 +10890,11 @@
     "meaning": "뜻",
     "radical": "心",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "至",
+      "指",
+      "支"
+    ]
   },
   {
     "id": "4급Ⅱ-194",
@@ -9281,7 +10905,11 @@
     "meaning": "가리킬",
     "radical": "手",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "志",
+      "支",
+      "至"
+    ]
   },
   {
     "id": "4급Ⅱ-195",
@@ -9292,7 +10920,11 @@
     "meaning": "지탱할",
     "radical": "支",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "志",
+      "指",
+      "至"
+    ]
   },
   {
     "id": "4급Ⅱ-196",
@@ -9303,7 +10935,11 @@
     "meaning": "이를",
     "radical": "至",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "志",
+      "指",
+      "支"
+    ]
   },
   {
     "id": "4급Ⅱ-197",
@@ -9314,7 +10950,9 @@
     "meaning": "직분",
     "radical": "耳",
     "totalStrokes": 18,
-    "confusables": []
+    "confusables": [
+      "聲"
+    ]
   },
   {
     "id": "4급Ⅱ-198",
@@ -9325,7 +10963,9 @@
     "meaning": "나아갈",
     "radical": "辵",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "眞"
+    ]
   },
   {
     "id": "4급Ⅱ-199",
@@ -9336,7 +10976,9 @@
     "meaning": "참",
     "radical": "目",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "進"
+    ]
   },
   {
     "id": "4급Ⅱ-200",
@@ -9369,7 +11011,9 @@
     "meaning": "비롯할",
     "radical": "刀",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "副"
+    ]
   },
   {
     "id": "4급Ⅱ-203",
@@ -9380,7 +11024,9 @@
     "meaning": "곳",
     "radical": "虍",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "虛"
+    ]
   },
   {
     "id": "4급Ⅱ-204",
@@ -9391,7 +11037,12 @@
     "meaning": "청할",
     "radical": "言",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "論",
+      "誠",
+      "誤",
+      "認"
+    ]
   },
   {
     "id": "4급Ⅱ-205",
@@ -9402,7 +11053,9 @@
     "meaning": "다[皆]",
     "radical": "糸",
     "totalStrokes": 17,
-    "confusables": []
+    "confusables": [
+      "銃"
+    ]
   },
   {
     "id": "4급Ⅱ-206",
@@ -9413,7 +11066,9 @@
     "meaning": "총",
     "radical": "金",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "總"
+    ]
   },
   {
     "id": "4급Ⅱ-207",
@@ -9424,7 +11079,9 @@
     "meaning": "쌓을",
     "radical": "竹",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [
+      "蓄"
+    ]
   },
   {
     "id": "4급Ⅱ-208",
@@ -9435,7 +11092,9 @@
     "meaning": "모을",
     "radical": "艸",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "築"
+    ]
   },
   {
     "id": "4급Ⅱ-209",
@@ -9446,7 +11105,9 @@
     "meaning": "충성",
     "radical": "心",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "蟲"
+    ]
   },
   {
     "id": "4급Ⅱ-210",
@@ -9457,7 +11118,9 @@
     "meaning": "벌레",
     "radical": "虫",
     "totalStrokes": 18,
-    "confusables": []
+    "confusables": [
+      "忠"
+    ]
   },
   {
     "id": "4급Ⅱ-211",
@@ -9468,7 +11131,9 @@
     "meaning": "가질",
     "radical": "又",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "受"
+    ]
   },
   {
     "id": "4급Ⅱ-212",
@@ -9479,7 +11144,12 @@
     "meaning": "헤아릴",
     "radical": "水",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "減",
+      "港",
+      "深",
+      "液"
+    ]
   },
   {
     "id": "4급Ⅱ-213",
@@ -9490,7 +11160,10 @@
     "meaning": "다스릴",
     "radical": "水",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "置",
+      "齒"
+    ]
   },
   {
     "id": "4급Ⅱ-214",
@@ -9501,7 +11174,10 @@
     "meaning": "둘[措]",
     "radical": "网",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "治",
+      "齒"
+    ]
   },
   {
     "id": "4급Ⅱ-215",
@@ -9512,7 +11188,10 @@
     "meaning": "이",
     "radical": "齒",
     "totalStrokes": 15,
-    "confusables": []
+    "confusables": [
+      "治",
+      "置"
+    ]
   },
   {
     "id": "4급Ⅱ-216",
@@ -9523,7 +11202,12 @@
     "meaning": "침노할",
     "radical": "人",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "係",
+      "保",
+      "俗",
+      "個"
+    ]
   },
   {
     "id": "4급Ⅱ-217",
@@ -9534,7 +11218,10 @@
     "meaning": "쾌할",
     "radical": "心",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "志",
+      "忠"
+    ]
   },
   {
     "id": "4급Ⅱ-218",
@@ -9545,7 +11232,10 @@
     "meaning": "모습",
     "radical": "心",
     "totalStrokes": 14,
-    "confusables": []
+    "confusables": [
+      "慶",
+      "想"
+    ]
   },
   {
     "id": "4급Ⅱ-219",
@@ -9556,7 +11246,11 @@
     "meaning": "거느릴",
     "radical": "糸",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "絶",
+      "經",
+      "細"
+    ]
   },
   {
     "id": "4급Ⅱ-220",
@@ -9567,7 +11261,12 @@
     "meaning": "물러날",
     "radical": "辵",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "送",
+      "逆",
+      "連",
+      "造"
+    ]
   },
   {
     "id": "4급Ⅱ-221",
@@ -9578,7 +11277,9 @@
     "meaning": "물결",
     "radical": "水",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "破"
+    ]
   },
   {
     "id": "4급Ⅱ-222",
@@ -9589,7 +11290,9 @@
     "meaning": "깨뜨릴",
     "radical": "石",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "波"
+    ]
   },
   {
     "id": "4급Ⅱ-223",
@@ -9600,7 +11303,10 @@
     "meaning": "대포",
     "radical": "石",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "包",
+      "布"
+    ]
   },
   {
     "id": "4급Ⅱ-224",
@@ -9611,7 +11317,10 @@
     "meaning": "쌀[裹]",
     "radical": "勹",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "布",
+      "砲"
+    ]
   },
   {
     "id": "4급Ⅱ-225",
@@ -9622,7 +11331,10 @@
     "meaning": "베",
     "radical": "巾",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [
+      "包",
+      "砲"
+    ]
   },
   {
     "id": "4급Ⅱ-226",
@@ -9644,7 +11356,9 @@
     "meaning": "표",
     "radical": "示",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "祭"
+    ]
   },
   {
     "id": "4급Ⅱ-228",
@@ -9666,7 +11380,9 @@
     "meaning": "한할",
     "radical": "阜",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "除"
+    ]
   },
   {
     "id": "4급Ⅱ-230",
@@ -9677,7 +11393,9 @@
     "meaning": "배",
     "radical": "舟",
     "totalStrokes": 10,
-    "confusables": []
+    "confusables": [
+      "港"
+    ]
   },
   {
     "id": "4급Ⅱ-231",
@@ -9688,7 +11406,9 @@
     "meaning": "항구",
     "radical": "水",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "航"
+    ]
   },
   {
     "id": "4급Ⅱ-232",
@@ -9710,7 +11430,9 @@
     "meaning": "시골",
     "radical": "邑",
     "totalStrokes": 13,
-    "confusables": []
+    "confusables": [
+      "香"
+    ]
   },
   {
     "id": "4급Ⅱ-234",
@@ -9721,7 +11443,9 @@
     "meaning": "향기",
     "radical": "香",
     "totalStrokes": 9,
-    "confusables": []
+    "confusables": [
+      "鄕"
+    ]
   },
   {
     "id": "4급Ⅱ-235",
@@ -9732,7 +11456,9 @@
     "meaning": "빌",
     "radical": "虍",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "處"
+    ]
   },
   {
     "id": "4급Ⅱ-236",
@@ -9787,7 +11513,10 @@
     "meaning": "은혜",
     "radical": "心",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [
+      "悲",
+      "想"
+    ]
   },
   {
     "id": "4급Ⅱ-241",
@@ -9798,7 +11527,11 @@
     "meaning": "좋을",
     "radical": "女",
     "totalStrokes": 6,
-    "confusables": []
+    "confusables": [
+      "戶",
+      "護",
+      "呼"
+    ]
   },
   {
     "id": "4급Ⅱ-242",
@@ -9809,7 +11542,11 @@
     "meaning": "집",
     "radical": "戶",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [
+      "好",
+      "護",
+      "呼"
+    ]
   },
   {
     "id": "4급Ⅱ-243",
@@ -9820,7 +11557,11 @@
     "meaning": "도울",
     "radical": "言",
     "totalStrokes": 21,
-    "confusables": []
+    "confusables": [
+      "好",
+      "戶",
+      "呼"
+    ]
   },
   {
     "id": "4급Ⅱ-244",
@@ -9831,7 +11572,11 @@
     "meaning": "부를",
     "radical": "口",
     "totalStrokes": 8,
-    "confusables": []
+    "confusables": [
+      "好",
+      "戶",
+      "護"
+    ]
   },
   {
     "id": "4급Ⅱ-245",
@@ -9842,7 +11587,9 @@
     "meaning": "재물",
     "radical": "貝",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [
+      "貧"
+    ]
   },
   {
     "id": "4급Ⅱ-246",
@@ -9875,7 +11622,10 @@
     "meaning": "마실",
     "radical": "口",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [
+      "味",
+      "呼"
+    ]
   },
   {
     "id": "4급Ⅱ-249",

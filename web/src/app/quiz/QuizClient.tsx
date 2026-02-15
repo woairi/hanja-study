@@ -18,6 +18,7 @@ type StudySession = {
 };
 
 const SESSION_KEY = 'hanja-study:session';
+const RETRY_KEY = 'hanja-study:retry';
 
 export default function QuizClient() {
   const sp = useSearchParams();
@@ -33,6 +34,25 @@ export default function QuizClient() {
   const [answers, setAnswers] = useState<{ qid: string; correct: boolean; kanjiId: string }[]>([]);
 
   useEffect(() => {
+    const retry = sp.get('retry') === '1';
+    if (retry) {
+      const rawRetry = window.sessionStorage.getItem(RETRY_KEY);
+      if (!rawRetry) return;
+      const retryIds = JSON.parse(rawRetry) as string[];
+      const items: KanjiItem[] = retryIds
+        .map((id) => ALL_KANJI.find((k) => k.id === id))
+        .filter((x): x is KanjiItem => !!x);
+      const pool = kanjiByGradeLabel(grade);
+      setQuestions(makeQuiz(items, pool));
+      setQIdx(0);
+      setChosen(null);
+      setLocked(false);
+      setFeedback(null);
+      setAnswers([]);
+      // no resume state for retry
+      return;
+    }
+
     const raw = window.sessionStorage.getItem(SESSION_KEY);
     if (!raw) return;
     const session = JSON.parse(raw) as StudySession;
@@ -70,6 +90,13 @@ export default function QuizClient() {
   const done = questions.length > 0 && qIdx >= questions.length;
 
   const score = useMemo(() => answers.filter((a) => a.correct).length, [answers]);
+  const wrongKanjiIds = useMemo(() => {
+    const set = new Set<string>();
+    for (const a of answers) {
+      if (!a.correct) set.add(a.kanjiId);
+    }
+    return [...set];
+  }, [answers]);
 
   function commitResult(isCorrect: boolean, kanjiId: string) {
     const now = Date.now();
@@ -92,6 +119,9 @@ export default function QuizClient() {
   if (done) {
     // finished → clear resume marker
     clearLastSession();
+
+    const hasWrong = wrongKanjiIds.length > 0;
+
     return (
       <main className="mx-auto flex min-h-[70vh] max-w-md flex-col items-center justify-center p-4 text-center">
         <div className="card w-full p-6">
@@ -100,7 +130,24 @@ export default function QuizClient() {
           <p className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
             점수: <span className="font-extrabold">{score}</span> / {questions.length}
           </p>
+          {hasWrong && (
+            <p className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
+              틀린 문제: <span className="font-extrabold">{wrongKanjiIds.length}</span>개
+            </p>
+          )}
+
           <div className="mt-5 flex flex-col gap-2">
+            {hasWrong && (
+              <Link
+                className="btn btn-primary focus-ring inline-flex w-full items-center justify-center"
+                href={`/quiz?grade=${encodeURIComponent(grade)}&retry=1`}
+                onClick={() => {
+                  window.sessionStorage.setItem(RETRY_KEY, JSON.stringify(wrongKanjiIds));
+                }}
+              >
+                틀린 것만 다시
+              </Link>
+            )}
             <Link className="btn btn-primary focus-ring inline-flex w-full items-center justify-center" href="/progress">
               진도 보기
             </Link>
