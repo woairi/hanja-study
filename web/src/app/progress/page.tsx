@@ -41,13 +41,31 @@ export default function ProgressPage() {
   const weakExportJson = useMemo(() => {
     const st = loadState();
     const map = new Map(ALL_KANJI.map((k) => [k.id, k] as const));
+
     const top = Object.entries(st.progress)
-      .map(([id, p]) => ({ id, score: (p.wrong + 1) / (p.correct + 1), wrong: p.wrong, correct: p.correct, p }))
-      .sort((a, b) => b.score - a.score)
+      .map(([id, p]) => {
+        const due = !!p && !p.mastered && p.nextReviewAt <= now;
+        return {
+          id,
+          wrong: p.wrong,
+          correct: p.correct,
+          due,
+          nextReviewAt: p.nextReviewAt,
+        };
+      })
+      .sort((a, b) => {
+        // 1) due first
+        if (a.due !== b.due) return a.due ? -1 : 1;
+        // 2) wrong desc
+        if (b.wrong !== a.wrong) return b.wrong - a.wrong;
+        // 3) correct asc
+        if (a.correct !== b.correct) return a.correct - b.correct;
+        // 4) earlier review first
+        return (a.nextReviewAt || 0) - (b.nextReviewAt || 0);
+      })
       .slice(0, 50)
       .map((w) => {
         const k = map.get(w.id);
-        const due = !!w.p && !w.p.mastered && w.p.nextReviewAt <= now;
         return {
           id: w.id,
           hanja: k?.hanja,
@@ -56,7 +74,7 @@ export default function ProgressPage() {
           meaning: k?.meaning,
           wrong: w.wrong,
           correct: w.correct,
-          due,
+          due: w.due,
           exampleWord: k?.exampleWord,
           exampleMeaning: k?.exampleMeaning,
         };
@@ -66,7 +84,7 @@ export default function ProgressPage() {
       {
         version: 1,
         generatedAt: new Date(now).toISOString(),
-        note: 'weak top 50 export (local-only)',
+        note: 'weak/due top 50 export (local-only)',
         items: top,
       },
       null,
