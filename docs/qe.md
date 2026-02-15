@@ -35,7 +35,7 @@
 - [x] `/progress` 진도 표시 (seen/mastered/due)
 
 ## 엣지 케이스
-- [ ] localStorage가 깨졌을 때(비정상 JSON) 기본값으로 복구
+- [x] localStorage가 깨졌을 때(비정상 JSON) 기본값으로 복구 (unit test)
 - [ ] sessionStorage(학습 세션)가 없을 때 `/quiz` 진입 시 안전(로딩/홈 유도)
 - [x] `/quiz/result` 새로고침/직접 진입 시 최근 결과 복원(local fallback, TTL 24h)
 - [ ] `/quiz/result` 24시간 TTL 만료 후 자동 정리(session/local)

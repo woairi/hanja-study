@@ -26,6 +26,7 @@
 - Week4(FE): /quiz/result 하단 고정 Primary CTA 도입(360x800에서 다음 행동 버튼 상시 노출)
 - Week4(FE): 공통 상태 카드(`StateCard`) 도입 + /quiz/result(결과없음), /progress(레거시/빈 상태)에 적용
 - Week4(QE): 실기기 QA 게이트(v1) 및 D+1~D+10 실행표 문서화(`docs/qe.md`)
+- Week4(QE): storage fallback 안전성 테스트 추가(깨진 localStorage JSON → default 복구)
 - Week2(FE polish): /progress에서 레거시 사용자(stats.daily 없음) 안내 배지/가이드 카드 추가
 - Week3: 오답 시 한자=뜻+음(짧은 설명) 표시
 - Week3: 오답 문제 자동 재출제(3문제 뒤 1회)
