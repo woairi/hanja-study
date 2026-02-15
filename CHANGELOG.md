@@ -22,6 +22,7 @@
 - Week4(FE): 퀴즈 결과 최근값 localStorage fallback + TTL(24h) 적용(새로고침/직접 진입 시 결과 복원, 만료 자동 정리)
 - Week4(FE): 설정 > 학습 기록 전체 초기화에 2단 안전장치 추가(복구불가 동의 체크 + `RESET` 입력)
 - Week4(FE): 설정 화면에 저장 상태 요약(학습 기록 수/최근 학습일/퀴즈 결과 캐시) 추가 + 홈 설정 진입 링크 접근성 라벨 개선
+- Week4(FE): 설정 화면에 `레거시 진도 안내 다시 보기` 링크 추가(`/progress?legacy=1`)
 - Week4(FE): /progress 레거시 안내 전환 UX 강화(백업 CTA, `다시 보지 않기`, 다음 진입 시 홈 자동 전환, `?legacy=1` 재확인 지원)
 - Week4(FE): /quiz/result 하단 고정 Primary CTA 도입(360x800에서 다음 행동 버튼 상시 노출)
 - Week4(FE): 공통 상태 카드(`StateCard`) 도입 + /quiz/result(결과없음), /progress(레거시/빈 상태), /quiz(세션없음 가드)에 적용

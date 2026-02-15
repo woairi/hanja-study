@@ -21,6 +21,9 @@ export default function SettingsPage() {
     const st = loadState();
     const recentResult = loadQuizResult();
 
+    const quizAnsweredAllTime = st.stats?.quizAnswered || 0;
+    const hasDaily = Object.keys(st.stats.daily || {}).length > 0;
+
     return {
       nickname: st.settings.nickname || '',
       dailyCount: (st.settings.dailyCount || 5) as 5 | 10 | 15,
@@ -30,6 +33,7 @@ export default function SettingsPage() {
       lastStudyDate: st.streak.lastStudyDate,
       recentResultAt: recentResult?.finishedAt ?? null,
       hasRecentResult: !!recentResult,
+      isLegacyNoDaily: quizAnsweredAllTime > 0 && !hasDaily,
     };
   }, []);
 
@@ -135,6 +139,13 @@ export default function SettingsPage() {
           <div className="rounded-xl bg-white/70 px-3 py-2">최근 학습일: <span className="font-extrabold" style={{ color: 'var(--fg)' }}>{initial.lastStudyDate || '없음'}</span></div>
           <div className="rounded-xl bg-white/70 px-3 py-2">최근 퀴즈 결과 캐시: <span className="font-extrabold" style={{ color: 'var(--fg)' }}>{recentResultLabel}</span></div>
         </div>
+        {initial.isLegacyNoDaily && (
+          <div className="mt-2 text-xs">
+            <Link className="font-extrabold underline" href="/progress?legacy=1" style={{ color: 'var(--muted)' }}>
+              레거시 진도 안내 다시 보기
+            </Link>
+          </div>
+        )}
       </Card>
 
       {error && (
