@@ -28,10 +28,14 @@ export function makeQuiz(items: KanjiItem[], allSameGrade: KanjiItem[]): QuizQue
   }
 
   // replace 20% with trap questions
+  // Prefer items that actually have confusables (quality).
+  const trapCandidates = items.filter((k) => (k.confusables || []).filter(Boolean).length >= 2);
+  const pool = trapCandidates.length ? trapCandidates : items;
+
   const trapCount = Math.max(1, Math.floor(base.length * 0.2));
   const idxs = shuffle(base.map((_, i) => i)).slice(0, trapCount);
   for (const i of idxs) {
-    const k = items[Math.floor(Math.random() * items.length)];
+    const k = pool[Math.floor(Math.random() * pool.length)];
     base[i] = makeTrapQ(k, allSameGrade);
   }
 

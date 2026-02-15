@@ -89,10 +89,19 @@ export default function AboutPage() {
               <span className="font-extrabold">{tel.counts.quiz_done || 0}</span>
             </div>
             <div className="mt-1" style={{ color: 'var(--muted)' }}>
-              퀴즈 완료/학습 완료: <span className="font-extrabold">
+              학습 완료/홈 메인 클릭: <span className="font-extrabold">
+                {tel.counts.home_primary_click
+                  ? Math.round(((tel.counts.study_done || 0) / tel.counts.home_primary_click) * 100)
+                  : 0}%
+              </span>
+              {' '}· 퀴즈 완료/학습 완료: <span className="font-extrabold">
                 {tel.counts.study_done ? Math.round(((tel.counts.quiz_done || 0) / tel.counts.study_done) * 100) : 0}%
               </span>
-              {' '}· 틀린 것만 다시 클릭: <span className="font-extrabold">{tel.counts.quiz_retry_click || 0}</span>
+            </div>
+            <div className="mt-1" style={{ color: 'var(--muted)' }}>
+              틀린 것만 다시 클릭: <span className="font-extrabold">{tel.counts.quiz_retry_click || 0}</span>
+              {' '}· 완료 후 약점 복습 클릭: <span className="font-extrabold">{tel.counts.post_done_weak_review_click || 0}</span>
+              {' '}· 완료 후 복습 더하기 클릭: <span className="font-extrabold">{tel.counts.post_done_more_review_click || 0}</span>
             </div>
           </div>
 
