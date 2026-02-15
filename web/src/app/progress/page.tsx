@@ -131,16 +131,51 @@ export default function ProgressPage() {
 function GradeRow(props: { label: GradeLabel; total: number; seen: number; mastered: number; due: number }) {
   const { label, total, seen, mastered, due } = props;
   const pct = total ? Math.round((mastered / total) * 100) : 0;
+
+  const weakInGrade = useMemo(() => {
+    const st = loadState();
+    const items = kanjiByGradeLabel(label);
+    const scored = items
+      .filter((k) => !!st.progress[k.id])
+      .map((k) => {
+        const p = st.progress[k.id];
+        const score = (p.wrong + 1) / (p.correct + 1);
+        return { k, p, score };
+      })
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 3);
+
+    return scored;
+  }, [label]);
+
   return (
     <div className="card p-3">
       <div className="flex items-center justify-between">
-        <div className="text-lg font-bold">{label}</div>
-        <div className="text-xs text-gray-500">마스터 {pct}%</div>
+        <div className="text-lg font-extrabold">{label}</div>
+        <div className="text-xs" style={{ color: 'var(--muted)' }}>
+          마스터 {pct}%
+        </div>
       </div>
-      <div className="mt-1 text-sm text-gray-700">학습 {seen}/{total} · 마스터 {mastered}/{total} · 복습 대기 {due}</div>
+      <div className="mt-1 text-sm" style={{ color: 'var(--muted)' }}>
+        학습 {seen}/{total} · 마스터 {mastered}/{total} · 복습 대기 {due}
+      </div>
       <div className="mt-2 h-2 w-full rounded bg-gray-200">
-        <div className="h-2 rounded bg-blue-600" style={{ width: `${pct}%` }} />
+        <div className="h-2 rounded" style={{ width: `${pct}%`, background: 'linear-gradient(180deg, var(--primary), var(--primary-600))' }} />
       </div>
+
+      {weakInGrade.length > 0 && (
+        <div className="mt-3 rounded-2xl bg-white/60 px-3 py-2 text-xs" style={{ color: 'var(--muted)' }}>
+          <div className="font-extrabold">약점 TOP</div>
+          <ol className="mt-1 list-decimal space-y-1 pl-4">
+            {weakInGrade.map(({ k, p }) => (
+              <li key={k.id}>
+                <span className="font-extrabold text-slate-900">{k.hanja}</span> {k.meaning} {k.reading}{' '}
+                <span className="text-slate-500">(오답 {p.wrong}/정답 {p.correct})</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      )}
     </div>
   );
 }
