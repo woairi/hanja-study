@@ -182,25 +182,27 @@ export default function HomePage() {
     <main className="mx-auto max-w-md p-4">
       {/* Header */}
       <header className="mb-3">
-        <div className="flex items-end justify-between">
-          <h1 className="text-2xl font-extrabold tracking-tight">{nickname ? `${nickname}의 한자 공부` : '한자 공부'}</h1>
-          <Dino className="text-2xl" />
+        <div className="flex items-end justify-between gap-3">
+          <h1 className="min-w-0 truncate text-2xl font-extrabold tracking-tight">{nickname ? `${nickname}의 한자 공부` : '한자 공부'}</h1>
+          <Dino className="shrink-0 text-2xl" />
         </div>
-        <div className="mt-1 flex items-center justify-between gap-3">
-          <div className="text-xs" style={{ color: 'var(--muted)' }}>
-            🔥 연속 {streak.count}일 · 🎯 목표 {dailyCount}자 · 🔁 복습 {reviewInfo.totalDue}개
-          </div>
-          <div className="flex items-center gap-2">
-            <Link href="/settings" className="text-xs font-extrabold underline" style={{ color: 'var(--muted)' }}>
-              설정
-            </Link>
-            <Button variant="ghost" size="sm" onClick={() => setShowGoals((v) => !v)}>
-              목표/뱃지 {showGoals ? '▴' : '▾'}
-            </Button>
-            <Button variant="ghost" size="sm" onClick={() => setShowGrades((v) => !v)}>
-              급수 {showGrades ? '▴' : '▾'}
-            </Button>
-          </div>
+
+        <div className="mt-2 flex flex-wrap items-center gap-2 text-xs" style={{ color: 'var(--muted)' }}>
+          <span className="rounded-full bg-white/55 px-2 py-1">🔥 연속 {streak.count}일</span>
+          <span className="rounded-full bg-white/55 px-2 py-1">🎯 목표 {dailyCount}자</span>
+          <span className="rounded-full bg-white/55 px-2 py-1">🔁 복습 {reviewInfo.totalDue}개</span>
+        </div>
+
+        <div className="mt-2 flex items-center gap-2 overflow-x-auto pb-1">
+          <Link href="/settings" className="shrink-0 text-xs font-extrabold underline" style={{ color: 'var(--muted)' }}>
+            설정
+          </Link>
+          <Button className="shrink-0" variant="ghost" size="sm" onClick={() => setShowGoals((v) => !v)}>
+            목표/뱃지 {showGoals ? '▴' : '▾'}
+          </Button>
+          <Button className="shrink-0" variant="ghost" size="sm" onClick={() => setShowGrades((v) => !v)}>
+            급수 {showGrades ? '▴' : '▾'}
+          </Button>
         </div>
       </header>
 
