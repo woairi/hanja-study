@@ -184,7 +184,7 @@ function GradeRow(props: { label: GradeLabel; total: number; seen: number; maste
           </ol>
           <div className="mt-2">
             <Link
-              href={`/study?grade=${encodeURIComponent(label)}&n=5&focus=weak`}
+              href={`/study?grade=${encodeURIComponent(label)}&n=${loadState().settings.dailyCount}&focus=weak`}
               className="btn btn-primary focus-ring inline-flex items-center justify-center px-4 py-2"
               onClick={() => {
                 // store weak ids for focus mode
