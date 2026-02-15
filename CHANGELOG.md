@@ -33,6 +33,8 @@
 - Week3: 완료 화면 문구가 매번 똑같지 않게(가벼운 변형)
 - Week3: 예시 단어 2차 확장 + overrides에 없는 한자 키 정리
 - Week3: confusables 샘플링 스크립트 추가(npm run sample:confusables)
+- Week3: 4급/4급Ⅱ confusables 노이즈 일부 절삭(동음만 과다 매칭 방지)
+- Week3: 예시 단어 3차 확장(4급/4급Ⅱ 일부 보강)
 - 함정문제용 `confusables` 스타터 세트 추가(초기 자형 혼동 그룹)
 - 퀴즈 정답/오답 즉시 피드백(0.7초 하이라이트 + 정답 표시)
 - 퀴즈 정답 시 미니 반짝(✨) 이펙트

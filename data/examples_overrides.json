@@ -123,7 +123,7 @@
       "exampleMeaning": "뜨겁고 차가운 정도"
     },
     "習": {
-      "exampleWord": "연습",
+      "exampleWord": "학습",
       "exampleMeaning": "익히기"
     },
     "現": {
@@ -135,8 +135,8 @@
       "exampleMeaning": "기계 장치"
     },
     "準": {
-      "exampleWord": "기준",
-      "exampleMeaning": "표준"
+      "exampleWord": "준비",
+      "exampleMeaning": "미리 갖춤"
     },
     "達": {
       "exampleWord": "도달",
@@ -164,7 +164,7 @@
     },
     "護": {
       "exampleWord": "보호",
-      "exampleMeaning": "지켜줌"
+      "exampleMeaning": "지킴"
     },
     "則": {
       "exampleWord": "규칙",
@@ -175,7 +175,7 @@
       "exampleMeaning": "복잡하지 않음"
     },
     "難": {
-      "exampleWord": "재난",
+      "exampleWord": "곤란",
       "exampleMeaning": "어려운 일"
     },
     "親": {
@@ -352,7 +352,7 @@
     },
     "安": {
       "exampleWord": "안전",
-      "exampleMeaning": "편안하고 위험 없음"
+      "exampleMeaning": "위험이 없음"
     },
     "報": {
       "exampleWord": "보고",
@@ -423,8 +423,8 @@
       "exampleMeaning": "범위/구역"
     },
     "議": {
-      "exampleWord": "회의",
-      "exampleMeaning": "모여서 의논함"
+      "exampleWord": "의견",
+      "exampleMeaning": "생각을 말함"
     },
     "評": {
       "exampleWord": "평가",
@@ -504,7 +504,7 @@
     },
     "保": {
       "exampleWord": "보호",
-      "exampleMeaning": "지켜줌"
+      "exampleMeaning": "지킴"
     },
     "救": {
       "exampleWord": "구조",
@@ -535,8 +535,8 @@
       "exampleMeaning": "물 위를 가는 탈것"
     },
     "空": {
-      "exampleWord": "공기",
-      "exampleMeaning": "하늘/빈 곳"
+      "exampleWord": "하늘",
+      "exampleMeaning": "머리 위 공간"
     },
     "港": {
       "exampleWord": "항구",
@@ -559,12 +559,180 @@
       "exampleMeaning": "불을 끔"
     },
     "防": {
-      "exampleWord": "소방",
-      "exampleMeaning": "막고 지킴"
+      "exampleWord": "예방",
+      "exampleMeaning": "미리 막음"
     },
     "災": {
       "exampleWord": "재난",
       "exampleMeaning": "큰 사고"
+    },
+    "論": {
+      "exampleWord": "토론",
+      "exampleMeaning": "서로 의견을 말함"
+    },
+    "定": {
+      "exampleWord": "결정",
+      "exampleMeaning": "정해서 정함"
+    },
+    "計": {
+      "exampleWord": "계획",
+      "exampleMeaning": "미리 정한 생각"
+    },
+    "畫": {
+      "exampleWord": "계획",
+      "exampleMeaning": "앞으로 할 일 정함"
+    },
+    "改": {
+      "exampleWord": "개선",
+      "exampleMeaning": "더 좋게 고침"
+    },
+    "善": {
+      "exampleWord": "개선",
+      "exampleMeaning": "좋게 만듦"
+    },
+    "更": {
+      "exampleWord": "변경",
+      "exampleMeaning": "바꿔서 고침"
+    },
+    "移": {
+      "exampleWord": "이동",
+      "exampleMeaning": "옮겨 감"
+    },
+    "動": {
+      "exampleWord": "이동",
+      "exampleMeaning": "움직임"
+    },
+    "擇": {
+      "exampleWord": "선택",
+      "exampleMeaning": "골라 정함"
+    },
+    "査": {
+      "exampleWord": "조사",
+      "exampleMeaning": "찾아보고 확인"
+    },
+    "探": {
+      "exampleWord": "탐색",
+      "exampleMeaning": "찾아봄"
+    },
+    "承": {
+      "exampleWord": "승인",
+      "exampleMeaning": "허락함"
+    },
+    "認": {
+      "exampleWord": "인정",
+      "exampleMeaning": "맞다고 함"
+    },
+    "許": {
+      "exampleWord": "허락",
+      "exampleMeaning": "해도 된다고 함"
+    },
+    "可": {
+      "exampleWord": "허가",
+      "exampleMeaning": "해도 됨"
+    },
+    "禁": {
+      "exampleWord": "금지",
+      "exampleMeaning": "하지 못하게 함"
+    },
+    "止": {
+      "exampleWord": "중지",
+      "exampleMeaning": "멈춤"
+    },
+    "律": {
+      "exampleWord": "법률",
+      "exampleMeaning": "법과 규칙"
+    },
+    "益": {
+      "exampleWord": "이익",
+      "exampleMeaning": "도움이 됨"
+    },
+    "製": {
+      "exampleWord": "제작",
+      "exampleMeaning": "만들어 냄"
+    },
+    "作": {
+      "exampleWord": "작업",
+      "exampleMeaning": "만드는 일"
+    },
+    "造": {
+      "exampleWord": "제조",
+      "exampleMeaning": "만들어 냄"
+    },
+    "工": {
+      "exampleWord": "공장",
+      "exampleMeaning": "물건 만드는 곳"
+    },
+    "業": {
+      "exampleWord": "산업",
+      "exampleMeaning": "일/사업"
+    },
+    "農": {
+      "exampleWord": "농업",
+      "exampleMeaning": "농사짓는 일"
+    },
+    "漁": {
+      "exampleWord": "어업",
+      "exampleMeaning": "물고기 잡는 일"
+    },
+    "醫": {
+      "exampleWord": "의사",
+      "exampleMeaning": "병 고치는 사람"
+    },
+    "康": {
+      "exampleWord": "건강",
+      "exampleMeaning": "몸이 편안함"
+    },
+    "藥": {
+      "exampleWord": "약국",
+      "exampleMeaning": "약 파는 곳"
+    },
+    "院": {
+      "exampleWord": "병원",
+      "exampleMeaning": "치료하는 곳"
+    },
+    "氣": {
+      "exampleWord": "공기",
+      "exampleMeaning": "숨 쉬는 기운"
+    },
+    "海": {
+      "exampleWord": "바다",
+      "exampleMeaning": "큰 바다"
+    },
+    "橋": {
+      "exampleWord": "다리",
+      "exampleMeaning": "강 위를 잇는 길"
+    },
+    "築": {
+      "exampleWord": "건축",
+      "exampleMeaning": "건물을 지음"
+    },
+    "建": {
+      "exampleWord": "건설",
+      "exampleMeaning": "건물을 세움"
+    },
+    "住": {
+      "exampleWord": "주거",
+      "exampleMeaning": "사는 곳"
+    },
+    "書": {
+      "exampleWord": "도서",
+      "exampleMeaning": "책"
+    },
+    "讀": {
+      "exampleWord": "독서",
+      "exampleMeaning": "책을 읽음"
+    },
+    "績": {
+      "exampleWord": "성적",
+      "exampleMeaning": "결과 점수"
+    },
+    "賞": {
+      "exampleWord": "상장",
+      "exampleMeaning": "잘해서 받는 상"
+    },
+    "罰": {
+      "exampleWord": "벌",
+      "exampleMeaning": "잘못해서 받음"
     }
   }
 }
