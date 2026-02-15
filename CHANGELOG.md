@@ -33,6 +33,7 @@
 - Week4(QE): iOS Safari 실기기 점검용 known issues/workaround 문서 추가(`docs/qa-ios-safari.md`)
 - Week4(QE): Top5 E2E 준비 문서 추가(`docs/qe-top5-e2e.md`) + 셀렉터 점검 스크립트(`npm run check:top5`)
 - Week4(QE): RC 운영 템플릿 추가(`docs/rc-gate-template.md`) + predeploy에 Top5 selector check 포함
+- Week4(QE): 데이터 품질 체크리스트 최신 스키마(4급/4급Ⅱ 포함) 기준으로 갱신
 - Week4(BE): `data/build.mjs`가 v2 override 배열 스키마(target 기반)를 직접 읽도록 보강(legacy object-map도 계속 지원)
 - Week2(FE polish): /progress에서 레거시 사용자(stats.daily 없음) 안내 배지/가이드 카드 추가
 - Week3: 오답 시 한자=뜻+음(짧은 설명) 표시
