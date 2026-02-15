@@ -28,7 +28,8 @@
 - Week3: 예시 단어 시드 확장(총 100+)
 - Week3: check:data 강화(confusables 존재 검증/상한, 예시 길이/의존성 검증)
 - Week3: 간단한 로컬 사용 로그(telemetry) 추가(Home/완료화면 주요 CTA)
-- Week3: /about?debug=1 에 telemetry 확인/초기화 화면 추가
+- Week3: /about?debug=1 에 telemetry 확인/초기화 화면 추가(라벨/메타 표시)
+- Week3: 완료 후 '약점 더 복습' 로직 개선(due 우선 + 약점)
 - 함정문제용 `confusables` 스타터 세트 추가(초기 자형 혼동 그룹)
 - 퀴즈 정답/오답 즉시 피드백(0.7초 하이라이트 + 정답 표시)
 - 퀴즈 정답 시 미니 반짝(✨) 이펙트

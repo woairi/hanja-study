@@ -129,7 +129,19 @@ export default function StudyClient() {
     })();
 
     const weakIds = (() => {
+      const now = Date.now();
       const itemsInGrade = ALL_KANJI.filter((k) => k.gradeLabel === grade);
+
+      // 1) due-first (review debt)
+      const due = itemsInGrade
+        .filter((k) => {
+          const p = st.progress[k.id];
+          return p && !p.mastered && p.nextReviewAt <= now;
+        })
+        .slice(0, 20) // keep stable enough
+        .map((k) => k.id);
+
+      // 2) weak-next (error-prone)
       const rows = itemsInGrade
         .map((k) => {
           const p = st.progress[k.id];
@@ -138,14 +150,30 @@ export default function StudyClient() {
           return { id: k.id, score: wrong - correct, wrong };
         })
         .filter((r) => r.wrong > 0)
-        .sort((a, b) => (b.score !== a.score ? b.score - a.score : b.wrong - a.wrong));
-      return rows.slice(0, 10).map((r) => r.id);
+        .sort((a, b) => (b.score !== a.score ? b.score - a.score : b.wrong - a.wrong))
+        .map((r) => r.id);
+
+      const picked: string[] = [];
+      const seen = new Set<string>();
+      for (const id of due) {
+        if (seen.has(id)) continue;
+        picked.push(id);
+        seen.add(id);
+        if (picked.length >= 6) break;
+      }
+      for (const id of rows) {
+        if (seen.has(id)) continue;
+        picked.push(id);
+        seen.add(id);
+        if (picked.length >= 10) break;
+      }
+      return picked;
     })();
 
     // focus/review mode: no quiz
     if (reviewOnly || focusWeak) {
       // log done
-      logEvent(focusWeak ? 'review_done' : 'review_done', { kind: focusWeak ? 'weak' : 'review', grade });
+      logEvent('review_done', { kind: focusWeak ? 'weak' : 'review', grade });
 
       return (
         <main className="mx-auto flex min-h-[70vh] max-w-md flex-col items-center justify-center p-4 text-center">

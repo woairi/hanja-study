@@ -87,17 +87,49 @@ export default function AboutPage() {
             {Object.entries(tel.counts)
               .filter(([k]) => !k.startsWith('meta:'))
               .sort((a, b) => b[1] - a[1])
-              .map(([k, v]) => (
-                <div key={k} className="rounded-2xl bg-white/70 px-3 py-2">
-                  <div className="flex items-center justify-between">
-                    <div className="font-extrabold">{k}</div>
-                    <div className="font-extrabold">{v}</div>
+              .map(([k, v]) => {
+                const label: Record<string, string> = {
+                  home_primary_click: '홈: 메인 버튼',
+                  home_secondary_click: '홈: 보조 카드',
+                  study_done: '학습 완료',
+                  review_done: '복습 완료',
+                  quiz_done: '퀴즈 완료',
+                  quiz_retry_click: '퀴즈: 틀린 것만 다시',
+                  post_done_weak_review_click: '완료 후: 약점 더 복습',
+                  post_done_more_review_click: '완료 후: 복습 더 하기',
+                };
+
+                let metaText = '';
+                try {
+                  const raw = window.localStorage.getItem(`${KEY}:meta:${k}`);
+                  if (raw) {
+                    const parsed = JSON.parse(raw) as { at: number; meta?: Record<string, unknown> };
+                    if (parsed?.meta) metaText = JSON.stringify(parsed.meta);
+                  }
+                } catch {
+                  // ignore
+                }
+
+                return (
+                  <div key={k} className="rounded-2xl bg-white/70 px-3 py-2">
+                    <div className="flex items-center justify-between gap-3">
+                      <div className="font-extrabold">{label[k] || k}</div>
+                      <div className="font-extrabold">{v}</div>
+                    </div>
+                    <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
+                      key: {k}
+                    </div>
+                    <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
+                      마지막: {fmtTime(tel.lastAt[k])}
+                    </div>
+                    {metaText && (
+                      <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
+                        meta: {metaText}
+                      </div>
+                    )}
                   </div>
-                  <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
-                    마지막: {fmtTime(tel.lastAt[k])}
-                  </div>
-                </div>
-              ))}
+                );
+              })}
           </div>
 
           <div className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>
