@@ -3,6 +3,7 @@
 export type TelemetryEvent =
   | 'home_primary_click'
   | 'home_secondary_click'
+  | 'home_onboarding_click'
   | 'study_done'
   | 'review_done'
   | 'quiz_done'

@@ -8,7 +8,7 @@ const STORAGE_KEY = 'hanja-study:v1';
 export function defaultState(): AppState {
   return {
     version: 1,
-    settings: { dailyCount: 5, lastGradeLabel: '8급' },
+    settings: { dailyCount: 5, lastGradeLabel: '8급', nickname: '', onboardingCompleted: false },
     streak: { count: 0, lastStudyDate: null },
     stats: { quizAnswered: 0, daily: {} },
     progress: {},

@@ -16,6 +16,8 @@ import type { GradeLabel } from '@/lib/types';
 export default function HomePage() {
   const [dailyCount, setDailyCount] = useState<5 | 10 | 15>(5);
   const [lastGrade, setLastGrade] = useState<GradeLabel>('8급');
+  const [nickname, setNickname] = useState<string>('');
+  const [onboardingDone, setOnboardingDone] = useState<boolean>(false);
   const [streak, setStreak] = useState<{ count: number; lastStudyDate: string | null }>({
     count: 0,
     lastStudyDate: null,
@@ -31,6 +33,8 @@ export default function HomePage() {
     const st = loadState();
     setDailyCount(st.settings.dailyCount);
     setLastGrade((st.settings.lastGradeLabel as GradeLabel) || '8급');
+    setNickname(st.settings.nickname || '');
+    setOnboardingDone(!!st.settings.onboardingCompleted);
     setStreak(st.streak);
     setLastSession(loadLastSession());
 
@@ -179,7 +183,7 @@ export default function HomePage() {
       {/* Header */}
       <header className="mb-3">
         <div className="flex items-end justify-between">
-          <h1 className="text-2xl font-extrabold tracking-tight">한자 공부</h1>
+          <h1 className="text-2xl font-extrabold tracking-tight">{nickname ? `${nickname}의 한자 공부` : '한자 공부'}</h1>
           <Dino className="text-2xl" />
         </div>
         <div className="mt-1 flex items-center justify-between gap-3">
@@ -196,6 +200,31 @@ export default function HomePage() {
           </div>
         </div>
       </header>
+
+      {!onboardingDone && (
+        <section className="mb-3">
+          <Card className="p-4">
+            <div className="flex items-start justify-between gap-4">
+              <div className="min-w-0">
+                <div className="text-sm font-extrabold" style={{ color: 'var(--muted)' }}>
+                  처음 설정
+                </div>
+                <div className="mt-1 text-base font-extrabold">내 미션을 딱 맞게 만들자</div>
+                <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
+                  닉네임/목표/시작 급수를 고르면 더 편해져.
+                </div>
+              </div>
+              <Link
+                href="/onboarding"
+                className="focus-ring inline-flex items-center justify-center gap-2 btn btn-primary px-4 py-3 text-sm"
+                onClick={() => logEvent('home_onboarding_click', { from: 'home_banner' })}
+              >
+                시작하기 <span aria-hidden>▶</span>
+              </Link>
+            </div>
+          </Card>
+        </section>
+      )}
 
       {/* P1: Today mission + Continue (always shown together) */}
       <section className="mb-3 space-y-3">

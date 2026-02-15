@@ -27,6 +27,10 @@ export type AppState = {
   settings: {
     dailyCount: 5 | 10 | 15;
     lastGradeLabel?: GradeLabel;
+    nickname?: string;
+    onboardingCompleted?: boolean;
+    onboardingCompletedAt?: number;
+    onboardingSkipped?: boolean;
   };
   streak: {
     count: number;
