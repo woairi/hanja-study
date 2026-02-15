@@ -10,6 +10,8 @@ export type KanjiItem = {
   radical?: string;
   totalStrokes?: number;
   confusables?: string[];
+  exampleWord?: string;
+  exampleMeaning?: string;
 };
 
 export type KanjiProgress = {

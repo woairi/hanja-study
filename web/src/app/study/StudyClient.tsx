@@ -206,6 +206,12 @@ export default function StudyClient() {
               <div className="mt-2 text-sm text-gray-600">
                 부수: {current.radical ?? '-'} · 획수: {current.totalStrokes ?? '-'}
               </div>
+              {current.exampleWord && (
+                <div className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
+                  예: <span className="font-extrabold">{current.exampleWord}</span>
+                  {current.exampleMeaning ? ` · ${current.exampleMeaning}` : ''}
+                </div>
+              )}
             </>
           ) : (
             <button

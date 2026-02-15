@@ -10,7 +10,9 @@
     "totalStrokes": 10,
     "confusables": [
       "敎"
-    ]
+    ],
+    "exampleWord": "학교",
+    "exampleMeaning": "배우는 곳"
   },
   {
     "id": "8급-002",
@@ -45,7 +47,9 @@
     "meaning": "나라",
     "radical": "囗",
     "totalStrokes": 11,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "한국",
+    "exampleMeaning": "나라 이름"
   },
   {
     "id": "8급-005",
@@ -89,7 +93,9 @@
     "meaning": "계집",
     "radical": "女",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "여자",
+    "exampleMeaning": "여성"
   },
   {
     "id": "8급-009",
@@ -111,7 +117,9 @@
     "meaning": "큰",
     "radical": "大",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "대형",
+    "exampleMeaning": "큰 형태"
   },
   {
     "id": "8급-011",
@@ -155,7 +163,9 @@
     "meaning": "어미",
     "radical": "毋",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "어머니",
+    "exampleMeaning": "엄마"
   },
   {
     "id": "8급-015",
@@ -166,7 +176,9 @@
     "meaning": "나무",
     "radical": "木",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "목재",
+    "exampleMeaning": "나무 재료"
   },
   {
     "id": "8급-016",
@@ -188,7 +200,9 @@
     "meaning": "백성",
     "radical": "氏",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "국민",
+    "exampleMeaning": "나라의 사람들"
   },
   {
     "id": "8급-018",
@@ -199,7 +213,9 @@
     "meaning": "흰",
     "radical": "白",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "백색",
+    "exampleMeaning": "흰색"
   },
   {
     "id": "8급-019",
@@ -210,7 +226,9 @@
     "meaning": "아비",
     "radical": "父",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "부모",
+    "exampleMeaning": "아버지/어머니"
   },
   {
     "id": "8급-020",
@@ -243,7 +261,9 @@
     "meaning": "메",
     "radical": "山",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "등산",
+    "exampleMeaning": "산에 오르기"
   },
   {
     "id": "8급-023",
@@ -267,7 +287,9 @@
     "meaning": "날",
     "radical": "生",
     "totalStrokes": 5,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "생활",
+    "exampleMeaning": "살아가는 일"
   },
   {
     "id": "8급-025",
@@ -291,7 +313,9 @@
     "totalStrokes": 6,
     "confusables": [
       "兄"
-    ]
+    ],
+    "exampleWord": "선생",
+    "exampleMeaning": "먼저 사는 사람 → 가르치는 사람"
   },
   {
     "id": "8급-027",
@@ -302,7 +326,9 @@
     "meaning": "작을",
     "radical": "小",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "소형",
+    "exampleMeaning": "작은 형태"
   },
   {
     "id": "8급-028",
@@ -313,7 +339,9 @@
     "meaning": "물",
     "radical": "水",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "수영",
+    "exampleMeaning": "물에서 운동"
   },
   {
     "id": "8급-029",
@@ -379,7 +407,9 @@
     "meaning": "달",
     "radical": "月",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "월요일",
+    "exampleMeaning": "달"
   },
   {
     "id": "8급-035",
@@ -401,7 +431,9 @@
     "meaning": "사람",
     "radical": "人",
     "totalStrokes": 2,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "인간",
+    "exampleMeaning": "사람"
   },
   {
     "id": "8급-037",
@@ -427,7 +459,9 @@
     "totalStrokes": 4,
     "confusables": [
       "一"
-    ]
+    ],
+    "exampleWord": "일요일",
+    "exampleMeaning": "해의 날"
   },
   {
     "id": "8급-039",
@@ -460,7 +494,9 @@
     "meaning": "가운데",
     "radical": "丨",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "중간",
+    "exampleMeaning": "가운데"
   },
   {
     "id": "8급-042",
@@ -507,7 +543,9 @@
     "meaning": "흙",
     "radical": "土",
     "totalStrokes": 3,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "토양",
+    "exampleMeaning": "흙"
   },
   {
     "id": "8급-046",
@@ -529,7 +567,9 @@
     "meaning": "배울",
     "radical": "子",
     "totalStrokes": 16,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "학생",
+    "exampleMeaning": "배우는 사람"
   },
   {
     "id": "8급-048",
@@ -564,7 +604,9 @@
     "meaning": "불",
     "radical": "火",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "화재",
+    "exampleMeaning": "불이 남"
   },
   {
     "id": "7급-001",
@@ -863,7 +905,9 @@
     "meaning": "마음",
     "radical": "心",
     "totalStrokes": 4,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "마음",
+    "exampleMeaning": "생각/감정"
   },
   {
     "id": "7급-026",
@@ -1056,7 +1100,9 @@
     "confusables": [
       "千",
       "天"
-    ]
+    ],
+    "exampleWord": "하천",
+    "exampleMeaning": "강/내"
   },
   {
     "id": "7급-042",
@@ -1268,7 +1314,9 @@
     "meaning": "사내",
     "radical": "田",
     "totalStrokes": 7,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "남자",
+    "exampleMeaning": "남성"
   },
   {
     "id": "7급Ⅱ-010",
@@ -1431,7 +1479,9 @@
     "confusables": [
       "下",
       "不"
-    ]
+    ],
+    "exampleWord": "상승",
+    "exampleMeaning": "위로 올라감"
   },
   {
     "id": "7급Ⅱ-024",
@@ -1551,7 +1601,9 @@
     "totalStrokes": 3,
     "confusables": [
       "自"
-    ]
+    ],
+    "exampleWord": "자녀",
+    "exampleMeaning": "아이"
   },
   {
     "id": "7급Ⅱ-034",
@@ -1686,7 +1738,9 @@
     "confusables": [
       "上",
       "不"
-    ]
+    ],
+    "exampleWord": "하강",
+    "exampleMeaning": "아래로 내려감"
   },
   {
     "id": "7급Ⅱ-045",
@@ -4818,7 +4872,9 @@
     "meaning": "검을",
     "radical": "黑",
     "totalStrokes": 12,
-    "confusables": []
+    "confusables": [],
+    "exampleWord": "흑색",
+    "exampleMeaning": "검은색"
   },
   {
     "id": "4급-001",

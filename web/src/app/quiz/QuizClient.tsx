@@ -280,6 +280,15 @@ export default function QuizClient() {
                   return (
                     <span>
                       <span className="font-extrabold">{k.hanja}</span> = {k.meaning} {k.reading}
+                      {k.exampleWord ? (
+                        <>
+                          <br />
+                          <span>
+                            예: <span className="font-extrabold">{k.exampleWord}</span>
+                            {k.exampleMeaning ? ` · ${k.exampleMeaning}` : ''}
+                          </span>
+                        </>
+                      ) : null}
                     </span>
                   );
                 })()}
