@@ -143,8 +143,8 @@
     "radical": "木",
     "totalStrokes": 8,
     "confusables": [],
-    "exampleWord": "동녘",
-    "exampleMeaning": "동녘"
+    "exampleWord": "동쪽",
+    "exampleMeaning": "해가 뜨는 쪽"
   },
   {
     "id": "8급-012",
@@ -247,8 +247,8 @@
     "radical": "父",
     "totalStrokes": 4,
     "confusables": [],
-    "exampleWord": "부모",
-    "exampleMeaning": "아버지/어머니"
+    "exampleWord": "아버지",
+    "exampleMeaning": "아빠"
   },
   {
     "id": "8급-020",
@@ -260,8 +260,8 @@
     "radical": "匕",
     "totalStrokes": 5,
     "confusables": [],
-    "exampleWord": "북녘",
-    "exampleMeaning": "북녘"
+    "exampleWord": "북쪽",
+    "exampleMeaning": "위쪽 방향"
   },
   {
     "id": "8급-021",
@@ -273,8 +273,8 @@
     "radical": "囗",
     "totalStrokes": 5,
     "confusables": [],
-    "exampleWord": "넉",
-    "exampleMeaning": "넉"
+    "exampleWord": "사계절",
+    "exampleMeaning": "봄·여름·가을·겨울"
   },
   {
     "id": "8급-022",
@@ -299,8 +299,8 @@
     "radical": "一",
     "totalStrokes": 3,
     "confusables": [],
-    "exampleWord": "석",
-    "exampleMeaning": "석"
+    "exampleWord": "삼각형",
+    "exampleMeaning": "세모"
   },
   {
     "id": "8급-024",
@@ -312,8 +312,8 @@
     "radical": "生",
     "totalStrokes": 5,
     "confusables": [],
-    "exampleWord": "생활",
-    "exampleMeaning": "살아가는 일"
+    "exampleWord": "생일",
+    "exampleMeaning": "태어난 날"
   },
   {
     "id": "8급-025",
@@ -390,8 +390,8 @@
     "radical": "十",
     "totalStrokes": 2,
     "confusables": [],
-    "exampleWord": "열",
-    "exampleMeaning": "열"
+    "exampleWord": "십분",
+    "exampleMeaning": "10분(열 분)"
   },
   {
     "id": "8급-031",
@@ -403,8 +403,8 @@
     "radical": "二",
     "totalStrokes": 4,
     "confusables": [],
-    "exampleWord": "다섯",
-    "exampleMeaning": "다섯"
+    "exampleWord": "오월",
+    "exampleMeaning": "5월"
   },
   {
     "id": "8급-032",
@@ -429,8 +429,8 @@
     "radical": "夕",
     "totalStrokes": 5,
     "confusables": [],
-    "exampleWord": "바깥",
-    "exampleMeaning": "바깥"
+    "exampleWord": "외국",
+    "exampleMeaning": "바깥 나라"
   },
   {
     "id": "8급-034",
@@ -628,8 +628,8 @@
     "radical": "韋",
     "totalStrokes": 17,
     "confusables": [],
-    "exampleWord": "한국",
-    "exampleMeaning": "한국"
+    "exampleWord": "대한민국",
+    "exampleMeaning": "우리 나라"
   },
   {
     "id": "8급-049",
@@ -2197,8 +2197,8 @@
     "radical": "彳",
     "totalStrokes": 9,
     "confusables": [],
-    "exampleWord": "기다릴",
-    "exampleMeaning": "기다릴"
+    "exampleWord": "대기",
+    "exampleMeaning": "기다림"
   },
   {
     "id": "6급-015",
@@ -2301,8 +2301,8 @@
     "radical": "目",
     "totalStrokes": 5,
     "confusables": [],
-    "exampleWord": "눈",
-    "exampleMeaning": "눈"
+    "exampleWord": "눈동자",
+    "exampleMeaning": "눈의 검은 부분"
   },
   {
     "id": "6급-023",
@@ -2409,8 +2409,8 @@
     "radical": "木",
     "totalStrokes": 5,
     "confusables": [],
-    "exampleWord": "근본",
-    "exampleMeaning": "근본"
+    "exampleWord": "기본",
+    "exampleMeaning": "기초가 되는 것"
   },
   {
     "id": "6급-031",
@@ -2547,8 +2547,8 @@
     "radical": "弋",
     "totalStrokes": 6,
     "confusables": [],
-    "exampleWord": "법",
-    "exampleMeaning": "법"
+    "exampleWord": "방식",
+    "exampleMeaning": "하는 방법"
   },
   {
     "id": "6급-041",
@@ -2662,7 +2662,7 @@
       "永"
     ],
     "exampleWord": "꽃부리",
-    "exampleMeaning": "꽃부리"
+    "exampleMeaning": "꽃의 가운데 부분"
   },
   {
     "id": "6급-049",
@@ -2866,8 +2866,8 @@
     "radical": "方",
     "totalStrokes": 11,
     "confusables": [],
-    "exampleWord": "겨레",
-    "exampleMeaning": "겨레"
+    "exampleWord": "가족",
+    "exampleMeaning": "한 집안 사람들"
   },
   {
     "id": "6급-064",

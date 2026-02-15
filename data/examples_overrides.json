@@ -95,16 +95,16 @@
       "exampleMeaning": "먼저 사는 사람 → 가르치는 사람"
     },
     "生": {
-      "exampleWord": "생활",
-      "exampleMeaning": "살아가는 일"
+      "exampleWord": "생일",
+      "exampleMeaning": "태어난 날"
     },
     "子": {
       "exampleWord": "자녀",
       "exampleMeaning": "아이"
     },
     "父": {
-      "exampleWord": "부모",
-      "exampleMeaning": "아버지/어머니"
+      "exampleWord": "아버지",
+      "exampleMeaning": "아빠"
     },
     "母": {
       "exampleWord": "어머니",
@@ -2449,6 +2449,62 @@
     "希": {
       "exampleWord": "바랄",
       "exampleMeaning": "바랄"
+    },
+    "外": {
+      "exampleWord": "외국",
+      "exampleMeaning": "바깥 나라"
+    },
+    "東": {
+      "exampleWord": "동쪽",
+      "exampleMeaning": "해가 뜨는 쪽"
+    },
+    "北": {
+      "exampleWord": "북쪽",
+      "exampleMeaning": "위쪽 방향"
+    },
+    "目": {
+      "exampleWord": "눈동자",
+      "exampleMeaning": "눈의 검은 부분"
+    },
+    "英": {
+      "exampleWord": "꽃부리",
+      "exampleMeaning": "꽃의 가운데 부분"
+    },
+    "十": {
+      "exampleWord": "십분",
+      "exampleMeaning": "10분(열 분)"
+    },
+    "本": {
+      "exampleWord": "기본",
+      "exampleMeaning": "기초가 되는 것"
+    },
+    "五": {
+      "exampleWord": "오월",
+      "exampleMeaning": "5월"
+    },
+    "四": {
+      "exampleWord": "사계절",
+      "exampleMeaning": "봄·여름·가을·겨울"
+    },
+    "族": {
+      "exampleWord": "가족",
+      "exampleMeaning": "한 집안 사람들"
+    },
+    "式": {
+      "exampleWord": "방식",
+      "exampleMeaning": "하는 방법"
+    },
+    "韓": {
+      "exampleWord": "대한민국",
+      "exampleMeaning": "우리 나라"
+    },
+    "三": {
+      "exampleWord": "삼각형",
+      "exampleMeaning": "세모"
+    },
+    "待": {
+      "exampleWord": "대기",
+      "exampleMeaning": "기다림"
     }
   }
 }
