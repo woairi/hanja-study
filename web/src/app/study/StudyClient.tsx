@@ -9,6 +9,8 @@ import { bumpStreakOnStudy, loadState, saveState } from '@/lib/storage';
 import { pickStudyItems } from '@/lib/selection';
 import { loadLastSession, saveLastSession } from '@/lib/session';
 import { logEvent } from '@/lib/telemetry';
+import { pickOne } from '@/lib/copy';
+import { todayKey } from '@/lib/kanji';
 
 type StudySession = {
   gradeLabel: GradeLabel;
@@ -175,13 +177,21 @@ export default function StudyClient() {
       // log done
       logEvent('review_done', { kind: focusWeak ? 'weak' : 'review', grade });
 
+      const title = focusWeak ? '약점 복습 완료!' : '복습 완료!';
+      const msg = pickOne(
+        focusWeak
+          ? ['약점만 빠르게 정리했어.', '어려운 것만 콕 집어서 끝!', '오늘의 약점 미션 클리어!']
+          : ['오늘 복습할 게 다 끝났어.', '복습 완료! 기억이 더 단단해졌어.', '복습까지 끝냈다! 멋져.'],
+        `${todayKey()}|review|${grade}|${focusWeak ? 'weak' : 'due'}`
+      );
+
       return (
         <main className="mx-auto flex min-h-[70vh] max-w-md flex-col items-center justify-center p-4 text-center">
           <div className="card w-full p-6">
             <div className="text-4xl">✅</div>
-            <h1 className="mt-2 text-2xl font-extrabold">{focusWeak ? '약점 복습 완료!' : '복습 완료!'}</h1>
+            <h1 className="mt-2 text-2xl font-extrabold">{title}</h1>
             <p className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
-              {focusWeak ? '약점만 빠르게 복습했어.' : '오늘 복습할 게 다 끝났어.'}
+              {msg}
             </p>
 
             <div className="mt-4 rounded-2xl bg-white/70 px-4 py-3 text-left text-sm">
@@ -222,13 +232,18 @@ export default function StudyClient() {
     // log learning done
     logEvent('study_done', { grade, n });
 
+    const learnMsg = pickOne(
+      ['퀴즈로 한 번 더 확인하자.', '바로 퀴즈로 가서 실력을 확인해봐.', '퀴즈까지 하면 완벽!'],
+      `${todayKey()}|study|${grade}|${n}`
+    );
+
     return (
       <main className="mx-auto flex min-h-[70vh] max-w-md flex-col items-center justify-center p-4 text-center">
         <div className="card w-full p-6">
           <div className="text-4xl">🎉</div>
           <h1 className="mt-2 text-2xl font-extrabold">학습 완료!</h1>
           <p className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
-            퀴즈로 한 번 더 확인하자.
+            {learnMsg}
           </p>
 
           <div className="mt-4 rounded-2xl bg-white/70 px-4 py-3 text-left text-sm">

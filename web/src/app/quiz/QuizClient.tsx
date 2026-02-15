@@ -11,6 +11,8 @@ import { makeQuiz, type QuizQuestion } from '@/lib/quiz';
 import { makeRetryQuestion } from '@/lib/retry';
 import { loadLastSession, saveLastSession, clearLastSession } from '@/lib/session';
 import { logEvent } from '@/lib/telemetry';
+import { pickOne } from '@/lib/copy';
+import { todayKey } from '@/lib/kanji';
 
 type StudySession = {
   gradeLabel: GradeLabel;
@@ -177,11 +179,19 @@ export default function QuizClient() {
       return p && !p.mastered && p.nextReviewAt <= now;
     }).length;
 
+    const finishMsg = pickOne(
+      ['오늘도 한 단계 업!', '이제 기억이 더 단단해졌어.', '좋아! 내일은 더 쉬워질 거야.'],
+      `${todayKey()}|quiz|${grade}|${score}|${questions.length}`
+    );
+
     return (
       <main className="mx-auto flex min-h-[70vh] max-w-md flex-col items-center justify-center p-4 text-center">
         <div className="card w-full p-6">
           <div className="text-4xl">🏁</div>
           <h1 className="mt-2 text-2xl font-extrabold">퀴즈 끝!</h1>
+          <p className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
+            {finishMsg}
+          </p>
           <p className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
             점수: <span className="font-extrabold">{score}</span> / {questions.length}
           </p>

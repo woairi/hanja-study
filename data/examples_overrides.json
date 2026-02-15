@@ -46,10 +46,6 @@
       "exampleWord": "목재",
       "exampleMeaning": "나무 재료"
     },
-    "金": {
-      "exampleWord": "금요일",
-      "exampleMeaning": "쇠/돈"
-    },
     "土": {
       "exampleWord": "토양",
       "exampleMeaning": "흙"
@@ -114,10 +110,6 @@
       "exampleWord": "어머니",
       "exampleMeaning": "엄마"
     },
-    "友": {
-      "exampleWord": "친구",
-      "exampleMeaning": "벗"
-    },
     "心": {
       "exampleWord": "마음",
       "exampleMeaning": "생각/감정"
@@ -138,10 +130,6 @@
       "exampleWord": "현재",
       "exampleMeaning": "지금"
     },
-    "變": {
-      "exampleWord": "변화",
-      "exampleMeaning": "바뀜"
-    },
     "機": {
       "exampleWord": "기계",
       "exampleMeaning": "기계 장치"
@@ -149,10 +137,6 @@
     "準": {
       "exampleWord": "기준",
       "exampleMeaning": "표준"
-    },
-    "課": {
-      "exampleWord": "과제",
-      "exampleMeaning": "해야 할 일"
     },
     "達": {
       "exampleWord": "도달",
@@ -180,7 +164,7 @@
     },
     "護": {
       "exampleWord": "보호",
-      "exampleMeaning": "지킴"
+      "exampleMeaning": "지켜줌"
     },
     "則": {
       "exampleWord": "규칙",
@@ -191,8 +175,8 @@
       "exampleMeaning": "복잡하지 않음"
     },
     "難": {
-      "exampleWord": "어려움",
-      "exampleMeaning": "힘듦"
+      "exampleWord": "재난",
+      "exampleMeaning": "어려운 일"
     },
     "親": {
       "exampleWord": "부모",
@@ -202,10 +186,6 @@
       "exampleWord": "대응",
       "exampleMeaning": "맞서 처리"
     },
-    "類": {
-      "exampleWord": "종류",
-      "exampleMeaning": "비슷한 것"
-    },
     "續": {
       "exampleWord": "계속",
       "exampleMeaning": "이어짐"
@@ -213,10 +193,6 @@
     "記": {
       "exampleWord": "기록",
       "exampleMeaning": "적어 남김"
-    },
-    "憶": {
-      "exampleWord": "기억",
-      "exampleMeaning": "마음에 남김"
     },
     "連": {
       "exampleWord": "연결",
@@ -246,10 +222,6 @@
       "exampleWord": "문화",
       "exampleMeaning": "생활 양식"
     },
-    "化": {
-      "exampleWord": "변화",
-      "exampleMeaning": "바뀜"
-    },
     "經": {
       "exampleWord": "경험",
       "exampleMeaning": "겪어 봄"
@@ -272,7 +244,7 @@
     },
     "技": {
       "exampleWord": "기술",
-      "exampleMeaning": "기계/방법"
+      "exampleMeaning": "재주/방법"
     },
     "術": {
       "exampleWord": "기술",
@@ -382,18 +354,6 @@
       "exampleWord": "안전",
       "exampleMeaning": "편안하고 위험 없음"
     },
-    "必": {
-      "exampleWord": "필수",
-      "exampleMeaning": "꼭 필요함"
-    },
-    "要": {
-      "exampleWord": "중요",
-      "exampleMeaning": "꼭 필요함"
-    },
-    "情": {
-      "exampleWord": "감정",
-      "exampleMeaning": "마음의 느낌"
-    },
     "報": {
       "exampleWord": "보고",
       "exampleMeaning": "알려줌"
@@ -401,14 +361,6 @@
     "信": {
       "exampleWord": "신뢰",
       "exampleMeaning": "믿음"
-    },
-    "約": {
-      "exampleWord": "약속",
-      "exampleMeaning": "서로 지키기로 함"
-    },
-    "束": {
-      "exampleWord": "구속",
-      "exampleMeaning": "묶음/매임"
     },
     "助": {
       "exampleWord": "도움",
@@ -426,17 +378,9 @@
       "exampleWord": "의견",
       "exampleMeaning": "생각/주장"
     },
-    "見": {
-      "exampleWord": "의견",
-      "exampleMeaning": "생각"
-    },
     "究": {
       "exampleWord": "연구",
       "exampleMeaning": "깊이 파고듦"
-    },
-    "研": {
-      "exampleWord": "연구",
-      "exampleMeaning": "깊이 살핌"
     },
     "加": {
       "exampleWord": "추가",
@@ -453,6 +397,174 @@
     "誤": {
       "exampleWord": "오답",
       "exampleMeaning": "틀린 답"
+    },
+    "城": {
+      "exampleWord": "성곽",
+      "exampleMeaning": "성을 둘러싼 큰 담"
+    },
+    "省": {
+      "exampleWord": "반성",
+      "exampleMeaning": "자기 잘못을 돌아봄"
+    },
+    "易": {
+      "exampleWord": "무역",
+      "exampleMeaning": "바꾸고 거래함"
+    },
+    "際": {
+      "exampleWord": "국제",
+      "exampleMeaning": "나라와 나라 사이"
+    },
+    "統": {
+      "exampleWord": "통합",
+      "exampleMeaning": "하나로 합침"
+    },
+    "領": {
+      "exampleWord": "영역",
+      "exampleMeaning": "범위/구역"
+    },
+    "議": {
+      "exampleWord": "회의",
+      "exampleMeaning": "모여서 의논함"
+    },
+    "評": {
+      "exampleWord": "평가",
+      "exampleMeaning": "좋고 나쁨을 따짐"
+    },
+    "費": {
+      "exampleWord": "비용",
+      "exampleMeaning": "쓰는 돈"
+    },
+    "資": {
+      "exampleWord": "자원",
+      "exampleMeaning": "재료/도움이 되는 것"
+    },
+    "料": {
+      "exampleWord": "재료",
+      "exampleMeaning": "만드는 데 쓰는 것"
+    },
+    "利": {
+      "exampleWord": "이익",
+      "exampleMeaning": "남는 것"
+    },
+    "損": {
+      "exampleWord": "손해",
+      "exampleMeaning": "잃는 것"
+    },
+    "入": {
+      "exampleWord": "수입",
+      "exampleMeaning": "안으로 들여옴"
+    },
+    "發": {
+      "exampleWord": "발견",
+      "exampleMeaning": "찾아냄"
+    },
+    "設": {
+      "exampleWord": "설명",
+      "exampleMeaning": "알기 쉽게 말함"
+    },
+    "明": {
+      "exampleWord": "설명",
+      "exampleMeaning": "밝게 알려줌"
+    },
+    "表": {
+      "exampleWord": "발표",
+      "exampleMeaning": "사람들 앞에서 말함"
+    },
+    "演": {
+      "exampleWord": "연설",
+      "exampleMeaning": "많은 사람 앞에서 말함"
+    },
+    "備": {
+      "exampleWord": "준비",
+      "exampleMeaning": "미리 갖춤"
+    },
+    "試": {
+      "exampleWord": "시험",
+      "exampleMeaning": "실력을 봄"
+    },
+    "驗": {
+      "exampleWord": "실험",
+      "exampleMeaning": "직접 해 봄"
+    },
+    "規": {
+      "exampleWord": "규칙",
+      "exampleMeaning": "지켜야 할 정함"
+    },
+    "模": {
+      "exampleWord": "모형",
+      "exampleMeaning": "본떠 만든 것"
+    },
+    "管": {
+      "exampleWord": "관리",
+      "exampleMeaning": "잘 돌봄"
+    },
+    "理": {
+      "exampleWord": "관리",
+      "exampleMeaning": "정리해서 다룸"
+    },
+    "保": {
+      "exampleWord": "보호",
+      "exampleMeaning": "지켜줌"
+    },
+    "救": {
+      "exampleWord": "구조",
+      "exampleMeaning": "위험에서 구함"
+    },
+    "命": {
+      "exampleWord": "생명",
+      "exampleMeaning": "살아있는 것"
+    },
+    "病": {
+      "exampleWord": "질병",
+      "exampleMeaning": "아픈 상태"
+    },
+    "健": {
+      "exampleWord": "건강",
+      "exampleMeaning": "몸이 튼튼함"
+    },
+    "幸": {
+      "exampleWord": "행복",
+      "exampleMeaning": "좋은 일"
+    },
+    "路": {
+      "exampleWord": "도로",
+      "exampleMeaning": "길"
+    },
+    "船": {
+      "exampleWord": "배",
+      "exampleMeaning": "물 위를 가는 탈것"
+    },
+    "空": {
+      "exampleWord": "공기",
+      "exampleMeaning": "하늘/빈 곳"
+    },
+    "港": {
+      "exampleWord": "항구",
+      "exampleMeaning": "배가 드나드는 곳"
+    },
+    "航": {
+      "exampleWord": "항공",
+      "exampleMeaning": "비행과 관련"
+    },
+    "警": {
+      "exampleWord": "경찰",
+      "exampleMeaning": "질서를 지키는 사람"
+    },
+    "察": {
+      "exampleWord": "경찰",
+      "exampleMeaning": "살피고 지킴"
+    },
+    "消": {
+      "exampleWord": "소방",
+      "exampleMeaning": "불을 끔"
+    },
+    "防": {
+      "exampleWord": "소방",
+      "exampleMeaning": "막고 지킴"
+    },
+    "災": {
+      "exampleWord": "재난",
+      "exampleMeaning": "큰 사고"
     }
   }
 }

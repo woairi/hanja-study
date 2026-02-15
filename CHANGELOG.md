@@ -30,6 +30,9 @@
 - Week3: 간단한 로컬 사용 로그(telemetry) 추가(Home/완료화면 주요 CTA)
 - Week3: /about?debug=1 에 telemetry 확인/초기화 화면 추가(라벨/메타 표시)
 - Week3: 완료 후 '약점 더 복습' 로직 개선(due 우선 + 약점)
+- Week3: 완료 화면 문구가 매번 똑같지 않게(가벼운 변형)
+- Week3: 예시 단어 2차 확장 + overrides에 없는 한자 키 정리
+- Week3: confusables 샘플링 스크립트 추가(npm run sample:confusables)
 - 함정문제용 `confusables` 스타터 세트 추가(초기 자형 혼동 그룹)
 - 퀴즈 정답/오답 즉시 피드백(0.7초 하이라이트 + 정답 표시)
 - 퀴즈 정답 시 미니 반짝(✨) 이펙트
