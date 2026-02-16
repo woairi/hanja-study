@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { ALL_KANJI } from '@/lib/kanji';
 import type { GradeLabel, KanjiItem } from '@/lib/types';
@@ -11,6 +11,7 @@ import { loadLastSession, saveLastSession } from '@/lib/session';
 import { logEvent } from '@/lib/telemetry';
 import { pickOne } from '@/lib/copy';
 import { todayKey } from '@/lib/kanji';
+import { useSwipe } from '@/lib/useSwipe';
 
 type StudySession = {
   gradeLabel: GradeLabel;
@@ -98,6 +99,38 @@ export default function StudyClient() {
   const isDone = idx >= items.length;
   const reviewOnly = sp.get('review') === '1';
   const focusWeak = sp.get('focus') === 'weak';
+
+  const goPrev = useCallback(() => {
+    if (idx === 0) return;
+    setRevealed(false);
+    setIdx((i) => Math.max(0, i - 1));
+  }, [idx]);
+
+  const goNext = useCallback(() => {
+    setRevealed(false);
+    setIdx((i) => {
+      const next = i + 1;
+      const now = Date.now();
+      const prev = loadLastSession();
+      const startedAt = prev && prev.mode === 'study' ? prev.startedAt : now;
+      saveLastSession({
+        version: 1,
+        mode: 'study',
+        gradeLabel: grade,
+        n,
+        itemIds: items.map((x) => x.id),
+        idx: next,
+        startedAt,
+        updatedAt: now,
+      });
+      return next;
+    });
+  }, [grade, n, items]);
+
+  const swipeHandlers = useSwipe((dir) => {
+    if (dir === 'left') goNext();
+    else goPrev();
+  });
 
   const quizHref = `/quiz/${QUIZ_ID}?grade=${encodeURIComponent(grade)}&n=${n}`;
 
@@ -308,7 +341,7 @@ export default function StudyClient() {
         </div>
       </div>
 
-      <div className="card p-6 text-center">
+      <div className="card p-6 text-center" {...swipeHandlers}>
         <div className="text-6xl font-black tracking-wide">{current.hanja}</div>
         <div className="mt-4">
           {revealed ? (
@@ -339,10 +372,7 @@ export default function StudyClient() {
       <div className="mt-4 flex gap-2">
         <button
           className="btn btn-ghost focus-ring flex-1"
-          onClick={() => {
-            setRevealed(false);
-            setIdx((i) => Math.max(0, i - 1));
-          }}
+          onClick={goPrev}
           disabled={idx === 0}
         >
           이전
@@ -350,34 +380,14 @@ export default function StudyClient() {
         <button
           className="btn btn-primary focus-ring flex-1"
           data-testid="study-next"
-          onClick={() => {
-            setRevealed(false);
-            setIdx((i) => {
-              const next = i + 1;
-              // persist resume progress
-              const now = Date.now();
-              const prev = loadLastSession();
-              const startedAt = prev && prev.mode === 'study' ? prev.startedAt : now;
-              saveLastSession({
-                version: 1,
-                mode: 'study',
-                gradeLabel: grade,
-                n,
-                itemIds: items.map((x) => x.id),
-                idx: next,
-                startedAt,
-                updatedAt: now,
-              });
-              return next;
-            });
-          }}
+          onClick={goNext}
         >
           다음
         </button>
       </div>
 
       <div className="mt-4 text-xs text-gray-500">
-        팁: 한자를 보고, 뜻/음을 떠올린 다음에 “보기”를 눌러.
+        팁: 한자를 보고, 뜻/음을 떠올린 다음에 &ldquo;보기&rdquo;를 눌러. 👈👉 스와이프로도 넘길 수 있어!
       </div>
     </main>
   );
