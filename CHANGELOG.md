@@ -7,6 +7,10 @@
 ## [Unreleased]
 
 ### Added
+- Week5(P1/FE): 학습 카드 좌우 스와이프 제스처 (useSwipe 훅, 50px 최소)
+- Week5(P1/FE): 다크모드 지원 (시스템 자동 + 수동 토글 system/light/dark)
+- Week5(P1/FE): OG 이미지 자동 생성 (next/og, 1200x630, 카톡/밴드 공유)
+- Week5(P1/QE): 접근성(a11y) 자동 점검 (axe-core WCAG 2.0 AA, 심각 위반 0건)
 - Week5(P0/FE): PWA Service Worker + 오프라인 캐시 (@serwist/turbopack 기반, 프리캐시+런타임캐시+오프라인 폴백 페이지)
 - Week5(P0/FE): SerwistProvider로 SW 라이프사이클 관리 + layout.tsx 메타데이터 강화(appleWebApp, OG 태그)
 - Week5(P0/QE): Playwright E2E Top5 시나리오 10건(홈→학습→퀴즈→결과→진도 + 가드 2건) 전체 통과
