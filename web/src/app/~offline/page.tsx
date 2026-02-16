@@ -2,6 +2,8 @@
  * 오프라인 폴백 페이지
  * — Service Worker가 네비게이션 요청을 캐시에서 찾지 못할 때 표시
  */
+"use client";
+
 export default function OfflinePage() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-sky-50 px-6 text-center">
