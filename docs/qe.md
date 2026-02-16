@@ -73,6 +73,34 @@ Top5 셀렉터 스모크(자동화 준비):
 - [ ] Lighthouse 모바일 성능/접근성 기본 점검
 - [ ] Vercel 배포 후 404/라우팅 정상
 
+## E2E 테스트 (Playwright)
+
+### 세팅
+- 설정: `web/playwright.config.ts`
+- 테스트 디렉토리: `web/e2e/`
+- 디바이스: Pixel 7 (모바일 Chrome)
+- 포트: 3100 (dev 서버 자동 실행)
+
+### 실행
+```bash
+cd web
+npm run test:e2e          # 전체 E2E
+npm run test:e2e:ui       # Playwright UI 모드
+npx playwright test e2e/01-home.spec.ts  # 개별 파일
+```
+
+### Top5 시나리오 (10건)
+1. 홈 화면 진입 + CTA 노출/클릭 (2건)
+2. 학습 카드 진행 → 완료 + n 파라미터 유지 (2건)
+3. 퀴즈 1문항 풀기: 선택→확인→피드백 (1건)
+4. 퀴즈 완료 → 결과 화면 (오답 재출제 대응) (1건)
+5. 진도 화면 로드 + 학습 반영 확인 (2건)
+6. 가드: 세션 없이 /quiz 직접 진입 (1건)
+7. 가드: 결과 없이 /quiz/result 직접 진입 (1건)
+
+### 알려진 이슈
+- `@serwist/turbopack` catch-all 라우트 런타임 에러 (dev 서버 로그에 출력, 테스트/빌드에 영향 없음)
+
 ## 실기기 QA 게이트 (v1)
 
 ### 디바이스 우선순위

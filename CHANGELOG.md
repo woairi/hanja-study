@@ -7,6 +7,11 @@
 ## [Unreleased]
 
 ### Added
+- Week5(P0/FE): PWA Service Worker + 오프라인 캐시 (@serwist/turbopack 기반, 프리캐시+런타임캐시+오프라인 폴백 페이지)
+- Week5(P0/FE): SerwistProvider로 SW 라이프사이클 관리 + layout.tsx 메타데이터 강화(appleWebApp, OG 태그)
+- Week5(P0/QE): Playwright E2E Top5 시나리오 10건(홈→학습→퀴즈→결과→진도 + 가드 2건) 전체 통과
+- Week5(P0/QE): playwright.config.ts 세팅(모바일 Chrome Pixel 7, 자동 dev 서버)
+- Week5(P0): predeploy 전체 통과 확인(lint+test+data+build)
 - BE: 로컬 상태(localStorage) 마이그레이션 프레임워크(v1→v2) + 안정 키(`hanja-study:state`) 도입(legacy key 읽기 지원)
 - BE: telemetry 저장 정책(TTL 30일 + meta cap) 도입으로 과도한 localStorage 사용 방지
 - Week1(P0): override 스키마 표준화(confusables/examples: 레코드 배열 + 메타 필드 id/target/reason/source/updated_at) + check:data에서 충돌/중복 검증
