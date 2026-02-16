@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import OfflineBanner from "@/components/OfflineBanner";
+import { SerwistProvider } from "./serwist-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,13 +14,34 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const APP_NAME = "한자 공부";
+const APP_DESCRIPTION = "초등 한자(어문회 8급~4급Ⅱ) 키즈 학습";
+
 export const metadata: Metadata = {
-  title: "한자 공부",
-  description: "초등 한자(어문회 8급~5급) 키즈 학습",
+  applicationName: APP_NAME,
+  title: {
+    default: APP_NAME,
+    template: `%s | ${APP_NAME}`,
+  },
+  description: APP_DESCRIPTION,
   manifest: "/manifest.webmanifest",
   icons: {
     icon: "/favicon.ico",
     apple: "/favicon.ico",
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: APP_NAME,
+  },
+  formatDetection: {
+    telephone: false,
+  },
+  openGraph: {
+    type: "website",
+    siteName: APP_NAME,
+    title: APP_NAME,
+    description: APP_DESCRIPTION,
   },
 };
 
@@ -35,8 +57,10 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <OfflineBanner />
-        {children}
+        <SerwistProvider swUrl="/serwist/sw.js">
+          <OfflineBanner />
+          {children}
+        </SerwistProvider>
       </body>
     </html>
   );
