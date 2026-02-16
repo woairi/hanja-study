@@ -156,8 +156,18 @@ const enriched = base.map((k) => {
 
   const blocked = new Set(Array.isArray(confBlock[k.hanja]) ? confBlock[k.hanja] : []);
 
+  // Override 항목은 점수 필터 없이 우선 포함
+  const overrideCands = new Set();
+  if (Array.isArray(fromOv)) {
+    for (const c of fromOv) {
+      const ck = byHanja.get(c);
+      if (!ck || ck.gradeLabel !== k.gradeLabel) continue;
+      if (!blocked.has(c)) overrideCands.add(c);
+    }
+  }
+
   const scored = [...cand]
-    .filter((c) => !blocked.has(c))
+    .filter((c) => !blocked.has(c) && !overrideCands.has(c))
     .map((c) => {
       const ck = byHanja.get(c);
       return ck ? { c, s: scoreConfusable(k, ck) } : null;
@@ -166,8 +176,8 @@ const enriched = base.map((k) => {
     .sort((a, b) => b.s - a.s)
     .map((x) => x.c);
 
-  // cap noisy lists
-  const confusables = scored.slice(0, 4);
+  // Override를 앞에 배치하고 나머지를 뒤에 추가, 최대 4개
+  const confusables = [...overrideCands, ...scored].slice(0, 4);
 
   // examples: curated override, else fallback from meaning
   let exampleWord = undefined;

@@ -3,7 +3,7 @@
   "kind": "confusables_overrides",
   "note": "High-confidence confusable overrides for 4급/4급Ⅱ (auto-generated homophone seed).",
   "generatedAt": "2026-02-15T02:02:44.190Z",
-  "updated_at": "2026-02-15T06:36:32.260Z",
+  "updated_at": "2026-02-16T22:08:39.701Z",
   "overrides": [
     {
       "id": "conf:拒",
@@ -877,6 +877,717 @@
       "reason": "homophone seed + manual review",
       "source": "data/confusables_overrides.json",
       "updated_at": "2026-02-15T06:36:32.260Z"
+    },
+    {
+      "id": "4급-005",
+      "target": "看",
+      "confusables": [
+        "間",
+        "簡",
+        "干"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-006",
+      "target": "干",
+      "confusables": [
+        "間",
+        "簡",
+        "看"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-007",
+      "target": "甘",
+      "confusables": [
+        "感",
+        "敢",
+        "減",
+        "監"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-021",
+      "target": "驚",
+      "confusables": [
+        "京",
+        "輕",
+        "競",
+        "景"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-022",
+      "target": "更",
+      "confusables": [
+        "京",
+        "輕",
+        "競",
+        "景"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-042",
+      "target": "群",
+      "confusables": [
+        "軍",
+        "郡",
+        "君"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-044",
+      "target": "窮",
+      "confusables": [
+        "宮"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-046",
+      "target": "勸",
+      "confusables": [
+        "券",
+        "卷",
+        "權"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-048",
+      "target": "歸",
+      "confusables": [
+        "貴"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-050",
+      "target": "劇",
+      "confusables": [
+        "極"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-058",
+      "target": "段",
+      "confusables": [
+        "短",
+        "壇",
+        "斷",
+        "單"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-062",
+      "target": "亂",
+      "confusables": [
+        "卵"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-066",
+      "target": "糧",
+      "confusables": [
+        "量",
+        "兩"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-075",
+      "target": "鳴",
+      "confusables": [
+        "命",
+        "名",
+        "明"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-079",
+      "target": "舞",
+      "confusables": [
+        "無",
+        "務",
+        "武"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-081",
+      "target": "髮",
+      "confusables": [
+        "發"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-091",
+      "target": "粉",
+      "confusables": [
+        "分",
+        "憤"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-104",
+      "target": "舌",
+      "confusables": [
+        "雪",
+        "設"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-105",
+      "target": "屬",
+      "confusables": [
+        "速",
+        "續",
+        "俗"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-107",
+      "target": "頌",
+      "confusables": [
+        "松",
+        "送"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-110",
+      "target": "叔",
+      "confusables": [
+        "肅"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-111",
+      "target": "肅",
+      "confusables": [
+        "叔"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-114",
+      "target": "額",
+      "confusables": [
+        "液"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-117",
+      "target": "與",
+      "confusables": [
+        "餘",
+        "如"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-123",
+      "target": "延",
+      "confusables": [
+        "然",
+        "燃",
+        "鉛",
+        "緣"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-140",
+      "target": "乳",
+      "confusables": [
+        "有",
+        "由",
+        "油",
+        "遊"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-158",
+      "target": "壯",
+      "confusables": [
+        "長",
+        "場",
+        "章",
+        "獎"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-170",
+      "target": "點",
+      "confusables": [
+        "占"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-171",
+      "target": "占",
+      "confusables": [
+        "點"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-173",
+      "target": "丁",
+      "confusables": [
+        "正",
+        "定",
+        "庭",
+        "停"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-186",
+      "target": "證",
+      "confusables": [
+        "增"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-194",
+      "target": "差",
+      "confusables": [
+        "次"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-218",
+      "target": "鬪",
+      "confusables": [
+        "投"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-236",
+      "target": "顯",
+      "confusables": [
+        "現",
+        "賢"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-242",
+      "target": "華",
+      "confusables": [
+        "火",
+        "花",
+        "話",
+        "畫"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-243",
+      "target": "歡",
+      "confusables": [
+        "患",
+        "環"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급-244",
+      "target": "環",
+      "confusables": [
+        "患",
+        "歡"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-010",
+      "target": "缺",
+      "confusables": [
+        "潔"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-022",
+      "target": "權",
+      "confusables": [
+        "券",
+        "勸",
+        "卷"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-028",
+      "target": "難",
+      "confusables": [
+        "暖"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-037",
+      "target": "黨",
+      "confusables": [
+        "堂"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-040",
+      "target": "導",
+      "confusables": [
+        "道",
+        "度",
+        "圖",
+        "都"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-041",
+      "target": "毒",
+      "confusables": [
+        "讀",
+        "督"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-049",
+      "target": "兩",
+      "confusables": [
+        "量",
+        "糧"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-050",
+      "target": "麗",
+      "confusables": [
+        "慮"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-055",
+      "target": "留",
+      "confusables": [
+        "柳"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-059",
+      "target": "毛",
+      "confusables": [
+        "母",
+        "模"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-060",
+      "target": "牧",
+      "confusables": [
+        "木",
+        "目"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-076",
+      "target": "邊",
+      "confusables": [
+        "辯"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-080",
+      "target": "寶",
+      "confusables": [
+        "普",
+        "保",
+        "步",
+        "報"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-136",
+      "target": "羊",
+      "confusables": [
+        "陽",
+        "洋",
+        "樣"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-137",
+      "target": "餘",
+      "confusables": [
+        "與",
+        "如"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-144",
+      "target": "藝",
+      "confusables": [
+        "豫"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-146",
+      "target": "玉",
+      "confusables": [
+        "屋"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-159",
+      "target": "義",
+      "confusables": [
+        "醫",
+        "衣",
+        "意",
+        "依"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-191",
+      "target": "衆",
+      "confusables": [
+        "中",
+        "重"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-200",
+      "target": "次",
+      "confusables": [
+        "差"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-210",
+      "target": "蟲",
+      "confusables": [
+        "忠"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-228",
+      "target": "豊",
+      "confusables": [
+        "風"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-232",
+      "target": "解",
+      "confusables": [
+        "海"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-233",
+      "target": "鄕",
+      "confusables": [
+        "向",
+        "香"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-234",
+      "target": "香",
+      "confusables": [
+        "向",
+        "鄕"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-236",
+      "target": "驗",
+      "confusables": [
+        "險"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
+    },
+    {
+      "id": "4급Ⅱ-247",
+      "target": "回",
+      "confusables": [
+        "會",
+        "灰"
+      ],
+      "reason": "homophone-auto",
+      "source": "week5-p2",
+      "updated_at": "2026-02-17"
     }
   ]
 }
