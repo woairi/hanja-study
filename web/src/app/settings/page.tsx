@@ -10,6 +10,7 @@ import { Card } from '@/components/ui/Card';
 import { QUIZ_RESULT_TTL_MS, loadQuizResult } from '@/lib/quizResult';
 import { clearAllLocalState, loadState, saveState } from '@/lib/storage';
 import { useTheme, type ThemeMode } from '@/lib/useTheme';
+import { isMuted, setMuted } from '@/lib/feedback';
 import type { GradeLabel } from '@/lib/types';
 
 const GRADE_CHOICES: GradeLabel[] = ['8급', '7급', '7급Ⅱ', '6급', '6급Ⅱ', '5급', '4급', '4급Ⅱ'];
@@ -117,6 +118,12 @@ export default function SettingsPage() {
   const canResetAll = resetAck && resetText.trim().toUpperCase() === 'RESET';
 
   const { mode: themeMode, setTheme } = useTheme();
+  const [muted, setMutedState] = useState(false);
+
+  useEffect(() => {
+    setMutedState(isMuted());
+  }, []);
+
   const THEME_OPTIONS: { value: ThemeMode; label: string; emoji: string }[] = [
     { value: 'system', label: '자동', emoji: '🖥️' },
     { value: 'light', label: '밝게', emoji: '☀️' },
@@ -243,6 +250,26 @@ export default function SettingsPage() {
               {t.emoji} {t.label}
             </Button>
           ))}
+        </div>
+
+        <div className="mt-4">
+          <div className="text-xs font-extrabold" style={{ color: 'var(--muted)' }}>
+            효과음
+          </div>
+          <div className="mt-2">
+            <Button
+              variant={muted ? 'ghost' : 'primary'}
+              className="w-full"
+              data-testid="settings-sound-toggle"
+              onClick={() => {
+                const next = !muted;
+                setMutedState(next);
+                setMuted(next);
+              }}
+            >
+              {muted ? '🔇 효과음 꺼짐' : '🔊 효과음 켜짐'}
+            </Button>
+          </div>
         </div>
       </Card>
 

@@ -15,6 +15,7 @@ import { makeRetryQuestion } from '@/lib/retry';
 import { loadLastSession, saveLastSession, clearLastSession } from '@/lib/session';
 import { logEvent } from '@/lib/telemetry';
 import { calcQuizXp, saveQuizResult } from '@/lib/quizResult';
+import { feedbackCorrect, feedbackWrong } from '@/lib/feedback';
 
 type StudySession = {
   gradeLabel: GradeLabel;
@@ -493,9 +494,11 @@ export default function QuizClient() {
               if (isCorrect) {
                 setConfettiKey((k) => k + 1);
                 setSparkleKey((k) => k + 1);
+                feedbackCorrect();
               } else {
                 // schedule one re-try after 3 more questions
                 setPendingRetry((p) => [...p, { kanjiId: q.kanjiId, dueAt: qIdx + 4, kind: q.kind }]);
+                feedbackWrong();
               }
 
               setAnswers((a) => [...a, { qid: q.id, correct: isCorrect, hintUsed, kanjiId: q.kanjiId }]);

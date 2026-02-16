@@ -12,6 +12,7 @@ import { logEvent } from '@/lib/telemetry';
 import { pickOne } from '@/lib/copy';
 import { todayKey } from '@/lib/kanji';
 import { useSwipe } from '@/lib/useSwipe';
+import { feedbackCelebrate } from '@/lib/feedback';
 
 type StudySession = {
   gradeLabel: GradeLabel;
@@ -97,6 +98,11 @@ export default function StudyClient() {
 
   const current = items[idx];
   const isDone = idx >= items.length;
+
+  // 학습 완료 시 축하 피드백
+  useEffect(() => {
+    if (isDone && items.length > 0) feedbackCelebrate();
+  }, [isDone, items.length]);
   const reviewOnly = sp.get('review') === '1';
   const focusWeak = sp.get('focus') === 'weak';
 
