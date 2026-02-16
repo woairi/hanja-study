@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import OfflineBanner from "@/components/OfflineBanner";
+import { ThemeScript } from "@/components/ThemeScript";
 import { SerwistProvider } from "./serwist-provider";
 
 const geistSans = Geist({
@@ -55,7 +56,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
+    <html lang="ko" suppressHydrationWarning>
+      <head>
+        <ThemeScript />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <SerwistProvider swUrl="/serwist/sw.js">
           <OfflineBanner />

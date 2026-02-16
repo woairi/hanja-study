@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { QUIZ_RESULT_TTL_MS, loadQuizResult } from '@/lib/quizResult';
 import { clearAllLocalState, loadState, saveState } from '@/lib/storage';
+import { useTheme, type ThemeMode } from '@/lib/useTheme';
 import type { GradeLabel } from '@/lib/types';
 
 const GRADE_CHOICES: GradeLabel[] = ['8급', '7급', '7급Ⅱ', '6급', '6급Ⅱ', '5급', '4급', '4급Ⅱ'];
@@ -115,6 +116,13 @@ export default function SettingsPage() {
 
   const canResetAll = resetAck && resetText.trim().toUpperCase() === 'RESET';
 
+  const { mode: themeMode, setTheme } = useTheme();
+  const THEME_OPTIONS: { value: ThemeMode; label: string; emoji: string }[] = [
+    { value: 'system', label: '자동', emoji: '🖥️' },
+    { value: 'light', label: '밝게', emoji: '☀️' },
+    { value: 'dark', label: '어둡게', emoji: '🌙' },
+  ];
+
   return (
     <main className="mx-auto max-w-md p-4">
       <header className="mb-3">
@@ -215,6 +223,26 @@ export default function SettingsPage() {
             {savedToast ? '저장했어!' : ' '}
           </div>
           <Button onClick={save} data-testid="settings-save">저장</Button>
+        </div>
+      </Card>
+
+      <Card className="mt-3 p-4">
+        <div className="text-sm font-extrabold">화면 테마</div>
+        <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
+          밝은 화면이 좋을 때, 어두운 화면이 좋을 때 바꿀 수 있어.
+        </div>
+        <div className="mt-3 grid grid-cols-3 gap-2">
+          {THEME_OPTIONS.map((t) => (
+            <Button
+              key={t.value}
+              variant={themeMode === t.value ? 'primary' : 'ghost'}
+              className="w-full"
+              data-testid={`settings-theme-${t.value}`}
+              onClick={() => setTheme(t.value)}
+            >
+              {t.emoji} {t.label}
+            </Button>
+          ))}
         </div>
       </Card>
 
