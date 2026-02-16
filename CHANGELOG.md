@@ -7,6 +7,10 @@
 ## [Unreleased]
 
 ### Added
+- Week5(P2/BE): 학습 세션 만료 정책 (4시간 TTL, 자동 만료/제거)
+- Week5(P2/FE): 효과음 + 햅틱 피드백 (Web Audio API + Vibration API, 정답/오답/축하)
+- Week5(P2/FE): 설정에 효과음 켜기/끄기 토글
+- Week5(P2/BE): confusables 3차 품질 개선 (4급/4급Ⅱ 동음 기반 +65개, confusables 없는 한자 81→55)
 - Week5(P1/FE): 학습 카드 좌우 스와이프 제스처 (useSwipe 훅, 50px 최소)
 - Week5(P1/FE): 다크모드 지원 (시스템 자동 + 수동 토글 system/light/dark)
 - Week5(P1/FE): OG 이미지 자동 생성 (next/og, 1200x630, 카톡/밴드 공유)
