@@ -16,17 +16,43 @@ export function classifyWrongReason(correct: KanjiItem, chosen: KanjiItem | unde
   return 'unknown';
 }
 
-/** 오답 이유별 코칭 메시지 */
+/** 오답 이유별 코칭 메시지 (랜덤 선택) */
+const readingTips = [
+  '같은 소리(음)의 한자와 헷갈렸어. 뜻을 함께 외우면 구분이 쉬워져!',
+  '음이 같은 한자는 뜻으로 구분해봐! 예시 단어를 떠올리면 도움이 돼.',
+  '소리가 같아도 뜻이 다르잖아! 예시 단어와 함께 기억해봐.',
+];
+const meaningTips = [
+  '비슷한 뜻의 한자와 헷갈렸어. 음(소리)으로 구분해봐!',
+  '뜻이 비슷할 땐 부수(部首)를 보면 힌트가 있어!',
+  '비슷한 뜻이지만 쓰임이 달라. 예시 단어를 비교해봐!',
+];
+const shapeTips = [
+  '모양이 비슷한 한자와 헷갈렸어. 부수(部首)를 자세히 보면 차이가 보여!',
+  '비슷하게 생겼지만 부수가 달라! 부수의 뜻을 알면 구분이 쉬워져.',
+  '모양이 비슷할 땐 획수를 세어봐. 작은 차이가 큰 차이야!',
+];
+const unknownTips = [
+  '다시 한번 보면 기억에 남을 거야!',
+  '틀려도 괜찮아! 한 번 더 보면 다음엔 맞힐 수 있어.',
+  '실수는 배움의 시작이야! 예시 단어를 읽어보면 도움이 돼.',
+  '오답 노트에 적어두면 복습할 때 좋아!',
+];
+
+function pick<T>(arr: T[]): T {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
 export function wrongReasonCoaching(reason: WrongReason): string {
   switch (reason) {
     case 'reading':
-      return '같은 소리(음)의 한자와 헷갈렸어. 뜻을 함께 외우면 구분이 쉬워져!';
+      return pick(readingTips);
     case 'meaning':
-      return '비슷한 뜻의 한자와 헷갈렸어. 음(소리)으로 구분해봐!';
+      return pick(meaningTips);
     case 'shape':
-      return '모양이 비슷한 한자와 헷갈렸어. 부수(部首)를 자세히 보면 차이가 보여!';
+      return pick(shapeTips);
     default:
-      return '다시 한번 보면 기억에 남을 거야!';
+      return pick(unknownTips);
   }
 }
 export const QUIZ_RESULT_CACHE_KEY = 'hanja-study:quizResult:last';

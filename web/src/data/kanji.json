@@ -13,7 +13,8 @@
       "敎"
     ],
     "exampleWord": "학교(學校)",
-    "exampleMeaning": "학생들이 배우는 곳"
+    "exampleMeaning": "학생들이 배우는 곳",
+    "radicalMeaning": "나무"
   },
   {
     "id": "8급-002",
@@ -28,7 +29,8 @@
       "校"
     ],
     "exampleWord": "교육(敎育)",
-    "exampleMeaning": "가르쳐서 기름"
+    "exampleMeaning": "가르쳐서 기름",
+    "radicalMeaning": "칠"
   },
   {
     "id": "8급-003",
@@ -44,7 +46,8 @@
       "六"
     ],
     "exampleWord": "구구단(九九段)",
-    "exampleMeaning": "곱셈 구구표"
+    "exampleMeaning": "곱셈 구구표",
+    "radicalMeaning": "새, 둘째"
   },
   {
     "id": "8급-004",
@@ -60,7 +63,8 @@
       "圖"
     ],
     "exampleWord": "한국",
-    "exampleMeaning": "나라 이름"
+    "exampleMeaning": "나라 이름",
+    "radicalMeaning": "에울"
   },
   {
     "id": "8급-005",
@@ -76,7 +80,8 @@
       "群"
     ],
     "exampleWord": "군인(軍人)",
-    "exampleMeaning": "나라를 지키는 사람"
+    "exampleMeaning": "나라를 지키는 사람",
+    "radicalMeaning": "수레"
   },
   {
     "id": "8급-006",
@@ -92,7 +97,8 @@
       "全"
     ],
     "exampleWord": "금메달(金─)",
-    "exampleMeaning": "금으로 만든 메달, 1등 상"
+    "exampleMeaning": "금으로 만든 메달, 1등 상",
+    "radicalMeaning": "쇠"
   },
   {
     "id": "8급-007",
@@ -108,7 +114,8 @@
       "西"
     ],
     "exampleWord": "남쪽(南─)",
-    "exampleMeaning": "따뜻한 방향"
+    "exampleMeaning": "따뜻한 방향",
+    "radicalMeaning": "열"
   },
   {
     "id": "8급-008",
@@ -124,7 +131,8 @@
       "安"
     ],
     "exampleWord": "여자",
-    "exampleMeaning": "여성"
+    "exampleMeaning": "여성",
+    "radicalMeaning": "여자"
   },
   {
     "id": "8급-009",
@@ -140,7 +148,8 @@
       "牛"
     ],
     "exampleWord": "신년(新年)",
-    "exampleMeaning": "새로운 해"
+    "exampleMeaning": "새로운 해",
+    "radicalMeaning": "방패"
   },
   {
     "id": "8급-010",
@@ -157,7 +166,8 @@
       "夫"
     ],
     "exampleWord": "대형",
-    "exampleMeaning": "큰 형태"
+    "exampleMeaning": "큰 형태",
+    "radicalMeaning": "큰"
   },
   {
     "id": "8급-011",
@@ -173,7 +183,8 @@
       "木"
     ],
     "exampleWord": "동쪽",
-    "exampleMeaning": "해가 뜨는 쪽"
+    "exampleMeaning": "해가 뜨는 쪽",
+    "radicalMeaning": "나무"
   },
   {
     "id": "8급-012",
@@ -188,7 +199,8 @@
       "八"
     ],
     "exampleWord": "육월(六月)",
-    "exampleMeaning": "한 해의 여섯째 달"
+    "exampleMeaning": "한 해의 여섯째 달",
+    "radicalMeaning": "여덟"
   },
   {
     "id": "8급-013",
@@ -204,7 +216,8 @@
       "草"
     ],
     "exampleWord": "만세(萬歲)",
-    "exampleMeaning": "만 년을 사시라는 뜻"
+    "exampleMeaning": "만 년을 사시라는 뜻",
+    "radicalMeaning": "풀"
   },
   {
     "id": "8급-014",
@@ -221,7 +234,8 @@
       "毛"
     ],
     "exampleWord": "어머니",
-    "exampleMeaning": "엄마"
+    "exampleMeaning": "엄마",
+    "radicalMeaning": "말"
   },
   {
     "id": "8급-015",
@@ -236,7 +250,8 @@
       "東"
     ],
     "exampleWord": "목재",
-    "exampleMeaning": "나무 재료"
+    "exampleMeaning": "나무 재료",
+    "radicalMeaning": "나무"
   },
   {
     "id": "8급-016",
@@ -253,7 +268,8 @@
       "問"
     ],
     "exampleWord": "정문(正門)",
-    "exampleMeaning": "건물의 큰 출입구"
+    "exampleMeaning": "건물의 큰 출입구",
+    "radicalMeaning": "문"
   },
   {
     "id": "8급-017",
@@ -268,7 +284,8 @@
       "氏"
     ],
     "exampleWord": "국민",
-    "exampleMeaning": "나라의 사람들"
+    "exampleMeaning": "나라의 사람들",
+    "radicalMeaning": "성씨"
   },
   {
     "id": "8급-018",
@@ -284,7 +301,8 @@
       "自"
     ],
     "exampleWord": "백색",
-    "exampleMeaning": "흰색"
+    "exampleMeaning": "흰색",
+    "radicalMeaning": "흰"
   },
   {
     "id": "8급-019",
@@ -300,7 +318,8 @@
       "文"
     ],
     "exampleWord": "아버지",
-    "exampleMeaning": "아빠"
+    "exampleMeaning": "아빠",
+    "radicalMeaning": "아비"
   },
   {
     "id": "8급-020",
@@ -317,7 +336,8 @@
       "西"
     ],
     "exampleWord": "북쪽",
-    "exampleMeaning": "위쪽 방향"
+    "exampleMeaning": "위쪽 방향",
+    "radicalMeaning": "비수"
   },
   {
     "id": "8급-021",
@@ -333,7 +353,8 @@
       "回"
     ],
     "exampleWord": "사계절",
-    "exampleMeaning": "봄·여름·가을·겨울"
+    "exampleMeaning": "봄·여름·가을·겨울",
+    "radicalMeaning": "에울"
   },
   {
     "id": "8급-022",
@@ -348,7 +369,8 @@
       "出"
     ],
     "exampleWord": "등산",
-    "exampleMeaning": "산에 오르기"
+    "exampleMeaning": "산에 오르기",
+    "radicalMeaning": "산"
   },
   {
     "id": "8급-023",
@@ -364,7 +386,8 @@
       "一"
     ],
     "exampleWord": "삼각형",
-    "exampleMeaning": "세모"
+    "exampleMeaning": "세모",
+    "radicalMeaning": "하나"
   },
   {
     "id": "8급-024",
@@ -380,7 +403,8 @@
       "星"
     ],
     "exampleWord": "생일",
-    "exampleMeaning": "태어난 날"
+    "exampleMeaning": "태어난 날",
+    "radicalMeaning": "날"
   },
   {
     "id": "8급-025",
@@ -396,7 +420,8 @@
       "南"
     ],
     "exampleWord": "서쪽(西─)",
-    "exampleMeaning": "해가 지는 방향"
+    "exampleMeaning": "해가 지는 방향",
+    "radicalMeaning": "덮을"
   },
   {
     "id": "8급-026",
@@ -411,7 +436,8 @@
       "兄"
     ],
     "exampleWord": "선생",
-    "exampleMeaning": "먼저 사는 사람 → 가르치는 사람"
+    "exampleMeaning": "먼저 사는 사람 → 가르치는 사람",
+    "radicalMeaning": "어진사람"
   },
   {
     "id": "8급-027",
@@ -427,7 +453,8 @@
       "水"
     ],
     "exampleWord": "소형",
-    "exampleMeaning": "작은 형태"
+    "exampleMeaning": "작은 형태",
+    "radicalMeaning": "작을"
   },
   {
     "id": "8급-028",
@@ -444,7 +471,8 @@
       "小"
     ],
     "exampleWord": "수영",
-    "exampleMeaning": "물에서 운동"
+    "exampleMeaning": "물에서 운동",
+    "radicalMeaning": "물"
   },
   {
     "id": "8급-029",
@@ -461,7 +489,8 @@
       "屋"
     ],
     "exampleWord": "교실(敎室)",
-    "exampleMeaning": "수업하는 방"
+    "exampleMeaning": "수업하는 방",
+    "radicalMeaning": "집"
   },
   {
     "id": "8급-030",
@@ -477,7 +506,8 @@
       "寸"
     ],
     "exampleWord": "십분",
-    "exampleMeaning": "10분(열 분)"
+    "exampleMeaning": "10분(열 분)",
+    "radicalMeaning": "열"
   },
   {
     "id": "8급-031",
@@ -492,7 +522,8 @@
       "二"
     ],
     "exampleWord": "오월",
-    "exampleMeaning": "5월"
+    "exampleMeaning": "5월",
+    "radicalMeaning": "둘"
   },
   {
     "id": "8급-032",
@@ -508,7 +539,8 @@
       "玉"
     ],
     "exampleWord": "왕자(王子)",
-    "exampleMeaning": "임금의 아들"
+    "exampleMeaning": "임금의 아들",
+    "radicalMeaning": "구슬"
   },
   {
     "id": "8급-033",
@@ -524,7 +556,8 @@
       "名"
     ],
     "exampleWord": "외국",
-    "exampleMeaning": "바깥 나라"
+    "exampleMeaning": "바깥 나라",
+    "radicalMeaning": "저녁"
   },
   {
     "id": "8급-034",
@@ -541,7 +574,8 @@
       "朝"
     ],
     "exampleWord": "월요일(月曜日)",
-    "exampleMeaning": "한 주의 둘째 날"
+    "exampleMeaning": "한 주의 둘째 날",
+    "radicalMeaning": "달"
   },
   {
     "id": "8급-035",
@@ -556,7 +590,8 @@
       "五"
     ],
     "exampleWord": "이월(二月)",
-    "exampleMeaning": "한 해의 둘째 달"
+    "exampleMeaning": "한 해의 둘째 달",
+    "radicalMeaning": "둘"
   },
   {
     "id": "8급-036",
@@ -573,7 +608,8 @@
       "仁"
     ],
     "exampleWord": "인간(人間)",
-    "exampleMeaning": "사람과 사람 사이"
+    "exampleMeaning": "사람과 사람 사이",
+    "radicalMeaning": "사람"
   },
   {
     "id": "8급-037",
@@ -590,7 +626,8 @@
       "日"
     ],
     "exampleWord": "일등(一等)",
-    "exampleMeaning": "첫째 차례"
+    "exampleMeaning": "첫째 차례",
+    "radicalMeaning": "하나"
   },
   {
     "id": "8급-038",
@@ -605,7 +642,8 @@
       "一"
     ],
     "exampleWord": "일요일",
-    "exampleMeaning": "해의 날"
+    "exampleMeaning": "해의 날",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "8급-039",
@@ -621,7 +659,8 @@
       "場"
     ],
     "exampleWord": "장점(長點)",
-    "exampleMeaning": "좋은 점, 뛰어난 부분"
+    "exampleMeaning": "좋은 점, 뛰어난 부분",
+    "radicalMeaning": "긴"
   },
   {
     "id": "8급-040",
@@ -637,7 +676,8 @@
       "兄"
     ],
     "exampleWord": "형제(兄弟)",
-    "exampleMeaning": "형과 아우"
+    "exampleMeaning": "형과 아우",
+    "radicalMeaning": "활"
   },
   {
     "id": "8급-041",
@@ -652,7 +692,8 @@
       "重"
     ],
     "exampleWord": "중심(中心)",
-    "exampleMeaning": "한가운데"
+    "exampleMeaning": "한가운데",
+    "radicalMeaning": "뚫을 곤"
   },
   {
     "id": "8급-042",
@@ -667,7 +708,8 @@
       "淸"
     ],
     "exampleWord": "청소년(靑少年)",
-    "exampleMeaning": "푸른 나이의 젊은이"
+    "exampleMeaning": "푸른 나이의 젊은이",
+    "radicalMeaning": "푸를"
   },
   {
     "id": "8급-043",
@@ -684,7 +726,8 @@
       "才"
     ],
     "exampleWord": "촌수(寸數)",
-    "exampleMeaning": "친척 사이의 거리"
+    "exampleMeaning": "친척 사이의 거리",
+    "radicalMeaning": "마디"
   },
   {
     "id": "8급-044",
@@ -700,7 +743,8 @@
       "一"
     ],
     "exampleWord": "칠월(七月)",
-    "exampleMeaning": "한 해의 일곱째 달"
+    "exampleMeaning": "한 해의 일곱째 달",
+    "radicalMeaning": "하나"
   },
   {
     "id": "8급-045",
@@ -716,7 +760,8 @@
       "工"
     ],
     "exampleWord": "토요일(土曜日)",
-    "exampleMeaning": "한 주의 여섯째 날"
+    "exampleMeaning": "한 주의 여섯째 날",
+    "radicalMeaning": "흙"
   },
   {
     "id": "8급-046",
@@ -731,7 +776,8 @@
       "六"
     ],
     "exampleWord": "팔월(八月)",
-    "exampleMeaning": "한 해의 여덟째 달"
+    "exampleMeaning": "한 해의 여덟째 달",
+    "radicalMeaning": "여덟"
   },
   {
     "id": "8급-047",
@@ -747,7 +793,8 @@
       "黨"
     ],
     "exampleWord": "학생",
-    "exampleMeaning": "배우는 사람"
+    "exampleMeaning": "배우는 사람",
+    "radicalMeaning": "아들"
   },
   {
     "id": "8급-048",
@@ -763,7 +810,8 @@
       "漢"
     ],
     "exampleWord": "대한민국",
-    "exampleMeaning": "우리 나라"
+    "exampleMeaning": "우리 나라",
+    "radicalMeaning": "가죽"
   },
   {
     "id": "8급-049",
@@ -778,7 +826,8 @@
       "先"
     ],
     "exampleWord": "형님(兄─)",
-    "exampleMeaning": "형을 높여 부르는 말"
+    "exampleMeaning": "형을 높여 부르는 말",
+    "radicalMeaning": "어진사람"
   },
   {
     "id": "8급-050",
@@ -794,7 +843,8 @@
       "花"
     ],
     "exampleWord": "화재",
-    "exampleMeaning": "불이 남"
+    "exampleMeaning": "불이 남",
+    "radicalMeaning": "불"
   },
   {
     "id": "7급-001",
@@ -809,7 +859,8 @@
       "歡"
     ],
     "exampleWord": "가수(歌手)",
-    "exampleMeaning": "노래 부르는 사람"
+    "exampleMeaning": "노래 부르는 사람",
+    "radicalMeaning": "하품"
   },
   {
     "id": "7급-002",
@@ -824,7 +875,8 @@
       "同"
     ],
     "exampleWord": "인구(人口)",
-    "exampleMeaning": "사람의 수"
+    "exampleMeaning": "사람의 수",
+    "radicalMeaning": "입"
   },
   {
     "id": "7급-003",
@@ -839,7 +891,8 @@
       "期"
     ],
     "exampleWord": "국기(國旗)",
-    "exampleMeaning": "나라를 나타내는 깃발"
+    "exampleMeaning": "나라를 나타내는 깃발",
+    "radicalMeaning": "모"
   },
   {
     "id": "7급-004",
@@ -857,7 +910,8 @@
       "洞"
     ],
     "exampleWord": "동일(同一)",
-    "exampleMeaning": "같음"
+    "exampleMeaning": "같음",
+    "radicalMeaning": "입"
   },
   {
     "id": "7급-005",
@@ -872,7 +926,8 @@
       "同"
     ],
     "exampleWord": "동네(洞─)",
-    "exampleMeaning": "사람이 사는 마을"
+    "exampleMeaning": "사람이 사는 마을",
+    "radicalMeaning": "물"
   },
   {
     "id": "7급-006",
@@ -887,7 +942,8 @@
       "同"
     ],
     "exampleWord": "겨울(冬─)",
-    "exampleMeaning": "한 해의 추운 계절"
+    "exampleMeaning": "한 해의 추운 계절",
+    "radicalMeaning": "얼음"
   },
   {
     "id": "7급-007",
@@ -903,7 +959,8 @@
       "豆"
     ],
     "exampleWord": "등산(登山)",
-    "exampleMeaning": "산에 오름"
+    "exampleMeaning": "산에 오름",
+    "radicalMeaning": "필"
   },
   {
     "id": "7급-008",
@@ -920,7 +977,8 @@
       "休"
     ],
     "exampleWord": "미래(未來)",
-    "exampleMeaning": "아직 오지 않은 때"
+    "exampleMeaning": "아직 오지 않은 때",
+    "radicalMeaning": "사람"
   },
   {
     "id": "7급-009",
@@ -937,7 +995,8 @@
       "者"
     ],
     "exampleWord": "노인(老人)",
-    "exampleMeaning": "나이 많은 사람"
+    "exampleMeaning": "나이 많은 사람",
+    "radicalMeaning": "늙을"
   },
   {
     "id": "7급-010",
@@ -952,7 +1011,8 @@
       "重"
     ],
     "exampleWord": "마을(里─)",
-    "exampleMeaning": "사람들이 모여 사는 곳"
+    "exampleMeaning": "사람들이 모여 사는 곳",
+    "radicalMeaning": "마을"
   },
   {
     "id": "7급-011",
@@ -968,7 +1028,8 @@
       "植"
     ],
     "exampleWord": "산림(山林)",
-    "exampleMeaning": "산의 나무숲"
+    "exampleMeaning": "산의 나무숲",
+    "radicalMeaning": "나무"
   },
   {
     "id": "7급-012",
@@ -983,7 +1044,8 @@
       "頭"
     ],
     "exampleWord": "표면(表面)",
-    "exampleMeaning": "겉 부분"
+    "exampleMeaning": "겉 부분",
+    "radicalMeaning": "얼굴"
   },
   {
     "id": "7급-013",
@@ -999,7 +1061,8 @@
       "問"
     ],
     "exampleWord": "생명",
-    "exampleMeaning": "살아있는 것"
+    "exampleMeaning": "살아있는 것",
+    "radicalMeaning": "입"
   },
   {
     "id": "7급-014",
@@ -1015,7 +1078,8 @@
       "交"
     ],
     "exampleWord": "문화",
-    "exampleMeaning": "생활 양식"
+    "exampleMeaning": "생활 양식",
+    "radicalMeaning": "글"
   },
   {
     "id": "7급-015",
@@ -1030,7 +1094,8 @@
       "命"
     ],
     "exampleWord": "질문(質問)",
-    "exampleMeaning": "궁금한 것을 물음"
+    "exampleMeaning": "궁금한 것을 물음",
+    "radicalMeaning": "입"
   },
   {
     "id": "7급-016",
@@ -1046,7 +1111,8 @@
       "自"
     ],
     "exampleWord": "백점(百點)",
-    "exampleMeaning": "만점"
+    "exampleMeaning": "만점",
+    "radicalMeaning": "흰"
   },
   {
     "id": "7급-017",
@@ -1061,7 +1127,8 @@
       "天"
     ],
     "exampleWord": "부부(夫婦)",
-    "exampleMeaning": "남편과 아내"
+    "exampleMeaning": "남편과 아내",
+    "radicalMeaning": "큰"
   },
   {
     "id": "7급-018",
@@ -1077,7 +1144,8 @@
       "竹"
     ],
     "exampleWord": "계산(計算)",
-    "exampleMeaning": "수를 셈"
+    "exampleMeaning": "수를 셈",
+    "radicalMeaning": "대나무"
   },
   {
     "id": "7급-019",
@@ -1092,7 +1160,8 @@
       "危"
     ],
     "exampleWord": "색깔(色─)",
-    "exampleMeaning": "빛깔"
+    "exampleMeaning": "빛깔",
+    "radicalMeaning": "빛"
   },
   {
     "id": "7급-020",
@@ -1109,7 +1178,8 @@
       "名"
     ],
     "exampleWord": "석양(夕陽)",
-    "exampleMeaning": "저녁 해"
+    "exampleMeaning": "저녁 해",
+    "radicalMeaning": "저녁"
   },
   {
     "id": "7급-021",
@@ -1125,7 +1195,8 @@
       "步"
     ],
     "exampleWord": "소년(少年)",
-    "exampleMeaning": "어린 나이의 남자"
+    "exampleMeaning": "어린 나이의 남자",
+    "radicalMeaning": "작을"
   },
   {
     "id": "7급-022",
@@ -1141,7 +1212,8 @@
       "折"
     ],
     "exampleWord": "장소(場所)",
-    "exampleMeaning": "일이 이루어지는 곳"
+    "exampleMeaning": "일이 이루어지는 곳",
+    "radicalMeaning": "지게"
   },
   {
     "id": "7급-023",
@@ -1156,7 +1228,8 @@
       "敗"
     ],
     "exampleWord": "수학(數學)",
-    "exampleMeaning": "수를 다루는 학문"
+    "exampleMeaning": "수를 다루는 학문",
+    "radicalMeaning": "칠"
   },
   {
     "id": "7급-024",
@@ -1171,7 +1244,8 @@
       "林"
     ],
     "exampleWord": "식물(植物)",
-    "exampleMeaning": "뿌리 내린 생물"
+    "exampleMeaning": "뿌리 내린 생물",
+    "radicalMeaning": "나무"
   },
   {
     "id": "7급-025",
@@ -1186,7 +1260,8 @@
       "志"
     ],
     "exampleWord": "마음(心─)",
-    "exampleMeaning": "생각하고 느끼는 곳"
+    "exampleMeaning": "생각하고 느끼는 곳",
+    "radicalMeaning": "마음"
   },
   {
     "id": "7급-026",
@@ -1203,7 +1278,8 @@
       "誤"
     ],
     "exampleWord": "언어(言語)",
-    "exampleMeaning": "말과 글"
+    "exampleMeaning": "말과 글",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "7급-027",
@@ -1219,7 +1295,8 @@
       "熱"
     ],
     "exampleWord": "자연(自然)",
-    "exampleMeaning": "스스로 그러함"
+    "exampleMeaning": "스스로 그러함",
+    "radicalMeaning": "불"
   },
   {
     "id": "7급-028",
@@ -1235,7 +1312,8 @@
       "存"
     ],
     "exampleWord": "소유(所有)",
-    "exampleMeaning": "가지고 있음"
+    "exampleMeaning": "가지고 있음",
+    "radicalMeaning": "달"
   },
   {
     "id": "7급-029",
@@ -1251,7 +1329,8 @@
       "脫"
     ],
     "exampleWord": "교육(敎育)",
-    "exampleMeaning": "가르쳐 기름"
+    "exampleMeaning": "가르쳐 기름",
+    "radicalMeaning": "고기"
   },
   {
     "id": "7급-030",
@@ -1267,7 +1346,8 @@
       "郡"
     ],
     "exampleWord": "읍내(邑內)",
-    "exampleMeaning": "고을 안쪽"
+    "exampleMeaning": "고을 안쪽",
+    "radicalMeaning": "고을"
   },
   {
     "id": "7급-031",
@@ -1283,7 +1363,8 @@
       "八"
     ],
     "exampleWord": "수입",
-    "exampleMeaning": "안으로 들여옴"
+    "exampleMeaning": "안으로 들여옴",
+    "radicalMeaning": "들"
   },
   {
     "id": "7급-032",
@@ -1299,7 +1380,8 @@
       "學"
     ],
     "exampleWord": "글자(─字)",
-    "exampleMeaning": "쓰거나 읽는 기호"
+    "exampleMeaning": "쓰거나 읽는 기호",
+    "radicalMeaning": "아들"
   },
   {
     "id": "7급-033",
@@ -1316,7 +1398,8 @@
       "社"
     ],
     "exampleWord": "조상(祖上)",
-    "exampleMeaning": "윗대 어른"
+    "exampleMeaning": "윗대 어른",
+    "radicalMeaning": "보일"
   },
   {
     "id": "7급-034",
@@ -1334,7 +1417,8 @@
       "主"
     ],
     "exampleWord": "주거",
-    "exampleMeaning": "사는 곳"
+    "exampleMeaning": "사는 곳",
+    "radicalMeaning": "사람"
   },
   {
     "id": "7급-035",
@@ -1349,7 +1433,8 @@
       "住"
     ],
     "exampleWord": "주인(主人)",
-    "exampleMeaning": "물건의 임자"
+    "exampleMeaning": "물건의 임자",
+    "radicalMeaning": "점"
   },
   {
     "id": "7급-036",
@@ -1364,7 +1449,8 @@
       "里"
     ],
     "exampleWord": "체중(體重)",
-    "exampleMeaning": "몸무게"
+    "exampleMeaning": "몸무게",
+    "radicalMeaning": "마을"
   },
   {
     "id": "7급-037",
@@ -1380,7 +1466,8 @@
       "氏"
     ],
     "exampleWord": "종이(紙─)",
-    "exampleMeaning": "글을 쓰는 얇은 것"
+    "exampleMeaning": "글을 쓰는 얇은 것",
+    "radicalMeaning": "실"
   },
   {
     "id": "7급-038",
@@ -1395,7 +1482,8 @@
       "他"
     ],
     "exampleWord": "지도(地圖)",
-    "exampleMeaning": "땅의 모양을 그린 그림"
+    "exampleMeaning": "땅의 모양을 그린 그림",
+    "radicalMeaning": "흙"
   },
   {
     "id": "7급-039",
@@ -1411,7 +1499,8 @@
       "川"
     ],
     "exampleWord": "천원(千圓)",
-    "exampleMeaning": "천 원짜리 돈"
+    "exampleMeaning": "천 원짜리 돈",
+    "radicalMeaning": "열"
   },
   {
     "id": "7급-040",
@@ -1428,7 +1517,8 @@
       "川"
     ],
     "exampleWord": "천국(天國)",
-    "exampleMeaning": "하늘 나라"
+    "exampleMeaning": "하늘 나라",
+    "radicalMeaning": "큰"
   },
   {
     "id": "7급-041",
@@ -1444,7 +1534,8 @@
       "天"
     ],
     "exampleWord": "하천",
-    "exampleMeaning": "강/내"
+    "exampleMeaning": "강/내",
+    "radicalMeaning": "내"
   },
   {
     "id": "7급-042",
@@ -1459,7 +1550,8 @@
       "花"
     ],
     "exampleWord": "잔디(草─)",
-    "exampleMeaning": "땅을 덮는 풀"
+    "exampleMeaning": "땅을 덮는 풀",
+    "radicalMeaning": "풀"
   },
   {
     "id": "7급-043",
@@ -1474,7 +1566,8 @@
       "林"
     ],
     "exampleWord": "농촌(農村)",
-    "exampleMeaning": "농사짓는 마을"
+    "exampleMeaning": "농사짓는 마을",
+    "radicalMeaning": "나무"
   },
   {
     "id": "7급-044",
@@ -1489,7 +1582,8 @@
       "科"
     ],
     "exampleWord": "가을(秋─)",
-    "exampleMeaning": "곡식이 익는 계절"
+    "exampleMeaning": "곡식이 익는 계절",
+    "radicalMeaning": "벼"
   },
   {
     "id": "7급-045",
@@ -1504,7 +1598,8 @@
       "秋"
     ],
     "exampleWord": "봄(春─)",
-    "exampleMeaning": "한 해의 따뜻한 계절"
+    "exampleMeaning": "한 해의 따뜻한 계절",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "7급-046",
@@ -1520,7 +1615,8 @@
       "屈"
     ],
     "exampleWord": "출발(出發)",
-    "exampleMeaning": "떠나서 나감"
+    "exampleMeaning": "떠나서 나감",
+    "radicalMeaning": "오목할"
   },
   {
     "id": "7급-047",
@@ -1537,7 +1633,8 @@
       "休"
     ],
     "exampleWord": "편의점(便宜店)",
-    "exampleMeaning": "쉽게 물건 사는 가게"
+    "exampleMeaning": "쉽게 물건 사는 가게",
+    "radicalMeaning": "사람"
   },
   {
     "id": "7급-048",
@@ -1553,7 +1650,8 @@
       "假"
     ],
     "exampleWord": "여름(夏─)",
-    "exampleMeaning": "한 해의 더운 계절"
+    "exampleMeaning": "한 해의 더운 계절",
+    "radicalMeaning": "천천히 걸을"
   },
   {
     "id": "7급-049",
@@ -1568,7 +1666,8 @@
       "草"
     ],
     "exampleWord": "꽃(花─)",
-    "exampleMeaning": "식물의 아름다운 부분"
+    "exampleMeaning": "식물의 아름다운 부분",
+    "radicalMeaning": "풀"
   },
   {
     "id": "7급-050",
@@ -1585,7 +1684,8 @@
       "便"
     ],
     "exampleWord": "휴일(休日)",
-    "exampleMeaning": "쉬는 날"
+    "exampleMeaning": "쉬는 날",
+    "radicalMeaning": "사람"
   },
   {
     "id": "7급Ⅱ-001",
@@ -1600,7 +1700,8 @@
       "安"
     ],
     "exampleWord": "가족(家族)",
-    "exampleMeaning": "한 집에 사는 식구"
+    "exampleMeaning": "한 집에 사는 식구",
+    "radicalMeaning": "집"
   },
   {
     "id": "7급Ⅱ-002",
@@ -1617,7 +1718,8 @@
       "問"
     ],
     "exampleWord": "시간(時間)",
-    "exampleMeaning": "때의 사이"
+    "exampleMeaning": "때의 사이",
+    "radicalMeaning": "문"
   },
   {
     "id": "7급Ⅱ-003",
@@ -1633,7 +1735,8 @@
       "海"
     ],
     "exampleWord": "한강(漢江)",
-    "exampleMeaning": "서울을 흐르는 큰 강"
+    "exampleMeaning": "서울을 흐르는 큰 강",
+    "radicalMeaning": "물"
   },
   {
     "id": "7급Ⅱ-004",
@@ -1649,7 +1752,8 @@
       "運"
     ],
     "exampleWord": "자동차(自動車)",
-    "exampleMeaning": "스스로 움직이는 탈것"
+    "exampleMeaning": "스스로 움직이는 탈것",
+    "radicalMeaning": "수레"
   },
   {
     "id": "7급Ⅱ-005",
@@ -1664,7 +1768,8 @@
       "左"
     ],
     "exampleWord": "공장",
-    "exampleMeaning": "물건 만드는 곳"
+    "exampleMeaning": "물건 만드는 곳",
+    "radicalMeaning": "장인"
   },
   {
     "id": "7급Ⅱ-006",
@@ -1680,7 +1785,8 @@
       "功"
     ],
     "exampleWord": "하늘",
-    "exampleMeaning": "머리 위 공간"
+    "exampleMeaning": "머리 위 공간",
+    "radicalMeaning": "구멍"
   },
   {
     "id": "7급Ⅱ-007",
@@ -1695,7 +1801,8 @@
       "記"
     ],
     "exampleWord": "공기",
-    "exampleMeaning": "숨 쉬는 기운"
+    "exampleMeaning": "숨 쉬는 기운",
+    "radicalMeaning": "기운"
   },
   {
     "id": "7급Ⅱ-008",
@@ -1711,7 +1818,8 @@
       "話"
     ],
     "exampleWord": "기록",
-    "exampleMeaning": "적어 남김"
+    "exampleMeaning": "적어 남김",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "7급Ⅱ-009",
@@ -1727,7 +1835,8 @@
       "田"
     ],
     "exampleWord": "남자",
-    "exampleMeaning": "남성"
+    "exampleMeaning": "남성",
+    "radicalMeaning": "밭"
   },
   {
     "id": "7급Ⅱ-010",
@@ -1742,7 +1851,8 @@
       "全"
     ],
     "exampleWord": "내부(內部)",
-    "exampleMeaning": "안쪽 부분"
+    "exampleMeaning": "안쪽 부분",
+    "radicalMeaning": "들"
   },
   {
     "id": "7급Ⅱ-011",
@@ -1757,7 +1867,8 @@
       "曲"
     ],
     "exampleWord": "농업",
-    "exampleMeaning": "농사짓는 일"
+    "exampleMeaning": "농사짓는 일",
+    "radicalMeaning": "별"
   },
   {
     "id": "7급Ⅱ-012",
@@ -1773,7 +1884,8 @@
       "筋"
     ],
     "exampleWord": "정답(正答)",
-    "exampleMeaning": "바른 대답"
+    "exampleMeaning": "바른 대답",
+    "radicalMeaning": "대나무"
   },
   {
     "id": "7급Ⅱ-013",
@@ -1789,7 +1901,8 @@
       "通"
     ],
     "exampleWord": "도로(道路)",
-    "exampleMeaning": "사람과 차가 다니는 길"
+    "exampleMeaning": "사람과 차가 다니는 길",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "7급Ⅱ-014",
@@ -1805,7 +1918,8 @@
       "童"
     ],
     "exampleWord": "이동",
-    "exampleMeaning": "움직임"
+    "exampleMeaning": "움직임",
+    "radicalMeaning": "힘"
   },
   {
     "id": "7급Ⅱ-015",
@@ -1820,7 +1934,8 @@
       "方"
     ],
     "exampleWord": "노력(努力)",
-    "exampleMeaning": "힘을 들여 애씀"
+    "exampleMeaning": "힘을 들여 애씀",
+    "radicalMeaning": "힘"
   },
   {
     "id": "7급Ⅱ-016",
@@ -1836,7 +1951,8 @@
       "音"
     ],
     "exampleWord": "독립(獨立)",
-    "exampleMeaning": "홀로 섬"
+    "exampleMeaning": "홀로 섬",
+    "radicalMeaning": "설"
   },
   {
     "id": "7급Ⅱ-017",
@@ -1852,7 +1968,8 @@
       "海"
     ],
     "exampleWord": "매일(每日)",
-    "exampleMeaning": "날마다"
+    "exampleMeaning": "날마다",
+    "radicalMeaning": "말"
   },
   {
     "id": "7급Ⅱ-018",
@@ -1867,7 +1984,8 @@
       "右"
     ],
     "exampleWord": "유명(有名)",
-    "exampleMeaning": "이름이 알려짐"
+    "exampleMeaning": "이름이 알려짐",
+    "radicalMeaning": "입"
   },
   {
     "id": "7급Ⅱ-019",
@@ -1882,7 +2000,8 @@
       "易"
     ],
     "exampleWord": "동물(動物)",
-    "exampleMeaning": "움직이는 생물"
+    "exampleMeaning": "움직이는 생물",
+    "radicalMeaning": "소"
   },
   {
     "id": "7급Ⅱ-020",
@@ -1899,7 +2018,8 @@
       "放"
     ],
     "exampleWord": "방법(方法)",
-    "exampleMeaning": "일을 하는 길"
+    "exampleMeaning": "일을 하는 길",
+    "radicalMeaning": "모"
   },
   {
     "id": "7급Ⅱ-021",
@@ -1916,7 +2036,8 @@
       "下"
     ],
     "exampleWord": "불가능(不可能)",
-    "exampleMeaning": "할 수 없음"
+    "exampleMeaning": "할 수 없음",
+    "radicalMeaning": "하나"
   },
   {
     "id": "7급Ⅱ-022",
@@ -1931,7 +2052,8 @@
       "更"
     ],
     "exampleWord": "사건(事件)",
-    "exampleMeaning": "일어난 일"
+    "exampleMeaning": "일어난 일",
+    "radicalMeaning": "갈고리"
   },
   {
     "id": "7급Ⅱ-023",
@@ -1948,7 +2070,8 @@
       "世"
     ],
     "exampleWord": "상승",
-    "exampleMeaning": "위로 올라감"
+    "exampleMeaning": "위로 올라감",
+    "radicalMeaning": "하나"
   },
   {
     "id": "7급Ⅱ-024",
@@ -1964,7 +2087,8 @@
       "生"
     ],
     "exampleWord": "성명(姓名)",
-    "exampleMeaning": "성과 이름"
+    "exampleMeaning": "성과 이름",
+    "radicalMeaning": "여자"
   },
   {
     "id": "7급Ⅱ-025",
@@ -1981,7 +2105,8 @@
       "下"
     ],
     "exampleWord": "세계(世界)",
-    "exampleMeaning": "온 세상"
+    "exampleMeaning": "온 세상",
+    "radicalMeaning": "하나"
   },
   {
     "id": "7급Ⅱ-026",
@@ -1997,7 +2122,8 @@
       "守"
     ],
     "exampleWord": "선수(選手)",
-    "exampleMeaning": "뽑힌 사람, 운동선수"
+    "exampleMeaning": "뽑힌 사람, 운동선수",
+    "radicalMeaning": "손"
   },
   {
     "id": "7급Ⅱ-027",
@@ -2014,7 +2140,8 @@
       "持"
     ],
     "exampleWord": "시계(時計)",
-    "exampleMeaning": "때를 재는 기계"
+    "exampleMeaning": "때를 재는 기계",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "7급Ⅱ-028",
@@ -2029,7 +2156,8 @@
       "師"
     ],
     "exampleWord": "시장(市場)",
-    "exampleMeaning": "물건을 사고파는 곳"
+    "exampleMeaning": "물건을 사고파는 곳",
+    "radicalMeaning": "수건"
   },
   {
     "id": "7급Ⅱ-029",
@@ -2044,7 +2172,8 @@
       "飮"
     ],
     "exampleWord": "식사(食事)",
-    "exampleMeaning": "밥을 먹는 일"
+    "exampleMeaning": "밥을 먹는 일",
+    "radicalMeaning": "밥"
   },
   {
     "id": "7급Ⅱ-030",
@@ -2059,7 +2188,8 @@
       "家"
     ],
     "exampleWord": "안전",
-    "exampleMeaning": "위험이 없음"
+    "exampleMeaning": "위험이 없음",
+    "radicalMeaning": "집"
   },
   {
     "id": "7급Ⅱ-031",
@@ -2075,7 +2205,8 @@
       "牛"
     ],
     "exampleWord": "오후(午後)",
-    "exampleMeaning": "낮 12시 뒤"
+    "exampleMeaning": "낮 12시 뒤",
+    "radicalMeaning": "열"
   },
   {
     "id": "7급Ⅱ-032",
@@ -2090,7 +2221,8 @@
       "名"
     ],
     "exampleWord": "오른쪽(右─)",
-    "exampleMeaning": "오른 방향"
+    "exampleMeaning": "오른 방향",
+    "radicalMeaning": "입"
   },
   {
     "id": "7급Ⅱ-033",
@@ -2106,7 +2238,8 @@
       "自"
     ],
     "exampleWord": "자녀",
-    "exampleMeaning": "아이"
+    "exampleMeaning": "아이",
+    "radicalMeaning": "아들"
   },
   {
     "id": "7급Ⅱ-034",
@@ -2121,7 +2254,8 @@
       "子"
     ],
     "exampleWord": "자연(自然)",
-    "exampleMeaning": "스스로 그러함"
+    "exampleMeaning": "스스로 그러함",
+    "radicalMeaning": "스스로"
   },
   {
     "id": "7급Ⅱ-035",
@@ -2137,7 +2271,8 @@
       "長"
     ],
     "exampleWord": "운동장(運動場)",
-    "exampleMeaning": "운동하는 넓은 곳"
+    "exampleMeaning": "운동하는 넓은 곳",
+    "radicalMeaning": "흙"
   },
   {
     "id": "7급Ⅱ-036",
@@ -2152,7 +2287,8 @@
       "雪"
     ],
     "exampleWord": "전화(電話)",
-    "exampleMeaning": "전기로 하는 말"
+    "exampleMeaning": "전기로 하는 말",
+    "radicalMeaning": "비"
   },
   {
     "id": "7급Ⅱ-037",
@@ -2167,7 +2303,8 @@
       "全"
     ],
     "exampleWord": "이전(以前)",
-    "exampleMeaning": "그보다 앞"
+    "exampleMeaning": "그보다 앞",
+    "radicalMeaning": "칼"
   },
   {
     "id": "7급Ⅱ-038",
@@ -2183,7 +2320,8 @@
       "前"
     ],
     "exampleWord": "전체",
-    "exampleMeaning": "모두"
+    "exampleMeaning": "모두",
+    "radicalMeaning": "들"
   },
   {
     "id": "7급Ⅱ-039",
@@ -2199,7 +2337,8 @@
       "政"
     ],
     "exampleWord": "정답",
-    "exampleMeaning": "바른 답"
+    "exampleMeaning": "바른 답",
+    "radicalMeaning": "그칠"
   },
   {
     "id": "7급Ⅱ-040",
@@ -2214,7 +2353,8 @@
       "族"
     ],
     "exampleWord": "만족(滿足)",
-    "exampleMeaning": "넉넉하게 채워짐"
+    "exampleMeaning": "넉넉하게 채워짐",
+    "radicalMeaning": "발"
   },
   {
     "id": "7급Ⅱ-041",
@@ -2229,7 +2369,8 @@
       "工"
     ],
     "exampleWord": "왼쪽(左─)",
-    "exampleMeaning": "왼 방향"
+    "exampleMeaning": "왼 방향",
+    "radicalMeaning": "장인"
   },
   {
     "id": "7급Ⅱ-042",
@@ -2244,7 +2385,8 @@
       "植"
     ],
     "exampleWord": "직접(直接)",
-    "exampleMeaning": "곧바로 만남"
+    "exampleMeaning": "곧바로 만남",
+    "radicalMeaning": "눈"
   },
   {
     "id": "7급Ⅱ-043",
@@ -2260,7 +2402,8 @@
       "干"
     ],
     "exampleWord": "평화(平和)",
-    "exampleMeaning": "고르고 화목함"
+    "exampleMeaning": "고르고 화목함",
+    "radicalMeaning": "방패"
   },
   {
     "id": "7급Ⅱ-044",
@@ -2277,7 +2420,8 @@
       "世"
     ],
     "exampleWord": "하강",
-    "exampleMeaning": "아래로 내려감"
+    "exampleMeaning": "아래로 내려감",
+    "radicalMeaning": "하나"
   },
   {
     "id": "7급Ⅱ-045",
@@ -2292,7 +2436,8 @@
       "海"
     ],
     "exampleWord": "한자(漢字)",
-    "exampleMeaning": "중국 글자"
+    "exampleMeaning": "중국 글자",
+    "radicalMeaning": "물"
   },
   {
     "id": "7급Ⅱ-046",
@@ -2309,7 +2454,8 @@
       "漢"
     ],
     "exampleWord": "바다(海─)",
-    "exampleMeaning": "넓고 깊은 짠물"
+    "exampleMeaning": "넓고 깊은 짠물",
+    "radicalMeaning": "물"
   },
   {
     "id": "7급Ⅱ-047",
@@ -2324,7 +2470,8 @@
       "記"
     ],
     "exampleWord": "대화(對話)",
-    "exampleMeaning": "서로 말을 주고받음"
+    "exampleMeaning": "서로 말을 주고받음",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "7급Ⅱ-048",
@@ -2340,7 +2487,8 @@
       "江"
     ],
     "exampleWord": "생활(生活)",
-    "exampleMeaning": "살아가는 일"
+    "exampleMeaning": "살아가는 일",
+    "radicalMeaning": "물"
   },
   {
     "id": "7급Ⅱ-049",
@@ -2355,7 +2503,8 @@
       "子"
     ],
     "exampleWord": "효도(孝道)",
-    "exampleMeaning": "부모를 잘 섬김"
+    "exampleMeaning": "부모를 잘 섬김",
+    "radicalMeaning": "아들"
   },
   {
     "id": "7급Ⅱ-050",
@@ -2370,7 +2519,8 @@
       "復"
     ],
     "exampleWord": "후배(後輩)",
-    "exampleMeaning": "뒤에 온 사람"
+    "exampleMeaning": "뒤에 온 사람",
+    "radicalMeaning": "걸을"
   },
   {
     "id": "6급-001",
@@ -2385,7 +2535,8 @@
       "愛"
     ],
     "exampleWord": "감동(感動)",
-    "exampleMeaning": "마음이 크게 움직임"
+    "exampleMeaning": "마음이 크게 움직임",
+    "radicalMeaning": "마음"
   },
   {
     "id": "6급-002",
@@ -2401,7 +2552,8 @@
       "勇"
     ],
     "exampleWord": "강점",
-    "exampleMeaning": "강한 점"
+    "exampleMeaning": "강한 점",
+    "radicalMeaning": "활"
   },
   {
     "id": "6급-003",
@@ -2417,7 +2569,8 @@
       "門"
     ],
     "exampleWord": "개방(開放)",
-    "exampleMeaning": "열어서 놓아줌"
+    "exampleMeaning": "열어서 놓아줌",
+    "radicalMeaning": "문"
   },
   {
     "id": "6급-004",
@@ -2432,7 +2585,8 @@
       "交"
     ],
     "exampleWord": "서울(京─)",
-    "exampleMeaning": "나라의 수도"
+    "exampleMeaning": "나라의 수도",
+    "radicalMeaning": "돼지해 머리"
   },
   {
     "id": "6급-005",
@@ -2448,7 +2602,8 @@
       "向"
     ],
     "exampleWord": "고대(古代)",
-    "exampleMeaning": "아주 옛날"
+    "exampleMeaning": "아주 옛날",
+    "radicalMeaning": "입"
   },
   {
     "id": "6급-006",
@@ -2463,7 +2618,8 @@
       "英"
     ],
     "exampleWord": "고생(苦生)",
-    "exampleMeaning": "힘들게 지냄"
+    "exampleMeaning": "힘들게 지냄",
+    "radicalMeaning": "풀"
   },
   {
     "id": "6급-007",
@@ -2478,7 +2634,8 @@
       "京"
     ],
     "exampleWord": "교통(交通)",
-    "exampleMeaning": "오가는 일"
+    "exampleMeaning": "오가는 일",
+    "radicalMeaning": "돼지해 머리"
   },
   {
     "id": "6급-008",
@@ -2494,7 +2651,8 @@
       "強"
     ],
     "exampleWord": "지역(地域)",
-    "exampleMeaning": "구분된 땅"
+    "exampleMeaning": "구분된 땅",
+    "radicalMeaning": "감출"
   },
   {
     "id": "6급-009",
@@ -2511,7 +2669,8 @@
       "君"
     ],
     "exampleWord": "군청(郡廳)",
-    "exampleMeaning": "군의 관청"
+    "exampleMeaning": "군의 관청",
+    "radicalMeaning": "고을"
   },
   {
     "id": "6급-010",
@@ -2528,7 +2687,8 @@
       "朴"
     ],
     "exampleWord": "뿌리(根─)",
-    "exampleMeaning": "식물이 땅에 박는 부분"
+    "exampleMeaning": "식물이 땅에 박는 부분",
+    "radicalMeaning": "나무"
   },
   {
     "id": "6급-011",
@@ -2545,7 +2705,8 @@
       "根"
     ],
     "exampleWord": "가까이(近─)",
-    "exampleMeaning": "멀지 않은 곳"
+    "exampleMeaning": "멀지 않은 곳",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "6급-012",
@@ -2560,7 +2721,8 @@
       "綠"
     ],
     "exampleWord": "학급(學級)",
-    "exampleMeaning": "배움의 등급"
+    "exampleMeaning": "배움의 등급",
+    "radicalMeaning": "실"
   },
   {
     "id": "6급-013",
@@ -2575,7 +2737,8 @@
       "夜"
     ],
     "exampleWord": "다수(多數)",
-    "exampleMeaning": "많은 수"
+    "exampleMeaning": "많은 수",
+    "radicalMeaning": "저녁"
   },
   {
     "id": "6급-014",
@@ -2592,7 +2755,8 @@
       "持"
     ],
     "exampleWord": "대기",
-    "exampleMeaning": "기다림"
+    "exampleMeaning": "기다림",
+    "radicalMeaning": "걸을"
   },
   {
     "id": "6급-015",
@@ -2608,7 +2772,8 @@
       "庫"
     ],
     "exampleWord": "온도",
-    "exampleMeaning": "뜨겁고 차가운 정도"
+    "exampleMeaning": "뜨겁고 차가운 정도",
+    "radicalMeaning": "넓은 집"
   },
   {
     "id": "6급-016",
@@ -2623,7 +2788,8 @@
       "題"
     ],
     "exampleWord": "머리(頭─)",
-    "exampleMeaning": "몸의 가장 윗부분"
+    "exampleMeaning": "몸의 가장 윗부분",
+    "radicalMeaning": "머리"
   },
   {
     "id": "6급-017",
@@ -2638,7 +2804,8 @@
       "使"
     ],
     "exampleWord": "예시(例示)",
-    "exampleMeaning": "보기를 보임"
+    "exampleMeaning": "보기를 보임",
+    "radicalMeaning": "사람"
   },
   {
     "id": "6급-018",
@@ -2654,7 +2821,8 @@
       "豊"
     ],
     "exampleWord": "예의(禮儀)",
-    "exampleMeaning": "공손한 행동"
+    "exampleMeaning": "공손한 행동",
+    "radicalMeaning": "보일"
   },
   {
     "id": "6급-019",
@@ -2669,7 +2837,8 @@
       "各"
     ],
     "exampleWord": "길(路─)",
-    "exampleMeaning": "사람이 다니는 곳"
+    "exampleMeaning": "사람이 다니는 곳",
+    "radicalMeaning": "발"
   },
   {
     "id": "6급-020",
@@ -2684,7 +2853,8 @@
       "級"
     ],
     "exampleWord": "녹색(綠色)",
-    "exampleMeaning": "풀빛 색깔"
+    "exampleMeaning": "풀빛 색깔",
+    "radicalMeaning": "실"
   },
   {
     "id": "6급-021",
@@ -2701,7 +2871,8 @@
       "根"
     ],
     "exampleWord": "이씨(李氏)",
-    "exampleMeaning": "오얏나무 성씨"
+    "exampleMeaning": "오얏나무 성씨",
+    "radicalMeaning": "나무"
   },
   {
     "id": "6급-022",
@@ -2717,7 +2888,8 @@
       "百"
     ],
     "exampleWord": "눈동자",
-    "exampleMeaning": "눈의 검은 부분"
+    "exampleMeaning": "눈의 검은 부분",
+    "radicalMeaning": "눈"
   },
   {
     "id": "6급-023",
@@ -2732,7 +2904,8 @@
       "米"
     ],
     "exampleWord": "미술(美術)",
-    "exampleMeaning": "아름다움을 표현하는 예술"
+    "exampleMeaning": "아름다움을 표현하는 예술",
+    "radicalMeaning": "양"
   },
   {
     "id": "6급-024",
@@ -2747,7 +2920,8 @@
       "美"
     ],
     "exampleWord": "쌀(米─)",
-    "exampleMeaning": "밥 짓는 곡식"
+    "exampleMeaning": "밥 짓는 곡식",
+    "radicalMeaning": "쌀"
   },
   {
     "id": "6급-025",
@@ -2764,7 +2938,8 @@
       "根"
     ],
     "exampleWord": "박씨(朴氏)",
-    "exampleMeaning": "박 성씨"
+    "exampleMeaning": "박 성씨",
+    "radicalMeaning": "나무"
   },
   {
     "id": "6급-026",
@@ -2779,7 +2954,8 @@
       "畫"
     ],
     "exampleWord": "번호(番號)",
-    "exampleMeaning": "차례를 매긴 표시"
+    "exampleMeaning": "차례를 매긴 표시",
+    "radicalMeaning": "밭"
   },
   {
     "id": "6급-027",
@@ -2795,7 +2971,8 @@
       "判"
     ],
     "exampleWord": "별명(別名)",
-    "exampleMeaning": "따로 부르는 이름"
+    "exampleMeaning": "따로 부르는 이름",
+    "radicalMeaning": "칼"
   },
   {
     "id": "6급-028",
@@ -2810,7 +2987,8 @@
       "痛"
     ],
     "exampleWord": "질병",
-    "exampleMeaning": "아픈 상태"
+    "exampleMeaning": "아픈 상태",
+    "radicalMeaning": "병"
   },
   {
     "id": "6급-029",
@@ -2825,7 +3003,8 @@
       "朝"
     ],
     "exampleWord": "교복(校服)",
-    "exampleMeaning": "학교에서 입는 옷"
+    "exampleMeaning": "학교에서 입는 옷",
+    "radicalMeaning": "달"
   },
   {
     "id": "6급-030",
@@ -2841,7 +3020,8 @@
       "李"
     ],
     "exampleWord": "기본",
-    "exampleMeaning": "기초가 되는 것"
+    "exampleMeaning": "기초가 되는 것",
+    "radicalMeaning": "나무"
   },
   {
     "id": "6급-031",
@@ -2857,7 +3037,8 @@
       "死"
     ],
     "exampleWord": "대사(大使)",
-    "exampleMeaning": "나라를 대표하는 사람"
+    "exampleMeaning": "나라를 대표하는 사람",
+    "radicalMeaning": "사람"
   },
   {
     "id": "6급-032",
@@ -2872,7 +3053,8 @@
       "使"
     ],
     "exampleWord": "생사(生死)",
-    "exampleMeaning": "삶과 죽음"
+    "exampleMeaning": "삶과 죽음",
+    "radicalMeaning": "뼈"
   },
   {
     "id": "6급-033",
@@ -2887,7 +3069,8 @@
       "度"
     ],
     "exampleWord": "좌석(座席)",
-    "exampleMeaning": "앉는 자리"
+    "exampleMeaning": "앉는 자리",
+    "radicalMeaning": "수건"
   },
   {
     "id": "6급-034",
@@ -2902,7 +3085,8 @@
       "右"
     ],
     "exampleWord": "보석(寶石)",
-    "exampleMeaning": "귀한 돌"
+    "exampleMeaning": "귀한 돌",
+    "radicalMeaning": "돌"
   },
   {
     "id": "6급-035",
@@ -2919,7 +3103,8 @@
       "遠"
     ],
     "exampleWord": "속도(速度)",
-    "exampleMeaning": "빠르기"
+    "exampleMeaning": "빠르기",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "6급-036",
@@ -2934,7 +3119,8 @@
       "系"
     ],
     "exampleWord": "손자(孫子)",
-    "exampleMeaning": "아들의 아들"
+    "exampleMeaning": "아들의 아들",
+    "radicalMeaning": "아들"
   },
   {
     "id": "6급-037",
@@ -2951,7 +3137,8 @@
       "村"
     ],
     "exampleWord": "수목원(樹木園)",
-    "exampleMeaning": "나무를 모아 기르는 곳"
+    "exampleMeaning": "나무를 모아 기르는 곳",
+    "radicalMeaning": "나무"
   },
   {
     "id": "6급-038",
@@ -2967,7 +3154,8 @@
       "強"
     ],
     "exampleWord": "학습",
-    "exampleMeaning": "익히기"
+    "exampleMeaning": "익히기",
+    "radicalMeaning": "깃"
   },
   {
     "id": "6급-039",
@@ -2983,7 +3171,8 @@
       "力"
     ],
     "exampleWord": "승리",
-    "exampleMeaning": "이김"
+    "exampleMeaning": "이김",
+    "radicalMeaning": "힘"
   },
   {
     "id": "6급-040",
@@ -2999,7 +3188,8 @@
       "試"
     ],
     "exampleWord": "방식",
-    "exampleMeaning": "하는 방법"
+    "exampleMeaning": "하는 방법",
+    "radicalMeaning": "주살"
   },
   {
     "id": "6급-041",
@@ -3014,7 +3204,8 @@
       "太"
     ],
     "exampleWord": "실수(失手)",
-    "exampleMeaning": "잘못함"
+    "exampleMeaning": "잘못함",
+    "radicalMeaning": "큰"
   },
   {
     "id": "6급-042",
@@ -3029,7 +3220,8 @@
       "感"
     ],
     "exampleWord": "사랑(愛─)",
-    "exampleMeaning": "아끼고 소중히 여김"
+    "exampleMeaning": "아끼고 소중히 여김",
+    "radicalMeaning": "마음"
   },
   {
     "id": "6급-043",
@@ -3045,7 +3237,8 @@
       "野"
     ],
     "exampleWord": "야간(夜間)",
-    "exampleMeaning": "밤 사이"
+    "exampleMeaning": "밤 사이",
+    "radicalMeaning": "저녁"
   },
   {
     "id": "6급-044",
@@ -3060,7 +3253,8 @@
       "夜"
     ],
     "exampleWord": "야외(野外)",
-    "exampleMeaning": "들 바깥"
+    "exampleMeaning": "들 바깥",
+    "radicalMeaning": "마을"
   },
   {
     "id": "6급-045",
@@ -3075,7 +3269,8 @@
       "洋"
     ],
     "exampleWord": "태양(太陽)",
-    "exampleMeaning": "해"
+    "exampleMeaning": "해",
+    "radicalMeaning": "언덕"
   },
   {
     "id": "6급-046",
@@ -3093,7 +3288,8 @@
       "陽"
     ],
     "exampleWord": "태평양(太平洋)",
-    "exampleMeaning": "가장 넓은 바다"
+    "exampleMeaning": "가장 넓은 바다",
+    "radicalMeaning": "물"
   },
   {
     "id": "6급-047",
@@ -3108,7 +3304,8 @@
       "訓"
     ],
     "exampleWord": "발언(發言)",
-    "exampleMeaning": "말을 꺼냄"
+    "exampleMeaning": "말을 꺼냄",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "6급-048",
@@ -3123,7 +3320,8 @@
       "苦"
     ],
     "exampleWord": "영웅(英雄)",
-    "exampleMeaning": "뛰어난 사람"
+    "exampleMeaning": "뛰어난 사람",
+    "radicalMeaning": "풀"
   },
   {
     "id": "6급-049",
@@ -3139,7 +3337,8 @@
       "洋"
     ],
     "exampleWord": "영원(永遠)",
-    "exampleMeaning": "끝없이 이어짐"
+    "exampleMeaning": "끝없이 이어짐",
+    "radicalMeaning": "물"
   },
   {
     "id": "6급-050",
@@ -3154,7 +3353,8 @@
       "洋"
     ],
     "exampleWord": "체온(體溫)",
-    "exampleMeaning": "몸의 따뜻한 정도"
+    "exampleMeaning": "몸의 따뜻한 정도",
+    "radicalMeaning": "물"
   },
   {
     "id": "6급-051",
@@ -3169,7 +3369,8 @@
       "遠"
     ],
     "exampleWord": "공원(公園)",
-    "exampleMeaning": "여러 사람이 쉬는 곳"
+    "exampleMeaning": "여러 사람이 쉬는 곳",
+    "radicalMeaning": "에울"
   },
   {
     "id": "6급-052",
@@ -3186,7 +3387,8 @@
       "通"
     ],
     "exampleWord": "원거리(遠距離)",
-    "exampleMeaning": "먼 거리"
+    "exampleMeaning": "먼 거리",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "6급-053",
@@ -3203,7 +3405,8 @@
       "田"
     ],
     "exampleWord": "이유(理由)",
-    "exampleMeaning": "까닭"
+    "exampleMeaning": "까닭",
+    "radicalMeaning": "밭"
   },
   {
     "id": "6급-054",
@@ -3220,7 +3423,8 @@
       "由"
     ],
     "exampleWord": "기름(油─)",
-    "exampleMeaning": "음식에 넣는 액체"
+    "exampleMeaning": "음식에 넣는 액체",
+    "radicalMeaning": "물"
   },
   {
     "id": "6급-055",
@@ -3236,7 +3440,8 @@
       "銅"
     ],
     "exampleWord": "은행(銀行)",
-    "exampleMeaning": "돈을 맡기는 곳"
+    "exampleMeaning": "돈을 맡기는 곳",
+    "radicalMeaning": "쇠"
   },
   {
     "id": "6급-056",
@@ -3251,7 +3456,8 @@
       "區"
     ],
     "exampleWord": "의사",
-    "exampleMeaning": "병 고치는 사람"
+    "exampleMeaning": "병 고치는 사람",
+    "radicalMeaning": "닭, 술"
   },
   {
     "id": "6급-057",
@@ -3268,7 +3474,8 @@
       "裝"
     ],
     "exampleWord": "의복(衣服)",
-    "exampleMeaning": "입는 것"
+    "exampleMeaning": "입는 것",
+    "radicalMeaning": "옷"
   },
   {
     "id": "6급-058",
@@ -3285,7 +3492,8 @@
       "都"
     ],
     "exampleWord": "기자(記者)",
-    "exampleMeaning": "기사를 쓰는 사람"
+    "exampleMeaning": "기사를 쓰는 사람",
+    "radicalMeaning": "늙을"
   },
   {
     "id": "6급-059",
@@ -3301,7 +3509,8 @@
       "童"
     ],
     "exampleWord": "문장(文章)",
-    "exampleMeaning": "글의 묶음"
+    "exampleMeaning": "글의 묶음",
+    "radicalMeaning": "설"
   },
   {
     "id": "6급-060",
@@ -3317,7 +3526,8 @@
       "有"
     ],
     "exampleWord": "존재(存在)",
-    "exampleMeaning": "있음"
+    "exampleMeaning": "있음",
+    "radicalMeaning": "흙"
   },
   {
     "id": "6급-061",
@@ -3333,7 +3543,8 @@
       "政"
     ],
     "exampleWord": "결정",
-    "exampleMeaning": "정해서 정함"
+    "exampleMeaning": "정해서 정함",
+    "radicalMeaning": "집"
   },
   {
     "id": "6급-062",
@@ -3348,7 +3559,8 @@
       "服"
     ],
     "exampleWord": "조선(朝鮮)",
-    "exampleMeaning": "옛 나라 이름"
+    "exampleMeaning": "옛 나라 이름",
+    "radicalMeaning": "달"
   },
   {
     "id": "6급-063",
@@ -3364,7 +3576,8 @@
       "足"
     ],
     "exampleWord": "가족",
-    "exampleMeaning": "한 집안 사람들"
+    "exampleMeaning": "한 집안 사람들",
+    "radicalMeaning": "모"
   },
   {
     "id": "6급-064",
@@ -3380,7 +3593,8 @@
       "盡"
     ],
     "exampleWord": "주간(晝間)",
-    "exampleMeaning": "낮 시간"
+    "exampleMeaning": "낮 시간",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "6급-065",
@@ -3395,7 +3609,8 @@
       "新"
     ],
     "exampleWord": "부모",
-    "exampleMeaning": "가까운 사람"
+    "exampleMeaning": "가까운 사람",
+    "radicalMeaning": "볼"
   },
   {
     "id": "6급-066",
@@ -3410,7 +3625,8 @@
       "失"
     ],
     "exampleWord": "태양(太陽)",
-    "exampleMeaning": "큰 해"
+    "exampleMeaning": "큰 해",
+    "radicalMeaning": "큰"
   },
   {
     "id": "6급-067",
@@ -3426,7 +3642,8 @@
       "遠"
     ],
     "exampleWord": "소통(疏通)",
-    "exampleMeaning": "막힘없이 통함"
+    "exampleMeaning": "막힘없이 통함",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "6급-068",
@@ -3442,7 +3659,8 @@
       "持"
     ],
     "exampleWord": "특별(特別)",
-    "exampleMeaning": "보통과 다름"
+    "exampleMeaning": "보통과 다름",
+    "radicalMeaning": "소"
   },
   {
     "id": "6급-069",
@@ -3458,7 +3676,8 @@
       "向"
     ],
     "exampleWord": "합격(合格)",
-    "exampleMeaning": "기준에 맞음"
+    "exampleMeaning": "기준에 맞음",
+    "radicalMeaning": "입"
   },
   {
     "id": "6급-070",
@@ -3474,7 +3693,8 @@
       "術"
     ],
     "exampleWord": "여행(旅行)",
-    "exampleMeaning": "다른 곳으로 다녀옴"
+    "exampleMeaning": "다른 곳으로 다녀옴",
+    "radicalMeaning": "다닐"
   },
   {
     "id": "6급-071",
@@ -3490,7 +3710,8 @@
       "合"
     ],
     "exampleWord": "방향(方向)",
-    "exampleMeaning": "가는 쪽"
+    "exampleMeaning": "가는 쪽",
+    "radicalMeaning": "입"
   },
   {
     "id": "6급-072",
@@ -3505,7 +3726,8 @@
       "呼"
     ],
     "exampleWord": "신호(信號)",
-    "exampleMeaning": "약속한 표시"
+    "exampleMeaning": "약속한 표시",
+    "radicalMeaning": "범"
   },
   {
     "id": "6급-073",
@@ -3520,7 +3742,8 @@
       "番"
     ],
     "exampleWord": "계획",
-    "exampleMeaning": "앞으로 할 일 정함"
+    "exampleMeaning": "앞으로 할 일 정함",
+    "radicalMeaning": "밭"
   },
   {
     "id": "6급-074",
@@ -3536,7 +3759,8 @@
       "強"
     ],
     "exampleWord": "황금(黃金)",
-    "exampleMeaning": "누런 쇠, 금"
+    "exampleMeaning": "누런 쇠, 금",
+    "radicalMeaning": "누를"
   },
   {
     "id": "6급-075",
@@ -3551,7 +3775,8 @@
       "言"
     ],
     "exampleWord": "훈련(訓練)",
-    "exampleMeaning": "가르쳐 익힘"
+    "exampleMeaning": "가르쳐 익힘",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "6급Ⅱ-001",
@@ -3567,7 +3792,8 @@
       "角"
     ],
     "exampleWord": "각자(各自)",
-    "exampleMeaning": "저마다"
+    "exampleMeaning": "저마다",
+    "radicalMeaning": "입"
   },
   {
     "id": "6급Ⅱ-002",
@@ -3582,7 +3808,8 @@
       "各"
     ],
     "exampleWord": "삼각형(三角形)",
-    "exampleMeaning": "세 모서리를 가진 도형"
+    "exampleMeaning": "세 모서리를 가진 도형",
+    "radicalMeaning": "뿔"
   },
   {
     "id": "6급Ⅱ-003",
@@ -3597,7 +3824,8 @@
       "計"
     ],
     "exampleWord": "세계(世界)",
-    "exampleMeaning": "온 세상"
+    "exampleMeaning": "온 세상",
+    "radicalMeaning": "밭"
   },
   {
     "id": "6급Ⅱ-004",
@@ -3612,7 +3840,8 @@
       "界"
     ],
     "exampleWord": "계획",
-    "exampleMeaning": "미리 정한 생각"
+    "exampleMeaning": "미리 정한 생각",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "6급Ⅱ-005",
@@ -3627,7 +3856,8 @@
       "京"
     ],
     "exampleWord": "고속",
-    "exampleMeaning": "빠른 속도"
+    "exampleMeaning": "빠른 속도",
+    "radicalMeaning": "높을"
   },
   {
     "id": "6급Ⅱ-006",
@@ -3643,7 +3873,8 @@
       "功"
     ],
     "exampleWord": "공원(公園)",
-    "exampleMeaning": "여러 사람이 쉬는 곳"
+    "exampleMeaning": "여러 사람이 쉬는 곳",
+    "radicalMeaning": "여덟"
   },
   {
     "id": "6급Ⅱ-007",
@@ -3659,7 +3890,8 @@
       "功"
     ],
     "exampleWord": "공동(共同)",
-    "exampleMeaning": "함께 같이"
+    "exampleMeaning": "함께 같이",
+    "radicalMeaning": "여덟"
   },
   {
     "id": "6급Ⅱ-008",
@@ -3676,7 +3908,8 @@
       "勇"
     ],
     "exampleWord": "성공",
-    "exampleMeaning": "이룬 결과"
+    "exampleMeaning": "이룬 결과",
+    "radicalMeaning": "힘"
   },
   {
     "id": "6급Ⅱ-009",
@@ -3691,7 +3924,8 @@
       "科"
     ],
     "exampleWord": "과일(果實)",
-    "exampleMeaning": "나무의 열매"
+    "exampleMeaning": "나무의 열매",
+    "radicalMeaning": "나무"
   },
   {
     "id": "6급Ⅱ-010",
@@ -3706,7 +3940,8 @@
       "果"
     ],
     "exampleWord": "과학",
-    "exampleMeaning": "자연을 연구하는 학문"
+    "exampleMeaning": "자연을 연구하는 학문",
+    "radicalMeaning": "벼"
   },
   {
     "id": "6급Ⅱ-011",
@@ -3721,7 +3956,8 @@
       "先"
     ],
     "exampleWord": "햇빛(光─)",
-    "exampleMeaning": "해에서 나오는 빛"
+    "exampleMeaning": "해에서 나오는 빛",
+    "radicalMeaning": "어진사람"
   },
   {
     "id": "6급Ⅱ-012",
@@ -3738,7 +3974,8 @@
       "現"
     ],
     "exampleWord": "야구(野球)",
-    "exampleMeaning": "들에서 하는 공놀이"
+    "exampleMeaning": "들에서 하는 공놀이",
+    "radicalMeaning": "구슬"
   },
   {
     "id": "6급Ⅱ-013",
@@ -3754,7 +3991,8 @@
       "作"
     ],
     "exampleWord": "오늘(今日)",
-    "exampleMeaning": "이 날"
+    "exampleMeaning": "이 날",
+    "radicalMeaning": "사람"
   },
   {
     "id": "6급Ⅱ-014",
@@ -3769,7 +4007,8 @@
       "意"
     ],
     "exampleWord": "급식(急食)",
-    "exampleMeaning": "빨리 먹이는 밥"
+    "exampleMeaning": "빨리 먹이는 밥",
+    "radicalMeaning": "마음"
   },
   {
     "id": "6급Ⅱ-015",
@@ -3784,7 +4023,8 @@
       "豆"
     ],
     "exampleWord": "단점(短點)",
-    "exampleMeaning": "모자란 부분"
+    "exampleMeaning": "모자란 부분",
+    "radicalMeaning": "화살"
   },
   {
     "id": "6급Ⅱ-016",
@@ -3799,7 +4039,8 @@
       "常"
     ],
     "exampleWord": "식당(食堂)",
-    "exampleMeaning": "밥을 먹는 곳"
+    "exampleMeaning": "밥을 먹는 곳",
+    "radicalMeaning": "흙"
   },
   {
     "id": "6급Ⅱ-017",
@@ -3816,7 +4057,8 @@
       "信"
     ],
     "exampleWord": "시대(時代)",
-    "exampleMeaning": "일정한 때"
+    "exampleMeaning": "일정한 때",
+    "radicalMeaning": "사람"
   },
   {
     "id": "6급Ⅱ-018",
@@ -3831,7 +4073,8 @@
       "樹"
     ],
     "exampleWord": "대응",
-    "exampleMeaning": "맞서 처리"
+    "exampleMeaning": "맞서 처리",
+    "radicalMeaning": "마디"
   },
   {
     "id": "6급Ⅱ-019",
@@ -3847,7 +4090,8 @@
       "園"
     ],
     "exampleWord": "도서관(圖書館)",
-    "exampleMeaning": "책을 모아둔 곳"
+    "exampleMeaning": "책을 모아둔 곳",
+    "radicalMeaning": "에울"
   },
   {
     "id": "6급Ⅱ-020",
@@ -3863,7 +4107,8 @@
       "賣"
     ],
     "exampleWord": "독서",
-    "exampleMeaning": "책을 읽음"
+    "exampleMeaning": "책을 읽음",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "6급Ⅱ-021",
@@ -3880,7 +4125,8 @@
       "動"
     ],
     "exampleWord": "아동(兒童)",
-    "exampleMeaning": "어린아이"
+    "exampleMeaning": "어린아이",
+    "radicalMeaning": "설"
   },
   {
     "id": "6급Ⅱ-022",
@@ -3895,7 +4141,8 @@
       "第"
     ],
     "exampleWord": "평등(平等)",
-    "exampleMeaning": "같은 차례"
+    "exampleMeaning": "같은 차례",
+    "radicalMeaning": "대나무"
   },
   {
     "id": "6급Ⅱ-023",
@@ -3910,7 +4157,8 @@
       "業"
     ],
     "exampleWord": "오락(娛樂)",
-    "exampleMeaning": "즐기며 노는 일"
+    "exampleMeaning": "즐기며 노는 일",
+    "radicalMeaning": "나무"
   },
   {
     "id": "6급Ⅱ-024",
@@ -3925,7 +4173,8 @@
       "分"
     ],
     "exampleWord": "이익",
-    "exampleMeaning": "남는 것"
+    "exampleMeaning": "남는 것",
+    "radicalMeaning": "칼"
   },
   {
     "id": "6급Ⅱ-025",
@@ -3942,7 +4191,8 @@
       "現"
     ],
     "exampleWord": "관리",
-    "exampleMeaning": "정리해서 다룸"
+    "exampleMeaning": "정리해서 다룸",
+    "radicalMeaning": "구슬"
   },
   {
     "id": "6급Ⅱ-026",
@@ -3957,7 +4207,8 @@
       "昨"
     ],
     "exampleWord": "설명",
-    "exampleMeaning": "밝게 알려줌"
+    "exampleMeaning": "밝게 알려줌",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "6급Ⅱ-027",
@@ -3974,7 +4225,8 @@
       "問"
     ],
     "exampleWord": "신문(新聞)",
-    "exampleMeaning": "새 소식을 전하는 글"
+    "exampleMeaning": "새 소식을 전하는 글",
+    "radicalMeaning": "귀"
   },
   {
     "id": "6급Ⅱ-028",
@@ -3989,7 +4241,8 @@
       "反"
     ],
     "exampleWord": "반반(半半)",
-    "exampleMeaning": "절반씩"
+    "exampleMeaning": "절반씩",
+    "radicalMeaning": "열"
   },
   {
     "id": "6급Ⅱ-029",
@@ -4004,7 +4257,8 @@
       "半"
     ],
     "exampleWord": "반대",
-    "exampleMeaning": "거꾸로"
+    "exampleMeaning": "거꾸로",
+    "radicalMeaning": "또"
   },
   {
     "id": "6급Ⅱ-030",
@@ -4021,7 +4275,8 @@
       "現"
     ],
     "exampleWord": "반장(班長)",
-    "exampleMeaning": "반의 우두머리"
+    "exampleMeaning": "반의 우두머리",
+    "radicalMeaning": "구슬"
   },
   {
     "id": "6급Ⅱ-031",
@@ -4037,7 +4292,8 @@
       "髮"
     ],
     "exampleWord": "발견",
-    "exampleMeaning": "찾아냄"
+    "exampleMeaning": "찾아냄",
+    "radicalMeaning": "필"
   },
   {
     "id": "6급Ⅱ-032",
@@ -4052,7 +4308,8 @@
       "方"
     ],
     "exampleWord": "방송(放送)",
-    "exampleMeaning": "내보내 알림"
+    "exampleMeaning": "내보내 알림",
+    "radicalMeaning": "칠"
   },
   {
     "id": "6급Ⅱ-033",
@@ -4068,7 +4325,8 @@
       "郵"
     ],
     "exampleWord": "부분",
-    "exampleMeaning": "일부"
+    "exampleMeaning": "일부",
+    "radicalMeaning": "고을"
   },
   {
     "id": "6급Ⅱ-034",
@@ -4083,7 +4341,8 @@
       "利"
     ],
     "exampleWord": "시분(時分)",
-    "exampleMeaning": "때의 한 부분"
+    "exampleMeaning": "때의 한 부분",
+    "radicalMeaning": "칼"
   },
   {
     "id": "6급Ⅱ-035",
@@ -4098,7 +4357,8 @@
       "神"
     ],
     "exampleWord": "사회",
-    "exampleMeaning": "사람들이 함께 사는 세상"
+    "exampleMeaning": "사람들이 함께 사는 세상",
+    "radicalMeaning": "보일"
   },
   {
     "id": "6급Ⅱ-036",
@@ -4113,7 +4373,8 @@
       "會"
     ],
     "exampleWord": "도서",
-    "exampleMeaning": "책"
+    "exampleMeaning": "책",
+    "radicalMeaning": "가로"
   },
   {
     "id": "6급Ⅱ-037",
@@ -4129,7 +4390,8 @@
       "綠"
     ],
     "exampleWord": "노선(路線)",
-    "exampleMeaning": "다니는 줄"
+    "exampleMeaning": "다니는 줄",
+    "radicalMeaning": "실"
   },
   {
     "id": "6급Ⅱ-038",
@@ -4144,7 +4406,8 @@
       "電"
     ],
     "exampleWord": "눈(雪─)",
-    "exampleMeaning": "겨울에 내리는 하얀 것"
+    "exampleMeaning": "겨울에 내리는 하얀 것",
+    "radicalMeaning": "비"
   },
   {
     "id": "6급Ⅱ-039",
@@ -4159,7 +4422,8 @@
       "省"
     ],
     "exampleWord": "성공",
-    "exampleMeaning": "잘 이룸"
+    "exampleMeaning": "잘 이룸",
+    "radicalMeaning": "창"
   },
   {
     "id": "6급Ⅱ-040",
@@ -4174,7 +4438,8 @@
       "成"
     ],
     "exampleWord": "반성",
-    "exampleMeaning": "자기 잘못을 돌아봄"
+    "exampleMeaning": "자기 잘못을 돌아봄",
+    "radicalMeaning": "눈"
   },
   {
     "id": "6급Ⅱ-041",
@@ -4190,7 +4455,8 @@
       "注"
     ],
     "exampleWord": "소방",
-    "exampleMeaning": "불을 끔"
+    "exampleMeaning": "불을 끔",
+    "radicalMeaning": "물"
   },
   {
     "id": "6급Ⅱ-042",
@@ -4205,7 +4471,8 @@
       "行"
     ],
     "exampleWord": "기술",
-    "exampleMeaning": "재주/방법"
+    "exampleMeaning": "재주/방법",
+    "radicalMeaning": "다닐"
   },
   {
     "id": "6급Ⅱ-043",
@@ -4221,7 +4488,8 @@
       "姓"
     ],
     "exampleWord": "시작",
-    "exampleMeaning": "처음"
+    "exampleMeaning": "처음",
+    "radicalMeaning": "여자"
   },
   {
     "id": "6급Ⅱ-044",
@@ -4237,7 +4505,8 @@
       "神"
     ],
     "exampleWord": "몸(身─)",
-    "exampleMeaning": "사람의 몸"
+    "exampleMeaning": "사람의 몸",
+    "radicalMeaning": "몸"
   },
   {
     "id": "6급Ⅱ-045",
@@ -4255,7 +4524,8 @@
       "新"
     ],
     "exampleWord": "신화(神話)",
-    "exampleMeaning": "신에 관한 이야기"
+    "exampleMeaning": "신에 관한 이야기",
+    "radicalMeaning": "보일"
   },
   {
     "id": "6급Ⅱ-046",
@@ -4273,7 +4543,8 @@
       "代"
     ],
     "exampleWord": "신뢰",
-    "exampleMeaning": "믿음"
+    "exampleMeaning": "믿음",
+    "radicalMeaning": "사람"
   },
   {
     "id": "6급Ⅱ-047",
@@ -4288,7 +4559,8 @@
       "神"
     ],
     "exampleWord": "신문(新聞)",
-    "exampleMeaning": "새로운 소식을 알려주는 글"
+    "exampleMeaning": "새로운 소식을 알려주는 글",
+    "radicalMeaning": "도끼"
   },
   {
     "id": "6급Ⅱ-048",
@@ -4304,7 +4576,8 @@
       "勇"
     ],
     "exampleWord": "약점",
-    "exampleMeaning": "약한 점"
+    "exampleMeaning": "약한 점",
+    "radicalMeaning": "활"
   },
   {
     "id": "6급Ⅱ-049",
@@ -4319,7 +4592,8 @@
       "草"
     ],
     "exampleWord": "약국",
-    "exampleMeaning": "약 파는 곳"
+    "exampleMeaning": "약 파는 곳",
+    "radicalMeaning": "풀"
   },
   {
     "id": "6급Ⅱ-050",
@@ -4334,7 +4608,8 @@
       "樂"
     ],
     "exampleWord": "산업",
-    "exampleMeaning": "일/사업"
+    "exampleMeaning": "일/사업",
+    "radicalMeaning": "나무"
   },
   {
     "id": "6급Ⅱ-051",
@@ -4349,7 +4624,8 @@
       "功"
     ],
     "exampleWord": "용기(勇氣)",
-    "exampleMeaning": "씩씩한 기운"
+    "exampleMeaning": "씩씩한 기운",
+    "radicalMeaning": "힘"
   },
   {
     "id": "6급Ⅱ-052",
@@ -4365,7 +4641,8 @@
       "角"
     ],
     "exampleWord": "사용(使用)",
-    "exampleMeaning": "써서 쓰임"
+    "exampleMeaning": "써서 쓰임",
+    "radicalMeaning": "쓸"
   },
   {
     "id": "6급Ⅱ-053",
@@ -4382,7 +4659,8 @@
       "遠"
     ],
     "exampleWord": "운동(運動)",
-    "exampleMeaning": "몸을 움직이는 활동"
+    "exampleMeaning": "몸을 움직이는 활동",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "6급Ⅱ-054",
@@ -4399,7 +4677,8 @@
       "立"
     ],
     "exampleWord": "음악(音樂)",
-    "exampleMeaning": "소리로 만드는 예술"
+    "exampleMeaning": "소리로 만드는 예술",
+    "radicalMeaning": "소리"
   },
   {
     "id": "6급Ⅱ-055",
@@ -4414,7 +4693,8 @@
       "食"
     ],
     "exampleWord": "음료(飮料)",
-    "exampleMeaning": "마시는 것"
+    "exampleMeaning": "마시는 것",
+    "radicalMeaning": "밥"
   },
   {
     "id": "6급Ⅱ-056",
@@ -4429,7 +4709,8 @@
       "急"
     ],
     "exampleWord": "의견(意見)",
-    "exampleMeaning": "마음에 품은 생각"
+    "exampleMeaning": "마음에 품은 생각",
+    "radicalMeaning": "마음"
   },
   {
     "id": "6급Ⅱ-057",
@@ -4447,7 +4728,8 @@
       "昨"
     ],
     "exampleWord": "작업",
-    "exampleMeaning": "만드는 일"
+    "exampleMeaning": "만드는 일",
+    "radicalMeaning": "사람"
   },
   {
     "id": "6급Ⅱ-058",
@@ -4463,7 +4745,8 @@
       "作"
     ],
     "exampleWord": "어제(昨日)",
-    "exampleMeaning": "하루 전 날"
+    "exampleMeaning": "하루 전 날",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "6급Ⅱ-059",
@@ -4478,7 +4761,8 @@
       "寸"
     ],
     "exampleWord": "천재(天才)",
-    "exampleMeaning": "하늘이 내린 재주"
+    "exampleMeaning": "하늘이 내린 재주",
+    "radicalMeaning": "손"
   },
   {
     "id": "6급Ⅱ-060",
@@ -4494,7 +4778,8 @@
       "殘"
     ],
     "exampleWord": "전투(戰鬪)",
-    "exampleMeaning": "맞서 싸움"
+    "exampleMeaning": "맞서 싸움",
+    "radicalMeaning": "창"
   },
   {
     "id": "6급Ⅱ-061",
@@ -4509,7 +4794,8 @@
       "建"
     ],
     "exampleWord": "가정(家庭)",
-    "exampleMeaning": "집안, 가족이 사는 곳"
+    "exampleMeaning": "집안, 가족이 사는 곳",
+    "radicalMeaning": "넓은 집"
   },
   {
     "id": "6급Ⅱ-062",
@@ -4524,7 +4810,8 @@
       "等"
     ],
     "exampleWord": "제일(第一)",
-    "exampleMeaning": "첫째"
+    "exampleMeaning": "첫째",
+    "radicalMeaning": "대나무"
   },
   {
     "id": "6급Ⅱ-063",
@@ -4540,7 +4827,8 @@
       "願"
     ],
     "exampleWord": "문제(問題)",
-    "exampleMeaning": "풀어야 할 물음"
+    "exampleMeaning": "풀어야 할 물음",
+    "radicalMeaning": "머리"
   },
   {
     "id": "6급Ⅱ-064",
@@ -4556,7 +4844,8 @@
       "淸"
     ],
     "exampleWord": "주의(注意)",
-    "exampleMeaning": "마음을 기울임"
+    "exampleMeaning": "마음을 기울임",
+    "radicalMeaning": "물"
   },
   {
     "id": "6급Ⅱ-065",
@@ -4573,7 +4862,8 @@
       "進"
     ],
     "exampleWord": "수집(蒐集)",
-    "exampleMeaning": "모아 모음"
+    "exampleMeaning": "모아 모음",
+    "radicalMeaning": "새"
   },
   {
     "id": "6급Ⅱ-066",
@@ -4588,7 +4878,8 @@
       "空"
     ],
     "exampleWord": "창문(窓門)",
-    "exampleMeaning": "벽에 낸 구멍"
+    "exampleMeaning": "벽에 낸 구멍",
+    "radicalMeaning": "구멍"
   },
   {
     "id": "6급Ⅱ-067",
@@ -4604,7 +4895,8 @@
       "注"
     ],
     "exampleWord": "청소(淸掃)",
-    "exampleMeaning": "깨끗이 씻음"
+    "exampleMeaning": "깨끗이 씻음",
+    "radicalMeaning": "물"
   },
   {
     "id": "6급Ⅱ-068",
@@ -4620,7 +4912,8 @@
       "豊"
     ],
     "exampleWord": "신체(身體)",
-    "exampleMeaning": "사람의 몸"
+    "exampleMeaning": "사람의 몸",
+    "radicalMeaning": "뼈"
   },
   {
     "id": "6급Ⅱ-069",
@@ -4636,7 +4929,8 @@
       "裝"
     ],
     "exampleWord": "발표",
-    "exampleMeaning": "사람들 앞에서 말함"
+    "exampleMeaning": "사람들 앞에서 말함",
+    "radicalMeaning": "옷"
   },
   {
     "id": "6급Ⅱ-070",
@@ -4652,7 +4946,8 @@
       "角"
     ],
     "exampleWord": "태풍(颱風)",
-    "exampleMeaning": "매우 센 바람"
+    "exampleMeaning": "매우 센 바람",
+    "radicalMeaning": "바람"
   },
   {
     "id": "6급Ⅱ-071",
@@ -4668,7 +4963,8 @@
       "平"
     ],
     "exampleWord": "행복",
-    "exampleMeaning": "좋은 일"
+    "exampleMeaning": "좋은 일",
+    "radicalMeaning": "방패"
   },
   {
     "id": "6급Ⅱ-072",
@@ -4685,7 +4981,8 @@
       "班"
     ],
     "exampleWord": "현재",
-    "exampleMeaning": "지금"
+    "exampleMeaning": "지금",
+    "radicalMeaning": "구슬"
   },
   {
     "id": "6급Ⅱ-073",
@@ -4700,7 +4997,8 @@
       "刑"
     ],
     "exampleWord": "도형(圖形)",
-    "exampleMeaning": "모양을 그린 것"
+    "exampleMeaning": "모양을 그린 것",
+    "radicalMeaning": "터럭"
   },
   {
     "id": "6급Ⅱ-074",
@@ -4715,7 +5013,8 @@
       "各"
     ],
     "exampleWord": "평화(平和)",
-    "exampleMeaning": "고르고 화목함"
+    "exampleMeaning": "고르고 화목함",
+    "radicalMeaning": "입"
   },
   {
     "id": "6급Ⅱ-075",
@@ -4730,7 +5029,8 @@
       "書"
     ],
     "exampleWord": "회의",
-    "exampleMeaning": "모여서 의논함"
+    "exampleMeaning": "모여서 의논함",
+    "radicalMeaning": "가로"
   },
   {
     "id": "5급-001",
@@ -4745,7 +5045,8 @@
       "可"
     ],
     "exampleWord": "추가",
-    "exampleMeaning": "더함"
+    "exampleMeaning": "더함",
+    "radicalMeaning": "힘"
   },
   {
     "id": "5급-002",
@@ -4761,7 +5062,8 @@
       "加"
     ],
     "exampleWord": "허가",
-    "exampleMeaning": "해도 됨"
+    "exampleMeaning": "해도 됨",
+    "radicalMeaning": "입"
   },
   {
     "id": "5급-003",
@@ -4777,7 +5079,8 @@
       "敗"
     ],
     "exampleWord": "개선",
-    "exampleMeaning": "더 좋게 고침"
+    "exampleMeaning": "더 좋게 고침",
+    "radicalMeaning": "칠"
   },
   {
     "id": "5급-004",
@@ -4792,7 +5095,8 @@
       "操"
     ],
     "exampleWord": "선거(選擧)",
-    "exampleMeaning": "뽑아서 들어 올림"
+    "exampleMeaning": "뽑아서 들어 올림",
+    "radicalMeaning": "손"
   },
   {
     "id": "5급-005",
@@ -4808,7 +5112,8 @@
       "土"
     ],
     "exampleWord": "과거(過去)",
-    "exampleMeaning": "지나간 때"
+    "exampleMeaning": "지나간 때",
+    "radicalMeaning": "사사로울"
   },
   {
     "id": "5급-006",
@@ -4826,7 +5131,8 @@
       "倍"
     ],
     "exampleWord": "조건(條件)",
-    "exampleMeaning": "갖추어야 할 것"
+    "exampleMeaning": "갖추어야 할 것",
+    "radicalMeaning": "사람"
   },
   {
     "id": "5급-007",
@@ -4842,7 +5148,8 @@
       "件"
     ],
     "exampleWord": "건설",
-    "exampleMeaning": "건물을 세움"
+    "exampleMeaning": "건물을 세움",
+    "radicalMeaning": "끌"
   },
   {
     "id": "5급-008",
@@ -4860,7 +5167,8 @@
       "億"
     ],
     "exampleWord": "건강",
-    "exampleMeaning": "몸이 튼튼함"
+    "exampleMeaning": "몸이 튼튼함",
+    "radicalMeaning": "사람"
   },
   {
     "id": "5급-009",
@@ -4875,7 +5183,8 @@
       "景"
     ],
     "exampleWord": "경쾌(輕快)",
-    "exampleMeaning": "가볍고 상쾌함"
+    "exampleMeaning": "가볍고 상쾌함",
+    "radicalMeaning": "수레"
   },
   {
     "id": "5급-010",
@@ -4891,7 +5200,8 @@
       "鏡"
     ],
     "exampleWord": "경쟁",
-    "exampleMeaning": "서로 겨룸"
+    "exampleMeaning": "서로 겨룸",
+    "radicalMeaning": "설"
   },
   {
     "id": "5급-011",
@@ -4906,7 +5216,8 @@
       "輕"
     ],
     "exampleWord": "풍경(風景)",
-    "exampleMeaning": "바깥 경치"
+    "exampleMeaning": "바깥 경치",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "5급-012",
@@ -4921,7 +5232,8 @@
       "固"
     ],
     "exampleWord": "사고(思考)",
-    "exampleMeaning": "생각함"
+    "exampleMeaning": "생각함",
+    "radicalMeaning": "늙을"
   },
   {
     "id": "5급-013",
@@ -4937,7 +5249,8 @@
       "考"
     ],
     "exampleWord": "고정(固定)",
-    "exampleMeaning": "굳게 정함"
+    "exampleMeaning": "굳게 정함",
+    "radicalMeaning": "에울"
   },
   {
     "id": "5급-014",
@@ -4952,7 +5265,8 @@
       "農"
     ],
     "exampleWord": "작곡(作曲)",
-    "exampleMeaning": "노래를 만듦"
+    "exampleMeaning": "노래를 만듦",
+    "radicalMeaning": "가로"
   },
   {
     "id": "5급-015",
@@ -4968,7 +5282,8 @@
       "東"
     ],
     "exampleWord": "다리(橋─)",
-    "exampleMeaning": "강을 건너는 것"
+    "exampleMeaning": "강을 건너는 것",
+    "radicalMeaning": "나무"
   },
   {
     "id": "5급-016",
@@ -4984,7 +5299,8 @@
       "改"
     ],
     "exampleWord": "구조",
-    "exampleMeaning": "위험에서 구함"
+    "exampleMeaning": "위험에서 구함",
+    "radicalMeaning": "칠"
   },
   {
     "id": "5급-017",
@@ -5002,7 +5318,8 @@
       "賣"
     ],
     "exampleWord": "귀중(貴重)",
-    "exampleMeaning": "귀하고 소중함"
+    "exampleMeaning": "귀하고 소중함",
+    "radicalMeaning": "조개"
   },
   {
     "id": "5급-018",
@@ -5018,7 +5335,8 @@
       "視"
     ],
     "exampleWord": "규칙",
-    "exampleMeaning": "지켜야 할 정함"
+    "exampleMeaning": "지켜야 할 정함",
+    "radicalMeaning": "볼"
   },
   {
     "id": "5급-019",
@@ -5033,7 +5351,8 @@
       "終"
     ],
     "exampleWord": "급여(給與)",
-    "exampleMeaning": "돈을 줌"
+    "exampleMeaning": "돈을 줌",
+    "radicalMeaning": "실"
   },
   {
     "id": "5급-020",
@@ -5051,7 +5370,8 @@
       "浴"
     ],
     "exampleWord": "기차(汽車)",
-    "exampleMeaning": "김을 내며 달리는 차"
+    "exampleMeaning": "김을 내며 달리는 차",
+    "radicalMeaning": "물"
   },
   {
     "id": "5급-021",
@@ -5066,7 +5386,8 @@
       "旗"
     ],
     "exampleWord": "기간(期間)",
-    "exampleMeaning": "정해진 때"
+    "exampleMeaning": "정해진 때",
+    "radicalMeaning": "달"
   },
   {
     "id": "5급-022",
@@ -5082,7 +5403,8 @@
       "汽"
     ],
     "exampleWord": "기술",
-    "exampleMeaning": "재주/방법"
+    "exampleMeaning": "재주/방법",
+    "radicalMeaning": "손"
   },
   {
     "id": "5급-023",
@@ -5097,7 +5419,8 @@
       "可"
     ],
     "exampleWord": "길조(吉兆)",
-    "exampleMeaning": "좋은 징조"
+    "exampleMeaning": "좋은 징조",
+    "radicalMeaning": "입"
   },
   {
     "id": "5급-024",
@@ -5113,7 +5436,8 @@
       "墓"
     ],
     "exampleWord": "제단(祭壇)",
-    "exampleMeaning": "제사 지내는 곳"
+    "exampleMeaning": "제사 지내는 곳",
+    "radicalMeaning": "흙"
   },
   {
     "id": "5급-025",
@@ -5128,7 +5452,8 @@
       "許"
     ],
     "exampleWord": "상담(相談)",
-    "exampleMeaning": "서로 이야기함"
+    "exampleMeaning": "서로 이야기함",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "5급-026",
@@ -5143,7 +5468,8 @@
       "島"
     ],
     "exampleWord": "수도(首都)",
-    "exampleMeaning": "나라의 으뜸 도시"
+    "exampleMeaning": "나라의 으뜸 도시",
+    "radicalMeaning": "고을"
   },
   {
     "id": "5급-027",
@@ -5158,7 +5484,8 @@
       "都"
     ],
     "exampleWord": "제주도(濟州島)",
-    "exampleMeaning": "바다에 둘러싸인 땅"
+    "exampleMeaning": "바다에 둘러싸인 땅",
+    "radicalMeaning": "산"
   },
   {
     "id": "5급-028",
@@ -5173,7 +5500,8 @@
       "葉"
     ],
     "exampleWord": "낙엽(落葉)",
-    "exampleMeaning": "떨어진 잎"
+    "exampleMeaning": "떨어진 잎",
+    "radicalMeaning": "풀"
   },
   {
     "id": "5급-029",
@@ -5188,7 +5516,8 @@
       "令"
     ],
     "exampleWord": "냉방(冷房)",
-    "exampleMeaning": "차갑게 식힘"
+    "exampleMeaning": "차갑게 식힘",
+    "radicalMeaning": "얼음"
   },
   {
     "id": "5급-030",
@@ -5205,7 +5534,8 @@
       "里"
     ],
     "exampleWord": "분량(分量)",
-    "exampleMeaning": "나눈 양"
+    "exampleMeaning": "나눈 양",
+    "radicalMeaning": "마을"
   },
   {
     "id": "5급-031",
@@ -5221,7 +5551,8 @@
       "頭"
     ],
     "exampleWord": "영역",
-    "exampleMeaning": "범위/구역"
+    "exampleMeaning": "범위/구역",
+    "radicalMeaning": "머리"
   },
   {
     "id": "5급-032",
@@ -5238,7 +5569,8 @@
       "位"
     ],
     "exampleWord": "명령(命令)",
-    "exampleMeaning": "시키는 말"
+    "exampleMeaning": "시키는 말",
+    "radicalMeaning": "사람"
   },
   {
     "id": "5급-033",
@@ -5254,7 +5586,8 @@
       "斗"
     ],
     "exampleWord": "재료",
-    "exampleMeaning": "만드는 데 쓰는 것"
+    "exampleMeaning": "만드는 데 쓰는 것",
+    "radicalMeaning": "말(되)"
   },
   {
     "id": "5급-034",
@@ -5270,7 +5603,8 @@
       "驗"
     ],
     "exampleWord": "경마(競馬)",
-    "exampleMeaning": "말 달리기 겨루기"
+    "exampleMeaning": "말 달리기 겨루기",
+    "radicalMeaning": "말"
   },
   {
     "id": "5급-035",
@@ -5286,7 +5620,8 @@
       "査"
     ],
     "exampleWord": "주말(週末)",
-    "exampleMeaning": "한 주의 끝"
+    "exampleMeaning": "한 주의 끝",
+    "radicalMeaning": "나무"
   },
   {
     "id": "5급-036",
@@ -5302,7 +5637,8 @@
       "交"
     ],
     "exampleWord": "사망(死亡)",
-    "exampleMeaning": "목숨을 잃음"
+    "exampleMeaning": "목숨을 잃음",
+    "radicalMeaning": "돼지해 머리"
   },
   {
     "id": "5급-037",
@@ -5320,7 +5656,8 @@
       "賣"
     ],
     "exampleWord": "구매(購買)",
-    "exampleMeaning": "사들임"
+    "exampleMeaning": "사들임",
+    "radicalMeaning": "조개"
   },
   {
     "id": "5급-038",
@@ -5338,7 +5675,8 @@
       "費"
     ],
     "exampleWord": "판매(販賣)",
-    "exampleMeaning": "팔아 넘김"
+    "exampleMeaning": "팔아 넘김",
+    "radicalMeaning": "조개"
   },
   {
     "id": "5급-039",
@@ -5354,7 +5692,8 @@
       "炭"
     ],
     "exampleWord": "무료(無料)",
-    "exampleMeaning": "값이 없음, 공짜"
+    "exampleMeaning": "값이 없음, 공짜",
+    "radicalMeaning": "불"
   },
   {
     "id": "5급-040",
@@ -5372,7 +5711,8 @@
       "件"
     ],
     "exampleWord": "배(倍─)",
-    "exampleMeaning": "곱한 수"
+    "exampleMeaning": "곱한 수",
+    "radicalMeaning": "사람"
   },
   {
     "id": "5급-041",
@@ -5387,7 +5727,8 @@
       "北"
     ],
     "exampleWord": "비교(比較)",
-    "exampleMeaning": "견주어 봄"
+    "exampleMeaning": "견주어 봄",
+    "radicalMeaning": "견줄"
   },
   {
     "id": "5급-042",
@@ -5405,7 +5746,8 @@
       "賣"
     ],
     "exampleWord": "비용",
-    "exampleMeaning": "쓰는 돈"
+    "exampleMeaning": "쓰는 돈",
+    "radicalMeaning": "조개"
   },
   {
     "id": "5급-043",
@@ -5420,7 +5762,8 @@
       "費"
     ],
     "exampleWord": "코(鼻─)",
-    "exampleMeaning": "얼굴의 숨쉬는 부분"
+    "exampleMeaning": "얼굴의 숨쉬는 부분",
+    "radicalMeaning": "코"
   },
   {
     "id": "5급-044",
@@ -5436,7 +5779,8 @@
       "河"
     ],
     "exampleWord": "빙하(氷河)",
-    "exampleMeaning": "얼어붙은 강"
+    "exampleMeaning": "얼어붙은 강",
+    "radicalMeaning": "물"
   },
   {
     "id": "5급-045",
@@ -5451,7 +5795,8 @@
       "寒"
     ],
     "exampleWord": "사진(寫眞)",
-    "exampleMeaning": "빛으로 찍은 그림"
+    "exampleMeaning": "빛으로 찍은 그림",
+    "radicalMeaning": "집"
   },
   {
     "id": "5급-046",
@@ -5467,7 +5812,8 @@
       "査"
     ],
     "exampleWord": "사고(思考)",
-    "exampleMeaning": "생각함"
+    "exampleMeaning": "생각함",
+    "radicalMeaning": "마음"
   },
   {
     "id": "5급-047",
@@ -5485,7 +5831,8 @@
       "末"
     ],
     "exampleWord": "조사",
-    "exampleMeaning": "찾아보고 확인"
+    "exampleMeaning": "찾아보고 확인",
+    "radicalMeaning": "나무"
   },
   {
     "id": "5급-048",
@@ -5503,7 +5850,8 @@
       "費"
     ],
     "exampleWord": "상장",
-    "exampleMeaning": "잘해서 받는 상"
+    "exampleMeaning": "잘해서 받는 상",
+    "radicalMeaning": "조개"
   },
   {
     "id": "5급-049",
@@ -5518,7 +5866,8 @@
       "豫"
     ],
     "exampleWord": "질서(秩序)",
-    "exampleMeaning": "가지런히 늘어선 차례"
+    "exampleMeaning": "가지런히 늘어선 차례",
+    "radicalMeaning": "넓은 집"
   },
   {
     "id": "5급-050",
@@ -5534,7 +5883,8 @@
       "船"
     ],
     "exampleWord": "개선",
-    "exampleMeaning": "좋게 만듦"
+    "exampleMeaning": "좋게 만듦",
+    "radicalMeaning": "입"
   },
   {
     "id": "5급-051",
@@ -5550,7 +5900,8 @@
       "遠"
     ],
     "exampleWord": "선택",
-    "exampleMeaning": "고름"
+    "exampleMeaning": "고름",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "5급-052",
@@ -5565,7 +5916,8 @@
       "善"
     ],
     "exampleWord": "배(船─)",
-    "exampleMeaning": "물 위를 다니는 것"
+    "exampleMeaning": "물 위를 다니는 것",
+    "radicalMeaning": "배"
   },
   {
     "id": "5급-053",
@@ -5581,7 +5933,8 @@
       "社"
     ],
     "exampleWord": "표시(表示)",
-    "exampleMeaning": "겉으로 보임"
+    "exampleMeaning": "겉으로 보임",
+    "radicalMeaning": "보일"
   },
   {
     "id": "5급-054",
@@ -5597,7 +5950,8 @@
       "板"
     ],
     "exampleWord": "제안(提案)",
-    "exampleMeaning": "내놓은 생각"
+    "exampleMeaning": "내놓은 생각",
+    "radicalMeaning": "나무"
   },
   {
     "id": "5급-055",
@@ -5614,7 +5968,8 @@
       "魚"
     ],
     "exampleWord": "어업",
-    "exampleMeaning": "물고기 잡는 일"
+    "exampleMeaning": "물고기 잡는 일",
+    "radicalMeaning": "물"
   },
   {
     "id": "5급-056",
@@ -5629,7 +5984,8 @@
       "漁"
     ],
     "exampleWord": "어류(魚類)",
-    "exampleMeaning": "물고기 종류"
+    "exampleMeaning": "물고기 종류",
+    "radicalMeaning": "고기"
   },
   {
     "id": "5급-057",
@@ -5645,7 +6001,8 @@
       "停"
     ],
     "exampleWord": "억(億─)",
-    "exampleMeaning": "만의 만 배"
+    "exampleMeaning": "만의 만 배",
+    "radicalMeaning": "사람"
   },
   {
     "id": "5급-058",
@@ -5660,7 +6017,8 @@
       "無"
     ],
     "exampleWord": "열심(熱心)",
-    "exampleMeaning": "뜨거운 마음으로 애씀"
+    "exampleMeaning": "뜨거운 마음으로 애씀",
+    "radicalMeaning": "불"
   },
   {
     "id": "5급-059",
@@ -5675,7 +6033,8 @@
       "落"
     ],
     "exampleWord": "나뭇잎(─葉)",
-    "exampleMeaning": "나무에 달린 잎"
+    "exampleMeaning": "나무에 달린 잎",
+    "radicalMeaning": "풀"
   },
   {
     "id": "5급-060",
@@ -5691,7 +6050,8 @@
       "家"
     ],
     "exampleWord": "옥상(屋上)",
-    "exampleMeaning": "집 위"
+    "exampleMeaning": "집 위",
+    "radicalMeaning": "주검"
   },
   {
     "id": "5급-061",
@@ -5707,7 +6067,8 @@
       "園"
     ],
     "exampleWord": "완료",
-    "exampleMeaning": "끝마침"
+    "exampleMeaning": "끝마침",
+    "radicalMeaning": "집"
   },
   {
     "id": "5급-062",
@@ -5722,7 +6083,8 @@
       "曲"
     ],
     "exampleWord": "요일(曜日)",
-    "exampleMeaning": "한 주의 날"
+    "exampleMeaning": "한 주의 날",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "5급-063",
@@ -5740,7 +6102,8 @@
       "漁"
     ],
     "exampleWord": "목욕(沐浴)",
-    "exampleMeaning": "몸을 씻음"
+    "exampleMeaning": "몸을 씻음",
+    "radicalMeaning": "물"
   },
   {
     "id": "5급-064",
@@ -5757,7 +6120,8 @@
       "半"
     ],
     "exampleWord": "한우(韓牛)",
-    "exampleMeaning": "한국 소"
+    "exampleMeaning": "한국 소",
+    "radicalMeaning": "소"
   },
   {
     "id": "5급-065",
@@ -5773,7 +6137,8 @@
       "離"
     ],
     "exampleWord": "영웅(英雄)",
-    "exampleMeaning": "뛰어난 사람"
+    "exampleMeaning": "뛰어난 사람",
+    "radicalMeaning": "새"
   },
   {
     "id": "5급-066",
@@ -5788,7 +6153,8 @@
       "院"
     ],
     "exampleWord": "원인(原因)",
-    "exampleMeaning": "일의 까닭"
+    "exampleMeaning": "일의 까닭",
+    "radicalMeaning": "언덕"
   },
   {
     "id": "5급-067",
@@ -5803,7 +6169,8 @@
       "原"
     ],
     "exampleWord": "병원",
-    "exampleMeaning": "치료하는 곳"
+    "exampleMeaning": "치료하는 곳",
+    "radicalMeaning": "언덕"
   },
   {
     "id": "5급-068",
@@ -5819,7 +6186,8 @@
       "頭"
     ],
     "exampleWord": "소원(所願)",
-    "exampleMeaning": "바라는 것"
+    "exampleMeaning": "바라는 것",
+    "radicalMeaning": "머리"
   },
   {
     "id": "5급-069",
@@ -5837,7 +6205,8 @@
       "倍"
     ],
     "exampleWord": "위치",
-    "exampleMeaning": "있는 자리"
+    "exampleMeaning": "있는 자리",
+    "radicalMeaning": "사람"
   },
   {
     "id": "5급-070",
@@ -5854,7 +6223,8 @@
       "取"
     ],
     "exampleWord": "귀(耳─)",
-    "exampleMeaning": "소리를 듣는 기관"
+    "exampleMeaning": "소리를 듣는 기관",
+    "radicalMeaning": "귀"
   },
   {
     "id": "5급-071",
@@ -5869,7 +6239,8 @@
       "固"
     ],
     "exampleWord": "원인(原因)",
-    "exampleMeaning": "일의 까닭"
+    "exampleMeaning": "일의 까닭",
+    "radicalMeaning": "에울"
   },
   {
     "id": "5급-072",
@@ -5885,7 +6256,8 @@
       "再"
     ],
     "exampleWord": "재난",
-    "exampleMeaning": "큰 사고"
+    "exampleMeaning": "큰 사고",
+    "radicalMeaning": "불"
   },
   {
     "id": "5급-073",
@@ -5900,7 +6272,8 @@
       "災"
     ],
     "exampleWord": "재생(再生)",
-    "exampleMeaning": "다시 살아남"
+    "exampleMeaning": "다시 살아남",
+    "radicalMeaning": "멀"
   },
   {
     "id": "5급-074",
@@ -5916,7 +6289,8 @@
       "靜"
     ],
     "exampleWord": "경쟁",
-    "exampleMeaning": "다툼/겨룸"
+    "exampleMeaning": "다툼/겨룸",
+    "radicalMeaning": "손톱"
   },
   {
     "id": "5급-075",
@@ -5934,7 +6308,8 @@
       "賣"
     ],
     "exampleWord": "저축(貯蓄)",
-    "exampleMeaning": "모아 쌓음"
+    "exampleMeaning": "모아 쌓음",
+    "radicalMeaning": "조개"
   },
   {
     "id": "5급-076",
@@ -5949,7 +6324,8 @@
       "走"
     ],
     "exampleWord": "적색(赤色)",
-    "exampleMeaning": "빨간 색"
+    "exampleMeaning": "빨간 색",
+    "radicalMeaning": "붉을"
   },
   {
     "id": "5급-077",
@@ -5967,7 +6343,8 @@
       "位"
     ],
     "exampleWord": "정지(停止)",
-    "exampleMeaning": "멈춤"
+    "exampleMeaning": "멈춤",
+    "radicalMeaning": "사람"
   },
   {
     "id": "5급-078",
@@ -5982,7 +6359,8 @@
       "擧"
     ],
     "exampleWord": "체조(體操)",
-    "exampleMeaning": "몸을 움직이는 운동"
+    "exampleMeaning": "몸을 움직이는 운동",
+    "radicalMeaning": "손"
   },
   {
     "id": "5급-079",
@@ -5997,7 +6375,8 @@
       "給"
     ],
     "exampleWord": "종료",
-    "exampleMeaning": "끝냄"
+    "exampleMeaning": "끝냄",
+    "radicalMeaning": "실"
   },
   {
     "id": "5급-080",
@@ -6013,7 +6392,8 @@
       "羅"
     ],
     "exampleWord": "범죄(犯罪)",
-    "exampleMeaning": "법을 어기는 잘못"
+    "exampleMeaning": "법을 어기는 잘못",
+    "radicalMeaning": "그물"
   },
   {
     "id": "5급-081",
@@ -6028,7 +6408,8 @@
       "正"
     ],
     "exampleWord": "중지",
-    "exampleMeaning": "멈춤"
+    "exampleMeaning": "멈춤",
+    "radicalMeaning": "그칠"
   },
   {
     "id": "5급-082",
@@ -6043,7 +6424,8 @@
       "善"
     ],
     "exampleWord": "합창(合唱)",
-    "exampleMeaning": "함께 노래함"
+    "exampleMeaning": "함께 노래함",
+    "radicalMeaning": "입"
   },
   {
     "id": "5급-083",
@@ -6059,7 +6441,8 @@
       "銅"
     ],
     "exampleWord": "지하철(地下鐵)",
-    "exampleMeaning": "땅 아래 달리는 기차"
+    "exampleMeaning": "땅 아래 달리는 기차",
+    "radicalMeaning": "쇠"
   },
   {
     "id": "5급-084",
@@ -6074,7 +6457,8 @@
       "則"
     ],
     "exampleWord": "초등(初等)",
-    "exampleMeaning": "처음 단계"
+    "exampleMeaning": "처음 단계",
+    "radicalMeaning": "칼"
   },
   {
     "id": "5급-085",
@@ -6089,7 +6473,8 @@
       "取"
     ],
     "exampleWord": "최고",
-    "exampleMeaning": "가장 높음"
+    "exampleMeaning": "가장 높음",
+    "radicalMeaning": "가로"
   },
   {
     "id": "5급-086",
@@ -6106,7 +6491,8 @@
       "社"
     ],
     "exampleWord": "축하(祝賀)",
-    "exampleMeaning": "기쁜 일을 빎"
+    "exampleMeaning": "기쁜 일을 빎",
+    "radicalMeaning": "보일"
   },
   {
     "id": "5급-087",
@@ -6121,7 +6507,8 @@
       "至"
     ],
     "exampleWord": "일치(一致)",
-    "exampleMeaning": "하나로 맞음"
+    "exampleMeaning": "하나로 맞음",
+    "radicalMeaning": "이를"
   },
   {
     "id": "5급-088",
@@ -6136,7 +6523,8 @@
       "初"
     ],
     "exampleWord": "규칙",
-    "exampleMeaning": "정한 법"
+    "exampleMeaning": "정한 법",
+    "radicalMeaning": "칼"
   },
   {
     "id": "5급-089",
@@ -6154,7 +6542,8 @@
       "打"
     ],
     "exampleWord": "타인(他人)",
-    "exampleMeaning": "다른 사람"
+    "exampleMeaning": "다른 사람",
+    "radicalMeaning": "사람"
   },
   {
     "id": "5급-090",
@@ -6170,7 +6559,8 @@
       "他"
     ],
     "exampleWord": "타격(打擊)",
-    "exampleMeaning": "때려 침"
+    "exampleMeaning": "때려 침",
+    "radicalMeaning": "손"
   },
   {
     "id": "5급-091",
@@ -6186,7 +6576,8 @@
       "草"
     ],
     "exampleWord": "탁자(卓子)",
-    "exampleMeaning": "높은 상"
+    "exampleMeaning": "높은 상",
+    "radicalMeaning": "열"
   },
   {
     "id": "5급-092",
@@ -6202,7 +6593,8 @@
       "無"
     ],
     "exampleWord": "석탄(石炭)",
-    "exampleMeaning": "태우는 돌"
+    "exampleMeaning": "태우는 돌",
+    "radicalMeaning": "불"
   },
   {
     "id": "5급-093",
@@ -6219,7 +6611,8 @@
       "末"
     ],
     "exampleWord": "칠판(漆板)",
-    "exampleMeaning": "글씨 쓰는 넓은 판"
+    "exampleMeaning": "글씨 쓰는 넓은 판",
+    "radicalMeaning": "나무"
   },
   {
     "id": "5급-094",
@@ -6235,7 +6628,8 @@
       "改"
     ],
     "exampleWord": "실패",
-    "exampleMeaning": "지거나 뜻대로 안 됨"
+    "exampleMeaning": "지거나 뜻대로 안 됨",
+    "radicalMeaning": "칠"
   },
   {
     "id": "5급-095",
@@ -6253,7 +6647,8 @@
       "湖"
     ],
     "exampleWord": "하천(河川)",
-    "exampleMeaning": "흐르는 물"
+    "exampleMeaning": "흐르는 물",
+    "radicalMeaning": "물"
   },
   {
     "id": "5급-096",
@@ -6268,7 +6663,8 @@
       "寫"
     ],
     "exampleWord": "한파(寒波)",
-    "exampleMeaning": "찬 기운의 물결"
+    "exampleMeaning": "찬 기운의 물결",
+    "radicalMeaning": "집"
   },
   {
     "id": "5급-097",
@@ -6283,7 +6679,8 @@
       "談"
     ],
     "exampleWord": "허락",
-    "exampleMeaning": "해도 된다고 함"
+    "exampleMeaning": "해도 된다고 함",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "5급-098",
@@ -6300,7 +6697,8 @@
       "河"
     ],
     "exampleWord": "호수(湖水)",
-    "exampleMeaning": "물이 고인 넓은 곳"
+    "exampleMeaning": "물이 고인 넓은 곳",
+    "radicalMeaning": "물"
   },
   {
     "id": "5급-099",
@@ -6315,7 +6713,8 @@
       "思"
     ],
     "exampleWord": "환자(患者)",
-    "exampleMeaning": "병으로 아픈 사람"
+    "exampleMeaning": "병으로 아픈 사람",
+    "radicalMeaning": "마음"
   },
   {
     "id": "5급-100",
@@ -6331,7 +6730,8 @@
       "黨"
     ],
     "exampleWord": "흑색",
-    "exampleMeaning": "검은색"
+    "exampleMeaning": "검은색",
+    "radicalMeaning": "검을"
   },
   {
     "id": "4급-001",
@@ -6348,7 +6748,8 @@
       "映"
     ],
     "exampleWord": "틈(暇)",
-    "exampleMeaning": "틈은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "틈은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "4급-002",
@@ -6365,7 +6766,8 @@
       "刑"
     ],
     "exampleWord": "시각",
-    "exampleMeaning": "시간/때"
+    "exampleMeaning": "시간/때",
+    "radicalMeaning": "칼"
   },
   {
     "id": "4급-003",
@@ -6380,7 +6782,8 @@
       "覽"
     ],
     "exampleWord": "깨달기(覺)",
-    "exampleMeaning": "깨달기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "깨달기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "볼"
   },
   {
     "id": "4급-004",
@@ -6398,7 +6801,8 @@
       "管"
     ],
     "exampleWord": "간단",
-    "exampleMeaning": "복잡하지 않음"
+    "exampleMeaning": "복잡하지 않음",
+    "radicalMeaning": "대나무"
   },
   {
     "id": "4급-005",
@@ -6414,7 +6818,8 @@
       "干"
     ],
     "exampleWord": "볼(看)",
-    "exampleMeaning": "볼은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "볼은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "눈"
   },
   {
     "id": "4급-006",
@@ -6430,7 +6835,8 @@
       "看"
     ],
     "exampleWord": "방패(干)",
-    "exampleMeaning": "방패는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "방패는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "방패"
   },
   {
     "id": "4급-007",
@@ -6445,7 +6851,8 @@
       "敢"
     ],
     "exampleWord": "달(甘)",
-    "exampleMeaning": "달은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "달은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "달"
   },
   {
     "id": "4급-008",
@@ -6461,7 +6868,8 @@
       "整"
     ],
     "exampleWord": "감히(敢)",
-    "exampleMeaning": "감히는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "감히는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "칠"
   },
   {
     "id": "4급-009",
@@ -6478,7 +6886,8 @@
       "田"
     ],
     "exampleWord": "갑옷(甲)",
-    "exampleMeaning": "갑옷은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "갑옷은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "밭"
   },
   {
     "id": "4급-010",
@@ -6494,7 +6903,8 @@
       "階"
     ],
     "exampleWord": "내릴(降)",
-    "exampleMeaning": "내릴은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "내릴은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "언덕"
   },
   {
     "id": "4급-011",
@@ -6512,7 +6922,8 @@
       "批"
     ],
     "exampleWord": "막기(拒)",
-    "exampleMeaning": "막기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "막기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급-012",
@@ -6529,7 +6940,8 @@
       "巨"
     ],
     "exampleWord": "살(居)",
-    "exampleMeaning": "살은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "살은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "주검"
   },
   {
     "id": "4급-013",
@@ -6547,7 +6959,8 @@
       "援"
     ],
     "exampleWord": "근거(據)",
-    "exampleMeaning": "근거는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "근거는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급-014",
@@ -6563,7 +6976,8 @@
       "居"
     ],
     "exampleWord": "클(巨)",
-    "exampleMeaning": "클은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "클은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "장인"
   },
   {
     "id": "4급-015",
@@ -6581,7 +6995,8 @@
       "儉"
     ],
     "exampleWord": "뛰어남(傑)",
-    "exampleMeaning": "뛰어남은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "뛰어남은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급-016",
@@ -6599,7 +7014,8 @@
       "傷"
     ],
     "exampleWord": "검소기(儉)",
-    "exampleMeaning": "검소기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "검소기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급-017",
@@ -6617,7 +7033,8 @@
       "損"
     ],
     "exampleWord": "칠[打](擊)",
-    "exampleMeaning": "칠[打]는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "칠[打]는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급-018",
@@ -6634,7 +7051,8 @@
       "源"
     ],
     "exampleWord": "격기(激)",
-    "exampleMeaning": "격기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "격기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급-019",
@@ -6651,7 +7069,8 @@
       "均"
     ],
     "exampleWord": "굳기(堅)",
-    "exampleMeaning": "굳기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "굳기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "흙"
   },
   {
     "id": "4급-020",
@@ -6666,7 +7085,8 @@
       "犯"
     ],
     "exampleWord": "개(犬)",
-    "exampleMeaning": "개는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "개는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "개"
   },
   {
     "id": "4급-021",
@@ -6682,7 +7102,8 @@
       "驗"
     ],
     "exampleWord": "놀랄(驚)",
-    "exampleMeaning": "놀랄은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "놀랄은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "말"
   },
   {
     "id": "4급-022",
@@ -6697,7 +7118,8 @@
       "便"
     ],
     "exampleWord": "변경",
-    "exampleMeaning": "바꿔서 고침"
+    "exampleMeaning": "바꿔서 고침",
+    "radicalMeaning": "가로"
   },
   {
     "id": "4급-023",
@@ -6715,7 +7137,8 @@
       "儀"
     ],
     "exampleWord": "기움(傾)",
-    "exampleMeaning": "기움은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "기움은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급-024",
@@ -6732,7 +7155,8 @@
       "鑛"
     ],
     "exampleWord": "거움(鏡)",
-    "exampleMeaning": "거움은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "거움은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "쇠"
   },
   {
     "id": "4급-025",
@@ -6749,7 +7173,8 @@
       "險"
     ],
     "exampleWord": "섬돌(階)",
-    "exampleMeaning": "섬돌은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "섬돌은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "언덕"
   },
   {
     "id": "4급-026",
@@ -6764,7 +7189,8 @@
       "繼"
     ],
     "exampleWord": "닭(鷄)",
-    "exampleMeaning": "닭은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "닭은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "새"
   },
   {
     "id": "4급-027",
@@ -6782,7 +7208,8 @@
       "存"
     ],
     "exampleWord": "계절(季)",
-    "exampleMeaning": "계절은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "계절은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "아들"
   },
   {
     "id": "4급-028",
@@ -6800,7 +7227,8 @@
       "紀"
     ],
     "exampleWord": "이어맬(系)",
-    "exampleMeaning": "이어맬은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "이어맬은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급-029",
@@ -6818,7 +7246,8 @@
       "績"
     ],
     "exampleWord": "이기(繼)",
-    "exampleMeaning": "이기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "이기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급-030",
@@ -6835,7 +7264,8 @@
       "或"
     ],
     "exampleWord": "경계기(戒)",
-    "exampleMeaning": "경계기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "경계기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "창"
   },
   {
     "id": "4급-031",
@@ -6853,7 +7283,8 @@
       "孔"
     ],
     "exampleWord": "외로움(孤)",
-    "exampleMeaning": "외로움은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "외로움은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "아들"
   },
   {
     "id": "4급-032",
@@ -6869,7 +7300,8 @@
       "孤"
     ],
     "exampleWord": "곳집(庫)",
-    "exampleMeaning": "곳집은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "곳집은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "넓은 집"
   },
   {
     "id": "4급-033",
@@ -6885,7 +7317,8 @@
       "稱"
     ],
     "exampleWord": "곡식(穀)",
-    "exampleMeaning": "곡식은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "곡식은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "벼"
   },
   {
     "id": "4급-034",
@@ -6901,7 +7334,8 @@
       "圍"
     ],
     "exampleWord": "곤기(困)",
-    "exampleMeaning": "곤기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "곤기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "에울"
   },
   {
     "id": "4급-035",
@@ -6916,7 +7350,8 @@
       "體"
     ],
     "exampleWord": "뼈(骨)",
-    "exampleMeaning": "뼈는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "뼈는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "뼈"
   },
   {
     "id": "4급-036",
@@ -6934,7 +7369,8 @@
       "攻"
     ],
     "exampleWord": "구멍(孔)",
-    "exampleMeaning": "구멍은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "구멍은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "아들"
   },
   {
     "id": "4급-037",
@@ -6949,7 +7385,8 @@
       "孔"
     ],
     "exampleWord": "칠[擊](攻)",
-    "exampleMeaning": "칠[擊]는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "칠[擊]는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "칠"
   },
   {
     "id": "4급-038",
@@ -6967,7 +7404,8 @@
       "簡"
     ],
     "exampleWord": "관리",
-    "exampleMeaning": "잘 돌봄"
+    "exampleMeaning": "잘 돌봄",
+    "radicalMeaning": "대나무"
   },
   {
     "id": "4급-039",
@@ -6982,7 +7420,8 @@
       "鏡"
     ],
     "exampleWord": "쇳돌(鑛)",
-    "exampleMeaning": "쇳돌은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "쇳돌은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "쇠"
   },
   {
     "id": "4급-040",
@@ -7000,7 +7439,8 @@
       "機"
     ],
     "exampleWord": "얽기(構)",
-    "exampleMeaning": "얽기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "얽기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "나무"
   },
   {
     "id": "4급-041",
@@ -7016,7 +7456,8 @@
       "周"
     ],
     "exampleWord": "임금(君)",
-    "exampleMeaning": "임금은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "임금은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "입"
   },
   {
     "id": "4급-042",
@@ -7031,7 +7472,8 @@
       "君"
     ],
     "exampleWord": "무리(群)",
-    "exampleMeaning": "무리는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "무리는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "양"
   },
   {
     "id": "4급-043",
@@ -7046,7 +7488,8 @@
       "居"
     ],
     "exampleWord": "굽힐(屈)",
-    "exampleMeaning": "굽힐은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "굽힐은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "주검"
   },
   {
     "id": "4급-044",
@@ -7062,7 +7505,8 @@
       "究"
     ],
     "exampleWord": "다기(窮)",
-    "exampleMeaning": "다기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "다기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "구멍"
   },
   {
     "id": "4급-045",
@@ -7080,7 +7524,8 @@
       "卷"
     ],
     "exampleWord": "문서(券)",
-    "exampleMeaning": "문서는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "문서는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "칼"
   },
   {
     "id": "4급-046",
@@ -7096,7 +7541,8 @@
       "卷"
     ],
     "exampleWord": "권기(勸)",
-    "exampleMeaning": "권기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "권기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "힘"
   },
   {
     "id": "4급-047",
@@ -7113,7 +7559,8 @@
       "券"
     ],
     "exampleWord": "책(卷)",
-    "exampleMeaning": "책은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "책은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "병부"
   },
   {
     "id": "4급-048",
@@ -7128,7 +7575,8 @@
       "復"
     ],
     "exampleWord": "돌아갈(歸)",
-    "exampleMeaning": "돌아갈은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "돌아갈은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "그칠"
   },
   {
     "id": "4급-049",
@@ -7144,7 +7592,8 @@
       "域"
     ],
     "exampleWord": "고기(均)",
-    "exampleMeaning": "고기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "고기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "흙"
   },
   {
     "id": "4급-050",
@@ -7159,7 +7608,8 @@
       "據"
     ],
     "exampleWord": "심기(劇)",
-    "exampleMeaning": "심기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "심기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "칼"
   },
   {
     "id": "4급-051",
@@ -7175,7 +7625,8 @@
       "勉"
     ],
     "exampleWord": "부지런기(勤)",
-    "exampleMeaning": "부지런기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "부지런기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "힘"
   },
   {
     "id": "4급-052",
@@ -7193,7 +7644,8 @@
       "篇"
     ],
     "exampleWord": "힘줄(筋)",
-    "exampleMeaning": "힘줄은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "힘줄은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "대나무"
   },
   {
     "id": "4급-053",
@@ -7211,7 +7663,8 @@
       "構"
     ],
     "exampleWord": "기계",
-    "exampleMeaning": "기계 장치"
+    "exampleMeaning": "기계 장치",
+    "radicalMeaning": "나무"
   },
   {
     "id": "4급-054",
@@ -7229,7 +7682,8 @@
       "奇"
     ],
     "exampleWord": "부치기(寄)",
-    "exampleMeaning": "부치기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "부치기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "집"
   },
   {
     "id": "4급-055",
@@ -7245,7 +7699,8 @@
       "寄"
     ],
     "exampleWord": "기특기(奇)",
-    "exampleMeaning": "기특기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "기특기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "큰"
   },
   {
     "id": "4급-056",
@@ -7263,7 +7718,8 @@
       "系"
     ],
     "exampleWord": "벼리(紀)",
-    "exampleMeaning": "벼리는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "벼리는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급-057",
@@ -7281,7 +7737,8 @@
       "絲"
     ],
     "exampleWord": "들일(納)",
-    "exampleMeaning": "들일은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "들일은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급-058",
@@ -7297,7 +7754,8 @@
       "殘"
     ],
     "exampleWord": "층계(段)",
-    "exampleMeaning": "층계는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "층계는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "창"
   },
   {
     "id": "4급-059",
@@ -7314,7 +7772,8 @@
       "盜"
     ],
     "exampleWord": "무리(徒)",
-    "exampleMeaning": "무리는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "무리는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "걸을"
   },
   {
     "id": "4급-060",
@@ -7331,7 +7790,8 @@
       "逃"
     ],
     "exampleWord": "도둑(盜)",
-    "exampleMeaning": "도둑은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "도둑은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "그릇"
   },
   {
     "id": "4급-061",
@@ -7349,7 +7809,8 @@
       "遊"
     ],
     "exampleWord": "도망기(逃)",
-    "exampleMeaning": "도망기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "도망기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "4급-062",
@@ -7364,7 +7825,8 @@
       "卵"
     ],
     "exampleWord": "어지러움(亂)",
-    "exampleMeaning": "어지러움은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "어지러움은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "새, 둘째"
   },
   {
     "id": "4급-063",
@@ -7380,7 +7842,8 @@
       "危"
     ],
     "exampleWord": "알(卵)",
-    "exampleMeaning": "알은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "알은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "병부"
   },
   {
     "id": "4급-064",
@@ -7395,7 +7858,8 @@
       "覺"
     ],
     "exampleWord": "볼(覽)",
-    "exampleMeaning": "볼은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "볼은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "볼"
   },
   {
     "id": "4급-065",
@@ -7410,7 +7874,8 @@
       "異"
     ],
     "exampleWord": "간략기(略)",
-    "exampleMeaning": "간략기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "간략기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "밭"
   },
   {
     "id": "4급-066",
@@ -7425,7 +7890,8 @@
       "量"
     ],
     "exampleWord": "양식(糧)",
-    "exampleMeaning": "양식은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "양식은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "쌀"
   },
   {
     "id": "4급-067",
@@ -7442,7 +7908,8 @@
       "憲"
     ],
     "exampleWord": "생각기(慮)",
-    "exampleMeaning": "생각기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "생각기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급-068",
@@ -7457,7 +7924,8 @@
       "灰"
     ],
     "exampleWord": "매움(烈)",
-    "exampleMeaning": "매움은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "매움은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "불"
   },
   {
     "id": "4급-069",
@@ -7473,7 +7941,8 @@
       "舞"
     ],
     "exampleWord": "용(龍)",
-    "exampleMeaning": "용은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "용은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "용"
   },
   {
     "id": "4급-070",
@@ -7491,7 +7960,8 @@
       "朱"
     ],
     "exampleWord": "버듦(柳)",
-    "exampleMeaning": "버듦은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "버듦은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "나무"
   },
   {
     "id": "4급-071",
@@ -7506,7 +7976,8 @@
       "轉"
     ],
     "exampleWord": "바퀴(輪)",
-    "exampleMeaning": "바퀴는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "바퀴는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "수레"
   },
   {
     "id": "4급-072",
@@ -7521,7 +7992,8 @@
       "雜"
     ],
     "exampleWord": "떠남(離)",
-    "exampleMeaning": "떠남은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "떠남은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "새"
   },
   {
     "id": "4급-073",
@@ -7539,7 +8011,8 @@
       "威"
     ],
     "exampleWord": "누이(妹)",
-    "exampleMeaning": "누이는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "누이는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "여자"
   },
   {
     "id": "4급-074",
@@ -7554,7 +8027,8 @@
       "勤"
     ],
     "exampleWord": "힘쓰기(勉)",
-    "exampleMeaning": "힘쓰기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "힘쓰기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "힘"
   },
   {
     "id": "4급-075",
@@ -7569,7 +8043,8 @@
       "鳥"
     ],
     "exampleWord": "움(鳴)",
-    "exampleMeaning": "움은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "움은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "새"
   },
   {
     "id": "4급-076",
@@ -7587,7 +8062,8 @@
       "標"
     ],
     "exampleWord": "모형",
-    "exampleMeaning": "본떠 만든 것"
+    "exampleMeaning": "본떠 만든 것",
+    "radicalMeaning": "나무"
   },
   {
     "id": "4급-077",
@@ -7603,7 +8079,8 @@
       "域"
     ],
     "exampleWord": "무덤(墓)",
-    "exampleMeaning": "무덤은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "무덤은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "흙"
   },
   {
     "id": "4급-078",
@@ -7621,7 +8098,8 @@
       "姉"
     ],
     "exampleWord": "묘기(妙)",
-    "exampleMeaning": "묘기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "묘기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "여자"
   },
   {
     "id": "4급-079",
@@ -7637,7 +8115,8 @@
       "武"
     ],
     "exampleWord": "춤출(舞)",
-    "exampleMeaning": "춤출은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "춤출은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "어긋날"
   },
   {
     "id": "4급-080",
@@ -7655,7 +8134,8 @@
       "持"
     ],
     "exampleWord": "치기(拍)",
-    "exampleMeaning": "치기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "치기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급-081",
@@ -7671,7 +8151,8 @@
       "犯"
     ],
     "exampleWord": "터럭(髮)",
-    "exampleMeaning": "터럭은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "터럭은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "터럭"
   },
   {
     "id": "4급-082",
@@ -7689,7 +8170,8 @@
       "姉"
     ],
     "exampleWord": "방해기(妨)",
-    "exampleMeaning": "방해기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "방해기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "여자"
   },
   {
     "id": "4급-083",
@@ -7704,7 +8186,8 @@
       "犬"
     ],
     "exampleWord": "범인(犯人)",
-    "exampleMeaning": "잘못을 저지른 사람"
+    "exampleMeaning": "잘못을 저지른 사람",
+    "radicalMeaning": "개"
   },
   {
     "id": "4급-084",
@@ -7722,7 +8205,8 @@
       "筋"
     ],
     "exampleWord": "법(範)",
-    "exampleMeaning": "법은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "법은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "대나무"
   },
   {
     "id": "4급-085",
@@ -7737,7 +8221,8 @@
       "辭"
     ],
     "exampleWord": "말씀(辯)",
-    "exampleMeaning": "말씀은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "말씀은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "매울"
   },
   {
     "id": "4급-086",
@@ -7755,7 +8240,8 @@
       "易"
     ],
     "exampleWord": "넓기(普)",
-    "exampleMeaning": "넓기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "넓기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "4급-087",
@@ -7772,7 +8258,8 @@
       "候"
     ],
     "exampleWord": "엎드릴(伏)",
-    "exampleMeaning": "엎드릴은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "엎드릴은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급-088",
@@ -7787,7 +8274,8 @@
       "裝"
     ],
     "exampleWord": "겹치기(複)",
-    "exampleMeaning": "겹치기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "겹치기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "옷"
   },
   {
     "id": "4급-089",
@@ -7804,7 +8292,8 @@
       "負"
     ],
     "exampleWord": "아닐(否)",
-    "exampleMeaning": "아닐은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "아닐은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "입"
   },
   {
     "id": "4급-090",
@@ -7820,7 +8309,8 @@
       "賊"
     ],
     "exampleWord": "질[荷](負)",
-    "exampleMeaning": "질[荷]는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "질[荷]는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "조개"
   },
   {
     "id": "4급-091",
@@ -7835,7 +8325,8 @@
       "憤"
     ],
     "exampleWord": "가루(粉)",
-    "exampleMeaning": "가루는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "가루는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "쌀"
   },
   {
     "id": "4급-092",
@@ -7852,7 +8343,8 @@
       "憲"
     ],
     "exampleWord": "분기(憤)",
-    "exampleMeaning": "분기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "분기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급-093",
@@ -7870,7 +8362,8 @@
       "招"
     ],
     "exampleWord": "비평기(批)",
-    "exampleMeaning": "비평기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "비평기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급-094",
@@ -7886,7 +8379,8 @@
       "碑"
     ],
     "exampleWord": "숨길(祕)",
-    "exampleMeaning": "숨길은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "숨길은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "보일"
   },
   {
     "id": "4급-095",
@@ -7901,7 +8395,8 @@
       "祕"
     ],
     "exampleWord": "비석(碑)",
-    "exampleMeaning": "비석은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "비석은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "돌"
   },
   {
     "id": "4급-096",
@@ -7916,7 +8411,8 @@
       "辯"
     ],
     "exampleWord": "말씀(辭)",
-    "exampleMeaning": "말씀은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "말씀은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "매울"
   },
   {
     "id": "4급-097",
@@ -7932,7 +8428,8 @@
       "射"
     ],
     "exampleWord": "사사(私事)(私)",
-    "exampleMeaning": "사사(私事)는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "사사(私事)는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "벼"
   },
   {
     "id": "4급-098",
@@ -7950,7 +8447,8 @@
       "緣"
     ],
     "exampleWord": "실(絲)",
-    "exampleMeaning": "실은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "실은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급-099",
@@ -7967,7 +8465,8 @@
       "私"
     ],
     "exampleWord": "쏠(射)",
-    "exampleMeaning": "쏠은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "쏠은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "마디"
   },
   {
     "id": "4급-100",
@@ -7983,7 +8482,8 @@
       "整"
     ],
     "exampleWord": "흩기(散)",
-    "exampleMeaning": "흩기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "흩기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "칠"
   },
   {
     "id": "4급-101",
@@ -8001,7 +8501,8 @@
       "儉"
     ],
     "exampleWord": "다치기(傷)",
-    "exampleMeaning": "다치기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "다치기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급-102",
@@ -8017,7 +8518,8 @@
       "豫"
     ],
     "exampleWord": "코끼리(象)",
-    "exampleMeaning": "코끼리는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "코끼리는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "돼지"
   },
   {
     "id": "4급-103",
@@ -8032,7 +8534,8 @@
       "寄"
     ],
     "exampleWord": "베풀(宣)",
-    "exampleMeaning": "베풀은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "베풀은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "집"
   },
   {
     "id": "4급-104",
@@ -8049,7 +8552,8 @@
       "活"
     ],
     "exampleWord": "혀(舌)",
-    "exampleMeaning": "혀는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "혀는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "혀"
   },
   {
     "id": "4급-105",
@@ -8065,7 +8569,8 @@
       "居"
     ],
     "exampleWord": "붙일(屬)",
-    "exampleMeaning": "붙일은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "붙일은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "주검"
   },
   {
     "id": "4급-106",
@@ -8083,7 +8588,8 @@
       "推"
     ],
     "exampleWord": "손해",
-    "exampleMeaning": "잃는 것"
+    "exampleMeaning": "잃는 것",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급-107",
@@ -8098,7 +8604,8 @@
       "松"
     ],
     "exampleWord": "기릴(頌)",
-    "exampleMeaning": "기릴은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "기릴은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "머리"
   },
   {
     "id": "4급-108",
@@ -8116,7 +8623,8 @@
       "條"
     ],
     "exampleWord": "소나무(松)",
-    "exampleMeaning": "소나무는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "소나무는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "나무"
   },
   {
     "id": "4급-109",
@@ -8131,7 +8639,8 @@
       "私"
     ],
     "exampleWord": "빼어남(秀)",
-    "exampleMeaning": "빼어남은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "빼어남은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "벼"
   },
   {
     "id": "4급-110",
@@ -8146,7 +8655,8 @@
       "肅"
     ],
     "exampleWord": "아재비(叔)",
-    "exampleMeaning": "아재비는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "아재비는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "또"
   },
   {
     "id": "4급-111",
@@ -8161,7 +8671,8 @@
       "叔"
     ],
     "exampleWord": "엄숙기(肅)",
-    "exampleMeaning": "엄숙기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "엄숙기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "붓"
   },
   {
     "id": "4급-112",
@@ -8176,7 +8687,8 @@
       "山"
     ],
     "exampleWord": "높기(崇)",
-    "exampleMeaning": "높기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "높기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "산"
   },
   {
     "id": "4급-113",
@@ -8192,7 +8704,8 @@
       "紙"
     ],
     "exampleWord": "성씨(姓氏)",
-    "exampleMeaning": "집안의 이름"
+    "exampleMeaning": "집안의 이름",
+    "radicalMeaning": "성씨"
   },
   {
     "id": "4급-114",
@@ -8208,7 +8721,8 @@
       "題"
     ],
     "exampleWord": "이마(額)",
-    "exampleMeaning": "이마는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "이마는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "머리"
   },
   {
     "id": "4급-115",
@@ -8226,7 +8740,8 @@
       "標"
     ],
     "exampleWord": "모양(樣)",
-    "exampleMeaning": "모양은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "모양은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "나무"
   },
   {
     "id": "4급-116",
@@ -8241,7 +8756,8 @@
       "敢"
     ],
     "exampleWord": "엄기(嚴)",
-    "exampleMeaning": "엄기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "엄기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "입"
   },
   {
     "id": "4급-117",
@@ -8257,7 +8773,8 @@
       "擧"
     ],
     "exampleWord": "더불(與)",
-    "exampleMeaning": "더불은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "더불은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "절구"
   },
   {
     "id": "4급-118",
@@ -8275,7 +8792,8 @@
       "易"
     ],
     "exampleWord": "지경(域)",
-    "exampleMeaning": "지경은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "지경은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "흙"
   },
   {
     "id": "4급-119",
@@ -8293,7 +8811,8 @@
       "域"
     ],
     "exampleWord": "무역",
-    "exampleMeaning": "바꾸고 거래함"
+    "exampleMeaning": "바꾸고 거래함",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "4급-120",
@@ -8311,7 +8830,8 @@
       "鉛"
     ],
     "exampleWord": "탈(燃)",
-    "exampleMeaning": "탈은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "탈은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "불"
   },
   {
     "id": "4급-121",
@@ -8329,7 +8849,8 @@
       "鍾"
     ],
     "exampleWord": "납(鉛)",
-    "exampleMeaning": "납은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "납은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "쇠"
   },
   {
     "id": "4급-122",
@@ -8347,7 +8868,8 @@
       "絲"
     ],
     "exampleWord": "인연(緣)",
-    "exampleMeaning": "인연은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "인연은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급-123",
@@ -8364,7 +8886,8 @@
       "緣"
     ],
     "exampleWord": "늘일(延)",
-    "exampleMeaning": "늘일은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "늘일은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "끌"
   },
   {
     "id": "4급-124",
@@ -8380,7 +8903,8 @@
       "映"
     ],
     "exampleWord": "맞기(迎)",
-    "exampleMeaning": "맞기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "맞기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "4급-125",
@@ -8398,7 +8922,8 @@
       "智"
     ],
     "exampleWord": "비치기(映)",
-    "exampleMeaning": "비치기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "비치기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "4급-126",
@@ -8414,7 +8939,8 @@
       "爆"
     ],
     "exampleWord": "경영기(營)",
-    "exampleMeaning": "경영기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "경영기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "불"
   },
   {
     "id": "4급-127",
@@ -8429,7 +8955,8 @@
       "象"
     ],
     "exampleWord": "미리(豫)",
-    "exampleMeaning": "미리는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "미리는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "돼지"
   },
   {
     "id": "4급-128",
@@ -8447,7 +8974,8 @@
       "傾"
     ],
     "exampleWord": "넉넉기(優)",
-    "exampleMeaning": "넉넉기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "넉넉기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급-129",
@@ -8465,7 +8993,8 @@
       "遺"
     ],
     "exampleWord": "만남(遇)",
-    "exampleMeaning": "만남은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "만남은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "4급-130",
@@ -8480,7 +9009,8 @@
       "遇"
     ],
     "exampleWord": "우편(郵)",
-    "exampleMeaning": "우편은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "우편은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "고을"
   },
   {
     "id": "4급-131",
@@ -8496,7 +9026,8 @@
       "援"
     ],
     "exampleWord": "원망기(怨)",
-    "exampleMeaning": "원망기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "원망기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급-132",
@@ -8514,7 +9045,8 @@
       "推"
     ],
     "exampleWord": "지원",
-    "exampleMeaning": "도와줌"
+    "exampleMeaning": "도와줌",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급-133",
@@ -8532,7 +9064,8 @@
       "激"
     ],
     "exampleWord": "근원(源)",
-    "exampleMeaning": "근원은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "근원은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급-134",
@@ -8548,7 +9081,8 @@
       "慰"
     ],
     "exampleWord": "에워쌀(圍)",
-    "exampleMeaning": "에워쌀은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "에워쌀은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "에울"
   },
   {
     "id": "4급-135",
@@ -8566,7 +9100,8 @@
       "妨"
     ],
     "exampleWord": "맡길(委)",
-    "exampleMeaning": "맡길은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "맡길은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "여자"
   },
   {
     "id": "4급-136",
@@ -8584,7 +9119,8 @@
       "姉"
     ],
     "exampleWord": "위엄(威)",
-    "exampleMeaning": "위엄은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "위엄은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "여자"
   },
   {
     "id": "4급-137",
@@ -8602,7 +9138,8 @@
       "圍"
     ],
     "exampleWord": "위로기(慰)",
-    "exampleMeaning": "위로기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "위로기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급-138",
@@ -8620,7 +9157,8 @@
       "威"
     ],
     "exampleWord": "위험",
-    "exampleMeaning": "다칠 수 있음"
+    "exampleMeaning": "다칠 수 있음",
+    "radicalMeaning": "병부"
   },
   {
     "id": "4급-139",
@@ -8638,7 +9176,8 @@
       "逃"
     ],
     "exampleWord": "놀(遊)",
-    "exampleMeaning": "놀은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "놀은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "4급-140",
@@ -8653,7 +9192,8 @@
       "遊"
     ],
     "exampleWord": "젖(乳)",
-    "exampleMeaning": "젖은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "젖은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "새, 둘째"
   },
   {
     "id": "4급-141",
@@ -8671,7 +9211,8 @@
       "遺"
     ],
     "exampleWord": "선비(儒)",
-    "exampleMeaning": "선비는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "선비는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급-142",
@@ -8689,7 +9230,8 @@
       "避"
     ],
     "exampleWord": "남길(遺)",
-    "exampleMeaning": "남길은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "남길은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "4급-143",
@@ -8704,7 +9246,8 @@
       "險"
     ],
     "exampleWord": "숨기(隱)",
-    "exampleMeaning": "숨기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "숨기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "언덕"
   },
   {
     "id": "4급-144",
@@ -8722,7 +9265,8 @@
       "仁"
     ],
     "exampleWord": "의지기(依)",
-    "exampleMeaning": "의지기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "의지기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급-145",
@@ -8740,7 +9284,8 @@
       "儒"
     ],
     "exampleWord": "거동(儀)",
-    "exampleMeaning": "거동은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "거동은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급-146",
@@ -8755,7 +9300,8 @@
       "儀"
     ],
     "exampleWord": "의심",
-    "exampleMeaning": "믿지 못함"
+    "exampleMeaning": "믿지 못함",
+    "radicalMeaning": "필"
   },
   {
     "id": "4급-147",
@@ -8770,7 +9316,8 @@
       "略"
     ],
     "exampleWord": "다기(異)",
-    "exampleMeaning": "다기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "다기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "밭"
   },
   {
     "id": "4급-148",
@@ -8786,7 +9333,8 @@
       "依"
     ],
     "exampleWord": "어지기(仁)",
-    "exampleMeaning": "어지기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "어지기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급-149",
@@ -8802,7 +9350,8 @@
       "負"
     ],
     "exampleWord": "자원",
-    "exampleMeaning": "재료/도움이 되는 것"
+    "exampleMeaning": "재료/도움이 되는 것",
+    "radicalMeaning": "조개"
   },
   {
     "id": "4급-150",
@@ -8820,7 +9369,8 @@
       "威"
     ],
     "exampleWord": "모양(姿)",
-    "exampleMeaning": "모양은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "모양은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "여자"
   },
   {
     "id": "4급-151",
@@ -8838,7 +9388,8 @@
       "妨"
     ],
     "exampleWord": "손윗누이(姉)",
-    "exampleMeaning": "손윗누이는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "손윗누이는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "여자"
   },
   {
     "id": "4급-152",
@@ -8853,7 +9404,8 @@
       "殺"
     ],
     "exampleWord": "남기(殘)",
-    "exampleMeaning": "남기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "남기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "뼈"
   },
   {
     "id": "4급-153",
@@ -8868,7 +9420,8 @@
       "離"
     ],
     "exampleWord": "섞일(雜)",
-    "exampleMeaning": "섞일은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "섞일은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "새"
   },
   {
     "id": "4급-154",
@@ -8884,7 +9437,8 @@
       "腸"
     ],
     "exampleWord": "장려기(獎)",
-    "exampleMeaning": "장려기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "장려기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "개"
   },
   {
     "id": "4급-155",
@@ -8902,7 +9456,8 @@
       "張"
     ],
     "exampleWord": "꾸밀(裝)",
-    "exampleMeaning": "꾸밀은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "꾸밀은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "옷"
   },
   {
     "id": "4급-156",
@@ -8920,7 +9475,8 @@
       "張"
     ],
     "exampleWord": "창자(腸)",
-    "exampleMeaning": "창자는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "창자는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "고기"
   },
   {
     "id": "4급-157",
@@ -8938,7 +9494,8 @@
       "彈"
     ],
     "exampleWord": "베풀(張)",
-    "exampleMeaning": "베풀은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "베풀은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "활"
   },
   {
     "id": "4급-158",
@@ -8953,7 +9510,8 @@
       "獎"
     ],
     "exampleWord": "장기(壯)",
-    "exampleMeaning": "장기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "장기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "선비"
   },
   {
     "id": "4급-159",
@@ -8971,7 +9529,8 @@
       "腸"
     ],
     "exampleWord": "장막(帳)",
-    "exampleMeaning": "장막은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "장막은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "수건"
   },
   {
     "id": "4급-160",
@@ -8987,7 +9546,8 @@
       "座"
     ],
     "exampleWord": "밑(底)",
-    "exampleMeaning": "밑은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "밑은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "넓은 집"
   },
   {
     "id": "4급-161",
@@ -9005,7 +9565,8 @@
       "稱"
     ],
     "exampleWord": "쌓기(積)",
-    "exampleMeaning": "쌓기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "쌓기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "벼"
   },
   {
     "id": "4급-162",
@@ -9021,7 +9582,8 @@
       "績"
     ],
     "exampleWord": "문서(籍)",
-    "exampleMeaning": "문서는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "문서는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "대나무"
   },
   {
     "id": "4급-163",
@@ -9039,7 +9601,8 @@
       "遊"
     ],
     "exampleWord": "맞기(適)",
-    "exampleMeaning": "맞기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "맞기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "4급-164",
@@ -9057,7 +9620,8 @@
       "積"
     ],
     "exampleWord": "성적",
-    "exampleMeaning": "결과 점수"
+    "exampleMeaning": "결과 점수",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급-165",
@@ -9075,7 +9639,8 @@
       "積"
     ],
     "exampleWord": "도둑(賊)",
-    "exampleMeaning": "도둑은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "도둑은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "조개"
   },
   {
     "id": "4급-166",
@@ -9090,7 +9655,8 @@
       "射"
     ],
     "exampleWord": "오로지(專)",
-    "exampleMeaning": "오로지는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "오로지는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "마디"
   },
   {
     "id": "4급-167",
@@ -9106,7 +9672,8 @@
       "錢"
     ],
     "exampleWord": "구기(轉)",
-    "exampleMeaning": "구기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "구기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "수레"
   },
   {
     "id": "4급-168",
@@ -9124,7 +9691,8 @@
       "轉"
     ],
     "exampleWord": "돈(錢)",
-    "exampleMeaning": "돈은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "돈은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "쇠"
   },
   {
     "id": "4급-169",
@@ -9142,7 +9710,8 @@
       "招"
     ],
     "exampleWord": "꺾기(折)",
-    "exampleMeaning": "꺾기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "꺾기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급-170",
@@ -9157,7 +9726,8 @@
       "占"
     ],
     "exampleWord": "점(點)",
-    "exampleMeaning": "점은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "점은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "검을"
   },
   {
     "id": "4급-171",
@@ -9172,7 +9742,8 @@
       "點"
     ],
     "exampleWord": "점령할 점(占)",
-    "exampleMeaning": "점령할점은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "점령할점은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "점"
   },
   {
     "id": "4급-172",
@@ -9187,7 +9758,8 @@
       "整"
     ],
     "exampleWord": "고요기(靜)",
-    "exampleMeaning": "고요기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "고요기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "푸를"
   },
   {
     "id": "4급-173",
@@ -9203,7 +9775,8 @@
       "打"
     ],
     "exampleWord": "고무래(丁)",
-    "exampleMeaning": "고무래는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "고무래는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "하나"
   },
   {
     "id": "4급-174",
@@ -9220,7 +9793,8 @@
       "散"
     ],
     "exampleWord": "정리",
-    "exampleMeaning": "가지런히 함"
+    "exampleMeaning": "가지런히 함",
+    "radicalMeaning": "칠"
   },
   {
     "id": "4급-175",
@@ -9235,7 +9809,8 @@
       "帳"
     ],
     "exampleWord": "임금(帝)",
-    "exampleMeaning": "임금은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "임금은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "수건"
   },
   {
     "id": "4급-176",
@@ -9253,7 +9828,8 @@
       "構"
     ],
     "exampleWord": "조건(條件)",
-    "exampleMeaning": "갖추어야 할 것"
+    "exampleMeaning": "갖추어야 할 것",
+    "radicalMeaning": "나무"
   },
   {
     "id": "4급-177",
@@ -9270,7 +9846,8 @@
       "混"
     ],
     "exampleWord": "밀물(潮)",
-    "exampleMeaning": "밀물은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "밀물은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급-178",
@@ -9288,7 +9865,8 @@
       "紀"
     ],
     "exampleWord": "짤(組)",
-    "exampleMeaning": "짤은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "짤은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급-179",
@@ -9305,7 +9883,8 @@
       "孔"
     ],
     "exampleWord": "있기(存)",
-    "exampleMeaning": "있기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "있기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "아들"
   },
   {
     "id": "4급-180",
@@ -9322,7 +9901,8 @@
       "鉛"
     ],
     "exampleWord": "쇠북(鍾)",
-    "exampleMeaning": "쇠북은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "쇠북은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "쇠"
   },
   {
     "id": "4급-181",
@@ -9337,7 +9917,8 @@
       "徒"
     ],
     "exampleWord": "좇기(從)",
-    "exampleMeaning": "좇기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "좇기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "걸을"
   },
   {
     "id": "4급-182",
@@ -9353,7 +9934,8 @@
       "底"
     ],
     "exampleWord": "자리(座)",
-    "exampleMeaning": "자리는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "자리는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "넓은 집"
   },
   {
     "id": "4급-183",
@@ -9368,7 +9950,8 @@
       "周"
     ],
     "exampleWord": "술(酒)",
-    "exampleMeaning": "술은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "술은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "닭, 술"
   },
   {
     "id": "4급-184",
@@ -9386,7 +9969,8 @@
       "核"
     ],
     "exampleWord": "붉기(朱)",
-    "exampleMeaning": "붉기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "붉기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "나무"
   },
   {
     "id": "4급-185",
@@ -9404,7 +9988,8 @@
       "朱"
     ],
     "exampleWord": "두루(周)",
-    "exampleMeaning": "두루는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "두루는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "입"
   },
   {
     "id": "4급-186",
@@ -9419,7 +10004,8 @@
       "登"
     ],
     "exampleWord": "증거(證)",
-    "exampleMeaning": "증거는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "증거는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급-187",
@@ -9437,7 +10023,8 @@
       "批"
     ],
     "exampleWord": "가지기(持)",
-    "exampleMeaning": "가지기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "가지기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급-188",
@@ -9455,7 +10042,8 @@
       "誌"
     ],
     "exampleWord": "슬기(智)",
-    "exampleMeaning": "슬기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "슬기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "4급-189",
@@ -9472,7 +10060,8 @@
       "討"
     ],
     "exampleWord": "기록기(誌)",
-    "exampleMeaning": "기록기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "기록기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급-190",
@@ -9490,7 +10079,8 @@
       "緣"
     ],
     "exampleWord": "짤(織)",
-    "exampleMeaning": "짤은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "짤은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급-191",
@@ -9505,7 +10095,8 @@
       "陣"
     ],
     "exampleWord": "보배(珍)",
-    "exampleMeaning": "보배는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "보배는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "구슬"
   },
   {
     "id": "4급-192",
@@ -9520,7 +10111,8 @@
       "盜"
     ],
     "exampleWord": "다기(盡)",
-    "exampleMeaning": "다기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "다기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "그릇"
   },
   {
     "id": "4급-193",
@@ -9537,7 +10129,8 @@
       "階"
     ],
     "exampleWord": "진치기(陣)",
-    "exampleMeaning": "진치기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "진치기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "언덕"
   },
   {
     "id": "4급-194",
@@ -9553,7 +10146,8 @@
       "羊"
     ],
     "exampleWord": "다기(差)",
-    "exampleMeaning": "다기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "다기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "장인"
   },
   {
     "id": "4급-195",
@@ -9569,7 +10163,8 @@
       "記"
     ],
     "exampleWord": "기릴(讚)",
-    "exampleMeaning": "기릴은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "기릴은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급-196",
@@ -9587,7 +10182,8 @@
       "揮"
     ],
     "exampleWord": "캘(採)",
-    "exampleMeaning": "캘은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "캘은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급-197",
@@ -9602,7 +10198,8 @@
       "曲"
     ],
     "exampleWord": "책(冊)",
-    "exampleMeaning": "책은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "책은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "멀"
   },
   {
     "id": "4급-198",
@@ -9620,7 +10217,8 @@
       "源"
     ],
     "exampleWord": "샘(泉)",
-    "exampleMeaning": "샘은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "샘은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급-199",
@@ -9635,7 +10233,8 @@
       "廳"
     ],
     "exampleWord": "들기(聽)",
-    "exampleMeaning": "들기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "들기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "귀"
   },
   {
     "id": "4급-200",
@@ -9650,7 +10249,8 @@
       "聽"
     ],
     "exampleWord": "관청(廳)",
-    "exampleMeaning": "관청은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "관청은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "넓은 집"
   },
   {
     "id": "4급-201",
@@ -9668,7 +10268,8 @@
       "折"
     ],
     "exampleWord": "부기(招)",
-    "exampleMeaning": "부기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "부기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급-202",
@@ -9686,7 +10287,8 @@
       "揮"
     ],
     "exampleWord": "밀(推)",
-    "exampleMeaning": "밀은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "밀은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급-203",
@@ -9704,7 +10306,8 @@
       "繼"
     ],
     "exampleWord": "줄일(縮)",
-    "exampleMeaning": "줄일은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "줄일은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급-204",
@@ -9719,7 +10322,8 @@
       "趣"
     ],
     "exampleWord": "나아갈(就)",
-    "exampleMeaning": "나아갈은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "나아갈은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "절름발이"
   },
   {
     "id": "4급-205",
@@ -9734,7 +10338,8 @@
       "就"
     ],
     "exampleWord": "뜻(趣)",
-    "exampleMeaning": "뜻은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "뜻은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "달릴"
   },
   {
     "id": "4급-206",
@@ -9750,7 +10355,8 @@
       "居"
     ],
     "exampleWord": "층[層階](層)",
-    "exampleMeaning": "층[層階]는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "층[層階]는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "주검"
   },
   {
     "id": "4급-207",
@@ -9765,7 +10371,8 @@
       "寄"
     ],
     "exampleWord": "잘(寢)",
-    "exampleMeaning": "잘은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "잘은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "집"
   },
   {
     "id": "4급-208",
@@ -9780,7 +10387,8 @@
       "鉛"
     ],
     "exampleWord": "바늘(針)",
-    "exampleMeaning": "바늘은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "바늘은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "쇠"
   },
   {
     "id": "4급-209",
@@ -9796,7 +10404,8 @@
       "積"
     ],
     "exampleWord": "일컬기(稱)",
-    "exampleMeaning": "일컬기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "일컬기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "벼"
   },
   {
     "id": "4급-210",
@@ -9811,7 +10420,8 @@
       "彈"
     ],
     "exampleWord": "탄식기(歎)",
-    "exampleMeaning": "탄식기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "탄식기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "하품"
   },
   {
     "id": "4급-211",
@@ -9827,7 +10437,8 @@
       "張"
     ],
     "exampleWord": "탄알(彈)",
-    "exampleMeaning": "탄알은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "탄알은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "활"
   },
   {
     "id": "4급-212",
@@ -9843,7 +10454,8 @@
       "胞"
     ],
     "exampleWord": "벗기(脫)",
-    "exampleMeaning": "벗기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "벗기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "고기"
   },
   {
     "id": "4급-213",
@@ -9861,7 +10473,8 @@
       "揮"
     ],
     "exampleWord": "탐색",
-    "exampleMeaning": "찾아봄"
+    "exampleMeaning": "찾아봄",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급-214",
@@ -9879,7 +10492,8 @@
       "援"
     ],
     "exampleWord": "선택",
-    "exampleMeaning": "골라 정함"
+    "exampleMeaning": "골라 정함",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급-215",
@@ -9895,7 +10509,8 @@
       "誌"
     ],
     "exampleWord": "치기(討)",
-    "exampleMeaning": "치기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "치기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급-216",
@@ -9910,7 +10525,8 @@
       "疲"
     ],
     "exampleWord": "아플(痛)",
-    "exampleMeaning": "아플은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "아플은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "병"
   },
   {
     "id": "4급-217",
@@ -9928,7 +10544,8 @@
       "折"
     ],
     "exampleWord": "던지기(投)",
-    "exampleMeaning": "던지기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "던지기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급-218",
@@ -9943,7 +10560,8 @@
       "投"
     ],
     "exampleWord": "싸움(鬪)",
-    "exampleMeaning": "싸움은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "싸움은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "싸울"
   },
   {
     "id": "4급-219",
@@ -9961,7 +10579,8 @@
       "源"
     ],
     "exampleWord": "갈래(派)",
-    "exampleMeaning": "갈래는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "갈래는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급-220",
@@ -9978,7 +10597,8 @@
       "刑"
     ],
     "exampleWord": "판단기(判)",
-    "exampleMeaning": "판단기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "판단기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "칼"
   },
   {
     "id": "4급-221",
@@ -9996,7 +10616,8 @@
       "筋"
     ],
     "exampleWord": "책(篇)",
-    "exampleMeaning": "책은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "책은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "대나무"
   },
   {
     "id": "4급-222",
@@ -10012,7 +10633,8 @@
       "討"
     ],
     "exampleWord": "평가",
-    "exampleMeaning": "좋고 나쁨을 따짐"
+    "exampleMeaning": "좋고 나쁨을 따짐",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급-223",
@@ -10027,7 +10649,8 @@
       "閑"
     ],
     "exampleWord": "닫기(閉)",
-    "exampleMeaning": "닫기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "닫기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "문"
   },
   {
     "id": "4급-224",
@@ -10043,7 +10666,8 @@
       "腸"
     ],
     "exampleWord": "세포(胞)",
-    "exampleMeaning": "세포는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "세포는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "고기"
   },
   {
     "id": "4급-225",
@@ -10059,7 +10683,8 @@
       "燃"
     ],
     "exampleWord": "불터지기(爆)",
-    "exampleMeaning": "불터지기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "불터지기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "불"
   },
   {
     "id": "4급-226",
@@ -10077,7 +10702,8 @@
       "樣"
     ],
     "exampleWord": "표기(標)",
-    "exampleMeaning": "표기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "표기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "나무"
   },
   {
     "id": "4급-227",
@@ -10092,7 +10718,8 @@
       "痛"
     ],
     "exampleWord": "피곤기(疲)",
-    "exampleMeaning": "피곤기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "피곤기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "병"
   },
   {
     "id": "4급-228",
@@ -10110,7 +10737,8 @@
       "遊"
     ],
     "exampleWord": "피기(避)",
-    "exampleMeaning": "피기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "피기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "4급-229",
@@ -10126,7 +10754,8 @@
       "恨"
     ],
     "exampleWord": "한가기(閑)",
-    "exampleMeaning": "한가기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "한가기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "문"
   },
   {
     "id": "4급-230",
@@ -10142,7 +10771,8 @@
       "閑"
     ],
     "exampleWord": "한[怨](恨)",
-    "exampleMeaning": "한[怨]는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "한[怨]는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급-231",
@@ -10160,7 +10790,8 @@
       "折"
     ],
     "exampleWord": "겨룰(抗)",
-    "exampleMeaning": "겨룰은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "겨룰은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급-232",
@@ -10178,7 +10809,8 @@
       "構"
     ],
     "exampleWord": "씨(核)",
-    "exampleMeaning": "씨는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "씨는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "나무"
   },
   {
     "id": "4급-233",
@@ -10195,7 +10827,8 @@
       "慰"
     ],
     "exampleWord": "법(憲)",
-    "exampleMeaning": "법은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "법은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급-234",
@@ -10211,7 +10844,8 @@
       "階"
     ],
     "exampleWord": "험기(險)",
-    "exampleMeaning": "험기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "험기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "언덕"
   },
   {
     "id": "4급-235",
@@ -10227,7 +10861,8 @@
       "花"
     ],
     "exampleWord": "가죽(革)",
-    "exampleMeaning": "가죽은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "가죽은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "가죽"
   },
   {
     "id": "4급-236",
@@ -10242,7 +10877,8 @@
       "頭"
     ],
     "exampleWord": "나타남(顯)",
-    "exampleMeaning": "나타남은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "나타남은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "머리"
   },
   {
     "id": "4급-237",
@@ -10259,7 +10895,8 @@
       "券"
     ],
     "exampleWord": "형벌(刑)",
-    "exampleMeaning": "형벌은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "형벌은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "칼"
   },
   {
     "id": "4급-238",
@@ -10274,7 +10911,8 @@
       "戒"
     ],
     "exampleWord": "혹(或)",
-    "exampleMeaning": "혹은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "혹은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "창"
   },
   {
     "id": "4급-239",
@@ -10292,7 +10930,8 @@
       "妹"
     ],
     "exampleWord": "혼인기(婚)",
-    "exampleMeaning": "혼인기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "혼인기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "여자"
   },
   {
     "id": "4급-240",
@@ -10310,7 +10949,8 @@
       "婚"
     ],
     "exampleWord": "섞기(混)",
-    "exampleMeaning": "섞기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "섞기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급-241",
@@ -10328,7 +10968,8 @@
       "組"
     ],
     "exampleWord": "붉기(紅)",
-    "exampleMeaning": "붉기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "붉기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급-242",
@@ -10345,7 +10986,8 @@
       "草"
     ],
     "exampleWord": "빛남(華)",
-    "exampleMeaning": "빛남은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "빛남은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "풀"
   },
   {
     "id": "4급-243",
@@ -10360,7 +11002,8 @@
       "環"
     ],
     "exampleWord": "기쁠(歡)",
-    "exampleMeaning": "기쁠은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "기쁠은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "하품"
   },
   {
     "id": "4급-244",
@@ -10375,7 +11018,8 @@
       "歡"
     ],
     "exampleWord": "환경",
-    "exampleMeaning": "주변의 모든 것"
+    "exampleMeaning": "주변의 모든 것",
+    "radicalMeaning": "구슬"
   },
   {
     "id": "4급-245",
@@ -10392,7 +11036,8 @@
       "混"
     ],
     "exampleWord": "상황(況)",
-    "exampleMeaning": "상황은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "상황은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급-246",
@@ -10407,7 +11052,8 @@
       "烈"
     ],
     "exampleWord": "재(灰)",
-    "exampleMeaning": "재는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "재는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "불"
   },
   {
     "id": "4급-247",
@@ -10422,7 +11068,8 @@
       "候"
     ],
     "exampleWord": "두터움(厚)",
-    "exampleMeaning": "두터움은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "두터움은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "언덕"
   },
   {
     "id": "4급-248",
@@ -10440,7 +11087,8 @@
       "傾"
     ],
     "exampleWord": "기후(候)",
-    "exampleMeaning": "기후는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "기후는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급-249",
@@ -10458,7 +11106,8 @@
       "推"
     ],
     "exampleWord": "휘두기(揮)",
-    "exampleMeaning": "휘두기는 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "휘두기는 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급-250",
@@ -10473,7 +11122,8 @@
       "周"
     ],
     "exampleWord": "기쁠(喜)",
-    "exampleMeaning": "기쁠은 이런 뜻으로 쓰는 한자말"
+    "exampleMeaning": "기쁠은 이런 뜻으로 쓰는 한자말",
+    "radicalMeaning": "입"
   },
   {
     "id": "4급Ⅱ-001",
@@ -10491,7 +11141,8 @@
       "係"
     ],
     "exampleWord": "방학(放假)",
-    "exampleMeaning": "학교를 쉬는 기간"
+    "exampleMeaning": "학교를 쉬는 기간",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급Ⅱ-002",
@@ -10507,7 +11158,8 @@
       "衛"
     ],
     "exampleWord": "거리(街路)",
-    "exampleMeaning": "사람과 차가 다니는 길"
+    "exampleMeaning": "사람과 차가 다니는 길",
+    "radicalMeaning": "다닐"
   },
   {
     "id": "4급Ⅱ-003",
@@ -10525,7 +11177,8 @@
       "測"
     ],
     "exampleWord": "감소",
-    "exampleMeaning": "줄어듦"
+    "exampleMeaning": "줄어듦",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급Ⅱ-004",
@@ -10542,7 +11195,8 @@
       "益"
     ],
     "exampleWord": "감독(監督)",
-    "exampleMeaning": "일이 잘되는지 살피고 지도함"
+    "exampleMeaning": "일이 잘되는지 살피고 지도함",
+    "radicalMeaning": "그릇"
   },
   {
     "id": "4급Ⅱ-005",
@@ -10560,7 +11214,8 @@
       "請"
     ],
     "exampleWord": "강의(講義)",
-    "exampleMeaning": "선생님이 내용을 설명해 주는 수업"
+    "exampleMeaning": "선생님이 내용을 설명해 주는 수업",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급Ⅱ-006",
@@ -10576,7 +11231,8 @@
       "床"
     ],
     "exampleWord": "건강",
-    "exampleMeaning": "몸이 편안함"
+    "exampleMeaning": "몸이 편안함",
+    "radicalMeaning": "넓은 집"
   },
   {
     "id": "4급Ⅱ-007",
@@ -10594,7 +11250,8 @@
       "俗"
     ],
     "exampleWord": "개인(個人)",
-    "exampleMeaning": "한 사람 한 사람"
+    "exampleMeaning": "한 사람 한 사람",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급Ⅱ-008",
@@ -10611,7 +11268,8 @@
       "極"
     ],
     "exampleWord": "검사(檢査)",
-    "exampleMeaning": "문제가 있는지 자세히 살펴봄"
+    "exampleMeaning": "문제가 있는지 자세히 살펴봄",
+    "radicalMeaning": "나무"
   },
   {
     "id": "4급Ⅱ-009",
@@ -10629,7 +11287,8 @@
       "準"
     ],
     "exampleWord": "청결(淸潔)",
-    "exampleMeaning": "깨끗하고 위생적인 상태"
+    "exampleMeaning": "깨끗하고 위생적인 상태",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급Ⅱ-010",
@@ -10644,7 +11303,8 @@
       "潔"
     ],
     "exampleWord": "결석(缺席)",
-    "exampleMeaning": "학교나 모임에 나오지 않음"
+    "exampleMeaning": "학교나 모임에 나오지 않음",
+    "radicalMeaning": "장군(항아리)"
   },
   {
     "id": "4급Ⅱ-011",
@@ -10662,7 +11322,8 @@
       "壁"
     ],
     "exampleWord": "환경",
-    "exampleMeaning": "주변 상태"
+    "exampleMeaning": "주변 상태",
+    "radicalMeaning": "흙"
   },
   {
     "id": "4급Ⅱ-012",
@@ -10680,7 +11341,8 @@
       "細"
     ],
     "exampleWord": "경험",
-    "exampleMeaning": "겪어 봄"
+    "exampleMeaning": "겪어 봄",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급Ⅱ-013",
@@ -10698,7 +11360,8 @@
       "謝"
     ],
     "exampleWord": "경찰",
-    "exampleMeaning": "질서를 지키는 사람"
+    "exampleMeaning": "질서를 지키는 사람",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급Ⅱ-014",
@@ -10716,7 +11379,8 @@
       "境"
     ],
     "exampleWord": "경축(慶祝)",
-    "exampleMeaning": "기쁜 일을 축하함"
+    "exampleMeaning": "기쁜 일을 축하함",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급Ⅱ-015",
@@ -10734,7 +11398,8 @@
       "修"
     ],
     "exampleWord": "관계(關係)",
-    "exampleMeaning": "서로 이어져 관련이 있음"
+    "exampleMeaning": "서로 이어져 관련이 있음",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급Ⅱ-016",
@@ -10750,7 +11415,8 @@
       "收"
     ],
     "exampleWord": "사고(事故)",
-    "exampleMeaning": "뜻하지 않게 일어난 나쁜 일"
+    "exampleMeaning": "뜻하지 않게 일어난 나쁜 일",
+    "radicalMeaning": "칠"
   },
   {
     "id": "4급Ⅱ-017",
@@ -10768,7 +11434,8 @@
       "容"
     ],
     "exampleWord": "경찰관(警察官)",
-    "exampleMeaning": "치안을 맡아 일하는 공무원"
+    "exampleMeaning": "치안을 맡아 일하는 공무원",
+    "radicalMeaning": "집"
   },
   {
     "id": "4급Ⅱ-018",
@@ -10786,7 +11453,8 @@
       "句"
     ],
     "exampleWord": "요구",
-    "exampleMeaning": "원함"
+    "exampleMeaning": "원함",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급Ⅱ-019",
@@ -10804,7 +11472,8 @@
       "求"
     ],
     "exampleWord": "문구(文句)",
-    "exampleMeaning": "글 속의 짧은 말이나 구절"
+    "exampleMeaning": "글 속의 짧은 말이나 구절",
+    "radicalMeaning": "입"
   },
   {
     "id": "4급Ⅱ-020",
@@ -10820,7 +11489,8 @@
       "句"
     ],
     "exampleWord": "연구",
-    "exampleMeaning": "깊이 파고듦"
+    "exampleMeaning": "깊이 파고듦",
+    "radicalMeaning": "구멍"
   },
   {
     "id": "4급Ⅱ-021",
@@ -10838,7 +11508,8 @@
       "富"
     ],
     "exampleWord": "궁궐(宮闕)",
-    "exampleMeaning": "왕이 살던 큰 집"
+    "exampleMeaning": "왕이 살던 큰 집",
+    "radicalMeaning": "집"
   },
   {
     "id": "4급Ⅱ-022",
@@ -10853,7 +11524,8 @@
       "勸"
     ],
     "exampleWord": "권리(權利)",
-    "exampleMeaning": "마땅히 할 수 있는 힘"
+    "exampleMeaning": "마땅히 할 수 있는 힘",
+    "radicalMeaning": "나무"
   },
   {
     "id": "4급Ⅱ-023",
@@ -10870,7 +11542,8 @@
       "檀"
     ],
     "exampleWord": "극한(極限)",
-    "exampleMeaning": "더는 넘기 어려운 끝"
+    "exampleMeaning": "더는 넘기 어려운 끝",
+    "radicalMeaning": "나무"
   },
   {
     "id": "4급Ⅱ-024",
@@ -10886,7 +11559,8 @@
       "票"
     ],
     "exampleWord": "금지",
-    "exampleMeaning": "하지 못하게 함"
+    "exampleMeaning": "하지 못하게 함",
+    "radicalMeaning": "보일"
   },
   {
     "id": "4급Ⅱ-025",
@@ -10901,7 +11575,8 @@
       "單"
     ],
     "exampleWord": "식기(食器)",
-    "exampleMeaning": "음식을 담는 그릇"
+    "exampleMeaning": "음식을 담는 그릇",
+    "radicalMeaning": "입"
   },
   {
     "id": "4급Ⅱ-026",
@@ -10916,7 +11591,8 @@
       "走"
     ],
     "exampleWord": "기회(機會)",
-    "exampleMeaning": "일어나는 때"
+    "exampleMeaning": "일어나는 때",
+    "radicalMeaning": "달릴"
   },
   {
     "id": "4급Ⅱ-027",
@@ -10934,7 +11610,8 @@
       "是"
     ],
     "exampleWord": "난방(暖房)",
-    "exampleMeaning": "방을 따뜻하게 함"
+    "exampleMeaning": "방을 따뜻하게 함",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "4급Ⅱ-028",
@@ -10949,7 +11626,8 @@
       "暖"
     ],
     "exampleWord": "곤란",
-    "exampleMeaning": "어려운 일"
+    "exampleMeaning": "어려운 일",
+    "radicalMeaning": "새"
   },
   {
     "id": "4급Ⅱ-029",
@@ -10967,7 +11645,8 @@
       "志"
     ],
     "exampleWord": "분노(憤怒)",
-    "exampleMeaning": "몹시 화가 남"
+    "exampleMeaning": "몹시 화가 남",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급Ⅱ-030",
@@ -10984,7 +11663,8 @@
       "務"
     ],
     "exampleWord": "노력(努力)",
-    "exampleMeaning": "목표를 위해 힘씀"
+    "exampleMeaning": "목표를 위해 힘씀",
+    "radicalMeaning": "힘"
   },
   {
     "id": "4급Ⅱ-031",
@@ -10999,7 +11679,8 @@
       "檀"
     ],
     "exampleWord": "판단(判斷)",
-    "exampleMeaning": "생각하여 옳고 그름을 가림"
+    "exampleMeaning": "생각하여 옳고 그름을 가림",
+    "radicalMeaning": "도끼"
   },
   {
     "id": "4급Ⅱ-032",
@@ -11017,7 +11698,8 @@
       "味"
     ],
     "exampleWord": "단독(單獨)",
-    "exampleMeaning": "혼자서 함"
+    "exampleMeaning": "혼자서 함",
+    "radicalMeaning": "입"
   },
   {
     "id": "4급Ⅱ-033",
@@ -11035,7 +11717,8 @@
       "極"
     ],
     "exampleWord": "단군(檀君)",
-    "exampleMeaning": "고조선을 세운 인물"
+    "exampleMeaning": "고조선을 세운 인물",
+    "radicalMeaning": "나무"
   },
   {
     "id": "4급Ⅱ-034",
@@ -11051,7 +11734,8 @@
       "檀"
     ],
     "exampleWord": "단정(端正)",
-    "exampleMeaning": "옷차림이나 태도가 바르고 깔끔함"
+    "exampleMeaning": "옷차림이나 태도가 바르고 깔끔함",
+    "radicalMeaning": "설"
   },
   {
     "id": "4급Ⅱ-035",
@@ -11069,7 +11753,8 @@
       "送"
     ],
     "exampleWord": "도달",
-    "exampleMeaning": "이르다"
+    "exampleMeaning": "이르다",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "4급Ⅱ-036",
@@ -11084,7 +11769,8 @@
       "提"
     ],
     "exampleWord": "담당(擔當)",
-    "exampleMeaning": "맡아서 책임지고 함"
+    "exampleMeaning": "맡아서 책임지고 함",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급Ⅱ-037",
@@ -11101,7 +11787,8 @@
       "常"
     ],
     "exampleWord": "정당(政黨)",
-    "exampleMeaning": "정치를 위해 모인 단체"
+    "exampleMeaning": "정치를 위해 모인 단체",
+    "radicalMeaning": "검을"
   },
   {
     "id": "4급Ⅱ-038",
@@ -11119,7 +11806,8 @@
       "希"
     ],
     "exampleWord": "휴대(携帶)",
-    "exampleMeaning": "가지고 다님"
+    "exampleMeaning": "가지고 다님",
+    "radicalMeaning": "수건"
   },
   {
     "id": "4급Ⅱ-039",
@@ -11137,7 +11825,8 @@
       "際"
     ],
     "exampleWord": "부대(部隊)",
-    "exampleMeaning": "군인들이 이루는 집단"
+    "exampleMeaning": "군인들이 이루는 집단",
+    "radicalMeaning": "언덕"
   },
   {
     "id": "4급Ⅱ-040",
@@ -11152,7 +11841,8 @@
       "道"
     ],
     "exampleWord": "지도(指導)",
-    "exampleMeaning": "올바른 방향으로 가르쳐 이끔"
+    "exampleMeaning": "올바른 방향으로 가르쳐 이끔",
+    "radicalMeaning": "마디"
   },
   {
     "id": "4급Ⅱ-041",
@@ -11167,7 +11857,8 @@
       "督"
     ],
     "exampleWord": "중독(中毒)",
-    "exampleMeaning": "해로운 것 때문에 몸이 상함"
+    "exampleMeaning": "해로운 것 때문에 몸이 상함",
+    "radicalMeaning": "말"
   },
   {
     "id": "4급Ⅱ-042",
@@ -11183,7 +11874,8 @@
       "眞"
     ],
     "exampleWord": "감독(監督)",
-    "exampleMeaning": "일을 살피고 지도함"
+    "exampleMeaning": "일을 살피고 지도함",
+    "radicalMeaning": "눈"
   },
   {
     "id": "4급Ⅱ-043",
@@ -11199,7 +11891,8 @@
       "錄"
     ],
     "exampleWord": "동상(銅像)",
-    "exampleMeaning": "구리로 만든 조각상"
+    "exampleMeaning": "구리로 만든 조각상",
+    "radicalMeaning": "쇠"
   },
   {
     "id": "4급Ⅱ-044",
@@ -11214,7 +11907,8 @@
       "豆"
     ],
     "exampleWord": "북두(北斗)",
-    "exampleMeaning": "북쪽 하늘의 국자 모양 별자리"
+    "exampleMeaning": "북쪽 하늘의 국자 모양 별자리",
+    "radicalMeaning": "말(되)"
   },
   {
     "id": "4급Ⅱ-045",
@@ -11229,7 +11923,8 @@
       "斗"
     ],
     "exampleWord": "완두(豌豆)",
-    "exampleMeaning": "동그랗고 작은 콩의 한 종류"
+    "exampleMeaning": "동그랗고 작은 콩의 한 종류",
+    "radicalMeaning": "콩"
   },
   {
     "id": "4급Ⅱ-046",
@@ -11246,7 +11941,8 @@
       "往"
     ],
     "exampleWord": "획득(獲得)",
-    "exampleMeaning": "손에 넣음"
+    "exampleMeaning": "손에 넣음",
+    "radicalMeaning": "걸을"
   },
   {
     "id": "4급Ⅱ-047",
@@ -11261,7 +11957,8 @@
       "煙"
     ],
     "exampleWord": "전등(電燈)",
-    "exampleMeaning": "전기로 켜는 등불"
+    "exampleMeaning": "전기로 켜는 등불",
+    "radicalMeaning": "불"
   },
   {
     "id": "4급Ⅱ-048",
@@ -11277,7 +11974,8 @@
       "羊"
     ],
     "exampleWord": "나열(羅列)",
-    "exampleMeaning": "여러 가지를 줄지어 늘어놓음"
+    "exampleMeaning": "여러 가지를 줄지어 늘어놓음",
+    "radicalMeaning": "그물"
   },
   {
     "id": "4급Ⅱ-049",
@@ -11293,7 +11991,8 @@
       "西"
     ],
     "exampleWord": "양쪽(兩쪽)",
-    "exampleMeaning": "좌우 두 편"
+    "exampleMeaning": "좌우 두 편",
+    "radicalMeaning": "들"
   },
   {
     "id": "4급Ⅱ-050",
@@ -11308,7 +12007,8 @@
       "美"
     ],
     "exampleWord": "화려(華麗)",
-    "exampleMeaning": "아름답고 빛나 보임"
+    "exampleMeaning": "아름답고 빛나 보임",
+    "radicalMeaning": "사슴"
   },
   {
     "id": "4급Ⅱ-051",
@@ -11326,7 +12026,8 @@
       "進"
     ],
     "exampleWord": "연결",
-    "exampleMeaning": "이어 붙임"
+    "exampleMeaning": "이어 붙임",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "4급Ⅱ-052",
@@ -11341,7 +12042,8 @@
       "制"
     ],
     "exampleWord": "나열(羅列)",
-    "exampleMeaning": "차례대로 줄 세움"
+    "exampleMeaning": "차례대로 줄 세움",
+    "radicalMeaning": "칼"
   },
   {
     "id": "4급Ⅱ-053",
@@ -11357,7 +12059,8 @@
       "銃"
     ],
     "exampleWord": "기록(記錄)",
-    "exampleMeaning": "내용을 적거나 남김"
+    "exampleMeaning": "내용을 적거나 남김",
+    "radicalMeaning": "쇠"
   },
   {
     "id": "4급Ⅱ-054",
@@ -11375,7 +12078,8 @@
       "請"
     ],
     "exampleWord": "토론",
-    "exampleMeaning": "서로 의견을 말함"
+    "exampleMeaning": "서로 의견을 말함",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급Ⅱ-055",
@@ -11391,7 +12095,8 @@
       "番"
     ],
     "exampleWord": "체류(滯留)",
-    "exampleMeaning": "어느 곳에 머무름"
+    "exampleMeaning": "어느 곳에 머무름",
+    "radicalMeaning": "밭"
   },
   {
     "id": "4급Ⅱ-056",
@@ -11408,7 +12113,8 @@
       "復"
     ],
     "exampleWord": "법률",
-    "exampleMeaning": "법과 규칙"
+    "exampleMeaning": "법과 규칙",
+    "radicalMeaning": "걸을"
   },
   {
     "id": "4급Ⅱ-057",
@@ -11426,7 +12132,8 @@
       "減"
     ],
     "exampleWord": "만족(滿足)",
-    "exampleMeaning": "마음에 흡족함"
+    "exampleMeaning": "마음에 흡족함",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급Ⅱ-058",
@@ -11442,7 +12149,8 @@
       "肉"
     ],
     "exampleWord": "산맥(山脈)",
-    "exampleMeaning": "산들이 길게 이어진 줄기"
+    "exampleMeaning": "산들이 길게 이어진 줄기",
+    "radicalMeaning": "고기"
   },
   {
     "id": "4급Ⅱ-059",
@@ -11457,7 +12165,8 @@
       "手"
     ],
     "exampleWord": "모포(毛布)",
-    "exampleMeaning": "두껍고 따뜻한 담요"
+    "exampleMeaning": "두껍고 따뜻한 담요",
+    "radicalMeaning": "터럭"
   },
   {
     "id": "4급Ⅱ-060",
@@ -11474,7 +12183,8 @@
       "攻"
     ],
     "exampleWord": "목장(牧場)",
-    "exampleMeaning": "소나 양을 기르는 곳"
+    "exampleMeaning": "소나 양을 기르는 곳",
+    "radicalMeaning": "소"
   },
   {
     "id": "4급Ⅱ-061",
@@ -11492,7 +12202,8 @@
       "武"
     ],
     "exampleWord": "의무(義務)",
-    "exampleMeaning": "반드시 해야 할 일"
+    "exampleMeaning": "반드시 해야 할 일",
+    "radicalMeaning": "힘"
   },
   {
     "id": "4급Ⅱ-062",
@@ -11508,7 +12219,8 @@
       "務"
     ],
     "exampleWord": "무기(武器)",
-    "exampleMeaning": "싸움에 쓰는 도구"
+    "exampleMeaning": "싸움에 쓰는 도구",
+    "radicalMeaning": "그칠"
   },
   {
     "id": "4급Ⅱ-063",
@@ -11523,7 +12235,8 @@
       "味"
     ],
     "exampleWord": "미완성",
-    "exampleMeaning": "아직 끝나지 않음"
+    "exampleMeaning": "아직 끝나지 않음",
+    "radicalMeaning": "나무"
   },
   {
     "id": "4급Ⅱ-064",
@@ -11541,7 +12254,8 @@
       "句"
     ],
     "exampleWord": "의미(意味)",
-    "exampleMeaning": "뜻, 맛"
+    "exampleMeaning": "뜻, 맛",
+    "radicalMeaning": "입"
   },
   {
     "id": "4급Ⅱ-065",
@@ -11559,7 +12273,8 @@
       "官"
     ],
     "exampleWord": "비밀(秘密)",
-    "exampleMeaning": "남에게 알리지 않는 내용"
+    "exampleMeaning": "남에게 알리지 않는 내용",
+    "radicalMeaning": "집"
   },
   {
     "id": "4급Ⅱ-066",
@@ -11574,7 +12289,8 @@
       "協"
     ],
     "exampleWord": "박사(博士)",
-    "exampleMeaning": "학문을 깊이 연구한 사람"
+    "exampleMeaning": "학문을 깊이 연구한 사람",
+    "radicalMeaning": "열"
   },
   {
     "id": "4급Ⅱ-067",
@@ -11592,7 +12308,8 @@
       "陰"
     ],
     "exampleWord": "예방",
-    "exampleMeaning": "미리 막음"
+    "exampleMeaning": "미리 막음",
+    "radicalMeaning": "언덕"
   },
   {
     "id": "4급Ⅱ-068",
@@ -11609,7 +12326,8 @@
       "訪"
     ],
     "exampleWord": "난방(暖房)",
-    "exampleMeaning": "방을 따뜻하게 함"
+    "exampleMeaning": "방을 따뜻하게 함",
+    "radicalMeaning": "지게"
   },
   {
     "id": "4급Ⅱ-069",
@@ -11627,7 +12345,8 @@
       "誠"
     ],
     "exampleWord": "방문(訪問)",
-    "exampleMeaning": "사람이나 장소를 찾아감"
+    "exampleMeaning": "사람이나 장소를 찾아감",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급Ⅱ-070",
@@ -11645,7 +12364,8 @@
       "指"
     ],
     "exampleWord": "예배(禮拜)",
-    "exampleMeaning": "종교에서 예를 올림"
+    "exampleMeaning": "종교에서 예를 올림",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급Ⅱ-071",
@@ -11663,7 +12383,8 @@
       "肉"
     ],
     "exampleWord": "등산(登山)",
-    "exampleMeaning": "산에 오름"
+    "exampleMeaning": "산에 오름",
+    "radicalMeaning": "고기"
   },
   {
     "id": "4급Ⅱ-072",
@@ -11679,7 +12400,8 @@
       "背"
     ],
     "exampleWord": "배달(配達)",
-    "exampleMeaning": "물건을 목적지까지 가져다줌"
+    "exampleMeaning": "물건을 목적지까지 가져다줌",
+    "radicalMeaning": "닭, 술"
   },
   {
     "id": "4급Ⅱ-073",
@@ -11694,7 +12416,8 @@
       "置"
     ],
     "exampleWord": "벌",
-    "exampleMeaning": "잘못해서 받음"
+    "exampleMeaning": "잘못해서 받음",
+    "radicalMeaning": "그물"
   },
   {
     "id": "4급Ⅱ-074",
@@ -11712,7 +12435,8 @@
       "保"
     ],
     "exampleWord": "벌목(伐木)",
-    "exampleMeaning": "나무를 베어 냄"
+    "exampleMeaning": "나무를 베어 냄",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급Ⅱ-075",
@@ -11730,7 +12454,8 @@
       "報"
     ],
     "exampleWord": "벽화(壁畫)",
-    "exampleMeaning": "벽에 그린 그림"
+    "exampleMeaning": "벽에 그린 그림",
+    "radicalMeaning": "흙"
   },
   {
     "id": "4급Ⅱ-076",
@@ -11745,7 +12470,8 @@
       "遠"
     ],
     "exampleWord": "주변(周邊)",
-    "exampleMeaning": "가까운 둘레"
+    "exampleMeaning": "가까운 둘레",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "4급Ⅱ-077",
@@ -11763,7 +12489,8 @@
       "修"
     ],
     "exampleWord": "보호",
-    "exampleMeaning": "지킴"
+    "exampleMeaning": "지킴",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급Ⅱ-078",
@@ -11779,7 +12506,8 @@
       "保"
     ],
     "exampleWord": "산책(散步)",
-    "exampleMeaning": "걸어 다님"
+    "exampleMeaning": "걸어 다님",
+    "radicalMeaning": "그칠"
   },
   {
     "id": "4급Ⅱ-079",
@@ -11797,7 +12525,8 @@
       "壁"
     ],
     "exampleWord": "보고",
-    "exampleMeaning": "알려줌"
+    "exampleMeaning": "알려줌",
+    "radicalMeaning": "흙"
   },
   {
     "id": "4급Ⅱ-080",
@@ -11814,7 +12543,8 @@
       "報"
     ],
     "exampleWord": "보물(寶物)",
-    "exampleMeaning": "귀하고 소중한 물건"
+    "exampleMeaning": "귀하고 소중한 물건",
+    "radicalMeaning": "집"
   },
   {
     "id": "4급Ⅱ-081",
@@ -11831,7 +12561,8 @@
       "往"
     ],
     "exampleWord": "복구(復舊)",
-    "exampleMeaning": "망가진 것을 다시 원래대로 고침"
+    "exampleMeaning": "망가진 것을 다시 원래대로 고침",
+    "radicalMeaning": "걸을"
   },
   {
     "id": "4급Ⅱ-082",
@@ -11849,7 +12580,8 @@
       "婦"
     ],
     "exampleWord": "정부(政府)",
-    "exampleMeaning": "나라를 다스리는 기관"
+    "exampleMeaning": "나라를 다스리는 기관",
+    "radicalMeaning": "넓은 집"
   },
   {
     "id": "4급Ⅱ-083",
@@ -11867,7 +12599,8 @@
       "宮"
     ],
     "exampleWord": "부자(富者)",
-    "exampleMeaning": "재산이 많은 사람"
+    "exampleMeaning": "재산이 많은 사람",
+    "radicalMeaning": "집"
   },
   {
     "id": "4급Ⅱ-084",
@@ -11885,7 +12618,8 @@
       "制"
     ],
     "exampleWord": "부회장(副會長)",
-    "exampleMeaning": "회장을 돕는 자리"
+    "exampleMeaning": "회장을 돕는 자리",
+    "radicalMeaning": "칼"
   },
   {
     "id": "4급Ⅱ-085",
@@ -11902,7 +12636,8 @@
       "府"
     ],
     "exampleWord": "부인(夫人)",
-    "exampleMeaning": "결혼한 여자"
+    "exampleMeaning": "결혼한 여자",
+    "radicalMeaning": "여자"
   },
   {
     "id": "4급Ⅱ-086",
@@ -11920,7 +12655,8 @@
       "保"
     ],
     "exampleWord": "불교(佛敎)",
-    "exampleMeaning": "부처의 가르침을 따르는 종교"
+    "exampleMeaning": "부처의 가르침을 따르는 종교",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급Ⅱ-087",
@@ -11937,7 +12673,8 @@
       "悲"
     ],
     "exampleWord": "비행기(飛行機)",
-    "exampleMeaning": "하늘을 나는 기계"
+    "exampleMeaning": "하늘을 나는 기계",
+    "radicalMeaning": "날"
   },
   {
     "id": "4급Ⅱ-088",
@@ -11955,7 +12692,8 @@
       "修"
     ],
     "exampleWord": "준비",
-    "exampleMeaning": "미리 갖춤"
+    "exampleMeaning": "미리 갖춤",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급Ⅱ-089",
@@ -11970,7 +12708,8 @@
       "飛"
     ],
     "exampleWord": "비행(非行)",
-    "exampleMeaning": "바르지 못한 행동"
+    "exampleMeaning": "바르지 못한 행동",
+    "radicalMeaning": "아닐"
   },
   {
     "id": "4급Ⅱ-090",
@@ -11988,7 +12727,8 @@
       "息"
     ],
     "exampleWord": "비극(悲劇)",
-    "exampleMeaning": "슬픈 일이 담긴 이야기"
+    "exampleMeaning": "슬픈 일이 담긴 이야기",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급Ⅱ-091",
@@ -12004,7 +12744,8 @@
       "賢"
     ],
     "exampleWord": "빈곤(貧困)",
-    "exampleMeaning": "가난하고 어려움"
+    "exampleMeaning": "가난하고 어려움",
+    "radicalMeaning": "조개"
   },
   {
     "id": "4급Ⅱ-092",
@@ -12019,7 +12760,8 @@
       "舍"
     ],
     "exampleWord": "절(寺─)",
-    "exampleMeaning": "부처를 모시는 곳"
+    "exampleMeaning": "부처를 모시는 곳",
+    "radicalMeaning": "마디"
   },
   {
     "id": "4급Ⅱ-093",
@@ -12037,7 +12779,8 @@
       "舍"
     ],
     "exampleWord": "교사(敎師)",
-    "exampleMeaning": "학생을 가르치는 사람"
+    "exampleMeaning": "학생을 가르치는 사람",
+    "radicalMeaning": "수건"
   },
   {
     "id": "4급Ⅱ-094",
@@ -12055,7 +12798,8 @@
       "請"
     ],
     "exampleWord": "감사(感謝)",
-    "exampleMeaning": "고마운 마음을 전함"
+    "exampleMeaning": "고마운 마음을 전함",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급Ⅱ-095",
@@ -12071,7 +12815,8 @@
       "師"
     ],
     "exampleWord": "기숙사(寄宿舍)",
-    "exampleMeaning": "학생이 함께 생활하는 숙소"
+    "exampleMeaning": "학생이 함께 생활하는 숙소",
+    "radicalMeaning": "혀"
   },
   {
     "id": "4급Ⅱ-096",
@@ -12087,7 +12832,8 @@
       "殘"
     ],
     "exampleWord": "살인(殺人)",
-    "exampleMeaning": "사람을 죽임"
+    "exampleMeaning": "사람을 죽임",
+    "radicalMeaning": "창"
   },
   {
     "id": "4급Ⅱ-097",
@@ -12105,7 +12851,8 @@
       "希"
     ],
     "exampleWord": "항상(恒常)",
-    "exampleMeaning": "언제나 늘"
+    "exampleMeaning": "언제나 늘",
+    "radicalMeaning": "수건"
   },
   {
     "id": "4급Ⅱ-098",
@@ -12122,7 +12869,8 @@
       "康"
     ],
     "exampleWord": "병상(病床)",
-    "exampleMeaning": "아픈 사람이 누워 있는 자리"
+    "exampleMeaning": "아픈 사람이 누워 있는 자리",
+    "radicalMeaning": "넓은 집"
   },
   {
     "id": "4급Ⅱ-099",
@@ -12140,7 +12888,8 @@
       "慶"
     ],
     "exampleWord": "상상(想像)",
-    "exampleMeaning": "머릿속으로 그림"
+    "exampleMeaning": "머릿속으로 그림",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급Ⅱ-100",
@@ -12156,7 +12905,8 @@
       "常"
     ],
     "exampleWord": "상태(狀態)",
-    "exampleMeaning": "지금의 모습이나 형편"
+    "exampleMeaning": "지금의 모습이나 형편",
+    "radicalMeaning": "개"
   },
   {
     "id": "4급Ⅱ-101",
@@ -12174,7 +12924,8 @@
       "誠"
     ],
     "exampleWord": "설명",
-    "exampleMeaning": "알기 쉽게 말함"
+    "exampleMeaning": "알기 쉽게 말함",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급Ⅱ-102",
@@ -12192,7 +12943,8 @@
       "誤"
     ],
     "exampleWord": "성실(誠實)",
-    "exampleMeaning": "정직하고 책임감 있게 행동함"
+    "exampleMeaning": "정직하고 책임감 있게 행동함",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급Ⅱ-103",
@@ -12209,7 +12961,8 @@
       "誠"
     ],
     "exampleWord": "목소리(목소리)",
-    "exampleMeaning": "사람이 말할 때 나는 소리"
+    "exampleMeaning": "사람이 말할 때 나는 소리",
+    "radicalMeaning": "귀"
   },
   {
     "id": "4급Ⅱ-104",
@@ -12227,7 +12980,8 @@
       "誠"
     ],
     "exampleWord": "번성(繁盛)",
-    "exampleMeaning": "크게 흥하고 잘됨"
+    "exampleMeaning": "크게 흥하고 잘됨",
+    "radicalMeaning": "그릇"
   },
   {
     "id": "4급Ⅱ-105",
@@ -12245,7 +12999,8 @@
       "城"
     ],
     "exampleWord": "성탄절(聖誕節)",
-    "exampleMeaning": "예수의 탄생을 기념하는 날"
+    "exampleMeaning": "예수의 탄생을 기념하는 날",
+    "radicalMeaning": "귀"
   },
   {
     "id": "4급Ⅱ-106",
@@ -12263,7 +13018,8 @@
       "境"
     ],
     "exampleWord": "성곽",
-    "exampleMeaning": "성을 둘러싼 큰 담"
+    "exampleMeaning": "성을 둘러싼 큰 담",
+    "radicalMeaning": "흙"
   },
   {
     "id": "4급Ⅱ-107",
@@ -12281,7 +13037,8 @@
       "暖"
     ],
     "exampleWord": "별자리(星자리)",
-    "exampleMeaning": "여러 별이 모여 이룬 모양"
+    "exampleMeaning": "여러 별이 모여 이룬 모양",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "4급Ⅱ-108",
@@ -12298,7 +13055,8 @@
       "細"
     ],
     "exampleWord": "세력(勢力)",
-    "exampleMeaning": "어떤 집단이 가진 힘"
+    "exampleMeaning": "어떤 집단이 가진 힘",
+    "radicalMeaning": "힘"
   },
   {
     "id": "4급Ⅱ-109",
@@ -12316,7 +13074,8 @@
       "程"
     ],
     "exampleWord": "세금(稅金)",
-    "exampleMeaning": "나라에 내는 돈"
+    "exampleMeaning": "나라에 내는 돈",
+    "radicalMeaning": "벼"
   },
   {
     "id": "4급Ⅱ-110",
@@ -12334,7 +13093,8 @@
       "統"
     ],
     "exampleWord": "상세(詳細)",
-    "exampleMeaning": "자세하고 꼼꼼함"
+    "exampleMeaning": "자세하고 꼼꼼함",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급Ⅱ-111",
@@ -12351,7 +13111,8 @@
       "竹"
     ],
     "exampleWord": "미소(笑顔)",
-    "exampleMeaning": "빙그레 웃는 표정"
+    "exampleMeaning": "빙그레 웃는 표정",
+    "radicalMeaning": "대나무"
   },
   {
     "id": "4급Ⅱ-112",
@@ -12369,7 +13130,8 @@
       "接"
     ],
     "exampleWord": "청소(淸掃)",
-    "exampleMeaning": "더러운 곳을 깨끗이 치움"
+    "exampleMeaning": "더러운 곳을 깨끗이 치움",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급Ⅱ-113",
@@ -12387,7 +13149,8 @@
       "純"
     ],
     "exampleWord": "소질(素質)",
-    "exampleMeaning": "타고난 성질이나 능력"
+    "exampleMeaning": "타고난 성질이나 능력",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급Ⅱ-114",
@@ -12402,7 +13165,8 @@
       "總"
     ],
     "exampleWord": "계속",
-    "exampleMeaning": "이어짐"
+    "exampleMeaning": "이어짐",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급Ⅱ-115",
@@ -12420,7 +13184,8 @@
       "修"
     ],
     "exampleWord": "풍속(風俗)",
-    "exampleMeaning": "그 지역에 전해 오는 생활 습관"
+    "exampleMeaning": "그 지역에 전해 오는 생활 습관",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급Ⅱ-116",
@@ -12438,7 +13203,8 @@
       "退"
     ],
     "exampleWord": "배송(配送)",
-    "exampleMeaning": "물건을 보내어 전달함"
+    "exampleMeaning": "물건을 보내어 전달함",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "4급Ⅱ-117",
@@ -12456,7 +13222,8 @@
       "保"
     ],
     "exampleWord": "수리(修理)",
-    "exampleMeaning": "고장 난 것을 고침"
+    "exampleMeaning": "고장 난 것을 고침",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급Ⅱ-118",
@@ -12474,7 +13241,8 @@
       "收"
     ],
     "exampleWord": "수신(受信)",
-    "exampleMeaning": "보내온 신호나 편지를 받음"
+    "exampleMeaning": "보내온 신호나 편지를 받음",
+    "radicalMeaning": "또"
   },
   {
     "id": "4급Ⅱ-119",
@@ -12492,7 +13260,8 @@
       "受"
     ],
     "exampleWord": "수비(守備)",
-    "exampleMeaning": "상대 공격을 막아 지킴"
+    "exampleMeaning": "상대 공격을 막아 지킴",
+    "radicalMeaning": "집"
   },
   {
     "id": "4급Ⅱ-120",
@@ -12510,7 +13279,8 @@
       "拜"
     ],
     "exampleWord": "교수(敎授)",
-    "exampleMeaning": "지식이나 기술을 가르침"
+    "exampleMeaning": "지식이나 기술을 가르침",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급Ⅱ-121",
@@ -12528,7 +13298,8 @@
       "受"
     ],
     "exampleWord": "수거(收去)",
-    "exampleMeaning": "모아서 거두어 감"
+    "exampleMeaning": "모아서 거두어 감",
+    "radicalMeaning": "칠"
   },
   {
     "id": "4급Ⅱ-122",
@@ -12546,7 +13317,8 @@
       "統"
     ],
     "exampleWord": "순수(純粹)",
-    "exampleMeaning": "다른 것이 섞이지 않고 깨끗함"
+    "exampleMeaning": "다른 것이 섞이지 않고 깨끗함",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급Ⅱ-123",
@@ -12564,7 +13336,8 @@
       "授"
     ],
     "exampleWord": "승인",
-    "exampleMeaning": "허락함"
+    "exampleMeaning": "허락함",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급Ⅱ-124",
@@ -12582,7 +13355,8 @@
       "誤"
     ],
     "exampleWord": "시인(詩人)",
-    "exampleMeaning": "시를 짓는 사람"
+    "exampleMeaning": "시를 짓는 사람",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급Ⅱ-125",
@@ -12600,7 +13374,8 @@
       "誤"
     ],
     "exampleWord": "시험(試驗)",
-    "exampleMeaning": "실력을 재 봄"
+    "exampleMeaning": "실력을 재 봄",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급Ⅱ-126",
@@ -12618,7 +13393,8 @@
       "是"
     ],
     "exampleWord": "시선(視線)",
-    "exampleMeaning": "눈이 향하는 방향"
+    "exampleMeaning": "눈이 향하는 방향",
+    "radicalMeaning": "볼"
   },
   {
     "id": "4급Ⅱ-127",
@@ -12634,7 +13410,8 @@
       "視"
     ],
     "exampleWord": "시설(施設)",
-    "exampleMeaning": "생활에 필요한 건물과 설비"
+    "exampleMeaning": "생활에 필요한 건물과 설비",
+    "radicalMeaning": "모"
   },
   {
     "id": "4급Ⅱ-128",
@@ -12652,7 +13429,8 @@
       "暖"
     ],
     "exampleWord": "시비(是非)",
-    "exampleMeaning": "옳고 그름"
+    "exampleMeaning": "옳고 그름",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "4급Ⅱ-129",
@@ -12670,7 +13448,8 @@
       "忠"
     ],
     "exampleWord": "휴식(休息)",
-    "exampleMeaning": "쉬면서 기운을 되찾음"
+    "exampleMeaning": "쉬면서 기운을 되찾음",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급Ⅱ-130",
@@ -12685,7 +13464,8 @@
       "田"
     ],
     "exampleWord": "신청(申請)",
-    "exampleMeaning": "원하는 일을 공식으로 부탁함"
+    "exampleMeaning": "원하는 일을 공식으로 부탁함",
+    "radicalMeaning": "밭"
   },
   {
     "id": "4급Ⅱ-131",
@@ -12703,7 +13483,8 @@
       "港"
     ],
     "exampleWord": "심해(深海)",
-    "exampleMeaning": "깊은 바다"
+    "exampleMeaning": "깊은 바다",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급Ⅱ-132",
@@ -12719,7 +13500,8 @@
       "督"
     ],
     "exampleWord": "안경(眼鏡)",
-    "exampleMeaning": "눈을 도와 잘 보이게 하는 도구"
+    "exampleMeaning": "눈을 도와 잘 보이게 하는 도구",
+    "radicalMeaning": "눈"
   },
   {
     "id": "4급Ⅱ-133",
@@ -12737,7 +13519,8 @@
       "是"
     ],
     "exampleWord": "암기(暗記)",
-    "exampleMeaning": "외워서 기억함"
+    "exampleMeaning": "외워서 기억함",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "4급Ⅱ-134",
@@ -12754,7 +13537,8 @@
       "境"
     ],
     "exampleWord": "압력(壓力)",
-    "exampleMeaning": "누르거나 미는 힘"
+    "exampleMeaning": "누르거나 미는 힘",
+    "radicalMeaning": "흙"
   },
   {
     "id": "4급Ⅱ-135",
@@ -12772,7 +13556,8 @@
       "港"
     ],
     "exampleWord": "혈액(血液)",
-    "exampleMeaning": "몸속을 도는 피"
+    "exampleMeaning": "몸속을 도는 피",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급Ⅱ-136",
@@ -12788,7 +13573,8 @@
       "美"
     ],
     "exampleWord": "양떼(羊떼)",
-    "exampleMeaning": "여러 마리 양의 무리"
+    "exampleMeaning": "여러 마리 양의 무리",
+    "radicalMeaning": "양"
   },
   {
     "id": "4급Ⅱ-137",
@@ -12803,7 +13589,8 @@
       "如"
     ],
     "exampleWord": "여유(餘裕)",
-    "exampleMeaning": "시간이나 마음이 넉넉함"
+    "exampleMeaning": "시간이나 마음이 넉넉함",
+    "radicalMeaning": "밥"
   },
   {
     "id": "4급Ⅱ-138",
@@ -12818,7 +13605,8 @@
       "好"
     ],
     "exampleWord": "여하(如何)",
-    "exampleMeaning": "어떠함, 어떠한지"
+    "exampleMeaning": "어떠함, 어떠한지",
+    "radicalMeaning": "여자"
   },
   {
     "id": "4급Ⅱ-139",
@@ -12836,7 +13624,8 @@
       "退"
     ],
     "exampleWord": "역주행(逆走行)",
-    "exampleMeaning": "반대 방향으로 달림"
+    "exampleMeaning": "반대 방향으로 달림",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "4급Ⅱ-140",
@@ -12853,7 +13642,8 @@
       "硏"
     ],
     "exampleWord": "금연(禁煙)",
-    "exampleMeaning": "담배를 피우지 않음"
+    "exampleMeaning": "담배를 피우지 않음",
+    "radicalMeaning": "불"
   },
   {
     "id": "4급Ⅱ-141",
@@ -12871,7 +13661,8 @@
       "確"
     ],
     "exampleWord": "연구(硏究)",
-    "exampleMeaning": "깊이 조사하고 공부함"
+    "exampleMeaning": "깊이 조사하고 공부함",
+    "radicalMeaning": "돌"
   },
   {
     "id": "4급Ⅱ-142",
@@ -12889,7 +13680,8 @@
       "準"
     ],
     "exampleWord": "연설",
-    "exampleMeaning": "많은 사람 앞에서 말함"
+    "exampleMeaning": "많은 사람 앞에서 말함",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급Ⅱ-143",
@@ -12906,7 +13698,8 @@
       "檀"
     ],
     "exampleWord": "영광(榮光)",
-    "exampleMeaning": "빛나고 자랑스러운 일"
+    "exampleMeaning": "빛나고 자랑스러운 일",
+    "radicalMeaning": "나무"
   },
   {
     "id": "4급Ⅱ-144",
@@ -12922,7 +13715,8 @@
       "熱"
     ],
     "exampleWord": "예술(藝術)",
-    "exampleMeaning": "그림·음악처럼 아름다움을 표현하는 활동"
+    "exampleMeaning": "그림·음악처럼 아름다움을 표현하는 활동",
+    "radicalMeaning": "풀"
   },
   {
     "id": "4급Ⅱ-145",
@@ -12940,7 +13734,8 @@
       "試"
     ],
     "exampleWord": "오답",
-    "exampleMeaning": "틀린 답"
+    "exampleMeaning": "틀린 답",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급Ⅱ-146",
@@ -12955,7 +13750,8 @@
       "王"
     ],
     "exampleWord": "옥석(玉石)",
-    "exampleMeaning": "옥과 돌, 또는 좋은 것과 나쁜 것"
+    "exampleMeaning": "옥과 돌, 또는 좋은 것과 나쁜 것",
+    "radicalMeaning": "구슬"
   },
   {
     "id": "4급Ⅱ-147",
@@ -12972,7 +13768,8 @@
       "復"
     ],
     "exampleWord": "왕복(往復)",
-    "exampleMeaning": "갔다가 다시 돌아옴"
+    "exampleMeaning": "갔다가 다시 돌아옴",
+    "radicalMeaning": "걸을"
   },
   {
     "id": "4급Ⅱ-148",
@@ -12990,7 +13787,8 @@
       "請"
     ],
     "exampleWord": "동요(童謠)",
-    "exampleMeaning": "어린이가 부르는 노래"
+    "exampleMeaning": "어린이가 부르는 노래",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급Ⅱ-149",
@@ -13008,7 +13806,8 @@
       "富"
     ],
     "exampleWord": "내용(內容)",
-    "exampleMeaning": "안에 담긴 것"
+    "exampleMeaning": "안에 담긴 것",
+    "radicalMeaning": "집"
   },
   {
     "id": "4급Ⅱ-150",
@@ -13023,7 +13822,8 @@
       "員"
     ],
     "exampleWord": "원형(圓形)",
-    "exampleMeaning": "동그란 모양"
+    "exampleMeaning": "동그란 모양",
+    "radicalMeaning": "에울"
   },
   {
     "id": "4급Ⅱ-151",
@@ -13041,7 +13841,8 @@
       "吸"
     ],
     "exampleWord": "직원(職員)",
-    "exampleMeaning": "회사나 기관에서 일하는 사람"
+    "exampleMeaning": "회사나 기관에서 일하는 사람",
+    "radicalMeaning": "입"
   },
   {
     "id": "4급Ⅱ-152",
@@ -13057,7 +13858,8 @@
       "爲"
     ],
     "exampleWord": "호위(護衛)",
-    "exampleMeaning": "곁에서 지키며 보호함"
+    "exampleMeaning": "곁에서 지키며 보호함",
+    "radicalMeaning": "다닐"
   },
   {
     "id": "4급Ⅱ-153",
@@ -13072,7 +13874,8 @@
       "衛"
     ],
     "exampleWord": "행위(行爲)",
-    "exampleMeaning": "사람이 하는 행동"
+    "exampleMeaning": "사람이 하는 행동",
+    "radicalMeaning": "손톱"
   },
   {
     "id": "4급Ⅱ-154",
@@ -13088,7 +13891,8 @@
       "脈"
     ],
     "exampleWord": "근육(筋肉)",
-    "exampleMeaning": "몸을 움직이게 하는 살"
+    "exampleMeaning": "몸을 움직이게 하는 살",
+    "radicalMeaning": "고기"
   },
   {
     "id": "4급Ⅱ-155",
@@ -13106,7 +13910,8 @@
       "忠"
     ],
     "exampleWord": "은혜(恩惠)",
-    "exampleMeaning": "도움을 받아 고마운 마음이 생김"
+    "exampleMeaning": "도움을 받아 고마운 마음이 생김",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급Ⅱ-156",
@@ -13124,7 +13929,8 @@
       "障"
     ],
     "exampleWord": "음지(陰地)",
-    "exampleMeaning": "햇빛이 잘 들지 않는 그늘진 곳"
+    "exampleMeaning": "햇빛이 잘 들지 않는 그늘진 곳",
+    "radicalMeaning": "언덕"
   },
   {
     "id": "4급Ⅱ-157",
@@ -13141,7 +13947,8 @@
       "想"
     ],
     "exampleWord": "대응(對應)",
-    "exampleMeaning": "상황에 맞게 알맞게 대처함"
+    "exampleMeaning": "상황에 맞게 알맞게 대처함",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급Ⅱ-158",
@@ -13159,7 +13966,8 @@
       "謝"
     ],
     "exampleWord": "회의",
-    "exampleMeaning": "모여서 의논함"
+    "exampleMeaning": "모여서 의논함",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급Ⅱ-159",
@@ -13175,7 +13983,8 @@
       "儀"
     ],
     "exampleWord": "의견",
-    "exampleMeaning": "생각/주장"
+    "exampleMeaning": "생각/주장",
+    "radicalMeaning": "양"
   },
   {
     "id": "4급Ⅱ-160",
@@ -13191,7 +14000,8 @@
       "程"
     ],
     "exampleWord": "이동",
-    "exampleMeaning": "옮겨 감"
+    "exampleMeaning": "옮겨 감",
+    "radicalMeaning": "벼"
   },
   {
     "id": "4급Ⅱ-161",
@@ -13207,7 +14017,8 @@
       "監"
     ],
     "exampleWord": "이익",
-    "exampleMeaning": "도움이 됨"
+    "exampleMeaning": "도움이 됨",
+    "radicalMeaning": "그릇"
   },
   {
     "id": "4급Ⅱ-162",
@@ -13222,7 +14033,8 @@
       "引"
     ],
     "exampleWord": "인쇄(印刷)",
-    "exampleMeaning": "글이나 그림을 찍어 냄"
+    "exampleMeaning": "글이나 그림을 찍어 냄",
+    "radicalMeaning": "병부"
   },
   {
     "id": "4급Ⅱ-163",
@@ -13237,7 +14049,8 @@
       "印"
     ],
     "exampleWord": "인용(引用)",
-    "exampleMeaning": "다른 글이나 말을 가져다 씀"
+    "exampleMeaning": "다른 글이나 말을 가져다 씀",
+    "radicalMeaning": "활"
   },
   {
     "id": "4급Ⅱ-164",
@@ -13255,7 +14068,8 @@
       "試"
     ],
     "exampleWord": "인정",
-    "exampleMeaning": "맞다고 함"
+    "exampleMeaning": "맞다고 함",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급Ⅱ-165",
@@ -13271,7 +14085,8 @@
       "障"
     ],
     "exampleWord": "장군(將軍)",
-    "exampleMeaning": "군대를 이끄는 높은 자리"
+    "exampleMeaning": "군대를 이끄는 높은 자리",
+    "radicalMeaning": "마디"
   },
   {
     "id": "4급Ⅱ-166",
@@ -13289,7 +14104,8 @@
       "除"
     ],
     "exampleWord": "장애(障礙)",
-    "exampleMeaning": "일을 막아 어렵게 하는 것"
+    "exampleMeaning": "일을 막아 어렵게 하는 것",
+    "radicalMeaning": "언덕"
   },
   {
     "id": "4급Ⅱ-167",
@@ -13307,7 +14123,8 @@
       "保"
     ],
     "exampleWord": "저소득",
-    "exampleMeaning": "낮은 소득"
+    "exampleMeaning": "낮은 소득",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급Ⅱ-168",
@@ -13322,7 +14139,8 @@
       "適"
     ],
     "exampleWord": "적군(敵軍)",
-    "exampleMeaning": "싸움에서 맞서는 상대 군대"
+    "exampleMeaning": "싸움에서 맞서는 상대 군대",
+    "radicalMeaning": "칠"
   },
   {
     "id": "4급Ⅱ-169",
@@ -13337,7 +14155,8 @@
       "申"
     ],
     "exampleWord": "논밭(田畓)",
-    "exampleMeaning": "벼나 작물을 기르는 땅"
+    "exampleMeaning": "벼나 작물을 기르는 땅",
+    "radicalMeaning": "밭"
   },
   {
     "id": "4급Ⅱ-170",
@@ -13355,7 +14174,8 @@
       "素"
     ],
     "exampleWord": "절대(絶對)",
-    "exampleMeaning": "어떤 경우에도 틀림없음"
+    "exampleMeaning": "어떤 경우에도 틀림없음",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급Ⅱ-171",
@@ -13373,7 +14193,8 @@
       "拜"
     ],
     "exampleWord": "접촉(接觸)",
-    "exampleMeaning": "서로 닿거나 만남"
+    "exampleMeaning": "서로 닿거나 만남",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급Ⅱ-172",
@@ -13390,7 +14211,8 @@
       "程"
     ],
     "exampleWord": "정치",
-    "exampleMeaning": "나라 일을 다스림"
+    "exampleMeaning": "나라 일을 다스림",
+    "radicalMeaning": "칠"
   },
   {
     "id": "4급Ⅱ-173",
@@ -13408,7 +14230,8 @@
       "政"
     ],
     "exampleWord": "일정(日程)",
-    "exampleMeaning": "해야 할 일의 시간 계획"
+    "exampleMeaning": "해야 할 일의 시간 계획",
+    "radicalMeaning": "벼"
   },
   {
     "id": "4급Ⅱ-174",
@@ -13423,7 +14246,8 @@
       "程"
     ],
     "exampleWord": "정밀(精密)",
-    "exampleMeaning": "아주 자세하고 틀림이 없음"
+    "exampleMeaning": "아주 자세하고 틀림이 없음",
+    "radicalMeaning": "쌀"
   },
   {
     "id": "4급Ⅱ-175",
@@ -13441,7 +14265,8 @@
       "準"
     ],
     "exampleWord": "경제",
-    "exampleMeaning": "돈과 물건의 흐름"
+    "exampleMeaning": "돈과 물건의 흐름",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급Ⅱ-176",
@@ -13459,7 +14284,8 @@
       "祭"
     ],
     "exampleWord": "제안(提案)",
-    "exampleMeaning": "생각을 내어 의견으로 냄"
+    "exampleMeaning": "생각을 내어 의견으로 냄",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급Ⅱ-177",
@@ -13477,7 +14303,8 @@
       "創"
     ],
     "exampleWord": "통제(統制)",
-    "exampleMeaning": "마음대로 하지 못하게 조절함"
+    "exampleMeaning": "마음대로 하지 못하게 조절함",
+    "radicalMeaning": "칼"
   },
   {
     "id": "4급Ⅱ-178",
@@ -13495,7 +14322,8 @@
       "祭"
     ],
     "exampleWord": "제작",
-    "exampleMeaning": "만들어 냄"
+    "exampleMeaning": "만들어 냄",
+    "radicalMeaning": "옷"
   },
   {
     "id": "4급Ⅱ-179",
@@ -13513,7 +14341,8 @@
       "限"
     ],
     "exampleWord": "제거(除去)",
-    "exampleMeaning": "없애 버림"
+    "exampleMeaning": "없애 버림",
+    "radicalMeaning": "언덕"
   },
   {
     "id": "4급Ⅱ-180",
@@ -13531,7 +14360,8 @@
       "隊"
     ],
     "exampleWord": "국제",
-    "exampleMeaning": "나라와 나라 사이"
+    "exampleMeaning": "나라와 나라 사이",
+    "radicalMeaning": "언덕"
   },
   {
     "id": "4급Ⅱ-181",
@@ -13549,7 +14379,8 @@
       "禁"
     ],
     "exampleWord": "축제(祝祭)",
-    "exampleMeaning": "기쁘게 즐기며 기념하는 행사"
+    "exampleMeaning": "기쁘게 즐기며 기념하는 행사",
+    "radicalMeaning": "보일"
   },
   {
     "id": "4급Ⅱ-182",
@@ -13564,7 +14395,8 @@
       "造"
     ],
     "exampleWord": "조류(鳥類)",
-    "exampleMeaning": "새의 무리"
+    "exampleMeaning": "새의 무리",
+    "radicalMeaning": "새"
   },
   {
     "id": "4급Ⅱ-183",
@@ -13581,7 +14413,8 @@
       "務"
     ],
     "exampleWord": "도움",
-    "exampleMeaning": "도와줌"
+    "exampleMeaning": "도와줌",
+    "radicalMeaning": "힘"
   },
   {
     "id": "4급Ⅱ-184",
@@ -13598,7 +14431,8 @@
       "是"
     ],
     "exampleWord": "조기(早期)",
-    "exampleMeaning": "이른 시기"
+    "exampleMeaning": "이른 시기",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "4급Ⅱ-185",
@@ -13616,7 +14450,8 @@
       "逆"
     ],
     "exampleWord": "제조",
-    "exampleMeaning": "만들어 냄"
+    "exampleMeaning": "만들어 냄",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "4급Ⅱ-186",
@@ -13632,7 +14467,8 @@
       "導"
     ],
     "exampleWord": "존중(尊重)",
-    "exampleMeaning": "소중히 여기고 예의를 지킴"
+    "exampleMeaning": "소중히 여기고 예의를 지킴",
+    "radicalMeaning": "마디"
   },
   {
     "id": "4급Ⅱ-187",
@@ -13650,7 +14486,8 @@
       "容"
     ],
     "exampleWord": "종교(宗敎)",
-    "exampleMeaning": "신을 믿고 따르는 가르침"
+    "exampleMeaning": "신을 믿고 따르는 가르침",
+    "radicalMeaning": "집"
   },
   {
     "id": "4급Ⅱ-188",
@@ -13665,7 +14502,8 @@
       "起"
     ],
     "exampleWord": "질주(疾走)",
-    "exampleMeaning": "아주 빠르게 달림"
+    "exampleMeaning": "아주 빠르게 달림",
+    "radicalMeaning": "달릴"
   },
   {
     "id": "4급Ⅱ-189",
@@ -13680,7 +14518,8 @@
       "笑"
     ],
     "exampleWord": "대나무(竹)",
-    "exampleMeaning": "줄기가 곧고 속이 빈 식물"
+    "exampleMeaning": "줄기가 곧고 속이 빈 식물",
+    "radicalMeaning": "대나무"
   },
   {
     "id": "4급Ⅱ-190",
@@ -13698,7 +14537,8 @@
       "測"
     ],
     "exampleWord": "준비",
-    "exampleMeaning": "미리 갖춤"
+    "exampleMeaning": "미리 갖춤",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급Ⅱ-191",
@@ -13713,7 +14553,8 @@
       "象"
     ],
     "exampleWord": "대중(大衆)",
-    "exampleMeaning": "많은 사람들"
+    "exampleMeaning": "많은 사람들",
+    "radicalMeaning": "피"
   },
   {
     "id": "4급Ⅱ-192",
@@ -13731,7 +14572,8 @@
       "報"
     ],
     "exampleWord": "증가",
-    "exampleMeaning": "늘어남"
+    "exampleMeaning": "늘어남",
+    "radicalMeaning": "흙"
   },
   {
     "id": "4급Ⅱ-193",
@@ -13749,7 +14591,8 @@
       "至"
     ],
     "exampleWord": "의지(意志)",
-    "exampleMeaning": "해내려는 굳은 마음"
+    "exampleMeaning": "해내려는 굳은 마음",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급Ⅱ-194",
@@ -13767,7 +14610,8 @@
       "授"
     ],
     "exampleWord": "손가락(手指)",
-    "exampleMeaning": "손 끝의 가늘고 긴 부분"
+    "exampleMeaning": "손 끝의 가늘고 긴 부분",
+    "radicalMeaning": "손"
   },
   {
     "id": "4급Ⅱ-195",
@@ -13783,7 +14627,8 @@
       "志"
     ],
     "exampleWord": "지원",
-    "exampleMeaning": "도와줌"
+    "exampleMeaning": "도와줌",
+    "radicalMeaning": "지탱할"
   },
   {
     "id": "4급Ⅱ-196",
@@ -13800,7 +14645,8 @@
       "指"
     ],
     "exampleWord": "지급(至急)",
-    "exampleMeaning": "매우 급함"
+    "exampleMeaning": "매우 급함",
+    "radicalMeaning": "이를"
   },
   {
     "id": "4급Ⅱ-197",
@@ -13815,7 +14661,8 @@
       "聲"
     ],
     "exampleWord": "직업(職業)",
-    "exampleMeaning": "사람이 맡아 하는 일"
+    "exampleMeaning": "사람이 맡아 하는 일",
+    "radicalMeaning": "귀"
   },
   {
     "id": "4급Ⅱ-198",
@@ -13833,7 +14680,8 @@
       "送"
     ],
     "exampleWord": "전진",
-    "exampleMeaning": "앞으로 나아감"
+    "exampleMeaning": "앞으로 나아감",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "4급Ⅱ-199",
@@ -13850,7 +14698,8 @@
       "進"
     ],
     "exampleWord": "진실(眞實)",
-    "exampleMeaning": "거짓이 아닌 참된 것"
+    "exampleMeaning": "거짓이 아닌 참된 것",
+    "radicalMeaning": "눈"
   },
   {
     "id": "4급Ⅱ-200",
@@ -13865,7 +14714,8 @@
       "歌"
     ],
     "exampleWord": "차례(次例)",
-    "exampleMeaning": "순서대로 돌아오는 번"
+    "exampleMeaning": "순서대로 돌아오는 번",
+    "radicalMeaning": "하품"
   },
   {
     "id": "4급Ⅱ-201",
@@ -13883,7 +14733,8 @@
       "容"
     ],
     "exampleWord": "경찰",
-    "exampleMeaning": "살피고 지킴"
+    "exampleMeaning": "살피고 지킴",
+    "radicalMeaning": "집"
   },
   {
     "id": "4급Ⅱ-202",
@@ -13899,7 +14750,8 @@
       "制"
     ],
     "exampleWord": "창작(創作)",
-    "exampleMeaning": "새로운 것을 만들어 냄"
+    "exampleMeaning": "새로운 것을 만들어 냄",
+    "radicalMeaning": "칼"
   },
   {
     "id": "4급Ⅱ-203",
@@ -13914,7 +14766,8 @@
       "虛"
     ],
     "exampleWord": "처리(處理)",
-    "exampleMeaning": "문제를 알맞게 해결함"
+    "exampleMeaning": "문제를 알맞게 해결함",
+    "radicalMeaning": "범"
   },
   {
     "id": "4급Ⅱ-204",
@@ -13932,7 +14785,8 @@
       "認"
     ],
     "exampleWord": "요청(要請)",
-    "exampleMeaning": "필요한 일을 부탁함"
+    "exampleMeaning": "필요한 일을 부탁함",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급Ⅱ-205",
@@ -13948,7 +14802,8 @@
       "續"
     ],
     "exampleWord": "총합(總合)",
-    "exampleMeaning": "모두 더한 전체"
+    "exampleMeaning": "모두 더한 전체",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급Ⅱ-206",
@@ -13965,7 +14820,8 @@
       "總"
     ],
     "exampleWord": "권총(拳銃)",
-    "exampleMeaning": "손에 들고 쏘는 총"
+    "exampleMeaning": "손에 들고 쏘는 총",
+    "radicalMeaning": "쇠"
   },
   {
     "id": "4급Ⅱ-207",
@@ -13980,7 +14836,8 @@
       "蓄"
     ],
     "exampleWord": "건축",
-    "exampleMeaning": "건물을 지음"
+    "exampleMeaning": "건물을 지음",
+    "radicalMeaning": "대나무"
   },
   {
     "id": "4급Ⅱ-208",
@@ -13995,7 +14852,8 @@
       "築"
     ],
     "exampleWord": "저축(貯蓄)",
-    "exampleMeaning": "돈을 모아 둠"
+    "exampleMeaning": "돈을 모아 둠",
+    "radicalMeaning": "풀"
   },
   {
     "id": "4급Ⅱ-209",
@@ -14013,7 +14871,8 @@
       "息"
     ],
     "exampleWord": "충고(忠告)",
-    "exampleMeaning": "상대를 위해 바르게 조언함"
+    "exampleMeaning": "상대를 위해 바르게 조언함",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급Ⅱ-210",
@@ -14028,7 +14887,8 @@
       "忠"
     ],
     "exampleWord": "곤충(昆蟲)",
-    "exampleMeaning": "작은 벌레의 한 종류"
+    "exampleMeaning": "작은 벌레의 한 종류",
+    "radicalMeaning": "벌레"
   },
   {
     "id": "4급Ⅱ-211",
@@ -14043,7 +14903,8 @@
       "受"
     ],
     "exampleWord": "취득(取得)",
-    "exampleMeaning": "자격이나 물건을 얻음"
+    "exampleMeaning": "자격이나 물건을 얻음",
+    "radicalMeaning": "또"
   },
   {
     "id": "4급Ⅱ-212",
@@ -14061,7 +14922,8 @@
       "準"
     ],
     "exampleWord": "측정(測定)",
-    "exampleMeaning": "길이·무게 등을 재어 봄"
+    "exampleMeaning": "길이·무게 등을 재어 봄",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급Ⅱ-213",
@@ -14079,7 +14941,8 @@
       "液"
     ],
     "exampleWord": "치료",
-    "exampleMeaning": "병을 고침"
+    "exampleMeaning": "병을 고침",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급Ⅱ-214",
@@ -14095,7 +14958,8 @@
       "齒"
     ],
     "exampleWord": "배치",
-    "exampleMeaning": "놓아 둠"
+    "exampleMeaning": "놓아 둠",
+    "radicalMeaning": "그물"
   },
   {
     "id": "4급Ⅱ-215",
@@ -14110,7 +14974,8 @@
       "置"
     ],
     "exampleWord": "치아(齒牙)",
-    "exampleMeaning": "이를 이루는 딱딱한 부분"
+    "exampleMeaning": "이를 이루는 딱딱한 부분",
+    "radicalMeaning": "이"
   },
   {
     "id": "4급Ⅱ-216",
@@ -14128,7 +14993,8 @@
       "俗"
     ],
     "exampleWord": "침입(侵入)",
-    "exampleMeaning": "허락 없이 들어옴"
+    "exampleMeaning": "허락 없이 들어옴",
+    "radicalMeaning": "사람"
   },
   {
     "id": "4급Ⅱ-217",
@@ -14146,7 +15012,8 @@
       "息"
     ],
     "exampleWord": "쾌적(快適)",
-    "exampleMeaning": "상쾌하고 기분이 좋음"
+    "exampleMeaning": "상쾌하고 기분이 좋음",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급Ⅱ-218",
@@ -14164,7 +15031,8 @@
       "惠"
     ],
     "exampleWord": "태도(態度)",
-    "exampleMeaning": "행동이나 마음가짐의 모습"
+    "exampleMeaning": "행동이나 마음가짐의 모습",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급Ⅱ-219",
@@ -14182,7 +15050,8 @@
       "素"
     ],
     "exampleWord": "통합",
-    "exampleMeaning": "하나로 합침"
+    "exampleMeaning": "하나로 합침",
+    "radicalMeaning": "실"
   },
   {
     "id": "4급Ⅱ-220",
@@ -14200,7 +15069,8 @@
       "造"
     ],
     "exampleWord": "후퇴",
-    "exampleMeaning": "뒤로 물러남"
+    "exampleMeaning": "뒤로 물러남",
+    "radicalMeaning": "쉬엄쉬엄 갈"
   },
   {
     "id": "4급Ⅱ-221",
@@ -14218,7 +15088,8 @@
       "液"
     ],
     "exampleWord": "파도(波濤)",
-    "exampleMeaning": "바다에서 물결이 밀려옴"
+    "exampleMeaning": "바다에서 물결이 밀려옴",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급Ⅱ-222",
@@ -14235,7 +15106,8 @@
       "波"
     ],
     "exampleWord": "파손(破損)",
-    "exampleMeaning": "깨지거나 부서짐"
+    "exampleMeaning": "깨지거나 부서짐",
+    "radicalMeaning": "돌"
   },
   {
     "id": "4급Ⅱ-223",
@@ -14251,7 +15123,8 @@
       "破"
     ],
     "exampleWord": "대포(大砲)",
-    "exampleMeaning": "큰 총포 무기"
+    "exampleMeaning": "큰 총포 무기",
+    "radicalMeaning": "돌"
   },
   {
     "id": "4급Ⅱ-224",
@@ -14266,7 +15139,8 @@
       "布"
     ],
     "exampleWord": "포장(包裝)",
-    "exampleMeaning": "물건을 싸서 담음"
+    "exampleMeaning": "물건을 싸서 담음",
+    "radicalMeaning": "쌀"
   },
   {
     "id": "4급Ⅱ-225",
@@ -14281,7 +15155,8 @@
       "希"
     ],
     "exampleWord": "배포(配布)",
-    "exampleMeaning": "여럿에게 나누어 줌"
+    "exampleMeaning": "여럿에게 나누어 줌",
+    "radicalMeaning": "수건"
   },
   {
     "id": "4급Ⅱ-226",
@@ -14297,7 +15172,8 @@
       "暗"
     ],
     "exampleWord": "폭우(暴雨)",
-    "exampleMeaning": "갑자기 매우 세게 내리는 비"
+    "exampleMeaning": "갑자기 매우 세게 내리는 비",
+    "radicalMeaning": "해, 날"
   },
   {
     "id": "4급Ⅱ-227",
@@ -14313,7 +15189,8 @@
       "禁"
     ],
     "exampleWord": "투표(投票)",
-    "exampleMeaning": "선택을 표로 나타냄"
+    "exampleMeaning": "선택을 표로 나타냄",
+    "radicalMeaning": "보일"
   },
   {
     "id": "4급Ⅱ-228",
@@ -14330,7 +15207,8 @@
       "曲"
     ],
     "exampleWord": "풍년(豊年)",
-    "exampleMeaning": "곡식이 많이 잘된 해"
+    "exampleMeaning": "곡식이 많이 잘된 해",
+    "radicalMeaning": "콩"
   },
   {
     "id": "4급Ⅱ-229",
@@ -14348,7 +15226,8 @@
       "隊"
     ],
     "exampleWord": "한계(限界)",
-    "exampleMeaning": "더는 넘기 어려운 끝점"
+    "exampleMeaning": "더는 넘기 어려운 끝점",
+    "radicalMeaning": "언덕"
   },
   {
     "id": "4급Ⅱ-230",
@@ -14363,7 +15242,8 @@
       "港"
     ],
     "exampleWord": "항공",
-    "exampleMeaning": "비행과 관련"
+    "exampleMeaning": "비행과 관련",
+    "radicalMeaning": "배"
   },
   {
     "id": "4급Ⅱ-231",
@@ -14381,7 +15261,8 @@
       "準"
     ],
     "exampleWord": "항구(港口)",
-    "exampleMeaning": "배가 드나드는 바닷가"
+    "exampleMeaning": "배가 드나드는 바닷가",
+    "radicalMeaning": "물"
   },
   {
     "id": "4급Ⅱ-232",
@@ -14396,7 +15277,8 @@
       "角"
     ],
     "exampleWord": "해결(解決)",
-    "exampleMeaning": "문제를 풀어 끝냄"
+    "exampleMeaning": "문제를 풀어 끝냄",
+    "radicalMeaning": "뿔"
   },
   {
     "id": "4급Ⅱ-233",
@@ -14411,7 +15293,8 @@
       "香"
     ],
     "exampleWord": "고향(故鄕)",
-    "exampleMeaning": "자기가 태어나 자란 곳"
+    "exampleMeaning": "자기가 태어나 자란 곳",
+    "radicalMeaning": "고을"
   },
   {
     "id": "4급Ⅱ-234",
@@ -14426,7 +15309,8 @@
       "鄕"
     ],
     "exampleWord": "향기(香氣)",
-    "exampleMeaning": "좋은 냄새"
+    "exampleMeaning": "좋은 냄새",
+    "radicalMeaning": "향기"
   },
   {
     "id": "4급Ⅱ-235",
@@ -14441,7 +15325,8 @@
       "處"
     ],
     "exampleWord": "허공(虛空)",
-    "exampleMeaning": "아무것도 없는 빈 공간"
+    "exampleMeaning": "아무것도 없는 빈 공간",
+    "radicalMeaning": "범"
   },
   {
     "id": "4급Ⅱ-236",
@@ -14457,7 +15342,8 @@
       "檢"
     ],
     "exampleWord": "실험",
-    "exampleMeaning": "직접 해 봄"
+    "exampleMeaning": "직접 해 봄",
+    "radicalMeaning": "말"
   },
   {
     "id": "4급Ⅱ-237",
@@ -14473,7 +15359,8 @@
       "貨"
     ],
     "exampleWord": "현명(賢明)",
-    "exampleMeaning": "슬기롭고 판단이 바름"
+    "exampleMeaning": "슬기롭고 판단이 바름",
+    "radicalMeaning": "조개"
   },
   {
     "id": "4급Ⅱ-238",
@@ -14488,7 +15375,8 @@
       "衆"
     ],
     "exampleWord": "헌혈(獻血)",
-    "exampleMeaning": "자신의 피를 나누어 줌"
+    "exampleMeaning": "자신의 피를 나누어 줌",
+    "radicalMeaning": "피"
   },
   {
     "id": "4급Ⅱ-239",
@@ -14503,7 +15391,8 @@
       "博"
     ],
     "exampleWord": "협동(協同)",
-    "exampleMeaning": "서로 힘을 합쳐 함께 일함"
+    "exampleMeaning": "서로 힘을 합쳐 함께 일함",
+    "radicalMeaning": "열"
   },
   {
     "id": "4급Ⅱ-240",
@@ -14521,7 +15410,8 @@
       "恩"
     ],
     "exampleWord": "혜택(惠澤)",
-    "exampleMeaning": "도움을 받아 누리는 이익"
+    "exampleMeaning": "도움을 받아 누리는 이익",
+    "radicalMeaning": "마음"
   },
   {
     "id": "4급Ⅱ-241",
@@ -14538,7 +15428,8 @@
       "呼"
     ],
     "exampleWord": "호감(好感)",
-    "exampleMeaning": "좋게 느끼는 마음"
+    "exampleMeaning": "좋게 느끼는 마음",
+    "radicalMeaning": "여자"
   },
   {
     "id": "4급Ⅱ-242",
@@ -14554,7 +15445,8 @@
       "房"
     ],
     "exampleWord": "가구(家戶)",
-    "exampleMeaning": "한 집에서 사는 식구 단위"
+    "exampleMeaning": "한 집에서 사는 식구 단위",
+    "radicalMeaning": "지게"
   },
   {
     "id": "4급Ⅱ-243",
@@ -14572,7 +15464,8 @@
       "謝"
     ],
     "exampleWord": "보호",
-    "exampleMeaning": "지켜줌"
+    "exampleMeaning": "지켜줌",
+    "radicalMeaning": "말씀"
   },
   {
     "id": "4급Ⅱ-244",
@@ -14590,7 +15483,8 @@
       "句"
     ],
     "exampleWord": "호출(呼出)",
-    "exampleMeaning": "이름을 불러 오게 함"
+    "exampleMeaning": "이름을 불러 오게 함",
+    "radicalMeaning": "입"
   },
   {
     "id": "4급Ⅱ-245",
@@ -14606,7 +15500,8 @@
       "賢"
     ],
     "exampleWord": "화물(貨物)",
-    "exampleMeaning": "운반하는 짐이나 물건"
+    "exampleMeaning": "운반하는 짐이나 물건",
+    "radicalMeaning": "조개"
   },
   {
     "id": "4급Ⅱ-246",
@@ -14621,7 +15516,8 @@
       "硏"
     ],
     "exampleWord": "확실",
-    "exampleMeaning": "틀림없음"
+    "exampleMeaning": "틀림없음",
+    "radicalMeaning": "돌"
   },
   {
     "id": "4급Ⅱ-247",
@@ -14637,7 +15533,8 @@
       "國"
     ],
     "exampleWord": "회전(回轉)",
-    "exampleMeaning": "빙글빙글 돎"
+    "exampleMeaning": "빙글빙글 돎",
+    "radicalMeaning": "에울"
   },
   {
     "id": "4급Ⅱ-248",
@@ -14655,7 +15552,8 @@
       "員"
     ],
     "exampleWord": "호흡(呼吸)",
-    "exampleMeaning": "숨을 들이쉬고 내쉼"
+    "exampleMeaning": "숨을 들이쉬고 내쉼",
+    "radicalMeaning": "입"
   },
   {
     "id": "4급Ⅱ-249",
@@ -14670,7 +15568,8 @@
       "與"
     ],
     "exampleWord": "흥미(興味)",
-    "exampleMeaning": "재미를 느끼는 마음"
+    "exampleMeaning": "재미를 느끼는 마음",
+    "radicalMeaning": "절구"
   },
   {
     "id": "4급Ⅱ-250",
@@ -14688,6 +15587,7 @@
       "常"
     ],
     "exampleWord": "희망(希望)",
-    "exampleMeaning": "앞으로 잘되길 바라는 마음"
+    "exampleMeaning": "앞으로 잘되길 바라는 마음",
+    "radicalMeaning": "수건"
   }
 ]

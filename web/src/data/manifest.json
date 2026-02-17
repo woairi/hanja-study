@@ -1,11 +1,11 @@
 {
   "dataset_version": "0.1.0",
   "schema_version": 1,
-  "build_id": "78ef0082",
+  "build_id": "b5e17cf1",
   "checksum": {
     "algo": "sha256",
-    "hex": "78ef00826520e29dc703cd3128f5a2be29c1b605d0c26c56af89d765399f76d9",
+    "hex": "b5e17cf10d71067b090dcd5d9ac7549e844a50e0586df0750b7f5ec155b02be4",
     "file": "kanji.json"
   },
-  "created_at": "2026-02-17T08:03:20.505Z"
+  "created_at": "2026-02-17T08:08:11.689Z"
 }

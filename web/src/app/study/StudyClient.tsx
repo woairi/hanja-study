@@ -354,7 +354,7 @@ export default function StudyClient() {
             <>
               <div className="text-xl font-semibold">{current.meaning} {current.reading}</div>
               <div className="mt-2 text-sm text-gray-600">
-                부수: {current.radical ?? '-'} · 획수: {current.totalStrokes ?? '-'}
+                부수: {current.radical ?? '-'}{current.radicalMeaning ? `(${current.radicalMeaning})` : ''} · 획수: {current.totalStrokes ?? '-'}
               </div>
               {current.exampleWord && (
                 <div className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>

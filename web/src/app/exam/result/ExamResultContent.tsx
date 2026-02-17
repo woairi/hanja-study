@@ -220,7 +220,14 @@ export default function ExamResultContent() {
             {wrongItems.map((k) => (
               <div key={k.id} className="flex items-center gap-3 rounded-xl bg-white/70 px-3 py-2">
                 <span className="text-xl font-extrabold">{k.hanja}</span>
-                <div className="text-xs" style={{ color: 'var(--muted)' }}>{k.meaning} · {k.reading}</div>
+                <div className="min-w-0 flex-1">
+                  <div className="text-xs" style={{ color: 'var(--muted)' }}>{k.meaning} · {k.reading}</div>
+                  {k.radical && (
+                    <div className="text-xs" style={{ color: 'var(--muted)' }}>
+                      부수: {k.radical}{k.radicalMeaning ? `(${k.radicalMeaning})` : ''}
+                    </div>
+                  )}
+                </div>
               </div>
             ))}
           </div>

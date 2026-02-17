@@ -12,6 +12,7 @@ export type KanjiItem = {
   confusables?: string[];
   exampleWord?: string;
   exampleMeaning?: string;
+  radicalMeaning?: string;
 };
 
 export type KanjiProgress = {
