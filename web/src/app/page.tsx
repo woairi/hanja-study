@@ -10,6 +10,7 @@ import { Card } from '@/components/ui/Card';
 import { GRADE_LABELS, kanjiByGradeLabel } from '@/lib/kanji';
 import { loadLastSession, type LastSession } from '@/lib/session';
 import { loadState, saveState } from '@/lib/storage';
+import { dailyMissionItems } from '@/lib/learningSummary';
 import { logEvent } from '@/lib/telemetry';
 import type { GradeLabel } from '@/lib/types';
 
@@ -101,26 +102,38 @@ export default function HomePage() {
   }, [dailyCount]);
 
   const todayMission = useMemo(() => {
-    // One big button to enter learning (mission).
-    if (reviewInfo.totalDue > 0) {
-      return {
-        kind: 'review' as const,
-        title: '오늘 미션',
-        subtitle: `복습 ${reviewInfo.totalDue}개 · ${reviewInfo.target}`,
-        hint: '복습부터 하면 기억이 더 잘 남아!',
-        href: reviewInfo.href,
-        cta: '미션 시작',
-      };
+    const st = loadState();
+    const now = Date.now();
+    const gradeItems = kanjiByGradeLabel(lastGrade);
+    const mission = dailyMissionItems(gradeItems, st.progress, now, dailyCount);
+    const { review, weak, fresh } = mission.composition;
+
+    // 구성 설명 생성
+    const parts: string[] = [];
+    if (review > 0) parts.push(`복습 ${review}`);
+    if (weak > 0) parts.push(`약점 ${weak}`);
+    if (fresh > 0) parts.push(`새 한자 ${fresh}`);
+    const subtitle = `${lastGrade} · ${parts.join(' + ')}자`;
+
+    // 힌트 메시지
+    let hint = '오늘 분량만 딱 끝내자!';
+    if (review > 0 && weak > 0) {
+      hint = '복습 + 약점 보강으로 실력이 쑥쑥!';
+    } else if (review > 0) {
+      hint = '복습부터 하면 기억이 더 잘 남아!';
+    } else if (weak > 0) {
+      hint = '약점을 잡으면 실력이 확 올라!';
     }
+
     return {
-      kind: 'learn' as const,
+      kind: (review > 0 ? 'review' : 'learn') as 'review' | 'learn',
       title: '오늘 미션',
-      subtitle: `${lastGrade} · 새 한자 ${dailyCount}자`,
-      hint: '오늘 분량만 딱 끝내자!',
+      subtitle,
+      hint,
       href: `/study?grade=${encodeURIComponent(lastGrade)}&n=${dailyCount}`,
       cta: isNew ? '첫 미션 시작' : '미션 시작',
     };
-  }, [reviewInfo.totalDue, reviewInfo.target, reviewInfo.href, lastGrade, dailyCount, isNew]);
+  }, [lastGrade, dailyCount, isNew]);
 
   const continueCard = useMemo(() => {
     if (lastSession) {

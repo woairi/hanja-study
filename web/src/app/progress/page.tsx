@@ -394,7 +394,7 @@ export default function ProgressPage() {
                   🎯 정답률 ({summary.days}일)
                 </div>
                 <div className="mt-1 text-2xl font-extrabold">
-                  {summary.acc === null ? '—' : `${summary.acc}%`}
+                  {summary.acc === null ? '-' : `${summary.acc}%`}
                 </div>
               </div>
               <div className="text-right text-xs" style={{ color: 'var(--muted)' }}>
@@ -503,7 +503,7 @@ export default function ProgressPage() {
           </Link>
         </div>
         <div className="mt-1 text-xs" style={{ color: 'var(--muted)' }}>
-          약점ID/dueID/JSON 내보내기는 “내보내기”에서 4단계로 할 수 있어.
+          약점 한자를 집중적으로 복습하면 실력이 빨리 올라!
         </div>
 
         {weak.length === 0 ? (
