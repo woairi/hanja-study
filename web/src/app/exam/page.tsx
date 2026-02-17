@@ -8,7 +8,7 @@ import { GRADE_LABELS } from '@/lib/kanji';
 import { getBlueprint, type ExamMode, type ExamType, examTypeLabel } from '@/lib/exam/generator';
 import type { GradeLabel } from '@/lib/types';
 
-const EXAM_TYPES: ExamType[] = ['read_hanja', 'meaning_reading', 'write_hanja', 'radical_strokes'];
+const EXAM_TYPES: ExamType[] = ['read_hanja', 'meaning_reading', 'write_hanja', 'radical_strokes', 'antonym_synonym', 'idiom', 'matching'];
 
 export default function ExamHomePage() {
   const [grade, setGrade] = useState<GradeLabel>('8급');

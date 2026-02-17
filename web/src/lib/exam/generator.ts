@@ -3,9 +3,29 @@
 import { kanjiByGradeLabel, ALL_KANJI } from '../kanji';
 import type { KanjiItem, GradeLabel } from '../types';
 
+// ─── Lexicon (antonyms / synonyms / idioms) ───
+
+type AntonymSynonymEntry = { a: string; b: string; label: string; grades: string[] };
+type IdiomEntry = { chars: string; reading: string; meaning: string; minGrade: string };
+
+// Inline-require to avoid JSON import issues with Next.js client components
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const lexicon: {
+  antonyms: AntonymSynonymEntry[];
+  synonyms: AntonymSynonymEntry[];
+  idioms: IdiomEntry[];
+} = require('@/data/examLexicon.json');
+
 // ─── Types ───
 
-export type ExamType = 'read_hanja' | 'meaning_reading' | 'write_hanja' | 'radical_strokes';
+export type ExamType =
+  | 'read_hanja'
+  | 'meaning_reading'
+  | 'write_hanja'
+  | 'radical_strokes'
+  | 'antonym_synonym'
+  | 'idiom'
+  | 'matching';
 
 export type ExamQuestion = {
   id: string;
@@ -15,6 +35,8 @@ export type ExamQuestion = {
   options: { text: string; value: string }[];
   answer: string;
   kanjiId: string;
+  /** 짝짓기 전용: 매칭 쌍 */
+  matchPairs?: { left: string; right: string }[];
 };
 
 export type ExamBlueprint = {
@@ -62,16 +84,51 @@ const blueprints: ExamBlueprint[] = [
     { type: 'write_hanja', ratio: 0.20, difficulty: 2 },
     { type: 'radical_strokes', ratio: 0.20, difficulty: 2 },
   ]},
-  { gradeLabel: '6급', questionCount: 50, passScore: 70, quickCount: 10, composition: DEFAULT_COMP_MID },
-  { gradeLabel: '6급Ⅱ', questionCount: 50, passScore: 70, quickCount: 10, composition: DEFAULT_COMP_MID },
-  { gradeLabel: '5급', questionCount: 50, passScore: 70, quickCount: 10, composition: [
-    { type: 'read_hanja', ratio: 0.20, difficulty: 4 },
-    { type: 'meaning_reading', ratio: 0.20, difficulty: 4 },
-    { type: 'write_hanja', ratio: 0.25, difficulty: 4 },
-    { type: 'radical_strokes', ratio: 0.35, difficulty: 4 },
+  { gradeLabel: '6급', questionCount: 50, passScore: 70, quickCount: 10, composition: [
+    { type: 'read_hanja', ratio: 0.20, difficulty: 3 },
+    { type: 'meaning_reading', ratio: 0.20, difficulty: 3 },
+    { type: 'write_hanja', ratio: 0.20, difficulty: 3 },
+    { type: 'radical_strokes', ratio: 0.15, difficulty: 3 },
+    { type: 'antonym_synonym', ratio: 0.10, difficulty: 3 },
+    { type: 'idiom', ratio: 0.10, difficulty: 3 },
+    { type: 'matching', ratio: 0.05, difficulty: 3 },
   ]},
-  { gradeLabel: '4급', questionCount: 50, passScore: 70, quickCount: 10, composition: DEFAULT_COMP_HARD },
-  { gradeLabel: '4급Ⅱ', questionCount: 50, passScore: 70, quickCount: 10, composition: DEFAULT_COMP_HARD },
+  { gradeLabel: '6급Ⅱ', questionCount: 50, passScore: 70, quickCount: 10, composition: [
+    { type: 'read_hanja', ratio: 0.20, difficulty: 3 },
+    { type: 'meaning_reading', ratio: 0.20, difficulty: 3 },
+    { type: 'write_hanja', ratio: 0.20, difficulty: 3 },
+    { type: 'radical_strokes', ratio: 0.15, difficulty: 3 },
+    { type: 'antonym_synonym', ratio: 0.10, difficulty: 3 },
+    { type: 'idiom', ratio: 0.10, difficulty: 3 },
+    { type: 'matching', ratio: 0.05, difficulty: 3 },
+  ]},
+  { gradeLabel: '5급', questionCount: 50, passScore: 70, quickCount: 10, composition: [
+    { type: 'read_hanja', ratio: 0.15, difficulty: 4 },
+    { type: 'meaning_reading', ratio: 0.15, difficulty: 4 },
+    { type: 'write_hanja', ratio: 0.20, difficulty: 4 },
+    { type: 'radical_strokes', ratio: 0.15, difficulty: 4 },
+    { type: 'antonym_synonym', ratio: 0.15, difficulty: 4 },
+    { type: 'idiom', ratio: 0.10, difficulty: 4 },
+    { type: 'matching', ratio: 0.10, difficulty: 4 },
+  ]},
+  { gradeLabel: '4급', questionCount: 50, passScore: 70, quickCount: 10, composition: [
+    { type: 'read_hanja', ratio: 0.15, difficulty: 5 },
+    { type: 'meaning_reading', ratio: 0.15, difficulty: 5 },
+    { type: 'write_hanja', ratio: 0.15, difficulty: 5 },
+    { type: 'radical_strokes', ratio: 0.15, difficulty: 5 },
+    { type: 'antonym_synonym', ratio: 0.15, difficulty: 5 },
+    { type: 'idiom', ratio: 0.15, difficulty: 5 },
+    { type: 'matching', ratio: 0.10, difficulty: 5 },
+  ]},
+  { gradeLabel: '4급Ⅱ', questionCount: 50, passScore: 70, quickCount: 10, composition: [
+    { type: 'read_hanja', ratio: 0.15, difficulty: 5 },
+    { type: 'meaning_reading', ratio: 0.15, difficulty: 5 },
+    { type: 'write_hanja', ratio: 0.15, difficulty: 5 },
+    { type: 'radical_strokes', ratio: 0.15, difficulty: 5 },
+    { type: 'antonym_synonym', ratio: 0.15, difficulty: 5 },
+    { type: 'idiom', ratio: 0.15, difficulty: 5 },
+    { type: 'matching', ratio: 0.10, difficulty: 5 },
+  ]},
 ];
 
 export function getBlueprint(grade: GradeLabel): ExamBlueprint {
@@ -251,7 +308,132 @@ function genRadicalStrokes(k: KanjiItem, pool: KanjiItem[]): ExamQuestion {
 
 // ─── Generator map ───
 
-const generators: Record<ExamType, (k: KanjiItem, pool: KanjiItem[]) => ExamQuestion> = {
+// 급수 난이도 순서 (낮은 급수 = 쉬움)
+const GRADE_ORDER: GradeLabel[] = ['8급', '7급Ⅱ', '7급', '6급Ⅱ', '6급', '5급', '4급Ⅱ', '4급'];
+
+function gradeRank(g: string): number {
+  const idx = GRADE_ORDER.indexOf(g as GradeLabel);
+  return idx >= 0 ? idx : 99;
+}
+
+/** 해당 급수 이하에서 사용 가능한 반대어/유의어 필터 */
+function lexiconForGrade(grade: GradeLabel) {
+  const rank = gradeRank(grade);
+  const ants = lexicon.antonyms.filter((e) =>
+    e.grades.some((g) => gradeRank(g) <= rank),
+  );
+  const syns = lexicon.synonyms.filter((e) =>
+    e.grades.some((g) => gradeRank(g) <= rank),
+  );
+  const idioms = lexicon.idioms.filter((e) => gradeRank(e.minGrade) <= rank);
+  return { antonyms: ants, synonyms: syns, idioms };
+}
+
+/** 반대어/유의어: 한자를 보고 반대어 또는 유의어 고르기 */
+function genAntonymSynonym(k: KanjiItem, pool: KanjiItem[], grade: GradeLabel): ExamQuestion | null {
+  const { antonyms, synonyms } = lexiconForGrade(grade);
+  const combined = [
+    ...antonyms.map((e) => ({ ...e, kind: '반대어' as const })),
+    ...synonyms.map((e) => ({ ...e, kind: '유의어' as const })),
+  ];
+
+  // k.hanja가 포함된 쌍 찾기
+  const matches = combined.filter((e) => e.a === k.hanja || e.b === k.hanja);
+  if (matches.length === 0) return null;
+
+  const entry = matches[Math.floor(Math.random() * matches.length)];
+  const answer = entry.a === k.hanja ? entry.b : entry.a;
+
+  const distractors = pickDistractorValues(
+    answer,
+    pool.map((x) => x.hanja),
+    3,
+  );
+  const options = shuffle([answer, ...distractors]).map((v) => ({ text: v, value: v }));
+
+  return {
+    id: '',
+    type: 'antonym_synonym',
+    prompt: k.hanja,
+    subtitle: `이 한자의 ${entry.kind}는?`,
+    options,
+    answer,
+    kanjiId: k.id,
+  };
+}
+
+/** 사자성어: 빈칸 또는 뜻 고르기 */
+function genIdiom(_k: KanjiItem, _pool: KanjiItem[], grade: GradeLabel): ExamQuestion | null {
+  const { idioms } = lexiconForGrade(grade);
+  if (idioms.length === 0) return null;
+
+  const entry = idioms[Math.floor(Math.random() * idioms.length)];
+  const isReadingQ = Math.random() < 0.5;
+
+  if (isReadingQ) {
+    // 한자를 보고 올바른 읽기 고르기
+    const distractors = pickDistractorValues(
+      entry.reading,
+      idioms.map((e) => e.reading),
+      3,
+    );
+    // 부족하면 랜덤 읽기 생성
+    while (distractors.length < 3) {
+      const filler = idioms[Math.floor(Math.random() * idioms.length)].reading + '?';
+      if (filler !== entry.reading && !distractors.includes(filler)) distractors.push(filler);
+    }
+    const options = shuffle([entry.reading, ...distractors.slice(0, 3)]).map((v) => ({ text: v, value: v }));
+    return {
+      id: '',
+      type: 'idiom',
+      prompt: entry.chars,
+      subtitle: '이 사자성어의 읽기는?',
+      options,
+      answer: entry.reading,
+      kanjiId: `idiom-${entry.chars}`,
+    };
+  } else {
+    // 읽기를 보고 뜻 고르기
+    const distractors = pickDistractorValues(
+      entry.meaning,
+      idioms.map((e) => e.meaning),
+      3,
+    );
+    while (distractors.length < 3) {
+      distractors.push('알 수 없음');
+    }
+    const options = shuffle([entry.meaning, ...distractors.slice(0, 3)]).map((v) => ({ text: v, value: v }));
+    return {
+      id: '',
+      type: 'idiom',
+      prompt: entry.chars,
+      subtitle: `'${entry.reading}'의 뜻은?`,
+      options,
+      answer: entry.meaning,
+      kanjiId: `idiom-${entry.chars}`,
+    };
+  }
+}
+
+/** 짝짓기: 한자↔뜻 매칭 (4쌍) */
+function genMatching(_k: KanjiItem, pool: KanjiItem[]): ExamQuestion {
+  const items = pickRandom(pool, 4);
+  const pairs = items.map((x) => ({ left: x.hanja, right: `${x.meaning} ${x.reading}` }));
+
+  return {
+    id: '',
+    type: 'matching',
+    prompt: '한자와 뜻을 짝지어봐!',
+    subtitle: '같은 것끼리 연결해줘',
+    options: [], // 짝짓기는 options 대신 matchPairs 사용
+    answer: pairs.map((p) => `${p.left}=${p.right}`).join('|'),
+    kanjiId: items[0].id,
+    matchPairs: pairs,
+  };
+}
+
+// P0 generators
+const p0Generators: Record<string, (k: KanjiItem, pool: KanjiItem[]) => ExamQuestion> = {
   read_hanja: genReadHanja,
   meaning_reading: genMeaningReading,
   write_hanja: genWriteHanja,
@@ -280,22 +462,46 @@ export function generateExam(
 
   const questions: ExamQuestion[] = [];
 
-  if (mode === 'type_practice' && typeFilter) {
-    // 유형 연습: 특정 유형만
-    const items = pickRandom(gradeItems, totalCount);
-    const gen = generators[typeFilter];
-    for (const k of items) {
-      questions.push(gen(k, pool));
-    }
-  } else {
-    // 블루프린트 비율에 따라 유형별 할당
-    for (const comp of bp.composition) {
-      const count = Math.max(1, Math.round(totalCount * comp.ratio));
-      const items = pickRandom(gradeItems, count);
-      const gen = generators[comp.type];
-      for (const k of items) {
+  const generateForType = (type: ExamType, items: KanjiItem[], count: number) => {
+    if (type in p0Generators) {
+      const gen = p0Generators[type];
+      for (const k of pickRandom(items, count)) {
         questions.push(gen(k, pool));
       }
+    } else if (type === 'antonym_synonym') {
+      // 반대어/유의어 — lexicon 매칭 시도, 실패시 P0 유형으로 대체
+      let generated = 0;
+      for (const k of shuffle(items)) {
+        if (generated >= count) break;
+        const q = genAntonymSynonym(k, pool, grade);
+        if (q) { questions.push(q); generated++; }
+      }
+      // 부족하면 독음으로 대체
+      for (let i = generated; i < count; i++) {
+        const k = pickRandom(items, 1)[0];
+        if (k) questions.push(genReadHanja(k, pool));
+      }
+    } else if (type === 'idiom') {
+      for (let i = 0; i < count; i++) {
+        const k = pickRandom(items, 1)[0];
+        const q = genIdiom(k, pool, grade);
+        if (q) questions.push(q);
+        else if (k) questions.push(genMeaningReading(k, pool)); // 대체
+      }
+    } else if (type === 'matching') {
+      for (let i = 0; i < count; i++) {
+        const k = pickRandom(items, 1)[0];
+        if (k) questions.push(genMatching(k, pool));
+      }
+    }
+  };
+
+  if (mode === 'type_practice' && typeFilter) {
+    generateForType(typeFilter, gradeItems, totalCount);
+  } else {
+    for (const comp of bp.composition) {
+      const count = Math.max(1, Math.round(totalCount * comp.ratio));
+      generateForType(comp.type, gradeItems, count);
     }
   }
 
@@ -320,5 +526,8 @@ export function examTypeLabel(type: ExamType): string {
     case 'meaning_reading': return '훈음';
     case 'write_hanja': return '한자 쓰기';
     case 'radical_strokes': return '부수·획수';
+    case 'antonym_synonym': return '반대어·유의어';
+    case 'idiom': return '사자성어';
+    case 'matching': return '짝짓기';
   }
 }

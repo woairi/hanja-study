@@ -1,9 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Card } from '@/components/ui/Card';
+import MatchingQuestion from '@/components/exam/MatchingQuestion';
 import { generateExam, type ExamQuestion, type ExamMode, type ExamType, examTypeLabel } from '@/lib/exam/generator';
 import { loadState, saveState } from '@/lib/storage';
 import { applyAnswer } from '@/lib/srs';
@@ -40,6 +41,7 @@ export default function ExamSessionClient() {
 
   // SRS 반영
   const commitResult = useCallback((isCorrect: boolean, kanjiId: string) => {
+    if (kanjiId.startsWith('idiom-')) return; // 사자성어는 SRS 대상 아님
     const now = Date.now();
     const st = loadState();
     const prev = st.progress[kanjiId];
@@ -47,7 +49,6 @@ export default function ExamSessionClient() {
     const k = ALL_KANJI.find((x) => x.id === kanjiId);
     st.progress[kanjiId] = applyAnswer(prev, isCorrect, now, { gradeLabel: k?.gradeLabel });
 
-    // 시험 통계
     const today = new Date().toISOString().slice(0, 10);
     if (!st.stats.daily) st.stats.daily = {};
     if (!st.stats.daily[today]) st.stats.daily[today] = { answered: 0, correct: 0, wrong: 0 };
@@ -64,7 +65,6 @@ export default function ExamSessionClient() {
     const score = answers.filter((a) => a.correct).length;
     const total = answers.length;
 
-    // 유형별 통계
     const byType: Record<string, { correct: number; total: number }> = {};
     for (const a of answers) {
       if (!byType[a.type]) byType[a.type] = { correct: 0, total: 0 };
@@ -103,6 +103,14 @@ export default function ExamSessionClient() {
     }, isCorrect ? 500 : 800);
   }, [q, locked, commitResult]);
 
+  /** 짝짓기 완료 핸들러 */
+  const handleMatchComplete = useCallback((allCorrect: boolean) => {
+    if (!q) return;
+    setAnswers((a) => [...a, { qid: q.id, correct: allCorrect, kanjiId: q.kanjiId, type: q.type, chosen: allCorrect ? 'matched' : 'failed' }]);
+    commitResult(allCorrect, q.kanjiId);
+    setQIdx((i) => i + 1);
+  }, [q, commitResult]);
+
   if (questions.length === 0) {
     return (
       <main className="mx-auto max-w-md p-4 text-center">
@@ -112,6 +120,8 @@ export default function ExamSessionClient() {
   }
 
   if (!q) return null;
+
+  const isMatching = q.type === 'matching' && q.matchPairs;
 
   return (
     <main className="mx-auto max-w-md p-4">
@@ -132,49 +142,60 @@ export default function ExamSessionClient() {
         {examTypeLabel(q.type)}
       </div>
 
-      {/* 문제 */}
-      <Card className="p-5 text-center">
-        <div className="text-4xl font-extrabold">{q.prompt}</div>
-        {q.subtitle && (
-          <div className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>
-            {q.subtitle}
+      {isMatching ? (
+        /* 짝짓기 UI */
+        <>
+          <Card className="mb-3 p-4 text-center">
+            <div className="text-lg font-extrabold">{q.prompt}</div>
+            {q.subtitle && (
+              <div className="mt-1 text-sm" style={{ color: 'var(--muted)' }}>{q.subtitle}</div>
+            )}
+          </Card>
+          <MatchingQuestion pairs={q.matchPairs!} onComplete={handleMatchComplete} />
+        </>
+      ) : (
+        /* 일반 4지선다 */
+        <>
+          <Card className="p-5 text-center">
+            <div className="text-4xl font-extrabold">{q.prompt}</div>
+            {q.subtitle && (
+              <div className="mt-2 text-sm" style={{ color: 'var(--muted)' }}>{q.subtitle}</div>
+            )}
+          </Card>
+
+          <div className="mt-4 grid grid-cols-1 gap-2">
+            {q.options.map((opt) => {
+              const isChosen = chosen === opt.value;
+              const showCorrect = feedback && opt.value === feedback.answer;
+              const showWrong = feedback && isChosen && !feedback.correct;
+
+              let bg = 'rgba(255,255,255,0.8)';
+              let border = 'rgba(2,132,199,0.16)';
+              if (showCorrect) { bg = 'rgba(34,197,94,0.15)'; border = 'rgba(34,197,94,0.5)'; }
+              if (showWrong) { bg = 'rgba(239,68,68,0.12)'; border = 'rgba(239,68,68,0.5)'; }
+
+              return (
+                <button
+                  key={opt.value}
+                  className="focus-ring w-full rounded-2xl border-2 px-4 py-4 text-left text-lg font-extrabold transition-colors"
+                  style={{ background: bg, borderColor: border }}
+                  disabled={locked}
+                  onClick={() => handleAnswer(opt.value)}
+                >
+                  {opt.text}
+                </button>
+              );
+            })}
           </div>
-        )}
-      </Card>
 
-      {/* 선택지 */}
-      <div className="mt-4 grid grid-cols-1 gap-2">
-        {q.options.map((opt) => {
-          const isChosen = chosen === opt.value;
-          const showCorrect = feedback && opt.value === feedback.answer;
-          const showWrong = feedback && isChosen && !feedback.correct;
-
-          let bg = 'rgba(255,255,255,0.8)';
-          let border = 'rgba(2,132,199,0.16)';
-          if (showCorrect) { bg = 'rgba(34,197,94,0.15)'; border = 'rgba(34,197,94,0.5)'; }
-          if (showWrong) { bg = 'rgba(239,68,68,0.12)'; border = 'rgba(239,68,68,0.5)'; }
-
-          return (
-            <button
-              key={opt.value}
-              className="focus-ring w-full rounded-2xl border-2 px-4 py-4 text-left text-lg font-extrabold transition-colors"
-              style={{ background: bg, borderColor: border }}
-              disabled={locked}
-              onClick={() => handleAnswer(opt.value)}
-            >
-              {opt.text}
-            </button>
-          );
-        })}
-      </div>
-
-      {/* 피드백 */}
-      {feedback && (
-        <div className={`mt-3 rounded-xl px-4 py-2 text-center text-sm font-extrabold ${
-          feedback.correct ? 'text-green-700' : 'text-red-600'
-        }`} style={{ background: feedback.correct ? 'rgba(34,197,94,0.1)' : 'rgba(239,68,68,0.08)' }}>
-          {feedback.correct ? '정답! 🎉' : `오답 — 정답: ${feedback.answer}`}
-        </div>
+          {feedback && (
+            <div className={`mt-3 rounded-xl px-4 py-2 text-center text-sm font-extrabold ${
+              feedback.correct ? 'text-green-700' : 'text-red-600'
+            }`} style={{ background: feedback.correct ? 'rgba(34,197,94,0.1)' : 'rgba(239,68,68,0.08)' }}>
+              {feedback.correct ? '정답! 🎉' : `오답 — 정답: ${feedback.answer}`}
+            </div>
+          )}
+        </>
       )}
     </main>
   );
