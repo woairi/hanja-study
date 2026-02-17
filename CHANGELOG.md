@@ -4,128 +4,94 @@
 
 형식: Keep a Changelog 스타일(간단 버전).
 
-## [Unreleased]
+## [Week 7] — 2026-02-17
 
 ### Added
-- Week5(P2/BE): 학습 세션 만료 정책 (4시간 TTL, 자동 만료/제거)
-- Week5(P2/FE): 효과음 + 햅틱 피드백 (Web Audio API + Vibration API, 정답/오답/축하)
-- Week5(P2/FE): 설정에 효과음 켜기/끄기 토글
-- Week5(P2/BE): confusables 3차 품질 개선 (4급/4급Ⅱ 동음 기반 +65개, confusables 없는 한자 81→55)
-- Week5(P1/FE): 학습 카드 좌우 스와이프 제스처 (useSwipe 훅, 50px 최소)
-- Week5(P1/FE): 다크모드 지원 (시스템 자동 + 수동 토글 system/light/dark)
-- Week5(P1/FE): OG 이미지 자동 생성 (next/og, 1200x630, 카톡/밴드 공유)
-- Week5(P1/QE): 접근성(a11y) 자동 점검 (axe-core WCAG 2.0 AA, 심각 위반 0건)
-- Week5(P0/FE): PWA Service Worker + 오프라인 캐시 (@serwist/turbopack 기반, 프리캐시+런타임캐시+오프라인 폴백 페이지)
-- Week5(P0/FE): SerwistProvider로 SW 라이프사이클 관리 + layout.tsx 메타데이터 강화(appleWebApp, OG 태그)
-- Week5(P0/QE): Playwright E2E Top5 시나리오 10건(홈→학습→퀴즈→결과→진도 + 가드 2건) 전체 통과
-- Week5(P0/QE): playwright.config.ts 세팅(모바일 Chrome Pixel 7, 자동 dev 서버)
-- Week5(P0): predeploy 전체 통과 확인(lint+test+data+build)
-- BE: 로컬 상태(localStorage) 마이그레이션 프레임워크(v1→v2) + 안정 키(`hanja-study:state`) 도입(legacy key 읽기 지원)
-- BE: telemetry 저장 정책(TTL 30일 + meta cap) 도입으로 과도한 localStorage 사용 방지
-- Week1(P0): override 스키마 표준화(confusables/examples: 레코드 배열 + 메타 필드 id/target/reason/source/updated_at) + check:data에서 충돌/중복 검증
-- Week1(P0): 데이터 manifest(`dataset_version/schema_version/build_id/checksum/created_at`) 생성 + web check:data에서 checksum/형식 검증
-- Week1(QE/P0): 배포 블로커 3종(localStorage migration / SRS interval+오답 리셋 / trap 옵션 중복 방지) 유닛 테스트 + QE 문서 실행 커맨드 정리
-- Week2: confusables 자동 보강(급수 내 동음/부수/획수 기반 휴리스틱) + 과도한 매칭 필터링(임계값/최대개수)
-- Week2: PWA manifest/아이콘 기반 추가(installability 시작)
-- Week2: 오프라인 상태 안내 배너(기반)
-- Week3: 급수 확장 착수(4급 + 4급Ⅱ 데이터/화면 반영)
-- Week3: 퀴즈 결과에서 “틀린 것만 다시” 미니 복습
-- Week2(FE P5): /quiz/result 결과 요약 화면 개선(점수/정답률/획득XP 요약, 오답 탭→정답/해설 즉시 확인, CTA 2개: 오답 다시풀기/다음 미션, 퀴즈 완료 시 결과 화면으로 이동)
-- Week2(FE polish): /quiz/result 직접 진입/새로고침 시 “결과 없음” 가드 UI + 홈/퀴즈 CTA
-- Week4(FE): 퀴즈 결과 최근값 localStorage fallback + TTL(24h) 적용(새로고침/직접 진입 시 결과 복원, 만료 자동 정리)
-- Week4(FE): 설정 > 학습 기록 전체 초기화에 2단 안전장치 추가(복구불가 동의 체크 + `RESET` 입력)
-- Week4(FE): 설정 화면에 저장 상태 요약(학습 기록 수/최근 학습일/퀴즈 결과 캐시) 추가 + 홈 설정 진입 링크 접근성 라벨 개선
-- Week4(FE): 설정 화면에 `레거시 진도 안내 다시 보기` 링크 추가(`/progress?legacy=1`)
-- Week4(FE): /progress 레거시 안내 전환 UX 강화(백업 CTA, `다시 보지 않기`, 다음 진입 시 홈 자동 전환, `?legacy=1` 재확인 지원)
-- Week4(FE): /quiz/result 하단 고정 Primary CTA 도입(360x800에서 다음 행동 버튼 상시 노출)
-- Week4(FE): 공통 상태 카드(`StateCard`) 도입 + /quiz/result(결과없음), /progress(레거시/빈 상태), /quiz(세션없음 가드)에 적용
-- Week4(FE): 퀴즈 힌트 버튼 상태를 명확화(사용완료/힌트없음 라벨, 비활성 조건 정리) + 안내 문구 추가
-- Week4(QE): 실기기 QA 게이트(v1) 및 D+1~D+10 실행표 문서화(`docs/qe.md`)
-- Week4(QE): storage fallback 안전성 테스트 추가(깨진 localStorage JSON → default 복구)
-- Week4(QE): quiz result TTL 만료 정리 테스트 강화(local-only stale cache 포함)
-- Week4(QE): iOS Safari 실기기 점검용 known issues/workaround 문서 추가(`docs/qa-ios-safari.md`)
-- Week4(QE): Top5 E2E 준비 문서 추가(`docs/qe-top5-e2e.md`) + 셀렉터 점검 스크립트(`npm run check:top5`)
-- Week4(QE): 설정/가드 플로우까지 포함하도록 Top5 selector check 범위 확장
-- Week4(QE): RC 운영 템플릿 추가(`docs/rc-gate-template.md`) + predeploy에 Top5 selector check 포함
-- Week4(QE): RC 실행 로그 샘플 추가(`docs/rc-runs/2026-02-15-p1.md`)
-- Week4(QE): 데이터 품질 체크리스트 최신 스키마(4급/4급Ⅱ 포함) 기준으로 갱신
-- Week4(BE): `data/build.mjs`가 v2 override 배열 스키마(target 기반)를 직접 읽도록 보강(legacy object-map도 계속 지원)
-- Week2(FE polish): /progress에서 레거시 사용자(stats.daily 없음) 안내 배지/가이드 카드 추가
-- Week3: 오답 시 한자=뜻+음(짧은 설명) 표시
-- Week3: 오답 문제 자동 재출제(3문제 뒤 1회)
-- Week3: 홈 화면에 “오늘의 복습” 카드(복습 대기 개수 + 원탭 복습)
-- Week3: 4급/4급Ⅱ 동음(독음 동일) 기반 confusables override seed 추가
-- Week3: 진도 화면에 급수별 약점 TOP(최대 3개) 표시 + 약점만 복습 CTA
-- Week3: 학습 카드/오답 피드백에 예시 단어(시드) 표시(4급 일부 확장)
-- Week3: 진도 화면 약점 TOP에 예시 단어 노출
-- Week3: 복습/약점 복습의 최대 문제 수를 10으로 캡(피로도 방지)
-- Week3: SRS 간격 튜닝(4급/4급Ⅱ은 복습을 더 촘촘하게)
-- Week3: check:data에 예시 필드 검증 추가
-- Week3: 홈 화면 IA 정리(Primary CTA 1개 + Secondary 1~2개, 목표/뱃지/급수는 접기)
-- Week3: 홈 문구/상태 정리(요약 라인, 복습 0개 처리, CTA 문구 개선)
-- Week3: 완료 화면에 보상/다음 행동 유도(약점/복습) 카드 추가
-- Week3: 예시 단어 시드 확장(총 100+)
-- Week3: check:data 강화(confusables 존재 검증/상한, 예시 길이/의존성 검증)
-- Week3: 간단한 로컬 사용 로그(telemetry) 추가(Home/완료화면 주요 CTA)
-- Week3: /about?debug=1 에 telemetry 확인/초기화 화면 추가(라벨/메타 표시)
-- Week3: 완료 후 '약점 더 복습' 로직 개선(due 우선 + 약점)
-- Week3: 완료 화면 문구가 매번 똑같지 않게(가벼운 변형)
-- Week3: 예시 단어 2차 확장 + overrides에 없는 한자 키 정리
-- Week3: confusables 샘플링 스크립트 추가(npm run sample:confusables)
-- Week3: 4급/4급Ⅱ confusables 노이즈 절삭(시각 유사도 기반 필터 + 최대 4개 제한)
-- Week3: 4급/4급Ⅱ 예시 단어 대량 확장(기본 meaning 기반 자동 채움)
-- Week3: telemetry 디버그 요약(간단 퍼널) 추가(전환율/후속 CTA까지)
-- Week3: 진도 화면에서 약점 TOP 50 export(복사/붙여넣기) 지원(큐레이션용)
-- Week3: 로컬 저장된 progress id(예: 5-028) 자동 마이그레이션(5급-028) + export 안정화
-- Week3: 취약 TOP은 오답 기반으로만 산정 + due 목록은 분리(큐레이션 정확도)
-- Week3: 약점/due export에 ID-only 복사 버튼 추가(텔레그램 길이 제한 대응)
-- Week3(FE P7): /progress/export 내보내기 마법사(4단계: 포맷→기간/양→미리보기→내보내기) + 실패 원인/재시도 + 완료 후 공유/닫기 CTA + 선택값 유지
-- Week3: 약점(오답/우선 리스트) 기반 예시 단어 수동 큐레이션(1차)
-- Week2(FE P6): /progress 대시보드 강화(주간/월간 토글, 빈 상태 가이드, 핵심 지표 카드, 색상 의존 완화)
-- Week3: 퀴즈 피드백 강화(정답이어도 힌트는 짧게, 오답은 자세히)
-- Week3: confusables 생성 로직 개선(같은 부수 후보 포함 + 더 엄격한 필터 + 수동 blocklist)
-- Week3: 함정문제(trap)는 confusables 충분한 항목 위주로 출제(품질)
-- Week3: 예시 단어 일부를 더 자연스러운 단어로 수동 보강(큐레이션)
-- Week3: 한자 데이터 재생성 파이프라인 추가(data/build.mjs) + 전 급수 예시 자동 채움
-- 함정문제용 `confusables` 스타터 세트 추가(초기 자형 혼동 그룹)
-- 퀴즈 정답/오답 즉시 피드백(0.7초 하이라이트 + 정답 표시)
-- 퀴즈 정답 시 미니 반짝(✨) 이펙트
-- 홈 화면에 스티커형 뱃지(첫 공부/연속 3일/연속 7일)
-- 진도 화면: 취약 TOP에 한자/뜻/음 표시 + 복습 대기 총합 표시
-- 키즈 테마(하늘색 팔레트) + 공룡 마스코트
-- 학습 완료 화면/퀴즈 결과 화면 중앙 정렬 + CTA 풀폭 버튼
-- 퀴즈 화면: 선택지 크게 + 하단 고정 컨트롤 바(이전/확인)
-- 퀴즈 화면: 확인 버튼 대비(활성/비활성) 강화 + 선택 체크 표시 + 문제 타입 칩(뜻/음/함정)
-- 퀴즈 화면: 진행률 바 추가 + 정답 시 🎉 이펙트 + 다음 문제 전환 템포 완화(정답 1.0s / 오답 1.7s)
-- 퀴즈 화면: 즉시 피드백 UI 컴포넌트화 + 힌트/연속정답 상태 표시, 전환 딜레이 상한(<=0.8s)
-- 진도 화면: 복습 시작 CTA(원탭)
-- 학습 화면: 복습 모드(reviewOnly) 추가(복습 대기만 출제 + 상단 🔁 복습 표시)
-- 진도 화면: 복습 대기 0개일 때 토스트 안내
-- 홈 화면: 이어하기(Resume) 버튼 + /resume 라우트
-- 홈 화면: 오늘의 학습(마지막 선택 급수로 원탭 시작) CTA
-- 홈 화면: 뱃지 탭 시 설명/축하 모달 + 퀴즈 50문제 뱃지
-- 홈 화면: 급수별 공룡 친구(아이콘) 추가(단일 아이콘/크기 정돈)
-- Week2(FE P2): /onboarding 온보딩 플로우(닉네임/목표/간단 진단) 추가 + 홈 미션 개인화 반영
-- Week4(FE): /settings 설정 페이지 추가(닉네임/일일 목표/시작 급수 변경) + 온보딩 다시하기/학습기록 전체 초기화
+- **Daily Mission 2.0**: 복습(40%)+약점(30%)+신규 혼합 맞춤 미션 알고리즘 (`dailyMissionItems`)
+- **학습 요약 통합 모듈** (`lib/learningSummary.ts`): due/weak/streak/periodSummary/gradeStats 중복 로직 통합
+- **학습 통계 시각화**: MiniBarChart SVG 컴포넌트, 진도 페이지에 일별 문제 수 + 정답률 차트
+- **결과 감정 UX**: 정답률 기반 4단계 피드백 (만점/80%+/50%+/기타) + 어제 대비 정답률 향상 표시
+- **주간 리포트 카드** (`/progress/report`): Canvas API 이미지 생성 + Web Share API 공유 + PNG 다운로드
+- **모바일 하단 고정 CTA**: 홈 페이지 엄지 영역에 미션 시작 버튼 고정
+- **오답 이유 태깅**: 자동 분류 (음 혼동/뜻 혼동/형태 혼동) + 결과 화면 코칭 메시지
+- **개인화 카피**: streak/마스터 기반 홈 인사, 학습 완료 메시지 다양화 (`homeGreeting`, `studyDoneMessage`)
+- **번들 사이즈 예산 체크** (`scripts/check-bundle.mjs`): JS/chunk/빌드 디렉토리 예산 검증
+- **E2E 확장**: 온보딩/설정/주간 리포트 5건 추가 → 총 18 E2E
+- **유닛 테스트**: learningSummary 7건 추가 → 총 19 유닛
+- 진도 페이지에 '📊 주간 리포트' 링크
 
 ### Changed
-- Week4(FE): 핵심 화면(Home/Study/Quiz/Result/Progress)에 안정 셀렉터(`data-testid`)를 추가해 Top5 E2E 자동화 기반 확보
-- Week4(FE): `/progress`에서 상태 로드 중복을 줄이도록 계산 경로 정리(동일 렌더 내 loadState 재호출 최소화)
-- Week4(FE): 학습 완료 후 퀴즈 시작 링크의 `n` 파라미터를 현재 세션 값으로 고정(이전 세션 값으로 뒤바뀌는 케이스 수정)
-- Week4(FE): 홈 상단 헤더 레이아웃 정리(상태 텍스트를 칩 형태로 분리, 설정/토글 컨트롤 별도 줄 배치, 좁은 화면에서 텍스트 깨짐 완화)
-- Week1(P3): 퀴즈 플레이어 UI 표준화(`/quiz/:id`): 360px 기준 overflow/겹침 완화, 로딩 스켈레톤 추가, 피드백 영역 높이 예약으로 레이아웃 점프 최소화(문제 유형 공통 규칙 유지)
-- Week1(P1): 홈 학습 루프 개편(첫 화면: 오늘 미션 + 이어하기 동시 노출, 메인 CTA 1탭 학습 진입, 신규/기존 상태 분기 명확화)
-- 진행률 카드/버튼 스타일을 둥글고 두툼한 키즈 UI로 통일
-- FE: 디자인 토큰(color/spacing/radius/type) 기반으로 globals 정리 + Card/Button 공통 컴포넌트 도입(점진적 치환)
-- FE: prefers-reduced-motion(reduce)에서 학습/퀴즈 이펙트 애니메이션 비활성화
+- README 정합화: "8급~5급" → "8급~4급Ⅱ" (900자)
+- 진도 페이지: 개발자용 텍스트를 아동 친화적 문구로 변경
+- QuizResultPayload에 `wrongDetails` 필드 추가 (오답 이유 + 선택 기록)
+- QuizClient answers에 `chosenId` 필드 추가
 
-## [0.1.0] - 2026-02-14
+## [Week 6] — 2026-02-17
 
 ### Added
-- Next.js(App Router) + Tailwind 기반 모바일 우선 MVP
-- 급수 선택(8/7/7Ⅱ/6/6Ⅱ/5) + 오늘 목표(5/10/15자)
-- 학습 카드(`/study`): 한자 카드 + 뜻/음 보기
-- 퀴즈(`/quiz`): 뜻/음 4지선다 + 함정문제 20%
-- 진도(`/progress`): 급수별 진행률, 복습 대기 수, 취약 TOP10
-- 로컬 저장소 기반 학습 기록(localStorage)
-- 데이터: 어문회 급수 CSV 기반 400자(8급~5급 + 7/6급Ⅱ)
+- **Vercel 프로덕션 배포**: https://hanja-study.vercel.app/ 라이브
+- **빌드 타임 SW 생성** (`scripts/build-sw.mjs`): Vercel 서버리스 환경에서 esbuild 런타임 실행 불가 → 빌드 시 `public/sw.js` 생성
+- `vercel.json` 설정 (framework/buildCommand/installCommand)
+- `metadataBase` 설정 → OG 태그 정상 동작 확인
+
+### Fixed
+- Service Worker 500 에러: Vercel 서버리스에 git CLI 없음 → VERCEL_GIT_COMMIT_SHA + 빌드 타임 생성으로 해결
+- `/quiz/page.tsx` searchParams Promise: Next.js 16 async API 대응
+- `@serwist/turbopack` dev 서버 에러: `string[]` → `string` 래퍼
+
+## [Week 5] — 2026-02-15
+
+### Added
+- **PWA Service Worker + 오프라인 캐시**: `@serwist/turbopack` 기반, 프리캐시+런타임캐시+`/~offline` 폴백
+- **Playwright E2E Top5**: 13 테스트 (홈→학습→퀴즈→결과→진도 + 가드 + a11y)
+- **predeploy 파이프라인**: lint → test → check:top5 → check:data → build-sw → build
+- **스와이프 제스처**: `useSwipe` 훅, 학습 카드 좌우 넘기기
+- **다크모드**: `useTheme` 훅 + ThemeScript FOUC 방지 + 설정 토글 (system/light/dark)
+- **OG 이미지 자동 생성**: next/og 1200×630
+- **접근성 점검**: axe-core WCAG 2.0 AA, 심각 위반 0건
+- **학습 세션 만료 정책**: 4시간 TTL
+- **효과음 + 햅틱 피드백**: Web Audio API + Vibration API, 음소거 토글
+- **confusables 3차 품질 개선**: 동음 기반 +65개, 미보유 81→55
+
+## [Week 4] — 2026-02-14
+
+### Added
+- 퀴즈 결과 localStorage fallback + TTL(24h)
+- 설정: 학습 기록 초기화 2단 안전장치 (동의 체크 + `RESET` 입력)
+- 설정: 저장 상태 요약 (학습 기록 수/최근 학습일/퀴즈 결과 캐시)
+- /progress 레거시 안내 전환 UX (백업 CTA, 다시 보지 않기)
+- /quiz/result 하단 고정 Primary CTA
+- 공통 StateCard 컴포넌트
+- 퀴즈 힌트 버튼 상태 명확화
+- QE: 실기기 QA 게이트 v1 + D+1~D+10 실행표
+- QE: storage fallback 안전성 테스트
+- QE: iOS Safari known issues 문서
+- QE: RC 운영 템플릿
+
+## [Week 3] — 2026-02-12
+
+### Added
+- 급수 확장: 4급 + 4급Ⅱ (총 900자)
+- 퀴즈 "틀린 것만 다시" 미니 복습
+
+## [Week 2] — 2026-02-10
+
+### Added
+- confusables 자동 보강 (급수 내 동음/부수/획수 휴리스틱)
+- PWA manifest/아이콘 기반
+- 오프라인 상태 안내 배너
+- /quiz/result 결과 요약 화면 개선
+- /quiz/result 직접 진입 가드 UI
+
+## [Week 1] — 2026-02-08
+
+### Added
+- 프로젝트 초기 구조 (Next.js App Router + React 19)
+- 학습 카드 (한자/뜻/음/예시)
+- 퀴즈 (4지선다 + 함정문제 confusables)
+- SRS 간격반복 알고리즘
+- 진도/스트릭/XP/레벨 시스템
+- 온보딩 (닉네임/목표/시작 급수)
+- localStorage 기반 상태 관리
+- override 스키마 표준화 + check:data 검증
+- 데이터 manifest + checksum 검증

@@ -34,10 +34,21 @@ npm run start
 
 ## Deploy (Vercel)
 
-Vercel에서 GitHub 연동 후:
+- **프로덕션**: https://hanja-study.vercel.app/
+- GitHub 연동 자동 배포 (main 브랜치 push → Vercel 빌드)
 - Framework: Next.js
 - **Root Directory: `web`**
-- Build Command: `npm run build`
+- Build Command: `npm run predeploy`
+
+## 테스트
+
+```bash
+cd web
+npm test              # Jest 유닛 (19건)
+npm run test:e2e      # Playwright E2E (18건)
+npm run predeploy     # 전체 (lint+test+top5+data+build-sw+build)
+node scripts/check-bundle.mjs  # 번들 사이즈 예산 체크
+```
 
 ## PWA (기반)
 
@@ -71,18 +82,29 @@ Vercel에서 GitHub 연동 후:
 - `confusables`: 함정문제 품질을 위한 후보(현재는 자동/수동 보강 중)
 - `exampleWord`, `exampleMeaning`: 예시 단어(학습/오답 피드백에 표시)
 
-## Roadmap (다음 작업)
+## Roadmap
 
-- ~~PWA(홈 화면 추가) / 오프라인 캐시~~ ✅ Week5
-- ~~`confusables` 자동/수동 보강~~ ✅ Week5 (4급/4급Ⅱ 동음 기반 +65개, 81→55 미보유)
-- ~~학습 세션 재개(중간에 나갔다 들어와도 이어서)~~ ✅ Week5 (4시간 TTL)
-- ~~다크모드 (시스템 자동 + 수동 토글)~~ ✅ Week5
-- ~~효과음 + 햅틱 피드백~~ ✅ Week5
-- ~~OG 이미지 자동 생성~~ ✅ Week5
-- ~~접근성(a11y) 자동 점검 (axe-core)~~ ✅ Week5
-- ~~`/progress`의 취약 TOP에 한자/뜻/음 표시~~ ✅ (이미 구현됨)
-- 학습 통계 시각화 (주간/월간 차트)
-- (선택) 쓰기/획순 UI
+### ✅ 완료
+- PWA + 오프라인 캐시 (Week 5)
+- confusables 자동/수동 보강 (Week 5)
+- 학습 세션 재개 — 4시간 TTL (Week 5)
+- 다크모드 — 시스템 자동 + 수동 토글 (Week 5)
+- 효과음 + 햅틱 피드백 (Week 5)
+- OG 이미지 자동 생성 (Week 5)
+- 접근성(a11y) 자동 점검 — axe-core (Week 5)
+- Vercel 프로덕션 배포 (Week 6)
+- 학습 통계 시각화 — 일별 문제 수 + 정답률 차트 (Week 6)
+- Daily Mission 2.0 — 복습+약점+신규 혼합 맞춤 미션 (Week 7)
+- 결과 감정 UX — 정답률 기반 피드백 + 어제 비교 (Week 7)
+- 주간 리포트 카드 — 보호자 공유용 이미지 생성 (Week 7)
+- 오답 이유 태깅 — 음/뜻/형태 혼동 자동 분류 + 코칭 (Week 7)
+- 개인화 카피 — 성취 기반 인사/완료 메시지 (Week 7)
+- 번들 사이즈 예산 체크 (Week 7)
+
+### 🔮 향후 고려
+- 캐릭터/수집형 메타게임 (뱃지 도감, 레벨 타이틀)
+- 친구/가족 소셜 기능 (주간 챌린지)
+- 학년/수준별 개인화 추천
 
 ## License / Attribution
 
