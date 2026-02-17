@@ -19,6 +19,9 @@ const APP_NAME = "한자 공부";
 const APP_DESCRIPTION = "초등 한자(어문회 8급~4급Ⅱ) 키즈 학습";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || 'https://hanja-study.vercel.app'
+  ),
   applicationName: APP_NAME,
   title: {
     default: APP_NAME,
