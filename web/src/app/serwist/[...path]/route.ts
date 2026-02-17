@@ -2,14 +2,26 @@
  * Serwist Route Handler (Turbopack 모드)
  * — Service Worker 빌드 + 서빙을 담당하는 API 라우트
  */
-import { spawnSync } from "node:child_process";
 import { createSerwistRoute } from "@serwist/turbopack";
 import type { NextRequest } from "next/server";
 
-// Git revision으로 프리캐시 버전 관리
-const revision =
-  spawnSync("git", ["rev-parse", "HEAD"], { encoding: "utf-8" }).stdout?.trim() ??
-  crypto.randomUUID();
+// Vercel 환경: VERCEL_GIT_COMMIT_SHA 사용, 로컬: git rev-parse 폴백
+function getRevision(): string {
+  if (process.env.VERCEL_GIT_COMMIT_SHA) {
+    return process.env.VERCEL_GIT_COMMIT_SHA;
+  }
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { spawnSync } = require("node:child_process") as typeof import("node:child_process");
+    const r = spawnSync("git", ["rev-parse", "HEAD"], { encoding: "utf-8" });
+    if (r.stdout?.trim()) return r.stdout.trim();
+  } catch {
+    // git 없는 환경
+  }
+  return crypto.randomUUID();
+}
+
+const revision = getRevision();
 
 const serwistRoute = createSerwistRoute({
   additionalPrecacheEntries: [{ url: "/~offline", revision }],
