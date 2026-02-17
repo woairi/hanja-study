@@ -6,6 +6,7 @@ import { useEffect, useMemo, useState } from 'react';
 import Toast from '@/components/Toast';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
+import { MiniBarChart } from '@/components/ui/MiniBarChart';
 import { StateCard } from '@/components/ui/StateCard';
 import { ALL_KANJI, GRADE_LABELS, kanjiByGradeLabel } from '@/lib/kanji';
 import { loadState } from '@/lib/storage';
@@ -84,6 +85,54 @@ export default function ProgressPage() {
       isEmpty: quizAnsweredAllTime === 0 && dailyKeys.length === 0,
       isLegacyNoDaily: quizAnsweredAllTime > 0 && !hasDaily,
     };
+  }, [now, period, st]);
+
+  // 일별 학습량 차트 데이터
+  const chartData = useMemo(() => {
+    const days = period === 'week' ? 7 : 30;
+    const d = new Date(now);
+    const today = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    const result = [];
+    for (let i = days - 1; i >= 0; i--) {
+      const x = new Date(d);
+      x.setDate(d.getDate() - i);
+      const key = `${x.getFullYear()}-${String(x.getMonth() + 1).padStart(2, '0')}-${String(x.getDate()).padStart(2, '0')}`;
+      const day = st.stats.daily?.[key];
+      const label = period === 'week'
+        ? ['일', '월', '화', '수', '목', '금', '토'][x.getDay()]
+        : `${x.getDate()}`;
+      result.push({
+        label,
+        value: day?.answered || 0,
+        highlight: key === today,
+      });
+    }
+    return result;
+  }, [now, period, st]);
+
+  // 일별 정답률 차트 데이터
+  const accChartData = useMemo(() => {
+    const days = period === 'week' ? 7 : 30;
+    const d = new Date(now);
+    const today = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    const result = [];
+    for (let i = days - 1; i >= 0; i--) {
+      const x = new Date(d);
+      x.setDate(d.getDate() - i);
+      const key = `${x.getFullYear()}-${String(x.getMonth() + 1).padStart(2, '0')}-${String(x.getDate()).padStart(2, '0')}`;
+      const day = st.stats.daily?.[key];
+      const answered = day?.answered || 0;
+      const correct = day?.correct || 0;
+      const label = period === 'week'
+        ? ['일', '월', '화', '수', '목', '금', '토'][x.getDay()]
+        : `${x.getDate()}`;
+      result.push({
+        label,
+        value: answered > 0 ? Math.round((correct / answered) * 100) : 0,
+        highlight: key === today,
+      });
+    }
+    return result;
   }, [now, period, st]);
 
   useEffect(() => {
@@ -330,6 +379,12 @@ export default function ProgressPage() {
                 {summary.studyDays === 0 ? '아직 기록이 없어' : '꾸준함이 쌓이는 중'}
               </div>
             </div>
+            {summary.answered > 0 && (
+              <div className="mt-3">
+                <div className="text-[10px] font-extrabold" style={{ color: 'var(--muted)' }}>일별 문제 수</div>
+                <MiniBarChart data={chartData} height={60} />
+              </div>
+            )}
           </Card>
 
           <Card className="p-3">
@@ -346,6 +401,12 @@ export default function ProgressPage() {
                 정답 {summary.correct} · 오답 {summary.wrong}
               </div>
             </div>
+            {summary.answered > 0 && (
+              <div className="mt-3">
+                <div className="text-[10px] font-extrabold" style={{ color: 'var(--muted)' }}>일별 정답률(%)</div>
+                <MiniBarChart data={accChartData} height={60} barColor="var(--success, #22c55e)" highlightColor="var(--success-600, #16a34a)" />
+              </div>
+            )}
           </Card>
 
           <Card className="p-3">
