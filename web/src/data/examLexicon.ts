@@ -136,15 +136,6 @@ export const antonyms: AntonymSynonymEntry[] = [
     ]
   },
   {
-    "a": "新",
-    "b": "舊",
-    "label": "새↔옛",
-    "grades": [
-      "7급Ⅱ",
-      "6급Ⅱ"
-    ]
-  },
-  {
     "a": "明",
     "b": "暗",
     "label": "밝을↔어두울",
@@ -180,15 +171,6 @@ export const antonyms: AntonymSynonymEntry[] = [
     ]
   },
   {
-    "a": "强",
-    "b": "弱",
-    "label": "강할↔약할",
-    "grades": [
-      "6급Ⅱ",
-      "6급"
-    ]
-  },
-  {
     "a": "開",
     "b": "閉",
     "label": "열↔닫을",
@@ -206,29 +188,12 @@ export const antonyms: AntonymSynonymEntry[] = [
     ]
   },
   {
-    "a": "苦",
-    "b": "樂",
-    "label": "쓸↔즐길",
-    "grades": [
-      "6급"
-    ]
-  },
-  {
     "a": "輕",
     "b": "重",
     "label": "가벼울↔무거울",
     "grades": [
       "6급",
       "6급Ⅱ"
-    ]
-  },
-  {
-    "a": "善",
-    "b": "惡",
-    "label": "착할↔악할",
-    "grades": [
-      "6급Ⅱ",
-      "6급"
     ]
   },
   {
@@ -297,38 +262,6 @@ export const antonyms: AntonymSynonymEntry[] = [
     ]
   },
   {
-    "a": "吉",
-    "b": "凶",
-    "label": "길할↔흉할",
-    "grades": [
-      "4급Ⅱ"
-    ]
-  },
-  {
-    "a": "寒",
-    "b": "暑",
-    "label": "찰↔더울",
-    "grades": [
-      "4급Ⅱ"
-    ]
-  },
-  {
-    "a": "賢",
-    "b": "愚",
-    "label": "어질↔어리석을",
-    "grades": [
-      "4급"
-    ]
-  },
-  {
-    "a": "眞",
-    "b": "僞",
-    "label": "참↔거짓",
-    "grades": [
-      "4급"
-    ]
-  },
-  {
     "a": "白",
     "b": "黑",
     "label": "흰↔검을",
@@ -345,24 +278,6 @@ export const antonyms: AntonymSynonymEntry[] = [
     "b": "近",
     "label": "멀↔가까울",
     "grades": ["6급Ⅱ"]
-  },
-  {
-    "a": "深",
-    "b": "淺",
-    "label": "깊을↔얕을",
-    "grades": ["6급", "4급Ⅱ"]
-  },
-  {
-    "a": "廣",
-    "b": "狹",
-    "label": "넓을↔좁을",
-    "grades": ["6급Ⅱ", "4급Ⅱ"]
-  },
-  {
-    "a": "正",
-    "b": "邪",
-    "label": "바를↔간사할",
-    "grades": ["6급", "4급"]
   },
   {
     "a": "動",
@@ -382,39 +297,9 @@ export const antonyms: AntonymSynonymEntry[] = [
     "label": "낮↔밤",
     "grades": ["5급", "4급Ⅱ"]
   },
-  {
-    "a": "急",
-    "b": "緩",
-    "label": "급할↔느릴",
-    "grades": ["5급", "4급Ⅱ"]
-  },
-  {
-    "a": "陸",
-    "b": "海",
-    "label": "뭍↔바다",
-    "grades": ["6급Ⅱ", "6급"]
-  }
 ];
 
 export const synonyms: AntonymSynonymEntry[] = [
-  {
-    "a": "國",
-    "b": "邦",
-    "label": "나라",
-    "grades": [
-      "8급",
-      "4급"
-    ]
-  },
-  {
-    "a": "家",
-    "b": "宅",
-    "label": "집",
-    "grades": [
-      "7급Ⅱ",
-      "4급Ⅱ"
-    ]
-  },
   {
     "a": "歌",
     "b": "曲",
@@ -450,24 +335,6 @@ export const synonyms: AntonymSynonymEntry[] = [
     ]
   },
   {
-    "a": "病",
-    "b": "疾",
-    "label": "병",
-    "grades": [
-      "6급Ⅱ",
-      "5급"
-    ]
-  },
-  {
-    "a": "古",
-    "b": "舊",
-    "label": "옛",
-    "grades": [
-      "6급",
-      "6급Ⅱ"
-    ]
-  },
-  {
     "a": "美",
     "b": "麗",
     "label": "아름다울",
@@ -485,51 +352,12 @@ export const synonyms: AntonymSynonymEntry[] = [
     ]
   },
   {
-    "a": "法",
-    "b": "律",
-    "label": "법",
-    "grades": [
-      "6급"
-    ]
-  },
-  {
     "a": "終",
     "b": "末",
     "label": "끝",
     "grades": [
       "6급"
     ]
-  },
-  {
-    "a": "勝",
-    "b": "克",
-    "label": "이길",
-    "grades": [
-      "5급",
-      "4급Ⅱ"
-    ]
-  },
-  {
-    "a": "改",
-    "b": "變",
-    "label": "바꿀",
-    "grades": [
-      "5급"
-    ]
-  },
-  {
-    "a": "告",
-    "b": "報",
-    "label": "알릴",
-    "grades": [
-      "5급"
-    ]
-  },
-  {
-    "a": "山",
-    "b": "岳",
-    "label": "산",
-    "grades": ["8급", "4급Ⅱ"]
   },
   {
     "a": "水",
@@ -542,12 +370,6 @@ export const synonyms: AntonymSynonymEntry[] = [
     "b": "快",
     "label": "빠를",
     "grades": ["5급", "4급Ⅱ"]
-  },
-  {
-    "a": "恐",
-    "b": "懼",
-    "label": "두려울",
-    "grades": ["4급Ⅱ", "4급"]
   },
   {
     "a": "戰",
