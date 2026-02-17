@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import OfflineBanner from "@/components/OfflineBanner";
+import InstallBanner from "@/components/InstallBanner";
 import { ThemeScript } from "@/components/ThemeScript";
 import { SerwistProvider } from "./serwist-provider";
 
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
   manifest: "/manifest.webmanifest",
   icons: {
     icon: "/favicon.ico",
-    apple: "/favicon.ico",
+    apple: "/icon-192.png",
   },
   appleWebApp: {
     capable: true,
@@ -67,6 +68,7 @@ export default function RootLayout({
         <SerwistProvider swUrl="/serwist/sw.js">
           <OfflineBanner />
           {children}
+          <InstallBanner />
         </SerwistProvider>
       </body>
     </html>
