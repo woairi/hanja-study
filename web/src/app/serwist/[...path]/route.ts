@@ -4,6 +4,7 @@
  */
 import { spawnSync } from "node:child_process";
 import { createSerwistRoute } from "@serwist/turbopack";
+import type { NextRequest } from "next/server";
 
 // Git revision으로 프리캐시 버전 관리
 const revision =
@@ -21,7 +22,20 @@ export const dynamic = "force-dynamic";
 export const dynamicParams = true;
 export const revalidate = 0;
 
-// Next.js 16의 catch-all은 string[] 파라미터를 기대하지만
-// @serwist/turbopack은 string으로 선언되어 있어서 타입 캐스트
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const GET = serwistRoute.GET as any;
+/**
+ * Next.js 16 catch-all → params.path = string[]
+ * @serwist/turbopack → params.path = string (단일)
+ * 래퍼로 string[].join('/') 변환 후 전달
+ */
+export async function GET(
+  req: NextRequest,
+  context: { params: Promise<{ path: string[] }> },
+) {
+  const { path } = await context.params;
+  const pathStr = Array.isArray(path) ? path.join("/") : path;
+
+  // @serwist/turbopack의 GET은 params.path를 string으로 기대
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handler = serwistRoute.GET as any;
+  return handler(req, { params: Promise.resolve({ path: pathStr }) });
+}

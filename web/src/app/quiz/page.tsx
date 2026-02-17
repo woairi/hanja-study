@@ -1,10 +1,10 @@
 import { redirect } from 'next/navigation';
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-function toQueryString(sp?: PageProps['searchParams']) {
+function toQueryString(sp?: Record<string, string | string[] | undefined>) {
   if (!sp) return '';
   const params = new URLSearchParams();
   for (const [k, v] of Object.entries(sp)) {
@@ -15,7 +15,8 @@ function toQueryString(sp?: PageProps['searchParams']) {
   return qs ? `?${qs}` : '';
 }
 
-export default function QuizRedirectPage({ searchParams }: PageProps) {
+export default async function QuizRedirectPage({ searchParams }: PageProps) {
+  const sp = await searchParams;
   // Back-compat: /quiz?grade=... → /quiz/session?grade=...
-  redirect(`/quiz/session${toQueryString(searchParams)}`);
+  redirect(`/quiz/session${toQueryString(sp)}`);
 }
