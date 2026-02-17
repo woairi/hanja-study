@@ -4,6 +4,40 @@
 
 형식: Keep a Changelog 스타일(간단 버전).
 
+## [Week 8] — 2026-02-17
+
+### Added — 급수 도전 (기출유형 학습)
+- **시험 문제 자동 생성 엔진** (`lib/exam/generator.ts`): 7종 유형 지원
+  - P0: 독음 / 훈음 / 한자 쓰기 / 부수·획수 (4종)
+  - P1: 반대어·유의어 / 사자성어 / 짝짓기 (3종)
+- **급수별 블루프린트**: 8급~4급Ⅱ 유형 비율·난이도·합격선(70%) 정의
+- **시험 데이터 큐레이션** (`data/examLexicon.ts`): 반대어 50쌍 + 유의어 20쌍 + 사자성어 45개
+- **급수 도전 페이지** (`/exam`): 급수·모드(빠른/실전/유형) 선택 + 하단 CTA
+- **시험 풀이 화면** (`/exam/session`): 진행바 + 즉시 피드백 + SRS 연동
+- **짝짓기 UI** (`MatchingQuestion`): tap-tap 방식 한자↔뜻 4쌍 매칭
+- **시험 결과 화면** (`/exam/result`): 합격/불합격 + 유형별 차트 + 오답 노트
+- **결과 공유**: Canvas API 이미지 생성 + Web Share API
+- **XP·레벨 시스템**: 정답 ×2XP + 합격 보너스 30XP, Lv = XP÷100
+- **급수 뱃지**: 합격 급수별 🏅 자동 부여
+- **시험 이력** (`/exam/history`): 레벨·XP바·합격/불합격 기록 리스트
+- **홈 화면 레벨·뱃지 표시**: ⭐ Lv.N + 🏅 N급수 pill
+- **AppState v3 마이그레이션**: gamification + examHistory 필드 추가
+
+### Changed
+- 블루프린트 6급 이상: 7종 유형 혼합 (P0 4종 + P1 3종)
+- 홈 페이지 헤더에 급수 도전 링크 추가
+
+### Fixed
+- lint: `require()` → ESM import (`examLexicon.json` → `.ts`)
+- lint: 미사용 import 5개 제거 (Button, Link, Card, readFileSync 등)
+- 짝짓기 UI: 양쪽 버튼 높이 통일 (`min-height: 4.5rem`)
+- storage.fallback 테스트: AppState v3 기대값 업데이트
+
+### Tests
+- 유닛: 34건 (exam generator 11건 + XP/이력 4건)
+- E2E: 21건 (exam 3건 추가)
+- 총 55건 전부 통과
+
 ## [Week 7] — 2026-02-17
 
 ### Added

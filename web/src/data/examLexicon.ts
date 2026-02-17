@@ -327,6 +327,72 @@ export const antonyms: AntonymSynonymEntry[] = [
     "grades": [
       "4급"
     ]
+  },
+  {
+    "a": "白",
+    "b": "黑",
+    "label": "흰↔검을",
+    "grades": ["7급Ⅱ", "4급"]
+  },
+  {
+    "a": "老",
+    "b": "少",
+    "label": "늙을↔젊을",
+    "grades": ["7급Ⅱ"]
+  },
+  {
+    "a": "遠",
+    "b": "近",
+    "label": "멀↔가까울",
+    "grades": ["6급Ⅱ"]
+  },
+  {
+    "a": "深",
+    "b": "淺",
+    "label": "깊을↔얕을",
+    "grades": ["6급", "4급Ⅱ"]
+  },
+  {
+    "a": "廣",
+    "b": "狹",
+    "label": "넓을↔좁을",
+    "grades": ["6급Ⅱ", "4급Ⅱ"]
+  },
+  {
+    "a": "正",
+    "b": "邪",
+    "label": "바를↔간사할",
+    "grades": ["6급", "4급"]
+  },
+  {
+    "a": "動",
+    "b": "靜",
+    "label": "움직일↔고요할",
+    "grades": ["6급", "5급"]
+  },
+  {
+    "a": "直",
+    "b": "曲",
+    "label": "곧을↔굽을",
+    "grades": ["6급Ⅱ"]
+  },
+  {
+    "a": "晝",
+    "b": "夜",
+    "label": "낮↔밤",
+    "grades": ["5급", "4급Ⅱ"]
+  },
+  {
+    "a": "急",
+    "b": "緩",
+    "label": "급할↔느릴",
+    "grades": ["5급", "4급Ⅱ"]
+  },
+  {
+    "a": "陸",
+    "b": "海",
+    "label": "뭍↔바다",
+    "grades": ["6급Ⅱ", "6급"]
   }
 ];
 
@@ -458,6 +524,36 @@ export const synonyms: AntonymSynonymEntry[] = [
     "grades": [
       "5급"
     ]
+  },
+  {
+    "a": "山",
+    "b": "岳",
+    "label": "산",
+    "grades": ["8급", "4급Ⅱ"]
+  },
+  {
+    "a": "水",
+    "b": "液",
+    "label": "물",
+    "grades": ["8급", "4급"]
+  },
+  {
+    "a": "速",
+    "b": "快",
+    "label": "빠를",
+    "grades": ["5급", "4급Ⅱ"]
+  },
+  {
+    "a": "恐",
+    "b": "懼",
+    "label": "두려울",
+    "grades": ["4급Ⅱ", "4급"]
+  },
+  {
+    "a": "戰",
+    "b": "鬪",
+    "label": "싸울",
+    "grades": ["5급", "4급"]
   }
 ];
 
@@ -611,5 +707,125 @@ export const idioms: IdiomEntry[] = [
     "reading": "개과천선",
     "meaning": "허물을 고쳐 착한 쪽으로 옮기다",
     "minGrade": "5급"
+  },
+  {
+    "chars": "不問可知",
+    "reading": "불문가지",
+    "meaning": "묻지 않아도 알 수 있다",
+    "minGrade": "7급"
+  },
+  {
+    "chars": "日就月將",
+    "reading": "일취월장",
+    "meaning": "날로 달로 자라고 나아간다",
+    "minGrade": "8급"
+  },
+  {
+    "chars": "八方美人",
+    "reading": "팔방미인",
+    "meaning": "여덟 방향으로 아름다운 사람 — 다재다능",
+    "minGrade": "8급"
+  },
+  {
+    "chars": "九死一生",
+    "reading": "구사일생",
+    "meaning": "아홉 번 죽을 뻔하고 한 번 살다",
+    "minGrade": "8급"
+  },
+  {
+    "chars": "十中八九",
+    "reading": "십중팔구",
+    "meaning": "열 가운데 여덟아홉 — 거의 틀림없이",
+    "minGrade": "8급"
+  },
+  {
+    "chars": "百發百中",
+    "reading": "백발백중",
+    "meaning": "백 번 쏘아 백 번 맞힌다",
+    "minGrade": "7급"
+  },
+  {
+    "chars": "前代未聞",
+    "reading": "전대미문",
+    "meaning": "이전 시대에 들어보지 못한 일",
+    "minGrade": "7급Ⅱ"
+  },
+  {
+    "chars": "自給自足",
+    "reading": "자급자족",
+    "meaning": "스스로 대어 스스로 넉넉하게 하다",
+    "minGrade": "7급"
+  },
+  {
+    "chars": "明明白白",
+    "reading": "명명백백",
+    "meaning": "밝고 밝아 분명하다",
+    "minGrade": "7급"
+  },
+  {
+    "chars": "心身一如",
+    "reading": "심신일여",
+    "meaning": "마음과 몸이 하나 같다",
+    "minGrade": "7급Ⅱ"
+  },
+  {
+    "chars": "表裏不同",
+    "reading": "표리부동",
+    "meaning": "겉과 속이 같지 않다",
+    "minGrade": "6급Ⅱ"
+  },
+  {
+    "chars": "同病相憐",
+    "reading": "동병상련",
+    "meaning": "같은 병을 앓는 사람끼리 서로 불쌍히 여긴다",
+    "minGrade": "6급"
+  },
+  {
+    "chars": "言行一致",
+    "reading": "언행일치",
+    "meaning": "말과 행동이 한결같다",
+    "minGrade": "6급"
+  },
+  {
+    "chars": "有備無患",
+    "reading": "유비무환",
+    "meaning": "준비가 있으면 걱정이 없다",
+    "minGrade": "6급Ⅱ"
+  },
+  {
+    "chars": "無所不爲",
+    "reading": "무소불위",
+    "meaning": "하지 못할 바가 없다",
+    "minGrade": "5급"
+  },
+  {
+    "chars": "起死回生",
+    "reading": "기사회생",
+    "meaning": "죽을 뻔하다가 다시 살아남",
+    "minGrade": "5급"
+  },
+  {
+    "chars": "自業自得",
+    "reading": "자업자득",
+    "meaning": "자기가 저지른 일의 결과를 자기가 받다",
+    "minGrade": "4급Ⅱ"
+  },
+  {
+    "chars": "各人各色",
+    "reading": "각인각색",
+    "meaning": "사람마다 각각 다르다",
+    "minGrade": "4급Ⅱ"
+  },
+  {
+    "chars": "刻骨難忘",
+    "reading": "각골난망",
+    "meaning": "뼈에 새겨 잊기 어렵다",
+    "minGrade": "4급"
+  },
+  {
+    "chars": "見物生心",
+    "reading": "견물생심",
+    "meaning": "물건을 보면 욕심이 생긴다",
+    "minGrade": "4급"
   }
 ];

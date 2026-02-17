@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Card } from '@/components/ui/Card';
 import { MiniBarChart } from '@/components/ui/MiniBarChart';
@@ -30,6 +30,8 @@ export default function ExamResultContent() {
   const sp = useSearchParams();
   const grade = (sp.get('grade') || '8급') as GradeLabel;
   const [payload, setPayload] = useState<ExamResultPayload | null>(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [shared, setShared] = useState(false);
 
   useEffect(() => {
     try {
@@ -64,6 +66,94 @@ export default function ExamResultContent() {
       .filter((x): x is KanjiItem => !!x)
       .slice(0, 10);
   }, [payload]);
+
+  const drawAndShare = useCallback(async () => {
+    if (!payload) return;
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    const W = 600, H = 400;
+    canvas.width = W;
+    canvas.height = H;
+
+    // 배경
+    const bg = ctx.createLinearGradient(0, 0, W, H);
+    bg.addColorStop(0, '#e0f2fe');
+    bg.addColorStop(1, '#bae6fd');
+    ctx.fillStyle = bg;
+    ctx.fillRect(0, 0, W, H);
+
+    // 타이틀
+    ctx.fillStyle = '#0284c7';
+    ctx.font = 'bold 28px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText(passed ? '🎊 합격!' : '💪 도전 완료!', W / 2, 50);
+
+    // 급수
+    ctx.fillStyle = '#334155';
+    ctx.font = 'bold 22px sans-serif';
+    ctx.fillText(`${grade} 급수 도전`, W / 2, 85);
+
+    // 점수 원형
+    const cx = W / 2, cy = 190, r = 65;
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(255,255,255,0.7)';
+    ctx.fill();
+    ctx.fillStyle = pct >= 70 ? '#22c55e' : '#ef4444';
+    ctx.font = 'bold 40px sans-serif';
+    ctx.fillText(`${pct}%`, cx, cy + 12);
+    ctx.fillStyle = '#64748b';
+    ctx.font = '14px sans-serif';
+    ctx.fillText(`${payload.score}/${payload.total}`, cx, cy + 35);
+
+    // 유형별
+    const types = typeChartData;
+    if (types.length > 0) {
+      const startX = 60;
+      const barW = (W - 120) / types.length;
+      ctx.font = '11px sans-serif';
+      ctx.textAlign = 'center';
+      for (let i = 0; i < types.length; i++) {
+        const x = startX + barW * i + barW / 2;
+        const barH = Math.max(4, (types[i].value / 100) * 80);
+        ctx.fillStyle = types[i].value >= 70 ? '#22c55e' : '#f59e0b';
+        ctx.fillRect(x - 15, 320 - barH, 30, barH);
+        ctx.fillStyle = '#475569';
+        ctx.fillText(types[i].label, x, 340);
+        ctx.fillText(`${types[i].value}%`, x, 320 - barH - 6);
+      }
+    }
+
+    // 워터마크
+    ctx.fillStyle = '#94a3b8';
+    ctx.font = '12px sans-serif';
+    ctx.textAlign = 'right';
+    ctx.fillText('hanja-study.vercel.app', W - 16, H - 12);
+
+    // 공유
+    try {
+      const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, 'image/png'));
+      if (blob && navigator.canShare?.({ files: [new File([blob], 'exam.png', { type: 'image/png' })] })) {
+        await navigator.share({
+          title: `${grade} 급수 도전 결과`,
+          text: `${grade} ${pct}% ${passed ? '합격!' : '도전 완료'} — 한자 공부`,
+          files: [new File([blob], 'exam-result.png', { type: 'image/png' })],
+        });
+      } else {
+        // fallback: 텍스트만
+        await navigator.share?.({
+          title: `${grade} 급수 도전 결과`,
+          text: `${grade} ${pct}% (${payload.score}/${payload.total}) ${passed ? '합격!' : '도전 완료'} — hanja-study.vercel.app`,
+        });
+      }
+      setShared(true);
+    } catch {
+      // 사용자가 취소
+    }
+  }, [payload, passed, pct, grade, typeChartData]);
 
   if (!payload) {
     return (
@@ -140,10 +230,15 @@ export default function ExamResultContent() {
       {/* XP 획득 */}
       <XpCard score={payload.score} passed={passed} />
 
+      {/* 숨겨진 canvas */}
+      <canvas ref={canvasRef} className="hidden" />
+
       <div className="fixed inset-x-0 bottom-0 z-20 border-t" style={{ background: 'rgba(240,249,255,0.94)', borderColor: 'rgba(2,132,199,0.12)' }}>
         <div className="mx-auto flex w-full max-w-md gap-2 p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
           <Link href={`/exam/session?grade=${encodeURIComponent(grade)}&mode=quick`} className="btn btn-primary focus-ring inline-flex flex-1 items-center justify-center">다시 도전 🔄</Link>
-          <Link href="/exam" className="btn btn-ghost focus-ring inline-flex flex-1 items-center justify-center">급수 변경</Link>
+          <button onClick={drawAndShare} className="btn btn-ghost focus-ring inline-flex flex-1 items-center justify-center">
+            {shared ? '공유 완료 ✅' : '공유 📤'}
+          </button>
         </div>
       </div>
     </main>

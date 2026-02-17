@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { GRADE_LABELS, kanjiByGradeLabel, todayKey } from '@/lib/kanji';
 import { loadLastSession, type LastSession } from '@/lib/session';
-import { loadState, saveState } from '@/lib/storage';
+import { loadState, saveState, xpProgress } from '@/lib/storage';
 import { dailyMissionItems } from '@/lib/learningSummary';
 import { homeGreeting } from '@/lib/copy';
 import { logEvent } from '@/lib/telemetry';
@@ -26,6 +26,8 @@ export default function HomePage() {
   });
   const [badgeModal, setBadgeModal] = useState<Badge | null>(null);
   const [lastSession, setLastSession] = useState<LastSession | null>(null);
+  const [xp, setXp] = useState({ level: 1, current: 0, needed: 100, pct: 0 });
+  const [examBadges, setExamBadges] = useState<string[]>([]);
 
   // collapsibles (progressive disclosure)
   const [showGrades, setShowGrades] = useState(false);
@@ -38,6 +40,8 @@ export default function HomePage() {
     setNickname(st.settings.nickname || '');
     setOnboardingDone(!!st.settings.onboardingCompleted);
     setStreak(st.streak);
+    setXp(xpProgress(st.gamification?.xpTotal || 0));
+    setExamBadges(st.gamification?.badges || []);
     setLastSession(loadLastSession());
 
     // restore collapsible prefs
@@ -208,9 +212,15 @@ export default function HomePage() {
         </div>
 
         <div className="mt-2 flex flex-wrap items-center gap-2 text-xs" style={{ color: 'var(--muted)' }}>
+          <span className="rounded-full bg-white/55 px-2 py-1">⭐ Lv.{xp.level}</span>
           <span className="rounded-full bg-white/55 px-2 py-1">🔥 연속 {streak.count}일</span>
           <span className="rounded-full bg-white/55 px-2 py-1">🎯 목표 {dailyCount}자</span>
           <span className="rounded-full bg-white/55 px-2 py-1">🔁 복습 {reviewInfo.totalDue}개</span>
+          {examBadges.length > 0 && (
+            <span className="rounded-full px-2 py-1" style={{ background: 'rgba(251,191,36,0.2)', color: '#b45309' }}>
+              🏅 {examBadges.length}급수
+            </span>
+          )}
         </div>
 
         {greeting && (
