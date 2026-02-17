@@ -7,7 +7,7 @@ import { Card } from '@/components/ui/Card';
 import { StateCard } from '@/components/ui/StateCard';
 import { ALL_KANJI, kanjiByGradeLabel, todayKey } from '@/lib/kanji';
 import { pickOne } from '@/lib/copy';
-import { calcQuizXp, loadQuizResult, QUIZ_RETRY_KEY, type QuizResultPayload } from '@/lib/quizResult';
+import { calcQuizXp, loadQuizResult, wrongReasonCoaching, QUIZ_RETRY_KEY, type QuizResultPayload } from '@/lib/quizResult';
 import { loadState } from '@/lib/storage';
 import { logEvent } from '@/lib/telemetry';
 import type { GradeLabel, KanjiItem } from '@/lib/types';
@@ -298,6 +298,20 @@ export default function ResultClient() {
                     <span className="font-extrabold">{selectedItem.confusables.slice(0, 6).join(' ')}</span>
                   </div>
                 ) : null}
+
+                {(() => {
+                  const detail = payload?.wrongDetails?.find((d) => d.kanjiId === selectedItem.id);
+                  if (!detail) return null;
+                  const reasonLabel = { reading: '🔊 음 혼동', meaning: '📖 뜻 혼동', shape: '👁️ 형태 혼동', unknown: '💡' }[detail.reason];
+                  return (
+                    <div className="mt-2 rounded-xl px-3 py-2 text-xs" style={{ background: 'rgba(251, 191, 36, 0.12)' }}>
+                      <span className="font-extrabold">{reasonLabel}</span>
+                      <div className="mt-1" style={{ color: 'var(--muted)' }}>
+                        {wrongReasonCoaching(detail.reason)}
+                      </div>
+                    </div>
+                  );
+                })()}
 
                 <div className="mt-3 text-xs" style={{ color: 'var(--muted)' }}>
                   탭하면 바로 해설이 보여. 다시 풀면 더 단단해져!

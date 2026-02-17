@@ -14,7 +14,7 @@ import { makeQuiz, type QuizQuestion } from '@/lib/quiz';
 import { makeRetryQuestion } from '@/lib/retry';
 import { loadLastSession, saveLastSession, clearLastSession } from '@/lib/session';
 import { logEvent } from '@/lib/telemetry';
-import { calcQuizXp, saveQuizResult } from '@/lib/quizResult';
+import { calcQuizXp, classifyWrongReason, saveQuizResult } from '@/lib/quizResult';
 import { feedbackCorrect, feedbackWrong } from '@/lib/feedback';
 
 type StudySession = {
@@ -52,7 +52,7 @@ export default function QuizClient() {
   const [sessionStreak, setSessionStreak] = useState(0);
   const [sparkleKey, setSparkleKey] = useState(0);
   const [confettiKey, setConfettiKey] = useState(0);
-  const [answers, setAnswers] = useState<{ qid: string; correct: boolean; hintUsed: boolean; kanjiId: string }[]>([]);
+  const [answers, setAnswers] = useState<{ qid: string; correct: boolean; hintUsed: boolean; kanjiId: string; chosenId?: string }[]>([]);
   const [pendingRetry, setPendingRetry] = useState<Array<{ kanjiId: string; dueAt: number; kind: QuizQuestion['kind'] }>>([]);
 
   useEffect(() => {
@@ -219,6 +219,20 @@ export default function QuizClient() {
 
     const total = questions.length;
     const xp = calcQuizXp(score, total);
+
+    // 오답 이유 분류
+    const wrongDetails = answers
+      .filter((a) => !a.correct)
+      .map((a) => {
+        const correctKanji = ALL_KANJI.find((k) => k.id === a.kanjiId);
+        const chosenKanji = a.chosenId ? ALL_KANJI.find((k) => k.id === a.chosenId || k.hanja === a.chosenId || k.meaning === a.chosenId || k.reading === a.chosenId) : undefined;
+        return {
+          kanjiId: a.kanjiId,
+          chosenId: a.chosenId,
+          reason: correctKanji ? classifyWrongReason(correctKanji, chosenKanji) : ('unknown' as const),
+        };
+      });
+
     saveQuizResult({
       version: 1,
       quizId,
@@ -226,6 +240,7 @@ export default function QuizClient() {
       total,
       score,
       wrongKanjiIds,
+      wrongDetails,
       xp,
       finishedAt: Date.now(),
     });
@@ -501,7 +516,7 @@ export default function QuizClient() {
                 feedbackWrong();
               }
 
-              setAnswers((a) => [...a, { qid: q.id, correct: isCorrect, hintUsed, kanjiId: q.kanjiId }]);
+              setAnswers((a) => [...a, { qid: q.id, correct: isCorrect, hintUsed, kanjiId: q.kanjiId, chosenId: chosen ?? undefined }]);
               commitResult(isCorrect, q.kanjiId);
 
               const delayMs = isCorrect ? 650 : 800;

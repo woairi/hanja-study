@@ -7,10 +7,11 @@ import Modal from '@/components/Modal';
 import StickerBadge, { type Badge } from '@/components/StickerBadge';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
-import { GRADE_LABELS, kanjiByGradeLabel } from '@/lib/kanji';
+import { GRADE_LABELS, kanjiByGradeLabel, todayKey } from '@/lib/kanji';
 import { loadLastSession, type LastSession } from '@/lib/session';
 import { loadState, saveState } from '@/lib/storage';
 import { dailyMissionItems } from '@/lib/learningSummary';
+import { homeGreeting } from '@/lib/copy';
 import { logEvent } from '@/lib/telemetry';
 import type { GradeLabel } from '@/lib/types';
 
@@ -68,7 +69,13 @@ export default function HomePage() {
   }, [showGrades, showGoals]);
 
   const seenCount = useMemo(() => Object.keys(loadState().progress || {}).length, []);
+  const masteredCount = useMemo(() => Object.values(loadState().progress || {}).filter((p) => p?.mastered).length, []);
   const isNew = seenCount <= 0;
+
+  const greeting = useMemo(() => {
+    if (isNew) return null;
+    return homeGreeting(streak.count, masteredCount, todayKey());
+  }, [isNew, streak.count, masteredCount]);
 
   const gradeSummaries = useMemo(() => {
     const st = loadState();
@@ -205,6 +212,12 @@ export default function HomePage() {
           <span className="rounded-full bg-white/55 px-2 py-1">🎯 목표 {dailyCount}자</span>
           <span className="rounded-full bg-white/55 px-2 py-1">🔁 복습 {reviewInfo.totalDue}개</span>
         </div>
+
+        {greeting && (
+          <div className="mt-2 text-xs font-semibold" style={{ color: 'var(--primary)' }}>
+            {greeting}
+          </div>
+        )}
 
         <div className="mt-2 flex items-center gap-2 overflow-x-auto pb-1">
           <Link
