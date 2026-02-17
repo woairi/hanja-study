@@ -362,12 +362,14 @@ export default function QuizClient() {
                 key={o.value}
                 disabled={locked || (!feedback && eliminated)}
                 data-testid={`quiz-option-${oi + 1}`}
-                className={`focus-ring rounded-2xl border-2 px-4 py-4 text-left text-lg font-extrabold transition-colors disabled:opacity-100 ${
+                className={`focus-ring rounded-2xl border-2 px-4 py-4 text-left text-lg font-extrabold transition-colors ${
+                  eliminated ? 'opacity-30 line-through' : 'disabled:opacity-100'
+                } ${
                   selected ? 'border-blue-600 bg-blue-50 pop' : ''
                 } ${isCorrectOption ? 'border-green-600 bg-green-50' : ''} ${
                   isWrongPicked ? 'border-red-600 bg-red-50' : ''
-                } ${eliminated ? 'opacity-40' : ''}`}
-                style={{ borderColor: 'rgba(2,132,199,0.18)' }}
+                }`}
+                style={{ borderColor: eliminated ? 'rgba(2,132,199,0.08)' : 'rgba(2,132,199,0.18)' }}
                 onClick={() => {
                   if (eliminated) return;
                   setChosen(o.value);
