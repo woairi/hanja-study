@@ -383,6 +383,9 @@ export default function HomePage() {
         <Link className="text-blue-700 underline" href="/progress">
           진도 보기
         </Link>
+        <Link className="font-extrabold underline" href="/exam" style={{ color: 'var(--primary)' }}>
+          🏆 급수 도전
+        </Link>
         <Link className="text-blue-700 underline" href="/about">
           안내
         </Link>
