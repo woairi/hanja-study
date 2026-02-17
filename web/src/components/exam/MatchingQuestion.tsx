@@ -64,8 +64,13 @@ export default function MatchingQuestion({ pairs, onComplete }: Props) {
           return (
             <button
               key={`l-${idx}`}
-              className="focus-ring rounded-2xl border-2 px-3 py-4 text-center text-2xl font-extrabold transition-all"
+              className="focus-ring rounded-2xl border-2 text-center text-2xl font-extrabold transition-all"
               style={{
+                minHeight: '4.5rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '0.5rem',
                 background: isMatched
                   ? 'rgba(34,197,94,0.15)'
                   : isWrong
@@ -100,8 +105,13 @@ export default function MatchingQuestion({ pairs, onComplete }: Props) {
           return (
             <button
               key={`r-${idx}`}
-              className="focus-ring rounded-2xl border-2 px-3 py-4 text-center text-sm font-extrabold transition-all"
+              className="focus-ring rounded-2xl border-2 text-center text-sm font-extrabold transition-all"
               style={{
+                minHeight: '4.5rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '0.5rem',
                 background: isMatched
                   ? 'rgba(34,197,94,0.15)'
                   : isWrong
