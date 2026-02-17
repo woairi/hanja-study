@@ -70,11 +70,44 @@ export default function ResultClient() {
   }, [grade, st]);
 
   const finishMsg = useMemo(() => {
+    // 성과 기반 감정 피드백 (잘한 점 1개 + 격려)
+    if (accuracy >= 100) {
+      return pickOne(
+        ['완벽해! 🎯 한 문제도 안 틀렸어!', '만점이야! 🌟 오늘 정말 대단해!', '전부 맞혔어! 🏆 최고야!'],
+        `${todayKey()}|quiz|${grade}|${score}|${total}`
+      );
+    }
+    if (accuracy >= 80) {
+      return pickOne(
+        ['거의 다 맞았어! 조금만 더 하면 만점이야 💪', '실력이 쑥쑥 올라가고 있어! ⭐', '대단해! 오답만 복습하면 완벽해질 거야 🔥'],
+        `${todayKey()}|quiz|${grade}|${score}|${total}`
+      );
+    }
+    if (accuracy >= 50) {
+      return pickOne(
+        ['절반 이상 맞았어! 계속 하면 분명 늘어 📈', '좋은 시작이야! 오답 노트를 보면 도움이 돼 👀', '잘 하고 있어! 복습하면 더 잘할 수 있어 💡'],
+        `${todayKey()}|quiz|${grade}|${score}|${total}`
+      );
+    }
     return pickOne(
-      ['오늘도 한 단계 업!', '이제 기억이 더 단단해졌어.', '좋아! 내일은 더 쉬워질 거야.'],
+      ['괜찮아! 한자는 반복이 실력이야 🔄', '틀려도 괜찮아. 다시 풀면 기억에 남아! 🧠', '처음엔 다 어려워. 계속 하면 반드시 늘어! 🌱'],
       `${todayKey()}|quiz|${grade}|${score}|${total}`
     );
-  }, [grade, score, total]);
+  }, [grade, score, total, accuracy]);
+
+  const previousComparison = useMemo(() => {
+    // 직전 일별 통계와 비교
+    const d = new Date();
+    d.setDate(d.getDate() - 1);
+    const yKey = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    const yesterday = st.stats?.daily?.[yKey];
+    if (!yesterday || !yesterday.answered) return null;
+    const yAcc = Math.round((yesterday.correct / yesterday.answered) * 100);
+    const diff = Math.round(accuracy) - yAcc;
+    if (diff > 0) return `어제보다 정답률 ${diff}%p 올랐어! 📈`;
+    if (diff === 0) return '어제랑 같은 실력을 유지하고 있어! 🏃';
+    return null; // 떨어졌으면 안 보여줌 (기분 보호)
+  }, [st, accuracy]);
 
   const hasWrong = wrongItems.length > 0;
   const reviewCount = Math.min(10, dueCountInGrade);
@@ -179,6 +212,11 @@ export default function ResultClient() {
           <div className="mt-1" style={{ color: 'var(--muted)' }}>
             {nextBadgeHint}
           </div>
+          {previousComparison && (
+            <div className="mt-1 font-extrabold" style={{ color: 'var(--primary)' }}>
+              {previousComparison}
+            </div>
+          )}
         </div>
 
         <div className="mt-5 flex flex-col gap-2">

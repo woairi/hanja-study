@@ -192,7 +192,7 @@ export default function HomePage() {
   };
 
   return (
-    <main className="mx-auto max-w-md p-4">
+    <main className="mx-auto max-w-md p-4 pb-[calc(5rem+env(safe-area-inset-bottom))]">
       {/* Header */}
       <header className="mb-3">
         <div className="flex items-end justify-between gap-3">
@@ -392,6 +392,19 @@ export default function HomePage() {
           )}
         </div>
       </Modal>
+
+      {/* 하단 고정 CTA — 엄지 영역 */}
+      <div className="fixed inset-x-0 bottom-0 z-20 border-t" style={{ background: 'rgba(240,249,255,0.94)', borderColor: 'rgba(2,132,199,0.12)' }}>
+        <div className="mx-auto w-full max-w-md p-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
+          <Link
+            href={todayMission.href}
+            className="btn btn-primary focus-ring inline-flex w-full items-center justify-center text-base"
+            onClick={() => logEvent('home_primary_click', { kind: todayMission.kind, href: todayMission.href, from: 'bottom_cta' })}
+          >
+            {todayMission.cta} 🚀
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

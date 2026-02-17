@@ -1,4 +1,5 @@
-import { weakScore, isDue, getWeakTop, getDueTop, dailyMissionItems } from '../learningSummary';
+import { weakScore, isDue, getWeakTop, dailyMissionItems } from '../learningSummary';
+import type { AppState, KanjiItem } from '../types';
 
 describe('learningSummary', () => {
   describe('weakScore', () => {
@@ -24,12 +25,12 @@ describe('learningSummary', () => {
 
   describe('getWeakTop', () => {
     it('오답 비율 높은 순으로 정렬', () => {
-      const progress = {
+      const progress: AppState['progress'] = {
         a: { wrong: 5, correct: 1, mastered: false, nextReviewAt: 0 },
         b: { wrong: 1, correct: 5, mastered: false, nextReviewAt: 0 },
         c: { wrong: 3, correct: 1, mastered: false, nextReviewAt: 0 },
       };
-      const result = getWeakTop(progress as any, 3);
+      const result = getWeakTop(progress, 3);
       expect(result[0].id).toBe('a');
       expect(result[1].id).toBe('c');
       expect(result[2].id).toBe('b');
@@ -42,7 +43,7 @@ describe('learningSummary', () => {
         { id: '1', hanja: '一' },
         { id: '2', hanja: '二' },
         { id: '3', hanja: '三' },
-      ] as any[];
+      ] as KanjiItem[];
       const result = dailyMissionItems(items, {}, Date.now(), 3);
       expect(result.composition.fresh).toBe(3);
       expect(result.composition.review).toBe(0);
