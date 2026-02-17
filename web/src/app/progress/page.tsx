@@ -325,7 +325,9 @@ export default function ProgressPage() {
           ← 홈
         </Link>
         <h1 className="text-xl font-bold">진도</h1>
-        <div />
+        <Link href="/progress/report" className="text-xs font-extrabold underline" style={{ color: 'var(--primary)' }}>
+          📊 주간 리포트
+        </Link>
       </div>
 
       <section className="mt-1">
