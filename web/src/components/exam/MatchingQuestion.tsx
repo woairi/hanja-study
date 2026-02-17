@@ -1,7 +1,6 @@
 'use client';
 
 import { useCallback, useEffect, useState } from 'react';
-import { Card } from '@/components/ui/Card';
 
 type MatchPair = { left: string; right: string };
 

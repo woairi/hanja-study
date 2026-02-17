@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
-import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { GRADE_LABELS } from '@/lib/kanji';
 import { getBlueprint, type ExamMode, type ExamType, examTypeLabel } from '@/lib/exam/generator';

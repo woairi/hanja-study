@@ -3,7 +3,7 @@
  * 번들 사이즈 예산 체크
  * Usage: node scripts/check-bundle.mjs
  */
-import { readFileSync, readdirSync, statSync } from 'fs';
+import { readdirSync, statSync } from 'fs';
 import { join, relative } from 'path';
 
 const BUDGET = {

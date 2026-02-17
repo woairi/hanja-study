@@ -2,19 +2,7 @@
 
 import { kanjiByGradeLabel, ALL_KANJI } from '../kanji';
 import type { KanjiItem, GradeLabel } from '../types';
-
-// ─── Lexicon (antonyms / synonyms / idioms) ───
-
-type AntonymSynonymEntry = { a: string; b: string; label: string; grades: string[] };
-type IdiomEntry = { chars: string; reading: string; meaning: string; minGrade: string };
-
-// Inline-require to avoid JSON import issues with Next.js client components
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-const lexicon: {
-  antonyms: AntonymSynonymEntry[];
-  synonyms: AntonymSynonymEntry[];
-  idioms: IdiomEntry[];
-} = require('@/data/examLexicon.json');
+import { antonyms, synonyms, idioms } from '@/data/examLexicon';
 
 // ─── Types ───
 
@@ -57,19 +45,6 @@ const DEFAULT_COMP_EASY: ExamBlueprint['composition'] = [
   { type: 'write_hanja', ratio: 0.20, difficulty: 1 },
   { type: 'radical_strokes', ratio: 0.10, difficulty: 1 },
 ];
-const DEFAULT_COMP_MID: ExamBlueprint['composition'] = [
-  { type: 'read_hanja', ratio: 0.25, difficulty: 3 },
-  { type: 'meaning_reading', ratio: 0.25, difficulty: 3 },
-  { type: 'write_hanja', ratio: 0.25, difficulty: 3 },
-  { type: 'radical_strokes', ratio: 0.25, difficulty: 3 },
-];
-const DEFAULT_COMP_HARD: ExamBlueprint['composition'] = [
-  { type: 'read_hanja', ratio: 0.20, difficulty: 5 },
-  { type: 'meaning_reading', ratio: 0.20, difficulty: 5 },
-  { type: 'write_hanja', ratio: 0.25, difficulty: 5 },
-  { type: 'radical_strokes', ratio: 0.35, difficulty: 5 },
-];
-
 const blueprints: ExamBlueprint[] = [
   { gradeLabel: '8급', questionCount: 50, passScore: 70, quickCount: 10, composition: DEFAULT_COMP_EASY },
   { gradeLabel: '7급', questionCount: 50, passScore: 70, quickCount: 10, composition: [
@@ -319,14 +294,14 @@ function gradeRank(g: string): number {
 /** 해당 급수 이하에서 사용 가능한 반대어/유의어 필터 */
 function lexiconForGrade(grade: GradeLabel) {
   const rank = gradeRank(grade);
-  const ants = lexicon.antonyms.filter((e) =>
+  const ants = antonyms.filter((e) =>
     e.grades.some((g) => gradeRank(g) <= rank),
   );
-  const syns = lexicon.synonyms.filter((e) =>
+  const syns = synonyms.filter((e) =>
     e.grades.some((g) => gradeRank(g) <= rank),
   );
-  const idioms = lexicon.idioms.filter((e) => gradeRank(e.minGrade) <= rank);
-  return { antonyms: ants, synonyms: syns, idioms };
+  const idms = idioms.filter((e) => gradeRank(e.minGrade) <= rank);
+  return { antonyms: ants, synonyms: syns, idioms: idms };
 }
 
 /** 반대어/유의어: 한자를 보고 반대어 또는 유의어 고르기 */
@@ -364,22 +339,22 @@ function genAntonymSynonym(k: KanjiItem, pool: KanjiItem[], grade: GradeLabel): 
 
 /** 사자성어: 빈칸 또는 뜻 고르기 */
 function genIdiom(_k: KanjiItem, _pool: KanjiItem[], grade: GradeLabel): ExamQuestion | null {
-  const { idioms } = lexiconForGrade(grade);
-  if (idioms.length === 0) return null;
+  const { idioms: gradeIdioms } = lexiconForGrade(grade);
+  if (gradeIdioms.length === 0) return null;
 
-  const entry = idioms[Math.floor(Math.random() * idioms.length)];
+  const entry = gradeIdioms[Math.floor(Math.random() * gradeIdioms.length)];
   const isReadingQ = Math.random() < 0.5;
 
   if (isReadingQ) {
     // 한자를 보고 올바른 읽기 고르기
     const distractors = pickDistractorValues(
       entry.reading,
-      idioms.map((e) => e.reading),
+      gradeIdioms.map((e) => e.reading),
       3,
     );
     // 부족하면 랜덤 읽기 생성
     while (distractors.length < 3) {
-      const filler = idioms[Math.floor(Math.random() * idioms.length)].reading + '?';
+      const filler = gradeIdioms[Math.floor(Math.random() * gradeIdioms.length)].reading + '?';
       if (filler !== entry.reading && !distractors.includes(filler)) distractors.push(filler);
     }
     const options = shuffle([entry.reading, ...distractors.slice(0, 3)]).map((v) => ({ text: v, value: v }));
@@ -396,7 +371,7 @@ function genIdiom(_k: KanjiItem, _pool: KanjiItem[], grade: GradeLabel): ExamQue
     // 읽기를 보고 뜻 고르기
     const distractors = pickDistractorValues(
       entry.meaning,
-      idioms.map((e) => e.meaning),
+      gradeIdioms.map((e) => e.meaning),
       3,
     );
     while (distractors.length < 3) {
