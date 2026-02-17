@@ -10,7 +10,7 @@ describe('storage fallback safety', () => {
 
     const st = loadState();
 
-    expect(st.version).toBe(2);
+    expect(st.version).toBe(3);
     expect(st.settings.dailyCount).toBe(5);
     expect(st.streak.count).toBe(0);
     expect(st.progress).toEqual({});
@@ -24,7 +24,7 @@ describe('storage fallback safety', () => {
 
     const st = loadState();
 
-    expect(st.version).toBe(2);
+    expect(st.version).toBe(3);
     expect(st.settings.dailyCount).toBe(10);
     expect(st.settings.lastGradeLabel).toBe('8급');
     expect(st.stats.daily).toEqual({});

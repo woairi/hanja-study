@@ -20,7 +20,7 @@ import { todayKey } from './kanji';
  * - We fall back to defaults so the app can still boot.
  */
 
-const CURRENT_VERSION = 2 as const;
+const CURRENT_VERSION = 3 as const;
 
 // New stable key (do not include version in key name).
 const STORAGE_KEY = 'hanja-study:state';
@@ -70,6 +70,8 @@ export function defaultState(): AppState {
     streak: { count: 0, lastStudyDate: null },
     stats: { quizAnswered: 0, daily: {} },
     progress: {},
+    gamification: { xpTotal: 0, level: 1, examClearCount: 0, badges: [] },
+    examHistory: [],
   };
 }
 
@@ -142,6 +144,21 @@ function migrateV1ToV2(st: AppState): { state: AppState; changed: boolean } {
   return { state: { ...st, version: 2, progress }, changed: true };
 }
 
+/**
+ * v2 -> v3
+ *
+ * - Add gamification (xpTotal, level, examClearCount, badges)
+ * - Add examHistory
+ */
+function migrateV2ToV3(st: AppState): { state: AppState; changed: boolean } {
+  const gamification = (st as Partial<AppState>).gamification || { xpTotal: 0, level: 1, examClearCount: 0, badges: [] };
+  const examHistory = (st as Partial<AppState>).examHistory || [];
+  return {
+    state: { ...st, version: 3, gamification, examHistory },
+    changed: true,
+  };
+}
+
 function migrateToCurrent(st: AppState): { state: AppState; changed: boolean } {
   // Defensive: if a future version is encountered, do not attempt to down-migrate.
   if (!st || typeof st !== 'object') return { state: defaultState(), changed: false };
@@ -154,6 +171,12 @@ function migrateToCurrent(st: AppState): { state: AppState; changed: boolean } {
   while (cur.version < CURRENT_VERSION) {
     if (cur.version === 1) {
       const mig = migrateV1ToV2(cur);
+      cur = mig.state;
+      changed = changed || mig.changed;
+      continue;
+    }
+    if (cur.version === 2) {
+      const mig = migrateV2ToV3(cur);
       cur = mig.state;
       changed = changed || mig.changed;
       continue;
@@ -176,6 +199,8 @@ function mergeWithDefaults(parsed: AppState): AppState {
     streak: { ...d.streak, ...(parsed.streak || {}) },
     stats: { ...d.stats, ...(parsed.stats || {}), daily: { ...d.stats.daily, ...(parsed.stats?.daily || {}) } },
     progress: parsed.progress || {},
+    gamification: { ...d.gamification, ...(parsed.gamification || {}) },
+    examHistory: parsed.examHistory || [],
   };
 }
 
@@ -268,4 +293,68 @@ export function bumpDailyQuizStats(state: AppState, opts: { at: number; correct:
   const daily = Object.fromEntries(trimmed);
 
   return { ...state, stats: { ...state.stats, daily } };
+}
+
+// ─── Exam XP & History ───
+
+const XP_PER_QUESTION = 2;
+const XP_PASS_BONUS = 30;
+const XP_PER_LEVEL = 100;
+
+/** 레벨 계산 (XP 기반) */
+function levelFromXp(xp: number): number {
+  return Math.max(1, Math.floor(xp / XP_PER_LEVEL) + 1);
+}
+
+/** 시험 결과 기록 + XP 부여 + 뱃지 */
+export function recordExamResult(
+  state: AppState,
+  result: {
+    grade: string;
+    mode: string;
+    score: number;
+    total: number;
+    passed: boolean;
+    finishedAt: number;
+    byType?: Record<string, { correct: number; total: number }>;
+  },
+): AppState {
+  const record: import('./types').ExamRecord = {
+    grade: result.grade,
+    mode: result.mode,
+    score: result.score,
+    total: result.total,
+    passed: result.passed,
+    finishedAt: result.finishedAt,
+    byType: result.byType,
+  };
+
+  // 이력 (최근 50건)
+  const examHistory = [...(state.examHistory || []), record].slice(-50);
+
+  // XP
+  const earnedXp = result.score * XP_PER_QUESTION + (result.passed ? XP_PASS_BONUS : 0);
+  const xpTotal = (state.gamification?.xpTotal || 0) + earnedXp;
+  const level = levelFromXp(xpTotal);
+  const examClearCount = (state.gamification?.examClearCount || 0) + (result.passed ? 1 : 0);
+
+  // 뱃지 (합격 급수)
+  const badges = [...(state.gamification?.badges || [])];
+  if (result.passed && !badges.includes(result.grade)) {
+    badges.push(result.grade);
+  }
+
+  return {
+    ...state,
+    examHistory,
+    gamification: { xpTotal, level, examClearCount, badges },
+  };
+}
+
+/** XP에서 현재 레벨 진행률 (0~100) */
+export function xpProgress(xp: number): { level: number; current: number; needed: number; pct: number } {
+  const level = levelFromXp(xp);
+  const baseXp = (level - 1) * XP_PER_LEVEL;
+  const current = xp - baseXp;
+  return { level, current, needed: XP_PER_LEVEL, pct: Math.round((current / XP_PER_LEVEL) * 100) };
 }

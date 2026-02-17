@@ -22,8 +22,18 @@ export type KanjiProgress = {
   mastered?: boolean;
 };
 
+export type ExamRecord = {
+  grade: string;
+  mode: string;
+  score: number;
+  total: number;
+  passed: boolean;
+  finishedAt: number;
+  byType?: Record<string, { correct: number; total: number }>;
+};
+
 export type AppState = {
-  version: 1 | 2;
+  version: 1 | 2 | 3;
   settings: {
     dailyCount: 5 | 10 | 15;
     lastGradeLabel?: GradeLabel;
@@ -48,4 +58,11 @@ export type AppState = {
     >; // key: YYYY-MM-DD
   };
   progress: Record<string, KanjiProgress>; // key: KanjiItem.id
+  gamification: {
+    xpTotal: number;
+    level: number;
+    examClearCount: number;
+    badges: string[]; // 합격한 급수: e.g. '8급', '7급'
+  };
+  examHistory: ExamRecord[];
 };

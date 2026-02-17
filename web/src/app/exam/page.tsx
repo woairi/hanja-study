@@ -33,9 +33,9 @@ export default function ExamHomePage() {
         <Link className="text-sm text-blue-700 underline" href="/">
           ← 홈
         </Link>
-        <div className="text-sm" style={{ color: 'var(--muted)' }}>
-          급수 도전
-        </div>
+        <Link className="text-sm text-blue-700 underline" href="/exam/history">
+          📋 이력
+        </Link>
       </div>
 
       <h1 className="text-xl font-extrabold">🏆 급수 도전</h1>

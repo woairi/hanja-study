@@ -5,8 +5,8 @@ import { useCallback, useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Card } from '@/components/ui/Card';
 import MatchingQuestion from '@/components/exam/MatchingQuestion';
-import { generateExam, type ExamQuestion, type ExamMode, type ExamType, examTypeLabel } from '@/lib/exam/generator';
-import { loadState, saveState } from '@/lib/storage';
+import { generateExam, isPass, type ExamQuestion, type ExamMode, type ExamType, examTypeLabel } from '@/lib/exam/generator';
+import { loadState, saveState, recordExamResult } from '@/lib/storage';
 import { applyAnswer } from '@/lib/srs';
 import { ALL_KANJI } from '@/lib/kanji';
 import type { GradeLabel } from '@/lib/types';
@@ -72,15 +72,15 @@ export default function ExamSessionClient() {
       if (a.correct) byType[a.type].correct += 1;
     }
 
-    const payload = {
-      grade,
-      mode,
-      score,
-      total,
-      byType,
-      wrongKanjiIds: answers.filter((a) => !a.correct).map((a) => a.kanjiId),
-      finishedAt: Date.now(),
-    };
+    const passed = isPass(score, total, grade);
+    const finishedAt = Date.now();
+
+    // XP + 이력 + 뱃지 저장
+    const st = loadState();
+    const updated = recordExamResult(st, { grade, mode, score, total, passed, finishedAt, byType });
+    saveState(updated);
+
+    const payload = { grade, mode, score, total, byType, passed, wrongKanjiIds: answers.filter((a) => !a.correct).map((a) => a.kanjiId), finishedAt };
     sessionStorage.setItem(EXAM_RESULT_KEY, JSON.stringify(payload));
     router.replace(`/exam/result?grade=${encodeURIComponent(grade)}`);
   }, [done, answers, grade, mode, router]);

@@ -1,4 +1,5 @@
 import { generateExam, getBlueprint, isPass, examTypeLabel } from '../generator';
+import { defaultState, recordExamResult, xpProgress } from '../../storage';
 
 describe('exam generator', () => {
   it('8급 빠른 도전 10문항 생성', () => {
@@ -92,5 +93,47 @@ describe('exam generator', () => {
       expect(q.matchPairs).toBeDefined();
       expect(q.matchPairs!.length).toBe(4);
     }
+  });
+});
+
+describe('exam XP & history', () => {
+  it('recordExamResult XP 부여 + 이력 추가', () => {
+    let st = defaultState();
+    st = recordExamResult(st, {
+      grade: '8급', mode: 'quick', score: 8, total: 10, passed: true, finishedAt: Date.now(),
+    });
+
+    expect(st.examHistory.length).toBe(1);
+    expect(st.examHistory[0].passed).toBe(true);
+    expect(st.gamification.xpTotal).toBe(8 * 2 + 30); // 16 + 30 = 46
+    expect(st.gamification.examClearCount).toBe(1);
+    expect(st.gamification.badges).toContain('8급');
+  });
+
+  it('불합격 시 뱃지 미부여 + XP는 정답분만', () => {
+    let st = defaultState();
+    st = recordExamResult(st, {
+      grade: '7급', mode: 'quick', score: 3, total: 10, passed: false, finishedAt: Date.now(),
+    });
+
+    expect(st.gamification.xpTotal).toBe(3 * 2); // 6
+    expect(st.gamification.examClearCount).toBe(0);
+    expect(st.gamification.badges).not.toContain('7급');
+  });
+
+  it('xpProgress 레벨 계산', () => {
+    expect(xpProgress(0)).toEqual({ level: 1, current: 0, needed: 100, pct: 0 });
+    expect(xpProgress(150)).toEqual({ level: 2, current: 50, needed: 100, pct: 50 });
+    expect(xpProgress(300)).toEqual({ level: 4, current: 0, needed: 100, pct: 0 });
+  });
+
+  it('이력 최대 50건 유지', () => {
+    let st = defaultState();
+    for (let i = 0; i < 55; i++) {
+      st = recordExamResult(st, {
+        grade: '8급', mode: 'quick', score: 5, total: 10, passed: false, finishedAt: Date.now() + i,
+      });
+    }
+    expect(st.examHistory.length).toBe(50);
   });
 });
