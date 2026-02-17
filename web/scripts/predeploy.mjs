@@ -7,6 +7,7 @@ const steps = [
   { name: 'unit tests', cmd: 'npm test' },
   { name: 'top5 selectors', cmd: 'npm run check:top5' },
   { name: 'data checks', cmd: 'npm run check:data' },
+  { name: 'build SW', cmd: 'node scripts/build-sw.mjs' },
   { name: 'build', cmd: 'npm run build' },
 ];
 

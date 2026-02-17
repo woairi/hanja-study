@@ -1,44 +1,26 @@
 /**
- * Serwist Route Handler (Turbopack 모드)
- * — Service Worker 빌드 + 서빙을 담당하는 API 라우트
+ * Serwist Route Handler
+ * — 프로덕션: public/sw.js로 리다이렉트 (빌드 타임 생성)
+ * — 개발: @serwist/turbopack으로 동적 빌드
  */
 import { createSerwistRoute } from "@serwist/turbopack";
-import type { NextRequest } from "next/server";
+import { NextResponse, type NextRequest } from "next/server";
 
-// Vercel 환경: VERCEL_GIT_COMMIT_SHA 사용, 로컬: git rev-parse 폴백
-function getRevision(): string {
-  if (process.env.VERCEL_GIT_COMMIT_SHA) {
-    return process.env.VERCEL_GIT_COMMIT_SHA;
-  }
-  try {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const { spawnSync } = require("node:child_process") as typeof import("node:child_process");
-    const r = spawnSync("git", ["rev-parse", "HEAD"], { encoding: "utf-8" });
-    if (r.stdout?.trim()) return r.stdout.trim();
-  } catch {
-    // git 없는 환경
-  }
-  return crypto.randomUUID();
-}
+const isDev = process.env.NODE_ENV === "development";
 
-const revision = getRevision();
+// 개발 환경에서만 동적 빌드 사용
+const serwistRoute = isDev
+  ? createSerwistRoute({
+      additionalPrecacheEntries: [{ url: "/~offline", revision: "dev" }],
+      swSrc: "src/app/sw.ts",
+      useNativeEsbuild: true,
+    })
+  : null;
 
-const serwistRoute = createSerwistRoute({
-  additionalPrecacheEntries: [{ url: "/~offline", revision }],
-  swSrc: "src/app/sw.ts",
-  useNativeEsbuild: true,
-});
-
-// Next.js 16은 route segment config를 정적 문자열로 요구
 export const dynamic = "force-dynamic";
 export const dynamicParams = true;
 export const revalidate = 0;
 
-/**
- * Next.js 16 catch-all → params.path = string[]
- * @serwist/turbopack → params.path = string (단일)
- * 래퍼로 string[].join('/') 변환 후 전달
- */
 export async function GET(
   req: NextRequest,
   context: { params: Promise<{ path: string[] }> },
@@ -46,8 +28,17 @@ export async function GET(
   const { path } = await context.params;
   const pathStr = Array.isArray(path) ? path.join("/") : path;
 
-  // @serwist/turbopack의 GET은 params.path를 string으로 기대
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const handler = serwistRoute.GET as any;
-  return handler(req, { params: Promise.resolve({ path: pathStr }) });
+  // 프로덕션: public/sw.js로 리다이렉트
+  if (!isDev && pathStr === "sw.js") {
+    return NextResponse.redirect(new URL("/sw.js", req.url), 302);
+  }
+
+  // 개발: @serwist/turbopack 동적 빌드
+  if (serwistRoute) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const handler = serwistRoute.GET as any;
+    return handler(req, { params: Promise.resolve({ path: pathStr }) });
+  }
+
+  return new NextResponse("Not Found", { status: 404 });
 }

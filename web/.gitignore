@@ -45,3 +45,6 @@ public/sw*
 public/swe-worker*
 test-results/
 playwright-report/
+
+# 빌드 생성 SW
+public/sw.js
