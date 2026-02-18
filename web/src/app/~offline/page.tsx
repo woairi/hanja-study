@@ -1,7 +1,5 @@
 "use client";
 
-import type { Metadata } from "next";
-
 // Note: metadata export requires server component, but this page is cached
 // by SW at build time so SEO is irrelevant. Title set via <title> directly.
 
